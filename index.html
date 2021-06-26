@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Visnalize</title>
+  </head>
+
+  <body>
+    <div class="layer">
+      <img src="assets/banner.png" />
+    </div>
+    <main>
+      <img src="assets/logo.png" />
+      <blockquote>With love crafting, for perfection striving</blockquote>
+      <ul>
+        <li>
+          <a href="https://github.com/Visnalize" target="_blank"
+            ><img src="assets/github.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://play.google.com/store/apps/dev?id=7119371547095400132"
+            target="_blank"
+          >
+            <img src="assets/google-play.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/c/visnalize" target="_blank"
+            ><img src="assets/youtube.png"
+          /></a>
+        </li>
+      </ul>
+    </main>
+    <script>
+      function hideLayer() {
+        var layer = document.querySelector(".layer");
+        var logo = document.querySelector("main > img");
+        var bound = logo.getBoundingClientRect();
+        layer.style.width = layer.style.height = bound.width + "px";
+        layer.style.top = bound.y + "px";
+        layer.style.left = bound.x + "px";
+        layer.style.borderRadius = "100%";
+        layer.style.opacity = 0;
+      }
+      setTimeout(hideLayer, 1500);
+    </script>
+  </body>
+</html>
