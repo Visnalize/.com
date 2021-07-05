@@ -1,0 +1,29 @@
+linkStyle(bg, shade)
+  background: bg
+  box-shadow: 0 6px shade
+  border-bottom: 2px solid shade
+
+.homepage .logo
+  display: none
+
+.hero img
+  max-width: 160px !important
+
+#main-title 
+  display: none
+
+.link-buttons
+  margin: 1.5rem auto
+  padding: 0
+  list-style: none
+  display: flex
+  justify-content: center
+  li
+    & > a
+      linkStyle(#eee, #ddd)
+    
+    &:first-child > a
+      linkStyle(#333, #000)
+
+    &:last-child > a
+      linkStyle(#f00, #a00)

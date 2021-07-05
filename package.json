@@ -1,0 +1,17 @@
+{
+  "name": "visnalize.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "https://github.com/Visnalize/visnalize.github.io.git",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "deploy": "gh-pages -d src/.vuepress/dist -b main",
+    "deploybuild": "yarn build && yarn deploy"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "vuepress": "^1.5.3"
+  }
+}
