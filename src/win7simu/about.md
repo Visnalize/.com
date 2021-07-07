@@ -22,6 +22,8 @@ As a simulator of Windows 7, it attempts to simulate every aspect of Windows 7, 
 
 The simulator is still in active development and more features will be added eventually. If you have suggestions or feedback, please be welcome to write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com). I may not be able to respond to all requests but rest assured that I take all of them and prioritize accordingly for the development.
 
+> Refer to [Changelog](./changelog.md) for a complete list of available features.
+
 ## Where to get it?
 
 You can download the simulator as an Android app from [Google Play Store](https://play.google.com/store/apps/details?id=com.visnalize.win7simu).

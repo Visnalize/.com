@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # Privacy Policy
 
 Visnalize built the Win7 Simu app as an Ad-supported app. This SERVICE is provided by Visnalize at no cost and is intended for use as is.

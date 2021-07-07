@@ -22,12 +22,23 @@ module.exports = {
         text: "Win7 Simu",
         items: [
           { text: "About", link: "/win7simu/about" },
+          { text: "Changelog", link: "/win7simu/changelog" },
           { text: "FAQ", link: "/win7simu/faq" },
           { text: "Privacy Policy", link: "/win7simu/privacy" },
         ],
       },
     ],
-    sidebar: ["/win7simu/about", "/win7simu/faq", "/win7simu/privacy"],
+    sidebar: "auto",
     smoothScroll: true,
   },
+
+  plugins: [
+    [
+      "autometa",
+      {
+        canonical_base: "https://visnalize.com",
+        author: { name: "Visnalize" },
+      },
+    ],
+  ],
 };
