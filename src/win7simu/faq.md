@@ -32,7 +32,7 @@ No. Just no.
 
 ### Can you add this feature, that feature and more features?
 
-Yes. If they are not listed above. You can write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com) to help prioritize the requests.
+Yes. If the feature is not rejected as above. You can write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com) to help prioritize the requests.
 
 ### I don't know the password. How do I login?
 
@@ -45,6 +45,17 @@ Yes. With version [2.10.0](./changelog.md#v2-10-0), you can set the simulator as
 ### Does this simulator work offline?
 
 Yes. However, certain features such as user accounts, some games and browsers will not work as they require internet connection to connect with the servers.
+
+### How do I open the desktop menu?
+
+To open the desktop menu or any context menu, simply hold your finger for a second.
+
+### How do I bring programs/apps to desktop?
+
+There are currently 2 ways:
+
+* From the Start Menu, hold your finger on the programs/apps you want to add, a context menu should appear, then select "Send to Desktop".
+* From the desktop, you can refer to [this video tutorial](https://youtu.be/gz8dPrHsRCs).
 
 ## Miscellaneous
 

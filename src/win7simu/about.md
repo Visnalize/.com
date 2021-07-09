@@ -2,7 +2,7 @@
 sidebar: false
 ---
 
-# Win7 Simu
+# ![win7simu](/assets/win7simu-logo.png) Win7 Simu
 
 **Win7 Simu** is a recreation of the Windows 7 operating system on the Android platform. It is built out of pure joy and nostalgia for the sake of reliving the good old time with the elegant Aero and Glassy interface.
 
