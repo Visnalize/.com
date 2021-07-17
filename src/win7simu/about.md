@@ -1,4 +1,5 @@
 ---
+title: "Win7 Simu"
 sidebar: false
 ---
 

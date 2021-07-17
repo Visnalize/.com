@@ -13,6 +13,18 @@ module.exports = {
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
       },
     ],
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-TRC2SF4L67",
+      },
+    ],
+    [
+      "script",
+      {},
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-TRC2SF4L67');",
+    ],
   ],
 
   themeConfig: {
@@ -26,6 +38,10 @@ module.exports = {
           { text: "FAQ", link: "/win7simu/faq" },
           { text: "Privacy Policy", link: "/win7simu/privacy" },
         ],
+      },
+      {
+        text: "Brick 1100",
+        items: [{ text: "About", link: "/brick1100/about" }],
       },
     ],
     sidebar: "auto",
