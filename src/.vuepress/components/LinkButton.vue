@@ -39,11 +39,11 @@ img {
   height: 100%;
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 419px) {
   a {
-    width: 70px;
-    height: 50px;
-    padding: 8px;
+    width: 80px;
+    height: 60px;
+    padding: 12px;
   }
 }
 </style>

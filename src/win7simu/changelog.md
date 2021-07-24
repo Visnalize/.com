@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.11.0
+
+- Added new theme: Windows 11
+- You can now zoom the display for a better experience
+- You can now switch the launcher directly from Control Panel
+
 ## v2.10.0
 
 - You can now use the simulator as a home/launcher app (beta)

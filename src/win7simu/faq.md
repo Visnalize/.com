@@ -14,15 +14,15 @@ No. Those Windows are just themes designed on the core of Windows 7, they are no
 
 No. Please see above.
 
-### Can you add Windows 11 as a theme?
-
-No. Windows 11 is at its very early release, going too far from the boundary may put this simulator at risk due to legal concerns.
-
 ### IE and Chrome cannot connect to the internet. Can you fix them?
 
-No. This is as far as I could get to implement them. Please bear with it.
+Please keep in mind that this is just a simulator. Web browser functionalities are very limited and are unstable. I'm afraid this is as far I can get to implement them.
 
 ### IE and Chrome are too slow. Can you fix them?
+
+No. Please see above.
+
+### IE and Chrome cannot download files/programs. Can you fix them?
 
 No. Please see above.
 
@@ -34,13 +34,25 @@ No. Just no.
 
 Yes. If the feature is not rejected as above. You can write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com) to help prioritize the requests.
 
+### How do I create a user account?
+
+Please see [this video tutorial](https://youtu.be/4jra0d0Ufag).
+
 ### I don't know the password. How do I login?
 
-You can either click on the suitcase to login with the Guest account, or create your own account and use it to login. For the latter, please see [this video tutorial](https://youtu.be/4jra0d0Ufag).
+You can either click on the suitcase to login with the Guest account, or create your own account (see above) and use it to login.
 
-### Can I use this simulator as a launcher?
+### I have forgotten my password. How to recover it?
+
+Unfortunately, your account is gone if you forget the password, there is no way to recover it.
+
+### Can I use this simulator as a launcher/home screen?
 
 Yes. With version [2.10.0](./changelog.md#v2-10-0), you can set the simulator as the home screen/launcher, but please keep in mind that this was not really intended as such at the beginning, hence it might not be stable with bugs and issues to be expected.
+
+### How can I change back to my default launcher/home screen?
+
+With version [2.11.0](./changelog.md#v2-11-0), you have the option to change/switch to your preferred launcher with ease from Control Panel.
 
 ### Does this simulator work offline?
 

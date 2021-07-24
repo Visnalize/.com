@@ -43,6 +43,10 @@ module.exports = {
         text: "Brick 1100",
         items: [{ text: "About", link: "/brick1100/about" }],
       },
+      {
+        text: "About",
+        link: "/about",
+      },
     ],
     sidebar: "auto",
     smoothScroll: true,
