@@ -48,11 +48,7 @@ Unfortunately, your account is gone if you forget the password, there is no way 
 
 ### Can I use this simulator as a launcher/home screen?
 
-Yes. With version [2.10.0](./changelog.md#v2-10-0), you can set the simulator as the home screen/launcher, but please keep in mind that this was not really intended as such at the beginning, hence it might not be stable with bugs and issues to be expected.
-
-### How can I change back to my default launcher/home screen?
-
-With version [2.11.0](./changelog.md#v2-11-0), you have the option to change/switch to your preferred launcher with ease from Control Panel.
+No. The launcher/home screen setting was enabled with version [2.10.0](./changelog.md#v2-10-0), however, due to instability, the simulator was then suffered from declined rating with users complaining that it harmed their devices, therefore, this setting is disabled from version [2.11.1](./changelog.md#v2-11-1) onwards.
 
 ### Does this simulator work offline?
 

@@ -6,7 +6,7 @@ sidebar: false
 
 Howdy, glad to see that you are interested to know about me. I am a **full-time software developer** and a **free-time app maker**. I love all sorts of web technologies and visual-related stuff. I tend to spend all of my free time exploring and playing around with those things by making a lot of, probably silly, of-no-use apps, apps that are meant for entertainment, or simply to satisfy my hobby.
 
-I am not good at math and problem solving, or positively speaking, just decent. I cannot build complex programs or software that appears to be useful to mankind, so I took the route that fits me best: **to build apps for entertainment**. If you would like, follow me on my journey to contribute to the world in my own way.
+I am not good at math and problem solving, or positively speaking, just decent. I cannot build complex programs or software that appears to be useful to mankind, so I took the route that fits me best: **to build apps for entertainment**. If you would like, follow me on [my journey](/blog/) to contribute to the world in my own way.
 
 Tools I use:
 

@@ -6,6 +6,10 @@
 - You can now zoom the display for a better experience
 - You can now switch the launcher directly from Control Panel
 
+### v2.11.1
+
+- Home/launcher setting is disabled from the app due to instability.
+
 ## v2.10.0
 
 - You can now use the simulator as a home/launcher app (beta)
@@ -49,25 +53,25 @@
 
 - Added Purble Shop
 
-## v2.3.3
+## v2.3
 
-- Fixed issue with Windows Media Player
+- Added language support for: German, Portuguese, Russian, Vietnamese
+  - The display language is automatically selected based on device's language.
 
-## v2.3.2
-
-- Added new theme: Windows Vista
-- Fixed display scaling issue on different screen sizes
-
-## v2.3.1
+### v2.3.1
 
 - Added language support for: Turkish, Polish and Ukrainian
 - Fixed theme not persisting on Guest account
 - Fixed Comfy Cakes being displayed (the game is still in development)
 
-## v2.3
+### v2.3.2
 
-- Added language support for: German, Portuguese, Russian, Vietnamese
-  - The display language is automatically selected based on device's language.
+- Added new theme: Windows Vista
+- Fixed display scaling issue on different screen sizes
+
+### v2.3.3
+
+- Fixed issue with Windows Media Player
 
 ## v2.2
 
@@ -92,22 +96,22 @@
   - Windows 8 with the unique Start Screen
   - Windows 8.1, Windows 10 with the brand new looks
 
-## v1.2.2
-
-- Addressed the black screen issue on Android 6.0 and earlier
-
-## v1.2.1
-
-- Adjusted the size of UI elements
-- Fixed and enhanced Internet Explorer
-- Allow screen orientation (excluding Games which will remain locked for the best experience)
-
 ## v1.2
 
 - Added Minesweeper
 - Added Purble Place (Purble Pairs)
 - Selected theme is now cached
 - Screen orientation is locked to portrait to prevent unexpected behavior
+
+### v1.2.1
+
+- Adjusted the size of UI elements
+- Fixed and enhanced Internet Explorer
+- Allow screen orientation (excluding Games which will remain locked for the best experience)
+
+### v1.2.2
+
+- Addressed the black screen issue on Android 6.0 and earlier
 
 ## v1.1
 

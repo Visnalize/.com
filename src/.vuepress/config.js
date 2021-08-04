@@ -43,12 +43,14 @@ module.exports = {
         text: "Brick 1100",
         items: [{ text: "About", link: "/brick1100/about" }],
       },
-      {
-        text: "About",
-        link: "/about",
-      },
+      { text: "Blogs", link: "/blog/" },
+      { text: "About", link: "/about" },
     ],
-    sidebar: "auto",
+    sidebar: {
+      "/win7simu/": "auto",
+      "/brick1100/": "auto",
+      "/blog/": ["", "windows-resources"],
+    },
     smoothScroll: true,
   },
 
