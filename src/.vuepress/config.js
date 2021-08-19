@@ -49,7 +49,7 @@ module.exports = {
     sidebar: {
       "/win7simu/": "auto",
       "/brick1100/": "auto",
-      "/blog/": ["", "windows-resources"],
+      "/blog/": ["", "windows-resources", "making-this-website"],
     },
     smoothScroll: true,
   },
@@ -62,5 +62,15 @@ module.exports = {
         author: { name: "Visnalize" },
       },
     ],
+    [
+      "social-share",
+      {
+        noGlobalSocialShare: true,
+        isPlain: true,
+        twitterUser: "visnalize",
+        networks: ["twitter", "facebook", "reddit", "telegram"],
+      },
+    ],
+    ["disqus", { shortname: "visnalize" }],
   ],
 };

@@ -1,5 +1,20 @@
 # Changelog
 
+<social-share />
+
+## v2.13.0
+
+- Added Screensaver
+- Added new gadget: Battery
+- Improved window's behavior (added active state, removed resizing frame, fixed several bugs)
+- Fixed some issues with Windows Media Player
+
+## v2.12.0
+
+- You can now pin programs to taskbar.
+- Added new game: Solitaire
+- Added new CMD commands: shutdown, start, color
+
 ## v2.11.0
 
 - Added new theme: Windows 11

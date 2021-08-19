@@ -1,5 +1,7 @@
 # Frequently Asked Questions
 
+<social-share />
+
 ## Simulator features
 
 ### Can I install exe files/Windows programs on this?

@@ -4,6 +4,8 @@ sidebar: false
 
 # Brick 1100
 
+<social-share />
+
 **Brick 1100** is a simulation of the Nokia 1100 mobile phone, the best-selling mobile phone of all time worldwide. The simulation aims to bring the users back to the simpler time with the fundamental graphics and features from one of the most durable phones produced by [Nokia](https://en.wikipedia.org/wiki/Nokia), a Finnish based firm.
 
 ## Interesting facts and history
@@ -23,3 +25,5 @@ As a simulator, it attempts to simulate every aspect of the phone, with the abil
 ## Where to get it?
 
 The simulator is still under development and soon will be available for download as an Android/Web app. If you would like to see the unreleased version, do drop me a message at [visnalize@gmail.com](mailto:visnalize@gmail.com) and I will provide you one.
+
+<comment-section />

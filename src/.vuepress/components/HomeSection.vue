@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@require "../styles/common.styl"
 size = 180px;
 
 section {
@@ -51,19 +52,10 @@ section {
       text-align: right;
 
       > a {
+        buttonStyle();
         display: inline-block;
-        background: #545e66;
-        color: #fff;
         font-size: 1rem;
         padding: 0.4rem 1.5rem;
-        border-radius: 0.2rem;
-        box-shadow: 0 4px $textColor;
-        transition: transform 0.2s, box-shadow 0.2s;
-
-        &:hover {
-          transform: translateY(4px);
-          box-shadow: none;
-        }
 
         &:not(:first-child) {
           margin-left: 8%;

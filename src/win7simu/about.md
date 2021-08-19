@@ -5,6 +5,8 @@ sidebar: false
 
 # ![win7simu](/assets/win7simu-logo.png) Win7 Simu
 
+<social-share />
+
 **Win7 Simu** is a recreation of the Windows 7 operating system on the Android platform. It is built out of pure joy and nostalgia for the sake of reliving the good old time with the elegant Aero and Glassy interface.
 
 ## A bit of the history
@@ -28,3 +30,5 @@ The simulator is still in active development and more features will be added eve
 ## Where to get it?
 
 You can download the simulator as an Android app from [Google Play Store](https://play.google.com/store/apps/details?id=com.visnalize.win7simu).
+
+<comment-section />
