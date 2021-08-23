@@ -1,6 +1,8 @@
 # Frequently Asked Questions
 
-<social-share />
+<div class="social">
+  <social-share />
+</div>
 
 ## Simulator features
 

@@ -1,19 +1,25 @@
+main
+  overflow-x hidden
+
 img[alt="win7simu"]
   width: 45px
   height: 45px
   vertical-align: bottom
 
-.social-share
-  text-align right
+.social
+  display flex
+  align-items center
+  justify-content flex-end
   margin-top -1rem
 
-  &:hover .social-share-btn
-    color $accentColor
+  &-share
+    &:hover .social-share-btn
+      color $accentColor
 
-  .social-share-btn
-    width 40px
-    height 40px
-    font-size 24px
+    .social-share-btn
+      width 40px
+      height 40px
+      font-size 24px
 
-.adsbygoogle
+.adsbygoogle[data-ad-status="filled"]
   margin 3rem 0

@@ -1,6 +1,9 @@
 # How to get Windows resources
 
-<social-share />
+<div class="social">
+  <comment-count />
+  <social-share />
+</div>
 
 In [Win7 Simu](/win7simu/about.md), I use several resources from the Windows operating systems. These resources include the **wallpapers, audio files, and icons**. There is no single source that provides all of these, in fact, to gather up, I have to do a lot of searching, dig through different Windows library files, try several methods, and use a variety of tools for decompiling and conversion. It was not easy, if not time-consuming, and tedious. So here in this blog, I'm documenting some steps and sharing a little bit of how I do it.
 

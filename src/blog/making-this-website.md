@@ -1,6 +1,9 @@
 # How this website is made
 
-<social-share />
+<div class="social">
+  <comment-count />
+  <social-share />
+</div>
 
 So, after a year or so (since I released the [Win7 Simu](/win7simu/about.md) app), I decided to build a website for my own brand. The goal is to have a home for all of the information, my work, and probably, more of the useless stuff that I want to share. And in this post, I'm documenting some of the progress of how I made this website.
 

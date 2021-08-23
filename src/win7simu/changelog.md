@@ -1,6 +1,8 @@
 # Changelog
 
-<social-share />
+<div class="social">
+  <social-share />
+</div>
 
 ## v2.13.0
 
