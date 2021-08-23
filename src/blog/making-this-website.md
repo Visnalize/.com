@@ -58,6 +58,8 @@ What an eye candy! That looked neat and flawless. Without so much effort and tim
 
 All of which could take me months, if not years to implement, but still wouldn't look half-decent. Not to mention some other super useful utilities that enhanced the writing and reading experience on both ends.
 
+<google-ads />
+
 ### Customizing
 
 Having the site ready, the next step was to make it my own. The site's control panel and utilities are conveniently wrapped inside the `.vuepress` folder, with custom components and styles in their respective folders and a `config.js` file as the central configuration for the entire site.
@@ -102,5 +104,7 @@ To sum up, all the steps I did to get this site up and running:
 - Finally, deploy the site to a host using [Github Pages](https://pages.github.com)
 
 The source code I made public in [this branch](https://github.com/Visnalize/visnalize.github.io/tree/dev) of the repository, you can explore or dissect however you like.
+
+<google-ads />
 
 <comment-section />

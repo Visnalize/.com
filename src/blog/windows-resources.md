@@ -18,6 +18,8 @@ Yes, searching on the internet, that's obviously the first thing to do when you 
 
 For **audio**, I mostly convert the Windows sound videos on YouTube to mp3 format using [this online tool](https://ytmp3.cc/downloader/). Later on, I get to know that you can find the audio collection in **C:\Windows\Media**, all sounds are available in the wav format.
 
+<google-ads />
+
 ## Extracting icons from .dll files
 
 Coming to the difficult part with the icons, as I have mentioned above, not all icons you may find easily on the internet, the only way to properly retrieve is extracting them from the .dll files found in **C:\Windows\System32**.
@@ -59,5 +61,7 @@ So to sum up, all the steps and tools to get this job done:
   * Dll files for different Windows versions can be found at: [dll-files.com](https://www.dll-files.com/).
   * Suggested tool for extraction: [IconsExtract](https://www.nirsoft.net/utils/iconsext.html).
   * Optionally convert the .ico format to other image formats using [this tool](https://www.aconvert.com/image/).
+
+<google-ads />
 
 <comment-section />

@@ -111,6 +111,8 @@
   - Windows 8 with the unique Start Screen
   - Windows 8.1, Windows 10 with the brand new looks
 
+<google-ads />
+
 ## v1.2
 
 - Added Minesweeper

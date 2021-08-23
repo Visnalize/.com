@@ -31,4 +31,6 @@ The simulator is still in active development and more features will be added eve
 
 You can download the simulator as an Android app from [Google Play Store](https://play.google.com/store/apps/details?id=com.visnalize.win7simu).
 
+<google-ads />
+
 <comment-section />

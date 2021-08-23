@@ -26,4 +26,6 @@ As a simulator, it attempts to simulate every aspect of the phone, with the abil
 
 The simulator is still under development and soon will be available for download as an Android/Web app. If you would like to see the unreleased version, do drop me a message at [visnalize@gmail.com](mailto:visnalize@gmail.com) and I will provide you one.
 
+<google-ads />
+
 <comment-section />

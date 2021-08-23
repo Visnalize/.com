@@ -39,3 +39,5 @@ footer: Copyright © 2021 - present. All Rights Reserved
     </div>
   </article>
 </home-section>
+
+<google-ads />

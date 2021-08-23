@@ -10,5 +10,6 @@ dist
 .basement
 config.local.js
 basement_dist
-public/
-!public/assets
+ads.txt
+app-ads.txt
+CNAME
