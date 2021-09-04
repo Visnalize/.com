@@ -10,7 +10,7 @@ sidebar: false
   <social-share />
 </div>
 
-**Win7 Simu** is a recreation of the Windows 7 operating system on the Android platform. It is built out of pure joy and nostalgia for the sake of reliving the good old time with the elegant Aero and Glassy interface.
+**Win7 Simu** is a recreation of the Windows 7 operating system on the Web/Android platform. It is built out of pure joy and nostalgia for the sake of reliving the good old time with the elegant Aero and Glassy interface.
 
 ## A bit of the history
 
@@ -20,7 +20,7 @@ After more than a decade, on **January 14, 2020**, support for Windows 7 ended. 
 
 ## Why Win7 Simu?
 
-I actually started this app under the name "**Windows 7 Simulator**" without any prior knowledge of legal issues. As a consequence, the early versions of the app were suspended and removed from Google Play Store on Feb 4, 2020, due to a report of the illegal use of the copyrighted trademark "Windows". It is to be emphasized again that the intention of making this app is purely for fun, it is more or less an app made by fans for fans, not an actual product or operating system. Therefore, I took the guts to republish it under a new name "**Win7 Simu**". And luckily, it has been staying there on the Google Play Store since and is still gaining popularity.
+I actually started this app under the name "**Windows 7 Simulator**" without any prior knowledge of legal issues. As a consequence, the early versions of the app were suspended and removed from Google Play Store on February 4, 2020, due to a report of the illegal use of the copyrighted trademark "Windows". It is to be emphasized again that the intention of making this app is purely for fun, it is more or less an app made by fans for fans, not an actual product or operating system. Therefore, I took the guts to republish it under a new name "**Win7 Simu**". And luckily, it has been staying there on the Google Play Store since and is still gaining popularity.
 
 ## Features
 
@@ -28,11 +28,34 @@ As a simulator of Windows 7, it attempts to simulate every aspect of Windows 7, 
 
 The simulator is still in active development and more features will be added eventually. If you have suggestions or feedback, please be welcome to write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com). I may not be able to respond to all requests but rest assured that I take all of them and prioritize accordingly for the development.
 
-> Refer to [Changelog](./changelog.md) for a complete list of available features.
+On August 28, 2021, I released a web version of the app which is accessible for those who do not own an Android device. The graphics, interface, and most of the features are identical to the Android app, except for some, which are exclusive to Android and cannot be replicated for the web due to technical constraints. A comparison of some key features is listed as below:
+
+Feature | Android | Web
+--------|:-------:|:---:
+Cross-platform support[*](#cross-platform) | ❌ | ✅
+Work offline | ✅ | ❌
+Can access local files via Computer | ✅ | ❌
+Can access local/native apps | ✅ | ❌
+Sync settings with online accounts | ✅ | ✅
+Multi-theming support | ✅ | ✅
+Multi-language support | ✅ | ✅
+
+<a name="cross-platform">*</a> It doesn't matter if the device is Android, iOS, Windows, or Mac, as long as it has a web browser and connects to the internet.
+
+::: tip Tip
+Refer to [Changelog](./changelog.md) for a complete list of available features through versions.
+:::
 
 ## Where to get it?
 
-You can download the simulator as an Android app from [Google Play Store](https://play.google.com/store/apps/details?id=com.visnalize.win7simu).
+<div class="access">
+  <a href="https://play.google.com/store/apps/details?id=com.visnalize.win7simu" target="_blank">
+    <img src="/assets/access-store.png" alt="Play Store" />
+  </a>
+  <a href="https://win7simu.visnalize.com" target="_blank">
+    <img src="/assets/access-web.png" alt="Web Browser" />
+  </a>
+</div>
 
 <google-ads />
 

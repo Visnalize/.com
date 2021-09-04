@@ -4,6 +4,12 @@
   <social-share />
 </div>
 
+## v2.14.0
+
+- Added Sticky Notes
+- Added Camera
+- My Computer can now open audio and video files from Android.
+
 ## v2.13.0
 
 - Added Screensaver
