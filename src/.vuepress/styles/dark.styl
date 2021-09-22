@@ -1,0 +1,61 @@
+$background = #082032
+$text = #ededed
+$nav = #2C394B
+$popup = #334756
+$ease = rgba(255, 255, 255, 0.08)
+
+.is-dark
+  color $text
+  background $background
+
+  .navbar
+    background $nav
+
+    .links
+      background $nav
+
+      .dropdown-title
+        color $text
+
+      .nav
+        &-dropdown
+          background $popup
+        
+        &-link
+          color $text
+
+    .site-name
+      color $text
+
+  .sidebar
+    background $background
+    border-color $nav
+
+    &-link,
+    .mobile-dropdown-title
+      color $text
+  
+  .custom-block
+    &.tip
+      background $ease
+    
+    &.warning
+      color gold
+
+      .custom-block-title
+        color yellow
+  
+  table
+    th,
+    td
+      border-color $popup
+
+    tr:nth-child(2n)
+      background $ease
+
+  h2
+    border-color $popup
+
+  code
+    color $text
+    background-color $ease

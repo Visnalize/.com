@@ -1,3 +1,7 @@
+---
+layout: SideAds
+---
+
 # How to get Windows resources
 
 <div class="social">

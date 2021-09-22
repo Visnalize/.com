@@ -1,8 +1,13 @@
 # Frequently Asked Questions
 
 <div class="social">
+  <comment-count />
   <social-share />
 </div>
+
+::: warning Note
+This page is updated regularly in accordance with the user's queries from all sources (emails, Play Store reviews, YouTube comments). Please check back to this before asking any question as the question will not be responded if it's already included here.
+:::
 
 ## Simulator features
 
@@ -10,13 +15,9 @@
 
 No. This is just a simulator. It does not have the necessary infrastructure to run those programs.
 
-### Can you add different boot animations for different Windows?
+### Can you implement the mouse control in the same way as the Win98 Simulator?
 
-No. Those Windows are just themes designed on the core of Windows 7, they are not meant to have separate boot/welcome screens.
-
-### Can you add different welcome/logon/lock screens for different Windows?
-
-No. Please see above.
+No. This simulator uses a different technology approach from the Win98 Simulator, therefore it's not feasible to implement the same.
 
 ### IE and Chrome cannot connect to the internet. Can you fix them?
 
@@ -32,11 +33,11 @@ No. Please see above.
 
 ### Can you add Microsoft Office?
 
-No. Just no.
+Yes. However, the priority is low and your expectation might not be met. Please keep in mind this is still just a simulator.
 
 ### Can you add this feature, that feature and more features?
 
-Yes. If the feature is not rejected as above. You can write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com) to help prioritize the requests.
+Yes. If the feature is not rejected above. You can comment your request below in the comment section or write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com).
 
 ### How do I create a user account?
 
@@ -86,3 +87,7 @@ No, I'm afraid. And there is no way to support Android versions older than 6.0 d
 ### Any plan to publish this simulator to App Store?
 
 Not really. It would be nice but the App Store annual fee is pretty high for me, and I doubt it would get passed the review process due to legal concerns.
+
+<google-ads />
+
+<comment-section />

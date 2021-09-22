@@ -1,3 +1,7 @@
+---
+layout: SideAds
+---
+
 # How this website is made
 
 <div class="social">

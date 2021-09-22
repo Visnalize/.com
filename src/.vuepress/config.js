@@ -49,7 +49,7 @@ module.exports = {
     sidebar: {
       "/win7simu/": "auto",
       "/brick1100/": "auto",
-      "/blog/": ["", "windows-resources", "making-this-website"],
+      "/blog/": ["", "windows-resources", "making-this-website", "about-the-ads"],
     },
     smoothScroll: true,
   },
@@ -73,4 +73,6 @@ module.exports = {
     ],
     ["disqus", { shortname: "visnalize" }],
   ],
+
+  globalUIComponents: ["ThemeToggle"],
 };

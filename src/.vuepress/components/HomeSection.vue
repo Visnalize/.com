@@ -91,7 +91,7 @@ section {
   }
 
   &:nth-child(2n) {
-    background: #eff3f6;
+    background: rgba(0, 0, 0, 0.05);
   }
 }
 

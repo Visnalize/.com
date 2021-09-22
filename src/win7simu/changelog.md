@@ -4,6 +4,18 @@
   <social-share />
 </div>
 
+## v2.16.0
+
+- Added BIOS setup
+- Boot animation, logon screen can now be changed via BIOS
+- Shutdown screen is now associated with account's theme
+
+## v2.15.0
+
+- Added Sound Recorder
+- Added new theme: Windows 95
+- Improved Windows 11 start menu
+
 ## v2.14.0
 
 - Added Sticky Notes
@@ -40,6 +52,8 @@
 - Added right click menu for Start Menu programs
 - Added easter egg: Chrome dino game
 - Added easter egg: bring Control Panel to desktop
+
+<google-ads />
 
 ## v2.9.0
 
@@ -119,8 +133,6 @@
   - Windows 8 with the unique Start Screen
   - Windows 8.1, Windows 10 with the brand new looks
 
-<google-ads />
-
 ## v1.2
 
 - Added Minesweeper
@@ -155,3 +167,5 @@ First release with the basic Windows GUI and functionalities:
 - Notepad
 - Snipping Tool
 - Media Player
+
+<google-ads />
