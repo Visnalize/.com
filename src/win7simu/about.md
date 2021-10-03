@@ -28,6 +28,12 @@ As a simulator of Windows 7, it attempts to simulate every aspect of Windows 7, 
 
 The simulator is still in active development and more features will be added eventually. If you have suggestions or feedback, please be welcome to write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com). I may not be able to respond to all requests but rest assured that I take all of them and prioritize accordingly for the development.
 
+::: tip Tip
+Refer to [Changelog](./changelog.md) for a complete list of available features through versions.
+:::
+
+### Web version
+
 On August 28, 2021, I released a web version of the app which is accessible for those who do not own an Android device. The graphics, interface, and most of the features are identical to the Android app, except for some, which are exclusive to Android and cannot be replicated for the web due to technical constraints. A comparison of some key features is listed as below:
 
 Feature | Android | Web
@@ -42,9 +48,9 @@ Multi-language support | ✅ | ✅
 
 <a name="cross-platform">*</a> It doesn't matter if the device is Android, iOS, Windows, or Mac, as long as it has a web browser and connects to the internet.
 
-::: tip Tip
-Refer to [Changelog](./changelog.md) for a complete list of available features through versions.
-:::
+### Translations
+
+Win7 Simu supports several languages. However, most of the translations are done via machine, therefore, the accuracy may be off or not correct whatsoever. I created a [translation project](https://crowdin.com/project/win7simu) on Crowdin and would welcome any contributions to correct and improve the translations, or even add new languages.
 
 ## Where to get it?
 

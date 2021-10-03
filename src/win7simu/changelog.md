@@ -4,6 +4,11 @@
   <social-share />
 </div>
 
+## v2.17.0
+
+- Added WordPad
+- Added language support for: Thai
+
 ## v2.16.0
 
 - Added BIOS setup
