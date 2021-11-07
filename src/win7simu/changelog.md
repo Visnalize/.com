@@ -4,6 +4,18 @@
   <social-share />
 </div>
 
+## v2.19.0
+
+- Added new theme: Windows 3.1
+- Added language support for: French
+- BSOD is now theme-compliant
+
+## v2.18.0
+
+- Added Run
+- Added Task Manager
+- Added Taskbar properties
+
 ## v2.17.0
 
 - Added WordPad
