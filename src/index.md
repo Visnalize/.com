@@ -10,6 +10,7 @@ footer: Copyright © 2021 - present. All Rights Reserved
   <li><link-button id="github" /></li>
   <li><link-button id="google" /></li>
   <li><link-button id="youtube" /></li>
+  <li><link-button id="twitter" /></li>
 </ul>
 
 <home-section layout="flex">

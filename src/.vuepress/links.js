@@ -14,4 +14,9 @@ export default {
     src: "/assets/youtube.png",
     alt: "Youtube",
   },
+  twitter: {
+    href: "https://twitter.com/visnalize",
+    src: "/assets/twitter.png",
+    alt: "Twitter"
+  }
 };

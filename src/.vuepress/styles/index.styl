@@ -1,8 +1,3 @@
-linkStyle(bg, shade)
-  background: bg
-  box-shadow: 0 6px shade
-  border-bottom: 2px solid shade
-
 .homepage
   .logo
     display: none
@@ -58,17 +53,10 @@ linkStyle(bg, shade)
   margin: 1.8rem auto 5rem
   padding: 0
   list-style: none
-  display: flex
-  justify-content: center
-  li
-    & > a
-      linkStyle(#eee, #ddd)
-    
-    &:first-child > a
-      linkStyle(#333, #000)
+  text-align: center
 
-    &:last-child > a
-      linkStyle(#f00, #a00)
+  li
+    display: inline-block
 
 @require "./extra.styl"
 @require "./responsive.styl"

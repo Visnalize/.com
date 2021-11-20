@@ -1,7 +1,8 @@
 module.exports = {
   title: "Visnalize",
 
-  description: "With love crafting, for perfection striving",
+  description:
+    "With love crafting, for perfection striving | Full-time software developer, free-time app maker | Creator of Win7 Simu and other silly apps",
 
   head: [
     ["link", { rel: "icon", href: "/assets/favicon.png" }],
@@ -49,7 +50,12 @@ module.exports = {
     sidebar: {
       "/win7simu/": "auto",
       "/brick1100/": "auto",
-      "/blog/": ["", "windows-resources", "making-this-website", "about-the-ads"],
+      "/blog/": [
+        "",
+        "windows-resources",
+        "making-this-website",
+        "about-the-ads",
+      ],
     },
     smoothScroll: true,
   },
