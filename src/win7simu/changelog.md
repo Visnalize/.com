@@ -4,6 +4,15 @@
   <social-share />
 </div>
 
+## v2.20.0
+
+- Major improvements for My Computer
+- You can now browse location to save file
+- You can download the file (web version only)
+- You can now create folders and text documents on desktop
+- Added language support for: Japanese
+- Added several Online games
+
 ## v2.19.0
 
 - Added new theme: Windows 3.1
