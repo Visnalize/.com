@@ -1,5 +1,6 @@
 ---
 layout: SideAds
+description: A couple of things about ads and how I implement them within my websites and apps
 ---
 
 # About the ads and how I implement them

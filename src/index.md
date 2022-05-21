@@ -1,5 +1,6 @@
 ---
 home: true
+description: With love crafting, for perfection striving | Full-time software developer, free-time app maker | Creator of Win7 Simu and other silly apps
 heroImage: /assets/favicon.png
 tagline: With love crafting, for perfection striving
 pageClass: homepage

@@ -1,9 +1,6 @@
 module.exports = {
   title: "Visnalize",
 
-  description:
-    "With love crafting, for perfection striving | Full-time software developer, free-time app maker | Creator of Win7 Simu and other silly apps",
-
   head: [
     ["link", { rel: "icon", href: "/assets/favicon.png" }],
     [
@@ -32,7 +29,7 @@ module.exports = {
     logo: "/assets/favicon.png",
     nav: [
       {
-        text: "Win7 Simu",
+        text: "💻 Win7 Simu",
         items: [
           { text: "About", link: "/win7simu/about" },
           { text: "Changelog", link: "/win7simu/changelog" },
@@ -41,11 +38,11 @@ module.exports = {
         ],
       },
       {
-        text: "Brick 1100",
+        text: "📵 Brick 1100",
         items: [{ text: "About", link: "/brick1100/about" }],
       },
-      { text: "Blogs", link: "/blog/" },
-      { text: "About", link: "/about" },
+      { text: "📝 Blogs", link: "/blog/" },
+      { text: "🙋‍♂️ About", link: "/about" },
     ],
     sidebar: {
       "/win7simu/": "auto",
@@ -53,7 +50,7 @@ module.exports = {
       "/blog/": [
         "",
         "windows-resources",
-        "making-this-website",
+        "building-visnalize-com",
         "about-the-ads",
       ],
     },

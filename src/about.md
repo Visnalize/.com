@@ -1,8 +1,9 @@
 ---
 sidebar: false
+description: With love crafting, for perfection striving | Full-time software developer, free-time app maker | Creator of Win7 Simu and other silly apps
 ---
 
-# About Me
+# 🙋‍♂️ About Me
 
 Howdy, glad to see that you are interested to know about me. I am a **full-time software developer** and a **free-time app maker**. I love all sorts of web technologies and visual-related stuff. I tend to spend all of my free time exploring and playing around with those things by making a lot of, probably silly, of-no-use apps, apps that are meant for entertainment, or simply to satisfy my hobby.
 

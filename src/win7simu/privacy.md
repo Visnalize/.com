@@ -1,3 +1,8 @@
+---
+title: Win7 Simu Privacy Policy
+description: Worry about your privacy while using the Win7 Simu app? This page eases your concern
+---
+
 # Privacy Policy
 
 Visnalize built the Win7 Simu app as an Ad-supported app. This SERVICE is provided by Visnalize at no cost and is intended for use as is.

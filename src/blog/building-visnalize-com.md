@@ -1,8 +1,9 @@
 ---
 layout: SideAds
+description: Read about the progress and how I built the visnalize.com website for my own brand
 ---
 
-# How this website is made
+# How I built visnalize.com
 
 <div class="social">
   <comment-count />

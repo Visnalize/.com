@@ -1,4 +1,6 @@
 ---
+title: Brick 1100
+description: A simulation of the Nokia 1100 mobile phone. Experience it on your smartphone/web browser
 sidebar: false
 ---
 

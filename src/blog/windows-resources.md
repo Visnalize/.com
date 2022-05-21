@@ -1,5 +1,6 @@
 ---
 layout: SideAds
+description: Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.
 ---
 
 # How to get Windows resources

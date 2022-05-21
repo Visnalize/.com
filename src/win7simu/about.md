@@ -1,6 +1,7 @@
 ---
-title: "Win7 Simu"
+title: Win7 Simu
 sidebar: false
+description: A recreation of the Windows 7 operating system on the Web/Android platform, brings back the nostalgia with the elegant Aero interface
 ---
 
 # ![win7simu](/assets/win7simu-logo.png) Win7 Simu
@@ -48,7 +49,7 @@ Multi-language support | ✅ | ✅
 
 <a name="cross-platform">*</a> It doesn't matter if the device is Android, iOS, Windows, or Mac, as long as it has a web browser and connects to the internet.
 
-### Translations
+### Translations [![Crowdin](https://badges.crowdin.net/win7simu/localized.svg)](https://crowdin.com/project/win7simu)
 
 Win7 Simu supports several languages. However, most of the translations are done via machine, therefore, the accuracy may be off or not correct whatsoever. I created a [translation project](https://crowdin.com/project/win7simu) on Crowdin and would welcome any contributions to correct and improve the translations, or even add new languages.
 
