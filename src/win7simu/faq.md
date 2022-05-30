@@ -14,7 +14,7 @@ description: Have questions in regards to the Win7 Simu app? This page answers t
 This page is updated regularly in accordance with the user's queries from all sources (emails, Play Store reviews, YouTube comments). Please check back to this before asking any question as the question will not be responded if it's already included here.
 :::
 
-## Simulator features
+## 1. Simulator features
 
 ### Can I install exe files/Windows programs on this?
 
@@ -60,6 +60,10 @@ Unfortunately, your account is gone if you forget the password, there is no way 
 
 No. The launcher/home screen setting was enabled with version [2.10.0](./changelog.md#v2-10-0), however, due to instability, the simulator was then suffered from declined rating with users complaining that it harmed their devices, therefore, this setting is disabled from version [2.11.1](./changelog.md#v2-11-1) onwards.
 
+### The BIOS keeps showing up for me. How do I enter Windows?
+
+Just don't tap/click on the screen for the first 3 seconds and you will boot into Windows.
+
 ### Does this simulator work offline?
 
 Yes. However, certain features such as user accounts, some games and browsers will not work as they require internet connection to connect with the servers.
@@ -75,7 +79,7 @@ There are currently 2 ways:
 * From the Start Menu, hold your finger on the programs/apps you want to add, a context menu should appear, then select "Send to Desktop".
 * From the desktop, you can refer to [this video tutorial](https://youtu.be/gz8dPrHsRCs).
 
-## Miscellaneous
+## 2. Miscellaneous
 
 ### Can you remove the ads?
 
