@@ -1,0 +1,17 @@
+name: Deploy updated content
+on:
+  push:
+    paths: '**.md'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install deps & build
+        run: yarn && yarn build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: main
+          folder: src/.vuepress/dist
