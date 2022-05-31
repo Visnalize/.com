@@ -44,6 +44,16 @@ Yes. However, the priority is low and your expectation might not be met. Please 
 
 Yes. If the feature is not rejected above. You can comment your request below in the comment section or write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com).
 
+### Can I use this simulator as a launcher/home screen?
+
+No. The launcher/home screen setting was enabled with version [2.10.0](./changelog.md#v2-10-0), however, due to instability, the simulator was then suffered from declined rating with users complaining that it harmed their devices, therefore, this setting is disabled from version [2.11.1](./changelog.md#v2-11-1) onwards.
+
+### Does this simulator work offline?
+
+Yes. However, certain features such as user accounts, some games and browsers will not work as they require internet connection to connect with the servers.
+
+## 2. How to use
+
 ### How do I create a user account?
 
 Please see [this video tutorial](https://youtu.be/4jra0d0Ufag).
@@ -56,18 +66,6 @@ You can either click on the suitcase to login with the Guest account, or create 
 
 Unfortunately, your account is gone if you forget the password, there is no way to recover it.
 
-### Can I use this simulator as a launcher/home screen?
-
-No. The launcher/home screen setting was enabled with version [2.10.0](./changelog.md#v2-10-0), however, due to instability, the simulator was then suffered from declined rating with users complaining that it harmed their devices, therefore, this setting is disabled from version [2.11.1](./changelog.md#v2-11-1) onwards.
-
-### The BIOS keeps showing up for me. How do I enter Windows?
-
-Just don't tap/click on the screen for the first 3 seconds and you will boot into Windows.
-
-### Does this simulator work offline?
-
-Yes. However, certain features such as user accounts, some games and browsers will not work as they require internet connection to connect with the servers.
-
 ### How do I open the desktop menu?
 
 To open the desktop menu or any context menu, simply hold your finger for a second.
@@ -79,7 +77,11 @@ There are currently 2 ways:
 * From the Start Menu, hold your finger on the programs/apps you want to add, a context menu should appear, then select "Send to Desktop".
 * From the desktop, you can refer to [this video tutorial](https://youtu.be/gz8dPrHsRCs).
 
-## 2. Miscellaneous
+### The BIOS keeps showing up for me. How do I enter Windows?
+
+Just don't tap/click on the screen for the first 3 seconds and you will boot into Windows.
+
+## 3. Miscellaneous
 
 ### Can you remove the ads?
 
