@@ -9,6 +9,12 @@ description: Curious about the changes done through versions of the Win7 Simu ap
   <social-share />
 </div>
 
+## v2.21.0
+- You can now change theme color (Windows 7 aero themes only)
+- Added dummy Windows Installer
+- Improved translations for: Japanese, Polish, Portuguese and Russian. Huge thanks to the contributors
+- Fixed account creation issue
+
 ## v2.20.0
 
 - Major improvements for My Computer
