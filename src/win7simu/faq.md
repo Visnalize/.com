@@ -95,6 +95,10 @@ I'm currently working on this option. You will know when it's available. Thank y
 
 No, I'm afraid. And there is no way to support Android versions older than 6.0 due to certain technical limitations that cannot be resolved.
 
+### The simulator only shows a black screen although my device's Android version is later than 6.0. What happens?
+
+Unfortunately, if your device's Android version is already 6.0+ and the simulator is not working for you, please use the [web version](https://win7simu.visnalize.com/) instead. It is due to a technical difficulty that the simulator relies on Android Webview to operate, there may be chances that even though your Android is new, it still uses an old version of the Webview.
+
 ### Any plan to publish this simulator to App Store?
 
 Not really. It would be nice but the App Store annual fee is pretty high for me, and I doubt it would get passed the review process due to legal concerns.
