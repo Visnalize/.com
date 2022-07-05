@@ -59,6 +59,9 @@ Win7 Simu supports several languages. However, most of the translations are done
   <a href="https://play.google.com/store/apps/details?id=com.visnalize.win7simu" target="_blank">
     <img src="/assets/access-store.png" alt="Play Store" />
   </a>
+  <a href="https://appgallery.huawei.com/#/app/C106588347" target="_blank">
+    <img src="/assets/access-appgallery.png" alt="AppGallery" />
+  </a>
   <a href="https://win7simu.visnalize.com" target="_blank">
     <img src="/assets/access-web.png" alt="Web Browser" />
   </a>
