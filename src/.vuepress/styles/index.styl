@@ -33,21 +33,25 @@
   min-height 100vh
   box-sizing border-box
 
-.nav-item > .dropdown-wrapper
-  .nav-dropdown
-    border: 0
-    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2)
+.nav-item
+  > a
+    height: 2.4rem
 
-    .dropdown-item
-      .nav-link
-        border-left: 2px solid transparent
-        transition: 0.3s
+  > .dropdown-wrapper
+    .nav-dropdown
+      border: 0
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2)
 
-        &.router-link-active
-          border-left-color: $accentColor
+      .dropdown-item
+        .nav-link
+          border-left: 2px solid transparent
+          transition: 0.3s
 
-        &::after
-          content: none
+          &.router-link-active
+            border-left-color: $accentColor
+
+          &::after
+            content: none
 
 .link-buttons
   margin: 1.8rem auto 5rem
