@@ -16,5 +16,8 @@
     "vuepress-plugin-autometa": "^0.1.13",
     "vuepress-plugin-disqus": "^0.2.0",
     "vuepress-plugin-social-share": "^1.0.0"
+  },
+  "dependencies": {
+    "motion": "^10.14.2"
   }
 }

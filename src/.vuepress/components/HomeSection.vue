@@ -1,6 +1,8 @@
 <template>
   <section :class="layout">
-    <slot />
+    <div>
+      <slot />
+    </div>
   </section>
 </template>
 
@@ -11,44 +13,31 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@require "../styles/common.styl"
-size = 180px;
+@require '../styles/common.styl';
 
 section {
-  padding: 8% 15%;
+  padding: 8rem 4rem;
 
-  > img {
-    width: size;
-    height: auto;
-    float: left;
+  > div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1024px;
   }
 
-  > .preview {
-    width: size;
-    height: 200px;
-    float: left;
-    overflow: hidden;
-    border-radius: 50%;
-
-    > iframe {
+  article {
+    > h2 {
       border: 0;
-      width: size;
-      height: 300px;
-    }
-  }
-
-  > article {
-    margin-left: size + 15%;
-
-    > h1 {
       margin-top: 0;
+      font-size: 2.5rem;
     }
 
     > p {
       text-align: justify;
     }
 
-    > div {
+    > footer {
       text-align: right;
 
       > a {
@@ -65,19 +54,12 @@ section {
   }
 
   &.right {
-    > img {
-      float: right;
+    > div > *:first-child {
+      order: 1;
     }
 
-    > .preview {
-      float: right;
-    }
-
-    > article {
-      margin-left: 0;
-      margin-right: size + 15%;
-
-      > div {
+    article {
+      > footer {
         text-align: left;
 
         > a:not(:first-child) {
@@ -97,18 +79,18 @@ section {
 
 @media (max-width: 640px) {
   section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 6rem 3rem;
 
-    &.right > article, > article {
-      margin: 0;
-      margin-top: 10%;
-      text-align: center;
+    > div {
+      flex-direction: column;
 
-      > div {
-        text-align: center;
+      article, article > footer {
+        text-align: center !important;
       }
+    }
+
+    &.right > div *:first-child {
+      order: unset;
     }
   }
 }

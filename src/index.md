@@ -1,45 +1,45 @@
 ---
 home: true
 description: With love crafting, for perfection striving | Full-time software developer, free-time app maker | Creator of Win7 Simu and other silly apps
-heroImage: /assets/favicon.png
-tagline: With love crafting, for perfection striving
+tagline:
 pageClass: homepage
-footer: Copyright © 2021 - present. All Rights Reserved
 ---
 
-<ul class="link-buttons">
-  <li><link-button id="github" /></li>
-  <li><link-button id="google" /></li>
-  <li><link-button id="youtube" /></li>
-  <li><link-button id="twitter" /></li>
-</ul>
+<home-hero />
 
-<home-section layout="flex">
-  <img src="/assets/win7simu-logo.png" alt="win7 simu">
+<home-section>
+  <home-preview src="/assets/win7simu-logo.png" title="win7 simu" />
   <article>
-    <h1>Win7 Simu</h1>
+    <h2>Win7 Simu</h2>
     <p>A recreation of the Windows 7 operating system on the Android platform,
     built out of pure joy and nostalgia for the sake of reliving the good old time
     with the elegant Aero and Glassy interface.</p>
-    <div>
+    <footer>
       <a href="/win7simu/about.html">Learn more</a>
-    </div>
+    </footer>
   </article>
 </home-section>
 
-<home-section layout="flex right">
-  <div class="preview">
-    <iframe title="Brick 1100 Preview" src="https://brick1100.visnalize.com" />
-  </div>
+<home-section class="right">
+  <home-preview src="https://brick1100.visnalize.com" title="Brick 1100" />
   <article>
-    <h1>Brick 1100</h1>
+    <h2>Brick 1100</h2>
     <p>A simulation of the Nokia 1100 mobile phone, the best-selling mobile phone of all time worldwide.
     The simulation aims to bring the users back to the simpler time with the fundamental graphics
     and features from one of the most durable phones.</p>
-    <div>
+    <footer>
       <a href="/brick1100/about.html">Learn more</a>
-    </div>
+    </footer>
   </article>
 </home-section>
 
 <google-ads />
+
+<home-section>
+  <article>
+    <h2>What the users say</h2>
+    <reviews-widget />
+  </article>
+</home-section>
+
+<home-footer />
