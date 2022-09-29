@@ -26,19 +26,17 @@
 </template>
 
 <script>
-import { animate, scroll } from "motion";
+import { animate, inView } from "motion";
 
 export default {
   mounted() {
     const navbar = this.$root.$el.querySelector(".navbar");
     const navbarHeight = navbar.scrollHeight;
-    scroll(({ y }) => {
-      animate(
-        navbar,
-        y.current >= this.$el.scrollHeight - navbar.scrollHeight
-          ? { y: 0, opacity: 1, display: "" }
-          : { y: -navbarHeight, opacity: 0 }
-      );
+    inView(this.$el, () => {
+      animate(navbar, { y: -navbarHeight, opacity: 0 });
+      return () => {
+        animate(navbar, { y: 0, opacity: 1 });
+      };
     });
   },
   methods: {
