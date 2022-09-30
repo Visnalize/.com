@@ -15,6 +15,8 @@ layout: WithComments
 This page is updated regularly in accordance with the user's queries from all sources (emails, Play Store reviews, YouTube comments). Please check back to this before asking any question as the question will not be responded if it's already included here.
 :::
 
+<a-updated />
+
 ## 1. Simulator features
 
 ### Can I install exe files/Windows programs on this?
@@ -86,11 +88,7 @@ Just don't tap/click on the screen for the first 3 seconds and you will boot int
 
 ### Can you remove the ads?
 
-No, I'm afraid. I have been spending a lot of my time and effort to develop and maintain this simulator, it even costs me a fair amount of money to maintain the cloud services to retain your user accounts and settings within.
-
-### How can I buy a version without ads?
-
-I'm currently working on this option. You will know when it's available. Thank you for your support.
+No, I'm afraid. I have been spending a lot of time and effort to develop and maintain this simulator, it even costs me a fair amount of money to maintain the cloud services to retain your user accounts and settings within. However, there is a monthly subscription plan available with the Android version to which you can subscribe, to enjoy the app ad-free and support me to keep improving it and bring you more cool features.
 
 ### Can this simulator work on Android versions earlier than 6.0?
 

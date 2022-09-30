@@ -1,3 +1,5 @@
+const links = require("./links");
+
 module.exports = {
   title: "Visnalize",
 
@@ -43,6 +45,13 @@ module.exports = {
       },
       { text: "📝 Blogs", link: "/blog/" },
       { text: "🙋‍♂️ About", link: "/about" },
+      {
+        text: "🌏 Social",
+        items: Object.values(links).map((link) => ({
+          text: link.alt,
+          link: link.href,
+        })),
+      },
     ],
     sidebar: {
       "/win7simu/": "auto",
@@ -76,7 +85,10 @@ module.exports = {
       },
     ],
     ["disqus", { shortname: "visnalize" }],
-    ["@vuepress/medium-zoom", { options: { margin: 24 } }],
+    [
+      "@vuepress/medium-zoom",
+      { selector: ".page :not(a) > img", options: { margin: 12 } },
+    ],
   ],
 
   globalUIComponents: ["ThemeToggle"],
