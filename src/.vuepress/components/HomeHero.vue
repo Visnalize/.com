@@ -55,12 +55,17 @@ section {
   transition: background 0.5s;
   height: 100vh;
   max-height: 900px;
+  min-height: 500px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+h1 {
+  font-weight: normal;
 }
 
 button {

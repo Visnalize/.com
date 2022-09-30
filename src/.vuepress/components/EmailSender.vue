@@ -16,13 +16,16 @@
       ></textarea>
     </div>
     <div>
-      <button type="submit">Send</button>
+      <a-button type="submit">Send</a-button>
     </div>
   </form>
 </template>
 
 <script>
+import AButton from "./AButton.vue";
+
 export default {
+  components: { AButton },
   data() {
     return {
       errors: [],
@@ -50,8 +53,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@require '../styles/common.styl';
-
 div {
   margin: 0.5rem 0;
 }
@@ -78,11 +79,5 @@ input, textarea {
 textarea {
   height: 200px;
   resize: vertical;
-}
-
-button {
-  buttonStyle();
-  font-size: 1rem;
-  padding: 0.5rem 1.5rem;
 }
 </style>

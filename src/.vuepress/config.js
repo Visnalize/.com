@@ -55,6 +55,7 @@ module.exports = {
       ],
     },
     smoothScroll: true,
+    lastUpdated: true,
   },
 
   plugins: [
@@ -75,6 +76,7 @@ module.exports = {
       },
     ],
     ["disqus", { shortname: "visnalize" }],
+    ["@vuepress/medium-zoom", { options: { margin: 24 } }],
   ],
 
   globalUIComponents: ["ThemeToggle"],

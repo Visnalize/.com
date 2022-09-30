@@ -1,5 +1,5 @@
 ---
-layout: SideAds
+layout: All
 description: Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.
 ---
 
@@ -71,5 +71,3 @@ So to sum up, all the steps and tools to get this job done:
   * Optionally convert the .ico format to other image formats using [this tool](https://www.aconvert.com/image/).
 
 <google-ads />
-
-<comment-section />

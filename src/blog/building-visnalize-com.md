@@ -1,5 +1,5 @@
 ---
-layout: SideAds
+layout: All
 description: Read about the progress and how I built the visnalize.com website for my own brand
 ---
 
@@ -114,5 +114,3 @@ To sum up, all the steps I did to get this site up and running:
 The source code I made public in [this branch](https://github.com/Visnalize/visnalize.github.io/tree/dev) of the repository, you can explore or dissect however you like.
 
 <google-ads />
-
-<comment-section />

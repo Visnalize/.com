@@ -1,5 +1,6 @@
 ---
 title: Win7 Simu
+layout: WithComments
 sidebar: false
 description: A recreation of the Windows 7 operating system on the Web/Android platform, brings back the nostalgia with the elegant Aero interface
 ---
@@ -68,5 +69,3 @@ Win7 Simu supports several languages. However, most of the translations are done
 </div>
 
 <google-ads />
-
-<comment-section />

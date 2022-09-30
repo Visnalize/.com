@@ -13,8 +13,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@require '../styles/common.styl';
-
 section {
   padding: 8rem 4rem;
 

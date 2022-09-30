@@ -27,6 +27,17 @@ __Web__
 
 - Fixed right click (hold gesture) issue on Safari
 
+### 2.23.1
+
+__Core__
+
+- Added MacOS launchpad animation
+
+__Android__
+
+- Revoked QUERY_ALL_PACKAGES permission to comply with Google Play policy. Note that this has an impact on the Start Menu as it won't show all the apps available on your device if you are using Android 12 or later.
+- Improved user experience with ads (ask for a confirmation before showing ads)
+
 ## 2.22.0
 
 __Core__

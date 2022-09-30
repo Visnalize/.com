@@ -1,5 +1,5 @@
 ---
-layout: SideAds
+layout: All
 description: A couple of things about ads and how I implement them within my websites and apps
 ---
 
@@ -71,5 +71,3 @@ You're probably seeing a few ads already in this blog post, and you can trust me
 And this would be all I wanted to share in this blog, hope you had a good time reading it and somehow got some useful pieces of info with you as well.
 
 <google-ads />
-
-<comment-section />

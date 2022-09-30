@@ -16,8 +16,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '../styles/common.styl';
-
 .sk-ww-google-play-reviews {
   font-family: inherit !important;
 }
@@ -41,7 +39,22 @@ export default {
 }
 
 .sk-ww-google-play-load-more-posts {
-  buttonStyle();
+  // AButton's style
+  background: #545e66;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: 0 4px $textColor;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:active {
+    transform: translateY(4px);
+    box-shadow: none;
+  }
 }
 
 .google-play-reviews-item {

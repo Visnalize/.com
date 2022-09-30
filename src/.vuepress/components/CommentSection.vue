@@ -28,3 +28,11 @@ export default {
   },
 };
 </script>
+
+<style lang="stylus" scoped>
+section {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem 2.5rem;
+}
+</style>

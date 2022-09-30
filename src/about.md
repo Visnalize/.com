@@ -1,6 +1,6 @@
 ---
 sidebar: false
-description: With love crafting, for perfection striving | Full-time software developer, free-time app maker | Creator of Win7 Simu and other silly apps
+description: Recreating Nostalgia for Entertainment | Full-time software developer, free-time app maker | Creator of Win7 Simu and other unique apps
 ---
 
 # 🙋‍♂️ About Me

@@ -13,6 +13,12 @@
 export default {
   mounted() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }
+  },
 };
 </script>
+
+<style lang="stylus" scoped>
+.googleads {
+  padding: 0 1.5rem;
+}
+</style>

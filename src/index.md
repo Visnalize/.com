@@ -1,6 +1,6 @@
 ---
 home: true
-description: With love crafting, for perfection striving | Full-time software developer, free-time app maker | Creator of Win7 Simu and other silly apps
+description: Recreating Nostalgia for Entertainment | Full-time software developer, free-time app maker | Creator of Win7 Simu and other unique apps
 tagline:
 pageClass: homepage
 ---
@@ -15,7 +15,7 @@ pageClass: homepage
     built out of pure joy and nostalgia for the sake of reliving the good old time
     with the elegant Aero and Glassy interface.</p>
     <footer>
-      <a href="/win7simu/about.html">Learn more</a>
+      <a-button href="/win7simu/about.html">Learn more</a-button>
     </footer>
   </article>
 </home-section>
@@ -28,7 +28,7 @@ pageClass: homepage
     The simulation aims to bring the users back to the simpler time with the fundamental graphics
     and features from one of the most durable phones.</p>
     <footer>
-      <a href="/brick1100/about.html">Learn more</a>
+      <a-button href="/brick1100/about.html">Learn more</a-button>
     </footer>
   </article>
 </home-section>
@@ -38,7 +38,7 @@ pageClass: homepage
 <home-section>
   <article>
     <h2>What the users say</h2>
-    <reviews-widget />
+    <home-reviews />
   </article>
 </home-section>
 

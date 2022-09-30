@@ -1,5 +1,5 @@
 ---
-layout: SideAds
+layout: WithSideAds
 ---
 
 # 📝 Blogs

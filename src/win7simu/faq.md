@@ -1,6 +1,7 @@
 ---
 title: Win7 Simu Frequently Asked Questions
 description: Have questions in regards to the Win7 Simu app? This page answers them, immediate and straightforward
+layout: WithComments
 ---
 
 # Frequently Asked Questions
@@ -104,5 +105,3 @@ Unfortunately, if your device's Android version is already 6.0+ and the simulato
 Not really. It would be nice but the App Store annual fee is pretty high for me, and I doubt it would get passed the review process due to legal concerns.
 
 <google-ads />
-
-<comment-section />
