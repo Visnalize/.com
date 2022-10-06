@@ -49,10 +49,11 @@ export default {
 
 <style lang="stylus" scoped>
 section {
-  background: url('/assets/home-bg.jpg') center, url('/assets/home-bg-dark.jpg');
+  background-image: url('/assets/home-bg.jpg');
+  background-color: #1596f2;
   background-size: cover;
   background-attachment: fixed;
-  transition: background 0.5s;
+  transition: background 0.3s;
   height: 100vh;
   max-height: 900px;
   min-height: 500px;
