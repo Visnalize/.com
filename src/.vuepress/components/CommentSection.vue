@@ -23,7 +23,7 @@ export default {
     hideAds() {
       const disqus = this.$el.querySelector("#disqus_thread");
       const ads = disqus.querySelector("iframe:first-child");
-      ads.style.setProperty("display", "none", "important");
+      ads?.style.setProperty("display", "none", "important");
     },
   },
 };
