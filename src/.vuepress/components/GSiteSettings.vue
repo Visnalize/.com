@@ -10,7 +10,7 @@
     </button>
     <ul ref="controls">
       <li><g-theme-toggle /></li>
-      <li><g-translator /></li>
+      <li><g-text-to-speech /></li>
       <li><g-back-to-top /></li>
     </ul>
   </div>
@@ -19,11 +19,11 @@
 <script>
 import { animate, spring } from "motion";
 import GThemeToggle from "./GThemeToggle.vue";
-import GTranslator from "./GTranslator.vue";
+import GTextToSpeech from "./GTextToSpeech.vue";
 import GBackToTop from "./GBackToTop.vue";
 
 export default {
-  components: { GThemeToggle, GBackToTop, GTranslator },
+  components: { GThemeToggle, GBackToTop, GTextToSpeech },
   data() {
     return { showControls: true };
   },

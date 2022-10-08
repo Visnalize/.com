@@ -30,7 +30,13 @@ button {
     transform: scale(1.15);
   }
 
-  .is-dark & {
+  &.active {
+    transform: scale(1.15);
+    background: $accentColor;
+    color: #fff;
+  }
+
+  .is-dark &:not(.active) {
     background: #292929;
     color: #aaa;
   }
