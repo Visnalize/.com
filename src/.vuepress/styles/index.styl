@@ -1,32 +1,39 @@
 #app
-  transition: background 0.3s
+  transition background 0.3s
 
 .homepage
   .logo
 
   > .home
-    padding: 0
-    max-width: unset
+    padding 0
+    max-width unset
 
     .hero
       h1
-        display: none  
+        display none
 
 .navbar
-  border: 0
-  box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.08)
+  border 0
+  box-shadow 0 1px 1rem rgba(0, 0, 0, 0.08)
+  transition background 0.3s
+
+  .links
+    background none !important
 
   .search-box > input
-    border-color: transparent
-    border-radius: 0.5rem
-    background-color: rgba(0, 0, 0, 0.05)
+    border-color transparent
+    border-radius 0.5rem
+    background-color rgba(0, 0, 0, 0.05)
 
     &.focused
-      background-color: transparent
+      background-color transparent
   
   .nav-item
     > a
-      height: 2.4rem
+      height 2.4rem
+
+.sidebar
+  transition background 0.3s, transform 0.2s ease
 
 .page
   min-height 100vh
@@ -35,19 +42,19 @@
 .nav-item
   > .dropdown-wrapper
     .nav-dropdown
-      border: 0
-      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2)
+      border 0
+      box-shadow 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2)
 
       .dropdown-item
         .nav-link
-          border-left: 2px solid transparent
-          transition: 0.3s
+          border-left 2px solid transparent
+          transition 0.3s
 
           &.router-link-active
-            border-left-color: $accentColor
+            border-left-color $accentColor
 
           &::after
-            content: none
+            content none
 
 @require "./extra.styl"
 @require "./responsive.styl"

@@ -13,12 +13,11 @@
   "devDependencies": {
     "@vuepress/plugin-medium-zoom": "^1.9.7",
     "gh-pages": "^3.2.3",
+    "motion": "^10.14.2",
+    "vue-icon": "^2.3.0",
     "vuepress": "^1.5.3",
     "vuepress-plugin-autometa": "^0.1.13",
     "vuepress-plugin-disqus": "^0.2.0",
     "vuepress-plugin-social-share": "^1.0.0"
-  },
-  "dependencies": {
-    "motion": "^10.14.2"
   }
 }

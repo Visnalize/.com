@@ -9,6 +9,14 @@ module.exports = {
       "script",
       {
         async: true,
+        src:
+          "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+      },
+    ],
+    [
+      "script",
+      {
+        async: true,
         "data-ad-client": "ca-pub-5904323684803247",
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
       },
@@ -91,5 +99,5 @@ module.exports = {
     ],
   ],
 
-  globalUIComponents: ["ThemeToggle"],
+  globalUIComponents: ["GSiteSettings"],
 };

@@ -1,12 +1,10 @@
-$background = #082032
+$main = #292929
 $text = #ededed
-$nav = #2C394B
-$popup = #334756
 $ease = rgba(255, 255, 255, 0.08)
 
 .is-dark
   color $text
-  background $background
+  background darken($main, 5)
 
   .homepage
     section:first-child
@@ -14,17 +12,15 @@ $ease = rgba(255, 255, 255, 0.08)
       background-color transparent
 
   .navbar
-    background $nav
+    background $main
 
     .links
-      background $nav
-
       .dropdown-title
         color $text
 
       .nav
         &-dropdown
-          background $popup
+          background lighten($main, 5)
         
         &-link
           color $text
@@ -33,8 +29,8 @@ $ease = rgba(255, 255, 255, 0.08)
       color $text
 
   .sidebar
-    background $background
-    border-color $nav
+    background darken($main, 3)
+    border-color transparent
 
     &-link,
     .mobile-dropdown-title
@@ -53,17 +49,20 @@ $ease = rgba(255, 255, 255, 0.08)
   table
     th,
     td
-      border-color $popup
+      border-color lighten($main, 5)
 
     tr:nth-child(2n)
       background $ease
 
   h2
-    border-color $popup
+    border-color lighten($main, 10)
 
   code
     color $text
     background-color $ease
+  
+  .page-nav .inner
+    border-color lighten($main, 10)
   
   .page-edit
     .last-updated
