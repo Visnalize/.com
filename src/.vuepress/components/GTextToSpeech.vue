@@ -20,7 +20,8 @@ export default {
     };
   },
   watch: {
-    $route() {
+    $route(to, from) {
+      if (to.path === from.path) return;
       // on route change
       speechSynthesis.cancel();
       this.isSpeaking = false;
@@ -44,7 +45,7 @@ export default {
       const contentSelectors = ".content__default p, .content__default ul";
       const contentElems = this.$root.$el.querySelectorAll(contentSelectors);
       const texts = Array.from(contentElems).map((p) => p.textContent);
-      const utterance = new SpeechSynthesisUtterance(texts.join("."));
+      const utterance = new SpeechSynthesisUtterance(texts.join(""));
       utterance.onstart = () => (this.isSpeaking = true);
       utterance.onend = () => (this.isSpeaking = false);
       utterance.onpause = () => {
