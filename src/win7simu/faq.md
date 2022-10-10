@@ -49,7 +49,7 @@ Yes. If the feature is not rejected above. You can comment your request below in
 
 ### Can I use this simulator as a launcher/home screen?
 
-No. The launcher/home screen setting was enabled with version [2.10.0](./changelog.md#v2-10-0), however, due to instability, the simulator was then suffered from declined rating with users complaining that it harmed their devices, therefore, this setting is disabled from version [2.11.1](./changelog.md#v2-11-1) onwards.
+No. The launcher/home screen setting was enabled with version [2.10.0](./changelog.md#_2-10-0), however, due to instability, the simulator was then suffered from declined rating with users complaining that it harmed their devices, therefore, this setting is disabled from version [2.11.1](./changelog.md#_2-11-1) onwards.
 
 ### Does this simulator work offline?
 
@@ -94,9 +94,13 @@ No, I'm afraid. I have been spending a lot of time and effort to develop and mai
 
 No, I'm afraid. And there is no way to support Android versions older than 6.0 due to certain technical limitations that cannot be resolved.
 
-### The simulator only shows a black screen although my device's Android version is later than 6.0. What happens?
+### The simulator only shows a black screen on my device. What should I do?
 
-Unfortunately, if your device's Android version is already 6.0+ and the simulator is not working for you, please use the [web version](https://win7simu.visnalize.com/) instead. It is due to a technical difficulty that the simulator relies on Android Webview to operate, there may be chances that even though your Android is new, it still uses an old version of the Webview.
+Please make sure you have the latest version of [Android WebView](https://play.google.com/store/apps/details?id=com.google.android.webview) installed. It is an important piece that allows Win7 Simu to operate normally on your device. If that didn't solve the problem, please use the [web version](https://win7simu.visnalize.com/) instead.
+
+### My games/apps are not showing in the Start Menu. What's the problem?
+
+This happens on devices with Android 12 or later. Unfortunately, from Android 12+, Google restricts access to the packages (games, apps, etc.) on user devices. There's nothing that can be done about it (see this [version changelog](./changelog.md#_2-23-1)).
 
 ### Any plan to publish this simulator to App Store?
 

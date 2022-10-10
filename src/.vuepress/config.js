@@ -61,6 +61,7 @@ module.exports = {
         "windows-resources",
         "building-visnalize-com",
         "about-the-ads",
+        "building-win7-simu",
       ],
     },
     smoothScroll: true,
@@ -90,6 +91,13 @@ module.exports = {
       { selector: ".page :not(a) > img", options: { margin: 12 } },
     ],
   ],
+
+  markdown: {
+    extendMarkdown: (md) => {
+      md.use(require("markdown-it-video"));
+      md.use(require("markdown-it-task-lists"));
+    },
+  },
 
   globalUIComponents: ["GSiteSettings"],
 };

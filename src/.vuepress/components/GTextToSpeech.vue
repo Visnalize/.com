@@ -42,10 +42,11 @@ export default {
         return;
       }
 
-      const contentSelectors = ".content__default p, .content__default ul";
+      const selectors = [".content__default h1", "h2", "h3", "p", "li"];
+      const contentSelectors = selectors.join(",.content__default ");
       const contentElems = this.$root.$el.querySelectorAll(contentSelectors);
       const texts = Array.from(contentElems).map((p) => p.textContent);
-      const utterance = new SpeechSynthesisUtterance(texts.join(""));
+      const utterance = new SpeechSynthesisUtterance(texts.join(". "));
       utterance.onstart = () => (this.isSpeaking = true);
       utterance.onend = () => (this.isSpeaking = false);
       utterance.onpause = () => {
