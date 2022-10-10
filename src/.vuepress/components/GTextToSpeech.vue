@@ -60,7 +60,7 @@ export default {
         this.isPaused = false;
         this.isSpeaking = true;
       };
-      utterance.on;
+      speechSynthesis.cancel(); // https://stackoverflow.com/a/58775876/3916702
       speechSynthesis.speak(utterance);
     },
   },

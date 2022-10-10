@@ -24,7 +24,7 @@ button {
   border-radius: 50%;
   color: $textColor;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: all 0.2s;
 
   &:hover {
     transform: scale(1.15);
