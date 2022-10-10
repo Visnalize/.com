@@ -14,7 +14,7 @@ export default {
   components: { AControl },
   data() {
     return {
-      isSupported: "speechSynthesis" in window,
+      isSupported: true,
       isSpeaking: false,
       isPaused: false,
     };
@@ -27,6 +27,9 @@ export default {
       this.isSpeaking = false;
       this.isPaused = false;
     },
+  },
+  mounted() {
+    this.isSupported = "speechSynthesis" in window;
   },
   methods: {
     toggle() {
