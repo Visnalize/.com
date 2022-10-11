@@ -70,6 +70,10 @@ module.exports = {
 
   plugins: [
     [
+      "@vuepress/medium-zoom",
+      { selector: ".page :not(a) > img", options: { margin: 12 } },
+    ],
+    [
       "autometa",
       {
         canonical_base: "https://visnalize.com",
@@ -86,10 +90,7 @@ module.exports = {
       },
     ],
     ["disqus", { shortname: "visnalize" }],
-    [
-      "@vuepress/medium-zoom",
-      { selector: ".page :not(a) > img", options: { margin: 12 } },
-    ],
+    ["text-to-speech"],
   ],
 
   markdown: {
