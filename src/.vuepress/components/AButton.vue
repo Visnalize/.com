@@ -1,5 +1,7 @@
 <template>
-  <a v-if="!!href" :href="href" class="a-button"><slot /></a>
+  <router-link v-if="!!href" :to="href" class="a-button">
+    <slot />
+  </router-link>
   <button v-else @click="$emit('click')" class="a-button"><slot /></button>
 </template>
 

@@ -7,10 +7,7 @@ description: A recreation of the Windows 7 operating system on the Web/Android p
 
 # ![win7simu](/assets/win7simu-logo.png) Win7 Simu
 
-<div class="social">
-  <comment-count />
-  <social-share />
-</div>
+<a-social />
 
 **Win7 Simu** is a recreation of the Windows 7 operating system on the Web/Android platform. It is built out of pure joy and nostalgia for the sake of reliving the good old time with the elegant Aero and Glassy interface.
 

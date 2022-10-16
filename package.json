@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.4",
     "@vuepress/plugin-medium-zoom": "^1.9.7",
     "gh-pages": "^3.2.3",
     "markdown-it-task-lists": "^2.1.1",
@@ -20,6 +21,7 @@
     "vuepress": "^1.5.3",
     "vuepress-plugin-autometa": "^0.1.13",
     "vuepress-plugin-disqus": "^0.2.0",
+    "vuepress-plugin-first-created": "^0.0.1",
     "vuepress-plugin-social-share": "^1.0.0",
     "vuepress-plugin-text-to-speech": "^1.0.3"
   }

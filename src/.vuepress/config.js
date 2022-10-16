@@ -56,19 +56,33 @@ module.exports = {
     sidebar: {
       "/win7simu/": "auto",
       "/brick1100/": "auto",
-      "/blog/": [
-        "",
-        "windows-resources",
-        "building-visnalize-com",
-        "about-the-ads",
-        "building-win7-simu",
-      ],
+      "/blog/": false,
     },
     smoothScroll: true,
     lastUpdated: true,
   },
 
   plugins: [
+    [
+      "@vuepress/blog",
+      {
+        sitemap: {
+          hostname: "https://visnalize.com",
+        },
+        feed: {
+          canonical_base: "https://visnalize.com",
+        },
+        frontmatters: [
+          {
+            id: "tag",
+            keys: ["tag", "tags"],
+            path: "/blog/tag/",
+            layout: "BlogList",
+            scopeLayout: "BlogList",
+          },
+        ],
+      },
+    ],
     [
       "@vuepress/medium-zoom",
       { selector: ".page :not(a) > img", options: { margin: 12 } },
@@ -91,6 +105,7 @@ module.exports = {
     ],
     ["disqus", { shortname: "visnalize" }],
     ["text-to-speech"],
+    ["first-created"],
   ],
 
   markdown: {

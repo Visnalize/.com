@@ -1,16 +1,17 @@
 ---
 layout: All
 description: A couple of things about ads and how I implement them within my websites and apps
+sidebar: auto
+tag: tips
 ---
 
 # About the ads and how I implement them
 
-<div class="social">
-  <comment-count />
-  <social-share />
-</div>
+<m-blog-meta />
 
-<img class="banner" src="./img/ads.svg" alt="Ad Promo" />
+![Ad promo](https://images.unsplash.com/photo-1546142711-1e28c0540deb?auto=format&fit=crop&w=740&q=80)
+
+_Cover image by Fredrick Suwandi via [Unsplash](https://unsplash.com/photos/csXTAyTiESo)_
 
 Ads, the thing we all hate as when we are trying to enjoy something, they appear and kill the whole experience. Yes, I said "we" because I myself also hate it, but let's be honest and admit the fact that they generate incomes and one can hardly fight against this temptation, or even go too far as abusing it to earn as much as possible when this power is given and may be used at one's will. Admittedly, I'm that type of guy. Or if you are one of the nice people in my audience, you may consider me having some morals left for not flooding your screen with ads.
 
@@ -60,7 +61,7 @@ So as mentioned above, due to the nature of my app, I picked Banner and Intersti
 
 ![Win7 Simu's ad formats](./img/my-ad-formats.png)
 
-The banner ad was placed at the top of the screen, with a refresh rate set to auto - typically a new ad is served after around 25 to 30 seconds. This one earned me a few cents everyday and I would say that's a fairly good amount to be happy about. However, considered that it occupied quite some space at the top which can prevent the user from enjoying an OS in fullscreen and poorly affect the experience, I decided to make a sacrifice by removing it from the app. Therefore, from [v2.16.0](/win7simu/changelog.html#v2-16-0) onwards, the banner ads are gone and you may enjoy the app to your fullest.
+The banner ad was placed at the top of the screen, with a refresh rate set to auto - typically a new ad is served after around 25 to 30 seconds. This one earned me a few cents everyday and I would say that's a fairly good amount to be happy about. However, considered that it occupied quite some space at the top which can prevent the user from enjoying an OS in fullscreen and poorly affect the experience, I decided to make a sacrifice by removing it from the app. Therefore, from [v2.16.0](/win7simu/changelog.html#2-16-0) onwards, the banner ads are gone and you may enjoy the app to your fullest.
 
 The interstitial ad is still kept as a motivation for me to constantly maintain and work on the project, and also bring you more cool updates. And I didn't forget to carefully consider the frequency and placement for this type of ad so that you won't be interrupted so much and get annoyed. But of course, no matter what I try, I fully understand that there are always people who prefer criticism and will never be happy with such effort. I sure hope if you are not one of these people, please understand and keep supporting me.
 
@@ -69,5 +70,7 @@ The interstitial ad is still kept as a motivation for me to constantly maintain 
 You're probably seeing a few ads already in this blog post, and you can trust me when I say this is as many as I wanted to implement, not more. I used the responsive display ads by Adsense and tried to place the ads in the least intrusive way that hopefully blend with your reading experience. One last useful hint for those who also want to implement Adsense in their Vuepress blogs just like mine, you can refer to my site's source code which I made public [on Github](https://github.com/Visnalize/visnalize.github.io/tree/dev).
 
 And this would be all I wanted to share in this blog, hope you had a good time reading it and somehow got some useful pieces of info with you as well.
+
+<m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
 <google-ads />

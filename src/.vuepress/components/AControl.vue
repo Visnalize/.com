@@ -19,7 +19,7 @@ button {
   height: 24px;
   padding: 12px;
   box-sizing: unset;
-  background: #eaeaea;
+  background: $bgColor;
   border: none;
   border-radius: 50%;
   color: $textColor;
@@ -37,7 +37,7 @@ button {
   }
 
   .is-dark &:not(.active) {
-    background: #292929;
+    background: $bgColorDark;
     color: #aaa;
   }
 }

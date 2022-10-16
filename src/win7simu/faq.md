@@ -6,10 +6,7 @@ layout: WithComments
 
 # Frequently Asked Questions
 
-<div class="social">
-  <comment-count />
-  <social-share />
-</div>
+<a-social />
 
 ::: warning Note
 This page is updated regularly in accordance with the user's queries from all sources (emails, Play Store reviews, YouTube comments). Please check back to this before asking any question as the question will not be responded if it's already included here.

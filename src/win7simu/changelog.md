@@ -5,9 +5,7 @@ description: Curious about the changes done through versions of the Win7 Simu ap
 
 # Changelog
 
-<div class="social">
-  <social-share />
-</div>
+<a-social hideCommentCount />
 
 ## 2.23.0
 

@@ -1,14 +1,17 @@
 ---
 layout: All
 description: Read about the progress and how I built the visnalize.com website for my own brand
+sidebar: auto
+tag: technical
 ---
 
 # How I built visnalize.com
 
-<div class="social">
-  <comment-count />
-  <social-share />
-</div>
+<m-blog-meta />
+
+![Code website](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=740&q=80)
+
+_Cover image by Ilya Pavlov via [Unsplash](https://unsplash.com/photos/OqtafYT5kTw)_
 
 So, after a year or so (since I released the [Win7 Simu](/win7simu/about.md) app), I decided to build a website for my own brand. The goal is to have a home for all of the information, my work, and probably, more of the useless stuff that I want to share. And in this post, I'm documenting some of the progress of how I made this website.
 
@@ -112,5 +115,7 @@ To sum up, all the steps I did to get this site up and running:
 - Finally, deploy the site to a host using [Github Pages](https://pages.github.com)
 
 The source code I made public in [this branch](https://github.com/Visnalize/visnalize.github.io/tree/dev) of the repository, you can explore or dissect however you like.
+
+<m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
 <google-ads />

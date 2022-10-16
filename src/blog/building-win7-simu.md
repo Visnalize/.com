@@ -1,16 +1,18 @@
 ---
 layout: All
 description: Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene
+sidebar: auto
+tag:
+  - win7-simu
+  - sharing
+  - technical
 ---
 
 # How I built Win7 Simu
 
-<div class="social">
-  <comment-count />
-  <social-share />
-</div>
+<m-blog-meta />
 
-![Win7 Simu screenshot](https://play-lh.googleusercontent.com/_uBuSE7ujyhBOZQav0yLTGLXKLS0sw5dLBi1VMH05BDCcr2jZNk9pAii0hGiFriZoL2b=w2560-h1440-rw)
+![Win7 Simu screenshot](https://play-lh.googleusercontent.com/_uBuSE7ujyhBOZQav0yLTGLXKLS0sw5dLBi1VMH05BDCcr2jZNk9pAii0hGiFriZoL2b=w740)
 
 Today is October 10, 2022, [Win7 Simu](/win7simu/about.md) has nearly reached __5M downloads__ on [Play Store](https://play.google.com/store/apps/details?id=com.visnalize.win7simu) ever since it was released on February 13, 2020 (4.4M to be exact, but who cares). As an early celebration of this success (in silence, as I have always been), I decided to write another blog post, to have a reflection on my journey with it so far, and to share my experience, my lessons learned, and some boring technical stuff that you may find somewhat interesting and useful, or not. So sit tight, read through my journey, and hope you will enjoy it.
 
@@ -82,5 +84,7 @@ As the project has been showing potential since, there are a couple of things I 
 With all that said, I'm making no promise that I would be able to implement all the features that have been suggested so far, or that I would be able to achieve any of the dot points above in a short span of time. If anything, I may only assure you that I will keep working on this project as long as I can. And if I may ask you, please keep accompanying me in my journey and stay tuned for future updates of Win7 Simu or any future products that I will be able to bring forward.
 
 _Thank you for being part of my journey. Sincerely._
+
+<m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
 <google-ads />

@@ -1,14 +1,19 @@
 ---
 layout: All
 description: Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.
+sidebar: auto
+tag:
+  - win7-simu
+  - tips
 ---
 
 # How to get Windows resources
 
-<div class="social">
-  <comment-count />
-  <social-share />
-</div>
+<m-blog-meta />
+
+![Windows OS](https://images.unsplash.com/photo-1624571409108-e9a41746af53?auto=format&fit=crop&w=740&q=80)
+
+_Cover image by Windows via [Unsplash](https://unsplash.com/photos/me4HT8AX4Ls)_
 
 In [Win7 Simu](/win7simu/about.md), I use several resources from the Windows operating systems. These resources include the **wallpapers, audio files, and icons**. There is no single source that provides all of these, in fact, to gather up, I have to do a lot of searching, dig through different Windows library files, try several methods, and use a variety of tools for decompiling and conversion. It was not easy, if not time-consuming, and tedious. So here in this blog, I'm documenting some steps and sharing a little bit of how I do it.
 
@@ -69,5 +74,7 @@ So to sum up, all the steps and tools to get this job done:
   * Dll files for different Windows versions can be found at: [dll-files.com](https://www.dll-files.com/).
   * Suggested tool for extraction: [IconsExtract](https://www.nirsoft.net/utils/iconsext.html).
   * Optionally convert the .ico format to other image formats using [this tool](https://www.aconvert.com/image/).
+
+<m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
 <google-ads />
