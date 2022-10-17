@@ -27,8 +27,4 @@ export default {
 };
 </script>
 
-<style lang="stylus">
-.page-edit {
-  display: none;
-}
-</style>
+<style lang="stylus"></style>

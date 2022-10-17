@@ -20,7 +20,7 @@ export default {
   align-items: center;
   justify-content: flex-end;
 
-  /deep/ &-share {
+  >>> &-share {
     &:hover .social-share-btn {
       color: $accentColor;
     }

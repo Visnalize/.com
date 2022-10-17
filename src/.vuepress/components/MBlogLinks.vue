@@ -34,7 +34,7 @@ export default {
 <style lang="stylus" scoped>
 .blog-links {
   display: grid;
-  gap: 2rem 1rem;
+  gap: 3rem 2rem;
   list-style: none;
   padding: 0;
 

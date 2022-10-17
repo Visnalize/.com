@@ -1,5 +1,5 @@
 ---
-layout: All
+layout: BlogPost
 description: Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene
 sidebar: auto
 tag:

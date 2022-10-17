@@ -1,5 +1,5 @@
 ---
-layout: All
+layout: BlogPost
 description: A couple of things about ads and how I implement them within my websites and apps
 sidebar: auto
 tag: tips

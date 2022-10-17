@@ -1,11 +1,11 @@
 <template>
-  <all noSideAds />
+  <layout noSideAds />
 </template>
 
 <script>
-import All from "./All.vue";
+import Layout from "./Layout.vue";
 
 export default {
-  components: { All },
+  components: { Layout },
 };
 </script>

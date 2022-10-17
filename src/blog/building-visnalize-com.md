@@ -1,5 +1,5 @@
 ---
-layout: All
+layout: BlogPost
 description: Read about the progress and how I built the visnalize.com website for my own brand
 sidebar: auto
 tag: technical

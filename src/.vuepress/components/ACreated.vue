@@ -1,7 +1,7 @@
 <template>
   <div class="first-created" title="Created date" v-if="createdDate">
     <v-icon name="clock" />
-    <i>{{ createdDate }}</i>
+    <span>{{ createdDate }}</span>
   </div>
 </template>
 

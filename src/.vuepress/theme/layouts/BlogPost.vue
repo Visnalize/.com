@@ -1,5 +1,5 @@
 <template>
-  <layout noComments />
+  <layout />
 </template>
 
 <script>
@@ -9,3 +9,9 @@ export default {
   components: { Layout },
 };
 </script>
+
+<style lang="stylus" scoped>
+>>>.page-edit {
+  display: none;
+}
+</style>
