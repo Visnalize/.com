@@ -6,7 +6,7 @@
           <img :src="getImage(blog)" :alt="blog.title" />
         </span>
         <h2>{{ blog.title }}</h2>
-        <a-created />
+        <a-created :date="blog.firstCreated" />
         <p>{{ blog.frontmatter.description }}</p>
       </router-link>
       <m-blog-tag-list :tags="blog.frontmatter.tag" />

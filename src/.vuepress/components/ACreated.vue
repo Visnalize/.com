@@ -1,12 +1,21 @@
 <template>
-  <div class="first-created" title="Created date" v-if="$page.firstCreated">
+  <div class="first-created" title="Created date" v-if="createdDate">
     <v-icon name="clock" />
-    <i>{{ $page.firstCreated }}</i>
+    <i>{{ createdDate }}</i>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    date: String,
+  },
+  computed: {
+    createdDate() {
+      return this.date || this.$page.firstCreated;
+    },
+  },
+};
 </script>
 
 <style lang="stylus" scoped>
