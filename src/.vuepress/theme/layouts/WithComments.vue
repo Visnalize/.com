@@ -1,11 +1,11 @@
 <template>
-  <layout noSideAds />
+  <visnalize noSideAds />
 </template>
 
 <script>
-import Layout from "./Layout.vue";
+import Visnalize from "./Visnalize.vue";
 
 export default {
-  components: { Layout },
+  components: { Visnalize },
 };
 </script>
