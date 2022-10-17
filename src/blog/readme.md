@@ -1,4 +1,4 @@
 ---
 layout: BlogList
-title: 📝 Blogs
+title: 📝 Blog
 ---

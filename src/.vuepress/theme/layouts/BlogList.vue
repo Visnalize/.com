@@ -2,7 +2,7 @@
   <parent-layout>
     <template #page-top>
       <div class="theme-default-content content__default">
-        <h1>📝 Blogs</h1>
+        <h1>📝 Blog</h1>
         <m-blog-tag-nav :tags="tags" />
         <m-blog-links :blogs="blogs" />
         <google-ads />

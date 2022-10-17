@@ -43,7 +43,7 @@ module.exports = {
         text: "📵 Brick 1100",
         items: [{ text: "About", link: "/brick1100/about" }],
       },
-      { text: "📝 Blogs", link: "/blog/" },
+      { text: "📝 Blog", link: "/blog/" },
       { text: "🙋‍♂️ About", link: "/about" },
       {
         text: "🌏 Social",
