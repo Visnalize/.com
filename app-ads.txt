@@ -1,0 +1,20 @@
+google.com, pub-5904323684803247, DIRECT, f08c47fec0942fa0
+uis.mobfox.com, SM_744, DIRECT, 5529a3d1f59865be
+applovin.com, 5dafb2d1ede14462c9663ed8a9edeaa3, DIRECT
+
+appnexus.com,2637,RESELLER,f5ab79cb980f11d1
+appnexus.com,2850,RESELLER,f5ab79cb980f11d1
+openx.com,539249210,RESELLER,6a698e2ec38604c6
+pubmatic.com,156451,RESELLER,5d62403b186f2ace
+rubiconproject.com,17494,RESELLER,0bfd66d529a55807
+xad.com,589,RESELLER,81cbf0a75a5e0e9a
+Inmobi.com,a5e661acdc384e91a79a58eb3418e99f,RESELLER,83e75a7ae333ca9d
+
+adcolony.com, 5d8cbf6671c93a42, RESELLER, 1ad675c9de6b5176
+rubiconproject.com, 16356, RESELLER, 0bfd66d529a55807
+openx.com, 540785403, RESELLER, 6a698e2ec38604c6
+indexexchange.com, 191086, RESELLER
+pubmatic.com, 158862, RESELLER, 5d62403b186f2ace
+pubnative.net, 1007170, RESELLER, d641df8625486a7b
+Verve.com, 15290, RESELLER, 0c8f5958fc2d6270
+indexexchange.com, 191086, RESELLER
