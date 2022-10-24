@@ -5,26 +5,12 @@
     "feed_url": "https://visnalize.com/feed.json",
     "items": [
         {
-            "id": "https://visnalize.com/blog/building-visnalize-com.html",
-            "url": "https://visnalize.com/blog/building-visnalize-com.html",
-            "title": "How I built visnalize.com",
-            "summary": "Read about the progress and how I built the visnalize.com website for my own brand",
-            "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2022-10-24T08:44:37.198Z"
-        },
-        {
-            "id": "https://visnalize.com/blog/",
-            "url": "https://visnalize.com/blog/",
-            "title": "📝 Blog",
-            "date_modified": "2022-10-24T08:44:37.199Z"
-        },
-        {
             "id": "https://visnalize.com/blog/load-any-websites-in-iframes.html",
             "url": "https://visnalize.com/blog/load-any-websites-in-iframes.html",
             "title": "How to get iframes to load any websites",
             "summary": "The most effective way to get iframes embedded in your web apps to load any websites",
             "image": "https://visnalize.com/assets/covers/load-any-websites-in-iframes.png",
-            "date_modified": "2022-10-24T08:44:37.200Z"
+            "date_modified": "2022-10-24T10:14:30.805Z"
         },
         {
             "id": "https://visnalize.com/blog/about-the-ads.html",
@@ -32,7 +18,7 @@
             "title": "About the ads and how I implement them",
             "summary": "A couple of things about ads and how I implement them within my websites and apps",
             "image": "https://images.unsplash.com/photo-1546142711-1e28c0540deb?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2022-10-24T08:44:37.200Z"
+            "date_modified": "2022-10-24T10:14:30.805Z"
         },
         {
             "id": "https://visnalize.com/blog/building-win7-simu.html",
@@ -40,7 +26,21 @@
             "title": "How I built Win7 Simu",
             "summary": "Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene",
             "image": "https://visnalize.com/assets/covers/building-win7-simu.jpg",
-            "date_modified": "2022-10-24T08:44:37.200Z"
+            "date_modified": "2022-10-24T10:14:30.805Z"
+        },
+        {
+            "id": "https://visnalize.com/blog/",
+            "url": "https://visnalize.com/blog/",
+            "title": "📝 Blog",
+            "date_modified": "2022-10-24T10:14:30.805Z"
+        },
+        {
+            "id": "https://visnalize.com/blog/building-visnalize-com.html",
+            "url": "https://visnalize.com/blog/building-visnalize-com.html",
+            "title": "How I built visnalize.com",
+            "summary": "Read about the progress and how I built the visnalize.com website for my own brand",
+            "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=740&q=80",
+            "date_modified": "2022-10-24T10:14:30.806Z"
         },
         {
             "id": "https://visnalize.com/blog/windows-resources.html",
@@ -48,7 +48,7 @@
             "title": "How to get Windows resources",
             "summary": "Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.",
             "image": "https://images.unsplash.com/photo-1624571409108-e9a41746af53?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2022-10-24T08:44:37.200Z"
+            "date_modified": "2022-10-24T10:14:30.806Z"
         }
     ]
 }
