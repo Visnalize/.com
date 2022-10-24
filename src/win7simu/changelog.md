@@ -42,6 +42,10 @@ __Web__
 - Improved user experience with ads (removed the giant banner ad)
 - Fixed button color on Safari
 
+### 2.23.2
+
+- Improved web browsers (IE, Chrome) behavior
+
 ## 2.22.0
 
 __Core__
