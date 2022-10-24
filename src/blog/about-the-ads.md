@@ -19,7 +19,7 @@ Sounds more like a confession than a blog so far, eh? Let's put that aside becau
 
 ## Choosing the Ad Network
 
-![Ad Networks - AdMob, AppLovin, Adsense](./img/ad-networks.png)
+![Ad Networks - AdMob, AppLovin, Adsense](./img/about-the-ads/ad-networks.png)
 
 Probably the least thing that bothered me when I came up with the idea to implement ads in my simulator. Despite a vast range of ad networks available, I just went straight for [AdMob](https://admob.google.com/home/) due to its dominating presence all around the world. Indeed it's dominating for various reasons. From the registration to implementation, it was incredibly easy that I hardly found any time struggling with it. The documentation is well structured and provides all the instructions I would ever need. It even offered the mediation feature which combines the AdMob network with other third-party ad networks I registered, and picks the highest paid ad among these networks and display to the users, my revenue is then further boosted (well, not so much as you're imagining).
 
@@ -35,7 +35,7 @@ Aside from these choices of mine, there are many more if you search them up, but
 
 Each ad network offers a different set of ad formats that you can implement. But in general, the most basic ones are **Banner**, **Interstitial** and **Rewarded**. Other formats just get their behaviors altered out of these base formats. Just understanding these 3 is already sufficient to pick the ones suitable for your app.
 
-![AdMob Ad Formats](./img/ad-formats-admob.png)
+![AdMob Ad Formats](./img/about-the-ads/ad-formats-admob.png)
 
 To pick the ad format for your own, it's obviously also important to know which one provides more revenue, hence for your reference, it is: **Rewarded > Interstitial > Banner**. Rewarded ads bring the most revenue out of these, as when a user opt-in to watch an ad in exchange for something in-app, it is usually a 30-second or longer video ad. While Interstitial ads are a bit less in terms of revenue, they are still much more compared to Banners, but they also come with the paid price of user experience and are much of a means for abusing or suffocating the user with ads.
 
@@ -45,7 +45,7 @@ For my **Win7 Simu**, I picked Banner and Interstitial as these two are more sui
 
 For this website and the web version of **Win7 Simu**, so far I have only considered and implemented **Adsense**, therefore I'm only aware of the below ad formats from Adsense.
 
-![Adsense Ad Formats](./img/ad-formats-adsense.png)
+![Adsense Ad Formats](./img/about-the-ads/ad-formats-adsense.png)
 
 However, out of these 4, I only needed to use **Display Ad**, which is also the format recommended by Google. The Display ad offers a responsive size that works anywhere you might cram it to, but of course the space should not be too small, otherwise there will be no ad available for serving. It's also possible to let Adsense setup the ads for you without any manual work by enabling the **Auto Ads**, but personally, I prefer doing things by my own for which I will have full controls.
 
@@ -59,7 +59,7 @@ In this section, I'm not going into so much detail as to how to implement the ad
 
 So as mentioned above, due to the nature of my app, I picked Banner and Interstitial as my ad formats to implement.
 
-![Win7 Simu's ad formats](./img/my-ad-formats.png)
+![Win7 Simu's ad formats](./img/about-the-ads/my-ad-formats.png)
 
 The banner ad was placed at the top of the screen, with a refresh rate set to auto - typically a new ad is served after around 25 to 30 seconds. This one earned me a few cents everyday and I would say that's a fairly good amount to be happy about. However, considered that it occupied quite some space at the top which can prevent the user from enjoying an OS in fullscreen and poorly affect the experience, I decided to make a sacrifice by removing it from the app. Therefore, from [v2.16.0](/win7simu/changelog.html#2-16-0) onwards, the banner ads are gone and you may enjoy the app to your fullest.
 

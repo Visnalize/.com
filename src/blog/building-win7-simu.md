@@ -12,7 +12,7 @@ tag:
 
 <m-blog-meta />
 
-![Win7 Simu screenshot](https://play-lh.googleusercontent.com/_uBuSE7ujyhBOZQav0yLTGLXKLS0sw5dLBi1VMH05BDCcr2jZNk9pAii0hGiFriZoL2b=w740)
+![Win7 Simu screenshot](/assets/covers/building-win7-simu.jpg)
 
 Today is October 10, 2022, [Win7 Simu](/win7simu/about.md) has nearly reached __5M downloads__ on [Play Store](https://play.google.com/store/apps/details?id=com.visnalize.win7simu) ever since it was released on February 13, 2020 (4.4M to be exact, but who cares). As an early celebration of this success (in silence, as I have always been), I decided to write another blog post, to have a reflection on my journey with it so far, and to share my experience, my lessons learned, and some boring technical stuff that you may find somewhat interesting and useful, or not. So sit tight, read through my journey, and hope you will enjoy it.
 
@@ -49,6 +49,8 @@ In summary:
 There are several more open-sourced packages I used to build Win7 Simu, but the main tech stack is there. So yep, that may be to your surprise, despite being an Android app, the project was built from the ground using entirely web technologies, from the most fundamental stuff like HTML, CSS, JS to something a little more advanced such as Vue or Sass.
 
 __Vue__ has been such an elegant and developer-friendly framework to use, saved me a bunch of time from all the code structuring, refactoring, and scaling. __Firebase__ is extremely useful for people who lack the interest and skillset in database/back-end development like me to easily deal with that stuff and integrate into the project with minimal effort. To transform a web app to an Android app, prior to knowing about __Capacitor__, I tended to a rough technique called __Hybrid app development__ and wrote my own JS interfaces in Java to bridge the web codebase with the Android native environment. It worked, but as an amateur, there were so many flaws and room for improvement in my code, then after knowing of Capacitor's existence, which is basically of the same principle but better in possible many ways, I transitioned into using Capacitor in no time, and the app has been working and growing with fewer problems.
+
+<a id="iframe-issue" />
 
 I would also like to take this chance to unveil some technical difficulties related to an issue that a lot of users have been complaining about, which I included with the [FAQs](/win7simu/faq.html): __the unstable web browsers__. As you have known, Win7 Simu is composed of web techs, it is ultimately just a website/web app that runs inside a web browser/Webview, at this point, it is not possible for me to come up with a way to implement something like a web browser that runs inside your web browser/Webview without the help of an [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe), but due to security concerns, iframes are blocked from accessing the majority of websites. Therefore, I have to host and run a server that pulls website content and injects it into the iframe every time a user uses the simulator's browser. As a result, all requests are bottlenecked to this server and may become overloaded anytime when the number of simultaneous users is way too high. This is a limitation of either the web techs, or even my skillset, but I'm afraid to say, it is what it is. If you happen to know a better solution, I'm more than happy to learn about it.
 

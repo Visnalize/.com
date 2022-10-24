@@ -1,0 +1,57 @@
+[
+  {
+    "createdBy": "H2Z5XLxlX6R67NSxLuPQLbeg0WH2",
+    "creationDate": 1665680086864,
+    "currentOwner": "H2Z5XLxlX6R67NSxLuPQLbeg0WH2",
+    "description": "",
+    "groupId": "",
+    "id": "Headers_nbukp",
+    "isSample": false,
+    "lastModified": 1666547545920,
+    "lastModifiedBy": "H2Z5XLxlX6R67NSxLuPQLbeg0WH2",
+    "modificationDate": 1665853777997,
+    "name": "Win7 Simu Browsers",
+    "objectType": "rule",
+    "pairs": [
+      {
+        "id": "twh5n",
+        "modifications": {
+          "Request": [],
+          "Response": [
+            {
+              "header": "X-Frame-Options",
+              "id": "5jvwb",
+              "type": "Remove",
+              "value": ""
+            },
+            {
+              "header": "Content-Security-Policy",
+              "id": "z7v1q",
+              "type": "Remove",
+              "value": ""
+            }
+          ]
+        },
+        "source": {
+          "filters": [
+            {
+              "pageUrl": {
+                "operator": "Contains",
+                "value": "win7simu.visnalize.com"
+              },
+              "resourceType": [
+                "sub_frame"
+              ]
+            }
+          ],
+          "key": "Url",
+          "operator": "Matches",
+          "value": "/^(?!https?:\\/\\/win7simu)/gi"
+        }
+      }
+    ],
+    "ruleType": "Headers",
+    "status": "Active",
+    "version": 2
+  }
+]
