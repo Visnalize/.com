@@ -7,7 +7,7 @@ description: Curious about the changes done through versions of the Win7 Simu ap
 
 <a-social hideCommentCount />
 
-### 2.24.0
+## 2.24.0
 
 __Core__
 
