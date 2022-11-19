@@ -7,6 +7,17 @@ description: Curious about the changes done through versions of the Win7 Simu ap
 
 <a-social hideCommentCount />
 
+### 2.24.0
+
+__Core__
+
+- Added Magnifier
+- Improved visual accuracy of Windows elements (buttons, window controls, toolbar, context menu etc.)
+
+__Android__
+
+- Fixed an issue with some games not loading
+
 ## 2.23.0
 
 __Core__
