@@ -85,3 +85,9 @@ footer {
   text-align: center;
 }
 </style>
+
+<style lang="stylus">
+.home .footer {
+  padding: 0;
+}
+</style>
