@@ -7,6 +7,14 @@ description: Curious about the changes done through versions of the Win7 Simu ap
 
 <a-social hideCommentCount />
 
+## 2.25.0
+
+- Desktop shortcuts are now moveable (you now need to double tap on a shortcut to open)
+- Added macOS boot + login screen
+- Added shutdown button on Windows 7/Vista login screen
+- Improved translation accuracy
+- Fixed an issue with the Shutdown menu commands not working in Win2k and Win95 themes
+
 ## 2.24.0
 
 __Core__
