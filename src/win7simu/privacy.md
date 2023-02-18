@@ -1,6 +1,7 @@
 ---
 title: Win7 Simu Privacy Policy
 description: Worry about your privacy while using the Win7 Simu app? This page eases your concern
+sidebar: auto
 ---
 
 # Privacy Policy

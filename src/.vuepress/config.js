@@ -35,8 +35,17 @@ module.exports = {
         items: [
           { text: "About", link: "/win7simu/about" },
           { text: "Changelog", link: "/win7simu/changelog" },
-          { text: "FAQ", link: "/win7simu/faq" },
+          { text: "FAQs", link: "/win7simu/faq" },
           { text: "Privacy Policy", link: "/win7simu/privacy" },
+          {
+            text: "Guides",
+            items: [
+              {
+                text: "Theme Studio",
+                link: "/win7simu/themestudio/",
+              },
+            ],
+          },
         ],
       },
       {
@@ -54,7 +63,12 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/win7simu/": "auto",
+      "/win7simu/themestudio/": [
+        ["", "Introduction"],
+        "quick-guide",
+        "in-depth-guide",
+        ["changelog", "Changelog"],
+      ],
       "/brick1100/": "auto",
       "/blog/": false,
     },

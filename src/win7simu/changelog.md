@@ -1,11 +1,18 @@
 ---
 title: Win7 Simu Changelog
 description: Curious about the changes done through versions of the Win7 Simu app? Check the log at this page
+sidebar: auto
 ---
 
 # Changelog
 
 <a-social hideCommentCount />
+
+## 2.26.0
+
+- Added [Theme Studio](./themestudio/intro.md)
+- Fixed screensaver not working for user accounts
+- Improved Snipping Tool's quality
 
 ## 2.25.0
 

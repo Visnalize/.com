@@ -2,6 +2,7 @@
 title: Win7 Simu Frequently Asked Questions
 description: Have questions in regards to the Win7 Simu app? This page answers them, immediate and straightforward
 layout: WithComments
+sidebar: auto
 ---
 
 # Frequently Asked Questions
