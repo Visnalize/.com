@@ -10,7 +10,7 @@ sidebar: auto
 
 ## 2.26.0
 
-- Added [Theme Studio](./themestudio/intro.md)
+- Added [Theme Studio](./themestudio/)
 - Fixed screensaver not working for user accounts
 - Improved Snipping Tool's quality
 
