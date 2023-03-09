@@ -14,6 +14,16 @@ sidebar: auto
 - Fixed screensaver not working for user accounts
 - Improved Snipping Tool's quality
 
+### 2.26.1
+
+- Added Window mode for Snipping Tool
+- Fixed the Leaked_Taskbar BSOD issue for Windows 11 theme
+- Fixed broken Windows 10 Start menu
+
+### 2.26.2
+
+- Fixed missing desktop background & icons
+
 ## 2.25.0
 
 - Desktop shortcuts are now moveable (you now need to double tap on a shortcut to open)
@@ -32,6 +42,8 @@ __Core__
 __Android__
 
 - Fixed an issue with some games not loading
+
+<google-ads />
 
 ## 2.23.0
 

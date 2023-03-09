@@ -5,6 +5,8 @@ sidebarDepth: 2
 
 # In-depth guide
 
+<a-social />
+
 This page aims to walk you through __Theme Studio__ in an in-depth manner, everything you need to know to craft your own themes for Win7 Simu. As a prerequisite, it is required that you have some ground knowledge of __HTML__ and __CSS__ to be able to follow along easier, otherwise, here are some good free resources to learn:
 
 * MDN ([HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) - [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS))

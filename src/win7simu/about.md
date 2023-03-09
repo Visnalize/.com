@@ -44,6 +44,7 @@ Can access local/native apps | ✅ | ❌
 Sync settings with online accounts | ✅ | ✅
 Multi-theming support | ✅ | ✅
 Multi-language support | ✅ | ✅
+System notifications | ✅ | ❌
 
 <a name="cross-platform">*</a> It doesn't matter if the device is Android, iOS, Windows, or Mac, as long as it has a web browser and connects to the internet.
 
@@ -56,9 +57,6 @@ Win7 Simu supports several languages. However, most of the translations are done
 <div class="access">
   <a href="https://play.google.com/store/apps/details?id=com.visnalize.win7simu" target="_blank">
     <img src="/assets/access-store.png" alt="Play Store" />
-  </a>
-  <a href="https://appgallery.huawei.com/#/app/C106588347" target="_blank">
-    <img src="/assets/access-appgallery.png" alt="AppGallery" />
   </a>
   <a href="https://win7simu.visnalize.com" target="_blank">
     <img src="/assets/access-web.png" alt="Web Browser" />
