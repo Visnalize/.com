@@ -8,6 +8,19 @@ sidebar: auto
 
 <a-social hideCommentCount />
 
+## 2.27.0
+
+__Core__
+
+- Added Winver
+- Added Programs and Features
+- Updated Theme Studio [v1.1.0](./themestudio/changelog.md#_1-1-0)
+- Fixed the issue with account picture
+
+__Android__
+
+- Added device's push notification as system notification
+
 ## 2.26.0
 
 - Added [Theme Studio](./themestudio/)
