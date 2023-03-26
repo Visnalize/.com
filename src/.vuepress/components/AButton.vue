@@ -1,13 +1,28 @@
 <template>
-  <router-link v-if="!!href" :to="href" class="a-button">
+  <router-link v-if="href && !isExternal" :to="href" class="a-button">
     <slot />
   </router-link>
-  <button v-else @click="$emit('click')" class="a-button"><slot /></button>
+  <a
+    v-else-if="href && isExternal"
+    :href="href"
+    target="_blank"
+    class="a-button"
+  >
+    <slot />
+  </a>
+  <button v-else @click="$emit('click')" class="a-button">
+    <slot />
+  </button>
 </template>
 
 <script>
 export default {
   props: { href: String },
+  computed: {
+    isExternal() {
+      return this.href.startsWith("http");
+    },
+  },
 };
 </script>
 
@@ -21,7 +36,7 @@ export default {
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.6rem 1.8rem;
   transition: transform 0.2s, box-shadow 0.2s;
 
   &:active {

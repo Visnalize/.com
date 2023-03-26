@@ -7,7 +7,7 @@ pageClass: homepage
 
 <home-hero />
 
-<home-section>
+<home-section class="dark">
   <home-preview src="/assets/win7simu-logo.png" title="win7 simu" />
   <article>
     <h2>Win7 Simu</h2>
@@ -33,13 +33,25 @@ pageClass: homepage
   </article>
 </home-section>
 
-<google-ads />
+<google-ads format="horizontal" />
 
-<home-section>
+<home-section class="center dark">
   <article>
-    <h2>What the users say</h2>
+    <h2>📺 Latest videos</h2>
+    <home-videos />
+    <footer>
+      <a-button href="https://www.youtube.com/c/visnalize">Watch more</a-button>
+    </footer>
+  </article>
+</home-section>
+
+<home-section class="center">
+  <article>
+    <h2>💬 What the users say</h2>
     <home-reviews />
   </article>
 </home-section>
+
+<google-ads format="horizontal" />
 
 <home-footer />

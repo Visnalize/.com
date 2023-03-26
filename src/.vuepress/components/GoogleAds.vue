@@ -4,21 +4,20 @@
     style="display: block"
     data-ad-slot="3336580675"
     data-ad-client="ca-pub-5904323684803247"
-    data-ad-format="auto"
+    :data-ad-format="format"
     data-full-width-responsive="true"
   ></ins>
 </template>
 
 <script>
 export default {
+  props: {
+    format: { type: String, default: "auto" },
+  },
   mounted() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   },
 };
 </script>
 
-<style lang="stylus" scoped>
-.googleads {
-  padding: 0 1.5rem;
-}
-</style>
+<style lang="stylus" scoped></style>

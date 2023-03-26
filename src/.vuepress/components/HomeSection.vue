@@ -67,10 +67,13 @@ section {
     }
   }
 
-  &.grid {
+  &.center {
+    h2, footer {
+      text-align: center;
+    }
   }
 
-  &:nth-child(2n) {
+  &.dark {
     background: rgba(0, 0, 0, 0.05);
   }
 }
