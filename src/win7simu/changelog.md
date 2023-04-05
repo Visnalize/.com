@@ -8,6 +8,17 @@ sidebar: auto
 
 <a-social hideCommentCount />
 
+## 2.28.0
+
+__Core__
+
+- Added Comfy Cakes
+- Minor bugfixes and improvements
+
+__Web__
+
+- Win7 Simu is now [installable](../blog/win7-simu-mobile-devices.md) from your browser
+
 ## 2.27.0
 
 __Core__
