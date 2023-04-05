@@ -4,42 +4,60 @@
         <title>Visnalize</title>
         <link>https://visnalize.com</link>
         <description></description>
-        <lastBuildDate>Mon, 27 Mar 2023 15:27:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Apr 2023 23:50:35 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://visnalize.com/feed.atom" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[How I built Win7 Simu]]></title>
+            <link>https://visnalize.com/blog/building-win7-simu.html</link>
+            <guid>https://visnalize.com/blog/building-win7-simu.html</guid>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
+            <description><![CDATA[Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene]]></description>
+            <enclosure url="https://visnalize.com/assets/covers/building-win7-simu.jpg">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[About the ads and how I implement them]]></title>
             <link>https://visnalize.com/blog/about-the-ads.html</link>
             <guid>https://visnalize.com/blog/about-the-ads.html</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
             <description><![CDATA[A couple of things about ads and how I implement them within my websites and apps]]></description>
             <enclosure url="https://images.unsplash.com/photo-1546142711-1e28c0540deb?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Windows 7 icon Viewer/Downloader]]></title>
+            <link>https://visnalize.com/blog/win7-icons-viewer-downloader.html</link>
+            <guid>https://visnalize.com/blog/win7-icons-viewer-downloader.html</guid>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
+            <description><![CDATA[A simple tool to view and download Windows 7 icon collection.]]></description>
+            <enclosure url="https://visnalize.com/assets/covers/win7-icons-viewer-downloader.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[How I built visnalize.com]]></title>
             <link>https://visnalize.com/blog/building-visnalize-com.html</link>
             <guid>https://visnalize.com/blog/building-visnalize-com.html</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
             <description><![CDATA[Read about the progress and how I built the visnalize.com website for my own brand]]></description>
             <enclosure url="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[How I built Win7 Simu]]></title>
-            <link>https://visnalize.com/blog/building-win7-simu.html</link>
-            <guid>https://visnalize.com/blog/building-win7-simu.html</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
-            <description><![CDATA[Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene]]></description>
-            <enclosure url="https://visnalize.com/assets/covers/building-win7-simu.jpg">
+            <title><![CDATA[Win7 Simu versus mobile devices]]></title>
+            <link>https://visnalize.com/blog/win7-simu-mobile-devices.html</link>
+            <guid>https://visnalize.com/blog/win7-simu-mobile-devices.html</guid>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
+            <description><![CDATA[How to install Win7 Simu on mobile devices without downloading from any App Stores.]]></description>
+            <enclosure url="https://images.unsplash.com/photo-1616353071855-2c045c4458ae?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[How to get iframes to load any websites]]></title>
             <link>https://visnalize.com/blog/load-any-websites-in-iframes.html</link>
             <guid>https://visnalize.com/blog/load-any-websites-in-iframes.html</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
             <description><![CDATA[The most effective way to get iframes embedded in your web apps to load any websites]]></description>
             <enclosure url="https://visnalize.com/assets/covers/load-any-websites-in-iframes.png">
             </enclosure>
@@ -48,40 +66,22 @@
             <title><![CDATA[📝 Blog]]></title>
             <link>https://visnalize.com/blog/</link>
             <guid>https://visnalize.com/blog/</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Windows 7 icon Viewer/Downloader]]></title>
-            <link>https://visnalize.com/blog/win7-icons-viewer-downloader.html</link>
-            <guid>https://visnalize.com/blog/win7-icons-viewer-downloader.html</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
-            <description><![CDATA[A simple tool to view and download Windows 7 icon collection.]]></description>
-            <enclosure url="https://visnalize.com/assets/covers/win7-icons-viewer-downloader.jpg">
-            </enclosure>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Win7 Simu year in review - 2022]]></title>
             <link>https://visnalize.com/blog/win7-simu-year-in-review-2022.html</link>
             <guid>https://visnalize.com/blog/win7-simu-year-in-review-2022.html</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
             <description><![CDATA[Look back at some amazing numbers for Win7 Simu in 2022.]]></description>
             <enclosure url="https://images.unsplash.com/photo-1651377731759-fe736975a6e9?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[Win7 Simu versus mobile devices]]></title>
-            <link>https://visnalize.com/blog/win7-simu-mobile-devices.html</link>
-            <guid>https://visnalize.com/blog/win7-simu-mobile-devices.html</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
-            <description><![CDATA[How to install Win7 Simu on mobile devices without downloading from any App Stores.]]></description>
-            <enclosure url="https://images.unsplash.com/photo-1616353071855-2c045c4458ae?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[How to get Windows resources]]></title>
             <link>https://visnalize.com/blog/windows-resources.html</link>
             <guid>https://visnalize.com/blog/windows-resources.html</guid>
-            <pubDate>Mon, 27 Mar 2023 15:27:29 GMT</pubDate>
+            <pubDate>Wed, 05 Apr 2023 23:50:35 GMT</pubDate>
             <description><![CDATA[Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.]]></description>
             <enclosure url="https://images.unsplash.com/photo-1624571409108-e9a41746af53?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
