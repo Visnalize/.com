@@ -19,4 +19,8 @@ With Theme Studio, you are able to:
 * Apply your themes to turn a Windows 7 simulator into any system as far as your skills and creativity may reach. You can also publish them and share with your fellow Win7ers.
 * Access those themes that are published and shared publicly from the community, pull them locally to view, edit, and save the source, and to enjoy the appearance, the uniqueness of the themes made by others.
 
+Check out the video series below to see how it works, or learn and start crafting your own theme from the [Quick Start guide](./quick-guide.md).
+
+@[youtube](https://youtube.com/playlist?list=PLztkJSxlj5P6lUgP806gAnAvgnCaSumsC)
+
 <google-ads />
