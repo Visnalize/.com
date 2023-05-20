@@ -43,4 +43,8 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.content__default {
+  max-width: 1200px;
+}
+</style>

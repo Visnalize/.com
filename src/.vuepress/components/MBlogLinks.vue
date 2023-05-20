@@ -86,7 +86,7 @@ export default {
       text-decoration: none;
 
       img {
-        transform: scale(1.2);
+        transform: scale(1.06);
       }
 
       h2 {
@@ -98,7 +98,7 @@ export default {
 
 @media (min-width: 720px) {
   .blog-links {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 </style>
