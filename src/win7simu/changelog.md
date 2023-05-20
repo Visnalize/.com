@@ -8,6 +8,24 @@ sidebar: auto
 
 <a-social hideCommentCount />
 
+## 3.0.0
+
+__Core__
+
+- Fully functional File Explorer with basic features:
+  - Folder management (create, delete, copy/paste)
+  - File management (view, create, edit, rename, copy/paste)
+  - Item's context menu (right click/hold your finger)
+  - (Now you need to double-tap on an item to open)
+- Fully functional Recycle Bin
+- Improved file opening/saving mechanism across several simulator programs (Notepad, Paint, Wordpad, etc.)
+- 💥 BREAKING CHANGE: desktop shortcuts are wiped out due to the structural changes of File Explorer (no Android/system files are harmed) - please take a screenshot of your desktop as a backup measure before updating.
+
+__Web__
+
+- Fixed the issue with Safari where right-click (hold finger on touch devices) was not working
+- Fixed some other styling issues on Safari
+
 ## 2.28.0
 
 __Core__
