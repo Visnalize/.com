@@ -98,6 +98,12 @@ export default {
 
 @media (min-width: 720px) {
   .blog-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 960px) {
+  .blog-links {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
