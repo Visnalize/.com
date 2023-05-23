@@ -26,6 +26,15 @@ __Web__
 - Fixed the issue with Safari where right-click (hold finger on touch devices) was not working
 - Fixed some other styling issues on Safari
 
+### 3.0.1
+
+- Fixed adding shortcuts to desktop not working
+- Fixed Windows boot animation not visible on Safari
+
+### 3.0.2
+
+- Fixed Android crash when opening large media files
+
 ## 2.28.0
 
 __Core__
