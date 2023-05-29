@@ -1,5 +1,6 @@
 ---
 sidebar: auto
+pageClass: changelog
 ---
 
 # Theme Studio Changelog
