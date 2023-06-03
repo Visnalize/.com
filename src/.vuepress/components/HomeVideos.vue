@@ -2,7 +2,9 @@
   <ul>
     <li v-for="(video, i) in videos" :key="i">
       <a :href="video.url" target="_blank" :title="video.title">
-        <img :src="video.thumbnail" :alt="video.title" />
+        <span class="thumbnail">
+          <img :src="video.thumbnail" :alt="video.title" />
+        </span>
         <span>{{ video.title }}</span>
       </a>
     </li>
@@ -48,26 +50,32 @@ ul {
 }
 
 li {
-  margin: 12px;
-}
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  overflow: hidden;
 
-a, img {
-  display: block;
-  position: relative;
+  &:hover img {
+    transform: scale(1.4);
+  }
 }
 
 span {
-  background: #000;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 4px 8px;
-  box-sizing: border-box;
-  color: #fff;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  display: block;
   overflow: hidden;
+
+  &:last-child {
+    color: $textColor;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+img {
+  display: block;
+  transform: scale(1.35);
+  transition: transform 0.3s ease-out;
 }
 
 @media (max-width: 719px) {
