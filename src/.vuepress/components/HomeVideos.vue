@@ -12,11 +12,9 @@
 </template>
 
 <script>
-import { YOUTUBE_API_KEY } from "../../../.env.json";
-
 const api = "https://www.googleapis.com/youtube/v3/playlistItems";
 const params = new URLSearchParams({
-  key: YOUTUBE_API_KEY,
+  key: "AIzaSyDdLD0KGCsVWEu0cx6NrxllWT2qkFhfNg8",
   playlistId: "UUUq46NBY_oz46QLmyuCPxGQ",
   part: "snippet",
   maxResults: 9,
