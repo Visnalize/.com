@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    if: ${{ !contains(github.event.head_commit.message, 'dont-deploy') }}
+    if: ${{ !contains(github.event.head_commit.message, 'no-deploy') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -26,4 +26,4 @@ jobs:
           yarn deploybuild -u "Khang <khang.nguyenduyvn@gmail.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: Visnalize/.com
+          GITHUB_REPOSITORY: ${{ github.repository }}
