@@ -18,4 +18,10 @@ jobs:
           cache: yarn
 
       - name: Build page
-        run: yarn && yarn deploybuild -u "Khang <khang.nguyenduyvn@gmail.com>"
+        run: |
+          yarn
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          yarn deploybuild -u "Khang <khang.nguyenduyvn@gmail.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: Visnalize/.com
