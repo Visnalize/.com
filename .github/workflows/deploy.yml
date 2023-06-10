@@ -3,7 +3,7 @@ name: Deploy updates
 on:
   push:
     paths-ignore:
-      - '.github/**'
+      - ".github/**"
 
 jobs:
   deploy:
@@ -12,11 +12,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
+          node-version: 16
           cache: yarn
-      
+
       - name: Build page
         run: yarn && yarn deploybuild
