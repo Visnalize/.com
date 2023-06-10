@@ -2,8 +2,6 @@ name: Deploy updates
 
 on:
   push:
-    paths-ignore:
-      - ".github/**"
 
 jobs:
   deploy:
@@ -20,4 +18,4 @@ jobs:
           cache: yarn
 
       - name: Build page
-        run: yarn && yarn deploybuild
+        run: yarn && yarn deploybuild -u "Khang <khang.nguyenduyvn@gmail.com>"
