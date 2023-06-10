@@ -36,6 +36,12 @@ __Web__
 
 - Fixed Android crash when opening large media files
 
+### 3.0.3
+
+- Fixed Themestudio desktop preview missing icons
+- Fixed Android zoom issue
+- Fixed Android status bar visibility issue on certain devices
+
 ## 2.28.0
 
 __Core__
