@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
+    "postbuild": "node scripts/redirects.js",
     "deploy": "gh-pages -d src/.vuepress/dist -b main",
     "deploybuild": "yarn build && yarn deploy"
   },
