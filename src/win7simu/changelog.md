@@ -42,6 +42,12 @@ __Web__
 - Fixed Android zoom issue
 - Fixed Android status bar visibility issue on certain devices
 
+### 3.0.4
+
+- Fixed shadow-enabled cursor showing an outer box
+- Fixed Computer drives not opening on Android 10
+- Several bug fixes for other older Android versions
+
 ## 2.28.0
 
 __Core__
