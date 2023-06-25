@@ -5,12 +5,20 @@ module.exports = {
 
   head: [
     ["link", { rel: "icon", href: "/assets/favicon.png" }],
+    // [
+    //   "script",
+    //   {
+    //     async: true,
+    //     "data-ad-client": "ca-pub-5904323684803247",
+    //     src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+    //   },
+    // ],
     [
       "script",
       {
         async: true,
-        "data-ad-client": "ca-pub-5904323684803247",
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        src: "https://stpd.cloud/assets/stpdwrapper.js",
+        crossorigin: "anonymous",
       },
     ],
     [

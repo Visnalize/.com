@@ -73,4 +73,4 @@ In summary, the "so-called" tech stack is:
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
-<google-ads />
+<setupad-ads />

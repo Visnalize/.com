@@ -20,4 +20,9 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.adsbygoogle[data-ad-status='filled'] {
+  margin: 3rem 0;
+  text-align: center;
+}
+</style>

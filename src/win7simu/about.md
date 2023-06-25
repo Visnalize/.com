@@ -63,4 +63,4 @@ Win7 Simu supports several languages. However, most of the translations are done
   </a>
 </div>
 
-<google-ads />
+<setupad-ads />

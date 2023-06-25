@@ -32,7 +32,7 @@ As mentioned, I started the project with the goal to practice and learn more abo
 
 Starting with such a simple goal, I didn't think far ahead and intended to drop this project at some point in the future when there's not much else to learn. However, I have been receiving a lot of positive feedback and encouragement from my users (my fellow Windows lovers), reviews and comments telling me that Win7 Simu has been serving them well in teaching or learning about computers, where computers and devices are __not easily accessible__ for people in some countries. Such feedback literally has been making my days, making me realize that my silly project has helped people in some ways that I could have never thought of. Therefore, I decided to dedicate more of my time over the weekend and keep improving it, bringing forth more useful (though only basic) features and functionalities based on user suggestions, with love and appreciation.
 
-<google-ads />
+<setupad-ads />
 
 ### The tech stack
 
@@ -89,4 +89,4 @@ _Thank you for being part of my journey. Sincerely._
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
-<google-ads />
+<setupad-ads />

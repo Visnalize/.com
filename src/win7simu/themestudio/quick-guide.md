@@ -53,4 +53,4 @@ The quickest and easiest way to get started is to load the source code from an e
 
 ![Getting started - Save theme](./img/getstarted3.png)
 
-<google-ads />
+<setupad-ads />

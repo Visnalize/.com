@@ -23,4 +23,4 @@ Check out the video series below to see how it works, or learn and start craftin
 
 @[youtube](https://youtube.com/playlist?list=PLztkJSxlj5P6lUgP806gAnAvgnCaSumsC)
 
-<google-ads />
+<setupad-ads />
