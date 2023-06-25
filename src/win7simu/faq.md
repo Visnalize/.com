@@ -78,15 +78,11 @@ There are currently 2 ways:
 * From the Start Menu, hold your finger on the programs/apps you want to add, a context menu should appear, then select "Send to Desktop".
 * From the desktop, you can refer to [this video tutorial](https://youtu.be/gz8dPrHsRCs).
 
-### The BIOS keeps showing up for me. How do I enter Windows?
-
-Just don't tap/click on the screen for the first 3 seconds and you will boot into Windows.
-
 ## 3. Miscellaneous
 
 ### Can you remove the ads?
 
-No, I'm afraid. I have been spending a lot of time and effort to develop and maintain this simulator, it even costs me a fair amount of money to maintain the cloud services to retain your user accounts and settings within. However, there is a monthly subscription plan available with the Android version to which you can subscribe, to enjoy the app ad-free and support me to keep improving it and bring you more cool features.
+No, I'm afraid. I have been spending a lot of time and effort to develop and maintain this simulator, it even costs me a fair amount of money to maintain the cloud services to retain your user accounts and settings within. However, there is a small monthly subscription plan available with the Android version to which you can subscribe, to enjoy the app ad-free and support me to keep improving it and bring you more cool features. For the web version, you can disable the ads by becoming a patron on [Patreon](https://www.patreon.com/visnalize) at the same price.
 
 ### Can this simulator work on Android versions earlier than 6.0?
 
@@ -102,6 +98,6 @@ This happens on devices with Android 12 or later. Unfortunately, from Android 12
 
 ### Any plan to publish this simulator to App Store?
 
-Not really. It would be nice but the App Store annual fee is pretty high for me, and I doubt it would get passed the review process due to legal concerns.
+No, I'm afraid. It's unlikely that this simulator will be published to App Store due to Apple's strict policies. However, you can still use the [web version](https://win7simu.visnalize.com/) or even "[install](https://youtu.be/zdSdvfFDKZg)" it on your iOS device.
 
 <setupad-ads />
