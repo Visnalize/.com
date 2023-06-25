@@ -5,7 +5,7 @@
         <h1>📝 Blog</h1>
         <m-blog-tag-nav :tags="tags" />
         <m-blog-links :blogs="blogs" />
-        <google-ads />
+        <setupad-ads />
       </div>
     </template>
   </parent-layout>
@@ -13,13 +13,13 @@
 
 <script>
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
-import GoogleAds from "../../components/GoogleAds.vue";
+import SetupadAds from "../../components/SetupadAds.vue";
 import MBlogTagNav from "../../components/MBlogTagNav.vue";
 import MBlogLinks from "../../components/MBlogLinks.vue";
 import { pascalize } from "../../utils/string";
 
 export default {
-  components: { ParentLayout, GoogleAds, MBlogTagNav, MBlogLinks },
+  components: { ParentLayout, SetupadAds, MBlogTagNav, MBlogLinks },
   computed: {
     tags() {
       const tags = this.$tag.list.map((tag) => ({

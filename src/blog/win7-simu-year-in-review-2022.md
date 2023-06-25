@@ -45,4 +45,4 @@ I hope Win7 Simu has been doing a good job in contributing to a wonderful year f
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
-<google-ads />
+<setupad-ads />

@@ -19,4 +19,4 @@ pageClass: changelog
 - Explore public themes - search by name, sort by date/use
 - Apply themes
 
-<google-ads />
+<setupad-ads />

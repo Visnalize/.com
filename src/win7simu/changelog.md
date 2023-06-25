@@ -107,7 +107,7 @@ __Android__
 
 - Fixed an issue with some games not loading
 
-<google-ads />
+<setupad-ads />
 
 ## 2.23.0
 
@@ -255,7 +255,7 @@ __Android__
 - Added easter egg: Chrome dino game
 - Added easter egg: bring Control Panel to desktop
 
-<google-ads />
+<setupad-ads />
 
 ## 2.9.0
 
@@ -370,4 +370,4 @@ First release with the basic Windows GUI and functionalities:
 - Snipping Tool
 - Media Player
 
-<google-ads />
+<setupad-ads />

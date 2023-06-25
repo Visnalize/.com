@@ -1,7 +1,8 @@
 <template>
   <parent-layout>
     <template v-if="!noSideAds" #sidebar-bottom>
-      <div class="googleads"><google-ads /></div>
+      <div class="ads"><setupad-ads /></div>
+      <setupad-ads format="anchor" tag-id="5211" />
     </template>
     <template v-if="!noComments" #page-bottom>
       <comment-section />
@@ -12,7 +13,7 @@
 <script>
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
 import CommentSection from "../../components/CommentSection.vue";
-import GoogleAds from "../../components/GoogleAds.vue";
+import SetupadAds from "../../components/SetupadAds.vue";
 
 export default {
   props: {
@@ -22,7 +23,7 @@ export default {
   components: {
     ParentLayout,
     CommentSection,
-    GoogleAds,
+    SetupadAds,
   },
 };
 </script>

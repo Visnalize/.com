@@ -104,4 +104,4 @@ This happens on devices with Android 12 or later. Unfortunately, from Android 12
 
 Not really. It would be nice but the App Store annual fee is pretty high for me, and I doubt it would get passed the review process due to legal concerns.
 
-<google-ads />
+<setupad-ads />

@@ -47,4 +47,4 @@ Despite the app-like experience, please keep in mind that it is just a website b
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
-<google-ads />
+<setupad-ads />

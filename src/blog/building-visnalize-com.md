@@ -69,7 +69,7 @@ What an eye candy! That looked neat and flawless. Without so much effort and tim
 
 All of which could take me months, if not years to implement, but still wouldn't look half-decent. Not to mention some other super useful utilities that enhanced the writing and reading experience on both ends.
 
-<google-ads />
+<setupad-ads />
 
 ### Customizing
 
@@ -118,4 +118,4 @@ The source code I made public in [this branch](https://github.com/Visnalize/visn
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
-<google-ads />
+<setupad-ads />
