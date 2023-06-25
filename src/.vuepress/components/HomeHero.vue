@@ -8,7 +8,6 @@
     </button>
     <h1>Recreating <b>Nostalgia</b> for <b>Entertainment</b></h1>
     <button class="indicator" aria-label="scroll down" @click="scroll" />
-    <setupad-ads tag-id="5205" format="siderail" />
   </section>
 </template>
 

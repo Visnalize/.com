@@ -37,12 +37,4 @@ export default {
   margin: 2rem 0;
   text-align: center;
 }
-
-@media screen and (min-width: 1480px) {
-  #siderail {
-    position: fixed;
-    top: 140px;
-    left: 20px;
-  }
-}
 </style>
