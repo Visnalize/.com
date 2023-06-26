@@ -45,8 +45,4 @@ export default {
   margin: 2rem 0;
   text-align: center;
 }
-
-.pagetop-ads {
-  padding-top: 4rem;
-}
 </style>

@@ -14,8 +14,4 @@ export default {
 >>>.page-edit {
   display: none;
 }
-
->>>.theme-default-content > h1 {
-  padding-top: 0;
-}
 </style>
