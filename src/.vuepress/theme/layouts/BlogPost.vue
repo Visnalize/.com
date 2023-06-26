@@ -1,9 +1,5 @@
 <template>
-  <visnalize>
-    <template #page-top>
-      <setupad-ads class="pagetop-ads" />
-    </template>
-  </visnalize>
+  <visnalize />
 </template>
 
 <script>

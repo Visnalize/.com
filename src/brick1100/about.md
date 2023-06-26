@@ -8,8 +8,6 @@ sidebar: false
 
 <a-social />
 
-<setupad-ads />
-
 **Brick 1100** is a simulation of the Nokia 1100 mobile phone, the best-selling mobile phone of all time worldwide. The simulation aims to bring the users back to the simpler time with the fundamental graphics and features from one of the most durable phones produced by [Nokia](https://en.wikipedia.org/wiki/Nokia), a Finnish based firm.
 
 ## Interesting facts and history

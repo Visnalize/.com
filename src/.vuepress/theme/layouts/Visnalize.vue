@@ -3,9 +3,6 @@
     <template v-if="!noSideAds" #sidebar-bottom>
       <setupad-ads class="sidebar-ads" format="siderail" tag-id="5205" />
     </template>
-    <template #page-top>
-      <slot name="page-top" />
-    </template>
     <template v-if="!noComments" #page-bottom>
       <setupad-ads />
       <setupad-ads format="anchor" tag-id="5211" />
