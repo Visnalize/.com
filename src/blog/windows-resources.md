@@ -76,5 +76,3 @@ So to sum up, all the steps and tools to get this job done:
   * Optionally convert the .ico format to other image formats using [this tool](https://www.aconvert.com/image/).
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />

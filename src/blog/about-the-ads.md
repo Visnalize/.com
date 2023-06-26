@@ -72,5 +72,3 @@ You're probably seeing a few ads already in this blog post, and you can trust me
 And this would be all I wanted to share in this blog, hope you had a good time reading it and somehow got some useful pieces of info with you as well.
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />

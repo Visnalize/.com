@@ -14,6 +14,14 @@
 <script>
 export default {
   props: {
+    /**
+     * Tag IDs matching the respective formats:
+     * * 5205: `siderail`
+     * * 5206: `in_article_responsive` (default)
+     * * 5209: `in_page_responsive_1`
+     * * 5210: `in_page_responsive_2`
+     * * 5211: `anchor`
+     */
     tagId: {
       type: String,
       default: "5206",
@@ -36,5 +44,9 @@ export default {
 .adwrapper {
   margin: 2rem 0;
   text-align: center;
+}
+
+.pagetop-ads {
+  padding-top: 4rem;
 }
 </style>

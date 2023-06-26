@@ -7,6 +7,8 @@ pageClass: changelog
 
 <a-social hideCommentCount />
 
+<setupad-ads />
+
 ## 1.1.0
 
 - Search public themes by author
@@ -18,5 +20,3 @@ pageClass: changelog
 - Save themes locally or publish to cloud storage
 - Explore public themes - search by name, sort by date/use
 - Apply themes
-
-<setupad-ads />

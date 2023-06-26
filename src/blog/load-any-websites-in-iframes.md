@@ -64,5 +64,3 @@ This guide is not applicable for Android. If you are using the Android version, 
 There is no step 3. From now on, you should be able to view any websites in Win7 Simu's web browsers without problems.
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />

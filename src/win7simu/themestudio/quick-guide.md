@@ -52,5 +52,3 @@ The quickest and easiest way to get started is to load the source code from an e
 4. Finally, you can save your project as a theme by entering the required information in the save popup. You can then resume editing from the current progress, or apply the theme to your Win7 Simu.
 
 ![Getting started - Save theme](./img/getstarted3.png)
-
-<setupad-ads />

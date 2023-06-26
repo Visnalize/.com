@@ -9,6 +9,8 @@ description: A recreation of the Windows 7 operating system on the Web/Android p
 
 <a-social />
 
+<setupad-ads />
+
 **Win7 Simu** is a recreation of the Windows 7 operating system on the Web/Android platform. It is built out of pure joy and nostalgia for the sake of reliving the good old time with the elegant Aero and Glassy interface.
 
 ## A bit of the history
@@ -62,5 +64,3 @@ Win7 Simu supports several languages. However, most of the translations are done
     <img src="/assets/access-web.png" alt="Web Browser" />
   </a>
 </div>
-
-<setupad-ads />

@@ -44,5 +44,3 @@ Operating systems | Device categories
 I hope Win7 Simu has been doing a good job in contributing to a wonderful year for you. Please keep supporting it and continue to look forward to more updates rolling out, with more stunning features and stability. Wishing all the best to you and your family. Happy New year! 🎉
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />

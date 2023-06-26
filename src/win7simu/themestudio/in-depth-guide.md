@@ -284,5 +284,3 @@ This list is incomplete and subject to change (more to be added) in the future u
 * `run`
 * `magnifier`
 * `themestudio`
-
-<setupad-ads />

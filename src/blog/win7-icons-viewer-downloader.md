@@ -72,5 +72,3 @@ In summary, the "so-called" tech stack is:
 * The site is hosted using Github Pages.
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />

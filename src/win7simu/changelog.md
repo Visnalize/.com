@@ -9,6 +9,8 @@ pageClass: changelog
 
 <a-social hideCommentCount />
 
+<setupad-ads />
+
 ## 3.0.0
 
 __Core__

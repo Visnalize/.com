@@ -4,6 +4,7 @@
       <div class="theme-default-content content__default">
         <h1>📝 Blog</h1>
         <m-blog-tag-nav :tags="tags" />
+        <setupad-ads />
         <m-blog-links :blogs="blogs" />
         <setupad-ads />
       </div>

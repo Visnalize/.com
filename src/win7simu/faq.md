@@ -9,6 +9,8 @@ sidebar: auto
 
 <a-social />
 
+<setupad-ads />
+
 ::: warning Note
 This page is updated regularly in accordance with the user's queries from all sources (emails, Play Store reviews, YouTube comments). Please check back to this before asking any question as the question will not be responded if it's already included here.
 :::
@@ -99,5 +101,3 @@ This happens on devices with Android 12 or later. Unfortunately, from Android 12
 ### Any plan to publish this simulator to App Store?
 
 No, I'm afraid. It's unlikely that this simulator will be published to App Store due to Apple's strict policies. However, you can still use the [web version](https://win7simu.visnalize.com/) or even "[install](https://youtu.be/zdSdvfFDKZg)" it on your iOS device.
-
-<setupad-ads />

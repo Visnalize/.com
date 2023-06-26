@@ -22,5 +22,3 @@ With Theme Studio, you are able to:
 Check out the video series below to see how it works, or learn and start crafting your own theme from the [Quick Start guide](./quick-guide.md).
 
 @[youtube](https://youtube.com/playlist?list=PLztkJSxlj5P6lUgP806gAnAvgnCaSumsC)
-
-<setupad-ads />

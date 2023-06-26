@@ -46,5 +46,3 @@ Once that's done, you will see the Win7 Simu icon show up on your home screen. A
 Despite the app-like experience, please keep in mind that it is just a website by nature, and therefore still has certain limitations as listed [here](../win7simu/about.md#web-version). However, the situation might change in the near future as the technology that empowers this capability receives more robust support from mobile vendors. So stay tuned and keep supporting me, either in spirit or [financial](https://www.patreon.com/visnalize) 🤩
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />

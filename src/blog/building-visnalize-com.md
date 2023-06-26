@@ -117,5 +117,3 @@ To sum up, all the steps I did to get this site up and running:
 The source code I made public in [this branch](https://github.com/Visnalize/visnalize.github.io/tree/dev) of the repository, you can explore or dissect however you like.
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />

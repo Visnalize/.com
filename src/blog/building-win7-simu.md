@@ -88,5 +88,3 @@ With all that said, I'm making no promise that I would be able to implement all 
 _Thank you for being part of my journey. Sincerely._
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />

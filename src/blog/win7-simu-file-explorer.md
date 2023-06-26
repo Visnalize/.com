@@ -92,5 +92,3 @@ And many more that, depending on the number of demands and requests, I might get
 If you enjoy my work and it has somehow helped you in any way, get in touch with me via my email, or simply leave a comment to let me know, that will definitely lift my spirit and encourage me, or even better, become a financial supporter (via [Patreon](https://www.patreon.com/visnalize) or Play Store IAP) so I can constantly invest more time in it and roll out more cool features. Again, thank you for your support and stay tuned for more updates. ✌
 
 <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
-
-<setupad-ads />
