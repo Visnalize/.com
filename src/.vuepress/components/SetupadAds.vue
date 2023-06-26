@@ -1,5 +1,5 @@
 <template>
-  <div class="adwrapper">
+  <div :class="['adwrapper', `adwrapper-${format}`]">
     <ins
       class="stpdwrapper"
       style="display: inline-block"
@@ -42,7 +42,16 @@ export default {
 
 <style lang="stylus" scoped>
 .adwrapper {
-  margin: 2rem 0;
   text-align: center;
+
+  &-responsive {
+    margin: 2rem 0;
+  }
+
+  &-anchor {
+    ins {
+      display: unset !important;
+    }
+  }
 }
 </style>
