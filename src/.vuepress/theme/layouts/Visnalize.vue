@@ -1,7 +1,9 @@
 <template>
   <parent-layout>
     <template v-if="!noSideAds" #sidebar-bottom>
-      <setupad-ads class="sidebar-ads" format="siderail" tag-id="5205" />
+      <div class="sidebar-ads">
+        <setupad-ads format="siderail" tag-id="5205" />
+      </div>
     </template>
     <template v-if="!noComments" #page-bottom>
       <setupad-ads />
