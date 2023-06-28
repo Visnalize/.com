@@ -17,14 +17,14 @@ export default {
     /**
      * Tag IDs matching the respective formats:
      * * 5205: `siderail`
-     * * 5206: `in_article_responsive` (default)
+     * * 5207: `in_article_responsive_2` (default)
      * * 5209: `in_page_responsive_1`
      * * 5210: `in_page_responsive_2`
      * * 5211: `anchor`
      */
     tagId: {
       type: String,
-      default: "5206",
+      default: "5207",
     },
     format: {
       type: String,
