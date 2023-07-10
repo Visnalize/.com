@@ -16,6 +16,21 @@ module.exports = {
     [
       "script",
       {
+        src: "https://cmp.setupcmp.com/cmp/cmp/cmp-stub.js",
+        "data-prop-id": "6609",
+      },
+    ],
+    [
+      "script",
+      {
+        async: true,
+        src: "https://cmp.setupcmp.com/cmp/cmp/cmp-v1.js",
+        "data-prop-stpd-cmp-id": "6609",
+      },
+    ],
+    [
+      "script",
+      {
         async: true,
         src: "https://stpd.cloud/assets/stpdwrapper.js",
         crossorigin: "anonymous",
