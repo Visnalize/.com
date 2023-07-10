@@ -9,6 +9,12 @@ pageClass: changelog
 
 <setupad-ads />
 
+## 1.2.0
+
+- Add link to video tutorials
+- Improve theme viewing by creators
+- Creators can now edit/overwrite their published themes
+
 ## 1.1.0
 
 - Search public themes by author

@@ -11,6 +11,20 @@ pageClass: changelog
 
 <setupad-ads />
 
+## 3.1.0
+
+__Core__
+
+- Updated Theme Studio [v1.2.0](./themestudio/changelog.md#_1-2-0)
+
+__Android__
+
+- Fixed app crash/black screen after the Starting Windows animation
+
+__Web__
+
+- Fixed Theme Studio's Properties window placement
+
 ## 3.0.0
 
 __Core__
