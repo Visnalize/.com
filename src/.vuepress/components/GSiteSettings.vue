@@ -25,7 +25,7 @@ import GBackToTop from "./GBackToTop.vue";
 export default {
   components: { GThemeToggle, GBackToTop, GTextToSpeech },
   data() {
-    return { showControls: true };
+    return { showControls: false };
   },
   watch: {
     showControls(value) {
@@ -37,7 +37,7 @@ export default {
     },
   },
   mounted() {
-    if (this.$route.path === "/") this.showControls = false;
+    this.showControls = this.$route.path !== "/";
   },
   methods: {
     toggle() {
@@ -89,6 +89,7 @@ ul {
   list-style: none;
   display: flex;
   z-index: -1;
+  transform: scale(0);
 
   li {
     position: absolute;
