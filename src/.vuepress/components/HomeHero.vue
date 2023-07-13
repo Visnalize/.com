@@ -17,7 +17,7 @@ import { animate, inView } from "motion";
 export default {
   mounted() {
     const navbar = this.$root.$el.querySelector(".navbar");
-    const navbarHeight = 58;
+    const navbarHeight = navbar.scrollHeight;
     inView(this.$el, () => {
       animate(navbar, { y: -navbarHeight, opacity: 0 });
       return () => {
