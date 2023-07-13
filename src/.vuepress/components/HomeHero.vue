@@ -7,26 +7,20 @@
       <span>Visnalize</span>
     </button>
     <h1>Recreating <b>Nostalgia</b> for <b>Entertainment</b></h1>
-    <button
-      ref="indicator"
-      class="indicator"
-      aria-label="scroll down"
-      @click="scroll"
-    />
+    <button class="indicator" aria-label="scroll down" @click="scroll" />
   </section>
 </template>
 
 <script>
-import { animate, inView } from "motion";
+import { inView } from "motion";
 
 export default {
   mounted() {
     const navbar = this.$root.$el.querySelector(".navbar");
-    const navbarHeight = navbar.scrollHeight;
-    inView(this.$refs.indicator, () => {
-      animate(navbar, { y: -navbarHeight, opacity: 0 });
+    inView(this.$el, () => {
+      navbar.classList.remove("show");
       return () => {
-        animate(navbar, { y: 0, opacity: 1 });
+        navbar.classList.add("show");
       };
     });
   },
