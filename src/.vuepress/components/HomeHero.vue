@@ -13,13 +13,11 @@
 
 <script>
 import { animate, inView } from "motion";
-import SetupadAds from "./SetupadAds.vue";
 
 export default {
-  components: { SetupadAds },
   mounted() {
     const navbar = this.$root.$el.querySelector(".navbar");
-    const navbarHeight = navbar.scrollHeight;
+    const navbarHeight = 58;
     inView(this.$el, () => {
       animate(navbar, { y: -navbarHeight, opacity: 0 });
       return () => {
