@@ -7,7 +7,12 @@
       <span>Visnalize</span>
     </button>
     <h1>Recreating <b>Nostalgia</b> for <b>Entertainment</b></h1>
-    <button class="indicator" aria-label="scroll down" @click="scroll" />
+    <button
+      ref="indicator"
+      class="indicator"
+      aria-label="scroll down"
+      @click="scroll"
+    />
   </section>
 </template>
 
@@ -18,7 +23,7 @@ export default {
   mounted() {
     const navbar = this.$root.$el.querySelector(".navbar");
     const navbarHeight = navbar.scrollHeight;
-    inView(this.$el, () => {
+    inView(this.$refs.indicator, () => {
       animate(navbar, { y: -navbarHeight, opacity: 0 });
       return () => {
         animate(navbar, { y: 0, opacity: 1 });
