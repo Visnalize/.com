@@ -10,7 +10,7 @@
             "title": "About the ads and how I implement them",
             "summary": "A couple of things about ads and how I implement them within my websites and apps",
             "image": "https://images.unsplash.com/photo-1546142711-1e28c0540deb?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2023-07-21T14:05:58.787Z"
+            "date_modified": "2023-07-21T14:08:33.251Z"
         },
         {
             "id": "https://visnalize.com/blog/building-visnalize-com.html",
@@ -18,7 +18,7 @@
             "title": "How I built visnalize.com",
             "summary": "Read about the progress and how I built the visnalize.com website for my own brand",
             "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2023-07-21T14:05:58.787Z"
+            "date_modified": "2023-07-21T14:08:33.252Z"
         },
         {
             "id": "https://visnalize.com/blog/building-win7-simu.html",
@@ -26,7 +26,7 @@
             "title": "How I built Win7 Simu",
             "summary": "Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene",
             "image": "https://visnalize.com/assets/covers/building-win7-simu.jpg",
-            "date_modified": "2023-07-21T14:05:58.788Z"
+            "date_modified": "2023-07-21T14:08:33.253Z"
         },
         {
             "id": "https://visnalize.com/blog/load-any-websites-in-iframes.html",
@@ -34,13 +34,13 @@
             "title": "How to get iframes to load any websites",
             "summary": "The most effective way to get iframes embedded in your web apps to load any websites",
             "image": "https://visnalize.com/assets/covers/load-any-websites-in-iframes.png",
-            "date_modified": "2023-07-21T14:05:58.788Z"
+            "date_modified": "2023-07-21T14:08:33.253Z"
         },
         {
             "id": "https://visnalize.com/blog/",
             "url": "https://visnalize.com/blog/",
             "title": "📝 Blog",
-            "date_modified": "2023-07-21T14:05:58.788Z"
+            "date_modified": "2023-07-21T14:08:33.253Z"
         },
         {
             "id": "https://visnalize.com/blog/win7-icons-viewer-downloader.html",
@@ -48,7 +48,7 @@
             "title": "Windows 7 icon Viewer/Downloader",
             "summary": "A simple tool to view and download Windows 7 icon collection.",
             "image": "https://visnalize.com/assets/covers/win7-icons-viewer-downloader.jpg",
-            "date_modified": "2023-07-21T14:05:58.788Z"
+            "date_modified": "2023-07-21T14:08:33.253Z"
         },
         {
             "id": "https://visnalize.com/blog/win7-simu-file-explorer.html",
@@ -56,7 +56,7 @@
             "title": "Implementing File Explorer in Win7 Simu",
             "summary": "Some key points to share about how Win7 Simu's File Explorer is implemented.",
             "image": "https://images.unsplash.com/photo-1544396821-4dd40b938ad3?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2023-07-21T14:05:58.788Z"
+            "date_modified": "2023-07-21T14:08:33.254Z"
         },
         {
             "id": "https://visnalize.com/blog/win7-simu-mobile-devices.html",
@@ -64,7 +64,7 @@
             "title": "Win7 Simu versus mobile devices",
             "summary": "How to install Win7 Simu on mobile devices without downloading from any App Stores.",
             "image": "https://images.unsplash.com/photo-1616353071855-2c045c4458ae?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2023-07-21T14:05:58.788Z"
+            "date_modified": "2023-07-21T14:08:33.254Z"
         },
         {
             "id": "https://visnalize.com/blog/win7-simu-year-in-review-2022.html",
@@ -72,7 +72,7 @@
             "title": "Win7 Simu year in review - 2022",
             "summary": "Look back at some amazing numbers for Win7 Simu in 2022.",
             "image": "https://images.unsplash.com/photo-1651377731759-fe736975a6e9?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2023-07-21T14:05:58.789Z"
+            "date_modified": "2023-07-21T14:08:33.254Z"
         },
         {
             "id": "https://visnalize.com/blog/windows-resources.html",
@@ -80,7 +80,7 @@
             "title": "How to get Windows resources",
             "summary": "Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.",
             "image": "https://images.unsplash.com/photo-1624571409108-e9a41746af53?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2023-07-21T14:05:58.789Z"
+            "date_modified": "2023-07-21T14:08:33.254Z"
         }
     ]
 }
