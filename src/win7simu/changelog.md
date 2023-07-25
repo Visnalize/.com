@@ -11,6 +11,16 @@ pageClass: changelog
 
 <setupad-ads />
 
+## 3.2.0
+
+__Core__
+
+- You can now login/link with social accounts (supported platforms: Google, Github)
+
+__Android__
+
+- Fixed restore purchase across devices not working
+
 ## 3.1.0
 
 __Core__
