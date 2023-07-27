@@ -2,7 +2,7 @@
   <section>
     <button @click="scroll">
       <span>
-        <img src="/assets/logo.png" />
+        <img src="/assets/logo.png" alt="Visnalize" />
       </span>
       <span>Visnalize</span>
     </button>

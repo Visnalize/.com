@@ -8,7 +8,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img :src="link.src" :alt="key" />
+          <img :src="link.src" :alt="key" width="24" height="24" />
         </a>
       </li>
     </ul>
@@ -61,7 +61,7 @@ linkStyle(bg, shade) {
     img {
       display: block;
       margin: auto;
-      height: 24px;
+      width: auto;
     }
 
     &[data-social='twitter'] {

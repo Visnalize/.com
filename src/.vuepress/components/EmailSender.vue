@@ -6,6 +6,7 @@
         type="text"
         name="subject"
         placeholder="Subject"
+        required
       />
     </div>
     <div>
@@ -13,6 +14,7 @@
         :class="{ error: errors.includes('content') }"
         name="content"
         placeholder="Content"
+        required
       ></textarea>
     </div>
     <div>

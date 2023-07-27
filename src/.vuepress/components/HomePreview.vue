@@ -2,7 +2,7 @@
   <div v-if="isUrl">
     <iframe :title="title" :src="src" />
   </div>
-  <img v-else :src="src" :alt="title" />
+  <img v-else :src="src" :alt="title" width="180" height="180" />
 </template>
 
 <script>
@@ -21,11 +21,6 @@ export default {
 
 <style lang="stylus" scoped>
 size = 180px;
-
-img {
-  width: size;
-  height: auto;
-}
 
 div {
   width: size;

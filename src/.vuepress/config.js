@@ -5,6 +5,11 @@ module.exports = {
 
   head: [
     ["link", { rel: "icon", href: "/assets/favicon.png" }],
+    ["link", { rel: "preconnect", href: "https://cmp.setupcmp.com" }],
+    [
+      "meta",
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+    ],
     // [
     //   "script",
     //   {
