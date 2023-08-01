@@ -49,7 +49,7 @@ Yes. If the feature is not rejected above. You can comment your request below in
 
 ### Can I use this simulator as a launcher/home screen?
 
-No. The launcher/home screen setting was enabled with version [2.10.0](./changelog.md#_2-10-0), however, due to instability, the simulator was then suffered from declined rating with users complaining that it harmed their devices, therefore, this setting is disabled from version [2.11.1](./changelog.md#_2-11-1) onwards.
+No. Due to the its nature, this simulator is not designed to be used as a launcher/home screen.
 
 ### Does this simulator work offline?
 
@@ -59,7 +59,7 @@ Yes. However, certain features such as user accounts, some games and browsers wi
 
 ### How do I create a user account?
 
-Please see [this video tutorial](https://youtu.be/4jra0d0Ufag).
+You can create your own account with username and password (please refer [this video tutorial](https://youtu.be/4jra0d0Ufag)), or you can use your social accounts (Google, Github etc.) to login without having to create one.
 
 ### I don't know the password. How do I login?
 
@@ -67,11 +67,11 @@ You can either click on the suitcase to login with the Guest account, or create 
 
 ### I have forgotten my password. How to recover it?
 
-Unfortunately, your account is gone if you forget the password, there is no way to recover it.
+Unfortunately, account recovery is not supported at the moment. Please create a new account if you have forgotten your password.
 
 ### How do I open the desktop menu?
 
-To open the desktop menu or any context menu, simply hold your finger for a second.
+To open the desktop menu or any context menu, simply hold your finger for a second ([video tutorial](https://www.youtube.com/shorts/Vas3wRcqWZg)).
 
 ### How do I bring programs/apps to desktop?
 
@@ -84,7 +84,7 @@ There are currently 2 ways:
 
 ### Can you remove the ads?
 
-No, I'm afraid. I have been spending a lot of time and effort to develop and maintain this simulator, it even costs me a fair amount of money to maintain the cloud services to retain your user accounts and settings within. However, there is a small monthly subscription plan available with the Android version to which you can subscribe, to enjoy the app ad-free and support me to keep improving it and bring you more cool features. For the web version, you can disable the ads by becoming a patron on [Patreon](https://www.patreon.com/visnalize) at the same price.
+No, I'm afraid. A lot of time and effort have been spent to develop and maintain this simulator, it even costs me a fair amount of money to maintain the cloud services to retain your user accounts and settings within. However, there is a small monthly subscription plan available with  to which you can subscribe, to enjoy the app ad-free and support me to keep improving it and bring you more cool features. For the web version, you can disable the ads by becoming a patron on [Patreon](https://www.patreon.com/visnalize) at the same price.
 
 ### Can this simulator work on Android versions earlier than 6.0?
 
@@ -101,3 +101,7 @@ This happens on devices with Android 12 or later. Unfortunately, from Android 12
 ### Any plan to publish this simulator to App Store?
 
 No, I'm afraid. It's unlikely that this simulator will be published to App Store due to Apple's strict policies. However, you can still use the [web version](https://win7simu.visnalize.com/) or even "[install](https://youtu.be/zdSdvfFDKZg)" it on your iOS device.
+
+### I found a bug in the simulator. How do I report it?
+
+To help facilitate the bug smashing process, I only look into bug reports that are submitted via [email](mailto:visnalize@gmail.com), from [Github issues board](https://github.com/Visnalize/win7-simu) or through the simulator itself. You can find a "Report bugs" option in the __About__ app to report bugs through the simulator. Please include as much detail as possible that would help reproduce the bug.
