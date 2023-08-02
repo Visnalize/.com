@@ -11,6 +11,14 @@ pageClass: changelog
 
 <setupad-ads />
 
+## 3.3.0
+
+- Improve performance of window animations
+- Added language support for: Arabic
+- Added Region and Language - you can now switch display language from the within the app
+- Corrected social login auth redirect URL to the official domain (visnalize.com)
+- Fixed "View other accounts" section
+
 ## 3.2.0
 
 __Core__
