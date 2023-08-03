@@ -6,7 +6,7 @@
       :id="format === 'siderail' ? 'siderail' : null"
       :data-tag-id="tagId"
       :data-lazyload="format === 'responsive'"
-      :data-lazyloadMargin="format === 'responsive' ? '200px' : null"
+      :data-lazyloadMargin="format === 'responsive' ? '400px' : null"
     />
   </div>
 </template>
