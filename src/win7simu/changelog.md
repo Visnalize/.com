@@ -19,6 +19,10 @@ pageClass: changelog
 - Corrected social login auth redirect URL to the official domain (visnalize.com)
 - Fixed "View other accounts" section
 
+### 3.3.1
+
+- Fixed Chrome tab issue
+
 ## 3.2.0
 
 __Core__
