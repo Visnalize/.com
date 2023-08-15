@@ -9,7 +9,7 @@ pageClass: changelog
 
 <a-social hideCommentCount />
 
-<setupad-ads />
+<google-ads />
 
 ## 3.3.0
 
@@ -145,7 +145,7 @@ __Android__
 
 - Fixed an issue with some games not loading
 
-<setupad-ads />
+<google-ads />
 
 ## 2.23.0
 
@@ -293,7 +293,7 @@ __Android__
 - Added easter egg: Chrome dino game
 - Added easter egg: bring Control Panel to desktop
 
-<setupad-ads />
+<google-ads />
 
 ## 2.9.0
 
@@ -408,4 +408,4 @@ First release with the basic Windows GUI and functionalities:
 - Snipping Tool
 - Media Player
 
-<setupad-ads />
+<google-ads />

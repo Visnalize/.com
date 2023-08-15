@@ -35,7 +35,7 @@ Despite only a few capabilities being rolled out for the File Explorer in [v3.0.
 
 In v3.0.0, the minimum viable version of File Explorer supports basic operations on files and folders such as creating, opening, editing, renaming, moving, copying, and pasting. And an integral part of this is the trash/delete mechanism which is also supported. As the simulator has to support both Web and Android platforms, there are some challenges to solve for each, and the implementation approach also differs. I will break down some key notes for each.
 
-<setupad-ads />
+<google-ads />
 
 ### Implementation for Android
 

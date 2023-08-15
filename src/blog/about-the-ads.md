@@ -49,7 +49,7 @@ For this website and the web version of **Win7 Simu**, so far I have only consid
 
 However, out of these 4, I only needed to use **Display Ad**, which is also the format recommended by Google. The Display ad offers a responsive size that works anywhere you might cram it to, but of course the space should not be too small, otherwise there will be no ad available for serving. It's also possible to let Adsense setup the ads for you without any manual work by enabling the **Auto Ads**, but personally, I prefer doing things by my own for which I will have full controls.
 
-<setupad-ads />
+<google-ads />
 
 ## Implementing ads
 

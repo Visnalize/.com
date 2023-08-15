@@ -31,7 +31,7 @@ Yes, searching on the internet, that's obviously the first thing to do when you 
 
 For **audio**, I mostly convert the Windows sound videos on YouTube to mp3 format using [this online tool](https://ytmp3.cc/downloader/). Later on, I get to know that you can find the audio collection in **C:\Windows\Media**, all sounds are available in the wav format.
 
-<setupad-ads />
+<google-ads />
 
 ## Extracting icons from .dll files
 

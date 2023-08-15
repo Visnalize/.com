@@ -33,7 +33,7 @@ pageClass: homepage
   </article>
 </home-section>
 
-<setupad-ads tag-id="5209" />
+<google-ads format="horizontal" />
 
 <home-section class="center dark">
   <article>
@@ -52,6 +52,6 @@ pageClass: homepage
   </article>
 </home-section>
 
-<setupad-ads tag-id="5210" />
+<google-ads format="horizontal" />
 
 <home-footer />

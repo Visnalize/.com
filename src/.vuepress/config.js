@@ -5,40 +5,16 @@ module.exports = {
 
   head: [
     ["link", { rel: "icon", href: "/assets/favicon.png" }],
-    ["link", { rel: "preconnect", href: "https://cmp.setupcmp.com" }],
     [
       "meta",
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
     ],
-    // [
-    //   "script",
-    //   {
-    //     async: true,
-    //     "data-ad-client": "ca-pub-5904323684803247",
-    //     src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-    //   },
-    // ],
-    [
-      "script",
-      {
-        src: "https://cmp.setupcmp.com/cmp/cmp/cmp-stub.js",
-        "data-prop-id": "6609",
-      },
-    ],
     [
       "script",
       {
         async: true,
-        src: "https://cmp.setupcmp.com/cmp/cmp/cmp-v1.js",
-        "data-prop-stpd-cmp-id": "6609",
-      },
-    ],
-    [
-      "script",
-      {
-        async: true,
-        src: "https://stpd.cloud/assets/stpdwrapper.js",
-        crossorigin: "anonymous",
+        "data-ad-client": "ca-pub-5904323684803247",
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
       },
     ],
     [

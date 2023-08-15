@@ -84,7 +84,7 @@ This feature is only available with user accounts. Therefore, make sure you are 
 * Likewise, you can also view, modify, or use any of the public themes.
 * If you wish to remove your theme from the public, simply select "Delete" also from the right-click menu, your theme will be then removed from the Public Gallery. However, keep in mind that anyone who has already loaded your theme onto their device will still keep a copy of it.
 
-<setupad-ads />
+<google-ads />
 
 ## Common selectors
 

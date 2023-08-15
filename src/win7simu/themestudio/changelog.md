@@ -7,7 +7,7 @@ pageClass: changelog
 
 <a-social hideCommentCount />
 
-<setupad-ads />
+<google-ads />
 
 ## 1.2.0
 
