@@ -54,6 +54,8 @@ win7-ui
 
 The project comprises of two main parts: the component library (the __`src`__ folder) and the documentation site (the __`docs`__ folder).
 
+<google-ads />
+
 ### The component library
 
 The component library is built to support Vue 2 projects (mainly due to the fact Vue 2 is Win7 Simu's [framework of choice](./building-win7-simu.md#the-tech-stack) 😜) with [Vite](https://vitejs.dev/) as the build tool/bundler.
