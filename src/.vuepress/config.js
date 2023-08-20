@@ -104,7 +104,10 @@ module.exports = {
     [
       "autometa",
       {
-        canonical_base: "https://visnalize.com",
+        canonical_base:
+          process.env.NODE_ENV === "development"
+            ? "http://localhost:8080"
+            : "https://visnalize.com",
         author: { name: "Visnalize" },
       },
     ],
