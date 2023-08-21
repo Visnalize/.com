@@ -35,7 +35,7 @@ The project is __open-source__, you can check out the [source code](https://gith
 
 To put it simply, the project is structured as follows:
 
-```{2,8}
+```{2,9}
 win7-ui
 ├── docs/
 │   ├── src/
