@@ -54,7 +54,11 @@ module.exports = {
       },
       {
         text: "📵 Brick 1100",
-        items: [{ text: "About", link: "/brick1100/about" }],
+        items: [
+          { text: "About", link: "/brick1100/about" },
+          { text: "Changelog", link: "/brick1100/changelog" },
+          { text: "Privacy Policy", link: "/brick1100/privacy" },
+        ],
       },
       { text: "📝 Blog", link: "/blog/" },
       { text: "🙋‍♂️ About", link: "/about" },
