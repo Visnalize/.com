@@ -18,12 +18,20 @@ Aside from being the best-selling phone, it is also the world's best-selling ele
 
 ## Why Brick 1100?
 
-Well, you should have guessed, Nokia is well-known for producing the most durable phones and this 1100 is no exception, if you throw it against the wall, all you have to do is pick it up and put back the battery in place and it will work again just fine. That should describe how tough it is, just like a brick, and hence the name (also to avoid the copyrighted trademark of Nokia).
+Well, you should have guessed, Nokia is well-known for producing the most durable phones and this 1100 is no exception, if you throw it against the wall, all you have to do is pick it up and put back the battery in place and it will work again just fine. That should describe how tough it is, just like a **brick**, and hence the name (also to avoid the copyrighted trademark of Nokia).
 
 ## Features
 
-As a simulator, it attempts to simulate every aspect of the phone, with the ability to adjust some of the settings on your Android, like changing your device's ringtone to the nostalgic Nokia tones, or triggering the flashlight from your device but through the simulator.
+As a simulator of Nokia 1100, it attempts to simulate every aspect of the phone, from the keypad control, graphics, sound effects to some of the familiar features such as the iconic Snake game, flashlight, reminders, calculator, etc. Additionally, a few twists are added to make it more unique and fun to play with. Install now and experience it yourself!
+
+::: tip Tip
+Refer to [Changelog](./changelog.md) for a complete list of available features through versions.
+:::
 
 ## Where to get it?
 
-The simulator is still under development and soon will be available for download as an Android/Web app. If you would like to see the unreleased version, do drop me a message at [visnalize@gmail.com](mailto:visnalize@gmail.com) and I will provide you one.
+<div class="access">
+  <a href="https://play.google.com/store/apps/details?id=com.visnalize.brick1100" target="_blank">
+    <img src="/assets/access-store.png" alt="Play Store" />
+  </a>
+</div>
