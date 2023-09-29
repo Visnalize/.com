@@ -9,7 +9,26 @@ pageClass: changelog
 
 <a-social hideCommentCount />
 
-## 0.0.1 (Beta)
+## Beta
+
+### 0.0.5
+
+- Added new built-in game: Chrome Dino
+- Fixed game audio issues
+
+### 0.0.4
+
+_Minor bug fixes._
+
+### 0.0.3
+
+_Minor bug fixes._
+
+### 0.0.2
+
+_Minor bug fixes._
+
+### 0.0.1
 
 The first beta release of the app with the core interface and functionalities implemented.
 
