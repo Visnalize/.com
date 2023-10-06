@@ -24,3 +24,6 @@ atlas5.co, 3688, DIRECT
 walletcircle.co, 3688, DIRECT
 google.com, pub-7094677798399606, RESELLER, f08c47fec0942fa0
 google.com, pub-2403018226404213, RESELLER, f08c47fec0942fa0
+
+# Appbroda
+google.com, pub-6475545211379383, DIRECT, f08c47fec0942fa0
