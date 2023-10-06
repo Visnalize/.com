@@ -11,6 +11,19 @@ pageClass: changelog
 
 <google-ads />
 
+## 3.4.0
+
+__Core__
+
+- Added new theme: ChromeOS
+- Fixed win8/win10 start menu grid item alignment
+- Fixed battery gadget text alignment
+
+__Android__
+
+- Add yearly subscription to remove ads
+- Fix missing cursor in RTL mode
+
 ## 3.3.0
 
 - Improve performance of window animations
