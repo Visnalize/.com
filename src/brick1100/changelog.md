@@ -11,6 +11,10 @@ pageClass: changelog
 
 ## Beta
 
+### 0.0.6
+
+_Minor bug fixes._
+
 ### 0.0.5
 
 - Added new built-in game: Chrome Dino
