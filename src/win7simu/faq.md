@@ -45,7 +45,7 @@ Yes. However, the priority is low and your expectation might not be met. Please 
 
 ### Can you add this feature, that feature and more features?
 
-Yes. If the feature is not rejected above. You can comment your request below in the comment section or write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com).
+Yes. If the feature is not rejected above. You can comment your request below in the comment section or write to me at [hey@visnalize.com](mailto:hey@visnalize.com).
 
 ### Can I use this simulator as a launcher/home screen?
 
@@ -104,4 +104,4 @@ No, I'm afraid. It's unlikely that this simulator will be published to App Store
 
 ### I found a bug in the simulator. How do I report it?
 
-To help facilitate the bug smashing process, I only look into bug reports that are submitted via [email](mailto:visnalize@gmail.com), from [Github issues board](https://github.com/Visnalize/win7-simu) or through the simulator itself. You can find a "Report bugs" option in the __About__ app to report bugs through the simulator. Please include as much detail as possible that would help reproduce the bug.
+To help facilitate the bug smashing process, I only look into bug reports that are submitted via [email](mailto:hey@visnalize.com), from [Github issues board](https://github.com/Visnalize/win7-simu) or through the simulator itself. You can find a "Report bugs" option in the __About__ app to report bugs through the simulator. Please include as much detail as possible that would help reproduce the bug.

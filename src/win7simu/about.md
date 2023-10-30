@@ -25,7 +25,7 @@ I actually started this app under the name "**Windows 7 Simulator**" without any
 
 As a simulator of Windows 7, it attempts to simulate every aspect of Windows 7, from the most familiar programs of Windows 7 such as Calculator, Command Prompt, the striking glass effect of the Aero themes, to the exclusive Desktop Gadgets only available in Windows Vista and 7. The simulator also comes with some other cool and nostalgic Windows themes designed on the core of Windows 7 such as Windows 2000, Windows XP, Windows 8...
 
-The simulator is still in active development and more features will be added eventually. If you have suggestions or feedback, please be welcome to write to me at [visnalize@gmail.com](mailto:visnalize@gmail.com). I may not be able to respond to all requests but rest assured that I take all of them and prioritize accordingly for the development.
+The simulator is still in active development and more features will be added eventually. If you have suggestions or feedback, please be welcome to write to me at [hey@visnalize.com](mailto:hey@visnalize.com). I may not be able to respond to all requests but rest assured that I take all of them and prioritize accordingly for the development.
 
 ::: tip Tip
 Refer to [Changelog](./changelog.md) for a complete list of available features through versions.

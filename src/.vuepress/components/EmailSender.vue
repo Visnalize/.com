@@ -45,7 +45,7 @@ export default {
       subject = encodeURIComponent(subject.value);
       content = encodeURIComponent(content.value);
       const link = document.createElement("a");
-      link.href = `mailto:visnalize@gmail.com?subject=${subject}&body=${content}`;
+      link.href = `mailto:hey@visnalize.com?subject=${subject}&body=${content}`;
       link.target = "_blank";
       link.click();
       this.errors = [];

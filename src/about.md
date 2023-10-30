@@ -26,6 +26,6 @@ I shamelessly created the logo using MS Paint and eventually on Figma.
 
 ## Contact
 
-I am not actively available via direct messaging or chat apps like Discord, WhatsApp etc. You can reach me via email at [visnalize@gmail.com](mailto:visnalize@gmail.com) or with a little help from the form below:
+I am not actively available via direct messaging or chat apps like Discord, WhatsApp etc. You can reach me via email at [hey@visnalize.com](mailto:hey@visnalize.com) or with a little help from the form below:
 
 <email-sender />
