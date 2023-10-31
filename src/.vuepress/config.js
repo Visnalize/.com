@@ -1,7 +1,7 @@
 const links = require("./links");
 
 module.exports = {
-  title: "Visnalize - Recreating Nostalgia for Entertainment",
+  title: "Visnalize",
 
   head: [
     ["link", { rel: "icon", href: "/assets/favicon.png" }],
