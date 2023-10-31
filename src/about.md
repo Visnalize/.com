@@ -1,6 +1,6 @@
 ---
 sidebar: false
-description: Recreating Nostalgia for Entertainment | Full-time software developer, free-time app maker | Creator of Win7 Simu and other unique apps
+description: Full-time software developer, free-time app maker. Author of Win7 Simu and Brick 1100. On a mission to relive the good old days.
 ---
 
 # 🙋‍♂️ About Me
@@ -11,6 +11,7 @@ I am not good at math and problem solving, or positively speaking, just decent. 
 
 Tools I use:
 
+* 1 cheap laptop, 1 used monitor and 1 low-end mobile device
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Android Studio](https://developer.android.com/studio)
 * [Github](https://github.com/)
@@ -20,9 +21,9 @@ Tools I use:
 
 ## Visnalize
 
-**Visnalize** is **Visualize** with the letter **u** upside down, my brand name of choice. If you have read above, you should see the reason why I pick this name.
+**Visnalize** is **Visualize** (not *Visnalize*) with the letter **u** upside down, my brand name of choice. I did not really care about the name when I first started and having little to no knowledge about branding or marketing, I just picked a name that was somewhat relevant to my interest and went with it, though the letter **u** upside down was a small intentional touch that has luckily helped me stand out from the crowd in terms of [search engine results](https://www.google.com/search?q=visnalize).
 
-I shamelessly created the logo using MS Paint and eventually on Figma.
+The logo is also shamelessly created by myself using MS Paint and eventually on Figma.
 
 ## Contact
 
