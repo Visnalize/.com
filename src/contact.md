@@ -1,0 +1,1 @@
+<a-redirect to="/about/" />

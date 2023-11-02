@@ -18,6 +18,10 @@ const redirects = [
     path: "/win7simu/dyk",
     to: "https://www.youtube.com/playlist?list=PLztkJSxlj5P76jbbySzGMBZ4reCYbSA5y",
   },
+  {
+    path: "/brick1100/feedback",
+    to: "https://feedback.userreport.com/f5469bcf-5bce-464f-a88e-6f177c8fa8b7/#ideas/popular",
+  },
 ];
 
 const html = (redirectUrl) =>

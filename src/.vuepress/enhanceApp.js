@@ -7,9 +7,4 @@ export default ({
   siteData, // site metadata
 }) => {
   Vue.use(VIcon, "v-icon");
-  router.addRoutes([
-    { path: "/win7simu/", redirect: "/win7simu/about/" },
-    { path: "/brick1100/", redirect: "/brick1100/about/" },
-    { path: "/contact/", redirect: "/about/" },
-  ]);
 };
