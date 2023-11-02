@@ -1,1 +1,1 @@
-<a-redirect to="/about/" />
+<a-redirect to="/about" />

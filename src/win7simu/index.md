@@ -1,1 +1,1 @@
-<a-redirect to="/win7simu/about/" />
+<a-redirect to="/win7simu/about" />

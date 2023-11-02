@@ -8,7 +8,7 @@ export default {
       required: true,
     },
   },
-  created() {
+  beforeMount() {
     document.location.replace(this.to);
   },
 };
