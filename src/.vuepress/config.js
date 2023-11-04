@@ -58,6 +58,19 @@ module.exports = {
           { text: "About", link: "/brick1100/about" },
           { text: "Changelog", link: "/brick1100/changelog" },
           { text: "Privacy Policy", link: "/brick1100/privacy" },
+          {
+            text: "Guides",
+            items: [
+              {
+                text: "Games",
+                link: "/brick1100/games",
+              },
+              {
+                text: "Deep Links",
+                link: "/brick1100/deep-links",
+              },
+            ],
+          },
         ],
       },
       { text: "📝 Blog", link: "/blog/" },

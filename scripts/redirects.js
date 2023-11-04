@@ -22,6 +22,10 @@ const redirects = [
     path: "/brick1100/feedback",
     to: "https://feedback.userreport.com/f5469bcf-5bce-464f-a88e-6f177c8fa8b7/#ideas/popular",
   },
+  {
+    path: "/brick1100/chat",
+    to: "https://discord.gg/6AQDnZa4Xm",
+  },
 ];
 
 const html = (redirectUrl) =>
