@@ -20,9 +20,9 @@ The table below lists the deep links that are available in the app and the secti
 | <a-deeplink path="/menu" /> | Menu screen |
 | <a-deeplink path="/messages" /> | Messages |
 | <a-deeplink path="/messages/editor" /> | Add/edit messages |
-| <a-deeplink path="/messages/inbox" /> | Inbox messages |
-| <a-deeplink path="/messages/draft" /> | Draft messages |
-| <a-deeplink path="/messages/sent" /> | Sent messages |
+| <a-deeplink path="/messages/viewer/inbox" /> | Inbox messages |
+| <a-deeplink path="/messages/viewer/draft" /> | Draft messages |
+| <a-deeplink path="/messages/viewer/sent" /> | Sent messages |
 | <a-deeplink path="/contacts" /> | Contacts |
 | <a-deeplink path="/contacts/search" /> | Search contacts |
 | <a-deeplink path="/contacts/editor" /> | Add/edit contacts |

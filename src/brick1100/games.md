@@ -8,8 +8,9 @@ layout: BlogPost
 
 ## Snake
 
-![Snake intro](./games/snake-intro.png)
-![Snake gameplay](./games/snake-gameplay.png)
+| Splash screen | Gameplay |
+| --- | --- |
+| ![Snake intro](./games/snake-intro.png) | ![Snake gameplay](./games/snake-gameplay.png) |
 
 :::tip Goal
 Make the snake grow longer by directing it to the food. The longer the snake gets, the more points you score.
@@ -28,8 +29,9 @@ Make the snake grow longer by directing it to the food. The longer the snake get
 
 ## Brick Breaker
 
-![Brick breaker intro](./games/brick-intro.png)
-![Brick breaker gameplay](./games/brick-gameplay.png)
+| Splash screen | Gameplay |
+| --- | --- |
+| ![Brick breaker intro](./games/brick-intro.png) | ![Brick breaker gameplay](./games/brick-gameplay.png)
 
 :::tip Goal
 Clear the screen by breaking all the bricks with the ball to advance to the next level.
@@ -44,8 +46,9 @@ Clear the screen by breaking all the bricks with the ball to advance to the next
 
 ## Chrome Dino
 
-![Chrome Dino intro](./games/dino-intro.png)
-![Chrome Dino gameplay](./games/dino-gameplay.png)
+| Splash screen | Gameplay |
+| --- | --- |
+| ![Chrome Dino intro](./games/dino-intro.png) | ![Chrome Dino gameplay](./games/dino-gameplay.png) |
 
 :::tip Goal
 Control the T-Rex to overcome obstacles. The longer you survive, the higher your score.
@@ -60,8 +63,9 @@ Control the T-Rex to overcome obstacles. The longer you survive, the higher your
 
 ## Monogram
 
-![Monogram intro](./games/monogram-intro.png)
-![Monogram gameplay](./games/monogram-gameplay.png)
+| Splash screen | Gameplay |
+| --- | --- |
+| ![Monogram intro](./games/monogram-intro.png) | ![Monogram gameplay](./games/monogram-gameplay.png) |
 
 :::tip Goal
 Leave blank or fill the grid cells until a pixel image appears to advance to the next level.
@@ -77,5 +81,6 @@ Leave blank or fill the grid cells until a pixel image appears to advance to the
 - <a-key s="up" /> - move the cursor to the previous cell
 - <a-key s="down" /> - move the cursor to the next cell
 - <a-key s="navi" /> / <a-key s="5" /> - toggle cell fill
+- <a-key s="aste" /> - toggle cell hints (shows the number of filled cells in the row/column)
 - <a-key s="0" /> - reset the grid
 :::
