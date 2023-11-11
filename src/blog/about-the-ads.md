@@ -2,7 +2,9 @@
 layout: BlogPost
 description: A couple of things about ads and how I implement them within my websites and apps
 sidebar: auto
-tag: tips
+tag:
+    - tips
+    - sharing
 ---
 
 # About the ads and how I implement them
