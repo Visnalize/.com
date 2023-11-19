@@ -11,6 +11,19 @@ pageClass: changelog
 
 <google-ads />
 
+## 3.5.0
+
+__Core__
+
+- Major visual enhancements to the taskbar and start menu across different themes
+- Added ChromeOS boot + login screen
+- Added language support for: Persian, Bengali, Indonesian
+- Fixed shutdown screen for MacOS and ChromeOS themes
+
+__Android__
+
+- Added more display zoom options (at 70 and 85%)
+
 ## 3.4.0
 
 __Core__
