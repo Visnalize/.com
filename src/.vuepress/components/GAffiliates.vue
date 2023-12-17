@@ -13,7 +13,7 @@ export default {
   },
   mounted() {
     this.toast = createToastInterface({
-      container: this.$root.$el,
+      draggable: false,
       timeout: false,
       position: POSITION.BOTTOM_LEFT,
     });
