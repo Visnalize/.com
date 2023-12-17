@@ -26,7 +26,7 @@ export default {
         <a
           href="https://shipfa.st/?via=visnalize"
           target="_blank"
-          style="display: block; color: #fff; margin-top: 8px"
+          style="display: block; color: #fff; margin-top: 8px; text-align: center;"
         >
           Build and launch your web app in days
           <span style="display: flex; align-items: center; justify-content: center">
