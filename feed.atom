@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://visnalize.com</id>
     <title>Visnalize</title>
-    <updated>2023-11-23T01:02:52.823Z</updated>
+    <updated>2023-12-17T09:47:54.528Z</updated>
     <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
     <link rel="alternate" href="https://visnalize.com"/>
     <link rel="self" href="https://visnalize.com/feed.atom"/>
@@ -11,7 +11,7 @@
         <id>https://visnalize.com/blog/about-the-ads.html</id>
         <link href="https://visnalize.com/blog/about-the-ads.html">
         </link>
-        <updated>2023-11-23T01:02:52.819Z</updated>
+        <updated>2023-12-17T09:47:54.524Z</updated>
         <summary type="html"><![CDATA[A couple of things about ads and how I implement them within my websites and apps]]></summary>
     </entry>
     <entry>
@@ -19,31 +19,31 @@
         <id>https://visnalize.com/blog/building-visnalize-com.html</id>
         <link href="https://visnalize.com/blog/building-visnalize-com.html">
         </link>
-        <updated>2023-11-23T01:02:52.819Z</updated>
+        <updated>2023-12-17T09:47:54.524Z</updated>
         <summary type="html"><![CDATA[Read about the progress and how I built the visnalize.com website for my own brand]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Turning my CodePen into an actual app]]></title>
-        <id>https://visnalize.com/blog/from-codepen-to-app.html</id>
-        <link href="https://visnalize.com/blog/from-codepen-to-app.html">
-        </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
-        <summary type="html"><![CDATA[From a simple idea, what merely looked like a playful demo on CodePen, but turned into a full-fledged app]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[How I built Win7 Simu]]></title>
         <id>https://visnalize.com/blog/building-win7-simu.html</id>
         <link href="https://visnalize.com/blog/building-win7-simu.html">
         </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
+        <updated>2023-12-17T09:47:54.525Z</updated>
         <summary type="html"><![CDATA[Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Turning my CodePen into an actual app]]></title>
+        <id>https://visnalize.com/blog/from-codepen-to-app.html</id>
+        <link href="https://visnalize.com/blog/from-codepen-to-app.html">
+        </link>
+        <updated>2023-12-17T09:47:54.525Z</updated>
+        <summary type="html"><![CDATA[From a simple idea, what merely looked like a playful demo on CodePen, but turned into a full-fledged app]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[How to get iframes to load any websites]]></title>
         <id>https://visnalize.com/blog/load-any-websites-in-iframes.html</id>
         <link href="https://visnalize.com/blog/load-any-websites-in-iframes.html">
         </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
+        <updated>2023-12-17T09:47:54.525Z</updated>
         <summary type="html"><![CDATA[The most effective way to get iframes embedded in your web apps to load any websites]]></summary>
     </entry>
     <entry>
@@ -51,38 +51,38 @@
         <id>https://visnalize.com/blog/</id>
         <link href="https://visnalize.com/blog/">
         </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
+        <updated>2023-12-17T09:47:54.525Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Turning my side project into a side hustle]]></title>
         <id>https://visnalize.com/blog/from-side-project-to-side-hustle.html</id>
         <link href="https://visnalize.com/blog/from-side-project-to-side-hustle.html">
         </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
+        <updated>2023-12-17T09:47:54.525Z</updated>
         <summary type="html"><![CDATA[From a side project for learning to a side hustle with recurring revenue, read about how I did it, the process, the tools, the tips and tricks.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Implementing File Explorer in Win7 Simu]]></title>
-        <id>https://visnalize.com/blog/win7-simu-file-explorer.html</id>
-        <link href="https://visnalize.com/blog/win7-simu-file-explorer.html">
-        </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
-        <summary type="html"><![CDATA[Some key points to share about how Win7 Simu's File Explorer is implemented.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Windows 7 icon Viewer/Downloader]]></title>
         <id>https://visnalize.com/blog/win7-icons-viewer-downloader.html</id>
         <link href="https://visnalize.com/blog/win7-icons-viewer-downloader.html">
         </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
+        <updated>2023-12-17T09:47:54.525Z</updated>
         <summary type="html"><![CDATA[A simple tool to view and download Windows 7 icon collection.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Implementing File Explorer in Win7 Simu]]></title>
+        <id>https://visnalize.com/blog/win7-simu-file-explorer.html</id>
+        <link href="https://visnalize.com/blog/win7-simu-file-explorer.html">
+        </link>
+        <updated>2023-12-17T09:47:54.525Z</updated>
+        <summary type="html"><![CDATA[Some key points to share about how Win7 Simu's File Explorer is implemented.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Win7 Simu versus mobile devices]]></title>
         <id>https://visnalize.com/blog/win7-simu-mobile-devices.html</id>
         <link href="https://visnalize.com/blog/win7-simu-mobile-devices.html">
         </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
+        <updated>2023-12-17T09:47:54.526Z</updated>
         <summary type="html"><![CDATA[How to install Win7 Simu on mobile devices without downloading from any App Stores.]]></summary>
     </entry>
     <entry>
@@ -90,23 +90,23 @@
         <id>https://visnalize.com/blog/win7-simu-year-in-review-2022.html</id>
         <link href="https://visnalize.com/blog/win7-simu-year-in-review-2022.html">
         </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
+        <updated>2023-12-17T09:47:54.526Z</updated>
         <summary type="html"><![CDATA[Look back at some amazing numbers for Win7 Simu in 2022.]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to get Windows resources]]></title>
-        <id>https://visnalize.com/blog/windows-resources.html</id>
-        <link href="https://visnalize.com/blog/windows-resources.html">
-        </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
-        <summary type="html"><![CDATA[Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Introducing Win7 UI]]></title>
         <id>https://visnalize.com/blog/win7-ui-introduction.html</id>
         <link href="https://visnalize.com/blog/win7-ui-introduction.html">
         </link>
-        <updated>2023-11-23T01:02:52.820Z</updated>
+        <updated>2023-12-17T09:47:54.526Z</updated>
         <summary type="html"><![CDATA[The open-source UI library that powers Win7 Simu behind the scenes.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to get Windows resources]]></title>
+        <id>https://visnalize.com/blog/windows-resources.html</id>
+        <link href="https://visnalize.com/blog/windows-resources.html">
+        </link>
+        <updated>2023-12-17T09:47:54.526Z</updated>
+        <summary type="html"><![CDATA[Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.]]></summary>
     </entry>
 </feed>
