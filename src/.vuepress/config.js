@@ -149,5 +149,5 @@ module.exports = {
     },
   },
 
-  globalUIComponents: ["GSiteSettings"],
+  globalUIComponents: ["GSiteSettings", "GAffiliates"],
 };
