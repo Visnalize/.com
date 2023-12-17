@@ -125,6 +125,10 @@ li {
       font-weight: bold;
     }
   }
+
+  .is-dark & {
+    background: $bgColorDark;
+  }
 }
 
 @media (max-width: 959px) {

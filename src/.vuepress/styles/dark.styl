@@ -1,6 +1,7 @@
 $main = #292929
 $text = #ededed
 $ease = rgba(255, 255, 255, 0.08)
+$border = lighten($main, 10)
 
 .is-dark
   color $text
@@ -21,6 +22,9 @@ $ease = rgba(255, 255, 255, 0.08)
       .nav
         &-dropdown
           background lighten($main, 5)
+
+          .dropdown-item h4
+            border-color $border
         
         &-link
           color $text
@@ -59,14 +63,14 @@ $ease = rgba(255, 255, 255, 0.08)
       background $ease
 
   h2
-    border-color lighten($main, 10)
+    border-color $border
 
   code
     color $text
     background-color $ease
   
   .page-nav .inner
-    border-color lighten($main, 10)
+    border-color $border
   
   .page-edit
     .last-updated
@@ -75,8 +79,6 @@ $ease = rgba(255, 255, 255, 0.08)
       .time
         color darken($text, 20%)
 
-  .sk-ww-google-play-reviews-review-text
-    color #aaa !important
-  
-  .sk-ww-google-play-reviews-content a
-    color $text !important
+  .content__default > footer
+    border-color $border
+    color $textColorDark

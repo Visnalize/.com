@@ -57,6 +57,10 @@ li {
   &:hover img {
     transform: scale(1.4);
   }
+
+  .is-dark & {
+    background: $bgColorDark;
+  }
 }
 
 span {
@@ -67,6 +71,10 @@ span {
     color: $textColor;
     padding: 0.5rem 1rem;
     text-align: center;
+
+    .is-dark & {
+      color: $textColorDark;
+    }
   }
 }
 
