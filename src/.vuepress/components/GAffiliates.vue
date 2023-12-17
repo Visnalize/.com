@@ -16,7 +16,6 @@ export default {
       container: this.$root.$el,
       timeout: false,
       position: POSITION.BOTTOM_LEFT,
-      showCloseButtonOnHover: true,
     });
     this.toast(this.getContent());
   },
