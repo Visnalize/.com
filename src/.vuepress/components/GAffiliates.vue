@@ -17,7 +17,7 @@ export default {
       timeout: false,
       position: POSITION.BOTTOM_LEFT,
     });
-    this.toast(this.getContent());
+    // this.toast(this.getContent());
   },
   methods: {
     getContent() {
