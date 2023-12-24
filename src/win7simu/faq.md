@@ -98,6 +98,10 @@ Please make sure you have the latest version of [Android WebView](https://play.g
 
 This happens on devices with Android 12 or later. Unfortunately, from Android 12+, Google restricts access to the packages (games, apps, etc.) on user devices. There's nothing that can be done about it (see this [version changelog](./changelog.md#_2-23-1)).
 
+### File Explorer does not show files on my device. What's the problem?
+
+Due to Google Play's policy, from Android 11 onwards, apps are restricted from accessing files on user devices. There's nothing that can be done about it (for more context, see this [post](https://twitter.com/visnalize/status/1738762714384564272)).
+
 ### Any plan to publish this simulator to App Store?
 
 No, I'm afraid. It's unlikely that this simulator will be published to App Store due to Apple's strict policies. However, you can still use the [web version](https://win7simu.visnalize.com/) or even "[install](https://youtu.be/zdSdvfFDKZg)" it on your iOS device.

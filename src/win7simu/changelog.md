@@ -11,6 +11,25 @@ pageClass: changelog
 
 <google-ads />
 
+## 3.6.0
+
+__Core__
+
+- Improved visual accuracy across several themes
+- Adjusted Calculator's visual across different themes
+- Added Program Installer
+- Added BSOD Customizer
+- Added new theme: Windows 11 dark
+- Added new theme: Kubuntu (KDE Plasma)
+
+__Android__
+
+- Fixed File Explorer not working on Android 11+, removed Android (A:) drive
+
+__Web__
+
+- Added "Download" option in item menu
+
 ## 3.5.0
 
 __Core__

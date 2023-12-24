@@ -11,6 +11,10 @@ pageClass: changelog
 
 ## Beta
 
+### 0.0.8
+
+_Minor bug fixes._
+
 ### 0.0.7
 
 - Added new built-in game: [Monogram](./games.md#monogram) (Menu > Games > Monogram)
