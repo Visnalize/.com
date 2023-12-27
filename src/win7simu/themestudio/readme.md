@@ -1,5 +1,5 @@
 ---
-layout: WithComments
+layout: BlogPost
 description: Introduction to Theme Studio, an exclusive application to Win7 Simu.
 ---
 
