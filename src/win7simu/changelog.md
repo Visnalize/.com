@@ -30,6 +30,10 @@ __Web__
 
 - Added "Download" option in item menu
 
+### 3.6.1
+
+- Fixed an issue with the System (C:) drive
+
 ## 3.5.0
 
 __Core__
