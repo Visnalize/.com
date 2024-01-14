@@ -11,6 +11,24 @@ pageClass: changelog
 
 <google-ads />
 
+## 3.7.0
+
+__Core__
+
+- You can now access files from device via "Upload files here" in context menu
+- Added File Explorer view modes
+- Added premium themes: Ubuntu, Windows XP variants (Olive Green, Royale, Silver, Zune)
+- Major updates to Mouse settings and cursor
+  - Added MacOS and Ubuntu cursor sets
+  - Added pointer options tab
+- Enhanced components' visual across multiple themes
+
+__Web__
+
+- Replaced Patreon with a new billing platform
+- Display custom cursor matching mouse settings
+- Enhanced Assistive control panel
+
 ## 3.6.0
 
 __Core__
