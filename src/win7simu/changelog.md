@@ -11,6 +11,19 @@ pageClass: changelog
 
 <google-ads />
 
+## 3.8.0
+
+__Core__
+
+- Added new themes to Windows XP variants pack: Royale Noir, Embedded
+- Added ZIP support. You can now view or extract .zip content
+- Fixed an issue with desktop icons not aligned correctly
+- Fixed an issue with Paint not opening file
+
+__Web__
+
+- You can now drag and drop files onto desktop/File Explorer to upload
+
 ## 3.7.0
 
 __Core__
@@ -114,6 +127,8 @@ __Web__
 
 - Fixed Theme Studio's Properties window placement
 
+<google-ads />
+
 ## 3.0.0
 
 __Core__
@@ -212,8 +227,6 @@ __Android__
 
 - Fixed an issue with some games not loading
 
-<google-ads />
-
 ## 2.23.0
 
 __Core__
@@ -248,6 +261,8 @@ __Web__
 - Added Assistive Control to support some external interactions.
 - Improved user experience with ads (removed the giant banner ad)
 - Fixed button color on Safari
+
+<google-ads />
 
 ### 2.23.2
 
