@@ -11,6 +11,15 @@ description: A recreation of the Windows 7 operating system on the Web/Android p
 
 **Win7 Simu** is a recreation of the Windows 7 operating system on the Web/Android platform. It is built out of pure joy and nostalgia for the sake of reliving the good old time with the elegant Aero and Glassy interface.
 
+<div class="access">
+  <a href="https://play.google.com/store/apps/details?id=com.visnalize.win7simu" target="_blank">
+    <img src="/assets/access-store.png" alt="Play Store" width="300" />
+  </a>
+  <a href="https://win7simu.visnalize.com" target="_blank">
+    <img src="/assets/access-web.png" alt="Web App" width="300" />
+  </a>
+</div>
+
 ## A bit of the history
 
 **Windows 7** was first released by [Microsoft](https://en.wikipedia.org/wiki/Microsoft) on **October 22, 2009**, succeeding Windows Vista, which was criticized for its long development time, performance and compatibility issues at launch, and many other critiques. Windows 7 was well-received and praised, stating it to be a "big improvement" over Windows Vista and a "worthy successor" of Windows XP at the time.
@@ -39,7 +48,7 @@ Feature | Android | Web
 --------|:-------:|:---:
 Cross-platform support[*](#cross-platform) | ❌ | ✅
 Work offline | ✅ | ❌
-Can access local files via Computer | ✅ | ❌
+Can access local files directly with File Explorer[**](#local-files) | ❌ | ❌
 Can access local/native apps | ✅ | ❌
 Sync settings with online accounts | ✅ | ✅
 Multi-theming support | ✅ | ✅
@@ -48,17 +57,8 @@ System notifications | ✅ | ❌
 
 <a name="cross-platform">*</a> It doesn't matter if the device is Android, iOS, Windows, or Mac, as long as it has a web browser and connects to the internet.
 
+<a name="local-files">**</a> The early versions of Win7 Simu were able to access local files on Android devices. However, due to Google Play's [policy](./faq.md#file-explorer-does-not-show-files-on-my-device-what-s-the-problem), this feature was removed from v3.6.0 onwards.
+
 ### Translations [![Crowdin](https://badges.crowdin.net/win7simu/localized.svg)](https://crowdin.com/project/win7simu)
 
 Win7 Simu supports several languages. However, most of the translations are done via machine, therefore, the accuracy may be off or not correct whatsoever. I created a [translation project](https://crowdin.com/project/win7simu) on Crowdin and would welcome any contributions to correct and improve the translations, or even add new languages.
-
-## Where to get it?
-
-<div class="access">
-  <a href="https://play.google.com/store/apps/details?id=com.visnalize.win7simu" target="_blank">
-    <img src="/assets/access-store.png" alt="Play Store" />
-  </a>
-  <a href="https://win7simu.visnalize.com" target="_blank">
-    <img src="/assets/access-web.png" alt="Web Browser" />
-  </a>
-</div>
