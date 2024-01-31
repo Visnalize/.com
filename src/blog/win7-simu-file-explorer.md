@@ -27,7 +27,7 @@ __File Explorer__ has always been one of the vital features in any operating sys
 
 Yes, those are, but not all the difficulties I have been dealing with when developing the File Explorer functionalities, or in general, this simulator. Just a little bit of a sharing before we get into the technical stuff, so you may know that there is no shortcut to achievements.
 
-Despite only a few capabilities being rolled out for the File Explorer in [v3.0.0](../win7simu/changelog.md#_3-0-0), it actually took me months to come up, put the stuff together, and do thorough testing before releasing to you. It was not easy, at all, with several late nights and weekends burned onto it, having to face constant challenges and struggling to break through my own limits. However, the hard work finally paid off, it has come to fruition 😌
+Despite only a few capabilities being rolled out for the File Explorer in [v3.0.0](../win7simu/changelog.md#_3-0-0-may-20-2023), it actually took me months to come up, put the stuff together, and do thorough testing before releasing to you. It was not easy, at all, with several late nights and weekends burned onto it, having to face constant challenges and struggling to break through my own limits. However, the hard work finally paid off, it has come to fruition 😌
 
 ## Implementing the File Explorer functionalities
 

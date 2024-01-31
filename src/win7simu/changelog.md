@@ -11,7 +11,13 @@ pageClass: changelog
 
 <google-ads />
 
-## 3.8.0
+## 2024
+
+### 3.8.1 (Jan 29, 2024)
+
+- Fixed an issue with the boot themes in BIOS setup
+
+### 3.8.0 (Jan 29, 2024)
 
 __Core__
 
@@ -24,7 +30,7 @@ __Web__
 
 - You can now drag and drop files onto desktop/File Explorer to upload
 
-## 3.7.0
+### 3.7.0 (Jan 14, 2024)
 
 __Core__
 
@@ -42,7 +48,13 @@ __Web__
 - Display custom cursor matching mouse settings
 - Enhanced Assistive control panel
 
-## 3.6.0
+## 2023
+
+### 3.6.1 (Dec 28, 2023)
+
+- Fixed an issue with the System (C:) drive
+
+### 3.6.0 (Dec 24, 2023)
 
 __Core__
 
@@ -61,11 +73,7 @@ __Web__
 
 - Added "Download" option in item menu
 
-### 3.6.1
-
-- Fixed an issue with the System (C:) drive
-
-## 3.5.0
+### 3.5.0 (Nov 19, 2023)
 
 __Core__
 
@@ -78,7 +86,7 @@ __Android__
 
 - Added more display zoom options (at 70 and 85%)
 
-## 3.4.0
+### 3.4.0 (Oct 6, 2023)
 
 __Core__
 
@@ -91,7 +99,11 @@ __Android__
 - Add yearly subscription to remove ads
 - Fix missing cursor in RTL mode
 
-## 3.3.0
+### 3.3.1 (Aug 4, 2023)
+
+- Fixed Chrome tab issue
+
+### 3.3.0 (Aug 3, 2023)
 
 - Improve performance of window animations
 - Added language support for: Arabic
@@ -99,11 +111,7 @@ __Android__
 - Corrected social login auth redirect URL to the official domain (visnalize.com)
 - Fixed "View other accounts" section
 
-### 3.3.1
-
-- Fixed Chrome tab issue
-
-## 3.2.0
+### 3.2.0 (Jul 25, 2023)
 
 __Core__
 
@@ -113,11 +121,11 @@ __Android__
 
 - Fixed restore purchase across devices not working
 
-## 3.1.0
+### 3.1.0 (Jul 10, 2023)
 
 __Core__
 
-- Updated Theme Studio [v1.2.0](./themestudio/changelog.md#_1-2-0)
+- Updated Theme Studio [v1.2.0](./themestudio/changelog.md#_1-2-0-jul-10-2023)
 
 __Android__
 
@@ -129,7 +137,28 @@ __Web__
 
 <google-ads />
 
-## 3.0.0
+### 3.0.4 (Jun 24, 2023)
+
+- Fixed shadow-enabled cursor showing an outer box
+- Fixed Computer drives not opening on Android 10
+- Several bug fixes for other older Android versions
+
+### 3.0.3 (Jun 10, 2023)
+
+- Fixed Themestudio desktop preview missing icons
+- Fixed Android zoom issue
+- Fixed Android status bar visibility issue on certain devices
+
+### 3.0.2 (May 23, 2023)
+
+- Fixed Android crash when opening large media files
+
+### 3.0.1 (May 21, 2023)
+
+- Fixed adding shortcuts to desktop not working
+- Fixed Windows boot animation not visible on Safari
+
+### 3.0.0 (May 20, 2023)
 
 __Core__
 
@@ -147,28 +176,7 @@ __Web__
 - Fixed the issue with Safari where right-click (hold finger on touch devices) was not working
 - Fixed some other styling issues on Safari
 
-### 3.0.1
-
-- Fixed adding shortcuts to desktop not working
-- Fixed Windows boot animation not visible on Safari
-
-### 3.0.2
-
-- Fixed Android crash when opening large media files
-
-### 3.0.3
-
-- Fixed Themestudio desktop preview missing icons
-- Fixed Android zoom issue
-- Fixed Android status bar visibility issue on certain devices
-
-### 3.0.4
-
-- Fixed shadow-enabled cursor showing an outer box
-- Fixed Computer drives not opening on Android 10
-- Several bug fixes for other older Android versions
-
-## 2.28.0
+### 2.28.0 (Apr 5, 2023)
 
 __Core__
 
@@ -179,36 +187,38 @@ __Web__
 
 - Win7 Simu is now [installable](../blog/win7-simu-mobile-devices.md) from your browser
 
-## 2.27.0
+### 2.27.0 (Mar 13, 2023)
 
 __Core__
 
 - Added Winver
 - Added Programs and Features
-- Updated Theme Studio [v1.1.0](./themestudio/changelog.md#_1-1-0)
+- Updated Theme Studio [v1.1.0](./themestudio/changelog.md#_1-1-0-mar-13-2023)
 - Fixed the issue with account picture
 
 __Android__
 
 - Added device's push notification as system notification
 
-## 2.26.0
+### 2.26.2 (Feb 24, 2023)
 
-- Added [Theme Studio](./themestudio/)
-- Fixed screensaver not working for user accounts
-- Improved Snipping Tool's quality
+- Fixed missing desktop background & icons
 
-### 2.26.1
+### 2.26.1 (Feb 23, 2023)
 
 - Added Window mode for Snipping Tool
 - Fixed the Leaked_Taskbar BSOD issue for Windows 11 theme
 - Fixed broken Windows 10 Start menu
 
-### 2.26.2
+### 2.26.0 (Feb 19, 2023)
 
-- Fixed missing desktop background & icons
+- Added [Theme Studio](./themestudio/)
+- Fixed screensaver not working for user accounts
+- Improved Snipping Tool's quality
 
-## 2.25.0
+## 2022
+
+### 2.25.0 (Dec 29, 2022)
 
 - Desktop shortcuts are now moveable (you now need to double tap on a shortcut to open)
 - Added macOS boot + login screen
@@ -216,7 +226,7 @@ __Android__
 - Improved translation accuracy
 - Fixed an issue with the Shutdown menu commands not working in Win2k and Win95 themes
 
-## 2.24.0
+### 2.24.0 (Nov 19, 2022)
 
 __Core__
 
@@ -227,7 +237,28 @@ __Android__
 
 - Fixed an issue with some games not loading
 
-## 2.23.0
+### 2.23.1 (Sep 30, 2022)
+
+__Core__
+
+- Added MacOS launchpad animation
+
+__Android__
+
+- Revoked QUERY_ALL_PACKAGES permission to comply with Google Play policy. Note that this has an impact on the Start Menu as it won't show all the apps available on your device if you are using Android 12 or later.
+- Improved user experience with ads (ask for a confirmation before showing ads)
+
+__Web__
+
+- Added Assistive Control to support some external interactions.
+- Improved user experience with ads (removed the giant banner ad)
+- Fixed button color on Safari
+
+### 2.23.2 (Oct 15, 2022)
+
+- Improved web browsers (IE, Chrome) behavior
+
+### 2.23.0 (Sep 25, 2022)
 
 __Core__
 
@@ -245,30 +276,26 @@ __Web__
 
 - Fixed right click (hold gesture) issue on Safari
 
-### 2.23.1
+<google-ads />
+
+### 2.22.2 (Sep 10, 2022)
 
 __Core__
 
-- Added MacOS launchpad animation
+- Improved Russian translations (huge thanks to [Stysan](https://crowdin.com/profile/stysan))
 
 __Android__
 
-- Revoked QUERY_ALL_PACKAGES permission to comply with Google Play policy. Note that this has an impact on the Start Menu as it won't show all the apps available on your device if you are using Android 12 or later.
-- Improved user experience with ads (ask for a confirmation before showing ads)
+- Fixed fullscreen issue when the keyboard is visible
+- Fixed some other crash issues
 
-__Web__
+### 2.22.1 (Aug 6, 2022)
 
-- Added Assistive Control to support some external interactions.
-- Improved user experience with ads (removed the giant banner ad)
-- Fixed button color on Safari
+__Android__
 
-<google-ads />
+- Black screen hotfix.
 
-### 2.23.2
-
-- Improved web browsers (IE, Chrome) behavior
-
-## 2.22.0
+### 2.22.0 (Aug 6, 2022)
 
 __Core__
 
@@ -278,29 +305,14 @@ __Android__
 
 - Added monthly subscription to remove ads
 
-### 2.22.1
-
-__Android__
-
-- Black screen hotfix.
-
-### 2.22.2
-
-- Improved Russian translations (huge thanks to [Stysan](https://crowdin.com/profile/stysan))
-
-__Android__
-
-- Fixed fullscreen issue when the keyboard is visible
-- Fixed some other crash issues
-
-## 2.21.0
+### 2.21.0 (Jun 10, 2022)
 
 - You can now change theme color (Windows 7 aero themes only)
 - Added dummy Windows Installer
 - Improved translations for: Japanese, Polish, Portuguese and Russian. Huge thanks to the contributors
 - Fixed account creation issue
 
-## 2.20.0
+### 2.20.0 (Jan 4, 2022)
 
 - Major improvements for My Computer
 - You can now browse location to save file
@@ -309,65 +321,67 @@ __Android__
 - Added language support for: Japanese
 - Added several Online games
 
-## 2.19.0
+## 2021
+
+### 2.19.0 (Nov 7, 2021)
 
 - Added new theme: Windows 3.1
 - Added language support for: French
 - BSOD is now theme-compliant
 
-## 2.18.0
+### 2.18.0 (Oct 15, 2021)
 
 - Added Run
 - Added Task Manager
 - Added Taskbar properties
 
-## 2.17.0
+### 2.17.0 (Oct 3, 2021)
 
 - Added WordPad
 - Added language support for: Thai
 
-## 2.16.0
+### 2.16.0 (Sep 18, 2021)
 
 - Added BIOS setup
 - Boot animation, logon screen can now be changed via BIOS
 - Shutdown screen is now associated with account's theme
 
-## 2.15.0
+### 2.15.0 (Sep 8, 2021)
 
 - Added Sound Recorder
 - Added new theme: Windows 95
 - Improved Windows 11 start menu
 
-## 2.14.0
+### 2.14.0 (Aug 28, 2021)
 
 - Added Sticky Notes
 - Added Camera
 - My Computer can now open audio and video files from Android.
 
-## 2.13.0
+### 2.13.0 (Aug 18, 2021)
 
 - Added Screensaver
 - Added new gadget: Battery
 - Improved window's behavior (added active state, removed resizing frame, fixed several bugs)
 - Fixed some issues with Windows Media Player
 
-## 2.12.0
+### 2.12.0 (Aug 7, 2021)
 
 - You can now pin programs to taskbar.
 - Added new game: Solitaire
 - Added new CMD commands: shutdown, start, color
 
-## 2.11.0
+### 2.11.1 (Jul 27, 2021)
+
+- Home/launcher setting is disabled from the app due to instability.
+
+### 2.11.0 (Jul 23, 2021)
 
 - Added new theme: Windows 11
 - You can now zoom the display for a better experience
 - You can now switch the launcher directly from Control Panel
 
-### 2.11.1
-
-- Home/launcher setting is disabled from the app due to instability.
-
-## 2.10.0
+### 2.10.0 (Jul 4, 2021)
 
 - You can now use the simulator as a home/launcher app (beta)
 - Added new theme: Windows 2000
@@ -377,67 +391,69 @@ __Android__
 
 <google-ads />
 
-## 2.9.0
+### 2.9.0 (Jun 21, 2021)
 
 - Added option to create desktop shortcuts
 - Added new gadget: Weather
 - Added more BSOD triggers
 
-## 2.8.0
+### 2.8.0 (Jun 10, 2021)
 
 - Added Chrome
 - Added new game: Classic Tetris
 - Added new gadget: Currency
 
-## 2.7.0
+### 2.7.0 (May 23, 2021)
 
 - Added language support for: Spanish
 - Desktop background is now customizable
 - My Computer can now access files from Android (photos, text)
 - Addressed the issue with IE unable to access the internet
 
-## 2.6.0
+### 2.6.0 (May 14, 2021)
 
 - Added Windows Gadgets: Clock, Calendar
 - Improved Taskbar's Calendar
 - Improved Desktop Menu interface
 - Optimized app's launch time
 
-## 2.5.0
+### 2.5.0 (Apr 29, 2021)
 
 - Added Mouse
 - Fixed battery missing from taskbar
 
-## 2.4.0
+### 2.4.0 (Apr 15, 2021)
 
 - Added Purble Shop
 
-## 2.3
+## 2020
 
-- Added language support for: German, Portuguese, Russian, Vietnamese
-  - The display language is automatically selected based on device's language.
+### 2.3.3 (Aug 18, 2020)
 
-### 2.3.1
+- Fixed issue with Windows Media Player
+
+### 2.3.2 (Aug 16, 2020)
+
+- Added new theme: Windows Vista
+- Fixed display scaling issue on different screen sizes
+
+### 2.3.1 (Jul 31, 2020)
 
 - Added language support for: Turkish, Polish and Ukrainian
 - Fixed theme not persisting on Guest account
 - Fixed Comfy Cakes being displayed (the game is still in development)
 
-### 2.3.2
+### 2.3 (Jul 22, 2020)
 
-- Added new theme: Windows Vista
-- Fixed display scaling issue on different screen sizes
+- Added language support for: German, Portuguese, Russian, Vietnamese
+  - The display language is automatically selected based on device's language.
 
-### 2.3.3
-
-- Fixed issue with Windows Media Player
-
-## 2.2
+### 2.2 (Jul 11, 2020)
 
 - Added Paint
 - Added an account creation option
 
-## 2.1
+### 2.1 (Jun 13, 2020)
 
 - Screen orientation is locked to landscape to provide the best experience and reduce display issues on different screen sizes.
 - Text files, screen captures can now be saved
@@ -445,7 +461,7 @@ __Android__
 - Added new theme: Windows XP
 - Added Shutdown screen
 
-## 2.0
+### 2.0 (May 30, 2020)
 
 - Added online user accounts
   - Create and log on/off with user account
@@ -455,30 +471,30 @@ __Android__
   - Windows 8 with the unique Start Screen
   - Windows 8.1, Windows 10 with the brand new looks
 
-## 1.2
+### 1.2.2 (May 9, 2020)
+
+- Addressed the black screen issue on Android 6.0 and earlier
+
+### 1.2.1 (May 3, 2020)
+
+- Adjusted the size of UI elements
+- Fixed and enhanced Internet Explorer
+- Allow screen orientation (excluding Games which will remain locked for the best experience)
+
+### 1.2 (Apr 16, 2020)
 
 - Added Minesweeper
 - Added Purble Place (Purble Pairs)
 - Selected theme is now cached
 - Screen orientation is locked to portrait to prevent unexpected behavior
 
-### 1.2.1
-
-- Adjusted the size of UI elements
-- Fixed and enhanced Internet Explorer
-- Allow screen orientation (excluding Games which will remain locked for the best experience)
-
-### 1.2.2
-
-- Addressed the black screen issue on Android 6.0 and earlier
-
-## 1.1
+### 1.1 (Feb 27, 2020)
 
 - Added Command Prompt
 - Added Control Panel
 - Added Shutdown + Restart options
 
-## 1.0
+### 1.0 (Feb 16, 2020)
 
 First release with the basic Windows GUI and functionalities:
 

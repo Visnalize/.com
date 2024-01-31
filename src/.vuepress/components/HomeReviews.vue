@@ -88,18 +88,17 @@ li {
   background: rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
   padding: 3rem;
-  padding-top: 6rem;
   position: relative;
 
   &::before {
     content: '\201C';
     display: block;
     font-family: fantasy;
-    font-size: 10rem;
-    opacity: 0.3;
+    font-size: 16rem;
+    opacity: 0.1;
     position: absolute;
-    top: -2rem;
-    left: 3rem;
+    top: -5.5rem;
+    left: 2rem;
   }
 
   .content {

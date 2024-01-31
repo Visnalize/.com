@@ -9,41 +9,41 @@ pageClass: changelog
 
 <a-social hideCommentCount />
 
-## Beta
+## Beta versions
 
-### 0.0.8
+### 0.0.8 (Dec 2, 2023)
 
 _Minor bug fixes._
 
-### 0.0.7
+### 0.0.7 (Nov 4, 2023)
 
 - Added new built-in game: [Monogram](./games.md#monogram) (Menu > Games > Monogram)
 - Added user account (pretty much useless for now)
 - Added ability to access the app using [deep links](./deep-links.md)
 - You can now suggest, vote for feature ideas or report bugs via the [feedback forum](/brick1100/feedback)
 
-### 0.0.6
+### 0.0.6 (Oct 16, 2023)
 
 _Minor bug fixes._
 
-### 0.0.5
+### 0.0.5 (Sep 30, 2023)
 
 - Added new built-in game: [Chrome Dino](./games.md#chrome-dino) (Menu > Games > Chrome Dino)
 - Fixed game audio issues
 
-### 0.0.4
+### 0.0.4 (Sep 27, 2023)
 
 _Minor bug fixes._
 
-### 0.0.3
+### 0.0.3 (Sep 26, 2023)
 
 _Minor bug fixes._
 
-### 0.0.2
+### 0.0.2 (Sep 26, 2023)
 
 _Minor bug fixes._
 
-### 0.0.1
+### 0.0.1 (Sep 26, 2023)
 
 The first beta release of the app with the core interface and functionalities implemented.
 

@@ -96,7 +96,7 @@ Please make sure you have the latest version of [Android WebView](https://play.g
 
 ### My games/apps are not showing in the Start Menu. What's the problem?
 
-This happens on devices with Android 12 or later. Unfortunately, from Android 12+, Google restricts access to the packages (games, apps, etc.) on user devices. There's nothing that can be done about it (see this [version changelog](./changelog.md#_2-23-1)).
+This happens on devices with Android 12 or later. Unfortunately, from Android 12+, Google restricts access to the packages (games, apps, etc.) on user devices. There's nothing that can be done about it (see this [version changelog](./changelog.md#_2-23-1-sep-30-2022)).
 
 ### File Explorer does not show files on my device. What's the problem?
 

@@ -32,7 +32,7 @@ At that time, I stopped where I thought was sufficient for a silly idea as it wa
 
 The idea initiated in codepen was made with pure HTML/CSS/JS as I had just started learning the fundamentals. However, this time, applying the wealth of front-end development knowledge I have earned over the years, I rebuilt the project from scratch, making good use of modern web technologies and frameworks to speed up the development, and ease the feature addition and maintenance process as it grows.
 
-I started spending my free time outside of work hours and weekends to get into it. After about two weeks, I finally made it an MVP (minimum viable product) with most of the [core features covered](https://visnalize.com/brick1100/changelog.html#_0-0-1), sort of. So far, the most prominent stuff that I used to build it:
+I started spending my free time outside of work hours and weekends to get into it. After about two weeks, I finally made it an MVP (minimum viable product) with most of the [core features covered](../brick1100/changelog.md#_0-0-1-sep-26-2023), sort of. So far, the most prominent stuff that I used to build it:
 
 - **Vue 2.7** - the main framework that empowers its UI.
 - **Pinia** - the state management library to handle shared state across components.
