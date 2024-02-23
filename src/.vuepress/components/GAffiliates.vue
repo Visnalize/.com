@@ -17,23 +17,27 @@ export default {
       timeout: false,
       position: POSITION.BOTTOM_LEFT,
     });
-    // this.toast(this.getContent());
+    this.toast(this.getContent());
   },
   methods: {
     getContent() {
       return (
         <a
-          href="https://shipfa.st/?via=visnalize"
+          href="https://www.gamezop.com/?id=4032"
           target="_blank"
-          style="display: block; color: #fff; margin-top: 8px; text-align: center;"
+          style="display: flex; align-items: center; color: #fff; text-align: center;"
         >
-          Build and launch your web app in days
-          <span style="display: flex; align-items: center; justify-content: center">
-            <span style="margin-right: 8px">Check out</span>
-            <img
-              src="https://shipfa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FlogoAndName_transparent.9c74ebc0.png&w=128&q=100"
-              alt="ShipFast"
-            />
+          <img
+            src="/assets/gz-icon.gif"
+            alt="Gamezop"
+            width="48"
+            style="margin-right: 8px"
+          />
+          <span>
+            Bored? Check out some fun games!
+            <i style="margin-top: 4px; display: block; font-size: 0.8em; color: #aaa">
+              (From our partner <span style="color: #fff">Gamezop</span>)
+            </i>
           </span>
         </a>
       );
@@ -43,7 +47,7 @@ export default {
 </script>
 
 <style lang="stylus">
-.Vue-Toastification{
+.Vue-Toastification {
   &__toast {
     &--default {
       background: $bgColorDark;
