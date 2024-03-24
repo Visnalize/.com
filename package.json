@@ -21,6 +21,7 @@
     "vue-toastification": "^1.7.14",
     "vuepress": "^1.9.9",
     "vuepress-plugin-autometa": "^0.1.13",
+    "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-disqus": "^0.2.0",
     "vuepress-plugin-first-created": "^0.0.1",
     "vuepress-plugin-social-share": "^1.0.0",

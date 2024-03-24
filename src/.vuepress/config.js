@@ -142,6 +142,12 @@ module.exports = {
       },
     ],
     [
+      "canonical",
+      {
+        baseURL: "https://visnalize.com",
+      },
+    ],
+    [
       "social-share",
       {
         noGlobalSocialShare: true,

@@ -8623,6 +8623,11 @@ vuepress-plugin-autometa@^0.1.13:
     remove-markdown "0.3.0"
     striptags "3.1.1"
 
+vuepress-plugin-canonical@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-canonical/-/vuepress-plugin-canonical-1.0.0.tgz#a8f69b8479da86d215a6a87bdea815caa564a298"
+  integrity sha512-R2mcc+bp9VbKBQ3YIbCqUbWcWfmWSp1NIEyNGiLKkrcZmyUF/+0D48BqMCTx61AgJzWPW5DJzB6VkmpjbMIDbA==
+
 vuepress-plugin-container@^2.0.2:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-container/-/vuepress-plugin-container-2.1.5.tgz#37fff05662fedbd63ffd3a5463b2592c7a7f3133"
