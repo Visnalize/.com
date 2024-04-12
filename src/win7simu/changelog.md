@@ -13,6 +13,18 @@ pageClass: changelog
 
 ## 2024
 
+### 3.9.0 (Apr 13, 2024)
+
+- 💥 BREAKING CHANGE: enhance file read/write operations to support large files and avoid crash.
+  - Computer now reads/writes files from/to a different location, you previous files can still be found at `Android/data/win7simu.visnalize.com/files` but will no longer be accessible from the app.
+- You can now select multiple desktop items and drag to move
+- Added Windows Media Center (alpha). With this version, you can:
+  - View a single photo or play slideshow of several photos
+  - Play a full music album
+  - Play videos
+  - Several play modes: loop, repeat, shuffle
+  - Personalize settings
+
 ### 3.8.1 (Jan 29, 2024)
 
 - Fixed an issue with the boot themes in BIOS setup
