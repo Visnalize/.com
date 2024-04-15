@@ -101,9 +101,7 @@ As of the time of this blog post, WMC in Win7 Simu can do basic stuff, i.e. play
 
 We might add more advanced features that the original doesn't have if there are demands for it so be sure to show us your interest by leaving comments, and emails, showing us love or words of encouragement, or considering becoming a financial supporter for the project via [_Lemon Squeezy_](https://store.visnalize.com/) or ___Play Store IAP___.
 
-If you have any questions, feel free to reach out at the email address [hey@visnalize.com](mailto:hey@visnalize.com).
-
-Thank you for reading and stay tuned for more updates. ✌
+If you have any questions, feel free to reach out at the email address [hey@visnalize.com](mailto:hey@visnalize.com). Thank you for reading and stay tuned for more updates. ✌
 
 _Published by [Thuan](https://hohaicongthuan.github.io/)_
 
