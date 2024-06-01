@@ -3,6 +3,7 @@ home: true
 description: Author of Win7 Simu and Brick 1100. On a mission to relive the good old days with simulation apps.
 tagline:
 pageClass: homepage
+image: https://image.social/get?url=visnalize.com
 ---
 
 <home-hero />

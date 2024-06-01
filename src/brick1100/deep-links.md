@@ -1,5 +1,6 @@
 ---
 layout: BlogPost
+image: https://image.social/get?url=visnalize.com/brick1100/deep-links.html
 ---
 
 # Deep links

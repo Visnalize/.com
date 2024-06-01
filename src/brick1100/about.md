@@ -2,6 +2,7 @@
 layout: WithComments
 description: A simulation of the Nokia 1100 mobile phone. Experience it on your smartphone/web browser
 sidebar: false
+image: https://image.social/get?url=visnalize.com/brick1100/about.html
 ---
 
 # Brick 1100

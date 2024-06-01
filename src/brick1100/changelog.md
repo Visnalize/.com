@@ -3,6 +3,7 @@ title: Brick 1100 Changelog
 description: Changes throughout the versions of the Brick 1100 app. Check the log at this page.
 sidebar: auto
 pageClass: changelog
+image: https://image.social/get?url=visnalize.com/brick1100/changelog.html
 ---
 
 # Changelog

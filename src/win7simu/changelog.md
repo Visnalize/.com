@@ -3,6 +3,7 @@ title: Win7 Simu Changelog
 description: Curious about the changes done through versions of the Win7 Simu app? Check the log at this page
 sidebar: auto
 pageClass: changelog
+image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 ---
 
 # Changelog

@@ -2,6 +2,7 @@
 title: Win7 Simu Privacy Policy
 description: Worry about your privacy while using the Win7 Simu app? This page eases your concern
 sidebar: auto
+image: https://image.social/get?url=visnalize.com/win7simu/privacy.html
 ---
 
 # Privacy Policy

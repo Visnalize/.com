@@ -1,6 +1,7 @@
 ---
 title: Brick 1100 Privacy Policy
 sidebar: auto
+image: https://image.social/get?url=visnalize.com/brick1100/privacy.html
 ---
 
 # Privacy Policy
