@@ -14,6 +14,19 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.10.0 (June 7, 2024)
+
+- Fixed double tap issue with desktop icons
+- Added premium theme: Aero Noir
+- Added new themes: Windows Longhorn (Slate, Plex)
+- Complete Windows Media Center's Music Library features:
+  - Song details now accessible from album details
+  - Option to clear the Now Playing list
+  - Added artists, songs, composers, genres, years, and album artists views
+  - Detail view is now fully functional
+  - The "Play all" button should now work properly
+- Known issues: The simulator does not work on certain Android 10 devices. A fix is being attempted, but there will be delay due to technical difficulties
+
 ### 3.9.0 (Apr 13, 2024)
 
 - 💥 BREAKING CHANGE: enhance file read/write operations to support large files and avoid crash.
