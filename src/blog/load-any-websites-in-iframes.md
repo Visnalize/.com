@@ -53,7 +53,7 @@ This guide is not applicable for Android. If you are using the Android version, 
 
 ### 2. Import the predefined rules
 
-* Download <a href="/assets/win7-simu-requestly.json" download>this JSON file</a> which contains the Requestly rules to make Win7 Simu's web browers capable of loading any websites.
+* Download <a href="/assets/win7-simu-requestly.json" download>this JSON file</a> which contains the Requestly rules to make Win7 Simu's web browers capable of loading any websites (_file last updated: June 12, 2024_)
 * Go to [Requestly app page](https://app.requestly.io/rules/my-rules)
 * Upload the JSON file to import the rules.
 
