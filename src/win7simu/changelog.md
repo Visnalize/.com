@@ -14,6 +14,12 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.11.0 (June 18, 2024)
+
+- PDF files are now supported (you can open them with Chrome)
+- Fixed desktop zoom issue
+- Known issues: The simulator does not work on certain Android 10 devices. A fix is being attempted, but there will be delay due to technical difficulties
+
 ### 3.10.0 (June 7, 2024)
 
 - Fixed double tap issue with desktop icons
