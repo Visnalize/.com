@@ -14,6 +14,15 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.11.2 (June 20, 2024)
+
+- Fix Theme Studio Public Gallery showing empty
+- Other bug fixes and improvements
+
+### 3.11.1 (June 19, 2024)
+
+- Bug fixes, attempt to address the black screen issue after boot on some devices
+
 ### 3.11.0 (June 18, 2024)
 
 - PDF files are now supported (you can open them with Chrome)
