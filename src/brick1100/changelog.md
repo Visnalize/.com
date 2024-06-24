@@ -12,6 +12,13 @@ image: https://image.social/get?url=visnalize.com/brick1100/changelog.html
 
 ## Beta versions
 
+### 0.0.9 (Jun 24, 2024)
+
+- Added leaderboards/score ranking for [games](./games.md)
+- Added in-app achievements - you can now unlock Google Play Games achievements while exploring the app (Menu > Extras > Achievements)
+- Added new online app: BMI Calculator (Menu > Online > Online apps > BMI Calculator)
+- Added in-app purchases (Menu > Settings > Subscription settings)
+
 ### 0.0.8 (Dec 2, 2023)
 
 _Minor bug fixes._

@@ -26,5 +26,6 @@
     "vuepress-plugin-first-created": "^0.0.1",
     "vuepress-plugin-social-share": "^1.0.0",
     "vuepress-plugin-text-to-speech": "^1.0.3"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
