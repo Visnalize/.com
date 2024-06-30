@@ -1,6 +1,7 @@
 const links = require("./links");
+const { defineConfig } = require("vuepress/config");
 
-module.exports = {
+module.exports = defineConfig({
   title: "Visnalize",
 
   head: [
@@ -169,4 +170,4 @@ module.exports = {
   },
 
   globalUIComponents: ["GSiteSettings", "GAffiliates"],
-};
+});

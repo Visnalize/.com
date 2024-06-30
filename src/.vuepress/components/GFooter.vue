@@ -25,6 +25,9 @@ export default {
       links,
     };
   },
+  mounted() {
+    console.log(this)
+  },
 };
 </script>
 

@@ -93,12 +93,12 @@ li {
   &::before {
     content: '\201C';
     display: block;
-    font-family: fantasy;
+    font-family: cursive;
     font-size: 16rem;
     opacity: 0.1;
     position: absolute;
-    top: -5.5rem;
-    left: 2rem;
+    top: -6rem;
+    left: 0.5rem;
   }
 
   .content {

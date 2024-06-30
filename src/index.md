@@ -55,4 +55,4 @@ image: https://image.social/get?url=visnalize.com
 
 <google-ads format="horizontal" />
 
-<home-footer />
+<g-footer />

@@ -3,7 +3,7 @@
     <v-icon name="tag" v-if="showIcon" />
     <ul>
       <li v-for="tag in _tags" :key="tag">
-        <router-link :to="'/blog/tag/' + tag">
+        <router-link :to="`/blog/tag/${tag}/`">
           {{ pascalize(tag) }}
         </router-link>
       </li>

@@ -31,8 +31,6 @@ The simulator is in active development and new features are constantly rolled ou
 Refer to [Changelog](./changelog.md) for a complete list of available features through versions.
 :::
 
-### Web version
-
 On August 28, 2021, a web version of the app was released. It is accessible for those who do not own an Android device. The graphics, interface, and most of the features are identical to the Android app, except for some, which are exclusive to Android and cannot be replicated for the web due to technical constraints. A comparison of some key features is listed as below:
 
 Feature | Android | Web
@@ -49,10 +47,6 @@ System notifications | ✅ | ❌
 <a name="cross-platform">*</a> It doesn't matter if the device is Android, iOS, Windows, or Mac, as long as it has a web browser and connects to the internet.
 
 <a name="local-files">**</a> The early versions of Win7 Simu were able to access local files on Android devices. However, due to Google Play's [policy](./faq.md#file-explorer-does-not-show-files-on-my-device-what-s-the-problem), this feature was removed from v3.6.0 onwards.
-
-### Translations [![Crowdin](https://badges.crowdin.net/win7simu/localized.svg)](https://crowdin.com/project/win7simu)
-
-Win7 Simu supports several languages. However, most of the translations are done via machine, therefore, the accuracy may be off or not correct whatsoever. If you wish to contribute to your language, please find the translation project on [Crowdin](https://crowdin.com/project/win7simu).
 
 ## Pricing
 
