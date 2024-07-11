@@ -1,6 +1,7 @@
-# Adsense
 google.com, pub-5904323684803247, DIRECT, f08c47fec0942fa0
-# Moneytizer
+
+OWNERDOMAIN=visnalize.com
+MANAGERDOMAIN=themoneytizer.com
 themoneytizer.com,117816,DIRECT
 smartadserver.com, 1097, DIRECT, 060d053dcf45cbf3
 adcolony.com, 496220845654deec, RESELLER, 1ad675c9de6b5176
