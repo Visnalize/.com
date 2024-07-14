@@ -43,6 +43,8 @@ Another benefit of having a side hustle is the opportunity to learn new skills a
 
 For example, I've learned a lot about web development ([specifically front-end](./building-win7-simu.md#the-goal), my area of interest), SEO, marketing, analytics, and other business-related skills from building a side project just as simple as Win7 Simu, which has helped me to grow professionally and personally.
 
+<google-ads />
+
 ### Networking
 
 Having a side hustle can also help you expand your network and connect with like-minded people. Whether you're collaborating with other creators, working with clients, or engaging with your audience, you'll have the opportunity to meet new people, build relationships, and learn from others. Networking can be extremely valuable in today's digital age, where opportunities are abundant and connections are key to success.
