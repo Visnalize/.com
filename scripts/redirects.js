@@ -27,7 +27,7 @@ const redirects = [
     to: "https://discord.gg/6AQDnZa4Xm",
   },
   {
-    path: "/brick1100/tos/ios",
+    path: "/brick1100/eula",
     to: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
   },
 ];
