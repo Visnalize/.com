@@ -12,6 +12,14 @@ image: https://image.social/get?url=visnalize.com/brick1100/changelog.html
 
 ## Beta versions
 
+### 0.0.10 (Aug 10, 2024)
+
+- Added Time settings (Menu > Settings > Time)
+- Added Calendar (Menu > Extras > Calendar)
+- Added Apple login (Menu > Settings > Account settings)
+- Added achievements for Snake & Chrome Dino games
+- Close app on Switch Off
+
 ### 0.0.9 (Jun 24, 2024)
 
 - Added leaderboards/score ranking for [games](./games.md)
