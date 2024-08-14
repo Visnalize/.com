@@ -14,6 +14,15 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.12.0 (Aug 13, 2024)
+
+- Windows Media Center new features:
+  - Songs and pictures can now be rated
+  - Play favourite songs/pictures is now functional
+  - Added Media Only mode (WMC opens in full screen)
+  - Other tweaks and enhancements
+- Known issues: The simulator does not work on certain Android 10 devices. A fix is being attempted, but there will be delay due to technical difficulties. Sorry for the inconvenience.
+
 ### 3.11.2 (June 20, 2024)
 
 - Fix Theme Studio Public Gallery showing empty
