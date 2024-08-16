@@ -12,6 +12,10 @@ image: https://image.social/get?url=visnalize.com/brick1100/changelog.html
 
 ## Beta versions
 
+### 0.0.11 (Aug 17, 2024)
+
+- Fixed [Monogram](./games.md#monogram) game showing up blank
+
 ### 0.0.10 (Aug 10, 2024)
 
 - Added Time settings (Menu > Settings > Time)
