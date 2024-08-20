@@ -30,6 +30,14 @@ const redirects = [
     path: "/brick1100/eula",
     to: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
   },
+  {
+    path: "/brick1100/android",
+    to: "https://play.google.com/store/apps/details?id=com.visnalize.brick1100",
+  },
+  {
+    path: "/brick1100/ios",
+    to: "/brick1100/about",
+  },
 ];
 
 const html = (redirectUrl) =>
