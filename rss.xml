@@ -4,7 +4,7 @@
         <title>Visnalize</title>
         <link>https://visnalize.com</link>
         <description></description>
-        <lastBuildDate>Fri, 23 Aug 2024 13:35:20 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Aug 2024 11:23:53 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <atom:link href="https://visnalize.com/feed.atom" rel="self" type="application/rss+xml"/>
@@ -12,52 +12,52 @@
             <title><![CDATA[About the ads and how I implement them]]></title>
             <link>https://visnalize.com/blog/about-the-ads.html</link>
             <guid>https://visnalize.com/blog/about-the-ads.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[A couple of things about ads and how I implement them within my websites and apps]]></description>
             <enclosure url="https://images.unsplash.com/photo-1546142711-1e28c0540deb?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[How I built Win7 Simu]]></title>
-            <link>https://visnalize.com/blog/building-win7-simu.html</link>
-            <guid>https://visnalize.com/blog/building-win7-simu.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
-            <description><![CDATA[Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene]]></description>
-            <enclosure url="https://visnalize.com/assets/covers/building-win7-simu.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[How I built visnalize.com]]></title>
             <link>https://visnalize.com/blog/building-visnalize-com.html</link>
             <guid>https://visnalize.com/blog/building-visnalize-com.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[Read about the progress and how I built the visnalize.com website for my own brand]]></description>
             <enclosure url="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[Why I choose to conceal my online identity]]></title>
-            <link>https://visnalize.com/blog/concealing-online-identity.html</link>
-            <guid>https://visnalize.com/blog/concealing-online-identity.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
-            <description><![CDATA[My takes on internet privacy and why I choose to conceal mine.]]></description>
-            <enclosure url="https://visnalize.com/assets/covers/concealing-online-identity.jpg">
+            <title><![CDATA[How I built Win7 Simu]]></title>
+            <link>https://visnalize.com/blog/building-win7-simu.html</link>
+            <guid>https://visnalize.com/blog/building-win7-simu.html</guid>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
+            <description><![CDATA[Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene]]></description>
+            <enclosure url="https://visnalize.com/assets/covers/building-win7-simu.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[Turning my CodePen into an actual app]]></title>
             <link>https://visnalize.com/blog/from-codepen-to-app.html</link>
             <guid>https://visnalize.com/blog/from-codepen-to-app.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[From a simple idea, what merely looked like a playful demo on CodePen, but turned into a full-fledged app]]></description>
             <enclosure url="https://visnalize.com/assets/covers/from-codepen-to-app.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Why I choose to conceal my online identity]]></title>
+            <link>https://visnalize.com/blog/concealing-online-identity.html</link>
+            <guid>https://visnalize.com/blog/concealing-online-identity.html</guid>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
+            <description><![CDATA[My takes on internet privacy and why I choose to conceal mine.]]></description>
+            <enclosure url="https://visnalize.com/assets/covers/concealing-online-identity.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[Turning my side project into a side hustle]]></title>
             <link>https://visnalize.com/blog/from-side-project-to-side-hustle.html</link>
             <guid>https://visnalize.com/blog/from-side-project-to-side-hustle.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[From a side project for learning to a side hustle with recurring revenue, read about how I did it, the process, the tools, the tips and tricks.]]></description>
             <enclosure url="https://media.istockphoto.com/id/1349329446/photo/dollars-cash-money-and-paper-note-with-text-written-extra-income-concept-of-financial.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=RXsEpU41u0Yke-ol53PoirkXHTOliHGfvijnYipidtQ=">
             </enclosure>
@@ -66,7 +66,7 @@
             <title><![CDATA[How to add more games to Game Stick Lite 4K]]></title>
             <link>https://visnalize.com/blog/game-stick-lite-4k-adding-games.html</link>
             <guid>https://visnalize.com/blog/game-stick-lite-4k-adding-games.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[How to add games to Game Stick Lite 4K and enjoy more of your childhood games]]></description>
             <enclosure url="https://visnalize.com/assets/covers/game-stick-4k-lite.jpg">
             </enclosure>
@@ -75,7 +75,7 @@
             <title><![CDATA[How to get iframes to load any websites]]></title>
             <link>https://visnalize.com/blog/load-any-websites-in-iframes.html</link>
             <guid>https://visnalize.com/blog/load-any-websites-in-iframes.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[The most effective way to get iframes embedded in your web apps to load any websites]]></description>
             <enclosure url="https://visnalize.com/assets/covers/load-any-websites-in-iframes.png">
             </enclosure>
@@ -84,33 +84,33 @@
             <title><![CDATA[📝 Blog]]></title>
             <link>https://visnalize.com/blog/</link>
             <guid>https://visnalize.com/blog/</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <enclosure url="https://image.social/get?url=visnalize.com/blog/">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[Simulators and Emulators: What's the difference?]]></title>
-            <link>https://visnalize.com/blog/simulator-vs-emulator.html</link>
-            <guid>https://visnalize.com/blog/simulator-vs-emulator.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
-            <description><![CDATA[Understand the differences between simulators and emulators, what they mean for Win7 Simu.]]></description>
-            <enclosure url="https://visnalize.com/assets/covers/simulators-vs-emulators.png">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[Visnalize year in review - 2023]]></title>
             <link>https://visnalize.com/blog/visnalize-year-in-review-2023.html</link>
             <guid>https://visnalize.com/blog/visnalize-year-in-review-2023.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[Look back at some amazing achievements from Visnalize in 2023.]]></description>
             <enclosure url="https://images.unsplash.com/photo-1579952775264-625f17561a5d?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Simulators and Emulators: What's the difference?]]></title>
+            <link>https://visnalize.com/blog/simulator-vs-emulator.html</link>
+            <guid>https://visnalize.com/blog/simulator-vs-emulator.html</guid>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
+            <description><![CDATA[Understand the differences between simulators and emulators, what they mean for Win7 Simu.]]></description>
+            <enclosure url="https://visnalize.com/assets/covers/simulators-vs-emulators.png">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[Why you should have a side hustle]]></title>
             <link>https://visnalize.com/blog/why-side-hustle.html</link>
             <guid>https://visnalize.com/blog/why-side-hustle.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[Some personal sharing about reasons and benefits of having a side hustle.]]></description>
             <enclosure url="https://visnalize.com/assets/covers/why-side-hustle.jpg">
             </enclosure>
@@ -119,7 +119,7 @@
             <title><![CDATA[Windows 7 icon Viewer/Downloader]]></title>
             <link>https://visnalize.com/blog/win7-icons-viewer-downloader.html</link>
             <guid>https://visnalize.com/blog/win7-icons-viewer-downloader.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[A simple tool to view and download Windows 7 icon collection.]]></description>
             <enclosure url="https://visnalize.com/assets/covers/win7-icons-viewer-downloader.jpg">
             </enclosure>
@@ -128,34 +128,34 @@
             <title><![CDATA[Implementing File Explorer in Win7 Simu]]></title>
             <link>https://visnalize.com/blog/win7-simu-file-explorer.html</link>
             <guid>https://visnalize.com/blog/win7-simu-file-explorer.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[Some key points to share about how Win7 Simu's File Explorer is implemented.]]></description>
             <enclosure url="https://images.unsplash.com/photo-1544396821-4dd40b938ad3?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[Win7 Simu versus mobile devices]]></title>
-            <link>https://visnalize.com/blog/win7-simu-mobile-devices.html</link>
-            <guid>https://visnalize.com/blog/win7-simu-mobile-devices.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
-            <description><![CDATA[How to install Win7 Simu on mobile devices without downloading from any App Stores.]]></description>
-            <enclosure url="https://images.unsplash.com/photo-1616353071855-2c045c4458ae?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[Implementing Windows Media Center in Win7 Simu]]></title>
             <link>https://visnalize.com/blog/win7-simu-windows-media-center.html</link>
             <guid>https://visnalize.com/blog/win7-simu-windows-media-center.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[Sharing on how Windows Media Center was implemented in Win7 Simu.]]></description>
             <enclosure url="https://visnalize.com/assets/covers/win7-simu-windows-media-center.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Win7 Simu versus mobile devices]]></title>
+            <link>https://visnalize.com/blog/win7-simu-mobile-devices.html</link>
+            <guid>https://visnalize.com/blog/win7-simu-mobile-devices.html</guid>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
+            <description><![CDATA[How to install Win7 Simu on mobile devices without downloading from any App Stores.]]></description>
+            <enclosure url="https://images.unsplash.com/photo-1616353071855-2c045c4458ae?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[Win7 Simu year in review - 2022]]></title>
             <link>https://visnalize.com/blog/win7-simu-year-in-review-2022.html</link>
             <guid>https://visnalize.com/blog/win7-simu-year-in-review-2022.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[Look back at some amazing numbers for Win7 Simu in 2022.]]></description>
             <enclosure url="https://images.unsplash.com/photo-1651377731759-fe736975a6e9?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
@@ -164,7 +164,7 @@
             <title><![CDATA[Introducing Win7 UI]]></title>
             <link>https://visnalize.com/blog/win7-ui-introduction.html</link>
             <guid>https://visnalize.com/blog/win7-ui-introduction.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[The open-source UI library that powers Win7 Simu behind the scenes.]]></description>
             <enclosure url="https://visnalize.com/assets/covers/win7-ui-hero.jpg">
             </enclosure>
@@ -173,7 +173,7 @@
             <title><![CDATA[How to get Windows resources]]></title>
             <link>https://visnalize.com/blog/windows-resources.html</link>
             <guid>https://visnalize.com/blog/windows-resources.html</guid>
-            <pubDate>Fri, 23 Aug 2024 13:35:20 GMT</pubDate>
+            <pubDate>Sat, 24 Aug 2024 11:23:53 GMT</pubDate>
             <description><![CDATA[Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.]]></description>
             <enclosure url="https://images.unsplash.com/photo-1624571409108-e9a41746af53?auto=format&amp;fit=crop&amp;w=740&amp;q=80">
             </enclosure>
