@@ -33,6 +33,7 @@ section {
 
     > p {
       text-align: justify;
+      max-width: 640px;
     }
 
     > footer {
