@@ -14,6 +14,10 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.12.1 (Aug 24, 2024)
+
+- Fixed empty screen in Windows Media Center's Media Only mode
+
 ### 3.12.0 (Aug 13, 2024)
 
 - Windows Media Center new features:
