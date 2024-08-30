@@ -5,20 +5,20 @@
     "feed_url": "https://visnalize.com/feed.json",
     "items": [
         {
+            "id": "https://visnalize.com/blog/building-visnalize-com.html",
+            "url": "https://visnalize.com/blog/building-visnalize-com.html",
+            "title": "How I built visnalize.com",
+            "summary": "Read about the progress and how I built the visnalize.com website for my own brand",
+            "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=740&q=80",
+            "date_modified": "2024-08-30T10:09:29.276Z"
+        },
+        {
             "id": "https://visnalize.com/blog/about-the-ads.html",
             "url": "https://visnalize.com/blog/about-the-ads.html",
             "title": "About the ads and how I implement them",
             "summary": "A couple of things about ads and how I implement them within my websites and apps",
             "image": "https://images.unsplash.com/photo-1546142711-1e28c0540deb?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2024-08-27T00:56:34.719Z"
-        },
-        {
-            "id": "https://visnalize.com/blog/building-win7-simu.html",
-            "url": "https://visnalize.com/blog/building-win7-simu.html",
-            "title": "How I built Win7 Simu",
-            "summary": "Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene",
-            "image": "https://visnalize.com/assets/covers/building-win7-simu.jpg",
-            "date_modified": "2024-08-27T00:56:34.720Z"
+            "date_modified": "2024-08-30T10:09:29.276Z"
         },
         {
             "id": "https://visnalize.com/blog/concealing-online-identity.html",
@@ -26,7 +26,7 @@
             "title": "Why I choose to conceal my online identity",
             "summary": "My takes on internet privacy and why I choose to conceal mine.",
             "image": "https://visnalize.com/assets/covers/concealing-online-identity.jpg",
-            "date_modified": "2024-08-27T00:56:34.720Z"
+            "date_modified": "2024-08-30T10:09:29.277Z"
         },
         {
             "id": "https://visnalize.com/blog/from-codepen-to-app.html",
@@ -34,7 +34,7 @@
             "title": "Turning my CodePen into an actual app",
             "summary": "From a simple idea, what merely looked like a playful demo on CodePen, but turned into a full-fledged app",
             "image": "https://visnalize.com/assets/covers/from-codepen-to-app.png",
-            "date_modified": "2024-08-27T00:56:34.720Z"
+            "date_modified": "2024-08-30T10:09:29.277Z"
         },
         {
             "id": "https://visnalize.com/blog/from-side-project-to-side-hustle.html",
@@ -42,15 +42,23 @@
             "title": "Turning my side project into a side hustle",
             "summary": "From a side project for learning to a side hustle with recurring revenue, read about how I did it, the process, the tools, the tips and tricks.",
             "image": "https://media.istockphoto.com/id/1349329446/photo/dollars-cash-money-and-paper-note-with-text-written-extra-income-concept-of-financial.jpg?s=1024x1024&w=is&k=20&c=RXsEpU41u0Yke-ol53PoirkXHTOliHGfvijnYipidtQ=",
-            "date_modified": "2024-08-27T00:56:34.720Z"
+            "date_modified": "2024-08-30T10:09:29.277Z"
         },
         {
-            "id": "https://visnalize.com/blog/building-visnalize-com.html",
-            "url": "https://visnalize.com/blog/building-visnalize-com.html",
-            "title": "How I built visnalize.com",
-            "summary": "Read about the progress and how I built the visnalize.com website for my own brand",
-            "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2024-08-27T00:56:34.720Z"
+            "id": "https://visnalize.com/blog/building-win7-simu.html",
+            "url": "https://visnalize.com/blog/building-win7-simu.html",
+            "title": "How I built Win7 Simu",
+            "summary": "Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene",
+            "image": "https://visnalize.com/assets/covers/building-win7-simu.jpg",
+            "date_modified": "2024-08-30T10:09:29.277Z"
+        },
+        {
+            "id": "https://visnalize.com/blog/",
+            "url": "https://visnalize.com/blog/",
+            "title": "📝 Blog",
+            "summary": "Helpful insights, sharing, tips and tricks on various topics",
+            "image": "https://image.social/get?url=visnalize.com/blog/",
+            "date_modified": "2024-08-30T10:09:29.277Z"
         },
         {
             "id": "https://visnalize.com/blog/game-stick-lite-4k-adding-games.html",
@@ -58,22 +66,7 @@
             "title": "How to add more games to Game Stick Lite 4K",
             "summary": "How to add games to Game Stick Lite 4K and enjoy more of your childhood games",
             "image": "https://visnalize.com/assets/covers/game-stick-4k-lite.jpg",
-            "date_modified": "2024-08-27T00:56:34.720Z"
-        },
-        {
-            "id": "https://visnalize.com/blog/load-any-websites-in-iframes.html",
-            "url": "https://visnalize.com/blog/load-any-websites-in-iframes.html",
-            "title": "How to get iframes to load any websites",
-            "summary": "The most effective way to get iframes embedded in your web apps to load any websites",
-            "image": "https://visnalize.com/assets/covers/load-any-websites-in-iframes.png",
-            "date_modified": "2024-08-27T00:56:34.720Z"
-        },
-        {
-            "id": "https://visnalize.com/blog/",
-            "url": "https://visnalize.com/blog/",
-            "title": "📝 Blog",
-            "image": "https://image.social/get?url=visnalize.com/blog/",
-            "date_modified": "2024-08-27T00:56:34.720Z"
+            "date_modified": "2024-08-30T10:09:29.277Z"
         },
         {
             "id": "https://visnalize.com/blog/simulator-vs-emulator.html",
@@ -81,7 +74,15 @@
             "title": "Simulators and Emulators: What's the difference?",
             "summary": "Understand the differences between simulators and emulators, what they mean for Win7 Simu.",
             "image": "https://visnalize.com/assets/covers/simulators-vs-emulators.png",
-            "date_modified": "2024-08-27T00:56:34.721Z"
+            "date_modified": "2024-08-30T10:09:29.277Z"
+        },
+        {
+            "id": "https://visnalize.com/blog/load-any-websites-in-iframes.html",
+            "url": "https://visnalize.com/blog/load-any-websites-in-iframes.html",
+            "title": "How to get iframes to load any websites",
+            "summary": "The most effective way to get iframes embedded in your web apps to load any websites",
+            "image": "https://visnalize.com/assets/covers/load-any-websites-in-iframes.png",
+            "date_modified": "2024-08-30T10:09:29.277Z"
         },
         {
             "id": "https://visnalize.com/blog/visnalize-year-in-review-2023.html",
@@ -89,23 +90,7 @@
             "title": "Visnalize year in review - 2023",
             "summary": "Look back at some amazing achievements from Visnalize in 2023.",
             "image": "https://images.unsplash.com/photo-1579952775264-625f17561a5d?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2024-08-27T00:56:34.721Z"
-        },
-        {
-            "id": "https://visnalize.com/blog/why-side-hustle.html",
-            "url": "https://visnalize.com/blog/why-side-hustle.html",
-            "title": "Why you should have a side hustle",
-            "summary": "Some personal sharing about reasons and benefits of having a side hustle.",
-            "image": "https://visnalize.com/assets/covers/why-side-hustle.jpg",
-            "date_modified": "2024-08-27T00:56:34.721Z"
-        },
-        {
-            "id": "https://visnalize.com/blog/win7-simu-file-explorer.html",
-            "url": "https://visnalize.com/blog/win7-simu-file-explorer.html",
-            "title": "Implementing File Explorer in Win7 Simu",
-            "summary": "Some key points to share about how Win7 Simu's File Explorer is implemented.",
-            "image": "https://images.unsplash.com/photo-1544396821-4dd40b938ad3?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2024-08-27T00:56:34.721Z"
+            "date_modified": "2024-08-30T10:09:29.278Z"
         },
         {
             "id": "https://visnalize.com/blog/win7-icons-viewer-downloader.html",
@@ -113,15 +98,23 @@
             "title": "Windows 7 icon Viewer/Downloader",
             "summary": "A simple tool to view and download Windows 7 icon collection.",
             "image": "https://visnalize.com/assets/covers/win7-icons-viewer-downloader.jpg",
-            "date_modified": "2024-08-27T00:56:34.721Z"
+            "date_modified": "2024-08-30T10:09:29.278Z"
         },
         {
-            "id": "https://visnalize.com/blog/win7-simu-year-in-review-2022.html",
-            "url": "https://visnalize.com/blog/win7-simu-year-in-review-2022.html",
-            "title": "Win7 Simu year in review - 2022",
-            "summary": "Look back at some amazing numbers for Win7 Simu in 2022.",
-            "image": "https://images.unsplash.com/photo-1651377731759-fe736975a6e9?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2024-08-27T00:56:34.721Z"
+            "id": "https://visnalize.com/blog/why-side-hustle.html",
+            "url": "https://visnalize.com/blog/why-side-hustle.html",
+            "title": "Why you should have a side hustle",
+            "summary": "Some personal sharing about reasons and benefits of having a side hustle.",
+            "image": "https://visnalize.com/assets/covers/why-side-hustle.jpg",
+            "date_modified": "2024-08-30T10:09:29.278Z"
+        },
+        {
+            "id": "https://visnalize.com/blog/win7-simu-file-explorer.html",
+            "url": "https://visnalize.com/blog/win7-simu-file-explorer.html",
+            "title": "Implementing File Explorer in Win7 Simu",
+            "summary": "Some key points to share about how Win7 Simu's File Explorer is implemented.",
+            "image": "https://images.unsplash.com/photo-1544396821-4dd40b938ad3?auto=format&fit=crop&w=740&q=80",
+            "date_modified": "2024-08-30T10:09:29.278Z"
         },
         {
             "id": "https://visnalize.com/blog/win7-simu-windows-media-center.html",
@@ -129,15 +122,15 @@
             "title": "Implementing Windows Media Center in Win7 Simu",
             "summary": "Sharing on how Windows Media Center was implemented in Win7 Simu.",
             "image": "https://visnalize.com/assets/covers/win7-simu-windows-media-center.jpg",
-            "date_modified": "2024-08-27T00:56:34.721Z"
+            "date_modified": "2024-08-30T10:09:29.278Z"
         },
         {
-            "id": "https://visnalize.com/blog/win7-ui-introduction.html",
-            "url": "https://visnalize.com/blog/win7-ui-introduction.html",
-            "title": "Introducing Win7 UI",
-            "summary": "The open-source UI library that powers Win7 Simu behind the scenes.",
-            "image": "https://visnalize.com/assets/covers/win7-ui-hero.jpg",
-            "date_modified": "2024-08-27T00:56:34.721Z"
+            "id": "https://visnalize.com/blog/win7-simu-year-in-review-2022.html",
+            "url": "https://visnalize.com/blog/win7-simu-year-in-review-2022.html",
+            "title": "Win7 Simu year in review - 2022",
+            "summary": "Look back at some amazing numbers for Win7 Simu in 2022.",
+            "image": "https://images.unsplash.com/photo-1651377731759-fe736975a6e9?auto=format&fit=crop&w=740&q=80",
+            "date_modified": "2024-08-30T10:09:29.278Z"
         },
         {
             "id": "https://visnalize.com/blog/win7-simu-mobile-devices.html",
@@ -145,7 +138,15 @@
             "title": "Win7 Simu versus mobile devices",
             "summary": "How to install Win7 Simu on mobile devices without downloading from any App Stores.",
             "image": "https://images.unsplash.com/photo-1616353071855-2c045c4458ae?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2024-08-27T00:56:34.721Z"
+            "date_modified": "2024-08-30T10:09:29.278Z"
+        },
+        {
+            "id": "https://visnalize.com/blog/win7-ui-introduction.html",
+            "url": "https://visnalize.com/blog/win7-ui-introduction.html",
+            "title": "Introducing Win7 UI",
+            "summary": "The open-source UI library that powers Win7 Simu behind the scenes.",
+            "image": "https://visnalize.com/assets/covers/win7-ui-hero.jpg",
+            "date_modified": "2024-08-30T10:09:29.278Z"
         },
         {
             "id": "https://visnalize.com/blog/windows-resources.html",
@@ -153,7 +154,7 @@
             "title": "How to get Windows resources",
             "summary": "Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.",
             "image": "https://images.unsplash.com/photo-1624571409108-e9a41746af53?auto=format&fit=crop&w=740&q=80",
-            "date_modified": "2024-08-27T00:56:34.721Z"
+            "date_modified": "2024-08-30T10:09:29.278Z"
         }
     ]
 }
