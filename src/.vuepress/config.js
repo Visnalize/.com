@@ -59,6 +59,10 @@ module.exports = defineConfig({
             text: "Guides",
             items: [
               {
+                text: "Simulated features",
+                link: "/win7simu/simulated/",
+              },
+              {
                 text: "Theme Studio",
                 link: "/win7simu/themestudio/",
               },
