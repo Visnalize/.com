@@ -1313,3 +1313,12 @@ pubmatic.com,164751,RESELLER,5d62403b186f2ace
 rubiconproject.com,26094,DIRECT,0bfd66d529a55807
 zetaglobal.net,790,DIRECT
 ssp.disqus.com,790,DIRECT
+video.unrulymedia.com,827123801,RESELLER
+zetaglobal.net,891,RESELLER
+vidoomy.com,4433873,RESELLER
+lijit.com,380632-eb,RESELLER,fafdf38b16bf6b2b
+dxkulture.com,9533,DIRECT,259726033fc4df0c
+video.unrulymedia.com,946176315,RESELLER
+admedia.com,AM1601,RESELLER,ae6c32151e71f19d
+kargo.com,8824,RESELLER
+start.io,123111883,RESELLER
