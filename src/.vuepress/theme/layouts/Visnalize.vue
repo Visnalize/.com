@@ -4,7 +4,9 @@
       <div class="googleads"><google-ads /></div>
     </template>
     <template v-if="!noComments" #page-bottom>
-      <google-ads />
+      <div class="ad-wrapper">
+        <google-ads />
+      </div>
       <comment-section />
     </template>
   </parent-layout>
@@ -28,4 +30,9 @@ export default {
 };
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+.ad-wrapper {
+  max-width: 740px;
+  margin: 0 auto;
+}
+</style>

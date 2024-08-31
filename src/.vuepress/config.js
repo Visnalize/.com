@@ -59,7 +59,7 @@ module.exports = defineConfig({
             text: "Guides",
             items: [
               {
-                text: "Simulated features",
+                text: "Simulated apps",
                 link: "/win7simu/simulated/",
               },
               {

@@ -16,11 +16,11 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ### 3.12.1 (Aug 24, 2024)
 
-- Fixed empty screen in Windows Media Center's Media Only mode
+- Fixed empty screen in [Windows Media Center](./simulated/wmc.md)'s Media Only mode
 
 ### 3.12.0 (Aug 13, 2024)
 
-- Windows Media Center new features:
+- [Windows Media Center](./simulated/wmc.md) new features:
   - Songs and pictures can now be rated
   - Play favourite songs/pictures is now functional
   - Added Media Only mode (WMC opens in full screen)
@@ -47,7 +47,7 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 - Fixed double tap issue with desktop icons
 - Added premium theme: Aero Noir
 - Added new themes: Windows Longhorn (Slate, Plex)
-- Complete Windows Media Center's Music Library features:
+- Complete [Windows Media Center](./simulated/wmc.md)'s Music Library features:
   - Song details now accessible from album details
   - Option to clear the Now Playing list
   - Added artists, songs, composers, genres, years, and album artists views
@@ -60,7 +60,7 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 - 💥 BREAKING CHANGE: enhance file read/write operations to support large files and avoid crash.
   - Computer now reads/writes files from/to a different location, you previous files can still be found at `Android/data/win7simu.visnalize.com/files` but will no longer be accessible from the app.
 - You can now select multiple desktop items and drag to move
-- Added Windows Media Center (alpha). With this version, you can:
+- Added [Windows Media Center](./simulated/wmc.md) (alpha). With this version, you can:
   - View a single photo or play slideshow of several photos
   - Play a full music album
   - Play videos
@@ -89,7 +89,7 @@ __Web__
 __Core__
 
 - You can now access files from device via "Upload files here" in context menu
-- Added File Explorer view modes
+- Added [File Explorer](./simulated/fileexplorer.md) view modes
 - Added premium themes: Ubuntu, Windows XP variants (Olive Green, Royale, Silver, Zune)
 - Major updates to Mouse settings and cursor
   - Added MacOS and Ubuntu cursor sets
@@ -155,7 +155,7 @@ __Android__
 
 ### 3.3.1 (Aug 4, 2023)
 
-- Fixed Chrome tab issue
+- Fixed [Chrome](./simulated/chrome.md) tab issue
 
 ### 3.3.0 (Aug 3, 2023)
 
@@ -216,7 +216,7 @@ __Web__
 
 __Core__
 
-- Fully functional File Explorer with basic features:
+- Fully functional [File Explorer](./simulated/fileexplorer.md) with basic features:
   - Folder management (create, delete, copy/paste)
   - File management (view, create, edit, rename, copy/paste)
   - Item's context menu (right click/hold your finger)
@@ -234,7 +234,7 @@ __Web__
 
 __Core__
 
-- Added Comfy Cakes
+- Added [Comfy Cakes](./simulated/purbleplace.md)
 - Minor bugfixes and improvements
 
 __Web__
@@ -246,7 +246,7 @@ __Web__
 __Core__
 
 - Added Winver
-- Added Programs and Features
+- Added [Programs and Features](./simulated/programs.md)
 - Updated Theme Studio [v1.1.0](./themestudio/changelog.md#_1-1-0-mar-13-2023)
 - Fixed the issue with account picture
 
@@ -260,7 +260,7 @@ __Android__
 
 ### 2.26.1 (Feb 23, 2023)
 
-- Added Window mode for Snipping Tool
+- Added Window mode for [Snipping Tool](./simulated/snipping.md)
 - Fixed the Leaked_Taskbar BSOD issue for Windows 11 theme
 - Fixed broken Windows 10 Start menu
 
@@ -268,7 +268,7 @@ __Android__
 
 - Added [Theme Studio](./themestudio/)
 - Fixed screensaver not working for user accounts
-- Improved Snipping Tool's quality
+- Improved [Snipping Tool](./simulated/snipping.md)'s quality
 
 ## 2022
 
@@ -284,7 +284,7 @@ __Android__
 
 __Core__
 
-- Added Magnifier
+- Added [Magnifier](./simulated/magnifier.md)
 - Improved visual accuracy of Windows elements (buttons, window controls, toolbar, context menu etc.)
 
 __Android__
@@ -386,36 +386,36 @@ __Android__
 ### 2.18.0 (Oct 15, 2021)
 
 - Added Run
-- Added Task Manager
+- Added [Task Manager](./simulated/taskmgr.md)
 - Added Taskbar properties
 
 ### 2.17.0 (Oct 3, 2021)
 
-- Added WordPad
+- Added [WordPad](./simulated/wordpad.md)
 - Added language support for: Thai
 
 ### 2.16.0 (Sep 18, 2021)
 
-- Added BIOS setup
+- Added [BIOS setup](./simulated/bios.md)
 - Boot animation, logon screen can now be changed via BIOS
 - Shutdown screen is now associated with account's theme
 
 ### 2.15.0 (Sep 8, 2021)
 
-- Added Sound Recorder
+- Added [Sound Recorder](./simulated/recorder.md)
 - Added new theme: Windows 95
 - Improved Windows 11 start menu
 
 ### 2.14.0 (Aug 28, 2021)
 
-- Added Sticky Notes
+- Added [Sticky Notes](./simulated/sticky.md)
 - Added Camera
 - My Computer can now open audio and video files from Android.
 
 ### 2.13.0 (Aug 18, 2021)
 
-- Added Screensaver
-- Added new gadget: Battery
+- Added [Screensaver](./simulated/personalize.md)
+- Added new [gadget](./simulated/gadgets.md): Battery
 - Improved window's behavior (added active state, removed resizing frame, fixed several bugs)
 - Fixed some issues with Windows Media Player
 
@@ -433,7 +433,7 @@ __Android__
 
 - Added new theme: Windows 11
 - You can now zoom the display for a better experience
-- You can now switch the launcher directly from Control Panel
+- You can now switch the launcher directly from [Control Panel](./simulated/cpanel.md)
 
 ### 2.10.0 (Jul 4, 2021)
 
@@ -448,14 +448,14 @@ __Android__
 ### 2.9.0 (Jun 21, 2021)
 
 - Added option to create desktop shortcuts
-- Added new gadget: Weather
+- Added new [gadget](./simulated/gadgets.md): Weather
 - Added more BSOD triggers
 
 ### 2.8.0 (Jun 10, 2021)
 
-- Added Chrome
+- Added [Chrome](./simulated/chrome.md)
 - Added new game: Classic Tetris
-- Added new gadget: Currency
+- Added new [gadget](./simulated/gadgets.md): Currency
 
 ### 2.7.0 (May 23, 2021)
 
@@ -466,7 +466,7 @@ __Android__
 
 ### 2.6.0 (May 14, 2021)
 
-- Added Windows Gadgets: Clock, Calendar
+- Added [Windows Gadgets](./simulated/gadgets.md): Clock, Calendar
 - Improved Taskbar's Calendar
 - Improved Desktop Menu interface
 - Optimized app's launch time
@@ -478,7 +478,7 @@ __Android__
 
 ### 2.4.0 (Apr 15, 2021)
 
-- Added Purble Shop
+- Added [Purble Shop](./simulated/purbleplace.md)
 
 ## 2020
 
@@ -504,7 +504,7 @@ __Android__
 
 ### 2.2 (Jul 11, 2020)
 
-- Added Paint
+- Added [Paint](./simulated/paint.md)
 - Added an account creation option
 
 ### 2.1 (Jun 13, 2020)
@@ -537,15 +537,15 @@ __Android__
 
 ### 1.2 (Apr 16, 2020)
 
-- Added Minesweeper
-- Added Purble Place (Purble Pairs)
+- Added [Minesweeper](./simulated/minesweeper.md)
+- Added [Purble Place](./simulated/purbleplace.md) (Purble Pairs)
 - Selected theme is now cached
 - Screen orientation is locked to portrait to prevent unexpected behavior
 
 ### 1.1 (Feb 27, 2020)
 
-- Added Command Prompt
-- Added Control Panel
+- Added [Command Prompt](./simulated/cmd.md)
+- Added [Control Panel](./simulated/cpanel.md)
 - Added Shutdown + Restart options
 
 ### 1.0 (Feb 16, 2020)
@@ -553,11 +553,11 @@ __Android__
 First release with the basic Windows GUI and functionalities:
 
 - Interactive desktop, windows, start menu, taskbar
-- Personalization
-- Calculator
-- Internet Explorer
-- Notepad
-- Snipping Tool
-- Media Player
+- [Personalization](./simulated/personalize.md)
+- [Calculator](./simulated/calculator.md)
+- [Internet Explorer](./simulated/ie.md)
+- [Notepad](./simulated/notepad.md)
+- [Snipping Tool](./simulated/snipping.md)
+- [Media Player](./simulated/media-player.md)
 
 <google-ads />
