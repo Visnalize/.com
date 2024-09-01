@@ -83,6 +83,11 @@ footer {
   color: $textColor;
   padding: 2.5rem;
   text-align: center;
+
+  .is-dark & {
+    border-color: $borderColorDark;
+    color: $textColorDark;
+  }
 }
 </style>
 

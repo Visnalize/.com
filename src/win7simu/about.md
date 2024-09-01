@@ -6,7 +6,7 @@ description: A recreation of the Windows 7 operating system on the Web/Android p
 image: https://image.social/get?url=visnalize.com/win7simu/about.html
 ---
 
-# ![win7simu](/assets/win7simu-logo.png) Win7 Simu
+# Win7 Simu
 
 <a-social />
 

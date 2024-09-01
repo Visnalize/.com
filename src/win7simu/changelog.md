@@ -421,8 +421,8 @@ __Android__
 
 ### 2.12.0 (Aug 7, 2021)
 
-- You can now pin programs to taskbar.
-- Added new game: Solitaire
+- You can now pin programs to taskbar
+- Added new game: [Solitaire](./simulated/solitaire.md)
 - Added new CMD commands: shutdown, start, color
 
 ### 2.11.1 (Jul 27, 2021)

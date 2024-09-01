@@ -74,7 +74,7 @@ section {
     }
   }
 
-  &.dark {
+  &.is-dark {
     background: rgba(0, 0, 0, 0.05);
   }
 }

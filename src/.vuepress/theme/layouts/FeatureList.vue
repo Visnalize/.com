@@ -7,22 +7,29 @@
         <ul class="feature-links">
           <li v-for="feature in features" :key="feature.path">
             <router-link :to="feature.path">
-              <img :src="feature.frontmatter.image" :alt="feature.title" />
+              <span class="image">
+                <v-icon name="image" />
+                <img :src="feature.frontmatter.image" :alt="feature.title" />
+              </span>
               <span>{{ feature.title }}</span>
             </router-link>
           </li>
         </ul>
       </div>
     </template>
+    <template #page-bottom>
+      <g-footer />
+    </template>
   </parent-layout>
 </template>
 
 <script>
+import GFooter from "../../components/GFooter.vue";
 import GoogleAds from "../../components/GoogleAds.vue";
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
 
 export default {
-  components: { ParentLayout, GoogleAds },
+  components: { ParentLayout, GoogleAds, GFooter },
   computed: {
     features() {
       const pages = this.$site.pages.filter(
@@ -73,10 +80,36 @@ ins {
       text-align: center;
       transition: color 0.3s;
 
-      img {
-        width: 100%;
-        box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
+      .image {
+        color: $bgColor;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        .is-dark & {
+          color: $bgColorDark;
+        }
+
+        .icon {
+          width: 3rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 0;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top left;
+          transition: transform 0.3s ease-out;
+          position: relative;
+          z-index: 1;
+        }
       }
 
       span {
@@ -95,6 +128,10 @@ ins {
       &:hover {
         color: $accentColor;
         text-decoration: none;
+
+        img {
+          transform: scale(1.06);
+        }
       }
     }
   }
