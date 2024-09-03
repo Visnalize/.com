@@ -34,7 +34,7 @@ image: https://image.social/get?url=visnalize.com
   </article>
 </Home-Section>
 
-<a-google-ad format="horizontal" />
+<a-sponsor-ad format="banner" />
 
 <Home-Section class="center dark">
   <article>
