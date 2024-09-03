@@ -81,18 +81,28 @@ section {
 
 @media (max-width: 640px) {
   section {
-    padding: 6rem 3rem;
+    padding: 4rem 2rem;
 
     > div {
       flex-direction: column;
 
-      article, article > footer {
-        text-align: center !important;
+      article {
+        > h2, > footer {
+          text-align: center;
+        }
       }
     }
 
-    &.right > div *:first-child {
-      order: unset;
+    &.right {
+      > div *:first-child {
+        order: unset;
+      }
+
+      article {
+        > h2, > footer {
+          text-align: center;
+        }
+      }
     }
   }
 }

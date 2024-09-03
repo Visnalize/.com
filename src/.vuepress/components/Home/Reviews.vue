@@ -135,4 +135,10 @@ li {
     grid-template-columns: none;
   }
 }
+
+@media (max-width: 419px) {
+  li {
+    padding: 2rem;
+  }
+}
 </style>

@@ -42,16 +42,16 @@ ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   padding: 0;
 }
 
 li {
   background: #fff;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
-  margin: 16px;
   overflow: hidden;
 
   &:hover img {
