@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import links from "../links";
+import links from "../config/links";
 
 export default {
   data() {
