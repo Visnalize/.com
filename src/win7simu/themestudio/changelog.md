@@ -5,9 +5,9 @@ pageClass: changelog
 
 # Theme Studio Changelog
 
-<a-social hideCommentCount />
+<m-social-links hideCommentCount />
 
-<google-ads />
+<a-google-ad />
 
 ## All versions
 

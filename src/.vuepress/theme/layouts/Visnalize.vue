@@ -1,31 +1,25 @@
 <template>
   <parent-layout>
     <template v-if="!noSideAds" #sidebar-bottom>
-      <div class="googleads"><google-ads /></div>
+      <div class="googleads"><a-google-ad /></div>
     </template>
     <template v-if="!noComments" #page-bottom>
       <div class="ad-wrapper">
-        <google-ads />
+        <a-google-ad />
       </div>
-      <comment-section />
+      <m-comments />
     </template>
   </parent-layout>
 </template>
 
 <script>
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
-import CommentSection from "../../components/CommentSection.vue";
-import GoogleAds from "../../components/GoogleAds.vue";
 
 export default {
+  components: { ParentLayout },
   props: {
     noSideAds: Boolean,
     noComments: Boolean,
-  },
-  components: {
-    ParentLayout,
-    CommentSection,
-    GoogleAds,
   },
 };
 </script>

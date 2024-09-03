@@ -3,7 +3,7 @@
     <template #page-top>
       <div class="theme-default-content content__default">
         <h1>Win7 Simu simulated apps</h1>
-        <google-ads format="horizontal" />
+        <a-google-ad format="horizontal" />
         <ul class="feature-links">
           <li v-for="feature in features" :key="feature.path">
             <router-link :to="feature.path">
@@ -18,18 +18,16 @@
       </div>
     </template>
     <template #page-bottom>
-      <g-footer />
+      <m-footer />
     </template>
   </parent-layout>
 </template>
 
 <script>
-import GFooter from "../../components/GFooter.vue";
-import GoogleAds from "../../components/GoogleAds.vue";
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
 
 export default {
-  components: { ParentLayout, GoogleAds, GFooter },
+  components: { ParentLayout },
   computed: {
     features() {
       const pages = this.$site.pages.filter(

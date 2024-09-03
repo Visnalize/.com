@@ -8,9 +8,9 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 # Changelog
 
-<a-social hideCommentCount />
+<m-social-links hideCommentCount />
 
-<google-ads />
+<a-google-ad />
 
 ## 2024
 
@@ -189,7 +189,7 @@ __Web__
 
 - Fixed Theme Studio's Properties window placement
 
-<google-ads />
+<a-google-ad />
 
 ### 3.0.4 (Jun 24, 2023)
 
@@ -330,7 +330,7 @@ __Web__
 
 - Fixed right click (hold gesture) issue on Safari
 
-<google-ads />
+<a-google-ad />
 
 ### 2.22.2 (Sep 10, 2022)
 
@@ -443,7 +443,7 @@ __Android__
 - Added easter egg: Chrome dino game
 - Added easter egg: bring Control Panel to desktop
 
-<google-ads />
+<a-google-ad />
 
 ### 2.9.0 (Jun 21, 2021)
 
@@ -560,4 +560,4 @@ First release with the basic Windows GUI and functionalities:
 - [Snipping Tool](./simulated/snipping.md)
 - [Media Player](./simulated/media-player.md)
 
-<google-ads />
+<a-google-ad />

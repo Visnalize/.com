@@ -64,7 +64,7 @@ __Both versions__
 - __8__ version updates were released
 - __$22__ gross revenue from ads
 
-<google-ads />
+<a-google-ad />
 
 ## Other accomplishments
 

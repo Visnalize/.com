@@ -1,6 +1,6 @@
 <template>
   <div class="social">
-    <comment-count v-if="!hideCommentCount" />
+    <a-comment-count v-if="!hideCommentCount" />
     <social-share v-if="!hideShareLinks" />
   </div>
 </template>

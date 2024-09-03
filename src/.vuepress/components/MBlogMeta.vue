@@ -1,17 +1,12 @@
 <template>
   <div class="blog-meta">
     <a-created />
-    <a-social />
+    <m-social-links />
   </div>
 </template>
 
 <script>
-import ACreated from "./ACreated.vue";
-import ASocial from "./ASocial.vue";
-
-export default {
-  components: { ACreated, ASocial },
-};
+export default {};
 </script>
 
 <style lang="stylus" scoped>

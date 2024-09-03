@@ -8,7 +8,7 @@ image: https://image.social/get?url=visnalize.com/brick1100/changelog.html
 
 # Changelog
 
-<a-social hideCommentCount />
+<m-social-links hideCommentCount />
 
 ## Beta versions
 
@@ -76,4 +76,4 @@ The first beta release of the app with the core interface and functionalities im
 - Built-in Extras/Apps (Calculator, Stopwatch, Countdown Timer, Flashlight)
 - An Online Apps section with curated apps for the Brick 1100
 
-<google-ads />
+<a-google-ad />

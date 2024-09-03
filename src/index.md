@@ -6,10 +6,10 @@ pageClass: homepage
 image: https://image.social/get?url=visnalize.com
 ---
 
-<home-hero />
+<Home-Hero />
 
-<home-section class="dark">
-  <home-preview src="/assets/win7simu-logo.png" title="win7 simu" />
+<Home-Section class="dark">
+  <Home-Preview src="/assets/win7simu-logo.png" title="win7 simu" />
   <article>
     <h2>Win7 Simu</h2>
     <p>A recreation of the Windows 7 operating system on the Android platform,
@@ -19,10 +19,10 @@ image: https://image.social/get?url=visnalize.com
       <a-button href="/win7simu/about.html">Learn more</a-button>
     </footer>
   </article>
-</home-section>
+</Home-Section>
 
-<home-section class="right">
-  <home-preview src="https://brick1100.visnalize.com" title="Brick 1100" />
+<Home-Section class="right">
+  <Home-Preview src="https://brick1100.visnalize.com" title="Brick 1100" />
   <article>
     <h2>Brick 1100</h2>
     <p>A simulation of the Nokia 1100 mobile phone, the best-selling mobile phone of all time worldwide.
@@ -32,27 +32,27 @@ image: https://image.social/get?url=visnalize.com
       <a-button href="/brick1100/about.html">Learn more</a-button>
     </footer>
   </article>
-</home-section>
+</Home-Section>
 
-<google-ads format="horizontal" />
+<a-google-ad format="horizontal" />
 
-<home-section class="center dark">
+<Home-Section class="center dark">
   <article>
     <h2>📺 Latest videos</h2>
-    <home-videos />
+    <Home-Videos />
     <footer>
       <a-button href="https://www.youtube.com/c/visnalize">Watch more</a-button>
     </footer>
   </article>
-</home-section>
+</Home-Section>
 
-<home-section class="center">
+<Home-Section class="center">
   <article>
     <h2>💬 What the users say</h2>
-    <home-reviews />
+    <Home-Reviews />
   </article>
-</home-section>
+</Home-Section>
 
-<google-ads format="horizontal" />
+<a-google-ad format="horizontal" />
 
-<g-footer />
+<m-footer />

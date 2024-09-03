@@ -36,7 +36,7 @@ And this is a common practice for the majority of websites, they don't owe you a
 
 So I'm out of luck then? There is no way to simulate a web browser's functionalities in a web environment? Well, more or less. With the problem identified, there is still a chance to come up with a solution, and the solution I have come to is __intercepting the response__ to remove these two headers so that the iframe can load any website normally. For this, a browser extension is required as it is the only possible way to intercept requests/responses coming through the user's web browser without much security concern. Follow the below steps to implement this solution on your device.
 
-<google-ads />
+<a-google-ad />
 
 ## Step-by-step guide
 

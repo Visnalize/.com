@@ -3,7 +3,7 @@
     <template #page-top>
       <div class="theme-default-content content__default">
         <h1>{{ data.title }}</h1>
-        <a-social />
+        <m-social-links />
         <p>
           <img :src="data.image" :alt="data.title" />
         </p>
@@ -27,22 +27,19 @@
     </template>
     <template #page-bottom>
       <div class="ad-wrapper">
-        <google-ads />
+        <a-google-ad />
       </div>
-      <comment-section />
+      <m-comments />
     </template>
   </parent-layout>
 </template>
 
 <script>
-import AChangelog from "../../components/AChangelog.vue";
-import CommentSection from "../../components/CommentSection.vue";
-import GoogleAds from "../../components/GoogleAds.vue";
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
 import { lowerFirst } from "../../utils/string";
 
 export default {
-  components: { ParentLayout, CommentSection, GoogleAds, AChangelog },
+  components: { ParentLayout },
   computed: {
     data() {
       return { ...this.$page, ...this.$frontmatter };

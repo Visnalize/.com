@@ -42,7 +42,7 @@ I started spending my free time outside of work hours and weekends to get into i
 
 There are a few other packages and libraries that enhance the developer experience and contribute to the feature feasibility, e.g several **Capacitor plugins** wiring up certain native mobile features for the app, **dayjs** providing out-of-the-box utils to work with date and time, or **voca** for handy string utils without the needs of reinventing the wheel.
 
-<google-ads />
+<a-google-ad />
 
 ### Breaking down the components
 

@@ -30,4 +30,4 @@ The logo is also shamelessly created by myself using MS Paint and eventually on 
 
 I am not actively available via direct messaging or chat apps like Discord, WhatsApp etc. You can reach me via email at [hey@visnalize.com](mailto:hey@visnalize.com) or with a little help from the form below:
 
-<email-sender />
+<m-email-sender />

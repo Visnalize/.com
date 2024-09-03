@@ -5,7 +5,7 @@ sidebarDepth: 2
 
 # In-depth guide
 
-<a-social />
+<m-social-links />
 
 This page aims to walk you through __Theme Studio__ in an in-depth manner, everything you need to know to craft your own themes for Win7 Simu. As a prerequisite, it is required that you have some ground knowledge of __HTML__ and __CSS__ to be able to follow along easier, otherwise, here are some good free resources to learn:
 
@@ -84,7 +84,7 @@ This feature is only available with user accounts. Therefore, make sure you are 
 * Likewise, you can also view, modify, or use any of the public themes.
 * If you wish to remove your theme from the public, simply select "Delete" also from the right-click menu, your theme will be then removed from the Public Gallery. However, keep in mind that anyone who has already loaded your theme onto their device will still keep a copy of it.
 
-<google-ads />
+<a-google-ad />
 
 ## Common selectors
 

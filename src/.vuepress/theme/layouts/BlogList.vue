@@ -4,27 +4,23 @@
       <div class="theme-default-content content__default">
         <h1>📝 Blog</h1>
         <m-blog-tag-nav :tags="tags" />
-        <google-ads format="horizontal" />
+        <a-google-ad format="horizontal" />
         <m-blog-links :blogs="blogs" />
-        <google-ads />
+        <a-google-ad />
       </div>
     </template>
     <template #page-bottom>
-      <g-footer />
+      <m-footer />
     </template>
   </parent-layout>
 </template>
 
 <script>
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
-import GFooter from "../../components/GFooter.vue";
-import GoogleAds from "../../components/GoogleAds.vue";
-import MBlogTagNav from "../../components/MBlogTagNav.vue";
-import MBlogLinks from "../../components/MBlogLinks.vue";
 import { pascalize } from "../../utils/string";
 
 export default {
-  components: { ParentLayout, GFooter, GoogleAds, MBlogTagNav, MBlogLinks },
+  components: { ParentLayout },
   computed: {
     tags() {
       const tags = this.$tag.list.map((tag) => ({

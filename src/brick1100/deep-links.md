@@ -5,7 +5,7 @@ image: https://image.social/get?url=visnalize.com/brick1100/deep-links.html
 
 # Deep links
 
-<a-social />
+<m-social-links />
 
 :::tip Overview
 _Deep links_ take you directly to a specific section of the app without needing to navigate through the app to get to that section. You can use them to create shortcuts to your favorite sections or to share them with others.

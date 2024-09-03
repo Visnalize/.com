@@ -93,7 +93,7 @@ li {
   &::before {
     content: '\201C';
     display: block;
-    font-family: cursive;
+    font-family: serif;
     font-size: 16rem;
     opacity: 0.1;
     position: absolute;

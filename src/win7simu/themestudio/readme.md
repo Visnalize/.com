@@ -5,7 +5,7 @@ description: Introduction to Theme Studio, an exclusive application to Win7 Simu
 
 # Theme Studio
 
-<a-social />
+<m-social-links />
 
 ![Theme Studio](./img/themestudio.jpg)
 

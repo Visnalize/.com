@@ -5,7 +5,7 @@ sidebarDepth: 2
 
 # Getting started
 
-<a-social />
+<m-social-links />
 
 ## User interface
 

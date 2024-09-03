@@ -8,9 +8,9 @@ image: https://image.social/get?url=visnalize.com/win7simu/faq.html
 
 # Frequently Asked Questions
 
-<a-social />
+<m-social-links />
 
-<google-ads />
+<a-google-ad />
 
 ::: warning Note
 This page is updated regularly in accordance with the user's queries from all sources (emails, Play Store reviews, YouTube comments). Please check back to this before asking any question as the question will not be responded if it's already included here.

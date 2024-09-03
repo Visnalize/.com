@@ -14,10 +14,7 @@
 </template>
 
 <script>
-import AControl from "./AControl.vue";
-
 export default {
-  components: { AControl },
   data() {
     return {
       state: "",
