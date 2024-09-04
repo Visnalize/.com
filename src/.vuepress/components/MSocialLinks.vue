@@ -20,8 +20,12 @@ export default {
   align-items: center;
   justify-content: flex-end;
 
-  >>> &-share {
-    &:hover .social-share-btn {
+  >>> .social-share {
+    .is-dark & .social-share-btn {
+      color: darken($textColorDark, 40%);
+    }
+
+    .social-share-btn:hover {
       color: $accentColor;
     }
 
@@ -29,6 +33,12 @@ export default {
       width: 2.5rem;
       height: 2.5rem;
       font-size: 1.5rem;
+
+      > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }

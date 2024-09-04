@@ -11,11 +11,7 @@ image: https://image.social/get?url=visnalize.com/brick1100/about.html
 
 **Brick 1100** is a simulation of the Nokia 1100 mobile phone, the best-selling mobile phone of all time worldwide. The simulation aims to bring the users back to the simpler time with the fundamental graphics and features from one of the most durable phones produced by [Nokia](https://en.wikipedia.org/wiki/Nokia), a Finnish based firm.
 
-<div class="access">
-  <a href="https://play.google.com/store/apps/details?id=com.visnalize.brick1100" target="_blank">
-    <img src="/assets/access-store.png" alt="Play Store" />
-  </a>
-</div>
+<m-access-links app="brick1100" />
 
 ## Interesting facts and history
 

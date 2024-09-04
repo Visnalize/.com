@@ -31,7 +31,11 @@ a {
   align-items: center;
   color: $textColor;
   transition: color 0.3s;
-  margin-right: 10px;
+  margin-right: 0.5rem;
+
+  .is-dark & {
+    color: $textColorDark;
+  }
 
   &:hover {
     color: $accentColor;
@@ -39,8 +43,9 @@ a {
   }
 
   img {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.25rem;
   }
 }
 </style>

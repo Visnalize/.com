@@ -12,7 +12,7 @@ image: https://image.social/get?url=visnalize.com/win7simu/about.html
 
 **Win7 Simu** is a recreation of the Windows 7 operating system on the Web/Android platform. It is built out of pure joy and nostalgia for the sake of reliving the good old time with the elegant Aero and Glassy interface.
 
-<m-access-links />
+<m-access-links app="win7simu" />
 
 ## Features
 

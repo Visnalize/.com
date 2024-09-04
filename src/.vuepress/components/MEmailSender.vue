@@ -24,10 +24,7 @@
 </template>
 
 <script>
-import AButton from "./AButton.vue";
-
 export default {
-  components: { AButton },
   data() {
     return {
       errors: [],

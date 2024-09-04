@@ -15,11 +15,7 @@
 </template>
 
 <script>
-import ACreated from "./ACreated.vue";
-import MBlogTagList from "./MBlogTagList.vue";
-
 export default {
-  components: { ACreated, MBlogTagList },
   props: {
     blogs: Array,
   },

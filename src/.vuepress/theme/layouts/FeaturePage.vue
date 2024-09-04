@@ -22,7 +22,7 @@
           preferred platform. Simply click a button below to download the
           Android app or access directly from your web browser.
         </p>
-        <m-access-links />
+        <m-access-links app="win7simu" />
       </div>
     </template>
     <template #page-bottom>

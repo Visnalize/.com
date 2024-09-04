@@ -1,19 +1,45 @@
 <template>
   <div class="access">
-    <a
-      href="https://play.google.com/store/apps/details?id=com.visnalize.win7simu"
-      target="_blank"
-    >
-      <img src="/assets/access-store.png" alt="Play Store" width="300" />
-    </a>
-    <a href="https://win7simu.visnalize.com" target="_blank">
-      <img src="/assets/access-web.png" alt="Web App" width="300" />
+    <a v-for="link in links" :key="link" :href="link" target="_blank">
+      <img v-bind="getImageProps(link)" />
     </a>
   </div>
 </template>
 
 <script>
-export default {};
+const LinkMap = {
+  win7simu: [
+    "https://play.google.com/store/apps/details?id=com.visnalize.win7simu",
+    "https://win7simu.visnalize.com",
+  ],
+  brick1100: [
+    "https://play.google.com/store/apps/details?id=com.visnalize.brick1100",
+  ],
+};
+
+export default {
+  props: {
+    app: { type: String, required: true },
+  },
+  computed: {
+    links() {
+      return LinkMap[this.app];
+    },
+  },
+  methods: {
+    getImageProps(link) {
+      const props = { width: 300 };
+      if (link.includes("play.google.com")) {
+        props.alt = "Play Store";
+        props.src = "/assets/access-store.png";
+      } else {
+        props.alt = "Web App";
+        props.src = "/assets/access-web.png";
+      }
+      return props;
+    },
+  },
+};
 </script>
 
 <style lang="stylus" scoped>
