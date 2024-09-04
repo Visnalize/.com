@@ -84,15 +84,15 @@ img {
   transition: transform 0.3s ease-out;
 }
 
-@media (max-width: 719px) {
-  ul {
-    display: initial;
-  }
-}
-
 @media (max-width: 959px) {
   ul {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 719px) {
+  ul {
+    grid-template-columns: none;
   }
 }
 </style>
