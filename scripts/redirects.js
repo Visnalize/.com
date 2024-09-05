@@ -41,7 +41,14 @@ const redirects = [
 ];
 
 const html = (redirectUrl) =>
-  `<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;URL='${redirectUrl}'"></head></html>`;
+  `<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <meta name="description" content="This page is being redirected to ${redirectUrl}" />
+    <meta http-equiv="refresh" content="0;URL='${redirectUrl}'">
+  </head>
+</html>`;
 
 (function makeRedirects() {
   const dist = join(process.cwd(), "src/.vuepress/dist");

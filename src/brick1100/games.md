@@ -1,5 +1,6 @@
 ---
 layout: BlogPost
+description: Play the classic games on Brick 1100. Snake, Brick Breaker, Chrome Dino, Monogram and more
 image: https://image.social/get?url=visnalize.com/brick1100/games.html
 ---
 

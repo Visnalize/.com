@@ -1,5 +1,6 @@
 ---
 layout: BlogPost
+description: Explore deep links available in Brick 1100. Take shortcuts to your favorite sections or share them with others
 image: https://image.social/get?url=visnalize.com/brick1100/deep-links.html
 ---
 

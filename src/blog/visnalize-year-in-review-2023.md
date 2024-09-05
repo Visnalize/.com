@@ -74,7 +74,7 @@ Since November of this year, you must have noticed Win7 Simu has been receiving 
 
 ### New feedback channels for Brick 1100
 
-With the new beta release of Brick 1100, I have set up a new [Discord server](https://discord.gg/6AQDnZa4Xm) for the community to hang out, discuss all things Brick 1100-related, and provide feedback to make Brick 1100 a better app. Additionally, there is also this [feedback forum](https://visnalize.com/brick1100/feedback) for those who don't want to use or are not familiar with Discord can provide feedback and suggestions, easily and anonymously without much hassle.
+With the new beta release of Brick 1100, I have set up a new [Discord server](https://discord.gg/6AQDnZa4Xm) for the community to hang out, discuss all things Brick 1100-related, and provide feedback to make Brick 1100 a better app. Additionally, there is also this [feedback forum](/brick1100/feedback) for those who don't want to use or are not familiar with Discord can provide feedback and suggestions, easily and anonymously without much hassle.
 
 ### A new chapter in life
 
