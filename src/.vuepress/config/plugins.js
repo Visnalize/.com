@@ -1,12 +1,14 @@
+const { ORIGIN } = require("./const");
+
 const plugins = [
   [
     "@vuepress/blog",
     {
       sitemap: {
-        hostname: "https://visnalize.com",
+        hostname: ORIGIN,
       },
       feed: {
-        canonical_base: "https://visnalize.com",
+        canonical_base: ORIGIN,
       },
       frontmatters: [
         {
@@ -25,14 +27,14 @@ const plugins = [
       canonical_base:
         process.env.NODE_ENV === "development"
           ? "http://localhost:8080"
-          : "https://visnalize.com",
+          : ORIGIN,
       author: { name: "Visnalize" },
     },
   ],
   [
     "canonical",
     {
-      baseURL: "https://visnalize.com",
+      baseURL: ORIGIN,
     },
   ],
   [

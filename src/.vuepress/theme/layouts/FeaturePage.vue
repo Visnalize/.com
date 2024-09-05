@@ -5,7 +5,9 @@
         <h1>{{ data.title }}</h1>
         <m-social-links />
         <p>
-          <img :src="data.image" :alt="data.title" />
+          <a :href="data.image" target="_blank" rel="noopener noreferrer">
+            <img :src="transform(data.image)" :alt="data.title" />
+          </a>
         </p>
         <p>
           <b>{{ data.title }}</b> is a simulated application in
@@ -37,6 +39,7 @@
 <script>
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
 import { lowerFirst } from "../../utils/string";
+import { transform } from "../../utils/images";
 
 export default {
   components: { ParentLayout },
@@ -47,6 +50,9 @@ export default {
   },
   methods: {
     lowerFirst,
+    transform(imageUrl) {
+      return transform(imageUrl, { width: 740, quality: 100 });
+    },
   },
 };
 </script>

@@ -9,7 +9,10 @@
             <router-link :to="feature.path">
               <span class="image">
                 <v-icon name="image" />
-                <img :src="feature.frontmatter.image" :alt="feature.title" />
+                <img
+                  :src="transform(feature.frontmatter.image)"
+                  :alt="feature.title"
+                />
               </span>
               <span>{{ feature.title }}</span>
             </router-link>
@@ -25,6 +28,7 @@
 
 <script>
 import ParentLayout from "@parent-theme/layouts/Layout.vue";
+import { transform } from "../../utils/images";
 
 export default {
   components: { ParentLayout },
@@ -42,6 +46,11 @@ export default {
         });
       });
       return pages;
+    },
+  },
+  methods: {
+    transform(imageUrl) {
+      return transform(imageUrl, { width: 450 });
     },
   },
 };
