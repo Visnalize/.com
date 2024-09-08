@@ -4,7 +4,7 @@ description: Explore deep links available in Brick 1100. Take shortcuts to your 
 image: https://image.social/get?url=visnalize.com/brick1100/deep-links.html
 ---
 
-# Deep links
+# Brick 1100 deep links
 
 <m-social-links />
 

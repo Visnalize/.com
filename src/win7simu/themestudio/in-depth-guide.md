@@ -1,5 +1,6 @@
 ---
 layout: WithComments
+title: Theme Studio in-depth guide
 sidebarDepth: 2
 ---
 

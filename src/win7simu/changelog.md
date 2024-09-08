@@ -14,6 +14,13 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.13.0 (Sep 8, 2024)
+
+- [Windows Media Center](./simulated/wmc.md) now supports music playlists
+  - Create, edit, and delete playlists
+  - Play all songs in a playlist
+- Other bug fixes and improvements
+
 ### 3.12.1 (Aug 24, 2024)
 
 - Fixed empty screen in [Windows Media Center](./simulated/wmc.md)'s Media Only mode

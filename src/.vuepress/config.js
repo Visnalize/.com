@@ -11,8 +11,8 @@ module.exports = defineConfig({
     sidebar: {
       "/win7simu/themestudio/": [
         ["", "Introduction"],
-        "quick-guide",
-        "in-depth-guide",
+        ["quick-guide", "Getting started"],
+        ["in-depth-guide", "In-depth guide"],
         ["changelog", "Changelog"],
       ],
       "/brick1100/": "auto",

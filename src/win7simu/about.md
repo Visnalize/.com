@@ -1,8 +1,8 @@
 ---
-title: Win7 Simu
 layout: WithComments
-sidebar: false
+title: What is Win7 Simu?
 description: A recreation of the Windows 7 operating system on the Web/Android platform, brings back the nostalgia with the elegant Aero interface
+sidebar: false
 image: https://image.social/get?url=visnalize.com/win7simu/about.html
 ---
 

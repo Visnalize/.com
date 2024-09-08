@@ -1,5 +1,6 @@
 ---
 layout: WithComments
+title: Getting started with Theme Studio
 sidebarDepth: 2
 ---
 
