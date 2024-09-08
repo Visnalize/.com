@@ -40,6 +40,10 @@ const navbar = [
             text: "Deep Links",
             link: "/brick1100/deep-links",
           },
+          {
+            text: "Builders",
+            link: "/brick1100/builders",
+          }
         ],
       },
     ],
