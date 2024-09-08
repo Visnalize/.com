@@ -5,7 +5,7 @@ description: Discover how to build your own apps and games on Brick 1100. Develo
 
 # Brick 1100 Builders
 
-![Brick 1100 Builder achievement](./builders/builder.jpg)
+![Brick 1100 Builder achievement](/assets/covers/builders.jpg)
 
 __Builders__ is a short name for an advanced program available in [Brick 1100](./about.md). It offers a set of tools and features that allow you to create your own apps and games, and seamlessly integrate them with Brick 1100. You can publish your creations and share with other Brick 1100 users, and even earn rewards for your work. The owners of these creations are referred to as _builders_.
 
