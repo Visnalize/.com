@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[77],{519:function(t,n,r){"use strict";r.r(n);var s=r(13),e=Object(s.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("a-redirect",{attrs:{to:"/brick1100/about"}})],1)}),[],!1,null,null,null);n.default=e.exports}}]);
