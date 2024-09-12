@@ -16,7 +16,9 @@ export function transform(imagePath, options) {
     .map(([key, value]) => (value === undefined ? "" : `${key}=${value}`))
     .filter(Boolean)
     .join(",");
-  const imageUrl = isExternal(imagePath) ? imagePath : `${ORIGIN}${imagePath}`;
+  const imageUrl = encodeURIComponent(
+    isExternal(imagePath) ? imagePath : `${ORIGIN}${imagePath}`
+  );
   return `${ORIGIN}/cdn-cgi/image/${optionsString}/${imageUrl}`;
 }
 
