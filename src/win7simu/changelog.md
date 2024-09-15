@@ -14,6 +14,17 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.13.1 (Sep 14, 2024)
+
+__Core__
+
+- Fixed an issue with social login not working properly
+- You can now login/link with Apple account
+
+__Android__
+
+- Fixed an issue with app not working offline
+
 ### 3.13.0 (Sep 8, 2024)
 
 - [Windows Media Center](./simulated/wmc.md) now supports music playlists
