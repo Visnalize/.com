@@ -14,6 +14,7 @@ const LinkMap = {
   ],
   brick1100: [
     "https://play.google.com/store/apps/details?id=com.visnalize.brick1100",
+    "https://apps.apple.com/us/app/brick-1100/id6554000754",
   ],
 };
 
@@ -28,13 +29,16 @@ export default {
   },
   methods: {
     getImageProps(link) {
-      const props = { width: 300 };
-      if (link.includes("play.google.com")) {
+      const props = { height: 100 };
+      if (link.includes("google.com")) {
         props.alt = "Play Store";
-        props.src = "/assets/access-store.png";
+        props.src = "/assets/access-google.svg";
+      } else if (link.includes("apple.com")) {
+        props.alt = "App Store";
+        props.src = "/assets/access-apple.svg";
       } else {
         props.alt = "Web App";
-        props.src = "/assets/access-web.png";
+        props.src = "/assets/access-web.svg";
       }
       return props;
     },
