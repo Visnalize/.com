@@ -1,6 +1,6 @@
 <template>
   <a-control
-    :icon="isDark ? 'moon' : 'sun'"
+    :icon="isDark ? 'ic:baseline-mode-night' : 'ic:baseline-wb-sunny'"
     label="Toggle theme"
     @click="toggle"
   />

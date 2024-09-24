@@ -1,6 +1,6 @@
 <template>
   <div class="first-created" title="Created date" v-if="createdDate">
-    <v-icon name="clock" />
+    <a-icon icon="mdi:clock-outline" />
     <span>{{ createdDate }}</span>
   </div>
 </template>

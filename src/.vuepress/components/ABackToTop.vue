@@ -1,7 +1,7 @@
 <template>
   <a-control
     :class="{ active: isScrolling }"
-    icon="arrow-up"
+    icon="ic:round-arrow-upward"
     label="Back to top"
     @click="scrollTop"
   />

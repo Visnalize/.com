@@ -1,6 +1,6 @@
 <template>
   <button :aria-label="label" :title="label" @click="$emit('click')">
-    <v-icon :name="icon" />
+    <a-icon :icon="icon" />
   </button>
 </template>
 

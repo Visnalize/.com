@@ -8,7 +8,7 @@
           <li v-for="feature in features" :key="feature.path">
             <router-link :to="feature.path">
               <span class="image">
-                <v-icon name="image" />
+                <a-icon icon="ic:outline-image" width="48" height="48" />
                 <img
                   :src="transform(feature.frontmatter.image)"
                   :alt="feature.title"
@@ -99,8 +99,7 @@ ins {
           color: $bgColorDark;
         }
 
-        .icon {
-          width: 3rem;
+        .iconify {
           position: absolute;
           top: 50%;
           left: 50%;

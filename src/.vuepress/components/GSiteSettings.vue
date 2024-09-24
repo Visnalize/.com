@@ -6,7 +6,9 @@
       :class="{ active: showControls }"
       @click="toggle"
     >
-      <v-icon :name="showControls ? 'x' : 'settings'" />
+      <a-icon
+        :icon="showControls ? 'humbleicons:times' : 'ic:outline-settings'"
+      />
     </button>
     <ul ref="controls">
       <li><a-theme-toggle /></li>

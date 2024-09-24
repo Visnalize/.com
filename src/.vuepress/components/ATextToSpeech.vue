@@ -6,7 +6,7 @@
   >
     <a-control
       :class="{ active }"
-      :icon="isSupported ? 'volume-2' : 'volume-x'"
+      :icon="isSupported ? 'ic:baseline-volume-up' : 'ic:baseline-volume-off'"
       label="Text to speech"
       @click="toggle"
     />

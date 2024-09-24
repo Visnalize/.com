@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-icon name="tag" v-if="showIcon" />
+    <a-icon icon="mdi:tag-outline" v-if="showIcon" />
     <ul>
       <li v-for="tag in _tags" :key="tag">
         <router-link :to="`/blog/tag/${tag}/`">
@@ -44,7 +44,7 @@ div {
 ul {
   list-style: none;
   display: flex;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   font-size: 0.85rem;
 
   a {

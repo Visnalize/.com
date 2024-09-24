@@ -12,12 +12,12 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@iconify/vue2": "^2.1.0",
     "@vuepress/plugin-blog": "^1.9.4",
     "gh-pages": "^3.2.3",
     "markdown-it-task-lists": "^2.1.1",
     "markdown-it-video": "^0.6.3",
     "motion": "^10.14.2",
-    "vue-icon": "^2.3.0",
     "vue-toastification": "^1.7.14",
     "vuepress": "^1.9.9",
     "vuepress-plugin-autometa": "^0.1.13",
