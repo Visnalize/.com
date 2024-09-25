@@ -10,7 +10,20 @@ image: https://image.social/get?url=visnalize.com/brick1100/changelog.html
 
 <m-social-links hideCommentCount />
 
+Annotation: <a-notation icon="android" list />, <a-notation icon="ios" list />, <a-notation icon="diamond" list />
+
 ## Beta versions
+
+### 0.0.13 (Sep 24, 2024)
+
+- Fixed audio issues
+- Fixed call/dialer not opening <a-notation icon="ios" />
+- Fixed deep links not working <a-notation icon="ios" />
+- Added Shortcut maker (Menu > Extras > Utilities > Shortcut maker) <a-notation icon="android" /><a-notation icon="diamond" />
+
+### 0.0.12 (Sep 22, 2024)
+
+_Minor bug fixes._
 
 ### 0.0.11 (Aug 17, 2024)
 
