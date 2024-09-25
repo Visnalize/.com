@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[61],{506:function(t,n,s){"use strict";s.r(n);var o={components:{Icon:s(450).a}},c=s(16),e=Object(c.a)(o,(function(){return(0,this._self._c)("Icon",this._b({attrs:{width:"24",height:"24"}},"Icon",this.$attrs,!1))}),[],!1,null,null,null);n.default=e.exports}}]);
