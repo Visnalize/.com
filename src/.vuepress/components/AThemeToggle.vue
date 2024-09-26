@@ -12,9 +12,12 @@ import DarkMode from "../utils/darkmode";
 export default {
   data() {
     return {
-      isDark: DarkMode.isDarkMode(),
+      isDark: false,
       label: "Toggle theme",
     };
+  },
+  mounted() {
+    this.isDark = DarkMode.isDarkMode();
   },
   methods: {
     toggle() {

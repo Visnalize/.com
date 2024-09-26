@@ -17,6 +17,8 @@ const DarkMode = {
   },
 
   isDarkMode() {
+    if (typeof window === "undefined" || typeof localStorage === "undefined")
+      return false;
     return localStorage.getItem(KEY) === "true";
   },
 };
