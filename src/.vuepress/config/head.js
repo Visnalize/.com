@@ -8,6 +8,18 @@ const head = [
     "script",
     {
       async: true,
+      src: "https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js",
+    },
+  ],
+  [
+    "script",
+    {},
+    "(function() { typeof localStorage !== 'undefined' && localStorage.getItem('darkMode') === 'true' && document.documentElement.classList.add('is-dark'); })()",
+  ],
+  [
+    "script",
+    {
+      async: true,
       "data-ad-client": "ca-pub-5904323684803247",
       src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
     },
@@ -36,13 +48,6 @@ const head = [
     "script",
     { nonce: "3HRDcENAr3Egc7skT36mnQ" },
     "(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();",
-  ],
-  [
-    "script",
-    {
-      async: true,
-      src: "https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js",
-    },
   ],
 ];
 

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import DarkMode from "../utils/darkmode";
+const KEY = "darkMode";
 
 export default {
   data() {
@@ -17,12 +17,13 @@ export default {
     };
   },
   mounted() {
-    this.isDark = DarkMode.isDarkMode();
+    this.isDark = localStorage.getItem(KEY) === "true";
   },
   methods: {
     toggle() {
       this.isDark = !this.isDark;
-      DarkMode.toggle();
+      localStorage.setItem(KEY, this.isDark);
+      document.documentElement.classList.toggle("is-dark");
     },
   },
 };

@@ -1,5 +1,4 @@
 import VTooltip from "v-tooltip";
-import DarkMode from "./utils/darkmode";
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -8,5 +7,4 @@ export default ({
   siteData, // site metadata
 }) => {
   Vue.use(VTooltip);
-  DarkMode.init();
 };
