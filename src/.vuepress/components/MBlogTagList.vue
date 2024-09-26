@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-icon icon="mdi:tag-outline" v-if="showIcon" />
+    <a-icon v-if="showIcon" icon="mdi:tag-outline" width="16" />
     <ul>
       <li v-for="tag in _tags" :key="tag">
         <router-link :to="`/blog/tag/${tag}/`">

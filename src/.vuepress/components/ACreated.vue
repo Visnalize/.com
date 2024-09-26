@@ -1,6 +1,6 @@
 <template>
   <div class="first-created" title="Created date" v-if="createdDate">
-    <a-icon icon="mdi:clock-outline" />
+    <a-icon icon="mdi:clock-outline" width="16" height="16" />
     <span>{{ createdDate }}</span>
   </div>
 </template>
@@ -22,10 +22,6 @@ export default {
 .first-created {
   display: flex;
   align-items: center;
-
-  svg {
-    width: 1rem;
-    margin-right: 0.5rem;
-  }
+  gap: 4px;
 }
 </style>

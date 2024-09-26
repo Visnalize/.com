@@ -1,6 +1,10 @@
 <template>
-  <button :aria-label="label" :title="label" @click="$emit('click')">
-    <a-icon :icon="icon" />
+  <button
+    :title="label"
+    @click="$emit('click')"
+    v-tooltip="{ content: label, offset: 8 }"
+  >
+    <a-icon :icon="icon" :width="size" :height="size" />
   </button>
 </template>
 
@@ -9,6 +13,12 @@ export default {
   props: {
     label: String,
     icon: String,
+    iconSize: String,
+  },
+  computed: {
+    size() {
+      return this.iconSize || "24";
+    },
   },
 };
 </script>

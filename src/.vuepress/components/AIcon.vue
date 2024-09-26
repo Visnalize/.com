@@ -1,11 +1,13 @@
 <template>
-  <Icon width="24" height="24" v-bind="$attrs" />
+  <iconify-icon v-bind="$attrs" v-on="$listeners" />
 </template>
 
 <script>
-import { Icon } from "@iconify/vue2";
-
-export default {
-  components: { Icon },
-};
+export default {};
 </script>
+
+<style lang="stylus" scoped>
+iconify-icon {
+  display: block;
+}
+</style>

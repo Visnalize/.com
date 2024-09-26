@@ -34,10 +34,6 @@ span {
   vertical-align: middle;
   margin-left: 0.25rem;
 }
-
-.iconify {
-  display: block;
-}
 </style>
 
 <style lang="stylus">

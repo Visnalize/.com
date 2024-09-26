@@ -1,15 +1,12 @@
 <template>
   <div class="site-settings">
-    <button
-      aria-label="Site Settings"
-      class="toggle"
-      :class="{ active: showControls }"
+    <a-control
+      label="Site Settings"
+      :class="['toggle', { active: showControls }]"
+      :icon="showControls ? 'humbleicons:times' : 'ic:outline-settings'"
+      iconSize="32"
       @click="toggle"
-    >
-      <a-icon
-        :icon="showControls ? 'humbleicons:times' : 'ic:outline-settings'"
-      />
-    </button>
+    />
     <ul ref="controls">
       <li><a-theme-toggle /></li>
       <li><a-text-to-speech /></li>
@@ -46,14 +43,15 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-$size = 96px;
+size = 64px;
+iconSize = 32px;
 
 .site-settings {
   position: fixed;
-  right: -40px;
-  bottom: -40px;
-  width: $size;
-  height: $size;
+  right: 0;
+  bottom: 0;
+  width: size;
+  height: size;
 }
 
 .toggle {
@@ -66,13 +64,15 @@ $size = 96px;
   cursor: pointer;
   background: $accentColor;
   transition: transform 0.2s;
-
-  svg {
-    color: #fff;
-  }
+  color: #fff;
 
   .site-settings:hover &, &.active {
     transform: scale(1.2);
+  }
+
+  :deep(iconify-icon) {
+    margin-top: -(iconSize / 2);
+    margin-left: (iconSize / 4);
   }
 }
 
