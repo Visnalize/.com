@@ -7,19 +7,19 @@
 </template>
 
 <script>
+import DarkMode from "../utils/darkmode";
+
 export default {
   data() {
-    return { isDark: false, label: "Toggle theme" };
-  },
-  mounted() {
-    this.isDark = localStorage.getItem("darkMode") === "true";
-    this.isDark && this.$root.$el.classList.add("is-dark");
+    return {
+      isDark: DarkMode.isDarkMode(),
+      label: "Toggle theme",
+    };
   },
   methods: {
     toggle() {
-      this.$root.$el.classList.toggle("is-dark");
       this.isDark = !this.isDark;
-      localStorage.setItem("darkMode", this.isDark);
+      DarkMode.toggle();
     },
   },
 };
