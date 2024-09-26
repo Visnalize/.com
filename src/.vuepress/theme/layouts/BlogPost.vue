@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
->>>.page-edit {
+:deep(.page-edit) {
   display: none;
 }
 </style>

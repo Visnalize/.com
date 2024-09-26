@@ -20,7 +20,7 @@ export default {
   align-items: center;
   justify-content: flex-end;
 
-  >>> .social-share {
+  :deep(.social-share) {
     .is-dark & .social-share-btn {
       color: darken($textColorDark, 40%);
     }

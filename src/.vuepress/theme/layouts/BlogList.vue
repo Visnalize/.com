@@ -49,7 +49,7 @@ export default {
   max-width: 1200px;
 }
 
->>>.page-edit {
+:deep(.page-edit) {
   display: none;
 }
 </style>

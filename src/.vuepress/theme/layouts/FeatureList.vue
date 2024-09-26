@@ -62,7 +62,7 @@ export default {
   max-width: 900px;
 }
 
->>>.page-edit {
+:deep(.page-edit) {
   display: none;
 }
 
