@@ -54,7 +54,7 @@ export default {
     font-weight: unset;
 
     > :not(.blog-image) {
-      padding: 0 1rem;
+      padding: 0 1.5rem;
     }
 
     .blog-image {

@@ -44,7 +44,8 @@ div {
 ul {
   list-style: none;
   display: flex;
-  padding: 1rem 0.5rem;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem 1.5rem;
   font-size: 0.85rem;
 
   a {
@@ -53,7 +54,6 @@ ul {
     color: currentColor;
     font-weight: normal;
     padding: 0.3rem 0.4rem;
-    margin: 0 0.2rem;
 
     &:hover {
       text-decoration: underline;
