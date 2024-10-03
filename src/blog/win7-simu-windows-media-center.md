@@ -6,6 +6,7 @@ tag:
     - sharing
     - win7-simu
     - technical
+    - guest-post
 ---
 
 # Implementing Windows Media Center in Win7 Simu
