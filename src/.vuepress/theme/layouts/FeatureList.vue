@@ -99,7 +99,7 @@ ins {
           color: $bgColorDark;
         }
 
-        .iconify {
+        iconify-icon {
           position: absolute;
           top: 50%;
           left: 50%;

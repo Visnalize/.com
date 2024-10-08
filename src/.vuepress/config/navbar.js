@@ -11,14 +11,9 @@ const navbar = [
       {
         text: "Guides",
         items: [
-          {
-            text: "Simulated apps",
-            link: "/win7simu/simulated/",
-          },
-          {
-            text: "Theme Studio",
-            link: "/win7simu/themestudio/",
-          },
+          { text: "Simulated apps", link: "/win7simu/simulated/" },
+          { text: "Theme Studio", link: "/win7simu/themestudio/" },
+          { text: "Keyboard shortcuts", link: "/win7simu/keyboard-shortcuts" },
         ],
       },
     ],
@@ -32,18 +27,9 @@ const navbar = [
       {
         text: "Guides",
         items: [
-          {
-            text: "Games",
-            link: "/brick1100/games",
-          },
-          {
-            text: "Deep Links",
-            link: "/brick1100/deep-links",
-          },
-          {
-            text: "Builders",
-            link: "/brick1100/builders",
-          }
+          { text: "Games", link: "/brick1100/games" },
+          { text: "Deep Links", link: "/brick1100/deep-links" },
+          { text: "Builders", link: "/brick1100/builders" },
         ],
       },
     ],

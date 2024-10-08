@@ -14,6 +14,18 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.14.0 (Oct 8, 2024)
+
+- New features for [Windows Media Center](./simulated/wmc.md):
+  - Songs, albums, pictures, and videos can now be deleted
+  - Slideshows are now supported
+  - Enhanced now playing list
+  - Enhanced touch/swipe navigation on the Home Screen
+- New features for [Notepad](../win7simu/simulated/notepad.md):
+  - Status bar is now supported
+  - Text files can now be saved as HTML documents
+- Added [keyboard shortcuts](../win7simu/keyboard-shortcuts.md) for some common tasks and programs
+
 ### 3.13.1 (Sep 14, 2024)
 
 __Core__
