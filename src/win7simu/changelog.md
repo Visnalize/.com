@@ -14,6 +14,12 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.15.0 (Oct 31, 2024)
+
+- [Windows Media Center](./simulated/wmc.md) slide shows can now be paused/stopped
+- Updated Theme Studio [v1.3.0](./themestudio/changelog.md#_1-3-0-oct-31-2024)
+- Bug fixes and improvements
+
 ### 3.14.0 (Oct 8, 2024)
 
 - New features for [Windows Media Center](./simulated/wmc.md):

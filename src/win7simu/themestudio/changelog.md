@@ -11,6 +11,10 @@ pageClass: changelog
 
 ## All versions
 
+### 1.3.0 (Oct 31, 2024)
+
+- Enhance Theme Explorer's performance and usability
+
 ### 1.2.0 (Jul 10, 2023)
 
 - Add link to video tutorials
