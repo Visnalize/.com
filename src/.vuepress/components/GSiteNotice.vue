@@ -17,27 +17,25 @@ export default {
       timeout: false,
       position: POSITION.BOTTOM_LEFT,
     });
-    // this.toast(this.getContent());
+    this.toast(this.getContent());
   },
   methods: {
     getContent() {
       return (
         <a
-          href="https://www.gamezop.com/?id=4032"
+          href="https://youtu.be/KM_10_riX7w"
           target="_blank"
-          style="display: flex; align-items: center; color: #fff; text-align: center;"
+          style="display: flex; align-items: center; color: #fff; text-align: center; max-width: 420px"
         >
-          <img
+          {/* <img
             src="/assets/gz-icon.gif"
             alt="Gamezop"
             width="48"
             style="margin-right: 8px"
-          />
+          /> */}
           <span>
-            Bored? Check out some fun games!
-            <i style="margin-top: 4px; display: block; font-size: 0.8em; color: #aaa">
-              (From our partner <span style="color: #fff">Gamezop</span>)
-            </i>
+            🔥 Enjoy Win7 Simu (web version) ad-free for a whole year with this
+            Black Friday 40% discount code: BF2024
           </span>
         </a>
       );

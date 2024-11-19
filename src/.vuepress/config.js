@@ -31,5 +31,5 @@ module.exports = defineConfig({
     },
   },
 
-  globalUIComponents: ["GSiteSettings", "GAffiliates"],
+  globalUIComponents: ["GSiteSettings", "GSiteNotice"],
 });
