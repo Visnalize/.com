@@ -1,0 +1,4 @@
+{
+  "vue.server.includeLanguages": ["vue", "markdown"],
+  "explorer.sortOrder": "type"
+}

@@ -1,0 +1,21 @@
+{
+  "include": [
+    "**/*.ts",
+    "**/*.vue",
+    "**/*.md",
+    ".content/*",
+    ".vitepress/theme/**/*",
+    ".vitepress/config/**/*"
+  ],
+  "vueCompilerOptions": {
+    "vitePressExtensions": [".md"]
+  },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": ["./*"],
+      "@utils/*": ["./.vitepress/theme/utils/*"],
+      "@components/*": ["./.vitepress/theme/components/*"]
+    }
+  }
+}

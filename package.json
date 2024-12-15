@@ -1,31 +1,24 @@
 {
-  "name": "visnalize.github.io",
-  "version": "0.0.0",
-  "description": "",
-  "repository": "https://github.com/Visnalize/visnalize.github.io.git",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "postbuild": "node scripts/redirects.js",
-    "deploy": "gh-pages -d src/.vuepress/dist -b main",
-    "deploybuild": "yarn build && yarn deploy"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
-  "license": "MIT",
   "devDependencies": {
-    "@vuepress/plugin-blog": "^1.9.4",
-    "gh-pages": "^3.2.3",
+    "@justinribeiro/lite-youtube": "^1.6.0",
+    "@types/node": "^22.10.2",
+    "@types/voca": "^1.4.6",
+    "floating-vue": "^5.2.2",
+    "gray-matter": "^4.0.3",
+    "iconify-icon": "^2.2.0",
+    "markdown-it-block-embed": "^0.0.3",
     "markdown-it-task-lists": "^2.1.1",
-    "markdown-it-video": "^0.6.3",
-    "motion": "^10.14.2",
-    "v-tooltip": "^2.1.3",
-    "vue-toastification": "^1.7.14",
-    "vuepress": "^1.9.9",
-    "vuepress-plugin-autometa": "^0.1.13",
-    "vuepress-plugin-canonical": "^1.0.0",
-    "vuepress-plugin-disqus": "^0.2.0",
-    "vuepress-plugin-first-created": "^0.0.1",
-    "vuepress-plugin-social-share": "^1.0.0",
-    "vuepress-plugin-text-to-speech": "^1.0.3"
-  },
-  "packageManager": "yarn@1.22.22"
+    "motion": "^11.13.5",
+    "vitepress": "^1.5.0",
+    "voca": "^1.4.1",
+    "vue": "^3.5.13",
+    "vue3-social-sharing": "^1.1.2"
+  }
 }
