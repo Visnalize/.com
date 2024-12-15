@@ -11,7 +11,8 @@ import { DISQUS } from "./constants";
 import DocAfter from "./layout/DocAfter.vue";
 import DocBefore from "./layout/DocBefore.vue";
 import LayoutBottom from "./layout/LayoutBottom.vue";
-import "./style.css";
+import "./style.custom.css";
+import "./style.palette.css";
 
 export default {
   extends: DefaultTheme,

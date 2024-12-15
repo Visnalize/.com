@@ -38,7 +38,8 @@ Check out the video series below to see how it works, or learn and start craftin
 <style module>
 .features {
     display: flex;
-    gap: 1rem;
+    flex-flow: column;
+    column-gap: 1rem;
 }
 
 .features [data-feature] {
@@ -49,5 +50,11 @@ Check out the video series below to see how it works, or learn and start craftin
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+    .features {
+        flex-flow: row;
+    }
 }
 </style>

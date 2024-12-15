@@ -53,7 +53,7 @@ a {
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    transition: 0.25s;
+    transition: 0.2s;
 }
 
 a:hover {

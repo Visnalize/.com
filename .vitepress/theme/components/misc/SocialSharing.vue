@@ -1,47 +1,34 @@
 <template>
     <div class="social-sharing">
-        <button @click="copyUrl" :style="{ '--index': networks.length + 1 }" v-tooltip="'Copy URL'">
-            <iconify-icon :icon="copied ? 'fluent:checkmark-24-filled' : 'fluent:attach-24-filled'" height="16" />
-        </button>
-        <ShareNetwork v-for="(network, i) in networks" :network="network.name" :url="shareData?.url"
-            :title="shareData?.title" :description="shareData?.description" v-slot="{ share }">
-            <button @click="share" :style="{ '--index': networks.length - i }"
-                v-tooltip="'Share on ' + upperCaseFirst(network.name)">
-                <iconify-icon :icon="network.icon" height="16" />
+        <SocialShareButtons :data="shareData" />
+    </div>
+
+    <div class="social-sharing-mobile">
+        <VDropdown>
+            <button class="social-share-button">
+                <iconify-icon icon="fluent:share-android-24-filled" height="16" />
+                <span>Share</span>
             </button>
-        </ShareNetwork>
+            <template #popper>
+                <SocialShareButtons :data="shareData" />
+            </template>
+        </VDropdown>
     </div>
 </template>
 
 <script setup lang="ts">
 import { inBrowser, useData } from 'vitepress';
 import { ref, watchEffect } from 'vue';
-import { ShareNetwork } from 'vue3-social-sharing';
+import SocialShareButtons from './SocialShareButtons.vue';
 
-interface ShareData {
+export interface ShareData {
     url: string;
     title?: string;
     description?: string;
 }
 
-const networks = [
-    { name: "facebook", icon: 'simple-icons:facebook' },
-    { name: "telegram", icon: 'simple-icons:telegram' },
-    { name: 'whatsapp', icon: 'simple-icons:whatsapp' },
-    { name: "x", icon: 'simple-icons:x' },
-];
-
 const data = useData()
-const copied = ref(false)
 const shareData = ref<ShareData>()
-
-const copyUrl = () => {
-    navigator.clipboard.writeText(shareData.value?.url || '');
-    copied.value = true;
-    setTimeout(() => copied.value = false, 2000);
-};
-
-const upperCaseFirst = (name: string) => name.charAt(0).toUpperCase() + name.slice(1);
 
 watchEffect(() => {
     if (!inBrowser) return;
@@ -53,27 +40,29 @@ watchEffect(() => {
 
 <style scoped>
 .social-sharing {
-    display: flex;
+    display: none;
     align-items: center;
 }
 
-.social-sharing:hover>button {
-    margin-left: 0.25rem;
-}
-
-button {
+.social-sharing-mobile button {
     display: flex;
-    padding: 0.5rem;
-    background: var(--vp-c-default-3);
-    border-radius: 100%;
-    margin-left: -1rem;
-    position: relative;
-    z-index: var(--index);
-    transition: 0.25s;
+    align-items: center;
+    font-size: 0.875rem;
+    gap: 0.25rem;
 }
 
-button:hover {
-    color: var(--vp-c-white);
-    background: var(--vp-c-brand-2);
+.social-sharing-mobile button:hover {
+    color: var(--vp-c-brand-2);
+    transition: color 0.2s;
+}
+
+@media (min-width: 640px) {
+    .social-sharing {
+        display: flex;
+    }
+
+    .social-sharing-mobile {
+        display: none;
+    }
 }
 </style>

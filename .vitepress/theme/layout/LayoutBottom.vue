@@ -64,6 +64,7 @@ const { hasSidebar } = useSidebar()
 <style scoped>
 footer {
     border-top: 1px solid var(--vp-c-gutter);
+    z-index: var(--vp-z-index-footer);
 }
 
 .container {

@@ -5,7 +5,7 @@
     </h1>
 
     <div class="caption" v-if="!currentTag">
-        Where I share updates, thoughts, experiences, and probably some random topics. Hope you find something useful
+        Where I share updates, thoughts, insights on various topics. Hope you find helpful and valuable information
         here.
     </div>
 
