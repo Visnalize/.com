@@ -18,7 +18,7 @@ interface TransformOptions {
   width?: number;
 }
 
-const transformImage = (imgpath: string, options: TransformOptions) => {
+export const transformImage = (imgpath: string, options: TransformOptions) => {
   if (!imgpath || !options) {
     throw new Error("imageUrl and options are required");
   }
@@ -32,4 +32,6 @@ const transformImage = (imgpath: string, options: TransformOptions) => {
   return `${ORIGIN}/cdn-cgi/image/${optionsString}/${imageUrl}`;
 };
 
-export default transformImage;
+export function getAppImage(slug: string) {
+  return `/assets/features/${slug}.png`;
+}

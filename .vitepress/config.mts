@@ -4,12 +4,11 @@ import markdownItTasklists from "markdown-it-task-lists";
 import { cwd } from "process";
 import { fileURLToPath } from "url";
 import { defineConfig } from "vitepress";
-import { getLatestVersion } from "../.content/misc.data";
-import { apps } from "../.content/simulated-apps.data";
 import head from "./config/head";
 import navItems from "./config/nav";
 import sidebar from "./config/sidebar";
 import socialLinks from "./config/social";
+import { transformPageData } from "./config/transformers";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -80,23 +79,5 @@ export default defineConfig({
     },
   },
 
-  transformPageData(data) {
-    if (data.params?.tag) {
-      const { tag } = data.params;
-      data.title = `Posts with tag "${tag}"`;
-      data.description = `Here you can find all posts with the tag "${tag}". Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
-    }
-
-    if (data.params?.app) {
-      const { app: slug } = data.params;
-      const app = apps.find((a) => a.slug === slug);
-      data.title = app?.title || "";
-      data.frontmatter = { ...app };
-    }
-
-    if (data.relativePath.match(/(win7simu|brick1100)\/about/)) {
-      const [app] = data.relativePath.split("/");
-      data.frontmatter.appVersion = getLatestVersion(app);
-    }
-  },
+  transformPageData,
 });

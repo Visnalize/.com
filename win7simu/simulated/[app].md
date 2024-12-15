@@ -1,14 +1,14 @@
 # {{ title }}
 
 <script setup lang="ts">
-import transformImage from '@utils/images';
+import { getAppImage, transformImage } from '@/.vitepress/theme/utils/images';
 import { useData } from 'vitepress';
 import decapitalize from 'voca/decapitalize';
 import { computed, onMounted } from 'vue';
 
 const { frontmatter } = useData();
 const { title, slug } = frontmatter.value
-const image = computed(() => transformImage(`/assets/features/${slug}.png`, { width: 700, quality:100 }))
+const image = computed(() => transformImage(getAppImage(slug), { width: 700, quality:100 }))
 
 onMounted(() => import('@justinribeiro/lite-youtube'))
 </script>
