@@ -18,6 +18,10 @@ export default defineConfig({
   description:
     "Author of Win7 Simu and Brick 1100. On a mission to relive the good old days with simulation apps.",
 
+  sitemap: {
+    hostname: "https://visnalize.com",
+  },
+
   head,
 
   lastUpdated: true,
