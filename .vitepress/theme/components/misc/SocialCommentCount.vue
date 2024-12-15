@@ -1,7 +1,7 @@
 <template>
     <a class="social-comment" href="#comments">
         <iconify-icon icon="simple-icons:disqus" height="16" />
-        <span class="disqus-comment-count" :data-disqus-identifier="id">
+        <span class="disqus-comment-count" :data-disqus-identifier="id" :key="id">
             <CoreSkeleton />
         </span>
     </a>
@@ -14,17 +14,9 @@ import { DISQUS } from '../../constants';
 import { fixCommentId } from '../../utils/misc';
 import CoreSkeleton from '../core/CoreSkeleton.vue';
 
-declare global {
-    interface Window {
-        DISQUSWIDGETS: {
-            getCount: (options: { reset: boolean }) => void;
-        };
-    }
-}
-
 const route = useRoute()
 const id = ref(route.path)
-const shortname = inject(DISQUS)
+const shortname = inject<string>(DISQUS)
 
 onMounted(() => {
     const getCount = () => {
@@ -38,10 +30,7 @@ onMounted(() => {
     document.body.appendChild(script);
 
     watchEffect(() => {
-        id.value = route.path
-        if (id.value.endsWith('themestudio.html')) {
-            id.value = fixCommentId(id.value)
-        }
+        id.value = fixCommentId(route.path)
         nextTick(getCount)
     })
 })

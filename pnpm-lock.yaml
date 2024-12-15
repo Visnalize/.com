@@ -41,6 +41,9 @@ devDependencies:
   vue:
     specifier: ^3.5.13
     version: 3.5.13
+  vue3-disqus:
+    specifier: ^1.0.6
+    version: 1.0.6
   vue3-social-sharing:
     specifier: ^1.1.2
     version: 1.1.2(vue@3.5.13)
@@ -1616,6 +1619,14 @@ packages:
       vue: ^3.0.0
     dependencies:
       vue: 3.5.13
+    dev: true
+
+  /vue3-disqus@1.0.6:
+    resolution: {integrity: sha512-IfYHMqVklVEZVOUuQo3pjD/+I40ajph4mMfiBZdxHnGvuFO+ZEB3QjSF8e6VVVYcMWf5Tvbl6AfdLdwwRzdW5w==}
+    dependencies:
+      vue: 3.5.13
+    transitivePeerDependencies:
+      - typescript
     dev: true
 
   /vue3-social-sharing@1.1.2(vue@3.5.13):
