@@ -1,11 +1,17 @@
 <template>
-    <ins class="adsbygoogle" :class="adFormatClass + '-ad'" style="display: block" data-ad-slot="3336580675"
-        data-ad-client="ca-pub-5904323684803247" :data-ad-format="parsedFormat" data-full-width-responsive="true" />
+    <component :is="'script'" async crossorigin="anonymous"
+        :src="'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-' + ADSENSE_ID" />
+    <ins class="adsbygoogle" :class="className" style="display: block" data-ad-slot="3336580675"
+        :data-ad-client="'ca-pub-' + ADSENSE_ID" data-full-width-responsive="true"
+        :data-ad-format="normalizedFormat.join()" />
+    <component :is="'script'">
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </component>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
 import first from 'voca/first';
+import { ADSENSE_ID } from '../../constants';
 
 declare global {
     interface Window {
@@ -19,16 +25,10 @@ interface Props {
     format?: Format | Format[] | 'auto';
 }
 
-const props = withDefaults(defineProps<Props>(), {
-    format: 'horizontal'
-})
-const isArrayFormat = Array.isArray(props.format)
-const parsedFormat = isArrayFormat ? props.format.join() : props.format
-const adFormatClass = isArrayFormat ? props.format.map((f) => first(f)).join('-') : first(props.format)
 
-onMounted(() => {
-    (window.adsbygoogle = window.adsbygoogle || []).push({})
-})
+const props = withDefaults(defineProps<Props>(), { format: 'horizontal' })
+const normalizedFormat = Array.isArray(props.format) ? props.format : [props.format]
+const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 </script>
 
 <style scoped>
@@ -39,5 +39,9 @@ onMounted(() => {
 .h-ad {
     margin: 3rem auto;
     text-align: center;
+}
+
+.r-ad {
+    margin-top: 2rem;
 }
 </style>

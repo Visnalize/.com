@@ -1,6 +1,7 @@
 ---
 description: Introduction to Theme Studio, an exclusive application to Win7 Simu.
 aside: right
+outline: false
 ---
 
 # Theme Studio

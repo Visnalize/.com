@@ -1,15 +1,10 @@
 import { HeadConfig } from "vitepress";
+import { ADSENSE_ID } from "../theme/constants";
 
 const head: HeadConfig[] = [
   ["link", { rel: "icon", href: "/favicon.png" }],
-  [
-    "script",
-    {
-      async: "true",
-      "data-ad-client": "ca-pub-5904323684803247",
-      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-    },
-  ],
+
+  // Google Tag Manager -----------------------------------------------------
   [
     "script",
     {
@@ -22,11 +17,23 @@ const head: HeadConfig[] = [
     {},
     "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-TRC2SF4L67');",
   ],
+
+  // Adsense ----------------------------------------------------------------
   [
     "script",
     {
       async: "true",
-      src: "https://fundingchoicesmessages.google.com/i/pub-5904323684803247?ers=1",
+      "data-ad-client": "ca-pub-" + ADSENSE_ID,
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+    },
+  ],
+
+  // Adsense ad-blocking recovery -------------------------------------------
+  [
+    "script",
+    {
+      async: "true",
+      src: `https://fundingchoicesmessages.google.com/i/pub-${ADSENSE_ID}?ers=1`,
       nonce: "3HRDcENAr3Egc7skT36mnQ",
     },
   ],

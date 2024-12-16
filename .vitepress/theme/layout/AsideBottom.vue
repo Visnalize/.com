@@ -1,7 +1,6 @@
 <template>
     <div class="bottom-aside">
-        <SponsorAd v-if="enableAds" :format="outline ? 'rectangle' : ['rectangle', 'vertical']" class="aside-ad"
-            :key="route.path" />
+        <SponsorAd v-if="enableAds" :format="outline ? 'rectangle' : ['rectangle', 'vertical']" :key="route.path" />
     </div>
 </template>
 
@@ -17,8 +16,4 @@ const route = useRoute()
 const outline = computed(() => frontmatter.value.outline ?? true);
 </script>
 
-<style scoped>
-.aside-ad:not(.v-ad):not(.r-v-ad) {
-    margin-top: 2rem;
-}
-</style>
+<style scoped></style>
