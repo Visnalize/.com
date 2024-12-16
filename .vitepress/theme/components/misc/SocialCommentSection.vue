@@ -1,6 +1,6 @@
 <template>
     <div id="comments" ref="el" :class="isLoaded ? '' : 'idle'">
-        <DisqusComments v-if="isLoaded" :identifier="id" :shortname="shortname" @ready="handleReady" />
+        <DisqusComments v-if="isLoaded" :identifier="id" :shortname="shortname" />
         <div v-else class="placeholder">
             <VPButton size="big" text="Show comments" @click="isLoaded = true" />
         </div>
@@ -20,11 +20,6 @@ const shortname = inject<string>(DISQUS)
 const isLoaded = ref(false)
 const el = ref<HTMLDivElement>()
 const id = ref(route.path)
-
-const handleReady = () => {
-    const adframe = el.value.querySelector('iframe:first-child') as HTMLIFrameElement;
-    adframe.style.setProperty('display', 'none', 'important');
-}
 
 watchEffect(() => {
     id.value = fixCommentId(route.path)
@@ -49,5 +44,10 @@ watchEffect(() => {
     justify-content: center;
     align-items: center;
     height: var(--placeholder-height);
+}
+
+:deep(iframe[sandbox]),
+:deep(iframe[src*="ads-iframe"]) {
+    display: none !important;
 }
 </style>
