@@ -1,5 +1,6 @@
 <template>
     <div class="blog-post" :style="{ '--blog-bg': bgColor }">
+        <div class="post-control"></div>
         <div class="post-content">
             <img class="post-image" :src="post.image" />
             <div class="post-badge" v-if="post.badge">
@@ -47,20 +48,32 @@ const badgeIcon: Record<PostData['badge'], string> = {
 
 <style scoped>
 .blog-post {
+    --padding-top: 2rem;
+    --padding-top-dark: 0.75rem;
+    --content-padding: 1.5rem;
+
     display: flex;
     flex-direction: column;
     background: var(--blog-bg);
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
-    padding-top: 2rem;
+    padding-top: var(--padding-top);
     position: relative;
     overflow: hidden;
 }
 
+.post-control {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: var(--padding-top);
+    background: var(--blog-bg);
+    transition: height 0.2s;
+}
+
 .post-content {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent);
-    padding: 1.5rem;
+    padding: var(--content-padding);
     height: 100%;
-    position: relative;
 }
 
 .post-content>*:not(:last-child):not(.post-date):not(.post-badge) {
@@ -81,12 +94,13 @@ const badgeIcon: Record<PostData['badge'], string> = {
 .post-image {
     position: absolute;
     inset: 0;
+    top: var(--padding-top);
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0;
     filter: grayscale(1);
-    transition: opacity 0.25s;
+    transition: opacity 0.2s;
 }
 
 .post-badge {
@@ -95,7 +109,7 @@ const badgeIcon: Record<PostData['badge'], string> = {
     right: 1rem;
     bottom: 0.5rem;
     opacity: 0.1;
-    transition: opacity 0.25s;
+    transition: opacity 0.2s;
 }
 
 .blog-post:hover .post-image {
@@ -121,10 +135,19 @@ const badgeIcon: Record<PostData['badge'], string> = {
 }
 
 .dark .blog-post {
-    padding-top: 0.75rem;
+    padding-top: var(--padding-top-dark);
+}
+
+.dark .post-control {
+    height: var(--padding-top-dark);
 }
 
 .dark .post-content {
-    background: rgba(0, 0, 0, 0.8)
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: calc(var(--content-padding) + (var(--padding-top) - var(--padding-top-dark)));
+}
+
+.dark .blog-post:hover .post-control {
+    height: var(--padding-top);
 }
 </style>

@@ -12,3 +12,11 @@ import BlogPage from '@components/misc/blog/BlogPage.vue';
 </script>
 
 <BlogPage />
+
+<style>
+@media (min-width: 960px) {
+    .blog .VPDoc:not(.has-sidebar) .content {
+        max-width: unset;
+    }
+}
+</style>

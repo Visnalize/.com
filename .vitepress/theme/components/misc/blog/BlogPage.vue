@@ -30,7 +30,6 @@ const currentTag = data.params.value?.tag;
 const tagPosts = posts.filter(post => post.tags.includes(currentTag));
 </script>
 
-
 <style scoped>
 .title {
     text-align: center;
@@ -42,13 +41,5 @@ const tagPosts = posts.filter(post => post.tags.includes(currentTag));
     text-align: center;
     max-width: 500px;
     width: 100%;
-}
-</style>
-
-<style>
-@media (min-width: 960px) {
-    .blog .VPDoc:not(.has-sidebar) .content {
-        max-width: unset;
-    }
 }
 </style>
