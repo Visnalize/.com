@@ -19,6 +19,8 @@ onMounted(() => import('@justinribeiro/lite-youtube'))
 
 __{{ title }}__ is a simulated application in [Win7 Simu](../about.md) that {{ decapitalize($frontmatter.description) }}. It was added in version [{{ $frontmatter.version }}](../changelog.md).
 
+<SponsorAd />
+
 ## Supported features
 
 As Win7 Simu aims to simulate the Windows 7 experience as closely as possible, {{ title }} is also regularly updated in order to provide the most authentic experience. Below are some of the features that are supported in {{ title }}, for a complete list of available features through versions, please refer to the [changelog page](../changelog.md).
@@ -65,6 +67,5 @@ Discover {{ title }}'s features, easter eggs, tips and tricks with the available
     color: var(--vp-c-text-3);
     background: var(--vp-c-bg-soft);
     font-size: 1.5rem;
-
 }
 </style>

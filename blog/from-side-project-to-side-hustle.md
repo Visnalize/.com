@@ -25,7 +25,7 @@ Till now, the app has had a total of __10M downloads__ and approximately __50K d
 
 ![Win7 Simu's daily active users stats](./img/from-side-project-to-side-hustle/win7-simu-dau.png)
 
-<a-google-ad />
+<SponsorAd />
 
 ### Building the surroundings
 
@@ -67,7 +67,7 @@ Likewise, I also added a subscription feature to the web version of Win7 Simu vi
 
 The last revenue source that I have had my hands on is new and unique in its own way (or rather unpopular in my opinion). It is a partnership with __Gamezop__, a gaming platform that any websites/web apps can integrate to bring casual games for their users. The so-called "integration" is rather simple in my case, all I needed to do was just add a banner/icon in my app that leads to the Gamezop platform where my users can play a wide range of casual games. Half of the ad revenue generated from the platform would then be shared with me. The shared revenue is nowhere near the amount that I get from the main revenue source, but it still has been decently and consistently contributing to the overall revenue.
 
-<a-google-ad />
+<SponsorAd />
 
 ## Disclosing the numbers
 

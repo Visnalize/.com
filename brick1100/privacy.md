@@ -1,5 +1,6 @@
 ---
 title: Brick 1100 Privacy Policy
+ads: false
 social: false
 ---
 

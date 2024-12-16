@@ -41,7 +41,7 @@ If Win7 Simu were not also developed for mobile devices, the custom cursor imple
 
 However, on mobile touch devices, the mouse cursor is not available, hence the above CSS rule wouldn't serve any purpose. In addition, the CSS `cursor` doesn't allow animated cursor images, which is also a blocker for replicating the Windows 7 cursor behavior. Therefore, a more complex approach is necessary to implement the custom cursors.
 
-<a-google-ad />
+<SponsorAd />
 
 As per the idea mentioned above, the custom cursor implementation can be broken down into the following parts:
 

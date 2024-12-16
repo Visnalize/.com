@@ -28,10 +28,10 @@
 import { useData } from 'vitepress';
 import SocialCommentCount from '../components/misc/SocialCommentCount.vue';
 import SocialSharing from '../components/misc/SocialSharing.vue';
-import usePageMeta from '../composables/usePageMeta';
+import useCustomData from '../composables/useCustomData';
 
 const { frontmatter } = useData()
-const { createdDate, enableSocial, enableComments } = usePageMeta()
+const { createdDate, enableSocial, enableComments } = useCustomData()
 </script>
 
 <style scoped>

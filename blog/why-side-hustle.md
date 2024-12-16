@@ -40,7 +40,7 @@ Another benefit of having a side hustle is the opportunity to learn new skills a
 
 For example, I've learned a lot about web development ([specifically front-end](./building-win7-simu.md#the-goal), my area of interest), SEO, marketing, analytics, and other business-related skills from building a side project just as simple as Win7 Simu, which has helped me to grow professionally and personally.
 
-<a-google-ad />
+<SponsorAd />
 
 ### Networking
 

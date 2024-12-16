@@ -88,5 +88,3 @@ The first beta release of the app with the core interface and functionalities im
 - Built-in Games ([Snake](./games.md#snake), [Brick Breaker](./games.md#brick-breaker))
 - Built-in Extras/Apps (Calculator, Stopwatch, Countdown Timer, Flashlight)
 - An Online Apps section with curated apps for the Brick 1100
-
-<a-google-ad />

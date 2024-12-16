@@ -5,7 +5,7 @@ description: Have questions in regards to the Win7 Simu app? This page answers t
 
 # Frequently Asked Questions
 
-<a-google-ad />
+<SponsorAd />
 
 ::: warning Note
 This page is updated regularly in accordance with the user's queries from all sources (emails, Play Store reviews, YouTube comments). Please check back to this before asking any question as the question will not be responded if it's already included here.

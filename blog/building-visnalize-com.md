@@ -67,7 +67,7 @@ What an eye candy! That looked neat and flawless. Without so much effort and tim
 
 All of which could take me months, if not years to implement, but still wouldn't look half-decent. Not to mention some other super useful utilities that enhanced the writing and reading experience on both ends.
 
-<a-google-ad />
+<SponsorAd />
 
 ### Customizing
 

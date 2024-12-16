@@ -51,7 +51,7 @@ win7-ui
 
 The project comprises of two main parts: the component library (the __`src`__ folder) and the documentation site (the __`docs`__ folder).
 
-<a-google-ad />
+<SponsorAd />
 
 ### The component library
 

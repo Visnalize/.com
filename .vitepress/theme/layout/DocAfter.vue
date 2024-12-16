@@ -6,16 +6,22 @@
                 <BlogTag v-for="tag in tags" :tag="tag" />
             </div>
         </div>
+        <SponsorAd v-if="enableAds" :format="hasAside ? undefined : 'auto'" :key="route.path" />
         <SocialCommentSection v-if="enableComments" />
     </div>
 </template>
 
 <script setup lang="ts">
+import { useRoute } from 'vitepress';
+import { useSidebar } from 'vitepress/theme';
+import SponsorAd from '../components/global/SponsorAd.vue';
 import BlogTag from '../components/misc/blog/BlogTag.vue';
 import SocialCommentSection from '../components/misc/SocialCommentSection.vue';
-import usePageMeta from '../composables/usePageMeta';
+import useCustomData from '../composables/useCustomData';
 
-const { tags, enableComments } = usePageMeta()
+const { tags, enableAds, enableComments } = useCustomData()
+const { hasAside } = useSidebar()
+const route = useRoute()
 </script>
 
 <style scoped>

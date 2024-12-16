@@ -4,7 +4,7 @@ comments: false
 
 # Theme Studio Changelog
 
-<a-google-ad />
+<SponsorAd />
 
 ## All versions
 
