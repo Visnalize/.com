@@ -42,10 +42,7 @@
  * https://github.com/francoischalifour/medium-zoom#the-zoomed-image-is-not-visible
  * -------------------------------------------------------------------------- */
 
-.medium-zoom-overlay {
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
   z-index: var(--vp-z-index-backdrop);
-}
-
-.medium-zoom-image {
-  z-index: calc(var(--vp-z-index-backdrop) + 1);
 }

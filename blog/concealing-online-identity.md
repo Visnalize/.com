@@ -4,6 +4,7 @@ description: My takes on internet privacy and why I choose to conceal mine.
 tags:
   - sharing
   - random
+  - life
 ---
 
 # Why I choose to conceal my online identity

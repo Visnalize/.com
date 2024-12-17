@@ -13,6 +13,10 @@ tags:
 
 Recently, I have had a chance to get my hands on a Game Stick Lite 4K, a USB stick-like device with two controllers and a bunch of pre-installed games that you can play on your TV. It is a fantastic option for those who want to play their childhood games on a big screen without owning a fancy console or a computer, as it is very affordable (typically around $20 - $40) and easy to set up. Though there are a lot of games pre-installed, some of your childhood favorites might be missing or are not available in your language. In this post, I will show you how to add more games to the Game Stick Lite 4K to enjoy more of your childhood games.
 
+::: warning Heads up
+The approach shared in this post appears to be only applicable to some versions of the Game Stick Lite 4K. The process might be varied for different versions. Please refer to the [comments](#comments) below to see if others have shared their experiences with your version of the Game Stick Lite 4K.
+:::
+
 ## Prerequisites
 
 - A Game Stick Lite 4K (apparently)

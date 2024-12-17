@@ -129,6 +129,10 @@ const badgeIcon: Record<PostData['badge'], string> = {
     font-size: 0.875rem;
 }
 
+.post-content p {
+    max-width: 500px;
+}
+
 .post-link {
     position: absolute;
     inset: 0;

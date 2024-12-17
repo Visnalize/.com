@@ -5,6 +5,7 @@ tags:
   - win7-simu
   - brick-1100
   - review
+  - life
 ---
 
 # Visnalize year in review - 2023
