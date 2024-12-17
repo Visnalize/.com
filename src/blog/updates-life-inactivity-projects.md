@@ -9,6 +9,8 @@ tag:
 
 # Quick updates before the year ends
 
+<m-blog-meta />
+
 ![A tray of traditional Vietnamese dishes](/assets/covers/updates-life-inactivity-projects.jpg)
 
 The year is coming to an end, and for the last few months I've been quite inactive on social media, my blog, and even my projects, so I thought it would be good to save some time and write a quick post to share what I've been up to, the status of my projects, and some random things I just want to write down and let out of my mind.
@@ -21,7 +23,7 @@ In October, I received yet another acquisition offer for [Win7 Simu](../win7simu
 
 Since the previous post where I [disclosed the revenue](./from-side-project-to-side-hustle.md#disclosing-the-numbers) of Win7 Simu, the app has been growing steadily and at the point of the acquisition offer, it was making around $3,000/month. With all the data and information I provided, the buyer offered $80,000 for the app, I proposed a higher price of $90,000 with good reasons and they accepted it.
 
-<SponsorAd />
+<a-google-ad />
 
 ![The agreed price for Win7 Simu](./img/updates-life-inactivity-projects/win7-simu-price.jpeg)
 
@@ -39,7 +41,7 @@ I had to stay at the hospital for a whole month, working remotely while helping 
 
 In case you're wondering, I'm still working on my projects, though at a slower pace due to the recent events (and don't worry, I don't plan to abandon them, at least not anytime soon :P). Here are some sneak peeks of what I've been up to:
 
-<SponsorAd />
+<a-google-ad />
 
 ### A new website
 
@@ -84,6 +86,8 @@ If you're curious about the project and eager to try it out early, follow my soc
 I hope this post has given you a better understanding of what I've been up to lately, and the reasons behind my inactivity. Life is surely unpredictable and challenging at times, but I choose to embrace it with a positive attitude and keep moving forward. I'm grateful for all the support and encouragement I've received from my family, friends, and the community, and I'm looking forward to sharing more exciting news and updates with you in the future.
 
 P.S. The cover image is of some traditional Vietnamese dishes that my wife made for me the other day. It's so delicious that I can't help but share it here :D
+
+<m-blog-tag-list :tags="$page.frontmatter.tag" showIcon />
 
 <style module>
 .grid p {
