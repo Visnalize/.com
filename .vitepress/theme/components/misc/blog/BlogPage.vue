@@ -16,7 +16,7 @@
             <button v-tooltip="'Hide Ad'" aria-label="Hide Ad" @click="showAd = false">
                 <iconify-icon icon="fluent:dismiss-24-filled" />
             </button>
-            <SponsorAd format="auto" />
+            <SponsorAd format="rectangle" />
         </div>
         <BlogPost v-for="post in (currentTag ? tagPosts : otherPosts)" :post="post" />
     </BlogList>
