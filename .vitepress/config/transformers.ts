@@ -17,7 +17,7 @@ export const transformPageData: UserConfig["transformPageData"] = (data) => {
     const { app: slug } = data.params;
     const app = apps.find((a) => a.slug === slug);
     if (!app) throw new Error(`App not found: ${slug}`);
-    data.title = app.title;
+    data.title = app.title + " in Win7 Simu";
     data.description =
       data.title + " in Win7 Simu " + decapitalize(app.description);
     data.frontmatter = { ...data.frontmatter, ...app };

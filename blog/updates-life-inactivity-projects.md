@@ -66,7 +66,7 @@ Win7 Simu is still being actively maintained and updated in the background. Ther
 
 ### Brick 1100
 
-I have a long list of features and improvements planned for [Brick 1100](../brick1100/about.md), both internally and [externally](/brick1100/feedback). The only thing that matters now is to arrange the time and resources to work on them. But don't worry, I'm still committed to building Brick 1100 into something great, not just as an app, but a memo for everyone one of us to remember the good old days.
+I have a long list of features and improvements planned for [Brick 1100](../brick1100/about.md), both internally and [externally](https://visnalize.com/brick1100/feedback). The only thing that matters now is to arrange the time and resources to work on them. But don't worry, I'm still committed to building Brick 1100 into something great, not just as an app, but a memo for everyone one of us to remember the good old days.
 
 ### A third project
 

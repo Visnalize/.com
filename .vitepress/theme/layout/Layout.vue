@@ -28,7 +28,8 @@ import LayoutBottom from './LayoutBottom.vue';
 const route = useRoute()
 const zoom = mediumZoom({ margin: 16, background: 'var(--vp-c-bg-soft)' })
 const triggerZoom = () => {
-    if (!route.path.startsWith('/blog/')) return
+    const enableZoom = route.path.startsWith('/blog/') && !route.path.includes('/tag')
+    if (!enableZoom) return
     zoom.detach()
     zoom.attach('.main img', '[data-zoomable]')
 }

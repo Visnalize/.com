@@ -1,8 +1,9 @@
 ---
+title: Theme Studio Changelog
 comments: false
 ---
 
-# Theme Studio Changelog
+# Changelog
 
 <SponsorAd />
 
