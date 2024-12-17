@@ -1,6 +1,6 @@
 <template>
     <div id="comments" ref="el" :class="isLoaded ? '' : 'idle'">
-        <DisqusComments v-if="isLoaded" :identifier="id" :shortname="shortname" />
+        <DisqusComments v-if="isLoaded" :key="isDark + ''" :identifier="id" :shortname="shortname" />
         <div v-else class="placeholder">
             <VPButton size="big" text="Show comments" @click="isLoaded = true" />
         </div>
@@ -8,13 +8,14 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vitepress';
+import { useData, useRoute } from 'vitepress';
 import { VPButton } from 'vitepress/theme';
 import { inject, ref, watchEffect } from 'vue';
 import { DisqusComments } from 'vue3-disqus';
 import { DISQUS } from '../../constants';
 import { fixCommentId } from '../../utils/misc';
 
+const { isDark } = useData()
 const route = useRoute()
 const shortname = inject<string>(DISQUS)
 const isLoaded = ref(false)
@@ -49,5 +50,10 @@ watchEffect(() => {
 :deep(iframe[sandbox]),
 :deep(iframe[src*="ads-iframe"]) {
     display: none !important;
+}
+
+:deep(iframe[src*="disqus.com"]) {
+    /* https://sergeyski.com/css-color-scheme-and-iframes-lessons-learned-from-disqus-background-bug/ */
+    color-scheme: light;
 }
 </style>
