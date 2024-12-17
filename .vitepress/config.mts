@@ -9,6 +9,7 @@ import navItems from "./config/nav";
 import sidebar from "./config/sidebar";
 import socialLinks from "./config/social";
 import { transformPageData } from "./config/transformers";
+import markdownItImage from "./plugins/md-image";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -76,6 +77,7 @@ export default defineConfig({
     config: (md) => {
       md.use(markdownItBlockEmbed);
       md.use(markdownItTasklists);
+      md.use(markdownItImage({ publicDir: cwd() + "/public" }));
     },
   },
 

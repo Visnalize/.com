@@ -36,7 +36,7 @@ const [latestPost, ...otherPosts] = posts;
 const data = useData()
 const currentTag = data.params.value?.tag;
 const tagPosts = posts.filter(post => post.tags.includes(currentTag));
-const showAd = ref(true);
+const showAd = ref(!tagPosts.length || tagPosts.length > 3);
 </script>
 
 <style scoped>

@@ -46,3 +46,12 @@
 .medium-zoom-image--opened {
   z-index: var(--vp-z-index-backdrop);
 }
+
+/**
+ * Workaround for CLS issue with external images, in combination with md-image.ts
+ * -------------------------------------------------------------------------- */
+.external-image img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
