@@ -23,3 +23,10 @@ features:
 ---
 
 <iconify-icon icon='pixelarticons:android' height="2rem" />
+
+- Hero section
+- Sections for each app
+- Section for latest updates (including blog posts)
+- Testimonials
+- Promote youtube channel
+- Footer

@@ -29,6 +29,9 @@ devDependencies:
   markdown-it-task-lists:
     specifier: ^2.1.1
     version: 2.1.1
+  medium-zoom:
+    specifier: ^1.1.0
+    version: 1.1.0
   motion:
     specifier: ^11.13.5
     version: 11.14.1
@@ -1222,6 +1225,10 @@ packages:
       unist-util-position: 5.0.0
       unist-util-visit: 5.0.0
       vfile: 6.0.3
+    dev: true
+
+  /medium-zoom@1.1.0:
+    resolution: {integrity: sha512-ewyDsp7k4InCUp3jRmwHBRFGyjBimKps/AJLjRSox+2q/2H4p/PNpQf+pwONWlJiOudkBXtbdmVbFjqyybfTmQ==}
     dev: true
 
   /micromark-util-character@2.1.1:
