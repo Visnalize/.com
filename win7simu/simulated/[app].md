@@ -1,20 +1,27 @@
 # {{ title }}
 
 <script setup lang="ts">
-import { getAppImage, transformImage } from '@/.vitepress/theme/utils/images';
+import { transformImage } from '@/.vitepress/theme/utils/images';
 import { useData } from 'vitepress';
 import decapitalize from 'voca/decapitalize';
-import { computed, onMounted } from 'vue';
+import { onMounted } from 'vue';
 
 const { frontmatter } = useData();
-const { title, slug } = frontmatter.value
-const image = computed(() => transformImage(getAppImage(slug), { width: 700, quality:100 }))
+const { title, image, imageData } = frontmatter.value
+const transformWidth = 1200;
+const imageRatio = imageData?.width / imageData?.height;
+const imageProps = {
+    src: transformImage(image, { width: transformWidth, quality: 100 }),
+    alt: title,
+    width: transformWidth,
+    height: Math.round(transformWidth / imageRatio),
+}
 
 onMounted(() => import('@justinribeiro/lite-youtube'))
 </script>
 
 <p>
-    <img :src="image" :alt="title" />
+    <img v-bind="imageProps" data-zoomable />
 </p>
 
 __{{ title }}__ is a simulated application in [Win7 Simu](../about.md) that {{ decapitalize($frontmatter.description) }}. It was added in version [{{ $frontmatter.version }}](../changelog.md).

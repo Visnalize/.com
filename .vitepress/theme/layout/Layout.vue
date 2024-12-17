@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import mediumZoom from 'medium-zoom';
+import mediumZoom, { ZoomSelector } from 'medium-zoom';
 import { useRoute } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import { nextTick, onMounted, watch } from 'vue';
@@ -27,14 +27,23 @@ import LayoutBottom from './LayoutBottom.vue';
 
 const route = useRoute()
 const zoom = mediumZoom({ margin: 16, background: 'var(--vp-c-bg-soft)' })
-const triggerZoom = () => {
-    const enableZoom = route.path.startsWith('/blog/') && !route.path.includes('/tag')
-    if (!enableZoom) return
+
+const attachZoom = () => {
+    let selector: ZoomSelector = null;
+    const isBlogPost = route.path.startsWith('/blog/') && !route.path.includes('/tag');
+    const isThemeStudio = /^\/win7simu\/themestudio\/?/.test(route.path);
+
+    if (isBlogPost || isThemeStudio) {
+        selector = '.main img';
+    } else {
+        selector = '[data-zoomable]';
+    }
+
     zoom.detach()
-    zoom.attach('.main img', '[data-zoomable]')
+    zoom.attach(selector)
 }
 
-onMounted(triggerZoom);
+onMounted(attachZoom);
 
-watch(() => route.path, () => nextTick(triggerZoom))
+watch(() => route.path, () => nextTick(attachZoom))
 </script>

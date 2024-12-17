@@ -1,4 +1,6 @@
 import matter from "gray-matter";
+import imageSize from "image-size";
+import { cwd } from "process";
 import { UserConfig } from "vitepress";
 import decapitalize from "voca/decapitalize";
 import { getLatestVersion } from "../../.content/misc.data";
@@ -16,12 +18,14 @@ export const transformPageData: UserConfig["transformPageData"] = (data) => {
   if (data.params?.app) {
     const { app: slug } = data.params;
     const app = apps.find((a) => a.slug === slug);
+    const imageUrl = getAppImage(slug);
     if (!app) throw new Error(`App not found: ${slug}`);
     data.title = app.title + " in Win7 Simu";
     data.description =
       data.title + " in Win7 Simu " + decapitalize(app.description);
     data.frontmatter = { ...data.frontmatter, ...app };
-    data.frontmatter.image = ORIGIN + getAppImage(slug);
+    data.frontmatter.image = ORIGIN + imageUrl;
+    data.frontmatter.imageData = imageSize(`${cwd()}/public` + imageUrl);
   }
 
   if (data.relativePath.match(/(win7simu|brick1100)\/about/)) {
