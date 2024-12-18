@@ -8,8 +8,8 @@
                         <span>Visnalize</span>
                     </a>
                     <ul class="brand-social">
-                        <li v-for="{ icon, link } in socialLinks">
-                            <a :href="link" target="_blank" rel="noopener noreferrer">
+                        <li v-for="{ icon, link, ariaLabel } in socialLinks">
+                            <a :href="link" target="_blank" rel="noopener noreferrer" :aria-label="ariaLabel">
                                 <iconify-icon :icon="'simple-icons:' + icon" />
                             </a>
                         </li>

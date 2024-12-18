@@ -2,7 +2,7 @@
     <div class="blog-post" :style="{ '--blog-bg': bgColor }">
         <div class="post-control"></div>
         <div class="post-content">
-            <img class="post-image" :src="post.image" />
+            <img class="post-image" :src="post.image" :alt="post.title" />
             <div class="post-badge" v-if="post.badge">
                 <iconify-icon :icon="badgeIcon[post.badge]" />
             </div>
