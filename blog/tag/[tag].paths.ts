@@ -1,15 +1,9 @@
-import { readdirSync } from "fs";
-import matter from "gray-matter";
+import { getBlogFiles } from "../../.content/misc.data";
 
 export default {
   paths() {
-    const tags = readdirSync("blog")
-      .filter((file) => file.endsWith(".md"))
-      .map((file) => {
-        const { data } = matter.read(`blog/${file}`);
-        return data.tags;
-      })
-      .flat();
+    const blogFiles = getBlogFiles();
+    const tags = blogFiles.map((file) => file.tags).flat();
 
     return Array.from(new Set(tags)).map((tag) => ({
       params: { tag },

@@ -1,5 +1,6 @@
-import { apps } from "../../.content/simulated-apps.data";
 import { DefaultTheme } from "vitepress";
+import { getBlogFiles } from "../../.content/misc.data";
+import { apps } from "../../.content/simulated-apps.data";
 
 const sidebar: DefaultTheme.Sidebar = {
   "/win7simu/": [
@@ -61,6 +62,9 @@ const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
+  "/blog/": getBlogFiles()
+    .sort((a, b) => b.createdAt - a.createdAt)
+    .map((file) => ({ text: file.title, link: file.url })),
 };
 
 export default sidebar;

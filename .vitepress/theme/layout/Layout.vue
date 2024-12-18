@@ -6,6 +6,9 @@
         <template #doc-after>
             <DocAfter />
         </template>
+        <template #doc-footer-before>
+            <DocFooterBefore />
+        </template>
         <template #doc-before>
             <DocBefore />
         </template>
@@ -23,6 +26,7 @@ import { nextTick, onMounted, watch } from 'vue';
 import AsideBottom from './AsideBottom.vue';
 import DocAfter from './DocAfter.vue';
 import DocBefore from './DocBefore.vue';
+import DocFooterBefore from './DocFooterBefore.vue';
 import LayoutBottom from './LayoutBottom.vue';
 
 const route = useRoute()

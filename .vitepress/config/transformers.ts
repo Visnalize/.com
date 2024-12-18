@@ -33,6 +33,10 @@ export const transformPageData: UserConfig["transformPageData"] = (data) => {
     data.frontmatter.appVersion = getLatestVersion(app);
   }
 
+  if (data.relativePath.startsWith("blog")) {
+    data.frontmatter.sidebar = false;
+  }
+
   const transformedPath = data.relativePath
     .replace(/\.md$/, ".html")
     .replace(/index\.html$/, "");

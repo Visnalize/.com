@@ -35,6 +35,6 @@ The internet can change people, and not always for the better, especially when o
 
 I have a clear goal of what I want to achieve in life, and to achieve that, I'll set aside any distractions that may hinder the progress. Having to maintain a reputation with an online identity, keep up with the trends, be active on social media etc. are not my priorities, if not necessary. I prefer to spend my time on things that either bring me joy, help me grow, things that really matter to me, or simply, things that I love to do. Keeping my online identity concealed is one of the ways to help me focus on what I want to achieve.
 
----
+## Summary
 
 Life is too short to be concerned about what some internet strangers think of me, to become someone they want me to be, or to lose myself in that process. I am not perfect, I have my flaws, my own struggles, but if there's anyone whom I want to seek approval from, it would be the people who really know me, who have been with me through thick and thin, who have seen me at my worst and still choose to stay with me. They are the ones that truly matter to me, the ones that I need to commit my time and effort to, be there for them. And that's why I choose to conceal my online identity.
