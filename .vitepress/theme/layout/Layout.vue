@@ -26,7 +26,6 @@ import DocBefore from './DocBefore.vue';
 import LayoutBottom from './LayoutBottom.vue';
 
 const route = useRoute()
-const zoom = mediumZoom({ margin: 16, background: 'var(--vp-c-bg-soft)' })
 
 const attachZoom = () => {
     let selector: ZoomSelector = null;
@@ -39,8 +38,7 @@ const attachZoom = () => {
         selector = '[data-zoomable]';
     }
 
-    zoom.detach()
-    zoom.attach(selector)
+    mediumZoom(selector, { margin: 16, background: 'var(--vp-c-bg-soft)' })
 }
 
 onMounted(attachZoom);
