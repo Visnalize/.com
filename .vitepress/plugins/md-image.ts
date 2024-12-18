@@ -70,11 +70,10 @@ function generateAttributes(md: MarkdownIt, token: Token): string {
 function getParentPath(env: any): string | undefined {
   let markdownPath: string = env?.page?.inputPath; // 11ty
   markdownPath = markdownPath || env?.path; // VitePress
+  markdownPath = markdownPath.replace(/\\|\.\//g, "/"); // normalize path
 
   return markdownPath
-    ? markdownPath
-        .substring(0, markdownPath.lastIndexOf("\\"))
-        .replace(/\/\.\//g, "/")
+    ? markdownPath.substring(0, markdownPath.lastIndexOf("/"))
     : undefined;
 }
 
@@ -84,7 +83,7 @@ function getImageDimensions(imageUrl: string, env: unknown) {
     let finalImageUrl = imageUrl;
 
     if (isRelativePath) {
-      finalImageUrl = `${getParentPath(env)}/${imageUrl}`;
+      finalImageUrl = `${getParentPath(env)}/${imageUrl}`.replace(/\.\//g, "");
     }
 
     const { width, height } = sizeOf(finalImageUrl);
