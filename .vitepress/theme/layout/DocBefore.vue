@@ -48,13 +48,13 @@ const { createdDate, enableSocial, enableComments } = useCustomData()
 .doc-social {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .doc-meta>div {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.25rem;
     color: var(--vp-c-text-2);
 }
 

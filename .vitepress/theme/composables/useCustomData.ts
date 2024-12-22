@@ -1,10 +1,12 @@
 import { useData } from "vitepress";
 import { ref, watchEffect } from "vue";
+import { useBreakpoints } from "./useVueUse";
 
 /**
  * Custom frontmatter meta data that are not part of the default theme's frontmatter.
  */
 const useCustomData = () => {
+  const breakpoints = useBreakpoints();
   const data = useData();
   const blogTags = ref<string[]>([]);
   const createdDate = ref("");
@@ -17,7 +19,7 @@ const useCustomData = () => {
     blogTags.value = tags ?? [];
     createdDate.value = createdAt
       ? new Date(createdAt).toLocaleDateString(undefined, {
-          dateStyle: "medium",
+          dateStyle: breakpoints.sm.value ? "medium" : "short",
         })
       : "";
     enableAds.value = ads ?? true;
