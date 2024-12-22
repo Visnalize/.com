@@ -1,32 +1,26 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
-
-hero:
-  name: "Visnalize"
-  text: "Recreating Nostalgia for Entertainment"
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+layout: page
+title: Visnalize - creator of Win7 Simu, Brick 1100, and more
+navbar: false
+pageClass: home
 ---
 
-<iconify-icon icon='pixelarticons:android' height="2rem" />
+<script setup lang="ts">
+import HomePage from './.vitepress/theme/components/misc/home/HomePage.vue';
+</script>
 
-- Hero section
+<HomePage/>
+
+<!-- - Hero section
 - Sections for each app
 - Section for latest updates (including blog posts)
 - Testimonials
 - Promote youtube channel
-- Footer
+- Footer -->
+
+<style>
+.home .VPLocalNav,
+.home .VPSkipLink {
+  display: none;
+}
+</style>

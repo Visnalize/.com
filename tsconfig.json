@@ -16,6 +16,7 @@
     "paths": {
       "@/*": ["./*"],
       "@utils/*": ["./.vitepress/theme/utils/*"],
+      "@composables/*": ["./.vitepress/theme/composables/*"],
       "@components/*": ["./.vitepress/theme/components/*"]
     }
   }

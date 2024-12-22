@@ -57,6 +57,9 @@ export default defineConfig({
       alias: {
         "@": fileURLToPath(new URL("../", import.meta.url)),
         "@utils": fileURLToPath(new URL("./theme/utils", import.meta.url)),
+        "@composables": fileURLToPath(
+          new URL("./theme/composables", import.meta.url)
+        ),
         "@components": fileURLToPath(
           new URL("./theme/components", import.meta.url)
         ),

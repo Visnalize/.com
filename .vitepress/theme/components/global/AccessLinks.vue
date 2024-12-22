@@ -49,11 +49,14 @@ const getImageProps = (link) => {
 .access {
     margin: 2rem 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 a {
-    display: inline-block;
-    margin: 0.6rem;
     transition: transform 0.2s;
 }
 
@@ -62,6 +65,6 @@ a:hover {
 }
 
 img {
-    height: 96px;
+    height: 80px;
 }
 </style>
