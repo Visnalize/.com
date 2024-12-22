@@ -28,7 +28,7 @@ defineProps<Props>();
 .intro-section {
     font-size: 1rem;
     line-height: 1.5;
-    padding: 4rem 2rem;
+    padding: 0 2rem;
     text-align: center;
 }
 

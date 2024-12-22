@@ -1,5 +1,5 @@
 <template>
-    <section id="win7simu" class="home-container">
+    <section id="win7simu" class="home-section">
         <div ref="container" class="demo-wrapper">
             <Motion class="demo-bg" :style="xl ? undefined : { background }">
                 <div class="win7-demo" :style="{ 'top': `calc(50vh - ${offsetTop}px)` }">
@@ -7,7 +7,7 @@
                         <Motion as="video" autoplay loop muted playsinline :style="videoStyle">
                             <source src="./assets/win7simu-demo.mp4" type="video/mp4" />
                         </Motion>
-                        <img class="frame" src="./assets/phone.png" alt="Phone frame" />
+                        <img class="frame" src="./assets/phone-h.webp" alt="Phone frame" />
                     </div>
                 </div>
             </Motion>
