@@ -10,9 +10,7 @@
                 <img class="frame" src="./assets/phone-v.webp" alt="Phone frame" />
             </Motion>
             <HomeIntroSection app="brick1100" title="Brick 1100" description="Transform your smartphone into a Nokia 1100.
-        Experience the monochrome visual style, classic keypad, and the legendary Snake game.">
-                <img src="./assets/brick1100.png" alt="Brick 1100 logo" width="128" height="128" />
-            </HomeIntroSection>
+        Experience the monochrome visual style, classic keypad, and the legendary Snake game." />
         </div>
     </section>
 </template>
@@ -20,7 +18,7 @@
 <script setup lang="ts">
 import { useScrollProgress } from '@composables/useMotion';
 import { useBreakpoints } from '@composables/useVueUse';
-import { Motion, useTransform } from 'motion-v';
+import { Motion, useSpring, useTransform } from 'motion-v';
 import { ref } from 'vue';
 import HomeDemoVideo from './HomeDemoVideo.vue';
 import HomeIntroSection from './HomeIntroSection.vue';
@@ -28,17 +26,15 @@ import HomeIntroSection from './HomeIntroSection.vue';
 const container = ref<HTMLElement | null>(null)
 const { xl } = useBreakpoints()
 const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
-// const x = useSpring(useTransform(scrollProgress, [0, 0.6], [-50, 0]), { bounce: 0 })
-// const scale = useSpring(useTransform(scrollProgress, [0, 0.6], [1.1, 1]), { bounce: 0 })
-const x = useTransform(scrollProgress, [0, 0.6], [-50, 0])
-const scale = useTransform(scrollProgress, [0, 0.6], [1.1, 1])
+const x = useSpring(useTransform(scrollProgress, [0, 0.6], [-50, 0]), { bounce: 0 })
+const scale = useSpring(useTransform(scrollProgress, [0, 0.6], [1.1, 1]), { bounce: 0 })
 const opacity = useTransform(scrollProgress, [0, 0.6], [0, 1])
 const visibility = useTransform(scrollProgress, [0, 0.1], ['hidden', 'visible'])
 </script>
 
 <style scoped>
 .home-section {
-    margin: 12rem 0;
+    margin-bottom: 10rem;
 }
 
 .demo-wrapper {
@@ -66,13 +62,6 @@ iframe {
     position: relative;
     z-index: 1;
     pointer-events: none;
-}
-
-.intro-section img {
-    width: 4em;
-    height: auto;
-    margin: 0 auto 1rem;
-    border-radius: 0.5rem;
 }
 
 @media (min-width: 640px) {

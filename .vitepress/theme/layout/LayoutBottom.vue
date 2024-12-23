@@ -40,9 +40,9 @@
                     <div class="nav-group">
                         <div class="group-title">Explore</div>
                         <ul class="group-list">
-                            <li><a href="/about">About</a></li>
                             <li><a href="/blog">Blog</a></li>
-                            <li><a href="/sitemap.xml">Sitemap</a></li>
+                            <li><a href="/testimonials">Wall of love</a></li>
+                            <li><a href="/about">About</a></li>
                         </ul>
                     </div>
                 </div>

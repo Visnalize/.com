@@ -9,15 +9,13 @@
 
 <script setup lang="ts">
 import { useEventListener } from '@vueuse/core';
-import { AnimatePresence, Motion, useMotionValue } from 'motion-v';
+import { AnimatePresence, Motion, useMotionValue, useSpring } from 'motion-v';
 import { ref } from 'vue';
 
 const visible = ref(false)
 const text = ref('')
-// const x = useSpring(useMotionValue(0), { stiffness: 200, damping: 20 })
-// const y = useSpring(useMotionValue(0), { stiffness: 200, damping: 20 })
-const x = useMotionValue(0)
-const y = useMotionValue(0)
+const x = useSpring(useMotionValue(0), { stiffness: 200, damping: 20 })
+const y = useSpring(useMotionValue(0), { stiffness: 200, damping: 20 })
 
 useEventListener('mousemove', (e) => {
     const element = e.target as HTMLElement

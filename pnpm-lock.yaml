@@ -48,8 +48,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       motion-v:
-        specifier: 0.5.0-beta.2
-        version: 0.5.0-beta.2
+        specifier: 0.5.1
+        version: 0.5.1
       polished:
         specifier: ^4.3.1
         version: 4.3.1
@@ -671,12 +671,12 @@ packages:
   focus-trap@7.6.2:
     resolution: {integrity: sha512-9FhUxK1hVju2+AiQIDJ5Dd//9R2n2RAfJ0qfhF4IHGHgcoEUTMpbTeG/zbEuwaiYXfuAH6XE0/aCyxDdRM+W5w==}
 
-  framer-motion@11.11.11:
-    resolution: {integrity: sha512-tuDH23ptJAKUHGydJQII9PhABNJBpB+z0P1bmgKK9QFIssHGlfPd6kxMq00LSKwE27WFsb2z0ovY0bpUyMvfRw==}
+  framer-motion@11.15.0:
+    resolution: {integrity: sha512-MLk8IvZntxOMg7lDBLw2qgTHHv664bYoYmnFTmE0Gm/FW67aOJk0WM3ctMcG+Xhcv+vh5uyyXwxvxhSeJzSe+w==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
-      react: ^18.0.0
-      react-dom: ^18.0.0
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       '@emotion/is-prop-valid':
         optional: true
@@ -699,6 +699,9 @@ packages:
 
   hast-util-whitespace@3.0.0:
     resolution: {integrity: sha512-88JUN06ipLwsnv+dVn+OIYOvAuvBMy/Qoi6O7mQHxdPXpjy+Cd6xRkWwux7DKO+4sYILtLBRIKgsdpS2gQc7qw==}
+
+  hey-listen@1.0.8:
+    resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
 
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
@@ -782,8 +785,14 @@ packages:
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
 
-  motion-v@0.5.0-beta.2:
-    resolution: {integrity: sha512-FmCseEBEjP+/L6J68dBJEExTatqrdWEb5aZ7GS357Rx2oxIQCiuWcxHJVfDvo0AV902xewT89OmxE1dnW94vDw==}
+  motion-dom@11.14.3:
+    resolution: {integrity: sha512-lW+D2wBy5vxLJi6aCP0xyxTxlTfiu+b+zcpVbGVFUxotwThqhdpPRSmX8xztAgtZMPMeU0WGVn/k1w4I+TbPqA==}
+
+  motion-utils@11.14.3:
+    resolution: {integrity: sha512-Xg+8xnqIJTpr0L/cidfTTBFkvRw26ZtGGuIhA94J9PQ2p4mEa06Xx7QVYZH0BP+EpMSaDlu+q0I0mmvwADPsaQ==}
+
+  motion-v@0.5.1:
+    resolution: {integrity: sha512-OqOfhYYFL+S9VeYij1BBpkxo4L6YeIp88iZsEcMwidD73WYwJTSIYFxqYPP8PT9GH9wCdtJoCGhNqHAALl8pTQ==}
 
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
@@ -1564,8 +1573,10 @@ snapshots:
     dependencies:
       tabbable: 6.2.0
 
-  framer-motion@11.11.11:
+  framer-motion@11.15.0:
     dependencies:
+      motion-dom: 11.14.3
+      motion-utils: 11.14.3
       tslib: 2.8.1
 
   fsevents@2.3.3:
@@ -1595,6 +1606,8 @@ snapshots:
   hast-util-whitespace@3.0.0:
     dependencies:
       '@types/hast': 3.0.4
+
+  hey-listen@1.0.8: {}
 
   hookable@5.5.3: {}
 
@@ -1681,10 +1694,16 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  motion-v@0.5.0-beta.2:
+  motion-dom@11.14.3: {}
+
+  motion-utils@11.14.3: {}
+
+  motion-v@0.5.1:
     dependencies:
       '@vueuse/core': 12.0.0
-      framer-motion: 11.11.11
+      framer-motion: 11.15.0
+      hey-listen: 1.0.8
+      motion-dom: 11.14.3
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
       - react

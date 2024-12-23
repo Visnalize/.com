@@ -6,17 +6,10 @@ pageClass: home
 ---
 
 <script setup lang="ts">
-import HomePage from './.vitepress/theme/components/misc/home/HomePage.vue';
+import HomePage from '@components/misc/home/HomePage.vue';
 </script>
 
-<HomePage/>
-
-<!-- - Hero section
-- Sections for each app
-- Section for latest updates (including blog posts)
-- Testimonials
-- Promote youtube channel
-- Footer -->
+<HomePage />
 
 <style>
 .home .VPLocalNav,

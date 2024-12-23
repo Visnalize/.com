@@ -1,22 +1,22 @@
 <template>
     <div class="intro-section">
-        <slot />
+        <AppIcon class="logo" :app="app" />
         <h2>{{ title }}</h2>
         <p>{{ description }}
-            <a class="link" :href="`/${app}/about`">
-                <span>Learn more</span>
-                <iconify-icon icon="fluent:arrow-up-right-24-regular" height="12" />
-            </a>
+            <HomeLink :href="`/${app}/about`">Learn more</HomeLink>
         </p>
-        <AccessLinks :app="app" class="small" />
+        <AccessLinks :app="app" />
     </div>
 </template>
 
 <script setup lang="ts">
+import { App } from '@utils/types';
 import AccessLinks from '../../global/AccessLinks.vue';
+import AppIcon from '../AppIcon.vue';
+import HomeLink from './HomeLink.vue';
 
 interface Props {
-    app: 'win7simu' | 'brick1100';
+    app: App;
     title: string;
     description: string;
 }
@@ -46,27 +46,18 @@ defineProps<Props>();
     max-width: 30em;
 }
 
-.intro-section .link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    border-bottom: 1px solid;
-    font-weight: 500;
-}
-
-.intro-section .link iconify-icon {
-    transition: 0.2s;
-}
-
-.intro-section .link:hover iconify-icon {
-    transform: translate(0.125rem, -0.125rem);
-}
-
 .intro-section .access {
     margin: 0;
 }
 
 .intro-section .access :deep(img) {
     height: 64px;
+}
+
+.logo {
+    width: 4em;
+    height: auto;
+    margin: 0 auto 1rem;
+    border-radius: 0.5rem;
 }
 </style>

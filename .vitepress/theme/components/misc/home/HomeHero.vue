@@ -25,13 +25,13 @@
                 :transition="buttonTransition">
                 <Motion :variants="buttonAnimation">
                     <button @click="() => reveal('win7simu')">
-                        <img src="./assets/win7simu.png" alt="Win7 Simu logo" width="64" height="64" />
+                        <AppIcon app="win7simu" />
                         <span>Win7 Simu</span>
                     </button>
                 </Motion>
                 <Motion :variants="buttonAnimation">
                     <button @click="() => reveal('brick1100')">
-                        <img src="./assets/brick1100.png" alt="Brick 1100 logo" width="64" height="64" />
+                        <AppIcon app="brick1100" />
                         <span>Brick 1100</span>
                     </button>
                 </Motion>
@@ -46,6 +46,7 @@ import { useBreakpoints } from '@composables/useVueUse';
 import { AnimateOptions, Motion, Options, transform } from 'motion-v';
 import { inBrowser } from 'vitepress';
 import { computed, ref } from 'vue';
+import AppIcon from '../AppIcon.vue';
 import HomeHeroIcon from './HomeHeroIcon.vue';
 
 const container = ref<HTMLElement | null>(null)
@@ -59,7 +60,7 @@ const heroStyle = computed(() => ({
 
 const titleTransition: AnimateOptions = {
     staggerChildren: 0.2,
-    delayChildren: 0.2,
+    delayChildren: 0.4,
     duration: 0.5,
 }
 
@@ -135,7 +136,8 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    height: 75vh;
+    height: 60vh;
+    min-height: 450px;
     position: relative;
 }
 
