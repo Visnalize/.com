@@ -1,48 +1,64 @@
 <template>
     <section id="brick1100" ref="container" class="home-section">
-        <Motion class="brick-demo" :style="demoStyle">
-            <iframe src="https://brick1100.visnalize.com?demo=1" frameborder="0"></iframe>
-            <img class="frame" src="./assets/phone-v.webp" alt="Phone frame" />
-        </Motion>
-        <HomeIntroSection app="brick1100" title="Brick 1100" description="Transform your smartphone into a Nokia 1100.
+        <div class="demo-wrapper">
+            <Motion class="brick-demo" :initial="xl ? { opacity: 0, x: -50, scale: 1.1 } : undefined"
+                :style="xl ? { opacity, x, scale, visibility } : undefined">
+                <!-- <iframe src="https://brick1100.visnalize.com?demo=1" frameborder="0"></iframe> -->
+                <HomeDemoVideo>
+                    <source src="./assets/brick1100-demo.mp4" type="video/mp4" />
+                </HomeDemoVideo>
+                <img class="frame" src="./assets/phone-v.webp" alt="Phone frame" />
+            </Motion>
+            <HomeIntroSection app="brick1100" title="Brick 1100" description="Transform your smartphone into a Nokia 1100.
         Experience the monochrome visual style, classic keypad, and the legendary Snake game.">
-            <img src="./assets/brick1100.png" alt="Brick 1100 logo" width="128" height="128" />
-        </HomeIntroSection>
+                <img src="./assets/brick1100.png" alt="Brick 1100 logo" width="128" height="128" />
+            </HomeIntroSection>
+        </div>
     </section>
 </template>
 
 <script setup lang="ts">
 import { useScrollProgress } from '@composables/useMotion';
-import { Motion, transform } from 'motion-v';
-import { computed, ref } from 'vue';
+import { useBreakpoints } from '@composables/useVueUse';
+import { Motion, useTransform } from 'motion-v';
+import { ref } from 'vue';
+import HomeDemoVideo from './HomeDemoVideo.vue';
 import HomeIntroSection from './HomeIntroSection.vue';
 
-const container = ref<HTMLElement | null>(null);
-const { scrollProgress } = useScrollProgress({ element: container, endOffset: 0.5 })
-
-const demoStyle = computed(() => ({ y: transform(scrollProgress.value, [0, 1], [160, -50]) }));
+const container = ref<HTMLElement | null>(null)
+const { xl } = useBreakpoints()
+const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
+// const x = useSpring(useTransform(scrollProgress, [0, 0.6], [-50, 0]), { bounce: 0 })
+// const scale = useSpring(useTransform(scrollProgress, [0, 0.6], [1.1, 1]), { bounce: 0 })
+const x = useTransform(scrollProgress, [0, 0.6], [-50, 0])
+const scale = useTransform(scrollProgress, [0, 0.6], [1.1, 1])
+const opacity = useTransform(scrollProgress, [0, 0.6], [0, 1])
+const visibility = useTransform(scrollProgress, [0, 0.1], ['hidden', 'visible'])
 </script>
 
 <style scoped>
 .home-section {
-    padding: 6rem 0;
+    margin: 12rem 0;
+}
+
+.demo-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
 }
 
 .brick-demo {
     position: relative;
-    max-width: 260px;
+    max-width: 200px;
 }
 
+video,
 iframe {
     position: absolute;
     inset: 0;
     width: 82%;
-    height: 93%;
+    height: 94%;
     margin: auto;
 }
 
@@ -59,14 +75,34 @@ iframe {
     border-radius: 0.5rem;
 }
 
+@media (min-width: 640px) {
+    .brick-demo {
+        max-width: 260px;
+    }
+}
+
 @media (min-width: 960px) {
-    .home-section {
-        padding: 10rem 0;
+    .demo-wrapper {
         flex-direction: row;
     }
 
     .brick-demo {
         max-width: 320px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-section {
+        height: 140vh;
+    }
+
+    .demo-wrapper {
+        position: sticky;
+        top: 5vh;
+    }
+
+    .brick-demo {
+        visibility: hidden;
     }
 }
 </style>

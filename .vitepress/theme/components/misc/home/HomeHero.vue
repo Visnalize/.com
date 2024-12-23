@@ -1,10 +1,10 @@
 <template>
     <section ref="container" class="home-hero-container">
-        <Motion class="home-hero" :style="xl ? heroVisibility : undefined">
-            <HomeHeroIcon v-if="xl" @click="reveal" />
+        <Motion class="home-hero" :style="xl ? heroStyle : undefined">
+            <HomeHeroIcon class="icon-absolute" @click="reveal" />
 
             <div class="hero-section section-left">
-                <HomeHeroIcon v-if="!xl" class="inline" @click="reveal" />
+                <HomeHeroIcon class="icon-relative" @click="reveal" />
                 <Motion as="h1" initial="initial" animate="visible" :transition="titleTransition">
                     <Motion as="span" :variants="titleAnimation">
                         Recreating Nostalgia
@@ -50,11 +50,11 @@ import HomeHeroIcon from './HomeHeroIcon.vue';
 
 const container = ref<HTMLElement | null>(null)
 const { xl } = useBreakpoints()
-const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
-const heroVisibility = computed(() => ({
-    opacity: transform(scrollProgress.value, [0.5, 1], [1, 0]),
-    filter: `blur(${transform(scrollProgress.value, [0.5, 1], [0, 4])}px)`,
-    display: transform(scrollProgress.value, [0.9, 1], ['', 'none'])
+const { scrollProgressRef } = useScrollProgress({ element: container, endOffset: 1 })
+const heroStyle = computed(() => ({
+    opacity: transform(scrollProgressRef.value, [0.5, 1], [1, 0]),
+    filter: `blur(${transform(scrollProgressRef.value, [0.5, 0.8], [0, 6])}px)`,
+    display: transform(scrollProgressRef.value, [0.9, 1], ['', 'none'])
 }))
 
 const titleTransition: AnimateOptions = {
@@ -94,7 +94,6 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 }
 
 .section-left {
-    background: var(--vp-c-bg);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -117,30 +116,27 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     text-align: justify;
 }
 
-.section-left .inline {
+.icon-relative {
     --size: 5rem;
+    display: flex;
     position: relative;
-    top: unset;
-    left: unset;
     margin-bottom: 2rem;
 }
 
+.icon-absolute {
+    --size: 9rem;
+    display: none;
+    position: absolute;
+    top: calc(50% - var(--size) / 2);
+    left: calc(50% - var(--size) / 2);
+}
+
 .section-right {
-    background: var(--vp-c-text-1);
     display: flex;
     flex-direction: column;
     gap: 5vh;
     height: 75vh;
     position: relative;
-}
-
-.section-right::after {
-    content: "";
-    display: block;
-    position: absolute;
-    inset: 0;
-    background: var(--vp-c-text-1);
-    z-index: -1;
 }
 
 .section-right>div {
@@ -151,7 +147,6 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.1);
-    color: var(--vp-c-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,6 +231,22 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 
     .section-left p {
         text-align: right;
+    }
+
+    .section-right {
+        background: var(--vp-c-text-1);
+    }
+
+    .section-right button {
+        color: var(--vp-c-bg);
+    }
+
+    .icon-relative {
+        display: none;
+    }
+
+    .icon-absolute {
+        display: flex;
     }
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <button class="hero-icon" @click="$emit('click')">
+    <button class="hero-icon" @click="emit('click')">
         <span class="text">
             <span>Explore</span>
             <span>projects</span>
@@ -15,17 +15,14 @@
 </template>
 
 <script setup lang="ts">
-
+const emit = defineEmits<{
+    (e: 'click'): void
+}>()
 </script>
 
 <style scoped>
 .hero-icon {
-    --size: 9rem;
-    position: absolute;
-    top: calc(50% - var(--size) / 2);
-    left: calc(50% - var(--size) / 2);
     z-index: 1;
-    display: flex;
     align-items: center;
     justify-content: center;
     background: var(--vp-c-brand-2);
@@ -89,7 +86,7 @@
 .hero-icon:hover {
     outline: none;
     transform: scale(1.1);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 calc(var(--size) / 20) calc(var(--size) / 10) rgba(0, 0, 0, 0.3);
     background: var(--vp-button-brand-bg);
 }
 

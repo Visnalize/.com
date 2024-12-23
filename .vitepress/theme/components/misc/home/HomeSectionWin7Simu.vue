@@ -1,16 +1,16 @@
 <template>
     <section id="win7simu" class="home-section">
         <div ref="container" class="demo-wrapper">
-            <Motion class="demo-bg" :style="xl ? undefined : { background }">
-                <div class="win7-demo" :style="{ 'top': `calc(50vh - ${offsetTop}px)` }">
-                    <div ref="content">
-                        <Motion as="video" autoplay loop muted playsinline :style="videoStyle">
+            <div class="win7-demo" :style="{ 'top': `calc(50vh - ${offsetTop}px)` }">
+                <div ref="content" class="demo-content">
+                    <Motion class="video" :style="xl ? { scale, borderRadius } : undefined">
+                        <HomeDemoVideo>
                             <source src="./assets/win7simu-demo.mp4" type="video/mp4" />
-                        </Motion>
-                        <img class="frame" src="./assets/phone-h.webp" alt="Phone frame" />
-                    </div>
+                        </HomeDemoVideo>
+                    </Motion>
+                    <img class="frame" src="./assets/phone-h.webp" alt="Phone frame" />
                 </div>
-            </Motion>
+            </div>
         </div>
         <HomeIntroSection app="win7simu" title="Win7 Simu" description="A recreation of Windows 7, once the best operating system Microsoft has ever made. Experience it right
             from your web browser or mobile device.">
@@ -20,38 +20,30 @@
 </template>
 
 <script setup lang="ts">
-import { useNormalizedColor } from '@composables/useColor';
 import { useScrollProgress } from '@composables/useMotion';
 import { useBreakpoints } from '@composables/useVueUse';
 import { useElementSize } from '@vueuse/core';
-import { Motion, transform } from 'motion-v';
+import { Motion, useMotionTemplate, useTransform } from 'motion-v';
 import { computed, ref } from 'vue';
+import HomeDemoVideo from './HomeDemoVideo.vue';
 import HomeIntroSection from './HomeIntroSection.vue';
 
 const container = ref<HTMLElement | null>(null)
 const content = ref<HTMLElement | null>(null)
 
-const textColor = useNormalizedColor('--vp-c-text-1');
-const bgColor = useNormalizedColor('--vp-c-bg');
-
 const { xl } = useBreakpoints()
 const { width } = useElementSize(content)
 const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
 
-const background = computed(() => transform(scrollProgress.value, [0.2, 1], [textColor, bgColor]))
-const videoStyle = computed(() => ({ scale: transform(scrollProgress.value, [0, 1], [1, 0.79]) }))
+const motionScale = useTransform(scrollProgress, [0, 1], [1, 0.79])
+const motionBorder = useTransform(scrollProgress, [0, 1], ['1.5', '0'])
+// const scale = useSpring(motionScale, { bounce: 0 })
+const scale = motionScale;
+const borderRadius = useMotionTemplate`${motionBorder}rem`
 const offsetTop = computed(() => (width.value * 9 / 16) / 2)
 </script>
 
 <style scoped>
-.demo-wrapper {
-    height: 140vh;
-}
-
-.demo-bg {
-    height: 100%;
-}
-
 .win7-demo {
     position: sticky;
 }
@@ -62,8 +54,14 @@ const offsetTop = computed(() => (width.value * 9 / 16) / 2)
     position: relative;
 }
 
-.win7-demo video {
-    will-change: transform;
+.win7-demo .video {
+    transform: scale(0.79);
+    overflow: hidden;
+}
+
+.demo-content {
+    position: relative;
+    overflow: hidden;
 }
 
 .frame {
@@ -82,7 +80,12 @@ const offsetTop = computed(() => (width.value * 9 / 16) / 2)
 
 @media (min-width: 1200px) {
     .demo-wrapper {
+        height: 140vh;
         margin-top: -50vh;
+    }
+
+    .win7-demo .video {
+        border-radius: 1.5rem;
     }
 }
 </style>

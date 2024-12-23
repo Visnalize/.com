@@ -1,4 +1,9 @@
-import { transform, useMotionValueEvent, useScroll } from "motion-v";
+import {
+  transform,
+  useMotionValue,
+  useMotionValueEvent,
+  useScroll,
+} from "motion-v";
 import { ref, Ref } from "vue";
 
 interface ScrollProgressOptions {
@@ -15,7 +20,8 @@ export const useScrollProgress = ({
   startOffset = 0,
   endOffset = 0,
 }: ScrollProgressOptions) => {
-  const scrollProgress = ref(0);
+  const scrollProgress = useMotionValue(0);
+  const scrollProgressRef = ref(0);
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (value) => {
@@ -24,8 +30,11 @@ export const useScrollProgress = ({
     const vh = window.innerHeight;
     const start = top - vh * startOffset;
     const end = top + height - vh * endOffset;
-    scrollProgress.value = transform(value, [start, end], [0, 1]);
+    const transformValue = transform(value, [start, end], [0, 1]);
+
+    scrollProgress.set(transformValue);
+    scrollProgressRef.value = transformValue;
   });
 
-  return { scrollProgress };
+  return { scrollProgress, scrollProgressRef };
 };
