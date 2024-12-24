@@ -16,7 +16,7 @@ import { data as quotes } from './.content/quotes.data';
 <p :class="$style.caption">See what users have to say about Win7 Simu and Brick 1100.</p>
 
 <div :class="$style.quotes">
-    <UserQuote v-for="quote in quotes" :quote="quote" />
+    <UserQuote v-for="quote in quotes" :quote="quote" showDate />
 </div>
 
 <style module>

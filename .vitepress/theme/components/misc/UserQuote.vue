@@ -1,14 +1,19 @@
 <template>
     <div class="quote">
-        <div class="author">
-            <img :src="quote.image" alt="User avatar" width="48" height="48" />
-            <span>{{ quote.author }}</span>
-        </div>
-        <p>{{ quote.content }}</p>
         <div class="metadata">
             <a :href="`/${quote.app}/about`">
                 <AppIcon :app="quote.app" class="app" />
             </a>
+        </div>
+        <div>
+            <div class="author">
+                <img :src="quote.image" alt="User avatar" width="48" height="48" />
+                <span>{{ quote.author }}</span>
+            </div>
+            <p>{{ quote.content }}</p>
+        </div>
+        <div v-if="showDate" class="footer">
+            <span class="date">{{ quote.date }}</span>
         </div>
     </div>
 </template>
@@ -18,7 +23,8 @@ import { Quote } from '@/.content/quotes.data';
 import AppIcon from './AppIcon.vue';
 
 defineProps<{
-    quote: Quote
+    quote: Quote,
+    showDate?: boolean
 }>()
 </script>
 
@@ -32,6 +38,9 @@ defineProps<{
     padding-top: 2rem;
     position: relative;
     transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .quote:hover {
@@ -71,5 +80,13 @@ defineProps<{
 .app {
     width: 32px;
     border-radius: 0.25rem;
+}
+
+.footer {
+    text-align: right;
+}
+
+.date {
+    font-size: 0.875rem;
 }
 </style>
