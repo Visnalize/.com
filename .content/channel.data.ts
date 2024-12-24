@@ -18,7 +18,7 @@ interface Snippet {
   >;
 }
 
-const cacheFile = process.cwd() + "/.content/channel.cache.json";
+const cacheFile = process.cwd() + "/.cache/channel.data.json";
 
 const { VITE_YOUTUBE_API_KEY: apiKey } = loadEnv("", process.cwd());
 
@@ -64,7 +64,7 @@ export default defineLoader({
     const fetchVideos = fetchData("playlistItems", {
       playlistId,
       part: "snippet",
-      maxResults: "4",
+      maxResults: "6",
     });
 
     let stats: Statistics & Snippet;

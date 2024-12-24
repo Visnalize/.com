@@ -17,6 +17,7 @@ defineProps<{
     text-align: center;
     border-radius: 2rem;
     font-weight: 600;
+    transition: 0.2s;
 }
 
 .subscribe:hover {

@@ -134,6 +134,7 @@ const tabs = [
     border-bottom: 1px solid transparent;
     padding: 0.75rem 0;
     font-weight: 600;
+    transition: 0.2s;
 }
 
 .tabs a:hover {
@@ -146,15 +147,11 @@ const tabs = [
 }
 
 .videos {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min(320px, 100%));
+    align-items: flex-start;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 2rem;
-}
-
-.videos a {
-    width: 320px;
 }
 
 .videos a img {
@@ -196,6 +193,12 @@ const tabs = [
     .subscribe.subscribe-mobile {
         display: none;
     }
+}
 
+@media (min-width: 960px) {
+    .videos {
+        grid-template-columns: repeat(auto-fill, calc(33.3% - 0.75rem));
+        gap: 1rem;
+    }
 }
 </style>
