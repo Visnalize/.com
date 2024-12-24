@@ -18,7 +18,7 @@ interface Snippet {
   >;
 }
 
-const cacheFile = process.cwd() + "/.cache/channel.data.json";
+const cacheFile = process.cwd() + "/.content/channel.data.cache";
 
 const { VITE_YOUTUBE_API_KEY: apiKey } = loadEnv("", process.cwd());
 
