@@ -114,7 +114,6 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 .section-left p {
     color: var(--vp-c-text-2);
     max-width: 550px;
-    text-align: justify;
 }
 
 .icon-relative {

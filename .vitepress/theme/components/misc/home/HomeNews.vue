@@ -1,7 +1,7 @@
 <template>
     <HomeSection id="news">
         <div class="title">
-            <HomeSectionTitle>Latest news</HomeSectionTitle>
+            <HomeSectionTitle>Some news</HomeSectionTitle>
             <HomeSectionCaption>
                 Updates, thoughts, insights and sharing on various topics from the maker
             </HomeSectionCaption>

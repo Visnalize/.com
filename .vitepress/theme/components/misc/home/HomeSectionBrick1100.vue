@@ -87,7 +87,7 @@ iframe {
 
     .demo-wrapper {
         position: sticky;
-        top: 5vh;
+        top: calc((100% - 620px) / 2);
     }
 
     .brick-demo {

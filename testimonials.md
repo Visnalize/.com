@@ -33,7 +33,12 @@ p.caption {
 .quotes {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+@media (min-width: 480px) {
+    .quotes {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
 }
 </style>
 

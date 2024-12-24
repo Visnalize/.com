@@ -1,0 +1,201 @@
+<template>
+    <HomeSection>
+        <div class="title">
+            <HomeSectionTitle>And videos</HomeSectionTitle>
+            <HomeSectionCaption>
+                Check out our YouTube channel for some video tutorials, tips and more
+            </HomeSectionCaption>
+        </div>
+        <div class="channel">
+            <div class="header">
+                <img class="header-logo" width="120" height="120" src="/favicon.png" />
+                <div class="header-content">
+                    <h3>{{ stats.title || 'Visnalize' }}</h3>
+                    <div class="handle">{{ handle }}</div>
+                    <div class="stats">
+                        <span>{{ format(stats.subscriberCount) || '13K' }} subscribers</span>
+                        <span>•</span>
+                        <span>{{ stats.videoCount || '63' }} videos</span>
+                    </div>
+                    <HomeChannelSubscribe class="subscribe-desktop" :href="channelUrl" />
+                </div>
+            </div>
+            <HomeChannelSubscribe class="subscribe-mobile" :href="channelUrl" />
+            <div class="tabs">
+                <a v-for="tab in tabs" target="_blank" :href="`${channelUrl}${tab.url}`">{{ tab.title }}</a>
+            </div>
+            <div class="videos">
+                <a v-for="video in videos" target="_blank"
+                    :href="`https://youtube.com/watch?v=${video.resourceId.videoId}`">
+                    <img :src="video.thumbnails.medium.url" :alt="video.title" :width="video.thumbnails.medium.width"
+                        :height="video.thumbnails.medium.height" />
+                    <h4>{{ video.title }}</h4>
+                </a>
+            </div>
+        </div>
+    </HomeSection>
+</template>
+
+<script setup lang="ts">
+import { data as channelData } from '@/.content/channel.data';
+import HomeChannelSubscribe from './HomeChannelSubscribe.vue';
+import HomeSection from './HomeSection.vue';
+import HomeSectionCaption from './HomeSectionCaption.vue';
+import HomeSectionTitle from './HomeSectionTitle.vue';
+
+function format(num: number, digits = 1) {
+    const lookup = [
+        { value: 1, symbol: "" },
+        { value: 1e3, symbol: "k" },
+        { value: 1e6, symbol: "M" },
+        { value: 1e9, symbol: "G" },
+        { value: 1e12, symbol: "T" },
+        { value: 1e15, symbol: "P" },
+        { value: 1e18, symbol: "E" }
+    ];
+    const regexp = /\.0+$|(?<=\.[0-9]*[1-9])0+$/;
+    const item = lookup.slice().reverse().find(item => num >= item.value);
+    return item ? (num / item.value).toFixed(digits).replace(regexp, "").concat(item.symbol) : "0";
+}
+
+const { stats, videos } = channelData;
+const handle = '@' + (stats.title || 'Visnalize');
+const channelUrl = `https://youtube.com/${handle}`;
+const tabs = [
+    { title: 'Home', url: '/' },
+    { title: 'Videos', url: '/videos' },
+    { title: 'Shorts', url: '/shorts' },
+    { title: 'Playlists', url: '/playlists' },
+    { title: 'Community', url: '/community' },
+]
+</script>
+
+<style scoped>
+.channel {
+    border: 1px solid var(--vp-c-default-1);
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header h3 {
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem
+}
+
+.header .handle {
+    font-weight: 500;
+}
+
+.header .stats {
+    color: var(--vp-c-text-2);
+    font-size: 0.875rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.header .stats span {
+    margin-right: 0.25rem;
+}
+
+.header-logo {
+    width: 72px;
+    height: 72px;
+}
+
+.subscribe.subscribe-desktop {
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--vp-c-default-1);
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.tabs a {
+    color: var(--vp-c-text-2);
+    border-bottom: 1px solid transparent;
+    padding: 0.75rem 0;
+    font-weight: 600;
+}
+
+.tabs a:hover {
+    border-color: var(--vp-c-text-2);
+}
+
+.tabs a:nth-of-type(2) {
+    color: var(--vp-c-text-1);
+    border-color: var(--vp-c-text-1);
+}
+
+.videos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.videos a {
+    width: 320px;
+}
+
+.videos a img {
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.videos h4 {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+    .header h3 {
+        font-size: 2.25rem;
+    }
+
+    .header-logo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 840px) {
+    .header-logo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .header-content {
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .subscribe.subscribe-desktop {
+        display: block;
+    }
+
+    .subscribe.subscribe-mobile {
+        display: none;
+    }
+
+}
+</style>

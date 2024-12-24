@@ -11,7 +11,6 @@
 <style scoped>
 p {
     margin: auto;
-    max-width: 600px;
     text-align: center;
     font-size: 1.25rem;
     font-weight: 500;

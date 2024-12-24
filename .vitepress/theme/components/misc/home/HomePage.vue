@@ -6,10 +6,12 @@
         <HomeSectionBrick1100 />
         <HomeTestimonials />
         <HomeNews />
+        <HomeChannel />
     </div>
 </template>
 
 <script setup lang="ts">
+import HomeChannel from './HomeChannel.vue';
 import HomeCursor from './HomeCursor.vue';
 import HomeHero from './HomeHero.vue';
 import HomeNews from './HomeNews.vue';
