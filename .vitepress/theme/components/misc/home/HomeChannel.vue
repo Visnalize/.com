@@ -8,7 +8,7 @@
         </div>
         <div class="channel">
             <div class="header">
-                <img class="header-logo" width="120" height="120" src="/favicon.png" />
+                <img class="header-logo" width="120" height="120" src="/favicon.png" alt="Channel logo" />
                 <div class="header-content">
                     <h3>{{ stats.title || 'Visnalize' }}</h3>
                     <div class="handle">{{ handle }}</div>

@@ -3,7 +3,7 @@
         <AppIcon class="logo" :app="app" />
         <h2>{{ title }}</h2>
         <p>{{ description }}
-            <HomeLink :href="`/${app}/about`">Learn more</HomeLink>
+            <HomeLink :href="`/${app}/about`">More about {{ title }}</HomeLink>
         </p>
         <AccessLinks :app="app" />
     </div>

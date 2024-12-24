@@ -74,6 +74,7 @@ const latestPosts = posts.slice(0, 3);
 .item iconify-icon {
     color: var(--vp-c-default-1);
     transition: 0.2s;
+    display: none;
 }
 
 .content {
@@ -94,6 +95,12 @@ h3 {
     display: flex;
     align-items: center;
     margin-bottom: 0.25rem;
+}
+
+@media (min-width: 640px) {
+    .item iconify-icon {
+        display: block;
+    }
 }
 
 @media (min-width: 960px) {
