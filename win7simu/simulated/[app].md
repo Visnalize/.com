@@ -1,7 +1,7 @@
 # {{ title }}
 
 <script setup lang="ts">
-import { transformImage } from '@/.vitepress/theme/utils/images';
+import { transformImage } from '@utils/images';
 import { useData } from 'vitepress';
 import decapitalize from 'voca/decapitalize';
 import { onMounted } from 'vue';

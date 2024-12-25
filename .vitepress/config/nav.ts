@@ -38,8 +38,15 @@ const navItems: DefaultTheme.NavItem[] = [
       },
     ],
   },
-  { text: "Blog", link: "/blog" },
-  { text: "About", link: "/about" },
+  {
+    text: "Explore",
+    items: [
+      { text: "Blog", link: "/blog" },
+      { text: "Wall of love", link: "/testimonials" },
+      { text: "About Visnalize", link: "/about" },
+      { text: "Tools", link: "/tools" },
+    ],
+  },
 ];
 
 export default navItems;

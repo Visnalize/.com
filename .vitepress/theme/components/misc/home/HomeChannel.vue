@@ -13,7 +13,7 @@
                     <h3>{{ stats.title || 'Visnalize' }}</h3>
                     <div class="handle">{{ handle }}</div>
                     <div class="stats">
-                        <span>{{ format(stats.subscriberCount) || '13K' }} subscribers</span>
+                        <span>{{ shortenNumber(stats.subscriberCount) }} subscribers</span>
                         <span>•</span>
                         <span>{{ stats.videoCount || '63' }} videos</span>
                     </div>
@@ -27,7 +27,7 @@
             <div class="videos">
                 <a v-for="video in videos" target="_blank"
                     :href="`https://youtube.com/watch?v=${video.resourceId.videoId}`">
-                    <img :src="video.thumbnails.medium.url" :alt="video.title" :width="video.thumbnails.medium.width"
+                    <img :src="video.thumbnails.medium.url" alt="Thumbnail image" :width="video.thumbnails.medium.width"
                         :height="video.thumbnails.medium.height" />
                     <h4>{{ video.title }}</h4>
                 </a>
@@ -38,25 +38,11 @@
 
 <script setup lang="ts">
 import { data as channelData } from '@/.content/channel.data';
+import { shortenNumber } from '@utils/misc';
 import HomeChannelSubscribe from './HomeChannelSubscribe.vue';
 import HomeSection from './HomeSection.vue';
 import HomeSectionCaption from './HomeSectionCaption.vue';
 import HomeSectionTitle from './HomeSectionTitle.vue';
-
-function format(num: number, digits = 1) {
-    const lookup = [
-        { value: 1, symbol: "" },
-        { value: 1e3, symbol: "k" },
-        { value: 1e6, symbol: "M" },
-        { value: 1e9, symbol: "G" },
-        { value: 1e12, symbol: "T" },
-        { value: 1e15, symbol: "P" },
-        { value: 1e18, symbol: "E" }
-    ];
-    const regexp = /\.0+$|(?<=\.[0-9]*[1-9])0+$/;
-    const item = lookup.slice().reverse().find(item => num >= item.value);
-    return item ? (num / item.value).toFixed(digits).replace(regexp, "").concat(item.symbol) : "0";
-}
 
 const { stats, videos } = channelData;
 const handle = '@' + (stats.title || 'Visnalize');
@@ -74,6 +60,7 @@ const tabs = [
 .channel {
     border: 1px solid var(--vp-c-default-1);
     padding: 1.5rem;
+    border-radius: 1rem;
 }
 
 .header {
@@ -155,7 +142,7 @@ const tabs = [
 }
 
 .videos a img {
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     margin-bottom: 0.5rem;
 }
 

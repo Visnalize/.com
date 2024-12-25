@@ -15,7 +15,7 @@ comments: false
 
 <script setup lang="ts">
 import { data as apps } from '@/.content/simulated-apps.data';
-import { getAppImage, transformImage } from '@/.vitepress/theme/utils/images';
+import { getAppImage, transformImage } from '@utils/images';
 
 const transform = (image: string) => transformImage(getAppImage(image), { width: 500, quality: 100 });
 </script>

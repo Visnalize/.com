@@ -48,10 +48,6 @@ defineProps<{
     border-color: var(--vp-c-border);
 }
 
-.quote:hover .metadata {
-    opacity: 1;
-}
-
 .author {
     display: flex;
     align-items: center;
@@ -70,11 +66,19 @@ defineProps<{
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
-    opacity: 0.2;
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+
+.metadata a {
+    opacity: 0.2;
     transition: 0.2s;
+}
+
+.metadata a:focus,
+.quote:hover .metadata a {
+    opacity: 1;
 }
 
 .app {

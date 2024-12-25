@@ -30,7 +30,7 @@ Bridge 1100 is a small JavaScript utility that acts as a bridge between your app
 
 Head over to the [Bridge 1100 GitHub repository](https://github.com/Visnalize/bridge-1100) to learn more about it.
 
-<!-- <SponsorAd /> -->
+<SponsorAd />
 
 ## Step-by-step guide
 

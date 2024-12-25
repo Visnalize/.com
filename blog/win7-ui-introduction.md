@@ -8,7 +8,7 @@ tags:
 
 # Introducing Win7 UI
 
-<!-- ![Win7 UI screenshot](/assets/covers/win7-ui-hero.jpg) -->
+![Win7 UI screenshot](/assets/covers/win7-ui-hero.jpg)
 
 In this post, let's talk about some more boring technical stuff as I bring in the spotlight an open-source project that I have recently finished: [Win7 UI](https://win7ui.visnalize.com/).
 
@@ -74,5 +74,3 @@ The `components` folder provides the documentation for every component available
 You should have noticed that a lot of components are still missing from the library, and that's because I have only added the ones that are used in Win7 Simu. I will be adding more components to the library as Win7 Simu needs. Or if you have any suggestions for new components, feel free to [open an issue](https://github.com/Visnalize/win7-ui/issues) and I will consider adding them to the library.
 
 Thanks for reading, and I hope you enjoy using __Win7 UI__ in your projects! ✌️
-
-<!-- <m-blog-tag-list :tags="$page.frontmatter.tag" showIcon /> -->
