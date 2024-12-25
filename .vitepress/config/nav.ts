@@ -38,13 +38,19 @@ const navItems: DefaultTheme.NavItem[] = [
       },
     ],
   },
+  { text: "Blog", link: "/blog" },
   {
-    text: "Explore",
+    text: "More",
     items: [
-      { text: "Blog", link: "/blog" },
-      { text: "Wall of love", link: "/testimonials" },
       { text: "About Visnalize", link: "/about" },
-      { text: "Tools", link: "/tools" },
+      { text: "Wall of love", link: "/testimonials" },
+      {
+        text: "Resources",
+        items: [
+          { text: "Open-source tools", link: "/resources/tools" },
+          { text: "Web desktops", link: "/resources/web-desktops" },
+        ],
+      },
     ],
   },
 ];

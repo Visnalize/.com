@@ -38,12 +38,11 @@
                     </div>
 
                     <div class="nav-group">
-                        <div class="group-title">Explore</div>
+                        <div class="group-title">Visnalize</div>
                         <ul class="group-list">
+                            <li><a href="/about">About</a></li>
                             <li><a href="/blog">Blog</a></li>
                             <li><a href="/testimonials">Wall of love</a></li>
-                            <li><a href="/about">About Visnalize</a></li>
-                            <li><a href="/tools">Tools</a></li>
                         </ul>
                     </div>
                 </div>

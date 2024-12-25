@@ -65,6 +65,15 @@ const sidebar: DefaultTheme.Sidebar = {
   "/blog/": getBlogFiles()
     .sort((a, b) => b.createdAt - a.createdAt)
     .map((file) => ({ text: file.title, link: file.url })),
+  "/resources/": [
+    {
+      text: "Resources",
+      items: [
+        { text: "Open-source tools", link: "/resources/tools" },
+        { text: "Web desktops", link: "/resources/web-desktops" },
+      ],
+    },
+  ],
 };
 
 export default sidebar;

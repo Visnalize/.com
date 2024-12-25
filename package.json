@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@justinribeiro/lite-youtube": "^1.6.0",
+    "@octokit/rest": "^21.0.2",
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^22.10.2",
     "@types/voca": "^1.4.6",

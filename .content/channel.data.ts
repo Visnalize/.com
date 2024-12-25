@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync } from "fs";
 import { defineLoader, loadEnv } from "vitepress";
+import cache from "./utils/cache";
 
 interface Statistics {
   viewCount: number;
@@ -18,7 +18,7 @@ interface Snippet {
   >;
 }
 
-const cacheFile = process.cwd() + "/.content/channel.data.cache";
+const cacheFile = cache.init("channel");
 
 const { VITE_YOUTUBE_API_KEY: apiKey } = loadEnv("", process.cwd());
 
@@ -42,16 +42,8 @@ const fetchData = (endpoint: string, params: Record<string, string>) => {
 
 export default defineLoader({
   async load() {
-    if (cacheFile) {
-      try {
-        const content = readFileSync(cacheFile, "utf-8");
-        const { stats, videos } = JSON.parse(content.toString());
-        console.info("Loaded channel data from cache");
-        return { stats, videos };
-      } catch (e) {
-        console.info("No cache found, fetching channel data");
-      }
-    }
+    const cachedContent = cache.read(cacheFile);
+    if (cachedContent) return cachedContent;
 
     // https://developers.google.com/youtube/v3/docs/channels/list
     const fetchStats = fetchData("channels", {
@@ -94,7 +86,7 @@ export default defineLoader({
       return { stats: {}, videos: [] };
     }
 
-    writeFileSync(cacheFile, JSON.stringify({ stats, videos }));
+    cache.write(cacheFile, { stats, videos });
 
     console.info("Channel data fetched and cached");
 
