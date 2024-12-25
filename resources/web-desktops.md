@@ -6,7 +6,7 @@ outline: false
 
 # Web desktops
 
-Below is a curated list of apps and portfolios that mimic the appearance and behavior of desktop operating systems, similar to how [Win7 Simu](./win7simu/about.md) works.
+Below is a curated list of apps and portfolios that mimic the appearance and behavior of desktop operating systems, similar to how [Win7 Simu](../win7simu/about.md) works.
 
 ::: info Note
 All credits go to [Simone Marzulli](https://simone.computer/) for his findings and curations. Want to add your site to the list? Contribute in the [Awesome Web Desktops](https://github.com/syxanash/awesome-web-desktops) repository.
