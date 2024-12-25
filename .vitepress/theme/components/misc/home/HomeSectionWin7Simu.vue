@@ -33,9 +33,8 @@ const { xl } = useBreakpoints()
 const { width } = useElementSize(content)
 const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
 
-const motionScale = useTransform(scrollProgress, [0, 1], [1, 0.79])
-const motionBorder = useTransform(scrollProgress, [0, 1], ['1.5', '0'])
-const scale = useSpring(motionScale, { bounce: 0 })
+const motionBorder = useTransform(useSpring(scrollProgress), [0, 1], ['1.5', '0'])
+const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 1], [1, 0.79])
 const borderRadius = useMotionTemplate`${motionBorder}rem`
 const offsetTop = computed(() => (width.value * 9 / 16) / 2)
 </script>
