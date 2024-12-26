@@ -88,8 +88,6 @@ export default defineLoader({
 
     cache.write(cacheFile, { stats, videos });
 
-    console.info("Channel data fetched and cached");
-
     return { stats, videos };
   },
 });

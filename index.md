@@ -2,6 +2,7 @@
 layout: page
 title: Visnalize - creator of Win7 Simu, Brick 1100, and more
 navbar: false
+pagefind-indexed: false
 pageClass: home
 ---
 
