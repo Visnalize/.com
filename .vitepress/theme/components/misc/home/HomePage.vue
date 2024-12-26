@@ -4,20 +4,20 @@
         <HomeHero />
         <HomeSectionWin7Simu />
         <HomeSectionBrick1100 />
-        <HomeTestimonials />
-        <HomeNews />
-        <HomeChannel />
+        <HomeSectionTestimonials />
+        <HomeSectionNews />
+        <HomeSectionChannel />
     </div>
 </template>
 
 <script setup lang="ts">
-import HomeChannel from './HomeChannel.vue';
 import HomeCursor from './HomeCursor.vue';
 import HomeHero from './HomeHero.vue';
-import HomeNews from './HomeNews.vue';
 import HomeSectionBrick1100 from './HomeSectionBrick1100.vue';
+import HomeSectionChannel from './HomeSectionChannel.vue';
+import HomeSectionNews from './HomeSectionNews.vue';
+import HomeSectionTestimonials from './HomeSectionTestimonials.vue';
 import HomeSectionWin7Simu from './HomeSectionWin7Simu.vue';
-import HomeTestimonials from './HomeTestimonials.vue';
 </script>
 
 <style scoped></style>
