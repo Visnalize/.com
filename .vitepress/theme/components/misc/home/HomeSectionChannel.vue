@@ -3,31 +3,37 @@
         <template #title>And videos</template>
         <template #caption>Check out our YouTube channel for some video tutorials, tips and more</template>
 
-        <div class="channel">
+        <div ref="container" class="channel">
             <div class="header">
-                <img class="header-logo" width="120" height="120" src="/favicon.png" alt="Channel logo" />
+                <Motion as="img" :variants="headerVariants(0)" :animate="animate" class="header-logo" width="120"
+                    height="120" src="/favicon.png" alt="Channel logo" />
                 <div class="header-content">
-                    <h3>{{ stats.title || 'Visnalize' }}</h3>
-                    <div class="handle">{{ handle }}</div>
-                    <div class="stats">
+                    <Motion as="h3" :variants="headerVariants(1)" :animate="animate">
+                        {{ stats.title || 'Visnalize' }}
+                    </Motion>
+                    <Motion :variants="headerVariants(2)" :animate="animate" class="handle">{{ handle }}</Motion>
+                    <Motion :variants="headerVariants(2)" :animate="animate" class="stats">
                         <span>{{ shortenNumber(stats.subscriberCount) }} subscribers</span>
                         <span>•</span>
                         <span>{{ stats.videoCount || '63' }} videos</span>
-                    </div>
-                    <HomeChannelSubscribe class="subscribe-desktop" :href="channelUrl" />
+                    </Motion>
+                    <HomeChannelSubscribe :variants="headerVariants(3)" :animate="animate" class="subscribe-desktop"
+                        :href="channelUrl" />
                 </div>
             </div>
-            <HomeChannelSubscribe class="subscribe-mobile" :href="channelUrl" />
+            <HomeChannelSubscribe :variants="headerVariants(3)" :animate="animate" class="subscribe-mobile"
+                :href="channelUrl" />
             <div class="tabs">
-                <a v-for="tab in tabs" target="_blank" :href="`${channelUrl}${tab.url}`">{{ tab.title }}</a>
+                <Motion as="a" v-for="(tab, i) in tabs" target="_blank" :href="`${channelUrl}${tab.url}`"
+                    :variants="tabVariants(i)" :animate="animate">{{ tab.title }}</Motion>
             </div>
             <div class="videos">
-                <a v-for="video in videos" target="_blank"
-                    :href="`https://youtube.com/watch?v=${video.resourceId.videoId}`">
+                <Motion as="a" v-for="(video, i) in videos" target="_blank" :variants="videoVariants(3 + i)"
+                    :animate="animate" :href="`https://youtube.com/watch?v=${video.resourceId.videoId}`">
                     <img :src="video.thumbnails.medium.url" alt="Thumbnail image" :width="video.thumbnails.medium.width"
                         :height="video.thumbnails.medium.height" />
                     <h4>{{ video.title }}</h4>
-                </a>
+                </Motion>
             </div>
         </div>
     </HomeSection>
@@ -35,11 +41,12 @@
 
 <script setup lang="ts">
 import { data as channelData } from '@/.content/channel.data';
+import { useSectionInView, Variants } from '@composables/useMotion';
 import { shortenNumber } from '@utils/misc';
+import { Motion } from 'motion-v';
+import { computed, ref } from 'vue';
 import HomeChannelSubscribe from './HomeChannelSubscribe.vue';
 import HomeSection from './HomeSection.vue';
-import HomeSectionCaption from './HomeSectionCaption.vue';
-import HomeSectionTitle from './HomeSectionTitle.vue';
 
 const { stats, videos } = channelData;
 const handle = '@' + (stats.title || 'Visnalize');
@@ -51,6 +58,22 @@ const tabs = [
     { title: 'Playlists', url: '/playlists' },
     { title: 'Community', url: '/community' },
 ]
+const container = ref<HTMLElement | null>(null);
+const inView = useSectionInView(container);
+
+const animate = computed(() => inView.value ? 'animate' : 'initial');
+const headerVariants = (index: number): Variants => ({
+    initial: { opacity: 0, scale: 0.9 },
+    animate: { opacity: 1, scale: 1, transition: { delay: index * 0.1 } }
+})
+const tabVariants = (index: number): Variants => ({
+    initial: { opacity: 0, x: -10 },
+    animate: { opacity: 1, x: 0, transition: { delay: index * 0.05 } }
+})
+const videoVariants = (index: number): Variants => ({
+    initial: { opacity: 0, y: 10 },
+    animate: { opacity: 1, y: 0, transition: { delay: index * 0.05 } }
+})
 </script>
 
 <style scoped>
@@ -101,7 +124,7 @@ const tabs = [
     height: 72px;
 }
 
-.subscribe.subscribe-desktop {
+.subscribe-desktop {
     display: none;
 }
 
@@ -118,7 +141,6 @@ const tabs = [
     border-bottom: 1px solid transparent;
     padding: 0.75rem 0;
     font-weight: 600;
-    transition: 0.2s;
 }
 
 .tabs a:hover {
@@ -170,11 +192,11 @@ const tabs = [
         gap: 0.5rem;
     }
 
-    .subscribe.subscribe-desktop {
+    .subscribe-desktop {
         display: block;
     }
 
-    .subscribe.subscribe-mobile {
+    .subscribe-mobile {
         display: none;
     }
 }

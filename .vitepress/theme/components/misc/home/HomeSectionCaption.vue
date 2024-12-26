@@ -1,11 +1,21 @@
 <template>
-    <p>
+    <Motion as="p" :variants="variants" :animate="animate ? 'animate' : 'initial'">
         <slot />
-    </p>
+    </Motion>
 </template>
 
 <script setup lang="ts">
+import { Variants } from '@composables/useMotion';
+import { Motion } from 'motion-v';
 
+defineProps<{
+    animate?: boolean;
+}>()
+
+const variants: Variants = {
+    initial: { opacity: 0, scale: 1.1, filter: 'blur(4px)' },
+    animate: { opacity: 1, scale: 1, filter: 'blur(0px)', transition: { duration: 0.4, delay: 0.1 } }
+}
 </script>
 
 <style scoped>

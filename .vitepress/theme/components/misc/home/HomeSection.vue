@@ -1,11 +1,11 @@
 <template>
-    <section class="home-section">
+    <section ref="container" class="home-section">
         <slot name="header" />
         <div v-if="!$slots.header" class="title">
-            <HomeSectionTitle>
+            <HomeSectionTitle :animate="inView">
                 <slot name="title" />
             </HomeSectionTitle>
-            <HomeSectionCaption>
+            <HomeSectionCaption :animate="inView">
                 <slot name="caption" />
             </HomeSectionCaption>
         </div>
@@ -14,8 +14,13 @@
 </template>
 
 <script setup lang="ts">
+import { useSectionInView } from '@composables/useMotion';
+import { ref } from 'vue';
 import HomeSectionCaption from './HomeSectionCaption.vue';
 import HomeSectionTitle from './HomeSectionTitle.vue';
+
+const container = ref<HTMLElement | null>(null);
+const inView = useSectionInView(container)
 </script>
 
 <style scoped>
@@ -26,5 +31,6 @@ import HomeSectionTitle from './HomeSectionTitle.vue';
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    overflow: hidden;
 }
 </style>

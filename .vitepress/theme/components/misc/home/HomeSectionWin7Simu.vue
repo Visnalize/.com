@@ -12,8 +12,10 @@
                 </div>
             </div>
         </div>
-        <HomeIntroSection app="win7simu" title="Win7 Simu" description="A recreation of Windows 7, once the best operating system Microsoft has ever made. Experience it right
-            from your web browser or mobile device." />
+        <HomeIntroSection app="win7simu" title="Win7 Simu">
+            A recreation of Windows 7, once the best operating system Microsoft has ever made. Experience it right from
+            your web browser or mobile device.
+        </HomeIntroSection>
     </section>
 </template>
 
@@ -21,7 +23,7 @@
 import { useScrollProgress } from '@composables/useMotion';
 import { useBreakpoints } from '@composables/useVueUse';
 import { useElementSize } from '@vueuse/core';
-import { Motion, useMotionTemplate, useSpring, useTransform } from 'motion-v';
+import { Motion, useSpring, useTransform } from 'motion-v';
 import { computed, ref } from 'vue';
 import HomeDemoVideo from './HomeDemoVideo.vue';
 import HomeIntroSection from './HomeIntroSection.vue';
@@ -33,9 +35,8 @@ const { xl } = useBreakpoints()
 const { width } = useElementSize(content)
 const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
 
-const motionBorder = useTransform(useSpring(scrollProgress), [0, 1], ['1.5', '0'])
+const borderRadius = useTransform(useSpring(scrollProgress), [0, 1], ['1.5rem', '0rem'])
 const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 1], [1, 0.79])
-const borderRadius = useMotionTemplate`${motionBorder}rem`
 const offsetTop = computed(() => (width.value * 9 / 16) / 2)
 </script>
 

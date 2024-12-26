@@ -1,26 +1,30 @@
 <template>
     <HomeSection id="news">
         <template #header>
-            <div class="title">
-                <HomeSectionTitle>Some news</HomeSectionTitle>
-                <HomeSectionCaption>
-                    Updates, thoughts, insights and sharing on various topics from the maker
-                </HomeSectionCaption>
-                <HomeLink href="/blog" class="link-title">View all posts</HomeLink>
+            <div ref="titleContainer" class="title">
+                <HomeSectionTitle :animate="titleInView">Some news</HomeSectionTitle>
+                <HomeSectionCaption :animate="titleInView">Updates, thoughts, insights and sharing on various topics
+                    from the maker</HomeSectionCaption>
+                <Motion :variants="linkVariants" :animate="titleInView ? 'animate' : 'initial'">
+                    <HomeLink href="/blog" class="link-title">View all posts</HomeLink>
+                </Motion>
             </div>
         </template>
 
-        <div class="list">
-            <a v-for="post in latestPosts" :href="post.url" class="item">
-                <div class="content">
-                    <div class="metadata">
-                        {{ new Date(post.createdAt).toLocaleDateString(undefined, { dateStyle: 'long' }) }}
+        <div ref="listContainer" class="list">
+            <Motion v-for="(post, i) in latestPosts" :variants="listItemVariants(i)"
+                :animate="listInView ? 'animate' : 'initial'">
+                <a :href="post.url" class="item">
+                    <div class="content">
+                        <div class="metadata">
+                            {{ new Date(post.createdAt).toLocaleDateString(undefined, { dateStyle: 'long' }) }}
+                        </div>
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.description }}</p>
                     </div>
-                    <h3>{{ post.title }}</h3>
-                    <p>{{ post.description }}</p>
-                </div>
-                <iconify-icon icon="fluent:arrow-up-right-24-regular" height="24" />
-            </a>
+                    <iconify-icon icon="fluent:arrow-up-right-24-regular" height="24" />
+                </a>
+            </Motion>
         </div>
 
         <div class="link-footer">
@@ -31,12 +35,29 @@
 
 <script setup lang="ts">
 import { data as posts } from '@/.content/blog-posts.data';
+import { useSectionInView, Variants } from '@composables/useMotion';
+import { Motion } from 'motion-v';
+import { ref } from 'vue';
 import HomeLink from './HomeLink.vue';
 import HomeSection from './HomeSection.vue';
-import HomeSectionTitle from './HomeSectionTitle.vue';
 import HomeSectionCaption from './HomeSectionCaption.vue';
+import HomeSectionTitle from './HomeSectionTitle.vue';
 
 const latestPosts = posts.slice(0, 3);
+
+const titleContainer = ref<HTMLElement | null>(null);
+const listContainer = ref<HTMLElement | null>(null);
+const titleInView = useSectionInView(titleContainer);
+const listInView = useSectionInView(listContainer);
+
+const listItemVariants = (index: number): Variants => ({
+    initial: { opacity: 0, x: 20 },
+    animate: { opacity: 1, x: 0, transition: { type: 'spring', duration: 0.8, delay: index * 0.1 + 0.2 } },
+})
+const linkVariants: Variants = {
+    initial: { opacity: 0, scale: 1.1, filter: 'blur(4px)' },
+    animate: { opacity: 1, scale: 1, filter: 'blur(0px)', transition: { duration: 0.4, delay: 0.2 } },
+}
 </script>
 
 <style scoped>

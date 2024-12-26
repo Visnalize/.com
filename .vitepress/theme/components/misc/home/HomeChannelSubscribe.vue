@@ -1,10 +1,17 @@
 <template>
-    <a class="subscribe" target="_blank" :href="href + '?sub_confirmation=1'">Subscribe</a>
+    <Motion :variants="variants" :animate="animate">
+        <a class="subscribe" target="_blank" :href="href + '?sub_confirmation=1'">Subscribe</a>
+    </Motion>
 </template>
 
 <script setup lang="ts">
+import { Variants } from '@composables/useMotion';
+import { Motion } from 'motion-v';
+
 defineProps<{
     href: string;
+    animate?: string;
+    variants?: Variants;
 }>();
 </script>
 

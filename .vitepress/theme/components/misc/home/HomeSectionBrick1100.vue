@@ -9,8 +9,10 @@
                 </HomeDemoVideo>
                 <img class="frame" src="./assets/phone-v.webp" alt="Phone frame" />
             </Motion>
-            <HomeIntroSection app="brick1100" title="Brick 1100" description="Transform your smartphone into a Nokia 1100.
-        Experience the monochrome visual style, classic keypad, and the legendary Snake game." />
+            <HomeIntroSection app="brick1100" title="Brick 1100">
+                Transform your smartphone into a Nokia 1100.
+                Experience the monochrome visual style, classic keypad, and the legendary Snake game.
+            </HomeIntroSection>
         </div>
     </section>
 </template>

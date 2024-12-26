@@ -60,7 +60,7 @@ const heroStyle = computed(() => ({
 
 const titleTransition: AnimateOptions = {
     staggerChildren: 0.2,
-    delayChildren: 0.4,
+    delayChildren: 0.3,
     duration: 0.5,
 }
 

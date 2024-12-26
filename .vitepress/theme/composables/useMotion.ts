@@ -3,8 +3,9 @@ import {
   useMotionValue,
   useMotionValueEvent,
   useScroll,
+  Variant,
 } from "motion-v";
-import { ref, Ref } from "vue";
+import { computed, ref, Ref } from "vue";
 
 interface ScrollProgressOptions {
   /** Reference to the element that will be used to calculate the scroll progress. */
@@ -38,3 +39,13 @@ export const useScrollProgress = ({
 
   return { scrollProgress, scrollProgressRef };
 };
+
+export const useSectionInView = (element: Ref<HTMLElement>) => {
+  const { scrollProgressRef } = useScrollProgress({
+    element,
+    startOffset: 0.5,
+  });
+  return computed(() => scrollProgressRef.value > 0);
+};
+
+export type Variants = Record<string, Variant>;
