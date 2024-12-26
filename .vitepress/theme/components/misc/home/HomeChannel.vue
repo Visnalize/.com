@@ -1,11 +1,8 @@
 <template>
     <HomeSection>
-        <div class="title">
-            <HomeSectionTitle>And videos</HomeSectionTitle>
-            <HomeSectionCaption>
-                Check out our YouTube channel for some video tutorials, tips and more
-            </HomeSectionCaption>
-        </div>
+        <template #title>And videos</template>
+        <template #caption>Check out our YouTube channel for some video tutorials, tips and more</template>
+
         <div class="channel">
             <div class="header">
                 <img class="header-logo" width="120" height="120" src="/favicon.png" alt="Channel logo" />

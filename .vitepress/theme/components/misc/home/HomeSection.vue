@@ -1,11 +1,21 @@
 <template>
     <section class="home-section">
+        <slot name="header" />
+        <div v-if="!$slots.header" class="title">
+            <HomeSectionTitle>
+                <slot name="title" />
+            </HomeSectionTitle>
+            <HomeSectionCaption>
+                <slot name="caption" />
+            </HomeSectionCaption>
+        </div>
         <slot />
     </section>
 </template>
 
 <script setup lang="ts">
-
+import HomeSectionCaption from './HomeSectionCaption.vue';
+import HomeSectionTitle from './HomeSectionTitle.vue';
 </script>
 
 <style scoped>

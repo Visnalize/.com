@@ -1,12 +1,15 @@
 <template>
     <HomeSection id="news">
-        <div class="title">
-            <HomeSectionTitle>Some news</HomeSectionTitle>
-            <HomeSectionCaption>
-                Updates, thoughts, insights and sharing on various topics from the maker
-            </HomeSectionCaption>
-            <HomeLink href="/blog" class="link-title">View all posts</HomeLink>
-        </div>
+        <template #header>
+            <div class="title">
+                <HomeSectionTitle>Some news</HomeSectionTitle>
+                <HomeSectionCaption>
+                    Updates, thoughts, insights and sharing on various topics from the maker
+                </HomeSectionCaption>
+                <HomeLink href="/blog" class="link-title">View all posts</HomeLink>
+            </div>
+        </template>
+
         <div class="list">
             <a v-for="post in latestPosts" :href="post.url" class="item">
                 <div class="content">
@@ -19,6 +22,7 @@
                 <iconify-icon icon="fluent:arrow-up-right-24-regular" height="24" />
             </a>
         </div>
+
         <div class="link-footer">
             <HomeLink href="/blog">View all posts</HomeLink>
         </div>
