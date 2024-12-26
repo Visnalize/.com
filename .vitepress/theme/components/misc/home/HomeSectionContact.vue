@@ -1,5 +1,5 @@
 <template>
-    <HomeSection id="testimonials">
+    <HomeSection id="contact">
         <template #title>Want to talk?</template>
         <template #caption>If you have any questions, feedback, or just want to chat, feel free to reach out</template>
 

@@ -3,7 +3,7 @@
         <div ref="container" class="demo-wrapper">
             <div class="win7-demo" :style="{ 'top': `calc(50vh - ${offsetTop}px)` }">
                 <div ref="content" class="demo-content">
-                    <Motion class="video" :style="xl ? { scale, borderRadius } : undefined">
+                    <Motion class="video" :style="xl ? { scale, borderRadius } : visible">
                         <HomeDemoVideo>
                             <source src="./assets/win7simu-demo.mp4" type="video/mp4" />
                         </HomeDemoVideo>
@@ -35,8 +35,9 @@ const { xl } = useBreakpoints()
 const { width } = useElementSize(content)
 const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
 
-const borderRadius = useTransform(useSpring(scrollProgress), [0, 1], ['1.5rem', '0rem'])
-const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 1], [1, 0.79])
+const visible = { scale: 0.79, borderRadius: '0rem' }
+const borderRadius = useTransform(useSpring(scrollProgress), [0, 1], ['1.5rem', visible.borderRadius])
+const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 1], [1, visible.scale])
 const offsetTop = computed(() => (width.value * 9 / 16) / 2)
 </script>
 

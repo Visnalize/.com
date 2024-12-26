@@ -39,8 +39,8 @@ const animate = computed(() => {
     return inView.value ? 'animate' : 'initial'
 })
 const variants = (index: number): Variants => ({
-    initial: { opacity: 0, y: 20, filter: 'blur(4px)' },
-    animate: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { type: 'spring', duration: 0.5, delay: index * 0.1 } },
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0, transition: { type: 'spring', duration: 0.5, delay: index * 0.1 } },
 })
 </script>
 

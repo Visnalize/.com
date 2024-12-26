@@ -95,10 +95,12 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 }
 
 .section-left {
+    min-height: 90vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .section-left h1 {
@@ -132,11 +134,9 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 }
 
 .section-right {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5vh;
-    height: 60vh;
-    min-height: 450px;
     position: relative;
 }
 
@@ -158,45 +158,12 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     transition: 0.2s;
 }
 
-.section-right button>img {
-    width: 1.5em;
-    filter: grayscale(1);
-    border-radius: 0.5rem;
-}
-
-.section-right button:focus,
-.section-right button:hover {
-    background: var(--vp-c-brand-2);
-    color: var(--vp-c-white);
-    transform: translateY(-0.5rem);
-    outline: none;
-}
-
-.section-right button:focus>img,
-.section-right button:hover>img {
-    filter: grayscale(0);
-}
-
-@media (min-width: 480px) {
-    .section-right button {
-        font-size: 2rem;
-    }
-}
-
 @media (min-width: 640px) {
     .hero-section {
         padding: 6rem 4rem;
     }
 
     .section-left h1 {
-        font-size: 2.5rem;
-    }
-
-    .section-right {
-        height: 90vh;
-    }
-
-    .section-right button {
         font-size: 2.5rem;
     }
 }
@@ -235,11 +202,32 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     }
 
     .section-right {
+        display: flex;
         background: var(--vp-c-text-1);
     }
 
     .section-right button {
+        font-size: 2.5rem;
         color: var(--vp-c-bg);
+    }
+
+    .section-right button>img {
+        width: 1.5em;
+        filter: grayscale(1);
+        border-radius: 0.5rem;
+    }
+
+    .section-right button:focus,
+    .section-right button:hover {
+        background: var(--vp-c-brand-2);
+        color: var(--vp-c-white);
+        transform: translateY(-0.5rem);
+        outline: none;
+    }
+
+    .section-right button:focus>img,
+    .section-right button:hover>img {
+        filter: grayscale(0);
     }
 
     .icon-relative {

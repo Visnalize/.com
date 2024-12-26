@@ -1,9 +1,8 @@
 <template>
     <section id="brick1100" ref="container" class="home-section">
         <div class="demo-wrapper">
-            <Motion class="brick-demo" :initial="xl ? { opacity: 0, x: -50, scale: 1.1 } : undefined"
-                :style="xl ? { opacity, x, scale, visibility } : undefined">
-                <!-- <iframe src="https://brick1100.visnalize.com?demo=1" frameborder="0"></iframe> -->
+            <Motion class="brick-demo" :initial="{ opacity: 0, x: -50, scale: 1.1 }"
+                :style="{ opacity, x, scale, visibility }">
                 <HomeDemoVideo>
                     <source src="./assets/brick1100-demo.mp4" type="video/mp4" />
                 </HomeDemoVideo>
@@ -19,15 +18,14 @@
 
 <script setup lang="ts">
 import { useScrollProgress } from '@composables/useMotion';
-import { useBreakpoints } from '@composables/useVueUse';
 import { Motion, useSpring, useTransform } from 'motion-v';
 import { ref } from 'vue';
 import HomeDemoVideo from './HomeDemoVideo.vue';
 import HomeIntroSection from './HomeIntroSection.vue';
 
 const container = ref<HTMLElement | null>(null)
-const { xl } = useBreakpoints()
 const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
+
 const x = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 0.8], [-50, 0])
 const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 0.8], [1.1, 1])
 const opacity = useTransform(useSpring(scrollProgress), [0, 0.8], [0, 1])
@@ -91,9 +89,15 @@ iframe {
         position: sticky;
         top: calc((100% - 620px) / 2);
     }
+}
 
+/* Dirty hack to always show the demo on smaller screens */
+@media (max-width: 1200px) {
     .brick-demo {
-        visibility: hidden;
+        opacity: 1 !important;
+        scale: 1 !important;
+        transform: translateX(0) !important;
+        visibility: visible !important;
     }
 }
 </style>

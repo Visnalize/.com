@@ -1,5 +1,5 @@
 <template>
-    <HomeSection>
+    <HomeSection id="channel">
         <template #title>And videos</template>
         <template #caption>Check out our YouTube channel for some video tutorials, tips and more</template>
 
