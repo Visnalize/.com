@@ -3,6 +3,7 @@ title: Win7 Simu simulated apps
 description: Discover simulated applications available in Win7 Simu. Learn more about each app, history, and supported features.
 aside: false
 comments: false
+pagefind-indexed: false
 ---
 
 <h1 :class="$style.title">

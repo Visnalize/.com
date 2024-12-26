@@ -19,6 +19,7 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
     .toString()
     .split("\n")
     .map((redirect) => redirect.split(" ")[0]);
+  const pagefindSearch = pagefindPlugin({ placeholder: "Search..." });
 
   return defineConfig({
     title: "Visnalize",
@@ -55,7 +56,7 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
     },
 
     vite: {
-      plugins: [isDev ? undefined : pagefindPlugin()],
+      plugins: [isDev ? undefined : pagefindSearch],
 
       resolve: {
         alias: {

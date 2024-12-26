@@ -2,6 +2,7 @@
 title: Posts with tag ???
 aside: false
 comments: false
+pagefind-indexed: false
 pageClass: blog
 ---
 
