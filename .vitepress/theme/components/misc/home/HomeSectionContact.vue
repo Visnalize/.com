@@ -20,9 +20,11 @@ const inView = useSectionInView(form);
 </script>
 
 <style scoped>
-.form {
-    border: 1px solid var(--vp-c-default-1);
-    border-radius: 1rem;
-    padding: 3rem;
+@media (min-width: 640px) {
+    .form {
+        border: 1px solid var(--vp-c-default-1);
+        border-radius: 1rem;
+        padding: 3rem;
+    }
 }
 </style>

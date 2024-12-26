@@ -28,7 +28,7 @@
                     :variants="tabVariants(i)" :animate="animate">{{ tab.title }}</Motion>
             </div>
             <div class="videos">
-                <Motion as="a" v-for="(video, i) in videos" target="_blank" :variants="videoVariants(3 + i)"
+                <Motion as="a" v-for="(video, i) in videos" target="_blank" :variants="videoVariants(i)"
                     :animate="animate" :href="`https://youtube.com/watch?v=${video.resourceId.videoId}`">
                     <img :src="video.thumbnails.medium.url" alt="Thumbnail image" :width="video.thumbnails.medium.width"
                         :height="video.thumbnails.medium.height" />
@@ -68,19 +68,20 @@ const headerVariants = (index: number): Variants => ({
 })
 const tabVariants = (index: number): Variants => ({
     initial: { opacity: 0, x: -10 },
-    animate: { opacity: 1, x: 0, transition: { delay: index * 0.05 } }
+    animate: { opacity: 1, x: 0, transition: { delay: index * 0.05 + 0.5 } }
 })
 const videoVariants = (index: number): Variants => ({
     initial: { opacity: 0, y: 10 },
-    animate: { opacity: 1, y: 0, transition: { delay: index * 0.05 } }
+    animate: { opacity: 1, y: 0, transition: { delay: index * 0.05 + 0.8 } }
 })
 </script>
 
 <style scoped>
 .channel {
-    border: 1px solid var(--vp-c-default-1);
-    padding: 1.5rem;
+    border: 1px solid;
+    border-color: var(--vp-c-default-1) transparent var(--vp-c-default-1) transparent;
     border-radius: 1rem;
+    padding: 1.5rem 0;
 }
 
 .header {
@@ -171,6 +172,11 @@ const videoVariants = (index: number): Variants => ({
 }
 
 @media (min-width: 640px) {
+    .channel {
+        border-color: var(--vp-c-default-1);
+        padding: 1.5rem;
+    }
+
     .header h3 {
         font-size: 2.25rem;
     }
