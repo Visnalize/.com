@@ -7,6 +7,7 @@
         <HomeSectionTestimonials />
         <HomeSectionNews />
         <HomeSectionChannel />
+        <HomeSectionContact />
     </div>
 </template>
 
@@ -15,6 +16,7 @@ import HomeCursor from './HomeCursor.vue';
 import HomeHero from './HomeHero.vue';
 import HomeSectionBrick1100 from './HomeSectionBrick1100.vue';
 import HomeSectionChannel from './HomeSectionChannel.vue';
+import HomeSectionContact from './HomeSectionContact.vue';
 import HomeSectionNews from './HomeSectionNews.vue';
 import HomeSectionTestimonials from './HomeSectionTestimonials.vue';
 import HomeSectionWin7Simu from './HomeSectionWin7Simu.vue';

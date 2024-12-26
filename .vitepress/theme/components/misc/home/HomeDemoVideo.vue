@@ -11,7 +11,7 @@ import { ref, watchEffect } from 'vue';
 
 const videoRef = ref<HTMLVideoElement | null>(null)
 const { xl } = useBreakpoints()
-const inview = useInView(videoRef, { amount: 'all', margin: '10px' })
+const inview = useInView(videoRef, { amount: 0.8 })
 
 const togglePlay = () => {
     if (videoRef.value && xl.value) {

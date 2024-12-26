@@ -8,7 +8,7 @@ comments: false
 # About
 
 <script setup lang="ts">
-import EmailSender from '@components/misc/EmailSender.vue'
+import ContactForm from '@components/misc/ContactForm.vue'
 </script>
 
 Howdy, Visnalize is not an established company or a team, but an individual who is passionate about having fun with software crafting and visual design. I am a __full-time software developer__ and a __free-time app maker__. I love all sorts of web technologies. I tend to spend all of my free time exploring and playing around with those things by making a lot of, probably silly, of-no-use apps, apps that are meant for entertainment, or simply to satisfy my passion.
@@ -29,4 +29,4 @@ I am attached to the past, and I believe most of us are, things we grew up with,
 
 I am not actively available via direct messaging or chat apps like Discord, WhatsApp etc. You can reach me via email at [hey@visnalize.com](mailto:hey@visnalize.com) or with a little help from the form below:
 
-<EmailSender />
+<ContactForm />
