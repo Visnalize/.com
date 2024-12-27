@@ -1,3 +1,4 @@
+import { useResizeObserver } from "@vueuse/core";
 import {
   transform,
   useMotionValue,
@@ -25,16 +26,34 @@ export const useScrollProgress = ({
   const scrollProgressRef = ref(0);
   const { scrollY } = useScroll();
 
-  useMotionValueEvent(scrollY, "change", (value) => {
+  const computeBounds = () => {
     const { height } = element.value.getBoundingClientRect();
     const top = element.value.offsetTop;
     const vh = window.innerHeight;
     const start = top - vh * startOffset;
     const end = top + height - vh * endOffset;
-    const transformValue = transform(value, [start, end], [0, 1]);
+    return { start, end };
+  };
 
-    scrollProgress.set(transformValue);
-    scrollProgressRef.value = transformValue;
+  const setProgress = (value: number) => {
+    scrollProgress.set(value);
+    scrollProgressRef.value = value;
+  };
+
+  useMotionValueEvent(scrollY, "change", (value) => {
+    const { start, end } = computeBounds();
+    setProgress(transform(value, [start, end], [0, 1]));
+  });
+
+  useResizeObserver(element, () => {
+    const { start, end } = computeBounds();
+    const currentScroll = scrollY.get();
+    const inView = currentScroll >= start && currentScroll <= end;
+    if (inView) {
+      setProgress(transform(currentScroll, [start, end], [0, 1]));
+    } else {
+      setProgress(currentScroll < start ? 0 : 1);
+    }
   });
 
   return { scrollProgress, scrollProgressRef };
