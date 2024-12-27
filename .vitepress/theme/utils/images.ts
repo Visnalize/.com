@@ -1,5 +1,5 @@
 import { ORIGIN } from "../constants";
-import { isExternal } from "./misc";
+import { isDevMode, isExternal } from "./misc";
 
 interface TransformOptions {
   anim?: boolean;
@@ -20,8 +20,13 @@ interface TransformOptions {
 
 export const transformImage = (imgpath: string, options: TransformOptions) => {
   if (!imgpath || !options) {
-    throw new Error("imageUrl and options are required");
+    throw new Error("imgpath and options are required");
   }
+
+  if (isDevMode()) {
+    return imgpath;
+  }
+
   const optionsString = Object.entries(options)
     .map(([key, value]) => (value === undefined ? "" : `${key}=${value}`))
     .filter(Boolean)

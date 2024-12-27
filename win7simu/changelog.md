@@ -146,8 +146,8 @@ __Core__
 
 - Improved visual accuracy across several themes
 - Adjusted Calculator's visual across different themes
-- Added Program Installer
-- Added BSOD Customizer
+- Added [Program Installer](./simulated/installer.md)
+- Added [BSOD Customizer](./simulated/bsod.md)
 - Added new theme: Windows 11 dark
 - Added new theme: Kubuntu (KDE Plasma)
 
@@ -441,7 +441,7 @@ __Android__
 ### 2.14.0 (Aug 28, 2021)
 
 - Added [Sticky Notes](./simulated/sticky.md)
-- Added Camera
+- Added [Camera](./simulated/camera.md)
 - My Computer can now open audio and video files from Android.
 
 ### 2.13.0 (Aug 18, 2021)

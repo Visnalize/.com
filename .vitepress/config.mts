@@ -50,7 +50,7 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
 
       aside: "left",
 
-      outline: [2, 3],
+      outline: { label: "Content", level: [2, 3] },
 
       socialLinks: socialLinks.slice(0, 4),
     },

@@ -25,3 +25,7 @@ export function shortenNumber(num: number, digits = 1) {
     ? (num / item.value).toFixed(digits).replace(regexp, "").concat(item.symbol)
     : "0";
 }
+
+export function isDevMode() {
+  return process.env.NODE_ENV === "development";
+}

@@ -7,6 +7,7 @@ import { getLatestVersion } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
 import { OG, ORIGIN } from "../theme/constants";
 import { getAppImage } from "../theme/utils/images";
+import { isDevMode } from "../theme/utils/misc";
 
 export const transformPageData: UserConfig["transformPageData"] = (data) => {
   if (data.params?.tag) {
@@ -24,7 +25,7 @@ export const transformPageData: UserConfig["transformPageData"] = (data) => {
     data.description =
       data.title + " in Win7 Simu " + decapitalize(app.description);
     data.frontmatter = { ...data.frontmatter, ...app };
-    data.frontmatter.image = ORIGIN + imageUrl;
+    data.frontmatter.image = isDevMode() ? imageUrl : ORIGIN + imageUrl;
     data.frontmatter.imageData = imageSize(`${cwd()}/public` + imageUrl);
   }
 

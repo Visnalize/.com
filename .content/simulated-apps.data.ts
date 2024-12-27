@@ -29,6 +29,20 @@ export const apps: App[] = [
     videos: ["rSTpru9kxfA"],
   },
   {
+    slug: "bsod",
+    title: "BSOD Customizer",
+    description:
+      "Allows you create and customize your own Blue Screen of Death (BSOD) error messages in Win7 Simu",
+    version: "3.6.0",
+    features: [
+      "Create custom BSOD error messages",
+      "Support various Windows versions",
+      "Customize text, color, and font size",
+      "Export as image",
+    ],
+    videos: [],
+  },
+  {
     slug: "calculator",
     title: "Calculator",
     description:
@@ -39,6 +53,19 @@ export const apps: App[] = [
       'Advanced operations: "sqrt", "pow", "log"',
     ],
     videos: ["QaMVOF3bvgA"],
+  },
+  {
+    slug: "camera",
+    title: "Camera",
+    description:
+      "Allows you take photos and record videos using your device's camera in Win7 Simu",
+    version: "2.14.0",
+    features: [
+      "Take photos and save as jpg",
+      "Record videos (soon)",
+      "Switch between front and back camera",
+    ],
+    videos: [],
   },
   {
     slug: "chrome",
@@ -191,6 +218,18 @@ export const apps: App[] = [
     videos: ["GcPdlyfiqbs", "mM1qkwYVVvY"],
   },
   {
+    slug: "installer",
+    title: "Program Installer",
+    description:
+      "Allows you install any web app on the desktop with provided URL, name, and icon in Win7 Simu",
+    version: "3.6.0",
+    features: [
+      "Install web apps on the desktop",
+      "Customize app name and icon",
+    ],
+    videos: ["7vgx2c8Amrs"],
+  },
+  {
     slug: "programs",
     title: "Programs and Features",
     description:
@@ -216,20 +255,20 @@ export const apps: App[] = [
     ],
   },
   {
-    slug: "recorder",
-    title: "Sound Recorder",
-    description:
-      "Lets you record sound from your microphone and save it as audio files in Win7 Simu",
-    version: "2.15.0",
-    features: ["Record sound", "Save audio files"],
-  },
-  {
     slug: "run",
     title: "Run",
     description:
       "Allows you to quickly open programs, files, folders, and other items in the simulator",
     version: "2.18.0",
     features: ["Open programs", "Open files", "Open folders", "Open URLs"],
+  },
+  {
+    slug: "recorder",
+    title: "Sound Recorder",
+    description:
+      "Lets you record sound from your microphone and save it as audio files in Win7 Simu",
+    version: "2.15.0",
+    features: ["Record sound", "Save audio files"],
   },
   {
     slug: "snipping",
