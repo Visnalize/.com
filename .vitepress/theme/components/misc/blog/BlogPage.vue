@@ -1,13 +1,10 @@
 <template>
-    <h1 class="title">
-        <template v-if="currentTag">Posts with tag "{{ currentTag }}"</template>
-        <template v-else>News and sharing</template>
-    </h1>
-
-    <div class="caption" v-if="!currentTag">
-        Where I share updates, thoughts, insights on various topics. Hope you find helpful and valuable information
-        here.
-    </div>
+    <PageTitle :title='currentTag ? `Posts with tag "${currentTag}"` : "New and sharing"'>
+        <template v-if="!currentTag">
+            Where I share updates, thoughts, insights on various topics.
+            Hope you find helpful and valuable information here.
+        </template>
+    </PageTitle>
 
     <BlogFeatured :post="currentTag ? undefined : latestPost" :tags="tags" :activeTag="currentTag" />
 
@@ -31,6 +28,7 @@ import BlogPost from '@components/misc/blog/BlogPost.vue';
 import { useData } from 'vitepress';
 import { ref } from 'vue';
 import SponsorAd from '../../global/SponsorAd.vue';
+import PageTitle from '../PageTitle.vue';
 
 const [latestPost, ...otherPosts] = posts;
 const data = useData()
@@ -40,18 +38,6 @@ const showAd = ref(!tagPosts.length || tagPosts.length > 3);
 </script>
 
 <style scoped>
-.title {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.caption {
-    margin: auto;
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-}
-
 .blog-ad {
     text-align: center;
     position: relative;

@@ -8,28 +8,20 @@ pageClass: testimonials
 ---
 
 <script setup lang="ts">
+import PageTitle from '@components/misc/PageTitle.vue';
 import UserQuote from '@components/misc/UserQuote.vue';
 import { data as quotes } from './.content/quotes.data';
 </script>
 
-<h1 :class="$style.title">Wall of love</h1>
-<p :class="$style.caption">See what users have to say about Win7 Simu and Brick 1100.</p>
+<PageTitle title="Wall of love">
+    See what users have to say about Win7 Simu and Brick 1100.
+</PageTitle>
 
 <div :class="$style.quotes">
     <UserQuote v-for="quote in quotes" :quote="quote" showDate />
 </div>
 
 <style module>
-.title {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-p.caption {
-    text-align: center;
-    margin: 0 0 3rem;
-}
-
 .quotes {
     display: grid;
     gap: 1.5rem;

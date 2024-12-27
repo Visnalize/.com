@@ -35,7 +35,6 @@ const _post = hasFeaturedPost && computed(() => ({
 .blog-featured {
     display: grid;
     gap: 1.5rem;
-    margin-top: 4rem;
     margin-bottom: 1.5rem;
 }
 

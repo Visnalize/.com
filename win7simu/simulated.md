@@ -6,16 +6,13 @@ comments: false
 pagefind-indexed: false
 ---
 
-<h1 :class="$style.title">
-    Simulated apps
-</h1>
-
-<div :class="$style.caption">
+<PageTitle title="Simulated apps">
     {{ $frontmatter.description }}
-</div>
+</PageTitle>
 
 <script setup lang="ts">
 import { data as apps } from '@/.content/simulated-apps.data';
+import PageTitle from '@components/misc/PageTitle.vue';
 import { getAppImage, transformImage } from '@utils/images';
 
 const transform = (image: string) => transformImage(getAppImage(image), { width: 500, quality: 100 });
@@ -35,19 +32,6 @@ const transform = (image: string) => transformImage(getAppImage(image), { width:
 </div>
 
 <style module>
-.title {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.caption {
-    margin: auto;
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-    margin-bottom: 3rem;
-}
-
 .app-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

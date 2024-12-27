@@ -55,3 +55,20 @@
   aspect-ratio: 3 / 2;
   object-fit: contain;
 }
+
+/**
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/components/vp-doc.css
+ * -------------------------------------------------------------------------- */
+
+.vp-doc h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .vp-doc h1 {
+    font-size: 2.75rem;
+    line-height: 1.25;
+    margin-bottom: 3rem;
+  }
+}
