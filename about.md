@@ -21,9 +21,9 @@ __Visnalize__ is __Visualize__ (not _Visnalize_) with the letter __u__ upside do
 
 The logo is also shamelessly created by myself using MS Paint and eventually on Figma.
 
-## Relive the good old days
+## Recreating nostalgia for entertainment
 
-I am attached to the past, and I believe most of us are, things we grew up with, things we used to cherish, things that made us who we are today. With Visnalize, I have defined a mission: __to relive the good old days__. I want to bring back the nostalgia, with the help of technology, to our daily lives, in a meaningful and entertaining way. If my creations have helped you in any way, don't hesitate to show your support by sharing them with your friends and family, I'm grateful for that.
+I am attached to the past, and I believe most of us are, things we grew up with, things we used to cherish, things that made us who we are today. With Visnalize, I have defined a mission: __to recreate nostalgia for entertainment__. With the help of technology, I want to relive the good old days, bring back the nostalgia to our daily lives, in a meaningful and entertaining way. If my creations have helped you in any way, don't hesitate to show your support by sharing them with your friends and family, I'm grateful for that.
 
 ## Contact
 
