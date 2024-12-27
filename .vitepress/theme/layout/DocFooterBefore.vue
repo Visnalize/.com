@@ -3,7 +3,7 @@
         <div v-if="tags.length > 0" class="blog-tags">
             <div class="tags-title">Tags:</div>
             <div>
-                <BlogTag v-for="tag in tags" :tag="tag" />
+                <BlogTag v-for="tag in tags" :tag="{ name: tag }" />
             </div>
         </div>
     </div>

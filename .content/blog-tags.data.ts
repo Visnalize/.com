@@ -1,14 +1,27 @@
 import { createContentLoader } from "vitepress";
 
-declare const data: string[];
+export interface TagData {
+  name: string;
+  count?: number;
+}
+
+declare const data: TagData[];
 
 export { data };
 
 export default createContentLoader("blog/*.md", {
   transform(rawData) {
-    const uniqueTags = new Set<string[]>(
-      rawData.flatMap((page) => page.frontmatter.tags)
+    const uniqueTags = new Set(
+      rawData.flatMap((page) => page.frontmatter.tags as string[])
     );
-    return Array.from(uniqueTags);
+
+    const tagData: TagData[] = Array.from(uniqueTags).map((tag) => {
+      const pagesWithTag = rawData.filter((page) =>
+        page.frontmatter.tags.includes(tag)
+      );
+      return { name: tag, count: pagesWithTag.length };
+    });
+
+    return tagData;
   },
 });

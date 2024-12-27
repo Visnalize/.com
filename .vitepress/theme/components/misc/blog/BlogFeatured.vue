@@ -3,7 +3,7 @@
         <div>
             <h2>Browse tags</h2>
             <div>
-                <BlogTag v-for="tag in tags" :tag="tag" :active="tag === activeTag" />
+                <BlogTag v-for="tag in tags" :tag="tag" :active="tag.name === activeTag" />
             </div>
         </div>
         <BlogPost v-if="hasFeaturedPost" :post="_post" />
@@ -12,12 +12,13 @@
 
 <script setup lang="ts">
 import { PostData } from '@/.content/blog-posts.data';
+import { TagData } from '@/.content/blog-tags.data';
+import { computed } from 'vue';
 import BlogPost from './BlogPost.vue';
 import BlogTag from './BlogTag.vue';
-import { computed } from 'vue';
 
 interface Props {
-    tags: string[];
+    tags: TagData[];
     post?: PostData;
     activeTag?: string;
 }

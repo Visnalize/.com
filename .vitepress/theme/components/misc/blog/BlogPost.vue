@@ -13,7 +13,7 @@
             <h2>{{ post.title }}</h2>
             <p>{{ post.description }}</p>
             <div class="post-tags">
-                <BlogTag v-for="tag in post.tags" :tag="tag" />
+                <BlogTag v-for="tag in post.tags" :tag="{ name: tag.name }" />
             </div>
         </div>
         <a :href="post.url" class="post-link" :aria-label="'View post: ' + post.title" />

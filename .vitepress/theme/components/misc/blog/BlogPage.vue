@@ -32,8 +32,8 @@ import PageTitle from '../PageTitle.vue';
 
 const [latestPost, ...otherPosts] = posts;
 const data = useData()
-const currentTag = data.params.value?.tag;
-const tagPosts = posts.filter(post => post.tags.includes(currentTag));
+const currentTag = data.params.value?.tag as string;
+const tagPosts = posts.filter(post => post.tags.filter(tag => tag.name === currentTag).length > 0);
 const showAd = ref(!tagPosts.length || tagPosts.length > 3);
 </script>
 

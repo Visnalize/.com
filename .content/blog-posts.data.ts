@@ -1,4 +1,5 @@
 import { createContentLoader } from "vitepress";
+import { TagData } from "./blog-tags.data";
 
 export interface PostData {
   url: string;
@@ -6,7 +7,7 @@ export interface PostData {
   image: string;
   createdAt: number;
   description: string;
-  tags: string[];
+  tags: TagData[];
   badge?: "latest" | "popular";
 }
 
@@ -23,12 +24,16 @@ export default createContentLoader("blog/*.md", {
         const [, title] = page.src.match(/# (.*)/) || [];
         const [, image] = page.src.match(/!\[.*\]\((.*)\)/) || [];
 
-        return {
+        const postData: PostData = {
           url: page.url,
           title,
           image,
-          ...page.frontmatter,
+          createdAt: page.frontmatter.createdAt,
+          description: page.frontmatter.description,
+          tags: page.frontmatter.tags.map((tag: string) => ({ name: tag })),
         };
+
+        return postData;
       });
   },
 });
