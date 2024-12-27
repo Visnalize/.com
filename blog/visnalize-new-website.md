@@ -17,7 +17,7 @@ Hey everyone! As teased in the [previous post](./updates-life-inactivity-project
 
 With a focus on simplicity and clarity, the new home page design aims to provide a better introduction to what Visnalize is all about, and to help you get a glimpse of the projects and content available on the site.
 
-The new design features several sections, including a full-width hero section, dedicated sections for the projects, [Win7 Simu](../win7simu/about.md) and [Brick 1100](../brick1100/about.md), testimonials, latest news, updates, videos, and a contact form at the end. Each section are carefully crafted to provide a seamless browsing experience across different devices, with some animations and transitions to make them more engaging without overwhelming the user.
+The new design features several sections, including a full-width hero section, dedicated sections for the projects, [Win7 Simu](../win7simu/about.md) and [Brick 1100](../brick1100/about.md), testimonials, latest news, updates, videos, and a contact form at the end. Each section is carefully crafted to provide a seamless browsing experience across different devices, with some animations and transitions to make them more engaging without overwhelming the user.
 
 <video playsinline autoplay loop muted controls>
     <source src="./img/visnalize-new-website/visnalize-v2-landing.mp4" type="video/mp4">
@@ -33,7 +33,7 @@ Finding content on the website is much easier now with the enhanced search exper
 
 ### A refreshed blog listing design
 
-I find myself writing more blog posts whenever I have time. It's a great way to share my thoughts, experience, and updates with the community, so I wanted to make sure the blog listing page is visually appealing more than ever.
+I find myself writing more blog posts whenever I have time. It's a great way to share my thoughts, experiences, and updates with the community, so I wanted to make sure the blog listing page is visually appealing more than ever.
 
 The design, as you can already tell, is inspired by the Windows [Sticky Notes](../win7simu/simulated/sticky.md) app.
 
@@ -41,7 +41,7 @@ The design, as you can already tell, is inspired by the Windows [Sticky Notes](.
 
 ### Refined layout, new footer
 
-To maximize the content visibility and discoverability, the new layout features a sidebar on the left side of the page, with a sticky table of contents where applicable. The footer is also redesigned to provide quick access to the important links and information.
+To maximize content visibility and discoverability, the new layout features a sidebar on the left side of the page, with a sticky table of contents where applicable. The footer is also redesigned to provide quick access to important links and information.
 
 ![Refined layout, new footer](./img/visnalize-new-website/visnalize-v2-layout.png)
 
@@ -55,13 +55,17 @@ Win7 Simu simulated app pages, including the listing page and each individual pa
 
 - __New social share options__: on the top of each page, you can find the social share options to easily share the content on your favorite social media platforms, or copy the link to share it elsewhere.
 - __Frictionless ads experience__ while browsing the site: we all know [ads are annoying](./about-the-ads.md), but they support creators and keep things free for everyone. With the new design, I've made sure the ads are less intrusive and blend well with the content.
-- __Comment section is collapsed by default__ to reduce clutter and boost performance. To view the comments, you need to click "Show comments".
+- __The comment section is collapsed by default__ to reduce clutter and boost performance. To view the comments, you need to click "Show comments".
 - __Content images are zoomable__ to provide a better reading experience.
 - Several other bug fixes and enhancements
 
 <SponsorAd />
 
 ## FAQs
+
+- Why the change?
+
+    The old website was great and served its purpose well, but unfortunately, as technology evolves, we are forced to adapt to the changes. Regardless, it's always a good idea to refresh the design and improve the user experience from time to time.
 
 - What happens to the old site?
   
