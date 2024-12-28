@@ -1,10 +1,11 @@
 import { readdirSync, readFileSync } from "fs";
 import matter from "gray-matter";
+import { join } from "path";
 import { cwd } from "process";
 import { PostData } from "./blog-posts.data";
 
 export function getLatestVersion(app: string) {
-  const content = readFileSync(`${cwd()}/${app}/changelog.md`);
+  const content = readFileSync(join(cwd(), app, "changelog.md"));
   const [, version] = content.toString().match(/###\s*(\d+\.\d+\.\d+)/) || [];
   return version;
 }

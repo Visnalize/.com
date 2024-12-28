@@ -1,8 +1,9 @@
 import { readFileSync, writeFileSync } from "fs";
+import { join } from "path";
 
 const cache = {
   init(key: string) {
-    return process.cwd() + `/.content/${key}.data.cache`;
+    return join(process.cwd(), ".content", `${key}.data.cache`);
   },
 
   read(cacheFile: string) {

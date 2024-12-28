@@ -1,6 +1,7 @@
 import { readFileSync } from "fs";
 import markdownItBlockEmbed from "markdown-it-block-embed";
 import markdownItTasklists from "markdown-it-task-lists";
+import { join } from "path";
 import { fileURLToPath } from "url";
 import { DefaultTheme, defineConfig, UserConfigFn } from "vitepress";
 import { pagefindPlugin } from "vitepress-plugin-pagefind";
@@ -14,8 +15,8 @@ import markdownItImage from "./plugins/md-image";
 // https://vitepress.dev/reference/site-config
 const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
   const isDev = mode === "development"; // https://vite.dev/config/#conditional-config
-  const redirects = readFileSync(process.cwd() + "/public/_redirects", "utf-8");
-  const redirectSources = redirects
+  const redirectsFile = join(process.cwd(), "public", "_redirects");
+  const redirectSources = readFileSync(redirectsFile, "utf-8")
     .toString()
     .split("\n")
     .map((redirect) => redirect.split(" ")[0]);
@@ -85,7 +86,7 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
       config: (md) => {
         md.use(markdownItBlockEmbed);
         md.use(markdownItTasklists);
-        md.use(markdownItImage({ publicDir: process.cwd() + "/public" }));
+        md.use(markdownItImage({ publicDir: join(process.cwd(), "public") }));
       },
     },
 
