@@ -76,13 +76,17 @@ There are currently 2 ways:
 
 ## 3. Miscellaneous
 
-### Can you remove the ads?
+### Why are there ads in the simulator?
 
-No, I'm afraid. A lot of time and effort have been spent to develop and maintain this simulator, it even costs me a fair amount of money to maintain the cloud services to retain your user accounts and settings within. However, there is a small monthly subscription plan available with  to which you can subscribe, to enjoy the app ad-free and support me to keep improving it and bring you more cool features. For the web version, you can disable the ads by becoming a patron on [Patreon](https://www.patreon.com/visnalize) at the same price.
+Because a lot of time and effort have been spent to develop and maintain this simulator, and there are also costs to maintain the server and cloud services to retain your user accounts and settings within. However, there is a small monthly/yearly subscription plan to which you can subscribe, to enjoy the app ad-free and support the developer.
+
+### Why subscription and not one-time payment?
+
+Because the server costs are recurring, and the subscription model is more sustainable for me to dedicate my time to developing and maintaining the simulator in the long run. Though, you can cancel the subscription at any time.
 
 ### Can this simulator work on Android versions earlier than 6.0?
 
-No, I'm afraid. And there is no way to support Android versions older than 6.0 due to certain technical limitations that cannot be resolved.
+Unfortunately, no. And there is no way to support Android versions older than 6.0 due to certain technical limitations that cannot be resolved.
 
 ### The simulator only shows a black screen on my device. What should I do?
 

@@ -15,10 +15,10 @@ outline: false
 
 As a simulator of Windows 7, it attempts to simulate every aspect of Windows 7, from the most familiar programs of Windows 7 such as Calculator, Command Prompt, the striking glass effect of the Aero themes, to the exclusive Desktop Gadgets only available in Windows Vista and 7. The simulator also comes with some other cool and nostalgic Windows themes designed on the core of Windows 7 such as Windows 2000, Windows XP, Windows 8...
 
-The simulator is in active development and new features are constantly rolled out. If you have suggestions or feedback, please feel free to write to us at [hey@visnalize.com](mailto:hey@visnalize.com).
+There's also an exclusive [Theme Studio](./themestudio.md) app that allows users to create their own custom themes to transform Win7 Simu into their unique creation, and share with others.
 
 ::: tip Tip
-Refer to [Changelog](./changelog.md) for a complete list of available features through versions.
+Refer to the [Simulated apps](./simulated.md) page for a list of all available apps. For a list of features added through versions, refer to [Changelog](./changelog.md).
 :::
 
 On August 28, 2021, a web version of the app was released. It is accessible for those who do not own an Android device. The graphics, interface, and most of the features are identical to the Android app, except for some, which are exclusive to Android and cannot be replicated for the web due to technical constraints. A comparison of some key features is listed as below:

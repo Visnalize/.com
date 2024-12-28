@@ -7,6 +7,10 @@ social: false
 
 # Privacy Policy
 
+__TL;DR__: We do not collect personal information directly. Third-party services we use may collect data to identify you. We do not use cookies but third-party services might. We do not store log data. We do not collect information from children under 13. Our Privacy Policy may change, so please review it periodically. Contact us at [hey@visnalize.com](mailto:hey@visnalize.com) for any questions or suggestions.
+
+----
+
 Visnalize ("we", "us", "our") built the Win7 Simu app as an Ad-supported app. This SERVICE is provided by Visnalize at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
