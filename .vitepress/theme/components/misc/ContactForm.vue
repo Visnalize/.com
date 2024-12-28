@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="send">
+    <form @submit.prevent="send" :class="{ animated: animateProp ?? false }">
         <Motion :variants="variants(0)" :animate="animate">
             <input type="text" name="subject" placeholder="Subject" required />
         </Motion>
@@ -43,11 +43,14 @@ const send = ({ target }: Event) => {
 
 <style scoped>
 form {
-    max-width: 680px;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.animated {
+    max-width: 680px;
 }
 
 form>div:last-child {

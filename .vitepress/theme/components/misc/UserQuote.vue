@@ -58,7 +58,9 @@ defineProps<{
 }
 
 .author img {
+    background: var(--vp-c-default-1);
     border-radius: 0.5rem;
+    font-size: 0.75rem;
 }
 
 .metadata {
