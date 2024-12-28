@@ -3,7 +3,7 @@
     "**/*.ts",
     "**/*.vue",
     "**/*.md",
-    ".content/*",
+    ".content/**/*",
     ".vitepress/theme/**/*",
     ".vitepress/config/**/*",
     ".vitepress/plugins/**/*"

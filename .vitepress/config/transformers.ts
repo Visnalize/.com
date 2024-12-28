@@ -1,7 +1,9 @@
+import { readFileSync } from "fs";
 import matter from "gray-matter";
 import imageSize from "image-size";
+import { join } from "path";
 import { cwd } from "process";
-import { UserConfig } from "vitepress";
+import { PageData, UserConfig } from "vitepress";
 import decapitalize from "voca/decapitalize";
 import { getLatestVersion } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
@@ -9,13 +11,18 @@ import { OG, ORIGIN } from "../theme/constants";
 import { getAppImage } from "../theme/utils/images";
 import { isDevMode } from "../theme/utils/misc";
 
-export const transformPageData: UserConfig["transformPageData"] = (data) => {
+// https://vitepress.dev/reference/site-config#transformpagedata
+export const transformPageData: UserConfig["transformPageData"] = (
+  data: PageData & Record<string, any>
+) => {
+  // blog listing tag page
   if (data.params?.tag) {
     const { tag } = data.params;
     data.title = `Posts with tag "${tag}"`;
     data.description = `Here you can find all posts with the tag "${tag}". Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
   }
 
+  // simulated app page
   if (data.params?.app) {
     const { app: slug } = data.params;
     const app = apps.find((a) => a.slug === slug);
@@ -26,7 +33,13 @@ export const transformPageData: UserConfig["transformPageData"] = (data) => {
       data.title + " in Win7 Simu " + decapitalize(app.description);
     data.frontmatter = { ...data.frontmatter, ...app };
     data.frontmatter.image = isDevMode() ? imageUrl : ORIGIN + imageUrl;
-    data.frontmatter.imageData = imageSize(`${cwd()}/public` + imageUrl);
+    data.frontmatter.imageData = imageSize(join(cwd(), "public", imageUrl));
+    try {
+      const filePath = join(cwd(), ".content", "simulated-apps", slug + ".md");
+      data.frontmatter.markdown = readFileSync(filePath, "utf-8");
+    } catch (e) {
+      // file not available, ignore
+    }
   }
 
   if (data.relativePath.match(/(win7simu|brick1100)\/about/)) {

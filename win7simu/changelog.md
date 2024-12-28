@@ -402,7 +402,7 @@ __Android__
 ### 2.21.0 (Jun 10, 2022)
 
 - You can now change theme color (Windows 7 aero themes only)
-- Added dummy Windows Installer
+- Added dummy [Windows Installer](./simulated/dummy-installer.md)
 - Improved translations for: Japanese, Polish, Portuguese and Russian. Huge thanks to the contributors
 - Fixed account creation issue
 
@@ -425,7 +425,7 @@ __Android__
 
 ### 2.18.0 (Oct 15, 2021)
 
-- Added Run
+- Added [Run](./simulated/run.md)
 - Added [Task Manager](./simulated/taskmgr.md)
 - Added Taskbar properties
 
@@ -513,7 +513,7 @@ __Android__
 
 ### 2.5.0 (Apr 29, 2021)
 
-- Added Mouse
+- Added [Mouse](./simulated/mouse.md)
 - Fixed battery missing from taskbar
 
 ### 2.4.0 (Apr 15, 2021)

@@ -32,7 +32,7 @@ export const apps: App[] = [
     slug: "bsod",
     title: "BSOD Customizer",
     description:
-      "Allows you create and customize your own Blue Screen of Death (BSOD) error messages in Win7 Simu",
+      "Allows you to create and customize your own Blue Screen of Death (BSOD) error messages in Win7 Simu",
     version: "3.6.0",
     features: [
       "Create custom BSOD error messages",
@@ -127,21 +127,6 @@ export const apps: App[] = [
     ],
   },
   {
-    slug: "gadgets",
-    title: "Windows Gadgets",
-    description:
-      "Brings you various gadgets that you can use to enhance your desktop experience in Win7 Simu, such as the Clock, Calendar, Weather, and more",
-    version: "2.6.0",
-    features: [
-      "Clock gadget",
-      "Calendar gadget",
-      "Weather gadget",
-      "Currency gadget",
-      "Battery gadget",
-    ],
-    videos: ["-DZ28VjV3kQ"],
-  },
-  {
     slug: "ie",
     title: "Internet Explorer",
     description:
@@ -162,12 +147,18 @@ export const apps: App[] = [
     ],
   },
   {
-    slug: "media-player",
-    title: "Windows Media Player",
+    slug: "mouse",
+    title: "Mouse",
     description:
-      "Allows you to play music, videos, and photos in various formats supported by Win7 Simu, in a simple and efficient manner",
-    version: "1.0.0",
-    features: ["Play music", "Play videos", "View photos"],
+      "Allows you to customize the mouse settings in Win7 Simu, such as changing the cursor scheme, enabling pointer shadow, and more",
+    version: "2.5.0",
+    features: [
+      "Change the cursor scheme",
+      "Enable or disable pointer shadow",
+      "Show or hide the pointer trails",
+      "Show, hide, or highlight the pointer",
+    ],
+    videos: ["kXuxeiK1_M8"],
   },
   {
     slug: "minesweeper",
@@ -221,7 +212,7 @@ export const apps: App[] = [
     slug: "installer",
     title: "Program Installer",
     description:
-      "Allows you install any web app on the desktop with provided URL, name, and icon in Win7 Simu",
+      "Allows you to install any web app on the desktop with provided URL, name, and icon in Win7 Simu",
     version: "3.6.0",
     features: [
       "Install web apps on the desktop",
@@ -263,14 +254,6 @@ export const apps: App[] = [
     features: ["Open programs", "Open files", "Open folders", "Open URLs"],
   },
   {
-    slug: "recorder",
-    title: "Sound Recorder",
-    description:
-      "Lets you record sound from your microphone and save it as audio files in Win7 Simu",
-    version: "2.15.0",
-    features: ["Record sound", "Save audio files"],
-  },
-  {
     slug: "snipping",
     title: "Snipping Tool",
     description:
@@ -292,6 +275,14 @@ export const apps: App[] = [
     version: "2.12.0",
     features: ["Classic original gameplay", "Multiple game modes"],
     videos: ["kfbd3NVkmbs"],
+  },
+  {
+    slug: "recorder",
+    title: "Sound Recorder",
+    description:
+      "Lets you record sound from your microphone and save it as audio files in Win7 Simu",
+    version: "2.15.0",
+    features: ["Record sound", "Save audio files"],
   },
   {
     slug: "sticky",
@@ -321,6 +312,33 @@ export const apps: App[] = [
     ],
   },
   {
+    slug: "gadgets",
+    title: "Windows Gadgets",
+    description:
+      "Brings you various gadgets that you can use to enhance your desktop experience in Win7 Simu, such as the Clock, Calendar, Weather, and more",
+    version: "2.6.0",
+    features: [
+      "Clock gadget",
+      "Calendar gadget",
+      "Weather gadget",
+      "Currency gadget",
+      "Battery gadget",
+    ],
+    videos: ["-DZ28VjV3kQ"],
+  },
+  {
+    slug: "dummy-installer",
+    title: "Windows Installer",
+    description:
+      "Mimics the installation process of the Windows operating system, it is a dummy installer and does not install any software",
+    version: "2.21.0",
+    features: [
+      "Display a dummy Windows installer after boot",
+      "Simulate installation progress",
+    ],
+    videos: ["C4-npiwPNbQ"],
+  },
+  {
     slug: "wmc",
     title: "Windows Media Center",
     description:
@@ -334,6 +352,14 @@ export const apps: App[] = [
       "View media library and details",
     ],
     videos: ["3pOc_3x4CQA"],
+  },
+  {
+    slug: "media-player",
+    title: "Windows Media Player",
+    description:
+      "Allows you to play music, videos, and photos in various formats supported by Win7 Simu, in a simple and efficient manner",
+    version: "1.0.0",
+    features: ["Play music", "Play videos", "View photos"],
   },
   {
     slug: "wordpad",

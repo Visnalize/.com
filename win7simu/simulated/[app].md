@@ -2,12 +2,14 @@
 
 <script setup lang="ts">
 import { transformImage } from '@utils/images';
+import MarkdownIt from 'markdown-it';
 import { useData } from 'vitepress';
 import decapitalize from 'voca/decapitalize';
 import { onMounted } from 'vue';
 
 const { frontmatter } = useData();
-const { title, image, imageData } = frontmatter.value
+const { title, image, imageData, markdown } = frontmatter.value
+
 const transformWidth = 1200;
 const imageRatio = imageData?.width / imageData?.height;
 const imageProps = {
@@ -37,6 +39,8 @@ As Win7 Simu aims to simulate the Windows 7 experience as closely as possible, {
         {{ feature }}
     </li>
 </ul>
+
+<div v-if="markdown" v-html="new MarkdownIt().render(markdown)" />
 
 ## Check it out in action
 
