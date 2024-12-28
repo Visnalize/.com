@@ -1,24 +1,19 @@
 import { DefaultTheme } from "vitepress";
 import { getBlogFiles } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
+import { Brick1100, Resources, Win7Simu } from "./sitelinks";
 
-const sidebar: DefaultTheme.Sidebar = {
+const sidebar: DefaultTheme.Config["sidebar"] = {
   "/win7simu/": [
     {
-      text: "Win7 Simu",
-      link: "/win7simu/about",
-      items: [
-        { text: "Changelog", link: "/win7simu/changelog" },
-        { text: "FAQs", link: "/win7simu/faq" },
-        { text: "Privacy Policy", link: "/win7simu/privacy" },
-      ],
+      ...Win7Simu.Index,
+      items: [Win7Simu.Changelog, Win7Simu.Faq, Win7Simu.Privacy],
     },
     {
       items: [
-        { text: "Keyboard shortcuts", link: "/win7simu/keyboard-shortcuts" },
+        Win7Simu.Shortcuts,
         {
-          text: "Simulated apps",
-          link: "/win7simu/simulated",
+          ...Win7Simu.Simulated,
           collapsed: true,
           items: apps.map((app) => ({
             text: app.title,
@@ -31,7 +26,7 @@ const sidebar: DefaultTheme.Sidebar = {
       text: "Theme Studio",
       collapsed: false,
       items: [
-        { text: "Introduction", link: "/win7simu/themestudio" },
+        Win7Simu.ThemeStudioIntro,
         { text: "Getting started", link: "/win7simu/themestudio/quick-guide" },
         {
           text: "In-depth guide",
@@ -43,23 +38,15 @@ const sidebar: DefaultTheme.Sidebar = {
   ],
   "/brick1100/": [
     {
-      text: "Brick 1100",
-      link: "/brick1100/about",
+      ...Brick1100.Index,
       items: [
-        { text: "Changelog", link: "/brick1100/changelog" },
-        { text: "Privacy Policy", link: "/brick1100/privacy" },
-        {
-          text: "Feature requests",
-          link: "https://feedback.userreport.com/f5469bcf-5bce-464f-a88e-6f177c8fa8b7/#ideas/popular",
-        },
+        Brick1100.Changelog,
+        Brick1100.Privacy,
+        Brick1100.FeatureRequests,
       ],
     },
     {
-      items: [
-        { text: "Games", link: "/brick1100/games" },
-        { text: "Deep Links", link: "/brick1100/deep-links" },
-        { text: "Builders", link: "/brick1100/builders" },
-      ],
+      items: [Brick1100.Games, Brick1100.DeepLinks, Brick1100.Builders],
     },
   ],
   "/blog/": getBlogFiles()
@@ -68,10 +55,7 @@ const sidebar: DefaultTheme.Sidebar = {
   "/resources/": [
     {
       text: "Resources",
-      items: [
-        { text: "Open-source tools", link: "/resources/tools" },
-        { text: "Web desktops", link: "/resources/web-desktops" },
-      ],
+      items: [Resources.Tools, Resources.WebDesktops],
     },
   ],
 };

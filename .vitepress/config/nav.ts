@@ -1,55 +1,54 @@
 import { DefaultTheme } from "vitepress";
+import {
+  AboutVisnalize,
+  Brick1100,
+  Resources,
+  Testimonials,
+  Win7Simu,
+} from "./sitelinks";
 
-const navItems: DefaultTheme.NavItem[] = [
+const navItems: DefaultTheme.Config["nav"] = [
   {
     text: "Win7 Simu",
+    activeMatch: "^/win7simu/",
     items: [
-      { text: "About", link: "/win7simu/about" },
-      { text: "Changelog", link: "/win7simu/changelog" },
-      { text: "FAQs", link: "/win7simu/faq" },
-      { text: "Privacy Policy", link: "/win7simu/privacy" },
+      Win7Simu.About,
+      Win7Simu.Changelog,
+      Win7Simu.Faq,
+      Win7Simu.Privacy,
       {
         text: "Guides",
-        items: [
-          { text: "Keyboard shortcuts", link: "/win7simu/keyboard-shortcuts" },
-          { text: "Simulated apps", link: "/win7simu/simulated" },
-          { text: "Theme Studio", link: "/win7simu/themestudio" },
-        ],
+        items: [Win7Simu.Shortcuts, Win7Simu.Simulated, Win7Simu.ThemeStudio],
       },
     ],
   },
   {
     text: "Brick 1100",
+    activeMatch: "^/brick1100/",
     items: [
-      { text: "About", link: "/brick1100/about" },
-      { text: "Changelog", link: "/brick1100/changelog" },
-      { text: "Privacy Policy", link: "/brick1100/privacy" },
-      {
-        text: "Feature requests",
-        link: "https://feedback.userreport.com/f5469bcf-5bce-464f-a88e-6f177c8fa8b7/#ideas/popular",
-      },
+      Brick1100.About,
+      Brick1100.Changelog,
+      Brick1100.Privacy,
+      Brick1100.FeatureRequests,
       {
         text: "Guides",
-        items: [
-          { text: "Games", link: "/brick1100/games" },
-          { text: "Deep Links", link: "/brick1100/deep-links" },
-          { text: "Builders", link: "/brick1100/builders" },
-        ],
+        items: [Brick1100.Games, Brick1100.DeepLinks, Brick1100.Builders],
       },
     ],
   },
-  { text: "Blog", link: "/blog" },
+  {
+    text: "Blog",
+    link: "/blog",
+    activeMatch: "^/blog",
+  },
   {
     text: "More",
     items: [
-      { text: "About Visnalize", link: "/about" },
-      { text: "Wall of love", link: "/testimonials" },
+      AboutVisnalize,
+      Testimonials,
       {
         text: "Resources",
-        items: [
-          { text: "Open-source tools", link: "/resources/tools" },
-          { text: "Web desktops", link: "/resources/web-desktops" },
-        ],
+        items: [Resources.Tools, Resources.WebDesktops],
       },
     ],
   },

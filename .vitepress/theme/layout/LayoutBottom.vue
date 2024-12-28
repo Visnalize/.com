@@ -19,30 +19,27 @@
                     <div class="nav-group">
                         <div class="group-title">Win7 Simu</div>
                         <ul class="group-list">
-                            <li><a href="/win7simu/about">About</a></li>
-                            <li><a href="/win7simu/changelog">Changelog</a></li>
-                            <li><a href="/win7simu/simulated">Simulated apps</a></li>
-                            <li><a href="/win7simu/themestudio">Theme Studio</a></li>
+                            <li v-for="{ link, text } in win7Links" :key="text">
+                                <a :href="link">{{ text }}</a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="nav-group">
                         <div class="group-title">Brick 1100</div>
                         <ul class="group-list">
-                            <li><a href="/brick1100/about">About</a></li>
-                            <li><a href="/brick1100/changelog">Changelog</a></li>
-                            <li><a href="https://feedback.userreport.com/f5469bcf-5bce-464f-a88e-6f177c8fa8b7/#ideas/popular"
-                                    class="vp-external-link-icon">Feature requests</a></li>
-                            <li><a href="/brick1100/builders">Builders</a></li>
+                            <li v-for="{ link, text } in brickLinks" :key="text">
+                                <a :href="link">{{ text }}</a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="nav-group">
                         <div class="group-title">Visnalize</div>
                         <ul class="group-list">
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/testimonials">Wall of love</a></li>
+                            <li v-for="{ link, text } in visnalizeLinks" :key="text">
+                                <a :href="link">{{ text }}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -55,10 +52,15 @@
 </template>
 
 <script setup lang="ts">
+import { About, Blog, Brick1100, Testimonials, Win7Simu } from '@/.vitepress/config/sitelinks';
 import socialLinks from '@/.vitepress/config/social';
 import { useSidebar } from 'vitepress/theme';
 
 const { hasSidebar } = useSidebar()
+
+const win7Links = [Win7Simu.About, Win7Simu.Changelog, Win7Simu.Simulated, Win7Simu.ThemeStudio]
+const brickLinks = [Brick1100.About, Brick1100.Changelog, Brick1100.FeatureRequests, Brick1100.Builders]
+const visnalizeLinks = [About, Blog, Testimonials]
 </script>
 
 <style scoped>
