@@ -14,6 +14,14 @@ image: https://image.social/get?url=visnalize.com/win7simu/changelog.html
 
 ## 2024
 
+### 3.16.0 (Dec 28, 2024)
+
+- New features for [Windows Media Center](./simulated/wmc.md):
+  - Added Media Library settings (you can now select folders for media search, or upload files directly in the media folders)
+  - Added support for RTL languages
+  - Added First Run screen as an easter egg
+- Bug fixes and improvements
+
 ### 3.15.0 (Oct 31, 2024)
 
 - [Windows Media Center](./simulated/wmc.md) slide shows can now be paused/stopped
