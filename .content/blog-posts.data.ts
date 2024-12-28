@@ -23,14 +23,14 @@ export default createContentLoader("blog/*.md", {
       .map((page) => {
         const [, title] = page.src.match(/# (.*)/) || [];
         const [, image] = page.src.match(/!\[.*\]\((.*)\)/) || [];
+        const { tags, ...otherData } = page.frontmatter as PostData;
 
         const postData: PostData = {
           url: page.url,
           title,
           image,
-          createdAt: page.frontmatter.createdAt,
-          description: page.frontmatter.description,
           tags: page.frontmatter.tags.map((tag: string) => ({ name: tag })),
+          ...otherData,
         };
 
         return postData;
