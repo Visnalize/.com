@@ -48,7 +48,14 @@ const navItems: DefaultTheme.Config["nav"] = [
       Testimonials,
       {
         text: "Resources",
-        items: [Resources.Tools, Resources.WebDesktops],
+        items: [
+          Resources.Tools,
+          Resources.WebDesktops,
+          {
+            ...Resources.Index,
+            text: "More...",
+          },
+        ],
       },
     ],
   },

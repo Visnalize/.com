@@ -6,6 +6,8 @@ outline: false
 
 # Web desktops
 
+Web desktops are web applications that simulate the look and feel of traditional desktop operating systems. They provide a familiar environment for users to interact with applications, files, and settings, all within a web browser.
+
 Below is a curated list of apps and portfolios that mimic the appearance and behavior of desktop operating systems, similar to how [Win7 Simu](../win7simu/about.md) works.
 
 ::: info Note

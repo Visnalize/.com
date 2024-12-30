@@ -52,10 +52,21 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
   "/blog/": getBlogFiles()
     .sort((a, b) => b.createdAt - a.createdAt)
     .map((file) => ({ text: file.title, link: file.url })),
-  "/resources/": [
+  "/resources": [
     {
-      text: "Resources",
-      items: [Resources.Tools, Resources.WebDesktops],
+      ...Resources.Index,
+      items: [
+        Resources.Tools,
+        Resources.WebDesktops,
+        {
+          text: "Free stock image sites",
+          link: "/resources/stock-image-sites",
+        },
+        {
+          text: "Free online image tools",
+          link: "/resources/online-image-tools",
+        },
+      ],
     },
   ],
 };

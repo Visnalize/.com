@@ -15,7 +15,7 @@
                     <Motion :variants="headerVariants(2)" :animate="animate" class="stats">
                         <span>{{ shortenNumber(stats.subscriberCount) }} subscribers</span>
                         <span>•</span>
-                        <span>{{ stats.videoCount || '63' }} videos</span>
+                        <span>{{ stats.videoCount || 0 }} videos</span>
                     </Motion>
                     <HomeChannelSubscribe :variants="headerVariants(3)" :animate="animate" class="subscribe-desktop"
                         :href="channelUrl" />

@@ -79,6 +79,10 @@ export const Brick1100 = {
 } satisfies Record<string, Link>;
 
 export const Resources = {
+  Index: {
+    text: "Resources",
+    link: "/resources",
+  },
   Tools: {
     text: "Open-source tools",
     link: "/resources/tools",

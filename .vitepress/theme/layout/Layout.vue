@@ -34,9 +34,10 @@ const route = useRoute()
 const attachZoom = () => {
     let selector: ZoomSelector = null;
     const isBlogPost = route.path.startsWith('/blog/') && !route.path.includes('/tag');
+    const isResource = route.path.startsWith('/resources/');
     const isThemeStudio = /^\/win7simu\/themestudio\/?/.test(route.path);
 
-    if (isBlogPost || isThemeStudio) {
+    if (isBlogPost || isResource || isThemeStudio) {
         selector = '.main img';
     } else {
         selector = '[data-zoomable]';
