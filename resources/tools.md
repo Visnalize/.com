@@ -7,6 +7,8 @@ outline: false
 
 # Tools
 
+![Visnalize website in Macbook](./assets/tools/cover.webp)
+
 Below is a list of free and open-source tools and utilities built by Visnalize. If you have any suggestions or feedback, please feel free to comment below.
 
 | Tool | Description | Source code |
