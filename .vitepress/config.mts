@@ -26,7 +26,7 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
     title: "Visnalize",
 
     description:
-      "Author of Win7 Simu and Brick 1100. On a mission to relive the good old days with simulation apps.",
+      "Author of Win7 Simu and Brick 1100. On a mission to relive the good old days with retro apps.",
 
     sitemap: {
       hostname: "https://visnalize.com",
@@ -37,6 +37,8 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
     lastUpdated: true,
 
     ignoreDeadLinks: redirectSources,
+
+    assetsDir: "assets",
 
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config

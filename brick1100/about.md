@@ -1,6 +1,6 @@
 ---
 title: What is Brick 1100?
-description: A simulation of the Nokia 1100 mobile phone. Experience it on your smartphone/web browser
+description: An Android/iOS app that transforms your smartphone into a Nokia 1100 by providing a simulation of the phone's interface and features.
 aside: right
 outline: false
 ---
