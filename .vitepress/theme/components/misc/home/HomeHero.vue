@@ -135,25 +135,20 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 
 .section-right {
     display: none;
-    flex-direction: column;
-    gap: 5vh;
-    position: relative;
-}
-
-.section-right>div {
-    flex: 1;
 }
 
 .section-right button {
     width: 100%;
-    height: 100%;
+    height: 15rem;
+    max-width: 600px;
     background: rgba(0, 0, 0, 0.1);
+    color: var(--vp-c-bg);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.75em;
     border-radius: 1rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     transition: 0.2s;
 }
@@ -194,7 +189,7 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     .section-left {
         text-align: right;
         align-items: flex-end;
-        justify-content: space-between;
+        gap: 12rem;
     }
 
     .section-left p {
@@ -203,12 +198,10 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 
     .section-right {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
         background: var(--vp-c-text-1);
-    }
-
-    .section-right button {
-        font-size: 2.5rem;
-        color: var(--vp-c-bg);
     }
 
     .section-right button>img {
