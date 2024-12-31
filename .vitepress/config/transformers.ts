@@ -59,11 +59,10 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   const { content } = matter.read(data.filePath);
 
   let firstImage = content.match(/!\[.*?\]\((.*?)\)/)?.[1];
-  if (!firstImage || firstImage.startsWith(".")) {
-    firstImage = await getOgImage(transformedPath);
-  }
+  firstImage = firstImage?.startsWith(".") ? undefined : firstImage;
 
-  const metaImage = data.frontmatter.image || firstImage;
+  const metaImage =
+    data.frontmatter.image || firstImage || (await getOgImage(transformedPath));
 
   data.frontmatter.head ??= [];
   data.frontmatter.head.push(
