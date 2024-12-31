@@ -34,6 +34,10 @@ declare const data: {
 export { data };
 
 const fetchData = (endpoint: string, params: Record<string, string>) => {
+  if (!apiKey) {
+    throw new Error("YouTube API key is missing.");
+  }
+
   const searchParams = new URLSearchParams({ key: apiKey, ...params });
   return fetch(`${apiUrl}/${endpoint}?${searchParams}`, {
     referrer: "https://visnalize.com",

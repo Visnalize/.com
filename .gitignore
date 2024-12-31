@@ -3,3 +3,4 @@ cache
 dist
 .env
 *.cache*
+ogimage

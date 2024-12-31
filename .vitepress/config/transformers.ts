@@ -7,12 +7,13 @@ import { PageData, UserConfig } from "vitepress";
 import decapitalize from "voca/decapitalize";
 import { getLatestVersion } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
-import { OG, ORIGIN } from "../theme/constants";
+import getOgImage from "../server/ogimage";
+import { ORIGIN } from "../theme/constants";
 import { getAppImage } from "../theme/utils/images";
 import { isDevMode } from "../theme/utils/misc";
 
 // https://vitepress.dev/reference/site-config#transformpagedata
-export const transformPageData: UserConfig["transformPageData"] = (
+export const transformPageData: UserConfig["transformPageData"] = async (
   data: PageData & Record<string, any>
 ) => {
   // blog listing tag page
@@ -58,7 +59,7 @@ export const transformPageData: UserConfig["transformPageData"] = (
   const { content } = matter.read(data.filePath);
   const firstImage = content.match(/!\[.*?\]\((.*?)\)/)?.[1];
   const metaImage =
-    data.frontmatter.image || firstImage || `${OG}/${transformedPath}`;
+    data.frontmatter.image || firstImage || (await getOgImage(transformedPath));
 
   data.frontmatter.head ??= [];
   data.frontmatter.head.push(
