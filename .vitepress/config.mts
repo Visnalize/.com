@@ -40,6 +40,8 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
 
     assetsDir: "assets",
 
+    srcExclude: ["**/README.md"],
+
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
 
