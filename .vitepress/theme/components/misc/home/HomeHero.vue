@@ -189,7 +189,7 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     .section-left {
         text-align: right;
         align-items: flex-end;
-        gap: 12rem;
+        justify-content: space-between;
     }
 
     .section-left p {
@@ -246,6 +246,13 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 @media (min-width: 1920px) {
     .section-right button {
         font-size: 4rem;
+    }
+}
+
+@media (min-height: 800px) {
+    .section-left {
+        justify-content: center;
+        gap: 16rem;
     }
 }
 </style>
