@@ -1,5 +1,6 @@
 <template>
-    <DefaultTheme.Layout>
+    <NotFound v-if="page.isNotFound" />
+    <DefaultTheme.Layout v-else>
         <template #aside-bottom>
             <AsideBottom />
         </template>
@@ -20,7 +21,7 @@
 
 <script setup lang="ts">
 import mediumZoom, { ZoomSelector } from 'medium-zoom';
-import { useRoute } from 'vitepress';
+import { useData, useRoute } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import { nextTick, onMounted, watch } from 'vue';
 import AsideBottom from './AsideBottom.vue';
@@ -28,8 +29,10 @@ import DocAfter from './DocAfter.vue';
 import DocBefore from './DocBefore.vue';
 import DocFooterBefore from './DocFooterBefore.vue';
 import LayoutBottom from './LayoutBottom.vue';
+import NotFound from './NotFound.vue';
 
 const route = useRoute()
+const { page } = useData()
 
 const attachZoom = () => {
     let selector: ZoomSelector = null;
