@@ -18,6 +18,13 @@ export interface Quote {
 
 const quotes: Quote[] = [
   {
+    author: "Ian Martinez",
+    date: "January 1, 2025",
+    app: "win7simu",
+    content:
+      "Thank you for creating this amazing experience for Windows 7 enthusiasts. I'm excited to see how this project evolves.",
+  },
+  {
     image:
       "https://play-lh.googleusercontent.com/a-/ALV-UjXLmTtoPW0sRMoI54SkWWdQQ5_nQ8hXhCPf0pY8kSMqSEwsdvgv=s50",
     author: "Kevin Calderón",

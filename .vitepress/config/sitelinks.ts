@@ -43,7 +43,7 @@ export const Win7Simu = {
     link: "/win7simu/simulated",
   },
   ThemeStudio,
-  ThemeStudioIntro: ThemeStudio,
+  ThemeStudioIntro: { ...ThemeStudio, text: "Introduction" },
 } satisfies Record<string, Link>;
 
 export const Brick1100 = {
