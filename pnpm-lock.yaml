@@ -75,8 +75,8 @@ importers:
         specifier: ^3.5.13
         version: 3.5.13
       vue3-disqus:
-        specifier: ^1.0.6
-        version: 1.0.6
+        specifier: ^1.0.7
+        version: 1.0.7
       vue3-social-sharing:
         specifier: ^1.1.2
         version: 1.1.2(vue@3.5.13)
@@ -1150,8 +1150,8 @@ packages:
     peerDependencies:
       vue: ^3.0.0
 
-  vue3-disqus@1.0.6:
-    resolution: {integrity: sha512-IfYHMqVklVEZVOUuQo3pjD/+I40ajph4mMfiBZdxHnGvuFO+ZEB3QjSF8e6VVVYcMWf5Tvbl6AfdLdwwRzdW5w==}
+  vue3-disqus@1.0.7:
+    resolution: {integrity: sha512-6aidR9tU9lBbB8Ib8zZ0+wQks7a9X7g7vzuqwLvcf+PKTzumxST9UbNXRf8/D2KprChf5qEnt2qtf9Bev6AMUw==}
 
   vue3-social-sharing@1.1.2:
     resolution: {integrity: sha512-rTt0EZopiPH17jW561WdvFEoC91zbBFwHTwGqxT9kmEKLRpIk/UH5zixm33RgYR2iI24qeufXlsCIjjQJ+BIeg==}
@@ -2271,7 +2271,7 @@ snapshots:
     dependencies:
       vue: 3.5.13
 
-  vue3-disqus@1.0.6:
+  vue3-disqus@1.0.7:
     dependencies:
       vue: 3.5.13
     transitivePeerDependencies:
