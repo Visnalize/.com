@@ -7,7 +7,7 @@
     "dev": "vuepress dev src",
     "build": "vuepress build src",
     "postbuild": "node scripts/redirects.js",
-    "deploy": "gh-pages -d src/.vuepress/dist -b main",
+    "deploy": "gh-pages -d src/.vuepress/dist -b v1-deployment",
     "deploybuild": "yarn build && yarn deploy"
   },
   "license": "MIT",
