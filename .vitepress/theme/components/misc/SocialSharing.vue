@@ -6,7 +6,7 @@
     <div class="social-sharing-mobile">
         <VDropdown>
             <button class="social-share-button">
-                <iconify-icon icon="fluent:share-android-24-filled" height="16" />
+                <iconify-icon icon="fluent:share-android-24-filled" />
                 <span>Share</span>
             </button>
             <template #popper>

@@ -2,17 +2,17 @@
     <div v-if="enableSocial" class="before-doc">
         <div class="doc-meta">
             <div v-if="createdDate" class="meta-date" v-tooltip="'Created date'">
-                <iconify-icon icon="fluent:calendar-clock-24-regular" height="20" />
+                <iconify-icon icon="fluent:calendar-clock-24-regular" />
                 <span>{{ createdDate }}</span>
             </div>
 
             <div v-if="frontmatter.version" class="meta-version" v-tooltip="'Since Win7 Simu version'">
-                <iconify-icon icon="fluent:rocket-24-regular" height="20" />
+                <iconify-icon icon="fluent:rocket-24-regular" />
                 <span>v{{ frontmatter.version }}</span>
             </div>
 
             <div v-if="frontmatter.appVersion" class="meta-version" v-tooltip="'Latest version'">
-                <iconify-icon icon="fluent:text-bullet-list-square-sparkle-24-regular" height="20" />
+                <iconify-icon icon="fluent:text-bullet-list-square-sparkle-24-regular" />
                 <span>v{{ frontmatter.appVersion }}</span>
             </div>
         </div>
@@ -42,6 +42,10 @@ const { createdDate, enableSocial, enableComments } = useCustomData()
     position: relative;
     z-index: 1;
     margin-bottom: 0.5rem;
+}
+
+.doc-meta iconify-icon {
+    font-size: 1.25rem;
 }
 
 .doc-meta,

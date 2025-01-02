@@ -1,5 +1,5 @@
 ---
-createdAt: 1735913541399
+createdAt: 1735784192028
 description: Introducing visnalize.com second edition - a new website with a fresh look, more content, and exciting new features.
 tags:
   - news

@@ -7,8 +7,8 @@
                 <iconify-icon :icon="badgeIcon[post.badge]" />
             </div>
             <div class="post-date">
-                <iconify-icon icon="fluent:calendar-clock-24-regular" height="16" />
-                <span>{{ new Date(post.createdAt).toLocaleDateString(undefined, { dateStyle: 'medium' }) }}</span>
+                <iconify-icon icon="fluent:calendar-clock-24-regular" />
+                <span>{{ new Date(post.createdAt).toLocaleDateString(undefined, { dateStyle: 'long' }) }}</span>
             </div>
             <h2>{{ post.title }}</h2>
             <p>{{ post.description }}</p>

@@ -4,7 +4,7 @@
             <div class="main">
                 <div class="brand">
                     <a class="brand-logo" href="/">
-                        <img src="/favicon.png" alt="Visnalize" />
+                        <img src="/favicon.png" alt="Logo" />
                         <span>Visnalize</span>
                     </a>
                     <ul class="brand-social">

@@ -1,6 +1,6 @@
 <template>
     <span class="notation">
-        <iconify-icon :icon="data.icon" width="20" height="20" v-tooltip="list ? undefined : data.name" />
+        <iconify-icon :icon="data.icon" v-tooltip="list ? undefined : data.name" />
         <span v-if="list">{{ data.name }}</span>
     </span>
 </template>

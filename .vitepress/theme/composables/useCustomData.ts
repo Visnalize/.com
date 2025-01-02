@@ -19,7 +19,7 @@ const useCustomData = () => {
     blogTags.value = tags ?? [];
     createdDate.value = createdAt
       ? new Date(createdAt).toLocaleDateString(undefined, {
-          dateStyle: breakpoints.sm.value ? "medium" : "short",
+          dateStyle: breakpoints.sm.value ? "long" : "short",
         })
       : "";
     enableAds.value = ads ?? true;

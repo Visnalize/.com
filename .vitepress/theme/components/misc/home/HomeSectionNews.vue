@@ -22,7 +22,7 @@
                         <h3>{{ post.title }}</h3>
                         <p>{{ post.description }}</p>
                     </div>
-                    <iconify-icon icon="fluent:arrow-up-right-24-regular" height="24" />
+                    <iconify-icon icon="fluent:arrow-up-right-24-regular" />
                 </a>
             </Motion>
         </div>
@@ -97,6 +97,7 @@ const linkVariants: Variants = {
 }
 
 .item iconify-icon {
+    font-size: 1.5rem;
     color: var(--vp-c-default-1);
     transition: 0.2s;
     display: none;

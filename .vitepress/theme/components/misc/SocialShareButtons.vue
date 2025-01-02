@@ -1,12 +1,12 @@
 <template>
     <button @click="copyUrl" :style="{ '--index': networks.length + 1 }" v-tooltip="'Copy URL'" aria-label="Copy URL">
-        <iconify-icon :icon="copied ? 'fluent:checkmark-24-filled' : 'fluent:attach-24-filled'" height="16" />
+        <iconify-icon :icon="copied ? 'fluent:checkmark-24-filled' : 'fluent:attach-24-filled'" />
     </button>
     <ShareNetwork v-for="(network, i) in networks" :network="network.name" :url="data?.url" :title="data?.title"
         :description="data?.description" v-slot="{ share }">
         <button @click="share" :style="{ '--index': networks.length - i }" v-tooltip="getShareLabel(network.name)"
             :aria-label="getShareLabel(network.name)">
-            <iconify-icon :icon="network.icon" height="16" />
+            <iconify-icon :icon="network.icon" />
         </button>
     </ShareNetwork>
 </template>
@@ -56,6 +56,10 @@ button {
 button:hover {
     color: var(--vp-c-white);
     background: var(--vp-c-brand-2);
+}
+
+button iconify-icon {
+    font-size: 1rem;
 }
 
 @media (min-width: 640px) {

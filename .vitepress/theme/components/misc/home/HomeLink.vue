@@ -3,7 +3,7 @@
         <span>
             <slot />
         </span>
-        <iconify-icon icon="fluent:arrow-up-right-24-regular" height="12" />
+        <iconify-icon icon="fluent:arrow-up-right-24-regular" />
     </a>
 </template>
 
@@ -28,6 +28,7 @@ defineProps<{
 }
 
 .link iconify-icon {
+    font-size: 0.75rem;
     transition: transform 0.2s;
 }
 
