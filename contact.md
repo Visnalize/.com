@@ -1,1 +1,0 @@
-<Redirect to="/about#contact" />

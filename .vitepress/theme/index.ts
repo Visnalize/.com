@@ -5,7 +5,6 @@ import "iconify-icon";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import AccessLinks from "./components/global/AccessLinks.vue";
-import Redirect from "./components/global/Redirect.vue";
 import SponsorAd from "./components/global/SponsorAd.vue";
 import { DISQUS } from "./constants";
 import Layout from "./layout/Layout.vue";
@@ -17,7 +16,6 @@ export default {
   Layout,
   enhanceApp({ app, router, siteData }) {
     app.use(FloatingVue);
-    app.component("Redirect", Redirect);
     app.component("SponsorAd", SponsorAd);
     app.component("AccessLinks", AccessLinks);
     app.provide(DISQUS, "visnalize");
