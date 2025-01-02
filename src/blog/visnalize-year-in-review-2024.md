@@ -51,7 +51,7 @@ __Both Android and Web__
 - __$5.5K__ gross revenue from in-app purchases <Badge type="tip" text="+77% vs last year" />
 - __$4.7K__ gross revenue from partnerships <Badge type="tip" text="+1,450% vs last year" />
 
-<SponsorAd />
+<a-google-ad />
 
 ### Brick 1100 (Beta)
 
@@ -85,7 +85,7 @@ On August 13, I received an email from a product manager of [Crashguard](http://
 
 ![Crashguard partnership with Win7 Simu](./img/visnalize-year-in-review-2024/crashguard-partnership.png)
 
-<SponsorAd />
+<a-google-ad />
 
 #### A trending blog post brings traffic
 

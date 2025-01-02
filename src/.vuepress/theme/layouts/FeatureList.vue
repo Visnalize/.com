@@ -3,7 +3,7 @@
     <template #page-top>
       <div class="theme-default-content content__default">
         <h1>Win7 Simu simulated apps</h1>
-        <a-sponsor-ad format="banner" />
+        <a-google-ad />
         <ul class="feature-links">
           <li v-for="feature in features" :key="feature.path">
             <router-link :to="feature.path">

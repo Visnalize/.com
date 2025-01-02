@@ -1,7 +1,7 @@
 <template>
   <parent-layout>
     <template v-if="!noSideAds" #sidebar-bottom>
-      <a-sponsor-ad />
+      <a-google-ad />
     </template>
     <template v-if="!noComments" #page-bottom>
       <div class="ad-wrapper">
