@@ -66,6 +66,7 @@ watch(inView, (value) => value && !isLoaded.value && loadScript())
 <style scoped>
 .indie-products {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .indie-products.widget {
@@ -85,6 +86,7 @@ watch(inView, (value) => value && !isLoaded.value && loadScript())
 .title a {
     display: inline-flex;
     padding: 0.25rem 0.5rem;
+    font-size: 1rem;
     transition: 0.2s;
 }
 
