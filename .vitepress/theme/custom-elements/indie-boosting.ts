@@ -90,7 +90,7 @@ const defineElement = () => {
     return;
   }
 
-  window.customElements.define("indie-boosting", IndieBoosting);
+  customElementsRegistry.define("indie-boosting", IndieBoosting);
 };
 
 export default defineElement();
