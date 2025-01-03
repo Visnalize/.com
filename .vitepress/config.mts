@@ -80,8 +80,10 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
     vue: {
       template: {
         compilerOptions: {
-          isCustomElement: (tag) =>
-            ["iconify-icon", "lite-youtube"].includes(tag.toLowerCase()),
+          isCustomElement: (tag) => {
+            const elements = ["iconify-icon", "lite-youtube", "indie-boosting"];
+            return elements.includes(tag.toLowerCase());
+          },
         },
       },
     },

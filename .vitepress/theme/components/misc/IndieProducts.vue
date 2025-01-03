@@ -6,7 +6,8 @@
                 <iconify-icon icon="fluent:question-circle-24-regular" />
             </a>
         </h2>
-        <link rel="stylesheet" href="https://cdn.indieboosting.com/latest/style.css" />
+        <indie-boosting v-if="inView" id="HUQBLZLWPR" no-title no-border no-shadow :max-products="widget ? 4 : 10"
+            :max-columns="widget ? 2 : 1" @load="contentLoaded = true" />
         <div v-if="!contentLoaded" class="loader">
             <div v-for="i in Array.of(1, 2, 3, 4)" class="loading-item">
                 <CoreSkeleton class="icon" />
@@ -20,52 +21,14 @@
 </template>
 
 <script setup lang="ts">
-import { isDevMode } from '@utils/misc';
 import { useInView } from 'motion-v';
-import { onMounted, ref, watch } from 'vue';
+import { ref } from 'vue';
 import CoreSkeleton from '../core/CoreSkeleton.vue';
 
 const { widget } = defineProps<{ widget?: boolean }>()
 const container = ref<HTMLElement | null>(null)
 const contentLoaded = ref(false)
-const scriptLoaded = ref(false)
-const inView = useInView(container)
-
-const observeCallback: MutationCallback = (mutationList, observer) => {
-    for (const mutation of mutationList) {
-        if (mutation.type !== 'childList') return;
-        Array.from(mutation.addedNodes).forEach((node: HTMLElement) => {
-            if (node.matches('#indieboosting-container')) {
-                contentLoaded.value = true
-                observer.disconnect()
-            }
-        })
-    }
-}
-
-const loadScript = () => {
-    if (isDevMode() || scriptLoaded.value) return;
-
-    const script = document.createElement('script')
-    const options = new URLSearchParams({
-        id: 'HUQBLZLWPR',
-        maxProducts: widget ? '4' : '10',
-        maxColumns: widget ? '2' : '1',
-        noTitle: 'true',
-        noBorder: 'true',
-        noShadow: 'true',
-    })
-    script.src = `https://cdn.indieboosting.com/latest/script.js?${options}`;
-    container.value.appendChild(script)
-    scriptLoaded.value = true
-}
-
-onMounted(() => {
-    const observer = new MutationObserver(observeCallback)
-    observer.observe(container.value, { childList: true })
-})
-
-watch(inView, (inView) => inView && loadScript())
+const inView = useInView(container, { once: true })
 </script>
 
 <style scoped>
