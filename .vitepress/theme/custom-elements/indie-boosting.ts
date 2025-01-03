@@ -1,4 +1,4 @@
-const options = [
+const allAttributes = [
   "id",
   "max-products",
   "max-columns",
@@ -15,7 +15,7 @@ const options = [
   "debug",
 ] as const;
 
-type Attribute = (typeof options)[number];
+type Attribute = (typeof allAttributes)[number];
 
 /**
  * https://www.npmjs.com/package/@indieboosting/react#props
@@ -29,10 +29,6 @@ class IndieBoosting extends HTMLElement {
     super();
   }
 
-  _getAttr(name: Attribute) {
-    return this.getAttribute(name);
-  }
-
   _load() {
     const style = document.createElement("link");
     const script = document.createElement("script");
@@ -40,7 +36,7 @@ class IndieBoosting extends HTMLElement {
 
     Array.from(this.attributes).forEach((attribute) => {
       const { name, value } = attribute;
-      if (options.includes(name as Attribute)) {
+      if (allAttributes.includes(name as Attribute)) {
         searchParams.append(attributeToProp(name), value || "true");
       } else {
         console.warn(`IndieBoosting: '${name}' is not a supported attribute.`);
@@ -74,18 +70,27 @@ class IndieBoosting extends HTMLElement {
   }
 
   connectedCallback() {
-    if (!this._getAttr("id")) {
-      console.error("IndieBoosting: 'id' attribute is required.");
-      return;
-    }
-
     this._load();
     this._observe();
   }
 }
 
 const defineElement = () => {
-  customElements.define("indie-boosting", IndieBoosting);
+  let customElementsRegistry: CustomElementRegistry;
+
+  // SSR check
+  try {
+    customElementsRegistry = customElements;
+  } catch (e) {
+    return;
+  }
+
+  // Make sure customElements is available and no duplicate is defined
+  if (!customElementsRegistry || customElementsRegistry.get("indie-boosting")) {
+    return;
+  }
+
+  window.customElements.define("indie-boosting", IndieBoosting);
 };
 
 export default defineElement();

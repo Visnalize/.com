@@ -22,13 +22,17 @@
 
 <script setup lang="ts">
 import { useInView } from 'motion-v';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import CoreSkeleton from '../core/CoreSkeleton.vue';
 
 const { widget } = defineProps<{ widget?: boolean }>()
 const container = ref<HTMLElement | null>(null)
 const contentLoaded = ref(false)
 const inView = useInView(container, { once: true })
+
+onMounted(() => {
+    import('../../custom-elements/indie-boosting')
+})
 </script>
 
 <style scoped>
