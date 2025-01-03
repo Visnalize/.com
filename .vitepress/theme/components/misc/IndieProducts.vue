@@ -7,7 +7,7 @@
             </a>
         </h2>
         <link rel="stylesheet" href="https://cdn.indieboosting.com/latest/style.css" />
-        <div v-if="!isLoaded" class="loader">
+        <div v-if="!contentLoaded" class="loader">
             <div v-for="i in Array.of(1, 2, 3, 4)" class="loading-item">
                 <CoreSkeleton class="icon" />
                 <div>
@@ -20,13 +20,15 @@
 </template>
 
 <script setup lang="ts">
+import { isDevMode } from '@utils/misc';
 import { useInView } from 'motion-v';
 import { onMounted, ref, watch } from 'vue';
 import CoreSkeleton from '../core/CoreSkeleton.vue';
 
 const { widget } = defineProps<{ widget?: boolean }>()
 const container = ref<HTMLElement | null>(null)
-const isLoaded = ref(false)
+const contentLoaded = ref(false)
+const scriptLoaded = ref(false)
 const inView = useInView(container)
 
 const observeCallback: MutationCallback = (mutationList, observer) => {
@@ -34,7 +36,7 @@ const observeCallback: MutationCallback = (mutationList, observer) => {
         if (mutation.type !== 'childList') return;
         Array.from(mutation.addedNodes).forEach((node: HTMLElement) => {
             if (node.matches('#indieboosting-container')) {
-                isLoaded.value = true
+                contentLoaded.value = true
                 observer.disconnect()
             }
         })
@@ -42,6 +44,8 @@ const observeCallback: MutationCallback = (mutationList, observer) => {
 }
 
 const loadScript = () => {
+    if (isDevMode() || scriptLoaded.value) return;
+
     const script = document.createElement('script')
     const options = new URLSearchParams({
         id: 'HUQBLZLWPR',
@@ -51,8 +55,9 @@ const loadScript = () => {
         noBorder: 'true',
         noShadow: 'true',
     })
-    script.src = `https://cdn.indieboosting.com/latest/script.js?${options.toString()}`;
+    script.src = `https://cdn.indieboosting.com/latest/script.js?${options}`;
     container.value.appendChild(script)
+    scriptLoaded.value = true
 }
 
 onMounted(() => {
@@ -60,7 +65,7 @@ onMounted(() => {
     observer.observe(container.value, { childList: true })
 })
 
-watch(inView, (value) => value && !isLoaded.value && loadScript())
+watch(inView, (inView) => inView && loadScript())
 </script>
 
 <style scoped>

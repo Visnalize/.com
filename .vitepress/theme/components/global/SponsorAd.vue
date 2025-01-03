@@ -32,9 +32,9 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 </script>
 
 <style scoped>
-.adsbygoogle[data-ad-status="unfilled"] {
+/* .adsbygoogle[data-ad-status="unfilled"] {
     display: none !important;
-}
+} */
 
 .h-ad {
     margin: 3rem auto;
