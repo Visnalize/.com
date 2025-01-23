@@ -1,7 +1,7 @@
 <template>
     <footer :class="{ 'has-sidebar': hasSidebar }">
-        <div class="container">
-            <div class="main">
+        <div class="footer-wrapper">
+            <div class="footer-content">
                 <div class="brand">
                     <a class="brand-logo" href="/">
                         <img src="/favicon.png" alt="Logo" />
@@ -77,7 +77,7 @@ footer {
     z-index: var(--vp-z-index-footer);
 }
 
-.container {
+.footer-wrapper {
     margin: auto;
     max-width: calc(var(--vp-layout-max-width) - 4rem);
     padding: 2rem 1.5rem;
@@ -87,7 +87,7 @@ footer {
     border-bottom: 0;
 }
 
-.main {
+.footer-content {
     display: grid;
     gap: 3rem;
     margin-bottom: 4rem;
@@ -170,31 +170,31 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .container {
+    .footer-wrapper {
         padding: 3rem 2rem;
     }
 }
 
 @media (min-width: 960px) {
-    .has-sidebar .container {
+    .has-sidebar .footer-wrapper {
         padding-left: calc(var(--vp-sidebar-width) + 2rem);
     }
 
-    .has-sidebar .main {
+    .has-sidebar .footer-content {
         grid-template-columns: unset;
     }
 
-    .container {
+    .footer-wrapper {
         padding: 4rem 3rem;
     }
 
-    .main {
+    .footer-content {
         grid-template-columns: 1fr 3fr;
     }
 }
 
 @media (min-width: 1280px) {
-    .has-sidebar .main {
+    .has-sidebar .footer-content {
         grid-template-columns: 1fr 3fr;
     }
 }

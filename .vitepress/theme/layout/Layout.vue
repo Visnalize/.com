@@ -14,7 +14,7 @@
             <DocBefore />
         </template>
         <template #layout-bottom>
-            <LayoutBottom />
+            <LayoutFooter />
         </template>
     </DefaultTheme.Layout>
 </template>
@@ -28,7 +28,7 @@ import AsideTop from './AsideTop.vue';
 import DocAfter from './DocAfter.vue';
 import DocBefore from './DocBefore.vue';
 import DocFooterBefore from './DocFooterBefore.vue';
-import LayoutBottom from './LayoutBottom.vue';
+import LayoutFooter from './LayoutFooter.vue';
 import NotFound from './NotFound.vue';
 
 const route = useRoute()
