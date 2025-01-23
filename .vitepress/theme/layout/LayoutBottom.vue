@@ -14,6 +14,12 @@
                             </a>
                         </li>
                     </ul>
+                    <div>
+                        <a href="https://startupfa.me/s/visnalize?utm_source=visnalize.com" target="_blank">
+                            <img :src="`https://startupfa.me/badges/featured-small-${isDark ? 'dark' : 'light'}.webp`"
+                                alt="Startup Fame logo" width="224" height="36" />
+                        </a>
+                    </div>
                 </div>
                 <div class="nav">
                     <div class="nav-group">
@@ -54,8 +60,10 @@
 <script setup lang="ts">
 import { About, Blog, Brick1100, Resources, Testimonials, Win7Simu } from '@/.vitepress/config/sitelinks';
 import socialLinks from '@/.vitepress/config/social';
+import { useData } from 'vitepress';
 import { useSidebar } from 'vitepress/theme';
 
+const { isDark } = useData()
 const { hasSidebar } = useSidebar()
 
 const win7Links = [Win7Simu.About, Win7Simu.Changelog, Win7Simu.Simulated, Win7Simu.ThemeStudio]
@@ -88,7 +96,7 @@ footer {
 .brand {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .brand-logo {
@@ -107,7 +115,6 @@ footer {
 .brand-social {
     display: flex;
     gap: 1rem;
-    padding: 0.75rem 0;
     font-size: 1.25rem;
     color: var(--vp-c-text-2);
 }
