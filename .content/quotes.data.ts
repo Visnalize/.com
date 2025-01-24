@@ -18,6 +18,49 @@ export interface Quote {
 
 const quotes: Quote[] = [
   {
+    image:
+      "https://lh3.googleusercontent.com/a/ACg8ocJMMyLiCU_bsTFan4u7XGZnYRCfXStgrf5rrOjk6ceG5esCmA=mo",
+    author: "Seva Lgov",
+    date: "January 7, 2024",
+    app: "win7simu",
+    content:
+      "The best and most realistic Windows simulator. Thanks to the developers for the simulator. I've tried many Windows simulators and haven't found a better one yet :)",
+  },
+  {
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjXxENPzar9a5ojf4iafj3LnkV6Gq-7UE0mrQ2kZP9CPk8UvzBUGxA=s50",
+    author: "Elizangela Gomes dos reis",
+    date: "March 25, 2024",
+    app: "win7simu",
+    content:
+      "This app is good and very similar to Windows 7, but it's missing some features that the real Windows has, and some things don't work. The developers could make this app even more complete by adding more features and functions, such as: more Windows 7 wallpapers, more operations and functions, greater resemblance to the original, etc. Other than that, it's good, and I recommend it!",
+  },
+  {
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjXItkA4IirNfdEZCQq0YDDEUQK5S2Z8eypPmv2m2X6nMTu1YTAAAg=s50",
+    author: "Tashauna Stewart",
+    date: "May 20, 2024",
+    app: "win7simu",
+    content:
+      "I absolutely love this app! I can upload files on my phone to it, and work in a much less visually cluttered environment than my phone! I love everything about this app so far, and can't wait to see what else the developer has in store!!! Thank you so very much!",
+  },
+  {
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjUEhpwI6e251WWHyI13-ru3zOYnCAmRPJ5IY9J0CDnvZcgyCFCE=s50",
+    author: "Davi da Silva Bento",
+    date: "July 17, 2024",
+    app: "win7simu",
+    content:
+      "The app is really cool, I showed it to my grandmother and she remembered Windows 95. She loved it and so did I!",
+  },
+  {
+    author: "Fares Alami",
+    date: "March 20, 2024",
+    app: "win7simu",
+    content:
+      "This is absolutely one of the best simulators for windows on mobile! I respect the devoloper for not being greedy, the app has ads but they are not disturbing and are present in reasonable quantity so it could benefit both the person using it and the devoloper in which he could get profit, there are still some bugs but I won't blame the devoloper because I know it's hard to code all of this, especially when you are one person or a small team, the app itself is nearly perfect. Keep up the good work!",
+  },
+  {
     author: "Ian Martinez",
     date: "January 1, 2025",
     app: "win7simu",

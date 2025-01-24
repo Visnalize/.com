@@ -6,13 +6,16 @@
             </a>
         </div>
         <div>
-            <div class="author">
+            <div class="quote-author">
                 <img :src="quote.image" alt="User avatar" width="48" height="48" />
                 <span>{{ quote.author }}</span>
             </div>
-            <p>{{ quote.content }}</p>
+            <p class="quote-content">{{ content }}
+                <a v-if="showMore" href="javascript:void(0)" @click="handleShowMore">
+                    Read more</a>
+            </p>
         </div>
-        <div v-if="showDate" class="footer">
+        <div v-if="!home" class="quote-footer">
             <span class="date">{{ quote.date }}</span>
         </div>
     </div>
@@ -20,12 +23,22 @@
 
 <script setup lang="ts">
 import { Quote } from '@/.content/quotes.data';
+import { ref } from 'vue';
+import { isTextTooLong, previewText } from '../../utils/strings';
 import AppIcon from './AppIcon.vue';
 
-defineProps<{
+const { quote, home } = defineProps<{
     quote: Quote,
-    showDate?: boolean
+    home?: boolean
 }>()
+
+const content = ref(home ? quote.content : previewText(quote.content))
+const showMore = ref(isTextTooLong(quote.content))
+
+const handleShowMore = () => {
+    content.value = quote.content
+    showMore.value = false
+}
 </script>
 
 <style scoped>
@@ -48,7 +61,7 @@ defineProps<{
     border-color: var(--vp-c-border);
 }
 
-.author {
+.quote-author {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -57,7 +70,7 @@ defineProps<{
     margin-bottom: 1rem;
 }
 
-.author img {
+.quote-author img {
     background: var(--vp-c-default-1);
     border-radius: 0.5rem;
     font-size: 0.75rem;
@@ -88,7 +101,7 @@ defineProps<{
     border-radius: 0.25rem;
 }
 
-.footer {
+.quote-footer {
     text-align: right;
 }
 

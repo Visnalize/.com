@@ -6,7 +6,7 @@
         <div ref="quoteContainer" class="quotes">
             <Motion v-for="(quote, i) in featuredQuotes" :variants="variants(i)"
                 :animate="inView ? 'animate' : 'initial'">
-                <UserQuote :quote="quote" />
+                <UserQuote :quote="quote" home />
             </Motion>
         </div>
 
