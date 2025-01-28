@@ -89,6 +89,10 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
           text: "Free online image tools",
           link: "/resources/online-image-tools",
         },
+        {
+          text: "Free screenshot and mockup tools",
+          link: "/resources/screenshot-mockup-tools",
+        },
       ],
     },
   ],

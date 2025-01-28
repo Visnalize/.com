@@ -15,3 +15,4 @@ pageClass: resources
 - [Web desktops](./resources/web-desktops.md)
 - [10 Free Stock Image Sites](./resources/stock-image-sites.md)
 - [10 Free Online Image Tools](./resources/online-image-tools.md)
+- [10 Free Screenshot & Mockup Tools](./resources/screenshot-mockup-tools.md)
