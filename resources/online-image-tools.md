@@ -31,6 +31,8 @@ Compress PNG specializes in reducing the file size of PNG images without comprom
 
 __Website:__ [compresspng.com](https://compresspng.com/)
 
+<SponsorAd />
+
 ## remove.bg
 
 ![remove.bg](./assets/online-image-tools/remove-bg.jpeg)

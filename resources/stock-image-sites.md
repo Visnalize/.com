@@ -33,6 +33,8 @@ Pixabay is another excellent resource for stock photos, videos, illustrations, a
 
 __Website:__ [pixabay.com](https://pixabay.com)
 
+<SponsorAd />
+
 ## 4. __FreeImages__
 
 ![FreeImages](./assets/stock-image-sites/freeimages.png)
