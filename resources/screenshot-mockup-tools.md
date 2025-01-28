@@ -5,7 +5,7 @@ aside: right
 
 # 5 Free Screenshot & Mockup Tools
 
-Screenshot and mockup tools are essential for creating visual presentations of websites, apps, and digital products. They help designers, marketers, and creatives showcase their work effectively and communicate ideas visually. Here are 10 free screenshot and mockup tools that I recommend for creating stunning visuals and engaging presentations.
+Screenshot and mockup tools are essential for creating visual presentations of websites, apps, and digital products. They help designers, marketers, and creatives showcase their work effectively and communicate ideas visually. Here are some free screenshot and mockup tools that I recommend for creating stunning visuals and engaging presentations.
 
 ## Website Mockup Generator
 
@@ -17,11 +17,11 @@ __Website:__ [websitemockupgenerator.com](https://websitemockupgenerator.com)
 
 ---
 
-## Shots.so
+## Shots
 
-![Shots.so](./assets/screenshot-mockup-tools/shots-so.jpeg)
+![Shots](./assets/screenshot-mockup-tools/shots-so.jpeg)
 
-Shots.so is a versatile screenshot tool that lets you create beautiful mockups for websites, apps, and digital products. With a wide range of device frames and customization options, you can showcase your designs in a professional and engaging way.
+Shots is a versatile mockup tool that lets you create beautiful mockups for websites, apps, and digital products. With a wide range of device frames and customization options, you can showcase your designs in a professional and engaging way.
 
 __Website:__ [shots.so](https://shots.so)
 
@@ -51,6 +51,6 @@ __Website:__ [postspark.app](https://postspark.app)
 
 ![Supasnap](./assets/screenshot-mockup-tools/supasnap.jpeg)
 
-Supasnap is designed for generating polished screenshot mockups with minimal effort. Simply upload or capture your screenshot, code snippet and start customizing it with various options, from shadows, backgrounds, to overlay elements.
+Supasnap is designed for generating polished screenshots with minimal effort. Simply upload or capture your screenshot, code snippet and start customizing it with various options, from shadows, backgrounds, to overlay elements.
 
 __Website:__ [supasnap.com](https://supasnap.com)

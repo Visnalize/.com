@@ -13,6 +13,6 @@ pageClass: resources
 
 - [Free and open-sourced tools](./resources/tools.md) developed by Visnanlize
 - [Web desktops](./resources/web-desktops.md)
-- [10 Free Stock Image Sites](./resources/stock-image-sites.md)
-- [10 Free Online Image Tools](./resources/online-image-tools.md)
-- [10 Free Screenshot & Mockup Tools](./resources/screenshot-mockup-tools.md)
+- [Free Stock Image Sites](./resources/stock-image-sites.md)
+- [Free Online Image Tools](./resources/online-image-tools.md)
+- [Free Screenshot & Mockup Tools](./resources/screenshot-mockup-tools.md)

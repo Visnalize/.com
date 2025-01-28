@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="copyright">
-                Copyright © 2021 - present Visnalize
+                Copyright © 2021 - {{ new Date().getFullYear() }} Visnalize
             </div>
         </div>
     </footer>
