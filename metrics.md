@@ -122,13 +122,13 @@ const getChartUrl = (chartId: keyof typeof ChartId, format = 'interactive') => {
 }
 
 .card:nth-child(1) {
-    border-color: var(--vp-c-purple-1);
-    background: var(--vp-c-purple-soft);
+    border-color: var(--vp-c-red-1);
+    background: var(--vp-c-red-soft);
 }
 
 .card:nth-child(2) {
-    border-color: var(--vp-c-red-1);
-    background: var(--vp-c-red-soft);
+    border-color: var(--vp-c-purple-1);
+    background: var(--vp-c-purple-soft);
 }
 
 .card:nth-child(3) {
