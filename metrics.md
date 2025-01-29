@@ -96,11 +96,11 @@ const getChartUrl = (chartId: keyof typeof ChartId, format = 'interactive') => {
             <h3 class="vp-external-link-icon">Blog posts</h3>
             <figure>{{ blogData.length }}</figure>
         </a>
-        <a :class="$style.card" href="/youtube">
+        <a :class="$style.card" href="https://youtube.com/@visnalize">
             <h3 class="vp-external-link-icon">YouTube videos</h3>
             <figure>{{ stats.videoCount }}</figure>
         </a>
-        <a :class="$style.card" href="/youtube">
+        <a :class="$style.card" href="https://youtube.com/@visnalize">
             <h3 class="vp-external-link-icon">YouTube subscribers</h3>
             <figure>{{ shortenNumber(stats.subscriberCount) }}</figure>
         </a>
