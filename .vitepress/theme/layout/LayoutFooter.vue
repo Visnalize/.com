@@ -58,7 +58,7 @@
 </template>
 
 <script setup lang="ts">
-import { About, Blog, Brick1100, Resources, Testimonials, Win7Simu } from '@/.vitepress/config/sitelinks';
+import { About, Blog, Metrics, Brick1100, Resources, Testimonials, Win7Simu } from '@/.vitepress/config/sitelinks';
 import socialLinks from '@/.vitepress/config/social';
 import { useData } from 'vitepress';
 import { useSidebar } from 'vitepress/theme';
@@ -68,7 +68,7 @@ const { hasSidebar } = useSidebar()
 
 const win7Links = [Win7Simu.About, Win7Simu.Changelog, Win7Simu.Simulated, Win7Simu.ThemeStudio]
 const brickLinks = [Brick1100.About, Brick1100.Changelog, Brick1100.FeatureRequests, Brick1100.Builders]
-const visnalizeLinks = [About, Blog, Testimonials, Resources.Index]
+const visnalizeLinks = [About, Metrics, Blog, Testimonials, Resources.Index]
 </script>
 
 <style scoped>

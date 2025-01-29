@@ -2,6 +2,7 @@ import { DefaultTheme } from "vitepress";
 import {
   AboutVisnalize,
   Brick1100,
+  Metrics,
   Resources,
   Testimonials,
   Win7Simu,
@@ -45,6 +46,7 @@ const navItems: DefaultTheme.Config["nav"] = [
     text: "More",
     items: [
       AboutVisnalize,
+      Metrics,
       Testimonials,
       {
         text: "Resources",

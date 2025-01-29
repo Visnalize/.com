@@ -104,6 +104,10 @@ export const About: Link = {
   text: "About",
   link: "/about",
 };
+export const Metrics: Link = {
+  text: "Open metrics",
+  link: "/metrics",
+};
 export const AboutVisnalize: Link = {
   ...About,
   text: "About Visnalize",
