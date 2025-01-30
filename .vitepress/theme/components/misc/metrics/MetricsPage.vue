@@ -8,23 +8,26 @@
         <div v-for="card in metricsData.revenueCards" class="card">
             <h2>{{ card.title }}</h2>
             <p>{{ card.subtitle }}</p>
-            <img alt="Visnalize metric" :src="getChartUrl(card.id as ChartId, 'image')" width="200" height="61" />
+            <img :key="renderCount" alt="Visnalize metric" :src="getChart(card.id as ChartId, 'image')" width="200"
+                height="61" />
         </div>
     </div>
 
     <div class="framefull">
         <h2>Monthly revenue since 2023</h2>
-        <iframe width="704" height="422" frameborder="0" :src="getChartUrl('revenueMonthly')"></iframe>
+        <iframe :key="renderCount" width="704" height="422" frameborder="0" :src="getChart('revenueMonthly')"></iframe>
     </div>
 
     <div class="framerow">
         <div class="frame">
             <h2>Revenue portfolio</h2>
-            <iframe width="325" height="190" frameborder="0" :src="getChartUrl('revenuePorfolio')"></iframe>
+            <iframe :key="renderCount" width="325" height="190" frameborder="0"
+                :src="getChart('revenuePorfolio')"></iframe>
         </div>
         <div class="frame">
             <h2>Revenue model share</h2>
-            <iframe width="325" height="190" frameborder="0" :src="getChartUrl('revenueModelShare')"></iframe>
+            <iframe :key="renderCount" width="325" height="190" frameborder="0"
+                :src="getChart('revenueModelShare')"></iframe>
         </div>
     </div>
 
@@ -46,6 +49,7 @@ import { data as metricsData } from '@/.content/metrics.data';
 import PageTitle from '@components/misc/PageTitle.vue';
 import { shortenNumber } from '@utils/misc';
 import { useData } from 'vitepress';
+import { onMounted, ref } from 'vue';
 
 type ChartId = keyof typeof ChartId;
 
@@ -60,6 +64,9 @@ const ChartId = {
 }
 
 const { isDark } = useData()
+const renderCount = ref(0) // dirty way to resolve hydration issue for initial dark mode
+
+onMounted(() => renderCount.value++)
 
 const statCards = [
     { title: 'Since', value: 2020, },
@@ -70,7 +77,7 @@ const statCards = [
     { title: 'YouTube subscribers', value: shortenNumber(channelData.stats.subscriberCount), link: 'https://youtube.com/@visnalize' },
 ]
 
-const getChartUrl = (chartId: ChartId, format = 'interactive') => {
+const getChart = (chartId: ChartId, format = 'interactive') => {
     return `https://docs.google.com/spreadsheets/d/e/2PACX-1vRtE7C4cQv6eH8tQFb4uhK86P-0LwynBssSrAc-uxlcCgo3GiGv9KA-IKWiT9BT0Kgd6Ec6ggTbrjFT/pubchart?oid=${ChartId[chartId][+isDark.value]}&format=${format}`;
 }
 </script>
