@@ -19,7 +19,7 @@ const getOgImage = async (pagePath: string) => {
     return publicPath;
   }
 
-  const refreshCache = "?m=" + new Date().getMonth(); // add month to force refresh in case maxAge doesn't work
+  const refreshCache = "?d=" + new Date().getDate(); // add date to force refresh in case maxAge doesn't work
   const thumUrl = getThumURL({
     url: `noanimate/https://visnalize.com/${pagePath}${refreshCache}`,
     auth: authKey,
