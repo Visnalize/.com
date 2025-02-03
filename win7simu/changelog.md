@@ -8,6 +8,13 @@ comments: false
 
 <SponsorAd />
 
+## 2025
+
+### 3.17.0 (Feb 3, 2025)
+
+- Added support for live/animated desktop background
+- Identified and fixed the issue that causes crashes during boot animation on several Android versions
+
 ## 2024
 
 ### 3.16.0 (Dec 28, 2024)
