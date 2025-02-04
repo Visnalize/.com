@@ -180,6 +180,7 @@ export const apps: App[] = [
       "Change text font and size",
       "Save text files",
     ],
+    videos: ["-NeEvZsFTM8"],
   },
   {
     slug: "paint",
