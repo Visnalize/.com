@@ -33,7 +33,7 @@ const { quote, home } = defineProps<{
 }>()
 
 const content = ref(home ? quote.content : previewText(quote.content))
-const showMore = ref(isTextTooLong(quote.content))
+const showMore = ref(!home && isTextTooLong(quote.content))
 
 const handleShowMore = () => {
     content.value = quote.content

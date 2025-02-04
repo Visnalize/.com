@@ -21,6 +21,7 @@ defineProps<{
     gap: 0.5rem;
     padding: 0.125rem 0.5rem;
     margin: 0 0.5rem 0.5rem 0;
+    border: 1px solid transparent;
     border-radius: 1rem;
     background: var(--vp-c-default-soft);
     color: var(--vp-c-text-1);
@@ -37,6 +38,10 @@ defineProps<{
     color: var(--vp-c-brand-1);
 }
 
+.blog-tag.active {
+    border-color: var(--vp-c-brand-1);
+}
+
 .blog-tag .count {
     background: var(--vp-c-default-1);
     border-radius: 50%;
@@ -48,7 +53,8 @@ defineProps<{
     transition: background 0.2s;
 }
 
+.blog-tag.active .count,
 .blog-tag:hover .count {
-    background: var(--vp-c-default-soft);
+    background: var(--vp-c-brand-soft);
 }
 </style>
