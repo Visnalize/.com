@@ -1,6 +1,3 @@
-import { App } from "@/.vitepress/theme/utils/types";
-import { readFileSync } from "fs";
-import { join } from "path";
 import { defineLoader } from "vitepress";
 
 interface Data {
@@ -9,24 +6,15 @@ interface Data {
     title: string;
     subtitle: string;
   }[];
-  stats: {
-    win7SimuReleases: number;
-    brick1100Releases: number;
-  };
+  stats: {};
 }
 
 declare const data: Data;
 
 export { data };
 
-function getReleaseCount(app: App) {
-  const content = readFileSync(join(process.cwd(), app, "changelog.md"));
-  const releases = content.toString().match(/###\s*\d+\.\d+\.\d+/g) || [];
-  return releases.length;
-}
-
 export default defineLoader({
-  load() {
+  async load() {
     const data: Data = {
       revenueCards: [
         {
@@ -50,10 +38,7 @@ export default defineLoader({
           subtitle: "Total revenue from beginning",
         },
       ],
-      stats: {
-        win7SimuReleases: getReleaseCount("win7simu"),
-        brick1100Releases: getReleaseCount("brick1100"),
-      },
+      stats: {},
     };
 
     return data;

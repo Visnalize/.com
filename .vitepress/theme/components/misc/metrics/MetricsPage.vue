@@ -43,6 +43,7 @@
 </template>
 
 <script setup lang="ts">
+import { data as appData } from '@/.content/apps.data';
 import { data as blogData } from '@/.content/blog-posts.data';
 import { data as channelData } from '@/.content/channel.data';
 import { data as metricsData } from '@/.content/metrics.data';
@@ -66,18 +67,28 @@ const ChartId = {
 const { isDark } = useData()
 const renderCount = ref(0) // dirty way to resolve hydration issue for initial dark mode
 
+const apps = Object.values(appData)
+const filterAppValues = (key: keyof typeof apps[0]) => apps.map(app => app[key]).filter(Boolean) as number[]
+const totalDownloads = filterAppValues('maxInstalls').reduce((sum, count) => sum + count, 0)
+const totalReleases = filterAppValues('releaseCount').reduce((sum, count) => sum + count, 0)
+const totalRatings = filterAppValues('ratings').reduce((sum, count) => sum + count, 0)
+const scores = filterAppValues('score')
+const avgScore = scores.reduce((a, b) => a + b, 0) / scores.length
+
 onMounted(() => renderCount.value++)
 
 const statCards = [
-    { title: 'Since', value: 2020, },
-    { title: 'Win7 Simu releases', value: metricsData.stats.win7SimuReleases, link: '/win7simu/changelog' },
-    { title: 'Brick 1100 releases', value: metricsData.stats.brick1100Releases, link: '/brick1100/changelog' },
-    { title: 'Blog posts', value: blogData.length, link: '/blog' },
-    { title: 'YouTube videos', value: channelData.stats.videoCount, link: 'https://youtube.com/@visnalize' },
-    { title: 'YouTube subscribers', value: shortenNumber(channelData.stats.subscriberCount), link: 'https://youtube.com/@visnalize' },
+    { title: 'Since', value: 2020 },
+    { title: 'Total app downloads', value: shortenNumber(totalDownloads) },
+    { title: 'Total app releases', value: shortenNumber(totalReleases) },
+    { title: 'Total app ratings', value: shortenNumber(totalRatings) },
+    { title: 'Average score', value: avgScore.toFixed(1) + '/5' },
+    { title: 'Total blog posts', value: blogData.length, link: '/blog' },
+    { title: 'Total videos', value: channelData.stats.videoCount, link: 'https://youtube.com/@visnalize' },
+    { title: 'Total subscribers', value: shortenNumber(channelData.stats.subscriberCount), link: 'https://youtube.com/@visnalize' },
 ]
 
-const getChart = (chartId: ChartId, format = 'interactive') => {
+const getChart = (chartId: ChartId, format: 'image' | 'interactive' = 'interactive') => {
     return `https://docs.google.com/spreadsheets/d/e/2PACX-1vRtE7C4cQv6eH8tQFb4uhK86P-0LwynBssSrAc-uxlcCgo3GiGv9KA-IKWiT9BT0Kgd6Ec6ggTbrjFT/pubchart?oid=${ChartId[chartId][+isDark.value]}&format=${format}`;
 }
 </script>
