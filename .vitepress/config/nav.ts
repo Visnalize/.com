@@ -4,6 +4,7 @@ import {
   Brick1100,
   Metrics,
   Resources,
+  Services,
   Testimonials,
   Win7Simu,
 } from "./sitelinks";
@@ -46,6 +47,7 @@ const navItems: DefaultTheme.Config["nav"] = [
     text: "More",
     items: [
       AboutVisnalize,
+      Services,
       Metrics,
       Testimonials,
       {

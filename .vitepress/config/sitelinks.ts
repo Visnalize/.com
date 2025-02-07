@@ -104,6 +104,10 @@ export const About: Link = {
   text: "About",
   link: "/about",
 };
+export const Services: Link = {
+  text: "Services",
+  link: "/services",
+};
 export const Metrics: Link = {
   text: "Open metrics",
   link: "/metrics",

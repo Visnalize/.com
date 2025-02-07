@@ -17,13 +17,19 @@
             <LayoutFooter />
         </template>
     </DefaultTheme.Layout>
+    <Toaster position="bottom-right" :theme="isDark ? 'dark' : 'light'" :toast-options="{
+        actionButtonStyle: {
+            background: 'var(--vp-c-brand-3)', color: 'var(--vp-c-white)'
+        }
+    }" />
 </template>
 
 <script setup lang="ts">
 import mediumZoom, { ZoomSelector } from 'medium-zoom';
 import { useData, useRoute } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
-import { nextTick, onMounted, watch } from 'vue';
+import { nextTick, onMounted, ref, watch } from 'vue';
+import { toast, Toaster } from 'vue-sonner';
 import AsideTop from './AsideTop.vue';
 import DocAfter from './DocAfter.vue';
 import DocBefore from './DocBefore.vue';
@@ -32,7 +38,8 @@ import LayoutFooter from './LayoutFooter.vue';
 import NotFound from './NotFound.vue';
 
 const route = useRoute()
-const { page } = useData()
+const { page, isDark } = useData()
+const toasted = ref(false)
 
 const attachZoom = () => {
     let selector: ZoomSelector = null;
@@ -50,7 +57,25 @@ const attachZoom = () => {
     mediumZoom(selector, { margin: 16, background: 'var(--vp-c-bg-soft)' })
 }
 
+const toastBlogSponsor = () => {
+    toast('Enjoying the content?', {
+        description: 'We also offer sponsored posts to help you reach our audience.',
+        duration: Infinity,
+        dismissible: true,
+        closeButton: true,
+        action: { label: 'Learn more', onClick: () => window.open('/services#sponsored-posts') },
+    })
+}
+
 onMounted(attachZoom);
 
-watch(() => route.path, () => nextTick(attachZoom))
+watch(() => route.path, () => {
+    nextTick(attachZoom)
+
+    if (route.path.includes('/blog')) {
+        if (toasted.value) return;
+        toasted.value = true;
+        setTimeout(toastBlogSponsor, 2000)
+    }
+})
 </script>

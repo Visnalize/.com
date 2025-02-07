@@ -19,12 +19,12 @@
 <script setup lang="ts">
 import { data as posts } from '@/.content/blog-posts.data';
 import { data as tags } from '@/.content/blog-tags.data';
-import BlogList from '@components/misc/blog/BlogList.vue';
-import BlogPost from '@components/misc/blog/BlogPost.vue';
-import BlogTags from '@components/misc/blog/BlogTags.vue';
 import { useData } from 'vitepress';
 import SponsorAd from '../../global/SponsorAd.vue';
 import PageTitle from '../PageTitle.vue';
+import BlogList from './BlogList.vue';
+import BlogPost from './BlogPost.vue';
+import BlogTags from './BlogTags.vue';
 
 const data = useData()
 const currentTag = data.params.value?.tag as string;

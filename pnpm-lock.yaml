@@ -77,6 +77,9 @@ importers:
       vue:
         specifier: ^3.5.13
         version: 3.5.13
+      vue-sonner:
+        specifier: ^1.3.0
+        version: 1.3.0
       vue3-disqus:
         specifier: ^1.0.7
         version: 1.0.7
@@ -1399,6 +1402,9 @@ packages:
     resolution: {integrity: sha512-7+iqOueLU7uc9NrMfrzbG8hwMqchfVfSzpVlCMeJQe4pyibqyoifDNbKTZvwxZKDvGkB+PdFeKvnGZMoEb8esg==}
     peerDependencies:
       vue: ^3.0.0
+
+  vue-sonner@1.3.0:
+    resolution: {integrity: sha512-jAodBy4Mri8rQjVZGQAPs4ZYymc1ywPiwfa81qU0fFl+Suk7U8NaOxIDdI1oBGLeQJqRZi/oxNIuhCLqsBmOwg==}
 
   vue3-disqus@1.0.7:
     resolution: {integrity: sha512-6aidR9tU9lBbB8Ib8zZ0+wQks7a9X7g7vzuqwLvcf+PKTzumxST9UbNXRf8/D2KprChf5qEnt2qtf9Bev6AMUw==}
@@ -2843,6 +2849,8 @@ snapshots:
   vue-resize@2.0.0-alpha.1(vue@3.5.13):
     dependencies:
       vue: 3.5.13
+
+  vue-sonner@1.3.0: {}
 
   vue3-disqus@1.0.7:
     dependencies:
