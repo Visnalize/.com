@@ -1,5 +1,5 @@
 <template>
-    <div ref="container" class="indie-products" :class="{ widget }">
+    <div ref="container" id="indie-products" :class="{ widget }">
         <h2 v-if="widget" class="title">
             <span>Indie products</span>
             <a href="/indie-products" target="_blank" v-tooltip="'What\'s this?'">
@@ -36,13 +36,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.indie-products {
+#indie-products {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.indie-products.widget {
-    padding: 1rem 1.5rem;
+#indie-products.widget {
+    padding: 1.5rem;
     border: 1px solid var(--vp-c-divider);
     border-radius: 1rem;
 }
@@ -68,8 +68,8 @@ onMounted(() => {
 
 .loader {
     display: grid;
-    gap: 1rem;
-    margin-bottom: 2.25rem;
+    gap: 0.75rem;
+    margin-bottom: 1.8rem;
 }
 
 .widget .loader {
@@ -106,7 +106,14 @@ onMounted(() => {
     width: 60%;
 }
 
-:deep(.indieboosting-product) {
+/* override indie-boosting styles below */
+
+#indie-products :deep(.indieboosting) {
+    background: none;
+    padding: 0;
+}
+
+#indie-products :deep(.indieboosting .indieboosting-product) {
     background-color: transparent;
     border-color: var(--vp-c-divider);
     border-radius: 0.5rem;
@@ -114,7 +121,7 @@ onMounted(() => {
     text-decoration: none;
 }
 
-:deep(.indieboosting-product:hover) {
+#indie-products :deep(.indieboosting-product:hover) {
     border-color: var(--vp-c-brand-1);
     box-shadow: none;
 }
@@ -124,17 +131,13 @@ onMounted(() => {
     height: 3rem;
 }
 
-:deep(.indieboosting-product p) {
+#indie-products :deep(.indieboosting-product .product-name) {
     color: var(--vp-c-text-1);
     margin: 0;
 }
 
-:deep(.indieboosting-product p:last-of-type) {
+#indie-products :deep(.indieboosting-product .product-description) {
     color: var(--vp-c-text-2);
     line-height: 1.5;
-}
-
-:not(.widget) :deep(.indieboosting-product p) {
-    white-space: unset;
 }
 </style>
