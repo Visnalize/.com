@@ -10,6 +10,16 @@ comments: false
 
 ## 2025
 
+### 3.17.1 (Feb 12, 2025)
+
+__Core__
+
+- Fixed: change desktop background to device upload not working.
+
+__Android__
+
+- You can now adjust the display resolution. Supported ratios: fullscreen, 4:3, 16:10, 16:9, 21:9.
+
 ### 3.17.0 (Feb 3, 2025)
 
 - Added support for live/animated desktop background
