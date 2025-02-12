@@ -6,7 +6,7 @@ import { PostData } from "./blog-posts.data";
 
 export function getLatestVersion(app: string) {
   const content = readFileSync(join(cwd(), app, "changelog.md"));
-  const [, version] = content.toString().match(/###\s*(\d+\.\d+\.\d+)/) || [];
+  const [, version] = content.toString().match(/###\s*`(\d+\.\d+\.\d+)`/) || [];
   return version;
 }
 
