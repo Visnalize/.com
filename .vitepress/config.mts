@@ -45,7 +45,7 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
       },
     },
 
-    head,
+    head: isDev ? undefined : head,
 
     lastUpdated: true,
 
