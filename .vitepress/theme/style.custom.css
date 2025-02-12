@@ -82,3 +82,11 @@ iconify-icon {
   width: 1em;
   height: 1em;
 }
+
+/**
+ * Styling for custom classes below
+* --------------------------------------------------------------------------- */
+
+.changelog h3 code {
+  font-size: 1em;
+}

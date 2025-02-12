@@ -1,5 +1,5 @@
 <template>
-    <a class="blog-tag" :class="{ active }" :href="'/blog/tag/' + tag.name">
+    <a class="blog-tag" :class="{ active }" :href="active ? '/blog' : '/blog/tag/' + tag.name">
         <span>{{ tag.name }}</span>
         <span v-if="tag.count" class="count">{{ tag.count }}</span>
     </a>

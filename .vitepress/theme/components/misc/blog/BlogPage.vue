@@ -1,6 +1,10 @@
 <template>
     <PageTitle :title='currentTag ? `Posts with tag "${currentTag}"` : "New and sharing"'>
-        <template v-if="!currentTag">
+        <template v-if="currentTag">
+            Sharing, updates, thoughts, and insights with tag <code>{{ currentTag }}</code>.
+            Hope you find helpful and valuable information here.
+        </template>
+        <template v-else>
             Where I share updates, thoughts, insights on various topics.
             Hope you find helpful and valuable information here.
         </template>

@@ -106,4 +106,4 @@ No, I'm afraid. It's unlikely that this simulator will be published to App Store
 
 ### I found a bug in the simulator. How do I report it?
 
-To help facilitate the bug smashing process, I only look into bug reports that are submitted via [email](mailto:hey@visnalize.com), from [Github issues board](https://github.com/Visnalize/win7-simu) or through the simulator itself. You can find a "Report bugs" option in the __About__ app to report bugs through the simulator. Please include as much detail as possible that would help reproduce the bug.
+To help facilitate the bug smashing process, I only look into bug reports that are submitted via [email](mailto:hey@visnalize.com), from [Github issues board](https://github.com/Visnalize/win7-simu/issues) or through the simulator itself. You can find a "Report bugs" option in the __About__ app to report bugs through the simulator. Please include as much detail as possible that would help reproduce the bug.
