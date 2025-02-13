@@ -21,22 +21,21 @@ An exclusive [Theme Studio](./themestudio.md) app is also available for you to c
 Refer to the [Simulated apps](./simulated.md) page for a list of all available apps. For a list of features added through versions, refer to [Changelog](./changelog.md).
 :::
 
-On August 28, 2021, a web version of the app was released. It is accessible for those who do not own an Android device. The graphics, interface, and most of the features are identical to the Android app, except for some, which are exclusive to Android and cannot be replicated for the web due to technical constraints. A comparison of some key features is listed as below:
+On August 28, 2021, a web version of the app was released. It is accessible for those who do not own an Android device. The graphics, interface, and most of the features are identical to the Android app, except for some, which are exclusive to Android and cannot be replicated for the web due to technical constraints. A comparison of some key features is listed as below.
+
+Annotation: 🔴 No support, 🟡 Partial support, 🟢 Full support
 
 Feature | Android | Web
 --------|:-------:|:---:
-Cross-platform support[*](#cross-platform) | ❌ | ✅
-Work offline | ✅ | ❌
-Can access local files directly with File Explorer[**](#local-files) | ❌ | ❌
-Can access local/native apps | ✅ | ❌
-Sync settings with online accounts | ✅ | ✅
-Multi-theming support | ✅ | ✅
-Multi-language support | ✅ | ✅
-System notifications | ✅ | ❌
-
-<a name="cross-platform">*</a> It doesn't matter if the device is Android, iOS, Windows, or Mac, as long as it has a web browser and connects to the internet.
-
-<a name="local-files">**</a> The early versions of Win7 Simu were able to access local files on Android devices. However, due to Google Play's [policy](./faq.md#file-explorer-does-not-show-files-on-my-device-what-s-the-problem), this feature was removed from v3.6.0 onwards.
+<span :class="$style.tip" v-tooltip="{content: 'Web version works on either Android, iOS, Windows,<br/>or Mac, as you access it via the web browser.',html: true}">Cross-platform support<iconify-icon icon="fluent:question-circle-24-regular" /></span> | 🔴 | 🟢
+Work offline | 🟢 | 🟢
+<span :class="$style.tip" v-tooltip="{content: 'Early versions of Win7 Simu were able to access local files<br/>on Android version. However, due to Google Play\'s policy,<br/>this feature was removed from v3.6.0 onwards.',html: true}">Can access local files directly with File Explorer<iconify-icon icon="fluent:question-circle-24-regular" /></span> | 🔴 | 🔴
+<span :class="$style.tip" v-tooltip="{content: 'On Android 12 and newer, Google restricts access to user device,<br/>not all games/apps are visible and can be opened from Win7 Simu.',html:true}">Can access local/native apps<iconify-icon icon="fluent:question-circle-24-regular" /></span> | 🟡 | 🔴
+Sync settings with online accounts | 🟢 | 🟢
+Multi-theming support | 🟢 | 🟢
+Multi-language support | 🟢 | 🟢
+System notifications | 🟢 | 🔴
+Display control | 🟢 | 🔴
 
 ## Pricing
 
@@ -49,3 +48,11 @@ Win7 Simu is and will always remain **FREE** to use. However, as it has been gro
 **Windows 7** was first released by [Microsoft](https://en.wikipedia.org/wiki/Microsoft) on **October 22, 2009**, succeeding Windows Vista, which was criticized for its long development time, performance and compatibility issues at launch, and many other critiques. Windows 7 was well-received and praised, stating it to be a "big improvement" over Windows Vista and a "worthy successor" of Windows XP at the time.
 
 After more than a decade, on **January 14, 2020**, support for Windows 7 ended. Security updates and fixes were no longer provided by Microsoft. However, even on the day of its death, Windows 7 was still the second-most popular operating system with a 32.75% market share, behind Windows 10 with 47.65%, showing how much love it still had.
+
+<style module>
+.tip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+</style>
