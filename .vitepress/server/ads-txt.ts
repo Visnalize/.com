@@ -45,10 +45,11 @@ zmaticoo.com, 5135655, RESELLER
 const VITEPRESS_OUT_DIR = join(cwd(), ".vitepress", "dist");
 
 export const generateAdsTxt = async () => {
+  console.log("Generating ads.txt");
   let adsTxtValue = INITIAL_ADS_TXT;
   try {
     const data = await fetch(
-      "https://ads.themoneytizer.com/ads_txt.php?site_id=126352&id=117816"
+      "https://ads.themoneytizer.com/ads_txt.php?site_id=127550&id=117816"
     );
     const text = await data.text();
     adsTxtValue += "\n" + text;
@@ -59,5 +60,6 @@ export const generateAdsTxt = async () => {
 };
 
 export const generateAppAdsTxt = () => {
+  console.log("Generating app-ads.txt");
   writeFileSync(join(VITEPRESS_OUT_DIR, "app-ads.txt"), INITIAL_APP_ADS_TXT);
 };
