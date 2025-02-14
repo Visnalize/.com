@@ -25,11 +25,12 @@
 </template>
 
 <script setup lang="ts">
+import { toastBlogSponsor } from '@composables/useToast';
 import mediumZoom, { ZoomSelector } from 'medium-zoom';
 import { useData, useRoute } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import { nextTick, onMounted, ref, watch } from 'vue';
-import { toast, Toaster } from 'vue-sonner';
+import { Toaster } from 'vue-sonner';
 import AsideTop from './AsideTop.vue';
 import DocAfter from './DocAfter.vue';
 import DocBefore from './DocBefore.vue';
@@ -55,16 +56,6 @@ const attachZoom = () => {
     }
 
     mediumZoom(selector, { margin: 16, background: 'var(--vp-c-bg-soft)' })
-}
-
-const toastBlogSponsor = () => {
-    toast('Enjoying the content?', {
-        description: 'We also offer sponsored posts to help you reach our audience.',
-        duration: Infinity,
-        dismissible: true,
-        closeButton: true,
-        action: { label: 'Learn more', onClick: () => window.open('/services#sponsored-posts') },
-    })
 }
 
 onMounted(attachZoom);
