@@ -5,6 +5,7 @@ import { join } from "path";
 import { fileURLToPath } from "url";
 import { DefaultTheme, defineConfig, UserConfigFn } from "vitepress";
 import { pagefindPlugin } from "vitepress-plugin-pagefind";
+import { runBuildEndScripts } from "./config/build";
 import head from "./config/head";
 import navItems from "./config/nav";
 import sidebar from "./config/sidebar";
@@ -112,6 +113,8 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
     },
 
     transformPageData,
+
+    buildEnd: runBuildEndScripts,
   });
 };
 
