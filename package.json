@@ -7,17 +7,17 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "@justinribeiro/lite-youtube": "^1.6.0",
-    "@octokit/rest": "^21.0.2",
+    "@justinribeiro/lite-youtube": "^1.7.1",
+    "@octokit/rest": "^21.1.0",
     "@types/markdown-it": "^14.1.2",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.13.4",
     "@types/voca": "^1.4.6",
-    "@vueuse/core": "^12.0.0",
+    "@vueuse/core": "^12.6.1",
     "floating-vue": "^5.2.2",
     "google-play-scraper": "^10.0.1",
     "gray-matter": "^4.0.3",
-    "iconify-icon": "^2.2.0",
-    "image-size": "^1.1.1",
+    "iconify-icon": "^2.3.0",
+    "image-size": "^1.2.0",
     "markdown-it": "^14.1.0",
     "markdown-it-block-embed": "^0.0.3",
     "markdown-it-task-lists": "^2.1.1",
@@ -26,12 +26,12 @@
     "pagefind": "^1.3.0",
     "polished": "^4.3.1",
     "thum.io": "^1.0.9",
-    "vitepress": "^1.5.0",
-    "vitepress-plugin-pagefind": "^0.4.12",
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-pagefind": "^0.4.13",
     "voca": "^1.4.1",
     "vue": "^3.5.13",
     "vue-sonner": "^1.3.0",
     "vue3-disqus": "^1.0.7",
-    "vue3-social-sharing": "^1.1.2"
+    "vue3-social-sharing": "^1.3.1"
   }
 }

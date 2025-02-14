@@ -25,11 +25,11 @@ Replace `<port_number>` with `5500` if you are running your app/game with [Live 
 
 - The below information will be displayed in the terminal.
 
-```text{28}
+```text{4,28}
 Microsoft Windows [Version 10.0.19045.5247]
 (c) Microsoft Corporation. All rights reserved.
 
-C:\brick-1100-apps>ssh -R 80:127.0.0.1:5500 nokey@localhost.run // [!code focus]
+C:\brick-1100-apps>ssh -R 80:127.0.0.1:5500 nokey@localhost.run
 
 ===============================================================================
 Welcome to localhost.run!
@@ -53,7 +53,7 @@ https://localhost.run/docs/
 about an issue. **
 
 authenticated as anonymous user
-1b3d6c557fb368.lhr.life tunneled with tls termination, https://1b3d6c557fb368.lhr.life // [!code focus]
+1b3d6c557fb368.lhr.life tunneled with tls termination, https://1b3d6c557fb368.lhr.life
 create an account and add your key for a longer lasting domain name. see https://localhost.run/docs/forever-free/ for more information.
 ```
 
