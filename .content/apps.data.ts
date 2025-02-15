@@ -4,12 +4,13 @@ import gplay, { IAppItemFullDetail } from "google-play-scraper";
 import { join } from "path";
 import { defineLoader } from "vitepress";
 import cache from "./utils/cache";
+import { ALL_RELEASE_VERSIONS } from "./utils/regex";
 
 const cacheFile = cache.init("apps");
 
 function getReleaseCount(app: App) {
   const content = readFileSync(join(process.cwd(), app, "changelog.md"));
-  const releases = content.toString().match(/###\s*\d+\.\d+\.\d+/g) || [];
+  const releases = content.toString().match(ALL_RELEASE_VERSIONS) || [];
   return releases.length;
 }
 

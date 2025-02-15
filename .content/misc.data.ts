@@ -3,10 +3,11 @@ import matter from "gray-matter";
 import { join } from "path";
 import { cwd } from "process";
 import { PostData } from "./blog-posts.data";
+import { RELEASE_VERSION } from "./utils/regex";
 
 export function getLatestVersion(app: string) {
   const content = readFileSync(join(cwd(), app, "changelog.md"));
-  const [, version] = content.toString().match(/###\s*`(\d+\.\d+\.\d+)`/) || [];
+  const [, version] = content.toString().match(RELEASE_VERSION) || [];
   return version;
 }
 
