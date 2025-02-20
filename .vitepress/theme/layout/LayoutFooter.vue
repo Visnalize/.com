@@ -4,7 +4,7 @@
             <div class="footer-content">
                 <div class="brand">
                     <a class="brand-logo" href="/">
-                        <img src="/favicon.png" alt="Logo" />
+                        <img src="/logo.svg" alt="Logo" />
                         <span>Visnalize</span>
                     </a>
                     <ul class="brand-social">
@@ -108,8 +108,14 @@ footer {
 }
 
 .brand-logo img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.brand-logo span {
+    font-family: "croogla4f";
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
 }
 
 .brand-social {

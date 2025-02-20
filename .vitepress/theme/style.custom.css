@@ -60,6 +60,17 @@
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/components/vp-doc.css
  * -------------------------------------------------------------------------- */
 
+@font-face {
+  font-family: "croogla4f";
+  src: url("/assets/fonts/croogla4f.ttf") format("truetype");
+}
+
+.VPNavBarTitle .title span {
+  font-family: "croogla4f";
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
 .vp-doc h1 {
   font-size: 2rem;
   margin-bottom: 2rem;

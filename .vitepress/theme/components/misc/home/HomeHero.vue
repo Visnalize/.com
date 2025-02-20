@@ -105,13 +105,14 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 }
 
 .section-left h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.25;
     margin-bottom: 2rem;
     color: var(--vp-c-text-1);
     display: flex;
     flex-direction: column;
+    font-family: "croogla4f";
 }
 
 .section-left p {
@@ -164,7 +165,7 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     }
 
     .section-left h1 {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
     }
 }
 
@@ -240,7 +241,7 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
 @media (min-width: 1440px) {
 
     .section-left h1 {
-        font-size: 3.5rem;
+        font-size: 3.75rem;
     }
 
     .section-right button {

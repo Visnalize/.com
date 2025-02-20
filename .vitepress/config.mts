@@ -61,7 +61,7 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
 
-      logo: "/favicon.png",
+      logo: "/logo.svg",
 
       nav: navItems,
 
