@@ -1,4 +1,4 @@
-const allAttributes = [
+const paramAttributes = [
   "id",
   "max-products",
   "max-columns",
@@ -8,12 +8,15 @@ const allAttributes = [
   "no-title",
   "no-border",
   "no-shadow",
+  "no-credits",
   "open-self",
   "permanent",
   "permanent-url",
   "owned",
   "debug",
-] as const;
+];
+
+const allAttributes = [...paramAttributes, "headless"] as const;
 
 type Attribute = (typeof allAttributes)[number];
 
@@ -35,19 +38,22 @@ class IndieBoosting extends HTMLElement {
     const searchParams = new URLSearchParams();
 
     Array.from(this.attributes).forEach((attribute) => {
-      const { name, value } = attribute;
-      if (allAttributes.includes(name as Attribute)) {
-        searchParams.append(attributeToProp(name), value || "true");
+      const { name, value } = attribute as Attr & { name: Attribute };
+      if (allAttributes.includes(name)) {
+        paramAttributes.includes(name) &&
+          searchParams.append(attributeToProp(name), value || "true");
       } else {
         console.warn(`IndieBoosting: '${name}' is not a supported attribute.`);
       }
     });
 
-    style.rel = "stylesheet";
-    style.href = "https://cdn.indieboosting.com/latest/style.css";
-    script.src = `https://cdn.indieboosting.com/latest/script.js?${searchParams}`;
+    if (!this.attributes.getNamedItem("headless")) {
+      style.rel = "stylesheet";
+      style.href = "https://cdn.indieboosting.com/latest/style.css";
+      this.parentElement.appendChild(style);
+    }
 
-    this.parentElement.appendChild(style);
+    script.src = `https://cdn.indieboosting.com/latest/script.js?${searchParams}`;
     this.parentElement.appendChild(script);
   }
 

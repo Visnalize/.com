@@ -1,12 +1,12 @@
 <template>
-    <div ref="container" id="indie-products" :class="{ widget }">
+    <div ref="container" :class="[{ widget }, 'indie-products']">
         <h2 v-if="widget" class="title">
             <span>Indie products</span>
             <a href="/indie-products" target="_blank" v-tooltip="'What\'s this?'">
                 <iconify-icon icon="fluent:question-circle-24-regular" />
             </a>
         </h2>
-        <indie-boosting v-if="inView" id="HUQBLZLWPR" no-title no-border no-shadow :max-products="widget ? 4 : 10"
+        <indie-boosting v-if="inView" id="HUQBLZLWPR" no-title no-credits headless theme="light" :max-products="widget ? 4 : 10"
             :max-columns="widget ? 2 : 1" @load="contentLoaded = true" />
         <div v-if="!contentLoaded" class="loader">
             <div v-for="i in Array.of(1, 2, 3, 4)" class="loading-item">
@@ -36,12 +36,11 @@ onMounted(() => {
 </script>
 
 <style scoped>
-#indie-products {
-    text-align: center;
+.indie-products {
     margin-bottom: 2rem;
 }
 
-#indie-products.widget {
+.indie-products.widget {
     padding: 1.5rem;
     border: 1px solid var(--vp-c-divider);
     border-radius: 1rem;
@@ -52,7 +51,7 @@ onMounted(() => {
     align-items: center;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .title a {
@@ -66,39 +65,55 @@ onMounted(() => {
     color: var(--vp-c-brand-1);
 }
 
-.loader {
+.loader,
+:deep(.products-grid) {
     display: grid;
     gap: 0.75rem;
-    margin-bottom: 1.8rem;
 }
 
-.widget .loader {
+.widget .loader,
+.widget :deep(.products-grid) {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.loading-item {
+.loading-item,
+:deep(.indieboosting-product) {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 0.75rem;
     border: 1px solid var(--vp-c-divider);
     border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s;
+    text-decoration: none;
 }
 
-.loading-item .icon {
+:deep(.indieboosting-product:hover) {
+    border-color: var(--vp-c-brand-1);
+}
+
+.loading-item .icon,
+:deep(.product-item__image) {
     width: 4rem;
     height: 4rem;
 }
 
-.widget .loading-item .icon {
+.widget .loading-item .icon,
+.widget :deep(.product-item__image) {
     width: 3rem;
     height: 3rem;
 }
 
-.loading-item>div {
+.loading-item>div,
+:deep(.product-info) {
     flex: 1;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+
+.loading-item>div {
     gap: 0.5rem;
 }
 
@@ -106,38 +121,22 @@ onMounted(() => {
     width: 60%;
 }
 
-/* override indie-boosting styles below */
-
-#indie-products :deep(.indieboosting) {
-    background: none;
-    padding: 0;
-}
-
-#indie-products :deep(.indieboosting .indieboosting-product) {
-    background-color: transparent;
-    border-color: var(--vp-c-divider);
-    border-radius: 0.5rem;
-    padding: 0.75rem;
-    text-decoration: none;
-}
-
-#indie-products :deep(.indieboosting-product:hover) {
-    border-color: var(--vp-c-brand-1);
-    box-shadow: none;
-}
-
-.widget :deep(.indieboosting-product > div:first-of-type) {
-    width: 3rem;
-    height: 3rem;
-}
-
-#indie-products :deep(.indieboosting-product .product-name) {
-    color: var(--vp-c-text-1);
+:deep(.product-name),
+:deep(.product-description) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
     margin: 0;
 }
 
-#indie-products :deep(.indieboosting-product .product-description) {
+:deep(.product-name) {
+    color: var(--vp-c-text-1);
+    font-weight: 600;
+}
+
+:deep(.product-description) {
     color: var(--vp-c-text-2);
-    line-height: 1.5;
+    font-size: 0.875rem;
 }
 </style>
