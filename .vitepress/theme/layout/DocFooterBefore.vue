@@ -1,5 +1,6 @@
 <template>
     <div class="before-doc-footer">
+        <BlogSeries />
         <div v-if="tags.length > 0" class="blog-tags">
             <div class="tags-title">Tags:</div>
             <div>
@@ -10,6 +11,7 @@
 </template>
 
 <script setup lang="ts">
+import BlogSeries from '../components/misc/blog/BlogSeries.vue';
 import BlogTag from '../components/misc/blog/BlogTag.vue';
 import useCustomData from '../composables/useCustomData';
 

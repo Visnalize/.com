@@ -5,6 +5,9 @@ tags:
   - win7-simu
   - sharing
   - technical
+series:
+  id: building-win7-simu
+  part: 1
 ---
 
 # How I built Win7 Simu

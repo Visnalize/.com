@@ -57,7 +57,7 @@
 }
 
 /**
- * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/components/vp-doc.css
+ * Custom style overrides for the entire site
  * -------------------------------------------------------------------------- */
 
 @font-face {
@@ -69,6 +69,21 @@
   font-family: "croogla4f";
   font-size: 1.5rem;
   margin-top: 0.25rem;
+}
+
+.vp-doc ul.contains-task-list {
+  padding: 0;
+}
+
+.task-list-item {
+  display: block;
+}
+
+.task-list-item-checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 0 0.25rem 0 0;
+  vertical-align: middle;
 }
 
 .vp-doc h1 {
