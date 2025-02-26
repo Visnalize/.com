@@ -3,9 +3,10 @@ import { join } from "path";
 import { cwd } from "process";
 import { getThumURL } from "thum.io";
 import { loadEnv } from "vitepress";
+import { ORIGIN } from "../theme/constants";
 
 const { VITE_THUM_AUTH_KEY: authKey } = loadEnv("", cwd());
-const defaultOgImage = "/assets/visnalize-og.png";
+const defaultOgImage = ORIGIN + "/assets/visnalize-og.png";
 
 const getOgImage = async (pagePath: string) => {
   if (!pagePath) return defaultOgImage;
@@ -13,7 +14,7 @@ const getOgImage = async (pagePath: string) => {
   const publicDir = join(cwd(), "public", "assets", "ogimage");
   const fileName = pagePath.replace(/\//g, "-").replace(".html", "") + ".png";
   const filePath = join(publicDir, fileName);
-  const publicPath = `/assets/ogimage/${fileName}`;
+  const publicPath = ORIGIN + `/assets/ogimage/${fileName}`;
 
   if (existsSync(filePath)) {
     return publicPath;
