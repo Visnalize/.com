@@ -58,6 +58,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
 
   let firstImage = content.match(/!\[.*?\]\((.*?)\)/)?.[1];
   firstImage = firstImage?.startsWith(".") ? undefined : firstImage;
+  firstImage = firstImage?.startsWith("/") ? ORIGIN + firstImage : firstImage;
 
   const metaImage =
     data.frontmatter.image || firstImage || (await getOgImage(transformedPath));
