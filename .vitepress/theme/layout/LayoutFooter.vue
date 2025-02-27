@@ -26,7 +26,8 @@
                         <div class="group-title">Win7 Simu</div>
                         <ul class="group-list">
                             <li v-for="{ link, text } in win7Links" :key="text">
-                                <a :href="link">{{ text }}</a>
+                                <a :class="{ 'vp-external-link-icon': isExternal(link) }" :href="link"
+                                    :target="isExternal(link) ? '_blank' : undefined">{{ text }}</a>
                             </li>
                         </ul>
                     </div>
@@ -35,7 +36,8 @@
                         <div class="group-title">Brick 1100</div>
                         <ul class="group-list">
                             <li v-for="{ link, text } in brickLinks" :key="text">
-                                <a :href="link">{{ text }}</a>
+                                <a :class="{ 'vp-external-link-icon': isExternal(link) }" :href="link"
+                                    :target="isExternal(link) ? '_blank' : undefined">{{ text }}</a>
                             </li>
                         </ul>
                     </div>
@@ -44,7 +46,8 @@
                         <div class="group-title">Visnalize</div>
                         <ul class="group-list">
                             <li v-for="{ link, text } in visnalizeLinks" :key="text">
-                                <a :href="link">{{ text }}</a>
+                                <a :class="{ 'vp-external-link-icon': isExternal(link) }" :href="link"
+                                    :target="isExternal(link) ? '_blank' : undefined">{{ text }}</a>
                             </li>
                         </ul>
                     </div>
@@ -62,6 +65,7 @@ import { About, Blog, Brick1100, Metrics, Services, Testimonials, Win7Simu } fro
 import socialLinks from '@/.vitepress/config/social';
 import { useData } from 'vitepress';
 import { useSidebar } from 'vitepress/theme';
+import { isExternal } from '../utils/misc';
 
 const { isDark } = useData()
 const { hasSidebar } = useSidebar()
