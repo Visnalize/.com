@@ -54,7 +54,7 @@ _Minor bug fixes._
 - Added new built-in game: [Monogram](./games.md#monogram) (Menu > Games > Monogram)
 - Added user account (pretty much useless for now)
 - Added ability to access the app using [deep links](./deep-links.md)
-- You can now suggest, vote for feature ideas or report bugs via the [feedback forum](https://feedback.userreport.com/f5469bcf-5bce-464f-a88e-6f177c8fa8b7/#ideas/popular)
+- You can now suggest, vote for feature ideas or report bugs via the [feedback forum](https://visnalize.com/brick1100/feedback)
 
 ### `0.0.6` (Oct 16, 2023)
 
