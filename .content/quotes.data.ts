@@ -18,6 +18,70 @@ export interface Quote {
 
 const quotes: Quote[] = [
   {
+    author: "Old Man Krootox",
+    date: "November 19, 2023",
+    app: "brick1100",
+    content:
+      "Exactly what I was looking for! I wanted to show my son what we had growing up and how he shouldn't be ungrateful he doesn't have the top of the range iPhone. Also think I will be spending an unhealthy amount of time on snake. Great app!",
+  },
+  {
+    author: "Wolfgang M. Lobo",
+    date: "February 26, 2024",
+    app: "brick1100",
+    content:
+      'I can\'t put my words on how I missed a phone like that. For an unreleased app, this is the best "phone simulator" someone has ever made. Congratulations Dev(s)!',
+  },
+  {
+    author: "Rene-Nic Watson-Densem",
+    date: "May 10, 2024",
+    app: "brick1100",
+    content:
+      "This is an early access game and it's already amazing! It doesn't look great on my giant tablet screen, but on a phone I'm sure it'd look great! Keep me updated on all of the things you add. Keep up the amazing work!",
+  },
+  {
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjWqWrSYgrTQ1DjlG74zHIVfMX_pjnls3lpgFjPXXVLgPsEi23E=mo",
+    author: "Kevin Casasola",
+    date: "December 23, 2023",
+    app: "brick1100",
+    content:
+      "Discovered this app by pure chance. Beautiful, you can turn on your smartphone's flashlight directly from this simulator. It also has old Nokia games, ringtones, and you can even send messages from the simulator. Top!",
+  },
+  {
+    author: "deneme test",
+    date: "July 3, 2024",
+    app: "brick1100",
+    content:
+      "I felt nostalgic. I remember this phone and even its ringtones. I listened to this phone a lot, especially when I was little and very familiar with Nokia. As a Nokia lover, I loved this application!",
+  },
+  {
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjV3hn2RD4F6lcx2aFb9sVuVTJdAWOiMrpGDum8nePd071QAZ5Az5A=mo",
+    author: "Ayla Rodríguez (Estrella Española)",
+    date: "August 15, 2024",
+    app: "brick1100",
+    content:
+      "Unfortunately all Nokia phones are gone, but I'm lucky to have found this app, I'm very happy because I will be able to retrieve the memories of Nokia 1100 phone 😢❤️",
+  },
+  {
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVWt7lgjmwv9wttQyEgPnGS2RVN7phdaLJ09B_ogRt-bR7O5Orw=mo",
+    author: "Nicolas Gabriel",
+    date: "March 4, 2025",
+    app: "brick1100",
+    content:
+      "I liked it, just like a cell phone, this game fulfilled its objective. Rating: 10/10.",
+  },
+  {
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVquRybmpjqJqsxn8DmOlGV7zYA6c18rzIP93OJgMhZWXYys-Fv=mo",
+    author: "Kendall Lizano Ávila",
+    date: "December 18, 2024",
+    app: "brick1100",
+    content:
+      "I love this game/application, I like to make a new mobile phone look like an old one, I hope this type of mobile phone returns one day, but this application gives me an experience close to those old mobile phones, I love the aesthetics and the noises, I was expecting something very simple, but for me it seems very complete. Very good work and it is a nice gift for people who love retro.",
+  },
+  {
     image:
       "https://lh3.googleusercontent.com/a/ACg8ocJMMyLiCU_bsTFan4u7XGZnYRCfXStgrf5rrOjk6ceG5esCmA=mo",
     author: "Seva Lgov",
