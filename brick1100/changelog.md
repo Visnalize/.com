@@ -15,6 +15,13 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## Beta versions
 
+### `0.0.14` (Mar 6, 2025)
+
+- Added [Builders](./builders.md) program info (Menu > Online > Builders)
+- Added Online Games (Menu > Online > Online Games)
+- Added Composer (Menu > Extras > Composer)
+- Fixed an issue with saved tones not appearing in Files <Notation icon="ios" />
+
 ### `0.0.13` (Sep 24, 2024)
 
 - Fixed audio issues

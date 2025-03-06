@@ -21,7 +21,7 @@ defineProps<Props>()
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto 3rem;
     max-width: 640px;
 }
 </style>
