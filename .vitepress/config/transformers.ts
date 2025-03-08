@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 import matter from "gray-matter";
-import imageSize from "image-size";
+import { imageSizeFromFile } from "image-size/fromFile";
 import { join } from "path";
 import { cwd } from "process";
 import { PageData, UserConfig } from "vitepress";
@@ -34,7 +34,9 @@ export const transformPageData: UserConfig["transformPageData"] = async (
       data.title + " in Win7 Simu " + decapitalize(app.description);
     data.frontmatter = { ...data.frontmatter, ...app };
     data.frontmatter.image = isDevMode() ? imageUrl : ORIGIN + imageUrl;
-    data.frontmatter.imageData = imageSize(join(cwd(), "public", imageUrl));
+    data.frontmatter.imageData = await imageSizeFromFile(
+      join(cwd(), "public", imageUrl)
+    );
     try {
       const filePath = join(cwd(), ".content", "simulated-apps", slug + ".md");
       data.frontmatter.markdown = readFileSync(filePath, "utf-8");

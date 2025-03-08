@@ -17,7 +17,7 @@
     "google-play-scraper": "^10.0.1",
     "gray-matter": "^4.0.3",
     "iconify-icon": "^2.3.0",
-    "image-size": "^1.2.0",
+    "image-size": "^2.0.0",
     "markdown-it": "^14.1.0",
     "markdown-it-block-embed": "^0.0.3",
     "markdown-it-task-lists": "^2.1.1",

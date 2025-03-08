@@ -1,4 +1,5 @@
-import sizeOf from "image-size";
+import { readFileSync } from "fs";
+import { imageSize } from "image-size";
 import MarkdownIt, { Token } from "markdown-it";
 
 interface PluginOptions {
@@ -86,7 +87,8 @@ function getImageDimensions(imageUrl: string, env: unknown) {
       finalImageUrl = `${getParentPath(env)}/${imageUrl}`.replace(/\.\//g, "");
     }
 
-    const { width, height } = sizeOf(finalImageUrl);
+    const imageBuffer = readFileSync(finalImageUrl);
+    const { width, height } = imageSize(imageBuffer);
     return { width, height };
   } catch (error) {
     const msg = `md-image: Could not get dimensions of image with url ${imageUrl}.`;
