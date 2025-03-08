@@ -25,6 +25,7 @@ const quotes: Quote[] = [
       "Exactly what I was looking for! I wanted to show my son what we had growing up and how he shouldn't be ungrateful he doesn't have the top of the range iPhone. Also think I will be spending an unhealthy amount of time on snake. Great app!",
   },
   {
+    featured: true,
     author: "Wolfgang M. Lobo",
     date: "February 26, 2024",
     app: "brick1100",
@@ -39,6 +40,7 @@ const quotes: Quote[] = [
       "This is an early access game and it's already amazing! It doesn't look great on my giant tablet screen, but on a phone I'm sure it'd look great! Keep me updated on all of the things you add. Keep up the amazing work!",
   },
   {
+    featured: true,
     image:
       "https://lh3.googleusercontent.com/a-/ALV-UjWqWrSYgrTQ1DjlG74zHIVfMX_pjnls3lpgFjPXXVLgPsEi23E=mo",
     author: "Kevin Casasola",
@@ -212,7 +214,6 @@ const quotes: Quote[] = [
       "I've been using this app for a while now and it's actually really well-made compared to other simulators I've seen and I can tell there's been a lot of effort put into it. Overall, this is a great app, would recommend. Keep up the good work.",
   },
   {
-    featured: true,
     image:
       "https://play-lh.googleusercontent.com/a-/ALV-UjXB4VKtTl-B8FXhulUUDaEhgh9zMqzH85KctsnEMZQYPyc=s50",
     author: "Cip",
@@ -222,7 +223,6 @@ const quotes: Quote[] = [
       "That's what I call a real Windows Simulator, it is exactly like Windows 7 but on mobile! I really like it and I gave 5 STARS beacuse of it! I hope you make really awesome updates on this game without no doubt! Thanks for reading this!",
   },
   {
-    featured: true,
     author: "lucashenriquelamb",
     date: "October 7, 2024",
     app: "brick1100",
