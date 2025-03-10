@@ -34,6 +34,8 @@ A typical composing process included:
 3. Editing the tune – The melody could be played back, and individual notes could be modified or deleted as needed.
 4. Saving and setting as ringtone – Once satisfied, users could save their custom melody and assign it as the default ring
 
+<SponsorAd />
+
 ### Deep dive
 
 ![A note's structure](./img/building-nokia-composer-with-ai/note-structure.svg){style="margin: 0 auto"}
@@ -86,6 +88,8 @@ It's amazing to see how AI has evolved in such a short time, enabling developers
 ![First prompt to build Nokia Composer](./img/building-nokia-composer-with-ai/first-prompt.png)
 
 Without much instruction, solely from my first simple prompt, the AI agent was able to gather the necessary information of how the Nokia Composer works by searching the web, it then scanned the existing codebase to understand the structure, inspected the relevant parts for the conventions, and reused for generating the code. The result was great, the Composer was functional, but it was nowhere near perfect. There were still flaws, bugs, and inefficiencies that needed to be taken care of. It couldn't understand the way the keypad input was handled (so it improvised, but completely off the mark), the composer interface didn't fit in the overall layout, and the notes' pitch and duration were not accurate. In general, if I were to give the generated code a score, it would get a 6/10, but the most crucial and hardest part was done, so I was pretty happy with it.
+
+<SponsorAd />
 
 ### Iterations and refinements
 
