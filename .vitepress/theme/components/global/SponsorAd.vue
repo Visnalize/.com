@@ -1,11 +1,12 @@
 <template>
     <component :is="'script'" async crossorigin="anonymous"
         :src="'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-' + ADSENSE_ID" />
-    <ins class="adsbygoogle" :class="className" style="display: block" data-ad-slot="3336580675"
-        :data-ad-client="'ca-pub-' + ADSENSE_ID" data-full-width-responsive="true"
-        :data-ad-format="normalizedFormat.join()">
+    <div class="ad-container">
+        <ins class="adsbygoogle" :class="className" style="display: block" data-ad-slot="3336580675"
+            :data-ad-client="'ca-pub-' + ADSENSE_ID" data-full-width-responsive="true"
+            :data-ad-format="normalizedFormat.join()" />
         <a class="placeholder" href="/services#advertising">Place your ad</a>
-    </ins>
+    </div>
     <component :is="'script'">
         (adsbygoogle = window.adsbygoogle || []).push({});
     </component>
@@ -34,11 +35,11 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 </script>
 
 <style scoped>
-.adsbygoogle {
+.ad-container {
     position: relative;
 }
 
-.adsbygoogle .placeholder {
+.ad-container .placeholder {
     display: none;
     position: absolute;
     inset: 0;
@@ -52,12 +53,12 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
     transition: 0.2s;
 }
 
-.adsbygoogle .placeholder:hover {
+.ad-container .placeholder:hover {
     background-color: var(--vp-c-bg-soft);
     color: var(--vp-c-text-2);
 }
 
-.adsbygoogle[data-ad-status="unfilled"] .placeholder {
+.adsbygoogle[data-ad-status="unfilled"]+.placeholder {
     display: flex;
 }
 
