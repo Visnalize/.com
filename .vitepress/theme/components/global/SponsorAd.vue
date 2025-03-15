@@ -3,7 +3,9 @@
         :src="'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-' + ADSENSE_ID" />
     <ins class="adsbygoogle" :class="className" style="display: block" data-ad-slot="3336580675"
         :data-ad-client="'ca-pub-' + ADSENSE_ID" data-full-width-responsive="true"
-        :data-ad-format="normalizedFormat.join()" />
+        :data-ad-format="normalizedFormat.join()">
+        <a class="placeholder" href="/services#advertising">Place your ad</a>
+    </ins>
     <component :is="'script'">
         (adsbygoogle = window.adsbygoogle || []).push({});
     </component>
@@ -32,9 +34,32 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 </script>
 
 <style scoped>
-/* .adsbygoogle[data-ad-status="unfilled"] {
-    display: none !important;
-} */
+.adsbygoogle {
+    position: relative;
+}
+
+.adsbygoogle .placeholder {
+    display: none;
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed var(--vp-c-divider);
+    color: var(--vp-c-text-3);
+    font-size: 1.5rem;
+    z-index: 1;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.adsbygoogle .placeholder:hover {
+    background-color: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-2);
+}
+
+.adsbygoogle[data-ad-status="unfilled"] .placeholder {
+    display: flex;
+}
 
 .h-ad {
     margin: 3rem auto;
@@ -43,5 +68,9 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 
 .r-ad {
     margin-bottom: 1rem;
+}
+
+:deep(iframe) {
+    color-scheme: normal;
 }
 </style>

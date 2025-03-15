@@ -11,6 +11,8 @@ pageClass: changelog
 import Notation from '@components/misc/brick1100/Notation.vue';
 </script>
 
+<SponsorAd />
+
 Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Notation icon="premium" list />
 
 ## Beta versions

@@ -26,6 +26,16 @@ If you have a product or service that you would like to promote, you can sponsor
     'The post will be featured on the homepage for at least 1 week',
 ]" />
 
+## Advertising
+
+We offer advertising space on the site. With [an average](#analytics) of 33K visitors and 65K page views per month, we charge only $3 eCPM ($3 per 1000 ad impressions), an extremely competitive rate for all the benefits you get. Your ad will be carefully tailored to fit the site's design and replace all Adsense ads for the duration of your campaign.
+
+<ServicePrice price="$200" suffix="/month" buttonLink="mailto:hey@visnalize.com?subject=Advertising Inquiry" :features="[
+    'A diverse audience of retro enthusiasts, tech-savvy users, and content consumers',
+    'A personalized ad (with your provisioned assets) to fit the site\'s design',
+    'A competitive eCPM rate with maximum exposure on the site',
+]" />
+
 ## Why you should choose Visnalize
 
 Despite the fact that I choose to [conceal my identity online](./blog/concealing-online-identity.md), if you have been following me, you would know that I value honesty and transparency. I am not here to deceive you for a few quick bucks. I aim for long-term relationships with my users and clients. But I understand that words alone are cheap, so I have a few metrics to back them up and ensure that you can trust me and my services.

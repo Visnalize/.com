@@ -113,6 +113,8 @@ __Android__
   - The "Play all" button should now work properly
 - Known issues: The simulator does not work on certain Android 10 devices. A fix is being attempted, but there will be delay due to technical difficulties
 
+<SponsorAd />
+
 ### `3.9.0` (Apr 13, 2024)
 
 - 💥 BREAKING CHANGE: enhance file read/write operations to support large files and avoid crash.

@@ -1,5 +1,5 @@
 <template>
-    <div class="frame">
+    <div id="analytics" class="frame">
         <iframe width="720" height="720" :src="`https://lookerstudio.google.com/embed/reporting/${reportId[+isDark]}`"
             frameborder="0" style="border:0" allowfullscreen
             sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
