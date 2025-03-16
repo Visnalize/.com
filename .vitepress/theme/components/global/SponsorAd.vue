@@ -1,8 +1,8 @@
 <template>
     <component :is="'script'" async crossorigin="anonymous"
         :src="'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-' + ADSENSE_ID" />
-    <div class="ad-container">
-        <ins class="adsbygoogle" :class="className" style="display: block" data-ad-slot="3336580675"
+    <div class="ad-container" :class="className">
+        <ins class="adsbygoogle" style="display: block" data-ad-slot="3336580675"
             :data-ad-client="'ca-pub-' + ADSENSE_ID" data-full-width-responsive="true"
             :data-ad-format="normalizedFormat.join()" />
         <a class="placeholder" href="/services#advertising">Place your ad</a>
@@ -36,6 +36,7 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 
 <style scoped>
 .ad-container {
+    min-height: 200px;
     position: relative;
 }
 
@@ -56,10 +57,6 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 .ad-container .placeholder:hover {
     background-color: var(--vp-c-bg-soft);
     color: var(--vp-c-text-2);
-}
-
-.adsbygoogle {
-    min-height: 200px;
 }
 
 .adsbygoogle[data-ad-status="unfilled"]+.placeholder {
