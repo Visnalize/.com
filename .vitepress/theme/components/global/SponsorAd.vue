@@ -58,6 +58,10 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
     color: var(--vp-c-text-2);
 }
 
+.adsbygoogle {
+    min-height: 200px;
+}
+
 .adsbygoogle[data-ad-status="unfilled"]+.placeholder {
     display: flex;
 }

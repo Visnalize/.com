@@ -65,17 +65,17 @@ In short, there is no foolproof way to avoid scams, but there are some common tr
 
   In this case, a verified X account, with 27K posts, 600+ followers is a very convincing profile that could easily make a fool out of anyone. Even beyond that, the profile picture, name, description, and posts were all consistent with the identity they [impersonated](https://www.ventechvc.com/people/qin-chen), indicating the level of sophistication they put into creating the fake identity.
 
-- __Urgency__: scammers are psychological manipulator experts, and creating a sense of urgency is one of their most effective tactics. By doing so, they pressure their victims into making quick decisions without thinking them through, making them more susceptible to scams.
+- __Urgency__: scammers are experts in psychological manipulation, and creating a sense of urgency is one of their most effective tactics. By doing so, they pressure their victims into making quick decisions without thinking them through, making them more susceptible to scams.
 
   In this case, despite their "busy" schedule, they never wanted to find a convenient time for both, always pushing to connect "now" or "as soon as possible", regardless of my availability and preparedness.
 
   ![Scammers are always urgent](./img/no-one-is-safe-from-online-scams/always-urgent.png)
 
-- __Suspicious links, attachments, and downloads__: scammers often provide links to websites, attachments, or downloads that look legitimate but are actually malicious. Without insufficient knowledge and experience, it is difficult to spot them, and they also change frequently to avoid detection.
+- __Suspicious links, attachments, and downloads__: scammers often provide links to websites, attachments, or downloads that look legitimate but are actually malicious. Without sufficient knowledge and experience, it is difficult to spot them, and they also change frequently to avoid detection.
 
   In this case, the domain `apps-wechat.cn` can easily be mistaken for the official WeChat website, they even went as far as cloning the official website's UI, making it look even more convincing. The download links also downloaded a `.dmg` file with an abnormal installation process that could be easily overlooked in combination with the urgency and trust they built up.
 
-  | Fake WeChat website: apps-wechat.cn | Real WeChat website: wechat.com |
+  | Fake: apps-wechat.cn | Real: wechat.com |
   | --- | --- |
   | ![Fake WeChat website](./img/no-one-is-safe-from-online-scams/fake-website.png) | ![Real WeChat website](./img/no-one-is-safe-from-online-scams/real-website.png) |
 
