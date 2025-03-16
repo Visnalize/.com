@@ -36,7 +36,6 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 
 <style scoped>
 .ad-container {
-    min-height: 200px;
     position: relative;
 }
 
