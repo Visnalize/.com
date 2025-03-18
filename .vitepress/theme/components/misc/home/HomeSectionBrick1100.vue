@@ -28,7 +28,7 @@ const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 
 
 const x = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 0.8], [-50, 0])
 const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 0.8], [1.1, 1])
-const opacity = useTransform(useSpring(scrollProgress), [0, 0.8], [0, 1])
+const opacity = useTransform(useSpring(scrollProgress), [0, 0.4], [0, 1])
 const visibility = useTransform(scrollProgress, [0, 0.1], ['hidden', 'visible'])
 </script>
 
