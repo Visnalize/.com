@@ -8,16 +8,17 @@ const SELECTOR = ".VPNav";
  *
  * @param watcher True to hide the navbar, false to show it.
  */
-export const useNavbarVisibility = (watcher: Ref<boolean>) => {
+export const useNavbarVisibility = (watcher: Ref<boolean>[]) => {
   const isNavbarAvailable = () => document.querySelector(SELECTOR) !== null;
-  const showNavbar = () => animate(SELECTOR, { opacity: 1, y: 0 });
+  const showNavbar = () =>
+    animate(SELECTOR, { opacity: 1, y: 0 }, { type: "tween" });
   const hideNavbar = () => animate(SELECTOR, { opacity: 0, y: "-100%" });
 
   watch(watcher, (value) => {
-    if (isNavbarAvailable()) value ? hideNavbar() : showNavbar();
+    if (isNavbarAvailable()) value.some((v) => v) ? hideNavbar() : showNavbar();
   });
 
   onBeforeUnmount(() => {
-    if (isNavbarAvailable()) showNavbar();
+    if (isNavbarAvailable()) setTimeout(showNavbar, 500); // delay showing navbar to reduce performance impact
   });
 };

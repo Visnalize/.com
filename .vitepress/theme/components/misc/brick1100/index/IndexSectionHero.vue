@@ -17,23 +17,23 @@
     <div class="index-showcase">
         <div class="showcase-wrapper">
             <Motion class="relative" v-bind="animateImg('front')">
-                <img src="./assets/hero-boot.png" alt="Brick 1100 Boot Screen" />
+                <img src="../assets/hero-boot.png" alt="Brick 1100 Boot Screen" />
             </Motion>
             <Motion class="absolute" v-bind="animateImg('left')">
-                <img src="./assets/hero-reminder.png" alt="Brick 1100 Reminder" />
+                <img src="../assets/hero-reminder.png" alt="Brick 1100 Reminder" />
             </Motion>
             <Motion class="absolute" v-bind="animateImg('right')">
-                <img src="./assets/hero-snake.png" alt="Brick 1100 Snake" />
+                <img src="../assets/hero-snake.png" alt="Brick 1100 Snake" />
             </Motion>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { useHeadlineVariants } from '@/.vitepress/theme/composables/useMotion';
+import { useHeadlineVariants } from '@composables/useMotion';
 import { Motion } from 'motion-v';
-import AccessLinks from '../../global/AccessLinks.vue';
-import AppIcon from '../AppIcon.vue';
+import AccessLinks from '../../../global/AccessLinks.vue';
+import AppIcon from '../../AppIcon.vue';
 
 let index = 0;
 

@@ -6,7 +6,7 @@ pageClass: brick1100
 ---
 
 <script setup lang="ts">
-import IndexPage from '@components/misc/brick1100/IndexPage.vue';
+import IndexPage from '@components/misc/brick1100/index/IndexPage.vue';
 </script>
 
 <IndexPage />
