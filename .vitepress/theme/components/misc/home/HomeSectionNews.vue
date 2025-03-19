@@ -35,7 +35,7 @@
 
 <script setup lang="ts">
 import { data as posts } from '@/.content/blog-posts.data';
-import { useSectionInView, Variants } from '@composables/useMotion';
+import { useHeadlineVariants, useSectionInView, Variants } from '@composables/useMotion';
 import { Motion } from 'motion-v';
 import { ref } from 'vue';
 import HomeLink from './HomeLink.vue';
@@ -54,10 +54,7 @@ const listItemVariants = (index: number): Variants => ({
     initial: { opacity: 0, x: 20 },
     animate: { opacity: 1, x: 0, transition: { type: 'spring', duration: 0.8, delay: index * 0.1 + 0.2 } },
 })
-const linkVariants: Variants = {
-    initial: { opacity: 0, scale: 1.1, filter: 'blur(4px)' },
-    animate: { opacity: 1, scale: 1, filter: 'blur(0px)', transition: { duration: 0.4, delay: 0.2 } },
-}
+const linkVariants = useHeadlineVariants({ delay: 0.2 });
 </script>
 
 <style scoped>

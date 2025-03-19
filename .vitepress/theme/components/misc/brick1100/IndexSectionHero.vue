@@ -1,20 +1,18 @@
 <template>
     <div class="index-hero">
-        <div>
-            <Motion v-bind="animateScale()">
-                <AppIcon app="brick1100" class="logo" />
-            </Motion>
-            <Motion as="h1" v-bind="animateScale()">
-                Nostalgia at your fingertips
-            </Motion>
-            <Motion as="p" v-bind="animateScale()">
-                Brick 1100 transforms your smartphone into a brick phone.
-                Experience the retro vibes of the early days.
-            </Motion>
-            <Motion v-bind="animateScale()">
-                <AccessLinks app="brick1100" />
-            </Motion>
-        </div>
+        <Motion v-bind="animateHeadline()">
+            <AppIcon app="brick1100" class="logo" />
+        </Motion>
+        <Motion as="h1" v-bind="animateHeadline()">
+            Nostalgia at your fingertips
+        </Motion>
+        <Motion as="p" v-bind="animateHeadline()">
+            Brick 1100 transforms your smartphone into a brick phone.
+            Experience the retro vibes of the early days.
+        </Motion>
+        <Motion v-bind="animateHeadline()">
+            <AccessLinks app="brick1100" />
+        </Motion>
     </div>
     <div class="index-showcase">
         <div class="showcase-wrapper">
@@ -32,25 +30,14 @@
 </template>
 
 <script setup lang="ts">
+import { useHeadlineVariants } from '@/.vitepress/theme/composables/useMotion';
 import { Motion } from 'motion-v';
 import AccessLinks from '../../global/AccessLinks.vue';
 import AppIcon from '../AppIcon.vue';
 
 let index = 0;
 
-const animateScale = () => ({
-    initial: {
-        opacity: 0,
-        scale: 1.1,
-        filter: 'blur(4px)',
-    },
-    animate: {
-        opacity: 1,
-        scale: 1,
-        filter: 'blur(0px)',
-        transition: { duration: 0.5, delay: index++ * 0.15 + 0.2 },
-    },
-})
+const animateHeadline = () => useHeadlineVariants({ delay: index++ * 0.15 + 0.2 })
 
 const animateImg = (position: 'left' | 'right' | 'front') => ({
     initial: {
@@ -72,7 +59,7 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
 
 <style scoped>
 .index-hero {
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
     margin: auto;
     max-width: 600px;
 }
@@ -101,7 +88,7 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
 .index-showcase {
     overflow: hidden;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 .showcase-wrapper {
@@ -134,10 +121,7 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
 
 @media (min-width: 768px) {
     .index-hero {
-        padding: 4rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 6rem 0;
         max-width: 700px;
     }
 

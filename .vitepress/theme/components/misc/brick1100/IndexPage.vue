@@ -1,11 +1,15 @@
 <template>
     <div class="index-page">
-        <IndexHero />
+        <IndexSectionHero />
+        <IndexSectionFeatures />
+        <IndexSectionTestimonials />
     </div>
 </template>
 
 <script setup lang="ts">
-import IndexHero from './IndexHero.vue';
+import IndexSectionFeatures from './IndexSectionFeatures.vue';
+import IndexSectionHero from './IndexSectionHero.vue';
+import IndexSectionTestimonials from './IndexSectionTestimonials.vue';
 </script>
 
 <style scoped></style>

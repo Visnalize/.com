@@ -1,5 +1,6 @@
 import { useResizeObserver } from "@vueuse/core";
 import {
+  AnimateOptions,
   transform,
   useMotionValue,
   useMotionValueEvent,
@@ -68,3 +69,21 @@ export const useSectionInView = (element: Ref<HTMLElement>) => {
 };
 
 export type Variants = Record<string, Variant>;
+
+export const useHeadlineVariants = (
+  transition: AnimateOptions = {}
+): Variants => {
+  return {
+    initial: {
+      opacity: 0,
+      scale: 1.1,
+      filter: "blur(4px)",
+    },
+    animate: {
+      opacity: 1,
+      scale: 1,
+      filter: "blur(0px)",
+      transition: { duration: 0.4, ...transition },
+    },
+  };
+};

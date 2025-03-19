@@ -5,17 +5,14 @@
 </template>
 
 <script setup lang="ts">
-import { Variants } from '@composables/useMotion';
+import { useHeadlineVariants } from '@composables/useMotion';
 import { Motion } from 'motion-v';
 
 defineProps<{
     animate?: boolean;
 }>()
 
-const variants: Variants = {
-    initial: { opacity: 0, scale: 1.1, filter: 'blur(4px)' },
-    animate: { opacity: 1, scale: 1, filter: 'blur(0px)', transition: { duration: 0.4 } }
-}
+const variants = useHeadlineVariants()
 </script>
 
 <style scoped>
