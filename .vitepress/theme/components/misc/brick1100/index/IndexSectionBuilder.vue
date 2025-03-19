@@ -3,11 +3,11 @@
         <template #title>Build your own creations</template>
         <template #header>
             <div class="content">
-                <Motion as="p" :variants="variants(0)" :animate="shouldAnimate">Learn and practice coding by
-                    building your games, apps and publish them to thousands of users.</Motion>
-                <Motion as="p" :variants="variants(1)" :animate="shouldAnimate">Coding changed my life. Knowing how
+                <Motion as="p" :variants="variants(0)" :animate="shouldAnimate">Coding changed my life. Knowing how
                     to code helped me build things I love, get a job and make a living. I want you to have the same
                     opportunity, and thus the Builders program was created.</Motion>
+                <Motion as="p" :variants="variants(1)" :animate="shouldAnimate">Learn and practice coding by
+                    building your games, apps and publish them to thousands of users through Brick 1100.</Motion>
                 <Motion :variants="variants(2)" :animate="shouldAnimate">
                     <IndexLink href="/brick1100/builders" text="Get started" />
                 </Motion>

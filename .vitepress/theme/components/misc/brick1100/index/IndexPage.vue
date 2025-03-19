@@ -4,6 +4,7 @@
         <IndexSectionFeatures ref="features" />
         <IndexSectionBuilder ref="builder" />
         <IndexSectionTestimonials />
+        <IndexSectionCta />
     </div>
 </template>
 
@@ -12,6 +13,7 @@ import { useNavbarVisibility } from '@/.vitepress/theme/composables/useNavbar';
 import { useInView } from 'motion-v';
 import { onMounted, toRef, useTemplateRef } from 'vue';
 import IndexSectionBuilder from './IndexSectionBuilder.vue';
+import IndexSectionCta from './IndexSectionCta.vue';
 import IndexSectionFeatures from './IndexSectionFeatures.vue';
 import IndexSectionHero from './IndexSectionHero.vue';
 import IndexSectionTestimonials from './IndexSectionTestimonials.vue';

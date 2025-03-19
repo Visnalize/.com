@@ -92,8 +92,8 @@ const background = useTransform(scrollProgress, inputRange, outputRange)
     }
 
     .ease-out {
-        padding-bottom: 120vh;
-        margin-bottom: -100vh;
+        padding-bottom: 100vh;
+        margin-bottom: -80vh;
     }
 
     .flex {
