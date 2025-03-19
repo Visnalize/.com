@@ -10,7 +10,7 @@
                 </Motion>
             </div>
             <ul>
-                <Motion as="li" v-for="i in lg ? 9 : 6" :variants="imgVariants(i)" :animate="shouldAnimate">
+                <Motion as="li" v-for="i in lg ? 12 : 6" :variants="imgVariants(i)" :animate="shouldAnimate">
                     <img :src="`/assets/brick1100/features/image-${i}.png`" alt="Feature" />
                 </Motion>
             </ul>
