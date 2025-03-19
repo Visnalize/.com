@@ -24,9 +24,10 @@
 
 <script setup lang="ts">
 import { useHeadlineVariants, useScrollProgress } from '@composables/useMotion';
+import { useNavbarVisibility } from '@composables/useNavbar';
 import { useBreakpoints } from '@composables/useVueUse';
-import { animate, Motion, useInView, useTransform } from 'motion-v';
-import { computed, onBeforeUnmount, ref, watch } from 'vue';
+import { Motion, useInView, useTransform } from 'motion-v';
+import { computed, ref } from 'vue';
 
 const container = ref<HTMLElement | null>(null)
 const features = ref<HTMLElement | null>(null)
@@ -36,19 +37,13 @@ const featuresInView = useInView(features)
 const featuresInViewOnce = useInView(features, { amount: 0.2, once: true })
 const background = useTransform(scrollProgress, [0, 0.3], ['rgba(0, 0, 0, 0)', 'rgba(144, 166, 126, 1)'])
 
+useNavbarVisibility(featuresInView)
+
 const shouldAnimate = computed(() => featuresInViewOnce.value ? 'animate' : 'initial')
 const textVariants = (i: number) => useHeadlineVariants({ delay: 0.1 * i })
 const imgVariants = (i: number) => ({
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.1 * i + 0.3 } },
-})
-
-watch(featuresInView, (inView) => {
-    animate('.VPNav', inView ? { y: '-100%', opacity: 0 } : { y: 0, opacity: 1 })
-})
-
-onBeforeUnmount(() => {
-    if (document.querySelector('.VPNav')) animate('.VPNav', { y: 0, opacity: 1 })
 })
 </script>
 
