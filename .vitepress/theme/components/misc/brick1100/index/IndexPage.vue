@@ -1,8 +1,10 @@
 <template>
     <div class="index-page">
+        <!-- decorations -->
         <IndexDecor class="deco-messages" name="messages" />
         <IndexDecor class="deco-stop" name="stop" />
         <IndexDecor class="deco-calc" name="calculator" />
+        <IndexDecor class="deco-saur" name="pterosaurs" />
         <div class="features-deco">
             <IndexDecor class="deco-extras" name="extras" />
             <IndexDecor class="deco-games" name="games" />
@@ -11,8 +13,10 @@
         </div>
         <IndexDecor class="deco-egg" name="egg" />
         <IndexDecor class="deco-child" name="child" />
+        <IndexDecor class="deco-timer" name="timer" />
         <IndexDecor class="deco-composer" name="composer" />
 
+        <!-- sections -->
         <IndexSectionHero />
         <IndexSectionFeatures ref="features" />
         <IndexSectionBuilder ref="builder" />
@@ -65,21 +69,27 @@ onMounted(() => {
 }
 
 .deco-messages {
-    height: 6rem;
+    height: 10rem;
     top: 2%;
     left: 5%;
 }
 
+.deco-saur {
+    height: 5rem;
+    top: 1%;
+    left: 60%;
+}
+
 .deco-extras {
-    height: 10rem;
-    top: 23%;
+    height: 16rem;
+    top: 22%;
     left: 0%;
 }
 
 .deco-games {
-    height: 8rem;
-    top: 32%;
-    right: 75%;
+    height: 12rem;
+    top: 36%;
+    left: 6%;
 }
 
 .deco-stop {
@@ -89,8 +99,8 @@ onMounted(() => {
 }
 
 .deco-calc {
-    height: 12rem;
-    top: 9%;
+    height: 14rem;
+    top: 8%;
     left: 25%;
 }
 
@@ -101,7 +111,7 @@ onMounted(() => {
 }
 
 .deco-search {
-    height: 4rem;
+    height: 8rem;
     top: 50%;
     left: 80%;
 }
@@ -116,6 +126,12 @@ onMounted(() => {
     height: 12rem;
     top: 70%;
     right: -3%;
+}
+
+.deco-timer {
+    height: 16rem;
+    top: 75%;
+    left: 35%;
 }
 
 .deco-composer {
