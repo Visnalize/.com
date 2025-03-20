@@ -2,6 +2,8 @@
 layout: page
 sidebar: false
 title: Brick 1100 - Brickify your smartphone
+description: Transform your smartphone into a brick phone. Experience the retro vibes of the early days.
+image: /assets/brick1100-og.png
 pageClass: brick1100
 ---
 
