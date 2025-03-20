@@ -8,6 +8,7 @@
 </template>
 
 <script setup lang="ts">
+import { useNavbar } from '@/.vitepress/theme/composables/useNavbar';
 import { useEventListener } from '@vueuse/core';
 import { AnimatePresence, Motion, useSpring } from 'motion-v';
 import { ref } from 'vue';
@@ -18,6 +19,7 @@ const x = useSpring(0, { stiffness: 200, damping: 20 })
 const y = useSpring(0, { stiffness: 200, damping: 20 })
 
 useEventListener('mousemove', (e) => {
+    const { height: navbarHeight } = useNavbar()
     const element = e.target as HTMLElement
     const tagName = element.tagName.toLowerCase()
     const hasVideoElem = tagName === 'video' || element.closest('video') !== null
@@ -27,8 +29,8 @@ useEventListener('mousemove', (e) => {
     else text.value = 'Open link'
 
     visible.value = hasVideoElem || hasLinkElem
-    x.set(e.clientX + 10)
-    y.set(e.clientY + 20)
+    x.set(e.clientX + 15)
+    y.set(e.clientY + 25 - navbarHeight)
 })
 </script>
 

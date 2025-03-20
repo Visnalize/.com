@@ -1,7 +1,7 @@
 <template>
     <div class="home-page">
         <HomeCursor />
-        <HomeHero />
+        <HomeHero ref="hero" />
         <HomeSectionWin7Simu />
         <HomeSectionBrick1100 />
         <HomeSectionTestimonials />
@@ -12,8 +12,10 @@
 </template>
 
 <script setup lang="ts">
+import { useNavbarVisibility } from '@/.vitepress/theme/composables/useNavbar';
 import { dismissToast, toastSitenews } from '@composables/useToast';
-import { onMounted, onUnmounted, ref } from 'vue';
+import { useInView } from 'motion-v';
+import { onMounted, onUnmounted, ref, toRef, useTemplateRef } from 'vue';
 import HomeCursor from './HomeCursor.vue';
 import HomeHero from './HomeHero.vue';
 import HomeSectionBrick1100 from './HomeSectionBrick1100.vue';
@@ -24,8 +26,11 @@ import HomeSectionTestimonials from './HomeSectionTestimonials.vue';
 import HomeSectionWin7Simu from './HomeSectionWin7Simu.vue';
 
 const toastId = ref<string | number>(null);
+const hero = useTemplateRef('hero');
 
 onMounted(async () => {
+    const heroInView = useInView(toRef(hero.value.hero))
+    useNavbarVisibility([heroInView]);
     toastId.value = await toastSitenews()
 })
 

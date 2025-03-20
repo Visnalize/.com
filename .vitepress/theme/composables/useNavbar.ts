@@ -1,7 +1,11 @@
 import { animate } from "motion-v";
 import { onBeforeUnmount, Ref, watch } from "vue";
 
-const SELECTOR = ".VPNav";
+const SELECTOR_NAV = ".VPNav";
+const SELECTOR_NAVBAR = ".VPNavBar";
+
+const isNavbarAvailable = () =>
+  window?.document?.querySelector(SELECTOR_NAV) !== null;
 
 /**
  * Toggle navbar's visibility based on the watcher value.
@@ -9,10 +13,13 @@ const SELECTOR = ".VPNav";
  * @param watcher True to hide the navbar, false to show it.
  */
 export const useNavbarVisibility = (watcher: Ref<boolean>[]) => {
-  const isNavbarAvailable = () => document.querySelector(SELECTOR) !== null;
   const showNavbar = () =>
-    animate(SELECTOR, { opacity: 1, y: 0 }, { type: "tween" });
-  const hideNavbar = () => animate(SELECTOR, { opacity: 0, y: "-100%" });
+    animate(
+      SELECTOR_NAV,
+      { opacity: 1, y: 0, display: "block" },
+      { type: "tween" }
+    );
+  const hideNavbar = () => animate(SELECTOR_NAV, { opacity: 0, y: "-100%" });
 
   watch(watcher, (value) => {
     if (isNavbarAvailable()) value.some((v) => v) ? hideNavbar() : showNavbar();
@@ -21,4 +28,12 @@ export const useNavbarVisibility = (watcher: Ref<boolean>[]) => {
   onBeforeUnmount(() => {
     if (isNavbarAvailable()) setTimeout(showNavbar, 500); // delay showing navbar to reduce performance impact
   });
+};
+
+export const useNavbar = () => {
+  if (!isNavbarAvailable()) return;
+
+  const navbar = document.querySelector(SELECTOR_NAVBAR);
+  const { height } = window.getComputedStyle(navbar);
+  return { height: parseInt(height) };
 };

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Visnalize - creator of Win7 Simu, Brick 1100, and more
-navbar: false
 pagefind-indexed: false
 pageClass: home
 ---
@@ -13,6 +12,7 @@ import HomePage from '@components/misc/home/HomePage.vue';
 <HomePage />
 
 <style>
+.home .VPNav,
 .home .VPLocalNav,
 .home .VPSkipLink {
   display: none;

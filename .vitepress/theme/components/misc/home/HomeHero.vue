@@ -83,6 +83,8 @@ const buttonAnimation: Options['variants'] = {
 const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     inBrowser && document.querySelector(`#${sectionId}`).scrollIntoView({ behavior: 'smooth' })
 }
+
+defineExpose({ hero: container })
 </script>
 
 <style scoped>
