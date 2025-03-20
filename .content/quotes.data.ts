@@ -42,7 +42,7 @@ const quotes: Quote[] = [
   {
     featured: true,
     image:
-      "https://lh3.googleusercontent.com/a-/ALV-UjWqWrSYgrTQ1DjlG74zHIVfMX_pjnls3lpgFjPXXVLgPsEi23E=mo",
+      "https://lh3.googleusercontent.com/a-/ALV-UjWqWrSYgrTQ1DjlG74zHIVfMX_pjnls3lpgFjPXXVLgPsEi23E=s50",
     author: "Kevin Casasola",
     date: "December 23, 2023",
     app: "brick1100",
@@ -58,7 +58,7 @@ const quotes: Quote[] = [
   },
   {
     image:
-      "https://lh3.googleusercontent.com/a-/ALV-UjV3hn2RD4F6lcx2aFb9sVuVTJdAWOiMrpGDum8nePd071QAZ5Az5A=mo",
+      "https://lh3.googleusercontent.com/a-/ALV-UjV3hn2RD4F6lcx2aFb9sVuVTJdAWOiMrpGDum8nePd071QAZ5Az5A=s50",
     author: "Ayla Rodríguez (Estrella Española)",
     date: "August 15, 2024",
     app: "brick1100",
@@ -67,7 +67,7 @@ const quotes: Quote[] = [
   },
   {
     image:
-      "https://lh3.googleusercontent.com/a-/ALV-UjVWt7lgjmwv9wttQyEgPnGS2RVN7phdaLJ09B_ogRt-bR7O5Orw=mo",
+      "https://lh3.googleusercontent.com/a-/ALV-UjVWt7lgjmwv9wttQyEgPnGS2RVN7phdaLJ09B_ogRt-bR7O5Orw=s50",
     author: "Nicolas Gabriel",
     date: "March 4, 2025",
     app: "brick1100",
@@ -76,7 +76,7 @@ const quotes: Quote[] = [
   },
   {
     image:
-      "https://lh3.googleusercontent.com/a-/ALV-UjVquRybmpjqJqsxn8DmOlGV7zYA6c18rzIP93OJgMhZWXYys-Fv=mo",
+      "https://lh3.googleusercontent.com/a-/ALV-UjVquRybmpjqJqsxn8DmOlGV7zYA6c18rzIP93OJgMhZWXYys-Fv=s50",
     author: "Kendall Lizano Ávila",
     date: "December 18, 2024",
     app: "brick1100",
@@ -85,7 +85,7 @@ const quotes: Quote[] = [
   },
   {
     image:
-      "https://lh3.googleusercontent.com/a/ACg8ocJMMyLiCU_bsTFan4u7XGZnYRCfXStgrf5rrOjk6ceG5esCmA=mo",
+      "https://lh3.googleusercontent.com/a/ACg8ocJMMyLiCU_bsTFan4u7XGZnYRCfXStgrf5rrOjk6ceG5esCmA=s50",
     author: "Seva Lgov",
     date: "January 7, 2024",
     app: "win7simu",

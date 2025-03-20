@@ -5,8 +5,9 @@
             life</template>
 
         <ul ref="features">
-            <Motion as="li" v-for="i in lg ? 12 : 6" :variants="imgVariants(i)" :animate="shouldAnimate">
-                <img :src="`/assets/brick1100/features/image-${i}.png`" alt="Feature" width="320" height="238" />
+            <Motion as="li" v-for="i in 12" :variants="imgVariants(i)" :animate="shouldAnimate"
+                :class="{ addons: i > 6 }">
+                <img :src="`/assets/brick1100/features/image-${i}.png`" alt="Feature" width="260" height="193" />
             </Motion>
         </ul>
 
@@ -15,14 +16,12 @@
 </template>
 
 <script setup lang="ts">
-import { useBreakpoints } from '@composables/useVueUse';
 import { Motion, useInView } from 'motion-v';
 import { computed, ref } from 'vue';
 import IndexLink from './IndexLink.vue';
 import IndexSection from './IndexSection.vue';
 
 const features = ref<HTMLElement | null>(null)
-const { lg } = useBreakpoints()
 const inView = useInView(features, { amount: 0.2, once: true })
 
 const shouldAnimate = computed(() => inView.value ? 'animate' : 'initial')
@@ -49,6 +48,14 @@ li {
     align-items: center;
 }
 
+li.addons {
+    display: none;
+}
+
+li img {
+    width: 100%;
+}
+
 @media (min-width: 640px) {
     ul {
         grid-template-columns: repeat(2, 1fr);
@@ -59,6 +66,10 @@ li {
 @media (min-width: 992px) {
     ul {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    li.addons {
+        display: flex;
     }
 }
 

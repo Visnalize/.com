@@ -5,6 +5,19 @@ title: Brick 1100 - Brickify your smartphone
 description: Transform your smartphone into a brick phone. Experience the retro vibes of the early days.
 image: /assets/brick1100-og.png
 pageClass: brick1100
+head:
+  - - link
+    - rel: preload
+      href: /assets/fonts/brick.ttf
+      as: font
+      type: font/ttf
+      crossorigin: anonymous
+  - - link
+    - rel: preload
+      href: /assets/fonts/brick-condensed.ttf
+      as: font
+      type: font/ttf
+      crossorigin: anonymous
 ---
 
 <script setup lang="ts">

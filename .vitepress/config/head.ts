@@ -4,6 +4,17 @@ import { ADSENSE_ID } from "../theme/constants";
 const head: HeadConfig[] = [
   ["link", { rel: "icon", href: "/favicon.png" }],
 
+  [
+    "link",
+    {
+      rel: "preload",
+      href: "/assets/fonts/croogla4f.ttf",
+      as: "font",
+      type: "font/ttf",
+      crossorigin: "anonymous",
+    },
+  ],
+
   // Google Tag Manager -----------------------------------------------------
   [
     "script",
