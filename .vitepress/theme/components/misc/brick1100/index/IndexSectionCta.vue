@@ -14,8 +14,8 @@ import AccessLinks from '../../../global/AccessLinks.vue';
 
 <style scoped>
 .section-cta {
-    margin: 0 auto 10rem;
-    padding: 0 1.5rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 10rem;
     position: relative;
 }
 

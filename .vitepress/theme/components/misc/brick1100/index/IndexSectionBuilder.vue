@@ -11,6 +11,7 @@
                 <Motion :variants="variants(2)" :animate="shouldAnimate">
                     <IndexLink href="/brick1100/builders" text="Get started" />
                 </Motion>
+                <IndexDecor class="deco-builder" name="builder" />
             </div>
         </template>
 
@@ -28,6 +29,7 @@ import { Variants } from '@composables/useMotion';
 import { useBreakpoints } from '@composables/useVueUse';
 import { Motion, useInView } from 'motion-v';
 import { computed, ref } from 'vue';
+import IndexDecor from './IndexDecor.vue';
 import IndexLink from './IndexLink.vue';
 import IndexSection from './IndexSection.vue';
 
@@ -52,6 +54,12 @@ defineExpose({ section: container })
 .content a {
     display: inline-flex;
     margin-top: 2rem;
+}
+
+.deco-builder {
+    height: 12rem;
+    top: 5%;
+    left: 10%;
 }
 
 .promo {

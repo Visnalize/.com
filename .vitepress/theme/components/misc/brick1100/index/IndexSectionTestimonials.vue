@@ -48,6 +48,10 @@ const variants = (index: number): Variants => ({
     display: flex;
 }
 
+.quote {
+    width: 100%;
+}
+
 .link-footer {
     text-align: center;
 }

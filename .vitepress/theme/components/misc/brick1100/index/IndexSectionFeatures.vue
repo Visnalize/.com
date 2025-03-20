@@ -37,7 +37,7 @@ defineExpose({ features })
 <style scoped>
 ul {
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
     padding: 0.25rem;
     margin-bottom: 3rem;
 }
@@ -52,6 +52,7 @@ li {
 @media (min-width: 640px) {
     ul {
         grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
     }
 }
 

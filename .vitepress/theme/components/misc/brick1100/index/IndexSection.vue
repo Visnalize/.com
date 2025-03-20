@@ -49,6 +49,8 @@ const background = useTransform(scrollProgress, inputRange, outputRange)
 .index-section {
     position: relative;
     padding: 8rem 0;
+    overflow: hidden;
+    color: var(--c-blackish);
 }
 
 .section-bg {
