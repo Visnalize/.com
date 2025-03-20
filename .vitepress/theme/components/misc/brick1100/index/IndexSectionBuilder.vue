@@ -73,7 +73,7 @@ defineExpose({ section: trigger })
 }
 
 .main {
-    height: auto;
+    width: auto;
     height: 400px;
 }
 
