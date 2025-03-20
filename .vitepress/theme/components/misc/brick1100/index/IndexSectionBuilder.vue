@@ -2,7 +2,7 @@
     <IndexSection horizontal bg-ease="ease-out" :animate-header="shouldAnimate">
         <template #title>Build your own creations</template>
         <template #header>
-            <div class="content">
+            <div class="content" ref="trigger">
                 <Motion as="p" :variants="variants(0)" :animate="shouldAnimate">Coding changed my life. Knowing how
                     to code helped me build things I love, get a job and make a living. I want you to have the same
                     opportunity, and thus the Builders program was created.</Motion>
@@ -15,7 +15,7 @@
             </div>
         </template>
 
-        <div class="promo" ref="container">
+        <div class="promo">
             <img class="layer" src="../assets/builder-layer.png" alt="Online" />
             <Motion :variants="variants(3)" :animate="shouldAnimate">
                 <img class="main" src="../assets/builder-promo.png" alt="Builders program" />
@@ -26,16 +26,14 @@
 
 <script setup lang="ts">
 import { Variants } from '@composables/useMotion';
-import { useBreakpoints } from '@composables/useVueUse';
 import { Motion, useInView } from 'motion-v';
 import { computed, ref } from 'vue';
 import IndexDecor from './IndexDecor.vue';
 import IndexLink from './IndexLink.vue';
 import IndexSection from './IndexSection.vue';
 
-const { lg } = useBreakpoints()
-const container = ref<HTMLElement | null>(null)
-const inView = useInView(container, { amount: lg.value ? 0.6 : 0.1, once: true })
+const trigger = ref<HTMLElement | null>(null)
+const inView = useInView(trigger, { amount: 0.6, once: true })
 const shouldAnimate = computed(() => inView.value ? 'animate' : 'initial')
 
 const variants = (index: number): Variants => ({
@@ -43,7 +41,7 @@ const variants = (index: number): Variants => ({
     animate: { opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.2 * index + 0.3 } }
 })
 
-defineExpose({ section: container })
+defineExpose({ section: trigger })
 </script>
 
 <style scoped>

@@ -22,8 +22,8 @@ import IndexLink from './IndexLink.vue';
 import IndexSection from './IndexSection.vue';
 
 const features = ref<HTMLElement | null>(null)
-const inView = useInView(features, { amount: 0.2, once: true })
 const { lg } = useBreakpoints()
+const inView = useInView(features, { amount: 0.2, once: true })
 
 const shouldAnimate = computed(() => inView.value ? 'animate' : 'initial')
 const imgVariants = (i: number) => ({

@@ -54,8 +54,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       motion-v:
-        specifier: 0.5.1
-        version: 0.5.1
+        specifier: 0.13.0
+        version: 0.13.0(vue@3.5.13)
       pagefind:
         specifier: ^1.3.0
         version: 1.3.0
@@ -664,6 +664,9 @@ packages:
   '@vue/shared@3.5.13':
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
 
+  '@vueuse/core@10.11.1':
+    resolution: {integrity: sha512-guoy26JQktXPcz+0n3GukWIy/JDNKti9v6VEMu6kV2sYBsWuGiTU8OWdg+ADfUbHg3/3DlqySDe7JmdHrktiww==}
+
   '@vueuse/core@12.6.1':
     resolution: {integrity: sha512-FpgM1tXGAHsAC5n4Tflyg0vSoJUmdevfKaAhKFdxiK9BTIdHOHOiWmo+xivwdzjYFIvI8cEeJWYuqs646jOM2w==}
 
@@ -711,11 +714,17 @@ packages:
       universal-cookie:
         optional: true
 
+  '@vueuse/metadata@10.11.1':
+    resolution: {integrity: sha512-IGa5FXd003Ug1qAZmyE8wF3sJ81xGLSqTqtQ6jaVfkeZ4i5kS2mwQF61yhVqojRnenVew5PldLyRgvdl4YYuSw==}
+
   '@vueuse/metadata@12.6.1':
     resolution: {integrity: sha512-2094HNXGdsU3aqRbad0vmlRgGncMC4u2f6nFdW1mUn7b7ym4hORrDZfyeq8G5BfGvX4y0zZynWfCdtB2WwpyVw==}
 
   '@vueuse/metadata@9.13.0':
     resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
+
+  '@vueuse/shared@10.11.1':
+    resolution: {integrity: sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==}
 
   '@vueuse/shared@12.6.1':
     resolution: {integrity: sha512-ukTb2na19KT1/YVjj4CYBDOgiV/xmsSJRL6TcKeiz2db+P5bT3I0OJxy38eRR3WSN8CmSnt7MdVJ16vX6VZFxg==}
@@ -905,8 +914,8 @@ packages:
   focus-trap@7.6.4:
     resolution: {integrity: sha512-xx560wGBk7seZ6y933idtjJQc1l+ck+pI3sKvhKozdBV1dRZoKhkW5xoCaFv9tQiX5RH1xfSxjuNu6g+lmN/gw==}
 
-  framer-motion@11.15.0:
-    resolution: {integrity: sha512-MLk8IvZntxOMg7lDBLw2qgTHHv664bYoYmnFTmE0Gm/FW67aOJk0WM3ctMcG+Xhcv+vh5uyyXwxvxhSeJzSe+w==}
+  framer-motion@12.5.0:
+    resolution: {integrity: sha512-buPlioFbH9/W7rDzYh1C09AuZHAk2D1xTA1BlounJ2Rb9aRg84OXexP0GLd+R83v0khURdMX7b5MKnGTaSg5iA==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -1085,14 +1094,16 @@ packages:
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
 
-  motion-dom@11.18.1:
-    resolution: {integrity: sha512-g76KvA001z+atjfxczdRtw/RXOM3OMSdd1f4DL77qCTF/+avrRJiawSG4yDibEQ215sr9kpinSlX2pCTJ9zbhw==}
+  motion-dom@12.5.0:
+    resolution: {integrity: sha512-uH2PETDh7m+Hjd1UQQ56yHqwn83SAwNjimNPE/kC+Kds0t4Yh7+29rfo5wezVFpPOv57U4IuWved5d1x0kNhbQ==}
 
-  motion-utils@11.18.1:
-    resolution: {integrity: sha512-49Kt+HKjtbJKLtgO/LKj9Ld+6vw9BjH5d9sc40R/kVyH8GLAXgT42M2NnuPcJNuA3s9ZfZBUcwIgpmZWGEE+hA==}
+  motion-utils@12.5.0:
+    resolution: {integrity: sha512-+hFFzvimn0sBMP9iPxBa9OtRX35ZQ3py0UHnb8U29VD+d8lQ8zH3dTygJWqK7av2v6yhg7scj9iZuvTS0f4+SA==}
 
-  motion-v@0.5.1:
-    resolution: {integrity: sha512-OqOfhYYFL+S9VeYij1BBpkxo4L6YeIp88iZsEcMwidD73WYwJTSIYFxqYPP8PT9GH9wCdtJoCGhNqHAALl8pTQ==}
+  motion-v@0.13.0:
+    resolution: {integrity: sha512-kMIa40LPKEZLNQoTDVaS1jmvh+p3QYhxVjmwr9S4CFu32Dk8XP7SiUxCXf78ESk2r5jJj8JQJ5Ce5lw+Z4qRMQ==}
+    peerDependencies:
+      vue: '>=3.0.0'
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
@@ -1984,6 +1995,16 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
+  '@vueuse/core@10.11.1(vue@3.5.13)':
+    dependencies:
+      '@types/web-bluetooth': 0.0.20
+      '@vueuse/metadata': 10.11.1
+      '@vueuse/shared': 10.11.1(vue@3.5.13)
+      vue-demi: 0.14.10(vue@3.5.13)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
   '@vueuse/core@12.6.1':
     dependencies:
       '@types/web-bluetooth': 0.0.20
@@ -2013,9 +2034,18 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@vueuse/metadata@10.11.1': {}
+
   '@vueuse/metadata@12.6.1': {}
 
   '@vueuse/metadata@9.13.0': {}
+
+  '@vueuse/shared@10.11.1(vue@3.5.13)':
+    dependencies:
+      vue-demi: 0.14.10(vue@3.5.13)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
 
   '@vueuse/shared@12.6.1':
     dependencies:
@@ -2270,10 +2300,10 @@ snapshots:
     dependencies:
       tabbable: 6.2.0
 
-  framer-motion@11.15.0:
+  framer-motion@12.5.0:
     dependencies:
-      motion-dom: 11.18.1
-      motion-utils: 11.18.1
+      motion-dom: 12.5.0
+      motion-utils: 12.5.0
       tslib: 2.8.1
 
   fsevents@2.3.3:
@@ -2477,23 +2507,24 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  motion-dom@11.18.1:
+  motion-dom@12.5.0:
     dependencies:
-      motion-utils: 11.18.1
+      motion-utils: 12.5.0
 
-  motion-utils@11.18.1: {}
+  motion-utils@12.5.0: {}
 
-  motion-v@0.5.1:
+  motion-v@0.13.0(vue@3.5.13):
     dependencies:
-      '@vueuse/core': 12.6.1
-      framer-motion: 11.15.0
+      '@vueuse/core': 10.11.1(vue@3.5.13)
+      framer-motion: 12.5.0
       hey-listen: 1.0.8
-      motion-dom: 11.18.1
+      motion-dom: 12.5.0
+      vue: 3.5.13
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
+      - '@vue/composition-api'
       - react
       - react-dom
-      - typescript
 
   ms@2.1.3: {}
 

@@ -130,13 +130,13 @@ onMounted(() => {
 
 .deco-timer {
     height: 16rem;
-    top: 75%;
-    left: 35%;
+    top: 78%;
+    left: 12%;
 }
 
 .deco-composer {
     height: 8rem;
     top: 88%;
-    right: 60%;
+    right: 30%;
 }
 </style>

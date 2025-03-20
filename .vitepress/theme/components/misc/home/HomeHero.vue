@@ -62,7 +62,6 @@ const intro = computed(() => xl.value ? `Visnalize brings retro products back to
 const titleTransition: AnimateOptions = {
     staggerChildren: 0.2,
     delayChildren: 0.3,
-    duration: 0.5,
 }
 
 const buttonTransition: AnimateOptions = {
@@ -72,7 +71,7 @@ const buttonTransition: AnimateOptions = {
 
 const titleAnimation: Options['variants'] = {
     initial: { opacity: 0, y: 10, filter: 'blur(4px)', scaleX: 1.1 },
-    visible: { opacity: 1, y: 0, filter: 'blur(0px)', scaleX: 1 }
+    visible: { opacity: 1, y: 0, filter: 'blur(0px)', scaleX: 1, transition: { duration: 0.5 } }
 }
 
 const buttonAnimation: Options['variants'] = {

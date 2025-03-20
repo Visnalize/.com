@@ -1,6 +1,6 @@
 <template>
     <section :class="['index-section', bgEase]" ref="container">
-        <Motion class="section-bg" :style="{ background: lg && bgEase ? background : undefined }" />
+        <Motion class="section-bg" :style="{ background: bgEase ? background : undefined }" />
 
         <div :class="['section-container', { 'flex': horizontal }]">
             <div class="section-header">
@@ -20,7 +20,6 @@
 
 <script setup lang="ts">
 import { useHeadlineVariants, useScrollProgress } from '@composables/useMotion';
-import { useBreakpoints } from '@composables/useVueUse';
 import { Motion, useTransform } from 'motion-v';
 import { ref } from 'vue';
 
@@ -34,7 +33,6 @@ const { bgEase } = defineProps<Props>()
 
 const container = ref<HTMLElement | null>(null)
 const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
-const { lg } = useBreakpoints()
 const textVariants = (i: number) => useHeadlineVariants({ delay: 0.1 * i })
 
 const bgGreenish = 'rgba(144, 166, 126, 1)'
@@ -58,6 +56,16 @@ const background = useTransform(scrollProgress, inputRange, outputRange)
     inset: 0;
     z-index: -1;
     background-color: var(--c-greenish);
+}
+
+.ease-in {
+    padding-top: 120vh;
+    margin-top: -100vh;
+}
+
+.ease-out {
+    padding-bottom: 100vh;
+    margin-bottom: -80vh;
 }
 
 .section-container {
@@ -88,16 +96,6 @@ const background = useTransform(scrollProgress, inputRange, outputRange)
 }
 
 @media (min-width: 992px) {
-    .ease-in {
-        padding-top: 120vh;
-        margin-top: -100vh;
-    }
-
-    .ease-out {
-        padding-bottom: 100vh;
-        margin-bottom: -80vh;
-    }
-
     .flex {
         flex-direction: row;
         align-items: flex-start;
