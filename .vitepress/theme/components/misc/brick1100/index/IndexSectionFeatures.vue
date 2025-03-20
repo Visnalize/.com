@@ -6,7 +6,7 @@
 
         <ul ref="features">
             <Motion as="li" v-for="i in lg ? 12 : 6" :variants="imgVariants(i)" :animate="shouldAnimate">
-                <img :src="`/assets/brick1100/features/image-${i}.png`" alt="Feature" />
+                <img :src="`/assets/brick1100/features/image-${i}.png`" alt="Feature" width="320" height="238" />
             </Motion>
         </ul>
 

@@ -18,7 +18,7 @@
         <div class="promo">
             <img class="layer" src="../assets/builder-layer.png" alt="Online" />
             <Motion :variants="variants(3)" :animate="shouldAnimate">
-                <img class="main" src="../assets/builder-promo.png" alt="Builders program" />
+                <img class="main" src="../assets/builder-promo.png" alt="Builders program" width="383" height="550" />
             </Motion>
         </div>
     </IndexSection>

@@ -17,13 +17,13 @@
     <div class="index-showcase">
         <div class="showcase-wrapper">
             <Motion class="relative" v-bind="animateImg('front')">
-                <img src="../assets/hero-boot.png" alt="Brick 1100 Boot Screen" />
+                <img src="../assets/hero-boot.png" alt="Brick 1100 Boot Screen" width="281" height="560" />
             </Motion>
             <Motion class="absolute" v-bind="animateImg('left')">
-                <img src="../assets/hero-reminder.png" alt="Brick 1100 Reminder" />
+                <img src="../assets/hero-reminder.png" alt="Brick 1100 Reminder" width="243" height="500" />
             </Motion>
             <Motion class="absolute" v-bind="animateImg('right')">
-                <img src="../assets/hero-snake.png" alt="Brick 1100 Snake" />
+                <img src="../assets/hero-snake.png" alt="Brick 1100 Snake" width="243" height="500" />
             </Motion>
         </div>
     </div>
@@ -103,6 +103,7 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
 }
 
 .index-showcase .relative img {
+    width: auto;
     height: 340px;
 }
 
@@ -116,6 +117,7 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
 }
 
 .index-showcase .absolute img {
+    width: auto;
     height: 300px;
 }
 
