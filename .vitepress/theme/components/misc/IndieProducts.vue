@@ -6,8 +6,8 @@
                 <iconify-icon icon="fluent:question-circle-24-regular" />
             </a>
         </h2>
-        <indie-boosting v-if="inView" id="HUQBLZLWPR" no-title no-credits headless theme="light" :max-products="widget ? 4 : 10"
-            :max-columns="widget ? 2 : 1" @load="contentLoaded = true" />
+        <indie-boosting v-if="inView" id="HUQBLZLWPR" no-title no-credits headless theme="light"
+            :max-products="widget ? 4 : 10" :max-columns="widget ? 2 : 1" @load="contentLoaded = true" />
         <div v-if="!contentLoaded" class="loader">
             <div v-for="i in Array.of(1, 2, 3, 4)" class="loading-item">
                 <CoreSkeleton class="icon" />
@@ -84,7 +84,8 @@ onMounted(() => {
     padding: 0.75rem;
     border: 1px solid var(--vp-c-divider);
     border-radius: 0.5rem;
-    overflow: hidden;
+    position: relative;
+    min-width: 0;
     transition: 0.2s;
     text-decoration: none;
 }
@@ -139,4 +140,34 @@ onMounted(() => {
     color: var(--vp-c-text-2);
     font-size: 0.875rem;
 }
+
+:deep(.ama-button) {
+    display: none; /** temporarily disable until feature is stable */
+}
+
+/* :deep(.ama-button) {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--vp-c-bg);
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 0.5rem;
+    padding: 0 0 0 0.5rem;
+    cursor: pointer;
+    font-size: 0.625rem;
+    overflow: hidden;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+:deep(.ama-button img) {
+    width: 24px;
+}
+
+:deep(.indieboosting-product:hover .ama-button) {
+    transform: rotate(8deg) translate(-0.5rem, 0.25rem) scale(1.4);
+} */
 </style>
