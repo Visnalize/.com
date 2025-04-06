@@ -81,8 +81,8 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
     text-align: center;
 }
 
-.index-hero :deep(.access img) {
-    height: 40px;
+.index-hero :deep(.access) {
+    --size: 40px;
 }
 
 .index-showcase {
@@ -144,8 +144,8 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
         height: 500px;
     }
 
-    .index-hero :deep(.access img) {
-        height: 64px;
+    .index-hero :deep(.access) {
+        --size: 64px;
     }
 }
 </style>

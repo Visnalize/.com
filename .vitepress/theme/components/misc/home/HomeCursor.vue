@@ -22,13 +22,15 @@ useEventListener('mousemove', (e) => {
     const { height: navbarHeight } = useNavbar()
     const element = e.target as HTMLElement
     const tagName = element.tagName.toLowerCase()
-    const hasVideoElem = tagName === 'video' || element.closest('video') !== null
-    const hasLinkElem = tagName === 'a' || element.closest('a') !== null
+    const isVideoElem = tagName === 'video' || element.closest('video') !== null
+    const isLinkElem = tagName === 'a' || element.closest('a') !== null
+    const isQrElem = element.classList.contains('qr') || element.closest('.qr') !== null
 
-    if (hasVideoElem) text.value = 'Playing demo'
+    if (isVideoElem) text.value = 'Playing demo'
+    else if (isQrElem) text.value = 'Scan QR code'
     else text.value = 'Open link'
 
-    visible.value = hasVideoElem || hasLinkElem
+    visible.value = isVideoElem || isLinkElem || isQrElem
     x.set(e.clientX + 15)
     y.set(e.clientY + 25 - navbarHeight)
 })

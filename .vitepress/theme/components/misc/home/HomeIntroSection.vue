@@ -70,8 +70,8 @@ const variants = (index: number): Variants => ({
     margin: 0;
 }
 
-.intro-section .access :deep(img) {
-    height: 64px;
+.intro-section .access {
+    --size: 64px;
 }
 
 .logo {

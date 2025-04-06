@@ -3,10 +3,18 @@
         <a v-for="link in links" :key="link" :href="link" target="_blank">
             <img v-bind="getImageProps(link)" />
         </a>
+        <Dropdown>
+            <button class="qr"><iconify-icon icon="mdi:qrcode-scan" /></button>
+            <template #popper>
+                <img :src="`/assets/${app}-qr.svg`" width="256" height="256" />
+            </template>
+        </Dropdown>
     </div>
 </template>
 
 <script setup lang="ts">
+import { Dropdown } from 'floating-vue'
+
 const LinkMap = {
     win7simu: [
         "https://play.google.com/store/apps/details?id=com.visnalize.win7simu",
@@ -47,6 +55,7 @@ const getImageProps = (link) => {
 
 <style scoped>
 .access {
+    --size: 80px;
     margin: 2rem 0;
     text-align: center;
     display: flex;
@@ -56,15 +65,33 @@ const getImageProps = (link) => {
     gap: 1rem;
 }
 
-a {
+.qr {
+    background: var(--vp-c-bg);
+    color: var(--vp-c-text-1);
+    padding: 1rem;
+    border: 1.5px solid currentColor;
+    border-radius: 0.5rem;
+    width: var(--size);
+}
+
+.qr iconify-icon {
+    font-size: calc(var(--size) / 2.5);
+    display: block;
+    margin: 0 auto;
+}
+
+img,
+.qr {
+    height: var(--size);
+}
+
+a,
+.qr {
     transition: transform 0.2s;
 }
 
-a:hover {
+a:hover,
+.qr:hover {
     transform: scale(1.05);
-}
-
-img {
-    height: 80px;
 }
 </style>
