@@ -4,7 +4,13 @@
             <img v-bind="getImageProps(link)" />
         </a>
         <Dropdown>
-            <button class="qr"><iconify-icon icon="mdi:qrcode-scan" /></button>
+            <button class="qr" aria-label="Scan QR code">
+                <iconify-icon icon="mdi:qrcode-scan" />
+                <span>
+                    <span>Scan the</span>
+                    <span>QR code</span>
+                </span>
+            </button>
             <template #popper>
                 <img :src="`/assets/${app}-qr.svg`" width="256" height="256" />
             </template>
@@ -68,16 +74,33 @@ const getImageProps = (link) => {
 .qr {
     background: var(--vp-c-bg);
     color: var(--vp-c-text-1);
-    padding: 1rem;
     border: 1.5px solid currentColor;
     border-radius: 0.5rem;
     width: var(--size);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: calc(var(--size) * 3.375);
 }
 
 .qr iconify-icon {
-    font-size: calc(var(--size) / 2.5);
-    display: block;
-    margin: 0 auto;
+    font-size: calc(var(--size) / 2);
+}
+
+.qr>span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 65%;
+}
+
+.qr>span span {
+    line-height: 1.1;
+}
+
+.qr>span span:last-child {
+    font-weight: 600;
+    font-size: calc(var(--size) / 3);
 }
 
 img,
@@ -93,5 +116,15 @@ a,
 a:hover,
 .qr:hover {
     transform: scale(1.05);
+}
+
+@media (min-width: 640px) {
+    .qr {
+        width: var(--size);
+    }
+
+    .qr>span {
+        display: none;
+    }
 }
 </style>

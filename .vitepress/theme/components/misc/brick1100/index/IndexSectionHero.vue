@@ -62,6 +62,9 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
     padding: 3rem 1.5rem;
     margin: auto;
     max-width: 600px;
+    position: relative;
+    /* required to stay on top of the follow-up sections */
+    z-index: 1;
 }
 
 .index-hero .logo {
