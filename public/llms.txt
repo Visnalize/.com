@@ -1,0 +1,30 @@
+# Visnalize - creator of Win7 Simu, Brick 1100, and more | Visnalize
+
+> Author of Win7 Simu and Brick 1100. On a mission to relive the good old days with retro apps.
+
+## Main
+
+- [Visnalize](https://visnalize.com/)
+- [Changelog](https://visnalize.com/win7simu/changelog)
+- [FAQs](https://visnalize.com/win7simu/faq)
+- [Keyboard shortcuts](https://visnalize.com/win7simu/keyboard-shortcuts)
+- [Simulated apps](https://visnalize.com/win7simu/simulated)
+- [Theme Studio](https://visnalize.com/win7simu/themestudio)
+- [Feature requests](https://visnalize.com/brick1100/feedback)
+- [Games](https://visnalize.com/brick1100/games)
+- [Deep Links](https://visnalize.com/brick1100/deep-links)
+- [Builders](https://visnalize.com/brick1100/builders)
+- [Services](https://visnalize.com/services)
+- [Open metrics](https://visnalize.com/metrics)
+- [Wall of love](https://visnalize.com/testimonials)
+- [Open-source tools](https://visnalize.com/resources/tools)
+- [Web desktops](https://visnalize.com/resources/web-desktops)
+- [More...](https://visnalize.com/resources)
+
+## Optional
+
+- [About](https://visnalize.com/win7simu/about)
+- [Privacy Policy](https://visnalize.com/win7simu/privacy)
+- [Blog](https://visnalize.com/blog)
+- [About Visnalize](https://visnalize.com/about)
+
