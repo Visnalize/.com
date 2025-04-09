@@ -22,6 +22,12 @@
             <SocialCommentCount v-if="enableComments" />
         </div>
     </div>
+
+    <div v-if="tags.includes('sponsor')" class="doc-sponsor warning custom-block">
+        This is a <a href="/services#sponsored-posts" target="_blank">sponsored post</a>.
+        The content have been reviewed and the links in this post are safe to access.
+        If you notice an issue, please leave a comment below or <a href="/contact" target="_blank">contact us</a>.
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -31,7 +37,7 @@ import SocialSharing from '../components/misc/SocialSharing.vue';
 import useCustomData from '../composables/useCustomData';
 
 const { frontmatter } = useData()
-const { createdDate, enableSocial, enableComments } = useCustomData()
+const { createdDate, enableSocial, enableComments, tags } = useCustomData()
 </script>
 
 <style scoped>
@@ -64,5 +70,10 @@ const { createdDate, enableSocial, enableComments } = useCustomData()
 
 .meta-version {
     font-weight: 500;
+}
+
+.doc-sponsor {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
 }
 </style>
