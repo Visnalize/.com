@@ -25,7 +25,7 @@
 
     <div v-if="tags.includes('sponsor')" class="doc-sponsor warning custom-block">
         This is a <a href="/services#sponsored-posts" target="_blank">sponsored post</a>.
-        The content have been reviewed and the links in this post are safe to access.
+        The content has been reviewed and the links in this post are safe to access.
         If you notice an issue, please leave a comment below or <a href="/contact" target="_blank">contact us</a>.
     </div>
 </template>
