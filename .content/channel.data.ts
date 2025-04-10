@@ -35,7 +35,8 @@ export { data };
 
 const fetchData = (endpoint: string, params: Record<string, string>) => {
   if (!apiKey) {
-    throw new Error("YouTube API key is missing.");
+    console.error("YouTube API key is missing.");
+    return;
   }
 
   const searchParams = new URLSearchParams({ key: apiKey, ...params });

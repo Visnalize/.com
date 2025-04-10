@@ -1,6 +1,10 @@
 <template>
     <PageTitle :title='currentTag ? `Posts with tag "${currentTag}"` : "New and sharing"'>
-        <template v-if="currentTag">
+        <template v-if="currentTag === 'sponsor'">
+            Sharing, updates, thoughts, and insights from our sponsors.
+            Don't forget to check out their products and services.
+        </template>
+        <template v-else-if="currentTag">
             Sharing, updates, thoughts, and insights with tag <code>{{ currentTag }}</code>.
             Hope you find helpful and valuable information here.
         </template>
