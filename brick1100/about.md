@@ -5,7 +5,7 @@ aside: right
 outline: false
 ---
 
-# Brick 1100 <Badge text="Beta" type="danger" />
+# Brick 1100
 
 __Brick 1100__ is an Android/iOS app that transforms your smartphone into a Nokia 1100 by providing a simulation of the phone's interface and features. It is a good fit for those who want to relive the nostalgia of the iconic Nokia 1100, or for those who want to experience the simplicity of the phone.
 

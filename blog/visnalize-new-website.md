@@ -19,9 +19,7 @@ With a focus on simplicity and clarity, the new home page design aims to provide
 
 The new design features several sections, including a full-width hero section, dedicated sections for the projects, [Win7 Simu](../win7simu/about.md) and [Brick 1100](../brick1100/about.md), testimonials, latest news, updates, videos, and a contact form at the end. Each section is carefully crafted to provide a seamless browsing experience across different devices, with some animations and transitions to make them more engaging without overwhelming the user.
 
-<video playsinline autoplay loop muted controls>
-    <source src="./img/visnalize-new-website/visnalize-v2-landing.mp4" type="video/mp4">
-</video>
+<vid-elem controls src="./img/visnalize-new-website/visnalize-v2-landing.mp4" />
 
 <SponsorAd />
 

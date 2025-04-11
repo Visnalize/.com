@@ -49,13 +49,13 @@ const visibility = useTransform(scrollProgress, [0, 0.1], ['hidden', 'visible'])
     max-width: 200px;
 }
 
-video,
-iframe {
+video {
     position: absolute;
     inset: 0;
     width: 82%;
     height: 94%;
     margin: auto;
+    border-radius: 3.5rem;
 }
 
 .frame {

@@ -15,6 +15,30 @@ import Notation from '@components/misc/brick1100/Notation.vue';
 
 Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Notation icon="premium" list />
 
+## 2025
+
+### `1.0.0` (Apr 11, 2025)
+
+Welcome to the first stable release of Brick 1100! This version includes a plethora of new features, enhancements, and bug fixes to improve your experience. You can learn more about the new features in details from this [blog post](../blog/brick-1100-v1.md). Below is a list of the major changes:
+
+- Added sample tones for Composer
+- Added free mode for Composer
+- Added message saving capability (draft messages)
+- Added "Night" profile (Menu > Profile > Night) <Notation icon="premium" />
+- Added option to backup/restore data with account (Menu > Settings > Account settings > Manage data)
+- Added One-tap mode for Flashlight <Notation icon="premium" />
+- Added 3310 phone model (Menu > Settings > Phone settings > Model) <Notation icon="premium" />
+- Added custom app icons based on selected phone model
+- Added Trial with ad option (Menu > Subscription settings > Trial)
+- Added new levels and major enhancements for Brick Breaker
+- Added new levels, start booster, and other enhancements for Monogram
+- Enhanced audio quality and stability
+- Enhanced phone screen for a more realistic experience
+- Fixed an issue with the editor not scrolling properly
+- Reset Chrome Dino leaderboard to fix score display issue <Notation icon="ios" />
+
+While the app is now considered stable, there might still be minor issues that we will address in future updates. If you encounter any issues or have suggestions, please reach out via our [Discord server](https://discord.gg/6AQDnZa4Xm) or by [email](/contact). Hope you enjoy this update!
+
 ## Beta versions
 
 ### `0.0.14` (Mar 6, 2025)
