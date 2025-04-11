@@ -24,7 +24,9 @@ Some of the most notable changes in this release are the subtle yet significant 
 
 - The feedback on each key interaction
 
-<vid-elem src='./img/brick-1100-v1/realistic-keypad.mp4' width="200" />
+<video playsinline autoplay loop muted controls width="200">
+    <source src="./img/brick-1100-v1/realistic-keypad.mp4" type="video/mp4">
+</video>
 
 - A realistic LCD screen with a backlight effect that turns off when the phone is idle
 
