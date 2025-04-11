@@ -9,7 +9,7 @@ For the source code of the __version 1__, see the [v1 branch](https://github.com
 ## Retro projects
 
 - [Win7 Simu](https://visnalize.com/win7simu/about.html) - A simulation of Windows 7 on the web/Android.
-- [Brick 1100](https://visnalize.com/brick1100/about.html) - An Android/iOS app that turns your phone into a Nokia 1100.
+- [Brick 1100](https://visnalize.com/brick1100/about.html) - An Android/iOS app that turns your phone into a brick phone.
 
 ## Socials
 
