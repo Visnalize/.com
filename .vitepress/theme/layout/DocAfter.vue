@@ -1,6 +1,6 @@
 <template>
     <div class="after-doc">
-        <IndieProducts v-if="!route.path.includes('indie-products')" :key="route.path" widget />
+        <IndieProducts v-if="enableSocial" :key="route.path" widget />
         <SponsorAd v-if="enableAds" :format="hasAside ? undefined : 'auto'" :key="route.path" />
         <SocialCommentSection v-if="enableComments" />
     </div>
@@ -14,7 +14,7 @@ import IndieProducts from '../components/misc/IndieProducts.vue';
 import SocialCommentSection from '../components/misc/SocialCommentSection.vue';
 import useCustomData from '../composables/useCustomData';
 
-const { enableAds, enableComments } = useCustomData()
+const { enableAds, enableComments, enableSocial } = useCustomData()
 const { hasAside } = useSidebar()
 const route = useRoute()
 </script>
