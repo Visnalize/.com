@@ -4,6 +4,7 @@ comments: false
 lastUpdated: false
 pagefind-indexed: false
 social: false
+ads: false
 ---
 
 <div :class="$style.thanks">
