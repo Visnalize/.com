@@ -6,8 +6,8 @@
                 <iconify-icon icon="fluent:question-circle-24-regular" />
             </a>
         </h2>
-        <indie-boosting v-if="inView" id="HUQBLZLWPR" no-title no-credits headless theme="light"
-            :max-products="widget ? 4 : 10" :max-columns="widget ? 2 : 1" @load="contentLoaded = true" />
+        <indie-boosting v-if="inView" id="HUQBLZLWPR" no-title no-credits :theme="theme" :max-products="widget ? 4 : 10"
+            :max-columns="widget ? 2 : 1" @load="contentLoaded = true" />
         <div v-if="!contentLoaded" class="loader">
             <div v-for="i in Array.of(1, 2, 3, 4)" class="loading-item">
                 <CoreSkeleton class="icon" />
@@ -21,14 +21,17 @@
 </template>
 
 <script setup lang="ts">
+import { useData } from 'vitepress';
 import { useInView } from 'motion-v';
-import { onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import CoreSkeleton from '../core/CoreSkeleton.vue';
 
 const { widget } = defineProps<{ widget?: boolean }>()
 const container = ref<HTMLElement | null>(null)
 const contentLoaded = ref(false)
 const inView = useInView(container, { once: true })
+const { isDark } = useData()
+const theme = computed(() => (isDark.value ? 'dark' : 'light'))
 
 onMounted(() => {
     import('../../custom-elements/indie-boosting')
@@ -65,19 +68,16 @@ onMounted(() => {
     color: var(--vp-c-brand-1);
 }
 
-.loader,
-:deep(.products-grid) {
+.loader {
     display: grid;
     gap: 0.75rem;
 }
 
-.widget .loader,
-.widget :deep(.products-grid) {
+.widget .loader {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.loading-item,
-:deep(.indieboosting-product) {
+.loading-item {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -90,24 +90,12 @@ onMounted(() => {
     text-decoration: none;
 }
 
-:deep(.indieboosting-product:hover) {
-    border-color: var(--vp-c-brand-1);
-}
-
-.loading-item .icon,
-:deep(.product-item__image) {
+.loading-item .icon {
     width: 4rem;
     height: 4rem;
 }
 
-.widget .loading-item .icon,
-.widget :deep(.product-item__image) {
-    width: 3rem;
-    height: 3rem;
-}
-
-.loading-item>div,
-:deep(.product-info) {
+.loading-item>div {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -122,52 +110,13 @@ onMounted(() => {
     width: 60%;
 }
 
-:deep(.product-name),
-:deep(.product-description) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    margin: 0;
+:deep(#indieboosting-container) {
+    border: 0;
+    padding: 0;
 }
 
-:deep(.product-name) {
-    color: var(--vp-c-text-1);
-    font-weight: 600;
+:deep(#indieboosting-container),
+:deep(#indieboosting-container .product-item) {
+    background: none;
 }
-
-:deep(.product-description) {
-    color: var(--vp-c-text-2);
-    font-size: 0.875rem;
-}
-
-:deep(.ama-button) {
-    display: none; /** temporarily disable until feature is stable */
-}
-
-/* :deep(.ama-button) {
-    position: absolute;
-    top: -0.5rem;
-    right: -0.25rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--vp-c-bg);
-    border: 1px solid var(--vp-c-divider);
-    border-radius: 0.5rem;
-    padding: 0 0 0 0.5rem;
-    cursor: pointer;
-    font-size: 0.625rem;
-    overflow: hidden;
-    transition: 0.2s;
-    z-index: 1;
-}
-
-:deep(.ama-button img) {
-    width: 24px;
-}
-
-:deep(.indieboosting-product:hover .ama-button) {
-    transform: rotate(8deg) translate(-0.5rem, 0.25rem) scale(1.4);
-} */
 </style>
