@@ -23,6 +23,8 @@
                         <p>{{ post.description }}</p>
                     </div>
                     <iconify-icon icon="fluent:arrow-up-right-24-regular" />
+                    <img v-if="post.tags.find(tag => tag.name === 'sponsor')" class="badge"
+                        src="/assets/sponsor-badge.png" width="459" height="345" />
                 </a>
             </Motion>
         </div>
@@ -82,6 +84,8 @@ const linkVariants = useHeadlineVariants({ delay: 0.2 });
     justify-content: space-between;
     gap: 1rem;
     transition: 0.2s;
+    position: relative;
+    overflow: hidden;
 }
 
 .item:hover {
@@ -109,6 +113,16 @@ const linkVariants = useHeadlineVariants({ delay: 0.2 });
 .metadata {
     color: var(--vp-c-text-2);
     margin-bottom: 0.75rem;
+}
+
+.badge {
+    position: absolute;
+    right: -2rem;
+    bottom: -5rem;
+    width: 18rem;
+    height: auto;
+    opacity: 0.06;
+    transform: rotate(-10deg);
 }
 
 h3 {

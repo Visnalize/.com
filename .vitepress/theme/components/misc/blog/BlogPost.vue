@@ -3,8 +3,9 @@
         <div class="post-control"></div>
         <div class="post-content">
             <img class="post-image" :src="post.image" :alt="post.title" />
-            <div class="post-badge" v-if="post.badge">
-                <iconify-icon :icon="badgeIcon[post.badge]" />
+            <div class="post-badge" v-if="post.badge || isSponsored(post)">
+                <img v-if="isSponsored(post)" src="/assets/sponsor-badge.png" width="150" height="114" />
+                <iconify-icon v-else :icon="badgeIcon[post.badge]" />
             </div>
             <div class="post-date">
                 <iconify-icon icon="fluent:calendar-clock-24-regular" />
@@ -44,6 +45,8 @@ const badgeIcon: Record<PostData['badge'], string> = {
     'latest': 'fluent:document-one-page-sparkle-24-regular',
     'popular': 'fluent:ribbon-star-24-regular'
 }
+
+const isSponsored = (post: PostData) => post.tags.some(t => t.name === 'sponsor')
 </script>
 
 <style scoped>
