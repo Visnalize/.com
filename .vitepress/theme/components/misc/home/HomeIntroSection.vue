@@ -6,7 +6,7 @@
         <Motion as="h2" :variants="variants(1)" :animate="animate">{{ title }}</Motion>
         <Motion as="p" :variants="variants(2)" :animate="animate">
             <slot />
-            <HomeLink :href="`/${app}`">More about {{ title }}</HomeLink>
+            <HomeLink :href="`/${app}${app === 'win7simu' ? '/about' : ''}`">More about {{ title }}</HomeLink>
         </Motion>
         <Motion :variants="variants(3)" :animate="animate">
             <AccessLinks :app="app" />

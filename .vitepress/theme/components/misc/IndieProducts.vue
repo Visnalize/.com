@@ -21,8 +21,8 @@
 </template>
 
 <script setup lang="ts">
-import { useData } from 'vitepress';
 import { useInView } from 'motion-v';
+import { useData } from 'vitepress';
 import { computed, onMounted, ref } from 'vue';
 import CoreSkeleton from '../core/CoreSkeleton.vue';
 
