@@ -50,7 +50,7 @@ const attachZoom = () => {
     const isBuilders = /^\/brick1100\/builders\/?/.test(route.path);
 
     if (isBlogPost || isResource || isThemeStudio || isBuilders) {
-        selector = '.main img';
+        selector = '.main img:not([data-no-zoom])';
     } else {
         selector = '[data-zoomable]';
     }

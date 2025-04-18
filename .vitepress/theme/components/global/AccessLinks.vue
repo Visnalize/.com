@@ -1,7 +1,7 @@
 <template>
     <div class="access">
         <a v-for="link in links" :key="link" :href="link" target="_blank">
-            <img v-bind="getImageProps(link)" />
+            <img data-no-zoom v-bind="getImageProps(link)" />
         </a>
         <Dropdown>
             <button class="qr" aria-label="Scan QR code">
@@ -12,7 +12,7 @@
                 </span>
             </button>
             <template #popper>
-                <img :src="`/assets/${app}-qr.svg`" width="256" height="256" />
+                <img data-no-zoom :src="`/assets/${app}-qr.svg`" width="256" height="256" />
             </template>
         </Dropdown>
     </div>

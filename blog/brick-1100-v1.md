@@ -10,7 +10,7 @@ tags:
 
 ![Brick 1100 featured graphic](/assets/brick1100-og.png)
 
-Hello everyone, today I'm thrilled to announce the launch of [Brick 1100 v1.0.0](/brick1100/changelog#_1-0-0-apr-12-2025), the first stable release with exciting new features, bug fixes, and improvements. With Brick 1100, we're committed to the mission: to bring you back to the good old days of using your beloved brick phones, and this release is a significant step towards that goal.
+Hello everyone, today I'm thrilled to announce the launch of [Brick 1100 v1.0.0](/brick1100/changelog#_1-0-0-apr-11-2025), the first stable release with exciting new features, bug fixes, and improvements. With Brick 1100, we're committed to the mission: to bring you back to the good old days of using your beloved brick phones, and this release is a significant step towards that goal.
 
 In this post, let's take a closer look at the new features and improvements that come with this version.
 
