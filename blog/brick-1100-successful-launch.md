@@ -42,7 +42,7 @@ And you know what the most important thing is? I got them BADGES! (well, not tha
     <img data-no-zoom :src="`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=951290&theme=${isDark ? 'dark' : 'light'}&t=1744940729087`" alt="Product Hunt launch badge" width="250" height="54" />
   </a>
   <a href="https://peerlist.io/khang/project/brick-1100" target="_blank">
-    <img data-no-zoom :src="`https://peerlist.io/images/Launch_Badge_${isDark ? 'Dark' : 'Light'}.svg`" alt="Peerlist launch badge" width="184" height="50" />
+    <img data-no-zoom src="https://peerlist.io/images/week_medal_2.svg" alt="Peerlist winner badge" width="184" height="50" />
   </a>
 </div>
 
