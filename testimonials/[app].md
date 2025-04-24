@@ -1,6 +1,4 @@
 ---
-title: Wall of love - Testimonials for Win7 Simu, Brick 1100
-description: See what users have to say about Win7 Simu and Brick 1100. Share your love for retro apps too!
 aside: false
 comments: false
 lastUpdated: false

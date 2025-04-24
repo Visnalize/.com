@@ -1,5 +1,5 @@
 <template>
-    <div class="quote">
+    <div class="quote" tabindex="0">
         <div class="metadata">
             <a :href="`/${quote.app}/about`">
                 <AppIcon :app="quote.app" class="app" />
@@ -8,7 +8,11 @@
         <div>
             <div class="quote-author">
                 <img :src="quote.image" alt="User avatar" width="48" height="48" />
-                <span>{{ quote.author }}</span>
+                <a v-if="quote.url" :href="quote.url" target="_blank" rel="noopener noreferrer">
+                    {{ quote.author }}
+                    <iconify-icon icon="fluent:open-24-regular" />
+                </a>
+                <span v-else>{{ quote.author }}</span>
             </div>
             <p class="quote-content">{{ content }}
                 <a v-if="showMore" href="javascript:void(0)" @click="handleShowMore">
@@ -24,12 +28,12 @@
 <script setup lang="ts">
 import { Quote } from '@/.content/quotes.data';
 import { ref } from 'vue';
-import { isTextTooLong, previewText } from '../../utils/strings';
-import AppIcon from './AppIcon.vue';
+import { isTextTooLong, previewText } from '@utils/strings';
+import AppIcon from '../AppIcon.vue';
 
 const { quote, home } = defineProps<{
     quote: Quote,
-    home?: boolean
+    home?: boolean,
 }>()
 
 const content = ref(home ? quote.content : previewText(quote.content))
@@ -44,8 +48,8 @@ const handleShowMore = () => {
 <style scoped>
 .quote {
     cursor: default;
-    color: var(--vp-c-text-2);
-    border: 1px solid var(--vp-c-default-3);
+    color: var(--vp-c-text-1);
+    border: 1px solid var(--vp-c-default-1);
     border-radius: 1rem;
     padding: 1.5rem;
     padding-top: 2rem;
@@ -54,11 +58,16 @@ const handleShowMore = () => {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    opacity: 0.7;
+    transition: 0.2s;
+    filter: grayscale(1);
 }
 
-.quote:hover {
-    color: var(--vp-c-text-1);
-    border-color: var(--vp-c-border);
+.quote:hover,
+.quote:focus,
+.quote:focus-within {
+    opacity: 1;
+    filter: grayscale(0);
 }
 
 .quote-author {
@@ -76,6 +85,13 @@ const handleShowMore = () => {
     font-size: 0.75rem;
 }
 
+.quote-author a {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+}
+
 .metadata {
     display: flex;
     align-items: center;
@@ -86,18 +102,8 @@ const handleShowMore = () => {
     right: 1rem;
 }
 
-.metadata a {
-    opacity: 0.2;
-    transition: 0.2s;
-}
-
-.metadata a:focus,
-.quote:hover .metadata a {
-    opacity: 1;
-}
-
 .app {
-    width: 32px;
+    width: 2rem;
     border-radius: 0.25rem;
 }
 

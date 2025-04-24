@@ -8,7 +8,7 @@ import decapitalize from "voca/decapitalize";
 import { getLatestVersion } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
 import getOgImage from "../server/ogimage";
-import { ORIGIN } from "../theme/constants";
+import { APP_NAMES, ORIGIN } from "../theme/constants";
 import { getAppImage } from "../theme/utils/images";
 import { isDevMode } from "../theme/utils/misc";
 
@@ -23,8 +23,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     data.description = `Here you can find all posts with tag: ${tag}. Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
   }
 
-  // simulated app page
-  if (data.params?.app) {
+  if (data.relativePath.match(/simulated/) && data.params?.app) {
     const { app: slug } = data.params;
     const app = apps.find((a) => a.slug === slug);
     const imageUrl = getAppImage(slug);
@@ -43,6 +42,12 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     } catch (e) {
       // file not available, ignore
     }
+  }
+
+  if (data.relativePath.match(/testimonials/) && data.params?.app) {
+    const app = APP_NAMES[data.params.app];
+    data.title = "Wall of love - Testimonials for " + app;
+    data.description = `See what users have to say about ${app}. Share your love for retro apps too!`;
   }
 
   if (data.relativePath.match(/(win7simu|brick1100)\/about/)) {

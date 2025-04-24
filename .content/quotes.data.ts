@@ -14,9 +14,66 @@ export interface Quote {
   date: string;
   /** Featured on the home page */
   featured?: boolean;
+  /** The URL link to original quote */
+  url?: string;
 }
 
 const quotes: Quote[] = [
+  {
+    author: "mhhfill",
+    date: "April 5, 2025",
+    app: "win7simu",
+    content:
+      "5/5 stars. This windows 7 simulator app brings me to childhood nostalgic vibe! The interface is spot on, and the nostalgic value is high. I love reliving the good old days of Windows 7. The app is user-friendly, and the performance is smooth. If you're a 90s or early 2000s kid like me, you'll love this app. Highly recommended! 😄👌",
+  },
+  {
+    author: "Людмила Карабун",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjV0BtRK5Zbbsuqm5BWjTN4LjTIyrrVdLVl68f27Zdgo9t6egncP=s50",
+    date: "March 29, 2025",
+    app: "win7simu",
+    content:
+      "The simulator is perfect, I've been using it for more than a year and it always helps me out in all situations. You can even change Windows versions, I love it!",
+  },
+  {
+    author: "Blank",
+    image:
+      "https://cdn.discordapp.com/avatars/1156255817708867666/117bf2614f32268ef3c583e083a3e03e.webp?size=96",
+    date: "April 21, 2025",
+    app: "brick1100",
+    content:
+      "I love this app. No other dev made it this relistic. Others tried but ended up with abandoned projects or just cheap rip-offs. I can see how much effort you put into these and the updates are amazing.",
+  },
+  {
+    author: "Mike",
+    image:
+      "https://ph-avatars.imgix.net/7855629/83d8cb02-f17e-4b35-9062-4f2a9d46e5f2.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=50&h=50&fit=crop&frame=1&dpr=2",
+    date: "April 14, 2025",
+    app: "brick1100",
+    url: "https://www.producthunt.com/posts/brick-1100-1102?comment=4535095",
+    content:
+      "What a clever nostalgia trip! Just tried this out and it instantly transported me back to my first Nokia days. The attention to detail is impressive - from the classic pixelated UI to those unmistakable retro sounds. It's actually refreshing to have a 'simpler' phone option without completely giving up my smartphone. Perfect for those moments when you want to disconnect from the endless scroll but still stay reachable. Plus, who doesn't miss playing Snake?",
+  },
+  {
+    author: "Catherine Cormier",
+    image:
+      "https://ph-avatars.imgix.net/6424644/e53755f6-7108-4f76-8b90-32708d52d6d8.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=50&h=50&fit=crop&frame=1&dpr=2",
+    date: "April 14, 2025",
+    app: "brick1100",
+    url: "https://www.producthunt.com/posts/brick-1100-1102?comment=4534360",
+    content:
+      "Pure nostalgic bliss! As a proud 90s kid, this hits me right in the feels—those pixelated screens, retro sounds, and that indestructible Nokia vibe bring back all the joy of simpler times! 😄",
+  },
+  {
+    author: "Nataša Šebek",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4D03AQFfbH9JAkGvMw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1605579691308?e=1750896000&v=beta&t=k3s9aqp-bH2_awOSnSVeGVySBkUrbYItSlf1x5jakgI",
+    date: "April 18, 2025",
+    app: "brick1100",
+    url: "https://www.linkedin.com/posts/natasha0824_brick-1100-brickify-your-smartphone-activity-7318772620374474752-9-CQ",
+    content:
+      "It's hilarious, nostalgic, and weirdly fun. Highly recommend for anyone needing a break from the doomscroll.",
+  },
   {
     author: "Old Man Krootox",
     date: "November 19, 2023",

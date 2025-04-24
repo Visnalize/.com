@@ -21,7 +21,7 @@ import { data as quotes } from '@/.content/quotes.data';
 import { useSectionInView, Variants } from '@composables/useMotion';
 import { Motion } from 'motion-v';
 import { ref } from 'vue';
-import UserQuote from '../UserQuote.vue';
+import UserQuote from '../testimonials/UserQuote.vue';
 import HomeLink from './HomeLink.vue';
 import HomeSection from './HomeSection.vue';
 

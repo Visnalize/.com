@@ -11,7 +11,7 @@
         </div>
 
         <div class="link-footer">
-            <HomeLink href="/testimonials">View all testimonials</HomeLink>
+            <HomeLink href="/testimonials/brick1100">View all testimonials</HomeLink>
         </div>
     </HomeSection>
 </template>
@@ -23,7 +23,7 @@ import { Motion, useInView } from 'motion-v';
 import { ref } from 'vue';
 import HomeLink from '../../home/HomeLink.vue';
 import HomeSection from '../../home/HomeSection.vue';
-import UserQuote from '../../UserQuote.vue';
+import UserQuote from '../../testimonials/UserQuote.vue';
 
 const featuredQuotes = quotes.filter((quote) => quote.app === 'brick1100').slice(0, 6);
 const quoteContainer = ref<HTMLElement | null>(null);
