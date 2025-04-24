@@ -1,5 +1,5 @@
 <template>
-    <PageTitle :title='currentTag ? `Posts with tag "${currentTag}"` : "New and sharing"'>
+    <PageTitle :title='currentTag ? `Posts with tag "${currentTag}"` : "News and sharing"'>
         <template v-if="currentTag === 'sponsor'">
             Sharing, updates, thoughts, and insights from our sponsors.
             Don't forget to check out their products and services.

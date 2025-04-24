@@ -42,7 +42,7 @@ const quotes: Quote[] = [
     date: "April 21, 2025",
     app: "brick1100",
     content:
-      "I love this app. No other dev made it this relistic. Others tried but ended up with abandoned projects or just cheap rip-offs. I can see how much effort you put into these and the updates are amazing.",
+      "I love this app. No other dev made it this realistic. Others tried but ended up with abandoned projects or just cheap rip-offs. I can see how much effort you put into these and the updates are amazing.",
   },
   {
     author: "Mike",

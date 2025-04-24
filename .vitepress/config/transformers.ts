@@ -44,6 +44,11 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     }
   }
 
+  if (data.relativePath.startsWith("notes")) {
+    data.frontmatter.aside = false;
+    data.frontmatter.social = false;
+  }
+
   if (data.relativePath.match(/testimonials/) && data.params?.app) {
     const app = APP_NAMES[data.params.app];
     data.title = "Wall of love - Testimonials for " + app;

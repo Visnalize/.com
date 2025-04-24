@@ -50,6 +50,7 @@ const navItems: DefaultTheme.Config["nav"] = [
       Services,
       Metrics,
       Testimonials,
+      { text: "Notes", link: "/notes" },
       {
         text: "Resources",
         items: [
