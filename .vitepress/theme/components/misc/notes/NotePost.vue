@@ -70,12 +70,13 @@ const bgColor = (() => {
     border: 0;
     padding: 0;
     margin: 0;
-    font-size: 1.325rem;
+    font-size: 1.25rem;
 }
 
 .note-link {
     text-decoration: none;
     color: inherit;
+    font-weight: 600;
 }
 
 .dark .note {

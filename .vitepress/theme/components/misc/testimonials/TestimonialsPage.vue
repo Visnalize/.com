@@ -7,13 +7,13 @@
         <li>
             <a :href="`/testimonials`" :class="{ active: !app }">
                 <iconify-icon icon="fluent:square-hint-24-regular" />
-                All apps
+                <span>All apps</span>
             </a>
         </li>
         <li v-for="_app in apps">
             <a :href="`/testimonials/${_app}`" :class="{ active: _app === app }">
                 <AppIcon :app="_app" class="app" />
-                {{ APP_NAMES[_app] }}
+                <span>{{ APP_NAMES[_app] }}</span>
             </a>
         </li>
     </ul>
@@ -41,9 +41,12 @@ const apps = Object.keys(APP_NAMES) as App[];
 
 <style scoped>
 .filter {
+    --icon-size: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 0 0 2rem;
     padding: 0;
@@ -67,6 +70,10 @@ const apps = Object.keys(APP_NAMES) as App[];
     filter: grayscale(1);
 }
 
+.filter a>span {
+    display: none;
+}
+
 .filter a.active {
     background: var(--vp-c-bg);
     border-color: var(--vp-c-brand-1);
@@ -75,12 +82,12 @@ const apps = Object.keys(APP_NAMES) as App[];
 }
 
 .filter img {
-    width: 1.5rem;
+    width: var(--icon-size);
     border-radius: 0.25rem;
 }
 
 .filter iconify-icon {
-    font-size: 1.5rem;
+    font-size: var(--icon-size);
 }
 
 .quotes {
@@ -89,6 +96,14 @@ const apps = Object.keys(APP_NAMES) as App[];
 }
 
 @media (min-width: 480px) {
+    .filter {
+        --icon-size: 1.5rem;
+    }
+
+    .filter a>span {
+        display: initial;
+    }
+
     .quotes {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }
