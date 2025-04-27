@@ -18,6 +18,7 @@ import NotePost from './NotePost.vue';
 .list {
     display: grid;
     gap: 1.5rem;
+    align-items: flex-start;
 }
 
 @media (min-width: 640px) {

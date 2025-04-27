@@ -26,9 +26,9 @@ import HomeIntroSection from './HomeIntroSection.vue';
 const container = ref<HTMLElement | null>(null)
 const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 })
 
-const x = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 0.8], [-50, 0])
-const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 0.8], [1.1, 1])
-const opacity = useTransform(useSpring(scrollProgress), [0, 0.4], [0, 1])
+const x = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 0.6], [-50, 0])
+const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 0.6], [1.1, 1])
+const opacity = useTransform(useSpring(scrollProgress), [0, 0.5], [0, 1])
 const visibility = useTransform(scrollProgress, [0, 0.1], ['hidden', 'visible'])
 </script>
 
@@ -45,8 +45,10 @@ const visibility = useTransform(scrollProgress, [0, 0.1], ['hidden', 'visible'])
 }
 
 .brick-demo {
+    --width: 200px;
+    --border-radius: 2rem;
     position: relative;
-    max-width: 200px;
+    width: var(--width);
 }
 
 video {
@@ -55,7 +57,7 @@ video {
     width: 82%;
     height: 94%;
     margin: auto;
-    border-radius: 3.5rem;
+    border-radius: var(--border-radius);
 }
 
 .frame {
@@ -66,7 +68,8 @@ video {
 
 @media (min-width: 640px) {
     .brick-demo {
-        max-width: 260px;
+        --width: 260px;
+        --border-radius: 3rem;
     }
 }
 
@@ -76,7 +79,8 @@ video {
     }
 
     .brick-demo {
-        max-width: 320px;
+        --width: 320px;
+        --border-radius: 3.5rem;
     }
 }
 
@@ -87,7 +91,7 @@ video {
 
     .demo-wrapper {
         position: sticky;
-        top: calc((100% - 620px) / 2);
+        top: max(calc((100% - 620px) / 2), var(--vp-nav-height));
     }
 }
 
