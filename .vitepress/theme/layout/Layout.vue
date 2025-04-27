@@ -45,11 +45,12 @@ const toasted = ref(false)
 const attachZoom = () => {
     let selector: ZoomSelector = null;
     const isBlogPost = route.path.startsWith('/blog/') && !route.path.includes('/tag');
+    const isNotePost = route.path.startsWith('/notes');
     const isResource = route.path.startsWith('/resources/');
     const isThemeStudio = /^\/win7simu\/themestudio\/?/.test(route.path);
     const isBuilders = /^\/brick1100\/builders\/?/.test(route.path);
 
-    if (isBlogPost || isResource || isThemeStudio || isBuilders) {
+    if (isBlogPost || isNotePost || isResource || isThemeStudio || isBuilders) {
         selector = '.main img:not([data-no-zoom])';
     } else {
         selector = '[data-zoomable]';

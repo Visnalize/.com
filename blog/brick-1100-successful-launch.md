@@ -46,6 +46,8 @@ And you know what the most important thing is? I got them BADGES! (well, not tha
   </a>
 </div>
 
+<SponsorAd />
+
 ## What I did exactly
 
 As mentioned above, I had no preparation, no expectations for this launch, I just wanted to list it on some popular platforms in hope that it would gain some visibility and traffic. There was no plan, no strategy, no connection, no audience, and no budget to leverage. In other words, I did not care much about it, just wanted to submit it and see if there is any genuine interest at all.
@@ -83,6 +85,8 @@ So your question might be, what makes a successful launch on Product Hunt? Here 
 - And that's it. I don't know what else to share, because that's all I feel about this launch. Like I said, I just posted it and leave it, I didn't even try. And somehow it worked, what else can I say other than luck? Launch checklist? Never seen it. Soliciting upvotes? Didn't do it. Using my network or audience? Had none.
 
 The fact that my project was later featured in the newsletter emphasizes my point. My wild guess is, it was the editorial team's deliberate decision to feature my project on the homepage, for them to later share it in the newsletter. Amidst a forest of AI projects, Brick 1100 was like a breath of fresh air, and they took the chance to capture their audience's attention. Again, it's purely my assumption, but a plausible one it seems. So yeah, luck is the key here.
+
+<SponsorAd />
 
 ### Peerlist
 
