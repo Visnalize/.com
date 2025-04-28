@@ -1,6 +1,6 @@
 <template>
     <div class="after-doc">
-        <IndieProducts v-if="enableSocial" :key="route.path" widget />
+        <!-- <IndieProducts v-if="enableSocial" :key="route.path" widget /> -->
         <SponsorAd v-if="enableAds" :format="hasAside ? undefined : 'auto'" :key="route.path" />
         <SocialCommentSection v-if="enableComments" />
     </div>
