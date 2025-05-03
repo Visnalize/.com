@@ -1,5 +1,5 @@
 ---
-timestamp: 
+timestamp: 1746235651414
 ---
 
 # B2C in a nutshell
