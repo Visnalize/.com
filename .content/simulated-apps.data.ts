@@ -68,6 +68,21 @@ export const apps: App[] = [
     videos: [],
   },
   {
+    slug: "chess",
+    title: "Chess Titans",
+    description:
+      "Brings back the classic Chess Titans game, where you can play against the computer or a friend. Do you have what it takes to checkmate your opponent?",
+    version: "3.18.0",
+    features: [
+      "Play against the computer (multiple difficulty levels)",
+      "Play against a human opponent",
+      "Support 3D and 2D (top-down view) modes",
+      "Adjust game graphics and settings",
+      "Customizable board and pieces",
+    ],
+    videos: [],
+  },
+  {
     slug: "chrome",
     title: "Chrome",
     description:

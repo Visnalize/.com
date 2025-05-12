@@ -11,6 +11,19 @@ pageClass: changelog
 
 ## 2025
 
+### `3.18.0` (May 13, 2025)
+
+- Added more drawing shapes in [Paint](./simulated/paint.md)
+- Added [Chess Titans](./simulated/chess.md)
+  - Play against human or computer (with 10 difficulty levels)
+  - Both 3D and 2D (top-down view) modes are supported
+  - Adjust game graphics and settings
+  - Customize the appearance of chess pieces and board
+- Added lifetime option to remove ads
+- Added enhancements for [Chrome](./simulated/chrome.md)
+  - Default search engine changed to DuckDuckGo as Google does not work properly due to technical limitations
+  - You can now change the default search engine in settings. Available search engines: Google, Bing, Yahoo, Baidu, Yandex, DuckDuckGo
+
 ### `3.17.1` (Feb 12, 2025)
 
 __Core__
