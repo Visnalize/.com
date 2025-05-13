@@ -2,7 +2,7 @@
     <a class="social-comment" href="#comments">
         <iconify-icon icon="simple-icons:disqus" />
         <span class="disqus-comment-count" :data-disqus-identifier="id" :key="id">
-            <CoreSkeleton />
+            0 Comments
         </span>
     </a>
 </template>
