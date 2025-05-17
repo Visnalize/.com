@@ -1,0 +1,8 @@
+# robots.txt for https://visnalize.com/
+
+User-agent: *
+Disallow: /thanks
+Disallow: /cdn-cgi/
+Allow: /
+
+Sitemap: https://visnalize.com/sitemap.xml
