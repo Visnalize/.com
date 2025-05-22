@@ -31,6 +31,7 @@ import { useData, useRoute } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import { nextTick, onMounted, ref, watch } from 'vue';
 import { Toaster } from 'vue-sonner';
+import 'vue-sonner/style.css';
 import AsideTop from './AsideTop.vue';
 import DocAfter from './DocAfter.vue';
 import DocBefore from './DocBefore.vue';
