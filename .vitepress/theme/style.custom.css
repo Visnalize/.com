@@ -71,6 +71,15 @@
   margin-top: 0.25rem;
 }
 
+#app .VPSidebar {
+  background-color: var(--vp-c-bg);
+  border-right: 1px solid var(--vp-c-divider);
+}
+
+#app .curtain {
+  background-color: var(--vp-c-bg);
+}
+
 .vp-doc ul.contains-task-list {
   padding: 0;
 }

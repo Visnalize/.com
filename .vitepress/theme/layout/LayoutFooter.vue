@@ -77,7 +77,7 @@ const visnalizeLinks = [Blog, About, Services, Metrics, Testimonials]
 
 <style scoped>
 footer {
-    border-top: 1px solid var(--vp-c-gutter);
+    border-top: 1px solid var(--vp-c-divider);
     z-index: var(--vp-z-index-footer);
 }
 
@@ -85,8 +85,8 @@ footer {
     margin: auto;
     max-width: calc(var(--vp-layout-max-width) - 4rem);
     padding: 2rem 1.5rem;
-    background: var(--vp-c-bg-soft);
-    border: 1px solid var(--vp-c-gutter);
+    background: var(--vp-c-bg);
+    border: 1px solid var(--vp-c-divider);
     border-top: 0;
     border-bottom: 0;
 }

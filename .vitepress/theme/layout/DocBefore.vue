@@ -23,6 +23,13 @@
         </div>
     </div>
 
+    <div v-if="isNote" class="doc-note">
+        <a href="/notes" class="note-link">All notes</a>
+        <div v-if="frontmatter.timestamp">
+            {{ new Date(frontmatter.timestamp).toLocaleDateString(undefined, { dateStyle: 'long' }) }}
+        </div>
+    </div>
+
     <div v-if="tags.includes('sponsor')" class="doc-sponsor warning custom-block">
         This is a <a href="/services#sponsored-posts" target="_blank">sponsored post</a>.
         The content has been reviewed and the links in this post are safe to access.
@@ -31,13 +38,16 @@
 </template>
 
 <script setup lang="ts">
-import { useData } from 'vitepress';
+import { useData, useRoute } from 'vitepress';
+import { computed } from 'vue';
 import SocialCommentCount from '../components/misc/SocialCommentCount.vue';
 import SocialSharing from '../components/misc/SocialSharing.vue';
 import useCustomData from '../composables/useCustomData';
 
 const { frontmatter } = useData()
 const { createdDate, enableSocial, enableComments, tags } = useCustomData()
+const route = useRoute()
+const isNote = computed(() => /notes\/.+/.test(route.path))
 </script>
 
 <style scoped>
@@ -70,6 +80,26 @@ const { createdDate, enableSocial, enableComments, tags } = useCustomData()
 
 .meta-version {
     font-weight: 500;
+}
+
+.doc-note {
+    display: flex;
+    align-items: center;
+    color: var(--vp-c-text-2);
+}
+
+.doc-note a {
+    color: var(--vp-c-brand-1);
+    transition: 0.2s;
+}
+
+.doc-note a:hover {
+    color: var(--vp-c-brand-2);
+}
+
+.doc-note>*:not(:first-child)::before {
+    content: '•';
+    margin: 0 0.5rem;
 }
 
 .doc-sponsor {

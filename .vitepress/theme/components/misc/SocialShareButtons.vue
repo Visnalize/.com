@@ -1,6 +1,6 @@
 <template>
     <button @click="copyUrl" :style="{ '--index': networks.length + 1 }" v-tooltip="'Copy URL'" aria-label="Copy URL">
-        <iconify-icon :icon="copied ? 'fluent:checkmark-24-filled' : 'fluent:attach-24-filled'" />
+        <iconify-icon :icon="copied ? 'fluent:checkmark-24-filled' : 'uil:link-alt'" />
     </button>
     <ShareNetwork v-for="(network, i) in networks" :network="network.name" :url="data?.url" :title="data?.title"
         :description="data?.description" v-slot="{ share }">

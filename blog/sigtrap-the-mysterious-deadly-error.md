@@ -2,8 +2,9 @@
 createdAt: 1738863434743
 description: Celebrating Win7 Simu's error resolved, how I managed to fix this mysterious error.
 tags:
-    - win7-simu
-    - technical
+  - win7-simu
+  - technical
+  - ai
 ---
 
 # SIGTRAP, the mysterious yet deadly error
@@ -18,7 +19,7 @@ Once upon a time, there was a mysterious error that had been haunting the [Win7 
 
 ![The SIGTRAP error](./img/sigtrap-the-mysterious-deadly-error/sigtrap.png)
 
-I call it the __SIGTRAP__ error as that was literally all shown in the Google Play Console crash report. The error was a complete mystery since the message and the stack trace were not helpful at all, like some kind of alien language that no one could understand. What the heck is `[base.apk!libmonochrome.so]`? And what does SIGTRAP even mean?
+I call it the **SIGTRAP** error as that was literally all shown in the Google Play Console crash report. The error was a complete mystery since the message and the stack trace were not helpful at all, like some kind of alien language that no one could understand. What the heck is `[base.apk!libmonochrome.so]`? And what does SIGTRAP even mean?
 
 The worst part? The error was not reproducible on any of the devices I had access to, from borrowed devices from family and friends, to devices displayed at the local stores, I did not see it. I knew that I had to get my hands on a device with the exact specs that could reproduce the error, but it was pretty difficult, since the error mainly happened on older Android devices that were no longer on sale.
 
@@ -46,9 +47,9 @@ The fix was simple, I just had to remove the preloading logic and let the app lo
 
 ## Lessons learned
 
-- __Having the right tools is crucial__, I wouldn't have been able to resolve the error without the right tools, in this case, the device that could reproduce the error and ChatGPT's assistance. This might sound obvious, but sometimes, it's not always easy to get the right tools, especially when you're short on budget, time, or resources.
-- __Listen to your users__, they are your best source of feedback. If it weren't for the users' feedback, I wouldn't have known about the error in the first place. So always listen to your users, they know what they want, and they know what's wrong with your app.
-- __Don't give up too soon__, I almost gave up on the project because of a single error, but I'm glad I didn't. Sometimes, the solution is just around the corner, waiting for you to discover it. And when you do, it's going to be a great victory, the feeling of accomplishment is priceless.
-- __AI is amazing__, don't fight it, embrace it. If you're not using AI in your daily work, you're missing out on a lot of opportunities. AI can help you solve problems that you never thought were solvable, and it can do it faster and more efficiently than you ever could.
+- **Having the right tools is crucial**, I wouldn't have been able to resolve the error without the right tools, in this case, the device that could reproduce the error and ChatGPT's assistance. This might sound obvious, but sometimes, it's not always easy to get the right tools, especially when you're short on budget, time, or resources.
+- **Listen to your users**, they are your best source of feedback. If it weren't for the users' feedback, I wouldn't have known about the error in the first place. So always listen to your users, they know what they want, and they know what's wrong with your app.
+- **Don't give up too soon**, I almost gave up on the project because of a single error, but I'm glad I didn't. Sometimes, the solution is just around the corner, waiting for you to discover it. And when you do, it's going to be a great victory, the feeling of accomplishment is priceless.
+- **AI is amazing**, don't fight it, embrace it. If you're not using AI in your daily work, you're missing out on a lot of opportunities. AI can help you solve problems that you never thought were solvable, and it can do it faster and more efficiently than you ever could.
 
 In conclusion, I hope the sharing has been helpful to you and that you've learned something valuable from it. And again, thank you for your continuous support, please stay tuned for more exciting updates on the Win7 Simu project. Cheers! 🎉
