@@ -49,7 +49,7 @@ const handleShowMore = () => {
 .quote {
     cursor: default;
     color: var(--vp-c-text-1);
-    border: 1px solid var(--vp-c-default-1);
+    border: 1px solid var(--vp-c-divider);
     border-radius: 1rem;
     padding: 1.5rem;
     padding-top: 2rem;
@@ -66,6 +66,7 @@ const handleShowMore = () => {
 .quote:hover,
 .quote:focus,
 .quote:focus-within {
+    border-color: var(--vp-c-default-1);
     opacity: 1;
     filter: grayscale(0);
 }

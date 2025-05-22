@@ -77,7 +77,7 @@ const linkVariants = useHeadlineVariants({ delay: 0.2 });
 
 .item {
     padding: 1.5rem;
-    border: 1px solid var(--vp-c-default-3);
+    border: 1px solid var(--vp-c-divider);
     border-radius: 0.75rem;
     display: flex;
     align-items: center;

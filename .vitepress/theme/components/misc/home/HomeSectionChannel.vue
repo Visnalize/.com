@@ -56,7 +56,7 @@ const tabs = [
     { title: 'Videos', url: '/videos' },
     { title: 'Shorts', url: '/shorts' },
     { title: 'Playlists', url: '/playlists' },
-    { title: 'Community', url: '/community' },
+    { title: 'Posts', url: '/community' },
 ]
 const container = ref<HTMLElement | null>(null);
 const inView = useSectionInView(container);
@@ -79,7 +79,7 @@ const videoVariants = (index: number): Variants => ({
 <style scoped>
 .channel {
     border: 1px solid;
-    border-color: var(--vp-c-default-1) transparent var(--vp-c-default-1) transparent;
+    border-color: var(--vp-c-divider) transparent var(--vp-c-divider) transparent;
     border-radius: 1rem;
     padding: 1.5rem 0;
 }
@@ -132,7 +132,7 @@ const videoVariants = (index: number): Variants => ({
 .tabs {
     display: flex;
     gap: 1.5rem;
-    border-bottom: 1px solid var(--vp-c-default-1);
+    border-bottom: 1px solid var(--vp-c-divider);
     margin-bottom: 1rem;
     overflow: hidden;
 }
@@ -173,7 +173,7 @@ const videoVariants = (index: number): Variants => ({
 
 @media (min-width: 640px) {
     .channel {
-        border-color: var(--vp-c-default-1);
+        border-color: var(--vp-c-divider);
         padding: 1.5rem;
     }
 

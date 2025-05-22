@@ -22,7 +22,7 @@ const inView = useSectionInView(form);
 <style scoped>
 @media (min-width: 640px) {
     .form-container {
-        border: 1px solid var(--vp-c-default-1);
+        border: 1px solid var(--vp-c-divider);
         border-radius: 1rem;
         padding: 3rem;
     }
