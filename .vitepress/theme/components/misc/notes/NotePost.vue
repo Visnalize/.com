@@ -15,11 +15,12 @@
 
 <script setup lang="ts">
 import { NoteData } from '@/.content/notes.data';
-import MarkdownIt from 'markdown-it'
+import mdLink from '@/.vitepress/plugins/md-link';
+import MarkdownIt from 'markdown-it';
 
 defineProps<{ note: NoteData }>()
 
-const md = MarkdownIt({})
+const md = MarkdownIt().use(mdLink())
 
 const color = {
     blue: "#c3f3fa",
