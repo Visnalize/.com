@@ -83,6 +83,8 @@ And with all of the above, we now have a fully 3D rendered chessboard.
 
 ![Complete chessboard](./img/win7-simu-chess-titans/complete-chess-board.webp)
 
+<SponsorAd />
+
 ### Camera Rotation
 
 *Three.js* also provides a built-in camera controls object called [*OrbitControls*](https://threejs.org/docs/?q=orbit#examples/en/controls/OrbitControls) that we can use to easily rotate the camera around the chessboard. However, it needs a render loop in order for the rotation to work. The render loop function looks something like the below:
@@ -232,6 +234,8 @@ uvToBoardCoords(u, v) {
 ```
 
 With the chessboard position of the mouse cursor figured out, we can now easily show the decals where the cursor is and other decals as well.
+
+<SponsorAd />
 
 ### Game Logic
 
