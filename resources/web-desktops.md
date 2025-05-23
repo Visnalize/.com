@@ -29,7 +29,7 @@ import { data } from '../.content/webtops.data';
     </thead>
     <tbody>
         <tr v-for="item in data">
-            <td><a target="_blank" :href="item.url">{{item.name}}</a></td>
+            <td><a target="_blank" :href="item.url" rel="noopener noreferrer nofollow">{{item.name}}</a></td>
             <td>
                 <a v-if="item.source" target="_blank" :href="item.source" :class="$style.link">
                     <iconify-icon icon="logos:github-icon" />
