@@ -69,6 +69,10 @@ export const Brick1100 = {
     text: "Feature requests",
     link: "https://visnalize.com/brick1100/feedback",
   },
+  Apps: {
+    text: "Apps",
+    link: "/brick1100/apps",
+  },
   Games: {
     text: "Games",
     link: "/brick1100/games",
