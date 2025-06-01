@@ -30,6 +30,10 @@ export const Win7Simu = {
     text: "FAQs",
     link: "/win7simu/faq",
   },
+  Credits: {
+    text: "Credits",
+    link: "/win7simu/credits",
+  },
   Privacy: {
     text: "Privacy Policy",
     link: "/win7simu/privacy",

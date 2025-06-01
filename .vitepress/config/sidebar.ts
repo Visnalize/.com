@@ -7,7 +7,12 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
   "/win7simu/": [
     {
       ...Win7Simu.Index,
-      items: [Win7Simu.Changelog, Win7Simu.Faq, Win7Simu.Privacy],
+      items: [
+        Win7Simu.Changelog,
+        Win7Simu.Faq,
+        Win7Simu.Credits,
+        Win7Simu.Privacy,
+      ],
     },
     {
       items: [
