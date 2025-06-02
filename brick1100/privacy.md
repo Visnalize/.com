@@ -6,7 +6,9 @@ social: false
 
 # Privacy Policy
 
-__TL;DR__: We do not collect personal information directly. Third-party services we use may collect data to identify you. We do not use cookies but third-party services might. We do not store log data. We do not collect information from children under 13. Our Privacy Policy may change, so please review it periodically. Contact us at [hey@visnalize.com](mailto:hey@visnalize.com) for any questions or suggestions.
+:::tip TL;DR
+We do not collect personal information directly. Third-party services we use may collect data to identify you. We do not use cookies but third-party services might. We do not store log data. We do not collect information from children under 13. Our Privacy Policy may change, so please review it periodically. Contact us at [hey@visnalize.com](mailto:hey@visnalize.com) for any questions or suggestions.
+:::
 
 ----
 
