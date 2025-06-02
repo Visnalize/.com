@@ -7,7 +7,9 @@ social: false
 
 # Credits and legal notices
 
-**TL;DR**: We, the developers of Win7 Simu, acknowledge that we are not the original creators of several assets used in this project. We have made every effort to ensure that we comply with the licenses of these assets and provide proper attribution. If you believe we have used your work without proper attribution or in violation of its license, please contact us at [hey@visnalize.com](mailto:hey@visnalize.com), we will promptly address the issue.
+:::tip TL;DR
+We, the developers of Win7 Simu, acknowledge that we are not the original creators of several assets used in this project. We have made every effort to ensure that we comply with the licenses of these assets and provide proper attribution. If you believe we have used your work without proper attribution or in violation of its license, please contact us at [hey@visnalize.com](mailto:hey@visnalize.com), we will promptly address the issue.
+:::
 
 ---
 
@@ -39,30 +41,34 @@ We acknowledge that these assets are copyrighted by Microsoft and are not licens
 
 If you are a representative of Microsoft and believe that we have used these assets inappropriately, please contact us at [hey@visnalize.com](mailto:hey@visnalize.com) so we can address and correct the issue promptly.
 
-## Miscellaneous theme assets
+## Theme assets
 
-Win7 Simu utilizes various assets from other products and adapt them to fit the app as part of our theming system. In general, these assets are only used for visual simulation and we do not claim ownership of them.
+Win7 Simu utilizes various assets from other products as part of our theming system. In general, these assets are only used for visual simulation and we do not claim ownership or distribute them outside of the app. We respect the rights of the original creators and ensure that we comply with their licenses.
 
-Below is a list of products that we have used assets from, along with their respective licenses and attributions, if applicable:
+Below is a list of themes and their respective third-party assets used in Win7 Simu, along with their licenses and attributions.
+
+### Aero Noir
+
+- The icons from the [Deepin Icons 2022](https://www.gnome-look.org/p/1678986/) - licensed under **GNU AGPL v3**.
 
 ### Ubuntu
 
-- The wallpaper from version 22.04 - licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
-- The icons from the Yaru theme - licensed under [GNU General Public License v3.0 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.en.html).
+- The wallpaper from version 22.04 - licensed under **CC BY-SA 4.0**.
+- The icons from the [Humanity theme](https://launchpad.net/humanity) - licensed under **GNU GPL v2**.
 
-### Kubuntu Breeze
+### Kubuntu
 
-- The wallpaper - licensed under their respective [Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) or [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.html) licenses.
-- The icons from the Breeze icon theme - licensed under [GNU General Public License v3.0 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.en.html).
+- The wallpaper from [Plasma 5.24](https://store.kde.org/p/1681890/) - licensed under **GNU LGPL v2**.
+- The icons from the [Breeze icon theme](https://develop.kde.org/frameworks/breeze-icons/) - licensed under **GNU LGPL v3 or later**.
 
-### Chrome OS Flex
+### Chrome OS
 
-- The default wallpaper, icons, and sounds - not openly licensed.
-- These assets are used only for visual simulation. We acknowledge that Chrome OS Flex and its assets are proprietary to Google. Win7 Simu is not affiliated with or endorsed by Google.
+- The default wallpaper, icons, and sounds from Chrome OS Flex - not openly licensed.
+- These assets are used only for visual simulation. We acknowledge that Chrome OS and its assets are proprietary to Google. Win7 Simu is not affiliated with or endorsed by Google.
 
 ### macOS
 
-- The default wallpaper, icons, and startup sound from macOS Big Sur - not openly licensed.
+- The default wallpaper, icons, and sounds from macOS Big Sur - not openly licensed.
 - These assets are used only for visual simulation. We acknowledge that macOS and its assets are proprietary to Apple. Win7 Simu is not affiliated with or endorsed by Apple.
 
 ## User-generated content
@@ -79,21 +85,26 @@ Win7 Simu is built using various open-source libraries and frameworks. We acknow
 
 - **Vue** - [MIT License](https://github.com/vuejs/vue?tab=MIT-1-ov-file#readme).
 - **Vuex** - [MIT License](https://github.com/vuejs/vuex?tab=MIT-1-ov-file#readme).
+- **Vue i18n** - [MIT License](https://github.com/kazupon/vue-i18n?tab=MIT-1-ov-file#readme).
 - **Capacitor** - [MIT License](https://github.com/ionic-team/capacitor?tab=MIT-1-ov-file#readme).
 - **Firebase** - [Apache License 2.0](https://github.com/firebase/firebase-js-sdk?tab=License-1-ov-file#readme).
 - **localForage** - [Apache License 2.0](https://github.com/localForage/localForage?tab=Apache-2.0-1-ov-file#readme).
-- **RevenueCat's Capacitor plugin** - [MIT License](https://github.com/RevenueCat/purchases-capacitor?tab=MIT-1-ov-file#readme).
+- **purchases-capacitor** - [MIT License](https://github.com/RevenueCat/purchases-capacitor?tab=MIT-1-ov-file#readme).
 - **dart-sass** - [MIT License](https://github.com/sass/dart-sass?tab=MIT-1-ov-file#readme).
 - **postcss** - [MIT License](https://github.com/postcss/postcss?tab=MIT-1-ov-file#readme).
 - **win7-ui** - [MIT License](https://github.com/Visnalize/win7-ui?tab=MIT-1-ov-file#readme).
+- **Font Awesome** - [MIT License](https://fontawesome.com/v4/license/).
 - **axios** - [MIT License](https://github.com/axios/axios?tab=MIT-1-ov-file#readme).
 - **Fabric.js** - [MIT License](https://github.com/fabricjs/fabric.js?tab=License-1-ov-file#readme).
 - **three.js** - [MIT License](https://github.com/mrdoob/three.js?tab=MIT-1-ov-file#readme).
 - **chess.js** - [BSD 2-Clause License](https://github.com/jhlywa/chess.js?tab=BSD-2-Clause-1-ov-file#readme).
 - **codemirror** - [MIT License](https://github.com/codemirror/codemirror5?tab=MIT-1-ov-file#readme).
+- **fflate** - [MIT License](https://github.com/101arrowz/fflate?tab=MIT-1-ov-file#readme).
 - **modern-screenshot** - [MIT License](https://github.com/qq15725/modern-screenshot?tab=MIT-1-ov-file#readme).
 - **vue-quill-editor** - [MIT License](https://github.com/surmon-china/vue-quill-editor?tab=MIT-1-ov-file#readme).
 - **vue-touch-events** - [MIT License](https://github.com/jerrybendy/vue-touch-events?tab=MIT-1-ov-file#readme).
 - **DragSelect** - [Commercial License](https://github.com/ThibaultJanBeyer/DragSelect?tab=License-1-ov-file#readme).
+- **drag-drop** - [MIT License](https://github.com/feross/drag-drop?tab=MIT-1-ov-file#readme).
+- **hotkey-js** - [MIT License](https://github.com/jaywcjlove/hotkeys-js?tab=MIT-1-ov-file#readme).
 - **mime-types** - [MIT License](https://github.com/jshttp/mime-types?tab=MIT-1-ov-file#readme).
 - **Cypress** - [MIT License](https://github.com/cypress-io/cypress?tab=MIT-1-ov-file#readme).
