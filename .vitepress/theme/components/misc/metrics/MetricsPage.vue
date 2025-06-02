@@ -4,7 +4,7 @@
         here are some open metrics about Visnalize and all of the projects combined.
     </PageTitle>
 
-    <div class="cards">
+    <!-- <div class="cards">
         <div v-for="card in metricsData.revenueCards" class="card">
             <h2>{{ card.title }}</h2>
             <p>{{ card.subtitle }}</p>
@@ -29,7 +29,7 @@
             <iframe :key="renderCount" width="325" height="190" frameborder="0"
                 :src="getChart('revenueModelShare')"></iframe>
         </div>
-    </div>
+    </div> -->
 
     <div class="framefull stats">
         <h2>Statistics</h2>
@@ -55,10 +55,10 @@ import { onMounted, ref } from 'vue';
 type ChartId = keyof typeof ChartId;
 
 const ChartId = {
-    revenueMonthly: ['1743225384', '1013018153'],
-    revenuePorfolio: ['1607053272', '159571900'],
-    revenueModelShare: ['1547699295', '950520188'],
-    total: ['1273183282', '103924907'],
+    revenueMonthly: ['1912269232', '824600815'],
+    revenuePorfolio: ['1017264975', '1917325042'],
+    revenueModelShare: ['2140229156', '1418423262'],
+    total: ['20671506', '623898122'],
     cost: ['535540876', '417887880'],
     mrr: ['1435045753', '2104659133'],
     arr: ['1698210707', '1090830063'],
@@ -89,7 +89,7 @@ const statCards = [
 ]
 
 const getChart = (chartId: ChartId, format: 'image' | 'interactive' = 'interactive') => {
-    return `https://docs.google.com/spreadsheets/d/e/2PACX-1vRtE7C4cQv6eH8tQFb4uhK86P-0LwynBssSrAc-uxlcCgo3GiGv9KA-IKWiT9BT0Kgd6Ec6ggTbrjFT/pubchart?oid=${ChartId[chartId][+isDark.value]}&format=${format}`;
+    return `https://docs.google.com/spreadsheets/d/e/2PACX-1vRcXR_KvfbRulzt3GoteUgn1PhImG5wEBVKdrKm_0YiEMR0j4EIX7xzbg39Uc9jaA/pubchart?oid=${ChartId[chartId][+isDark.value]}&format=${format}`;
 }
 </script>
 
