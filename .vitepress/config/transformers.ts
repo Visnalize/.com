@@ -19,8 +19,20 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   // blog listing tag page
   if (data.params?.tag) {
     const { tag } = data.params;
-    data.title = `Posts with tag "${tag}"`;
-    data.description = `Here you can find all posts with tag: ${tag}. Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
+    let title = `Posts with tag "${tag}"`;
+    let description = `All posts with tag "${tag}". Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
+    if (tag === "sponsor") {
+      title = "Sponsor posts";
+      description =
+        "Sharing, updates, thoughts, and insights from our sponsors. Don't forget to check out their products and services.";
+    }
+    if (tag === "news") {
+      title = "News and updates";
+      description =
+        "Catch up on the latest news, updates, and announcements, including important changes, major releases, and more.";
+    }
+    data.title = title;
+    data.description = description;
   }
 
   if (data.relativePath.match(/simulated/) && data.params?.app) {

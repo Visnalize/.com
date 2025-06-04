@@ -1,17 +1,6 @@
 <template>
-    <PageTitle :title='currentTag ? `Posts with tag "${currentTag}"` : "News and sharing"'>
-        <template v-if="currentTag === 'sponsor'">
-            Sharing, updates, thoughts, and insights from our sponsors.
-            Don't forget to check out their products and services.
-        </template>
-        <template v-else-if="currentTag">
-            Sharing, updates, thoughts, and insights with tag <code>{{ currentTag }}</code>.
-            Hope you find helpful and valuable information here.
-        </template>
-        <template v-else>
-            Where I share updates, thoughts, insights on various topics.
-            Hope you find helpful and valuable information here.
-        </template>
+    <PageTitle :title="title.split(/-\s|\|/)[0].trim()">
+        {{ description }}
     </PageTitle>
 
     <BlogTags :tags="tags" :activeTag="currentTag" />
@@ -34,8 +23,8 @@ import BlogList from './BlogList.vue';
 import BlogPost from './BlogPost.vue';
 import BlogTags from './BlogTags.vue';
 
-const data = useData()
-const currentTag = data.params.value?.tag as string;
+const { title, description, params } = useData()
+const currentTag = params.value?.tag as string;
 const tagPosts = posts.filter(post => post.tags.filter(tag => tag.name === currentTag).length > 0);
 
 const isLatest = (index: number) => index === 0 && !currentTag;

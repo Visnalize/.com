@@ -17,6 +17,7 @@ const navItems: DefaultTheme.Config["nav"] = [
       Win7Simu.About,
       Win7Simu.Changelog,
       Win7Simu.Faq,
+      Win7Simu.Credits,
       Win7Simu.Privacy,
       {
         text: "Guides",

@@ -1,5 +1,5 @@
 ---
-title: Blog - News and sharing
+title: News and sharing - Blog
 description: Helpful insights, sharing, tips and tricks on various topics from Visnalize, the creator of Win7 Simu, Brick 1100, and more
 aside: false
 comments: false
