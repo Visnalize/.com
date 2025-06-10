@@ -37,8 +37,6 @@ const quotes: Quote[] = [
   },
   {
     author: "Blank",
-    image:
-      "https://cdn.discordapp.com/avatars/1156255817708867666/117bf2614f32268ef3c583e083a3e03e.webp?size=96",
     date: "April 21, 2025",
     app: "brick1100",
     content:
