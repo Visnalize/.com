@@ -6,7 +6,7 @@
                 <HomeDemoVideo>
                     <source src="./assets/brick1100-demo.mp4" type="video/mp4" />
                 </HomeDemoVideo>
-                <img class="frame" src="./assets/phone-v.webp" alt="Phone frame" />
+                <img class="frame" src="./assets/phone-v.webp" alt="Phone frame" width="993" height="1920" />
             </Motion>
             <HomeIntroSection app="brick1100" title="Brick 1100">
                 Transform your smartphone into a brick phone.

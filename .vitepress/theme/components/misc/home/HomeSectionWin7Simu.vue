@@ -8,7 +8,7 @@
                             <source src="./assets/win7simu-demo.mp4" type="video/mp4" />
                         </HomeDemoVideo>
                     </Motion>
-                    <img class="frame" src="./assets/phone-h.webp" alt="Phone frame" />
+                    <img class="frame" src="./assets/phone-h.webp" alt="Phone frame" width="2520" height="1380" />
                 </div>
             </div>
         </div>
