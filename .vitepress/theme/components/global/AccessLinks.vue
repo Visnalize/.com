@@ -39,6 +39,8 @@ interface Props {
 interface ImageProps {
     alt: string;
     src: string;
+    width?: number;
+    height?: number;
 }
 
 const { app } = defineProps<Props>();
@@ -46,13 +48,19 @@ const { app } = defineProps<Props>();
 const links = LinkMap[app];
 
 const getImageProps = (link) => {
-    const props: ImageProps = { alt: "Web App", src: "/assets/access-web.svg" };
+    const props: ImageProps = {
+        alt: "Web App",
+        src: "/assets/access-web.svg",
+        width: 270,
+        height: 80,
+    };
     if (link.includes("google.com")) {
         props.alt = "Play Store";
         props.src = "/assets/access-google.svg";
     } else if (link.includes("apple.com")) {
         props.alt = "App Store";
         props.src = "/assets/access-apple.svg";
+        props.width = 267;
     }
     return props;
 }
@@ -105,6 +113,7 @@ const getImageProps = (link) => {
 
 img,
 .qr {
+    width: auto;
     height: var(--size);
 }
 
