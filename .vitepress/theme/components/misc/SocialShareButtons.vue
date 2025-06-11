@@ -62,7 +62,7 @@ button iconify-icon {
     font-size: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px) and (pointer: fine) {
     button {
         margin-left: -1rem;
     }
