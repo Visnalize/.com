@@ -31,6 +31,11 @@ const socialLinks: DefaultTheme.SocialLink[] = [
     link: "https://bsky.app/profile/visnalize.com",
     ariaLabel: "BlueSky",
   },
+  {
+    icon: "instagram",
+    link: "https://www.instagram.com/visnalize",
+    ariaLabel: "Instagram",
+  },
 ];
 
 export default socialLinks;
