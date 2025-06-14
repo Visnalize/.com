@@ -89,6 +89,7 @@ const getImageProps = (link) => {
     justify-content: space-evenly;
     align-items: center;
     width: calc(var(--size) * 3.375);
+    height: var(--size);
 }
 
 .qr iconify-icon {
@@ -111,8 +112,7 @@ const getImageProps = (link) => {
     font-size: calc(var(--size) / 3);
 }
 
-img,
-.qr {
+img {
     width: auto;
     height: var(--size);
 }
