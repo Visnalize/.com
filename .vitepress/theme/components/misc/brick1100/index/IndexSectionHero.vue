@@ -127,7 +127,7 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
 @media (min-width: 768px) {
     .index-hero {
         padding: 6rem 0;
-        max-width: 700px;
+        max-width: 800px;
     }
 
     .index-hero h1 {

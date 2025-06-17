@@ -8,7 +8,7 @@ description: The default key mapping between the app's keypad and your keyboard 
 import KeyIcon from '@components/misc/brick1100/KeyIcon.vue';
 </script>
 
-Brick 1100 is fully functional on the web. To make it easier to use, the app has a default key mapping that allows you to control the keypad using your keyboard.
+Brick 1100 is fully functional [on the web](https://brick1100.visnalize.com/). To make it easier to use, the app has a default key mapping that allows you to control the keypad using your keyboard.
 
 ## Default key mapping
 

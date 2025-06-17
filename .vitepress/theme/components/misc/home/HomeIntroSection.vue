@@ -9,7 +9,7 @@
             <HomeLink :href="`/${app}${app === 'win7simu' ? '/about' : ''}`">More about {{ title }}</HomeLink>
         </Motion>
         <Motion :variants="variants(3)" :animate="animate">
-            <AccessLinks :app="app" />
+            <AccessLinks :app="app" :max-links="2" />
         </Motion>
     </div>
 </template>

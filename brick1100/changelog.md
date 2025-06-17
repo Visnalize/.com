@@ -53,7 +53,7 @@ While the app is now considered stable, there might still be minor issues that w
 - Fixed audio issues
 - Fixed call/dialer not opening <Notation icon="ios" />
 - Fixed deep links not working <Notation icon="ios" />
-- Added Shortcut maker (Menu > Extras > Utilities > Shortcut maker) <Notation icon="android" /><Notation icon="premium" />
+- Added [Shortcut maker](./apps#shortcut-maker) (Menu > Extras > Utilities > Shortcut maker) <Notation icon="android" /><Notation icon="premium" />
 
 ### `0.0.12` (Sep 22, 2024)
 

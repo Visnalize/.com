@@ -15,7 +15,7 @@ outline: false
 
 As a simulator of Nokia 1100, it attempts to simulate every aspect of the phone, from the monochrome visual graphics, the keypad control, the familiar ringtones to the iconic Snake game, flashlight, reminders, calculator, etc. Additionally, a few twists are added to make it more unique and fun to play with, such as some exclusive [games](./games.md) and [apps](./apps.md), or the ability to [build](./builders.md) your own games/apps and publish them to the community.
 
-The app aims to provide the most authentic experience of the Nokia 1100, most apps, games and controls are built to mimic the original phone as closely as possible. If you have any issues using it, feel free to refer to the original [Nokia 1100 manual](/assets/nokia-1100-manual.pdf){target="\_blank"} for help.
+The app aims to provide the most authentic experience of the Nokia 1100, most apps, games and controls are built to mimic the original phone as closely as possible. If you have any issues using it, feel free to refer to the original [Nokia 1100 manual](/assets/nokia-1100-manual.pdf){target="_blank"} for help.
 
 ::: tip Tip
 Refer to [Changelog](./changelog.md) for a complete list of features added through versions.
