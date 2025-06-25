@@ -15,7 +15,7 @@ _Cover image by SumUp via [Unsplash](https://unsplash.com/photos/ru18KXzFA4E)_
 
 If I had followed my father's wishes, I'd be arguing in a courtroom before a judge right now. But instead I pursued my dream of running a small home-based digital marketing agency. This year, I finally opened one by teaming up with a few childhood friends. Being fresh business graduates, everything was a challenge for us. However, one thing we were particularly careful about was **making the right investment in digital tools** to take our baby business to greater heights.
 
-Not only did those digital tools/software help improve efficiency but incredibly boosted our business's performance. Below, I'll share those tools/software that are helping my business thrive. 
+Not only did those digital tools/software help improve efficiency but incredibly boosted our business's performance. Below, I'll share those tools/software that are helping my business thrive.
 
 Before I start, know that these tools/software are bandwidth-heavy, and require an active connection to work efficiently. For my small home-based business, I've subscribed to Spectrum Internet now because my previous ISP wasn't able to provide sufficient bandwidth to run these tools/software. You may also contact [Spectrum customer service](https://www.buytvinternetphone.com/spectrum/phone-number) if you ever want to switch to a reliable and affordable internet service provider.
 
@@ -23,7 +23,7 @@ Now, let's dive into tools/software that are helping my business thrive:
 
 ## Best Tools for Small Businesses
 
-### 1. Asana - Best for Project Management:
+### 1. Asana - Best for Project Management
 
 **_Platforms Available On_:** Windows, Mac, iOS, and Android.
 
@@ -41,7 +41,6 @@ Now, let's dive into tools/software that are helping my business thrive:
 | Asana offers hundreds of integration options with famous tools/software like Salesforce, Zoom, etc. | Asana may be expensive for larger teams. |
 |  You can easily monitor your team's progress on different tasks.  |        |
 
-
 **_Best Thing About Asana?_**
 
 Although Asana has many commendable features, the best thing for me is how easy it is to keep track of all the tasks on the platform. With the help of Gantt Charts, Kanban Board, List, and Calendar View, I can always keep an eye on completed and pending tasks.
@@ -54,7 +53,7 @@ The following plans are offered by Asana:
 - Starter Plan costs $10.99 per user per month
 - Advanced Plan costs $24.99 per user per month
 
-### 2. HubSpot - Best for Marketing:
+### 2. HubSpot - Best for Marketing
 
 **_Platforms Available On_:** Windows, Mac, iOS, and Android.
 
@@ -85,7 +84,7 @@ Besides the free version (up to 2 users) with limited features, HubSpot offers t
 - Marketing Hub Professional costs $800/mo. (includes 3 seats, $45/mo. for an extra seat)
 - Marketing Hub Enterprise costs $3,600/mo. (includes 5 seats, $74/mo. for an extra seat)
 
-### 3. FreshBooks - Best for Accounting and Finance:
+### 3. FreshBooks - Best for Accounting and Finance
 
 **_Platforms Available On_:** Windows, Mac, iOS, and Android.
 
@@ -103,7 +102,6 @@ Besides the free version (up to 2 users) with limited features, HubSpot offers t
 | FreshBooks takes extensive security measures to protect users' data. | FreshBooks' cheapest plan offers limited features. |
 |             You can integrate your payroll on FreshBooks.            |      |
 
-
 **_The Best Thing About FreshBooks?_**
 
 One thing I like the most about FreshBooks is how easily and quickly one can generate financial statements from this platform. Be it to analyze the profits or study overhead costs, FreshBooks may eliminate your need to hire a costly accountant, as it did mine.
@@ -116,9 +114,9 @@ FreshBooks offers a 30-day trial period. Besides that, the following plans are o
 - FreshBooks Plus costs $13.20/mo.
 - FreshBooks Premium costs $24/mo.
 
-**_Disclaimer:_** _Pricing is subject to change._ 
+**_Disclaimer:_** _Pricing is subject to change._
 
-### 4. Salesforce - Best for Customer Relationship Management (CRM):
+### 4. Salesforce - Best for Customer Relationship Management (CRM)
 
 **_Platforms Available On_:** Windows, Mac, iOS, and Android.
 
@@ -136,7 +134,6 @@ FreshBooks offers a 30-day trial period. Besides that, the following plans are o
 | Salesforce offers a lot of customizability and you may personalize this software to your team's requirements. | Using advanced CRM features may be complex for some users. |
 |         You create omnichannel customer support for your customers.         |              |
 
-
 **_The Best Thing About Salesforce?_**
 
 The AI-backed chatbots offered by Salesforce are super smart and reliable. With this tool, I was able to handle multiple customers simultaneously. Moreover, creating and integrating chatbots across different platforms is also a hassle-free process.
@@ -147,9 +144,9 @@ Besides a 30-day trial period, Salesforce offers the following plans:
 
 - Salesforce Starter Suite costs $25 per user per month
 - Salesforce Pro Suite costs $100 per user per month
-- Salesforce Enterprise costs $165 per user per month 
+- Salesforce Enterprise costs $165 per user per month
 
-### 5. NordVPN - Best for Data Security:
+### 5. NordVPN - Best for Data Security
 
 **_Platforms Available On_:** Windows, Mac, Linux, iOS, and Android.
 
@@ -167,7 +164,6 @@ Besides a 30-day trial period, Salesforce offers the following plans:
 | NordVPN offers more than 7,000 servers in 118 countries. | Price fluctuations may be frustrating for most users.  |
 |      NordVPN uses strong encryptions like AES-256.       |          |
 
-
 **_The Best Thing About NordVPN?_**
 
 Most VPNs may slow down internet speeds because the incoming and outgoing data first goes through the encrypted VPN server. However, I have not experienced any slowdowns in internet speeds and always send/receive heavy files seamlessly while connected to NordVPN.
@@ -181,9 +177,9 @@ The following plans are offered by NordVPN:
 - NordVPN Premium costs $14 per user per month (5 users minimum)
 - NordVPN Enterprise Offer costs $7 per user per month (50 users minimum)
 
-**_Disclaimer:_** _Pricing is subject to change._ 
+**_Disclaimer:_** _Pricing is subject to change._
 
-## Frequently Asked Questions (FAQs):
+## Frequently Asked Questions (FAQs)
 
 **Should we utilize free trial of any business tool/software?**
 
