@@ -29,11 +29,13 @@ const LinkMap = {
     brick1100: [
         "https://play.google.com/store/apps/details?id=com.visnalize.brick1100",
         "https://apps.apple.com/us/app/brick-1100/id6554000754",
+        "https://brick1100.visnalize.com",
     ],
 };
 
 interface Props {
     app: keyof typeof LinkMap;
+    maxLinks?: number;
 }
 
 interface ImageProps {
@@ -43,9 +45,9 @@ interface ImageProps {
     height?: number;
 }
 
-const { app } = defineProps<Props>();
+const { app, maxLinks } = defineProps<Props>();
 
-const links = LinkMap[app];
+const links = LinkMap[app].slice(0, maxLinks ?? LinkMap[app].length);
 
 const getImageProps = (link) => {
     const props: ImageProps = {

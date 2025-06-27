@@ -35,7 +35,7 @@ const navItems: DefaultTheme.Config["nav"] = [
       Brick1100.FeatureRequests,
       {
         text: "Guides",
-        items: [Brick1100.Games, Brick1100.DeepLinks, Brick1100.Builders],
+        items: [Brick1100.Games, Brick1100.Apps, Brick1100.Builders],
       },
     ],
   },

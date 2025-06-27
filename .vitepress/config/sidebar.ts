@@ -51,7 +51,15 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
       ],
     },
     {
-      items: [Brick1100.Games, Brick1100.DeepLinks],
+      items: [
+        Brick1100.Games,
+        Brick1100.Apps,
+        Brick1100.DeepLinks,
+        {
+          text: "Key mapping",
+          link: "/brick1100/key-mapping",
+        },
+      ],
     },
     {
       text: "Builders",

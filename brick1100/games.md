@@ -4,6 +4,8 @@ description: Play the classic games on Brick 1100. Snake, Brick Breaker, Chrome 
 
 # Brick 1100 Games
 
+Below is a list of classic games you can play on Brick 1100, with each game having its own gameplay and controls using the T9 keypad.
+
 <script setup lang="ts">
 import KeyIcon from '@components/misc/brick1100/KeyIcon.vue';
 </script>

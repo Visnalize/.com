@@ -17,6 +17,18 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2025
 
+### `1.1.0` (Jun 27, 2025)
+
+Starting with this version, Brick 1100 is now available on web! You can access it at [https://brick1100.visnalize.com](https://brick1100.visnalize.com). This version is not released on <Notation icon="ios" /> iOS due to technical issues, we are working on resolving them.
+
+- Added Security settings (Menu > Security settings)
+- Added option to change carrier name (Menu > Settings > Phone settings > Carrier name)
+  - Default PIN code: 1234
+  - Default security code: 12345
+- Added some secret codes
+- Added [Minicloud](./apps#minicloud) (Menu > Extras > Minicloud): minimal file storage and transfer solution
+- Added [Snake](./games.md#snake) Campaign Mode
+
 ### `1.0.0` (Apr 11, 2025)
 
 Welcome to the first stable release of Brick 1100! This version includes a plethora of new features, enhancements, and bug fixes to improve your experience. You can learn more about the new features in details from this [blog post](../blog/brick-1100-v1.md). Below is a list of the major changes:
@@ -37,7 +49,7 @@ Welcome to the first stable release of Brick 1100! This version includes a pleth
 - Fixed an issue with the editor not scrolling properly
 - Reset Chrome Dino leaderboard to fix score display issue <Notation icon="ios" />
 
-While the app is now considered stable, there might still be minor issues that we will address in future updates. If you encounter any issues or have suggestions, please reach out via our [Discord server](https://discord.gg/6AQDnZa4Xm) or by [email](/contact). Hope you enjoy this update!
+While the app is now considered stable, there might still be minor issues that we will address in future updates. If you encounter any issues or have suggestions, please reach out via our [Discord server](https://discord.gg/6AQDnZa4Xm) or
 
 ## Beta versions
 
@@ -53,7 +65,7 @@ While the app is now considered stable, there might still be minor issues that w
 - Fixed audio issues
 - Fixed call/dialer not opening <Notation icon="ios" />
 - Fixed deep links not working <Notation icon="ios" />
-- Added Shortcut maker (Menu > Extras > Utilities > Shortcut maker) <Notation icon="android" /><Notation icon="premium" />
+- Added [Shortcut maker](./apps#shortcut-maker) (Menu > Extras > Utilities > Shortcut maker) <Notation icon="android" /><Notation icon="premium" />
 
 ### `0.0.12` (Sep 22, 2024)
 
@@ -66,7 +78,7 @@ _Minor bug fixes._
 ### `0.0.10` (Aug 10, 2024)
 
 - Added Time settings (Menu > Settings > Time)
-- Added Calendar (Menu > Extras > Calendar)
+- Added [Calendar](./apps.md#calendar) (Menu > Extras > Calendar)
 - Added Apple login (Menu > Settings > Account settings)
 - Added achievements for Snake & Chrome Dino games
 - Close app on Switch Off
