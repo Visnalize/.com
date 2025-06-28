@@ -64,8 +64,6 @@ const quotes: Quote[] = [
   },
   {
     author: "Nataša Šebek",
-    image:
-      "https://media.licdn.com/dms/image/v2/C4D03AQFfbH9JAkGvMw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1605579691308?e=1750896000&v=beta&t=k3s9aqp-bH2_awOSnSVeGVySBkUrbYItSlf1x5jakgI",
     date: "April 18, 2025",
     app: "brick1100",
     url: "https://www.linkedin.com/posts/natasha0824_brick-1100-brickify-your-smartphone-activity-7318772620374474752-9-CQ",
