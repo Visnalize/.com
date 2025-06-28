@@ -2,6 +2,7 @@
 title: Win7 Simu Changelog
 description: Curious about the changes done through versions of the Win7 Simu app? Check the log at this page
 comments: false
+image: /assets/ogmain/win7simu-changelog.png
 pageClass: changelog
 ---
 

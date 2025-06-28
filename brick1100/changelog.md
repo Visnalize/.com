@@ -2,6 +2,7 @@
 title: Brick 1100 Changelog
 description: Changes throughout the versions of the Brick 1100 app. Check the log at this page.
 comments: false
+image: /assets/ogmain/brick1100-changelog.png
 pageClass: changelog
 ---
 
