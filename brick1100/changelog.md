@@ -20,7 +20,9 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ### `1.1.0` (Jun 27, 2025)
 
-Starting with this version, Brick 1100 is now available on web! You can access it at [https://brick1100.visnalize.com](https://brick1100.visnalize.com). This version is not released on <Notation icon="ios" /> iOS due to technical issues, we are working on resolving them.
+Starting with this version, Brick 1100 is now available on web! You can access it at [https://brick1100.visnalize.com](https://brick1100.visnalize.com). This version is not released on <Notation icon="ios" list /> due to technical issues, we are working on resolving them.
+
+**UPDATE (Jun 30, 2025)**: This version is now also available on <Notation icon="ios" list /> 🥳
 
 - Added Security settings (Menu > Security settings)
 - Added option to change carrier name (Menu > Settings > Phone settings > Carrier name)
