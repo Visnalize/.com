@@ -20,6 +20,7 @@ Personalize supports various themes, grouped into multiple categories:
 
   - Windows 3.1
   - Windows 95
+  - Windows 98
   - Windows 2000
   - Windows XP
   - Windows Vista
@@ -31,9 +32,11 @@ Personalize supports various themes, grouped into multiple categories:
 - __Miscellaneous__: themes that don't fit into the above categories, themes that are variants of the other Windows themes, other operating systems, or themes that are exclusive to Win7 Simu. Available themes include:
 
   - Windows XP variants (Embedded, Olive Green, Royale, Royale Noir, Silver, Zune)
+  - Windows Whistler
   - MacOS
   - ChromeOS
   - Ubuntu
   - Kubuntu (Breeze)
   - Windows Longhorn (Slate and Plex)
   - Aero Noir
+  - Oxygen
