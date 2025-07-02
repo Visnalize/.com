@@ -12,6 +12,15 @@ pageClass: changelog
 
 ## 2025
 
+### `3.19.0` (July 2, 2025)
+
+- Added several new features for [Paint](./simulated/paint.md): Select, Crop, & Rotate
+- Added new theme: Windows 98
+- Added new theme: Windows Whistler
+- Added new premium theme: Oxygen
+- Fixed an issue with the taskbar not appearing occasionally
+- Several other performance improvements and bug fixes behind the scenes
+
 ### `3.18.0` (May 13, 2025)
 
 - Added more drawing shapes in [Paint](./simulated/paint.md)
