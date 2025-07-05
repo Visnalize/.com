@@ -12,6 +12,11 @@ pageClass: changelog
 
 ## 2025
 
+### `3.19.1` (July 6, 2025)
+
+- Fixed issues with Minesweeper and Tetris not opening
+- Fixed [Paint](./simulated/paint.md) cursor in Select mode
+
 ### `3.19.0` (July 2, 2025)
 
 - Added several new features for [Paint](./simulated/paint.md): Select, Crop, & Rotate
