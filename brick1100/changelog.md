@@ -18,6 +18,10 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2025
 
+### `1.1.1` (Jul 5, 2025)
+
+- Fixed issue downloading files in [Minicloud](./apps#minicloud) <Notation icon="ios" /><Notation icon="android" />
+
 ### `1.1.0` (Jun 27, 2025)
 
 Starting with this version, Brick 1100 is now available on web! You can access it at [https://brick1100.visnalize.com](https://brick1100.visnalize.com). This version is not released on <Notation icon="ios" list /> due to technical issues, we are working on resolving them.
