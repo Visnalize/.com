@@ -22,6 +22,7 @@ As the primary inspiration for Win7 Simu, we have utilized various assets derive
 - Windows 3.1
 - Windows 95 and 98
 - Windows 2000
+- Windows Whistler
 - Windows XP
 - Windows Vista
 - Windows 7
@@ -46,6 +47,11 @@ If you are a representative of Microsoft and believe that we have used these ass
 Win7 Simu utilizes various assets from other products as part of our theming system. In general, these assets are only used for visual simulation and we do not claim ownership or distribute them outside of the app. We respect the rights of the original creators and ensure that we comply with their licenses.
 
 Below is a list of themes and their respective third-party assets used in Win7 Simu, along with their licenses and attributions.
+
+### Oxygen
+
+- The wallpaper from [KDE Plasma](https://github.com/KDE/kdeplasma-addons/blob/master/wallpapers/hunyango/contents/ui/wallpaper.svgz) - licensed under **GNU LGPL V2.1**.
+- The icons from the [Oxygen icon theme](https://invent.kde.org/frameworks/oxygen-icons) - licensed under **GNU GPL v2.1**.
 
 ### Aero Noir
 

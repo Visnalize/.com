@@ -96,7 +96,7 @@ const lazyLoadCores = () => {
 })();
 ```
 
-By doing this, I parallelized the lazy loaded some modules, reducing the entrypoint size and improving the initial load time.
+By doing this, I parallelized and lazy loaded some modules, reducing the entrypoint size and improving the initial load time.
 
 Similarly, for components, instead of this:
 
