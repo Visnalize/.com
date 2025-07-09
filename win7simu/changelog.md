@@ -12,6 +12,11 @@ pageClass: changelog
 
 ## 2025
 
+### `3.19.2` (July 9, 2025)
+
+- Fixed Media Only mode in [Windows Media Center](./simulated/wmc.md)
+- Fixed some critical issues with [Theme Studio](./themestudio.md)
+
 ### `3.19.1` (July 6, 2025)
 
 - Fixed issues with Minesweeper and Tetris not opening
