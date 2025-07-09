@@ -14,7 +14,7 @@ pageClass: changelog
 
 ### `3.19.2` (July 9, 2025)
 
-We have recently discovered a critical issue that caused most of the themes in Theme Studio to corrupt, making them unusable. We have fixed this issue, unfortunately, the corrupted themes can no longer be recovered. We sincerely apologize for the inconvenience this may have caused and we are committed to ensuring that this does not happen again in the future.
+We have recently discovered a critical issue that caused some of the themes in Theme Studio to corrupt, making them unusable. We have fixed this issue, unfortunately, the corrupted themes can no longer be recovered. We sincerely apologize for the inconvenience this may have caused and we are committed to ensuring that this does not happen again in the future.
 
 - Fixed Media Only mode in [Windows Media Center](./simulated/wmc.md)
 - Fixed some critical issues with [Theme Studio](./themestudio.md)
