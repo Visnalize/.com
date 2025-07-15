@@ -17,7 +17,7 @@ If I had followed my father's wishes, I'd be arguing in a courtroom before a jud
 
 Not only did those digital tools/software help improve efficiency but incredibly boosted our business's performance. Below, I'll share those tools/software that are helping my business thrive.
 
-Before I start, know that these tools/software are bandwidth-heavy, and require an active connection to work efficiently. For my small home-based business, I've subscribed to Spectrum Internet now because my previous ISP wasn't able to provide sufficient bandwidth to run these tools/software. You may also contact [Spectrum customer service](https://www.buytvinternetphone.com/spectrum/phone-number) if you ever want to switch to a reliable and affordable internet service provider.
+Before I start, know that these tools/software are bandwidth-heavy, and require an active connection to work efficiently. For my small home-based business, I've subscribed to Spectrum Internet now because my previous ISP wasn't able to provide sufficient bandwidth to run these tools/software. You may also contact <a href="https://www.buytvinternetphone.com/spectrum/phone-number" rel="noreferrer sponsored" target="_blank">Spectrum customer service</a> if you ever want to switch to a reliable and affordable internet service provider.
 
 Now, let's dive into tools/software that are helping my business thrive:
 

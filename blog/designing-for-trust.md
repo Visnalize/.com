@@ -34,7 +34,7 @@ The ongoing Depo-Provera lawsuit is a cautionary tale.
 
 Marketed as a long-term contraceptive injection, Depo-Provera was popular for decades. However, many patients weren’t properly informed about its serious side effects. They reported bone density loss. The increased risk of brain tumors like meningioma was another danger.
 
-Women came forward, claiming they were never clearly warned about the long-term risks. Here’s the kicker: [TruLaw attorneys](https://trulaw.com/depo-provera-lawsuit/) say that Pfizer updated warning labels in Europe and the UK. Yet, they failed to provide similar warnings in the U.S.
+Women came forward, claiming they were never clearly warned about the long-term risks. Here’s the kicker: <a href="https://trulaw.com/depo-provera-lawsuit/" rel="noreferrer sponsored" target="_blank">TruLaw attorneys</a> say that Pfizer updated warning labels in Europe and the UK. Yet, they failed to provide similar warnings in the U.S.
 
 This isn’t a pharmaceutical problem. It’s also a UX failure. Imagine if these patients had access to a digital platform or website that:
 
@@ -67,8 +67,7 @@ MedCity News reports that medtech companies sometimes treat UX as an afterthough
 Instead of focusing on real-world usability, they concentrate on compliance and innovation. The approach is backwards and doesn’t leave room for tweaks.
 
 Your device or software might pass every regulatory test. Still, if a patient misses a warning, it can lead to dangerous outcomes. And yes, even lawsuits.
-
-It’s a reminder to integrate UX from the ground up, particularly when designing [tools for diagnostics](https://www.fundsforngos.org/proposals/sample-proposal-on-ai-powered-diagnostic-tools-for-early-detection-of-chronic-diseases/), fertility tracking, or mental health. This includes:
+It's a reminder to integrate UX from the ground up, particularly when designing <a href="https://www.fundsforngos.org/proposals/sample-proposal-on-ai-powered-diagnostic-tools-for-early-detection-of-chronic-diseases/" rel="noreferrer sponsored" target="_blank">tools for diagnostics</a>, fertility tracking, or mental health. This includes:
 
 - Early-stage user testing with clinical stakeholders
 
@@ -82,7 +81,7 @@ Poor UX design leads to increased costs, longer onboarding times, and low produc
 
 ### Use Human-First Principles
 
-So, how do you [design for trust](https://www.govtech.com/gov-experience/can-human-centered-design-help-rebuild-trust-in-government)? Firstly, avoid jargon. Instead, use plain language that a stressed-out, first-time patient can understand.
+So, how do you <a href="https://www.govtech.com/gov-experience/can-human-centered-design-help-rebuild-trust-in-government" rel="noreferrer sponsored" target="_blank">design for trust</a>? Firstly, avoid jargon. Instead, use plain language that a stressed-out, first-time patient can understand.
 
 Prioritize visual hierarchy. What’s the one thing your user must see right now? Make it pop. Use contrast, whitespace, and iconography wisely.
 
