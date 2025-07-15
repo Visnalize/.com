@@ -3,7 +3,7 @@ import { App } from "../.vitepress/theme/utils/types";
 
 export interface Quote {
   /** The related app */
-  app: App;
+  app?: App;
   /** The image of the author, fallback to a generated avatar */
   image?: string;
   /** The authors' name */
@@ -19,6 +19,32 @@ export interface Quote {
 }
 
 const quotes: Quote[] = [
+  {
+    author: "Кирилл Кирилловых",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjXZrdxOv_w1J_DeFAEavP1pSbA_3_60Y6CdgSfHOchr5ZqTKrVx=s50",
+    date: "May 14, 2025",
+    app: "win7simu",
+    content:
+      "This is ideal for a Windows 7 simulator. Also thanks for everything that you have added: online games, programs, browser, application as a phone and other features. I give a rating of 5+. So far, there are no other complaints. Good luck!",
+  },
+  {
+    author: "عُمَرْ النَّجَارْ",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVMwwfKP7xH3W4F7GukZVw_Zj68tZmb9kYhP2VptKNwPVmeWQz4=s50",
+    date: "July 13, 2025",
+    app: "win7simu",
+    content:
+      "By God, it is a wonderful application. You won't believe me that it has Google. I was able to open ChatGPT from it. It has games, a camera, system customization, themes, the mouse, and security verification. If I talked from here until morning, I wouldn't be able to say all of its features. By God, it deserves to be downloaded. Thank you for this great application. Really, thank you.",
+  },
+  {
+    author: "batuxyd",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjUJV2sAAHlWkl5oKQ-of-q0gFpqdLvDMdk6o-WEbtjIPq3fdSMykw=s50",
+    date: "July 6, 2025",
+    content:
+      "I appreciate you man. I love your apps tbh and many people that loves nostalgia like me also does for sure. Please don't leave! I'll always support you if you keep like this, huge support from Turkey.",
+  },
   {
     author: "mhhfill",
     date: "April 5, 2025",
@@ -38,9 +64,8 @@ const quotes: Quote[] = [
   {
     author: "Blank",
     date: "April 21, 2025",
-    app: "brick1100",
     content:
-      "I love this app. No other dev made it this realistic. Others tried but ended up with abandoned projects or just cheap rip-offs. I can see how much effort you put into these and the updates are amazing.",
+      "I love your apps. No other dev made both games this realistic. Others tried but ended up with abandoned projects or just cheap rip-offs. I can see how much effort you put into these and the updates are amazing.",
   },
   {
     author: "Mike",

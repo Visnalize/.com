@@ -1,7 +1,7 @@
 <template>
     <div class="quote" tabindex="0">
         <div class="metadata">
-            <a :href="`/${quote.app}/about`">
+            <a v-if="quote.app" :href="`/${quote.app}/about`">
                 <AppIcon :app="quote.app" class="app" />
             </a>
         </div>
