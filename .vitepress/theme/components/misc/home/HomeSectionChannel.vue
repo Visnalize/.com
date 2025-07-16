@@ -52,11 +52,10 @@ const { stats, videos } = channelData;
 const handle = '@' + (stats.title || 'Visnalize');
 const channelUrl = `https://youtube.com/${handle}`;
 const tabs = [
-    { title: 'Home', url: '/' },
     { title: 'Videos', url: '/videos' },
     { title: 'Shorts', url: '/shorts' },
     { title: 'Playlists', url: '/playlists' },
-    { title: 'Posts', url: '/community' },
+    { title: 'Posts', url: '/posts' },
 ]
 const container = ref<HTMLElement | null>(null);
 const inView = useSectionInView(container);
@@ -148,7 +147,7 @@ const videoVariants = (index: number): Variants => ({
     border-color: var(--vp-c-text-2);
 }
 
-.tabs a:nth-of-type(2) {
+.tabs a:nth-of-type(1) {
     color: var(--vp-c-text-1);
     border-color: var(--vp-c-text-1);
 }
