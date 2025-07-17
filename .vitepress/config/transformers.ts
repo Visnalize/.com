@@ -7,7 +7,6 @@ import { PageData, UserConfig } from "vitepress";
 import decapitalize from "voca/decapitalize";
 import { getLatestVersion } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
-import getOgImage from "../server/ogimage";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
 import { getAppImage } from "../theme/utils/images";
 import { isDevMode } from "../theme/utils/misc";
@@ -85,7 +84,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   ogImage = ogImage?.startsWith(".") ? undefined : ogImage;
   ogImage = ogImage?.startsWith("/") ? ORIGIN + ogImage : ogImage;
 
-  const metaImage = ogImage || (await getOgImage(transformedPath));
+  const metaImage = ogImage || ORIGIN + "/assets/visnalize-og.png";
 
   data.frontmatter.head ??= [];
   data.frontmatter.head.push(
