@@ -60,25 +60,17 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
 
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
-
       logo: "/logo.svg",
-
       nav: navItems,
-
       search: !isDev ? undefined : { provider: "local" },
-
       sidebar,
-
       aside: "left",
-
       outline: { label: "Content", level: [2, 3] },
-
       socialLinks: socialLinks.slice(0, 4),
     },
 
     vite: {
       plugins: [isDev ? undefined : pagefindSearch],
-
       resolve: {
         alias: {
           "@": fileURLToPath(new URL("../", import.meta.url)),
