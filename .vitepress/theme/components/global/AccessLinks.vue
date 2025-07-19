@@ -114,7 +114,7 @@ const getImageProps = (link) => {
     font-size: calc(var(--size) / 3);
 }
 
-img {
+a > img {
     width: auto;
     height: var(--size);
 }
