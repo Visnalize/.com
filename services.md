@@ -28,9 +28,9 @@ If you have a product or service that you would like to promote, you can sponsor
 
 ## Advertising
 
-We offer advertising space on the site. With [an average](#analytics) of 33K visitors and 65K page views per month, we charge only $3 eCPM ($3 per 1000 ad impressions), an extremely competitive rate for all the benefits you get. Your ad will be carefully tailored to fit the site's design and replace all Adsense ads for the duration of your campaign.
+We offer advertising space on the site. With [an average](#analytics) of 65K visitors and 100K page views per month, we charge only $3 eCPM ($3 per 1000 ad impressions), an extremely competitive rate for all the benefits you get. Your ad will be carefully tailored to fit the site's design and replace all Adsense ads for the duration of your campaign.
 
-<ServicePrice price="$200" suffix="/month" buttonLink="mailto:hey@visnalize.com?subject=Advertising Inquiry" :features="[
+<ServicePrice price="$300" suffix="/month" offer="Limited time offer" buttonLink="mailto:hey@visnalize.com?subject=Advertising Inquiry" :features="[
     'A diverse audience of retro enthusiasts, tech-savvy users, and content consumers',
     'A personalized ad (with your provisioned assets) to fit the site\'s design',
     'A competitive eCPM rate with maximum exposure on the site',
