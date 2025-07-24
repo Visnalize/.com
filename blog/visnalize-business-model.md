@@ -30,6 +30,8 @@ Today, Visnalize still remains a side hustle for me, as I have a full-time job (
 
 With no background in business, I'm still learning as I go, figuring things out along the way. There will be mistakes made, there will be lessons learned, and there will be wins to celebrate. I don't have all the answers, and I don't claim to be an expert in this field. But I believe sharing our journey and how we do is a great way to document our progress, to reflect on our growth, and also to inspire others who are on a similar path.
 
+<SponsorAd />
+
 ## What we do (value)
 
 We stay true to our mission from the beginning: _to recreate nostalgia for entertainment_.
