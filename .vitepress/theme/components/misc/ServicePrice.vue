@@ -10,7 +10,7 @@
             <div v-if="offer" class="price-offer">{{ offer }}</div>
             <VPButton size="big" :text="buttonText || 'Get in touch'"
                 :href="buttonLink || 'mailto:hey@visnalize.com'" />
-            <div v-if="note" class="price-note">{{ note }}</div>
+            <VPLink v-if="terms" :href="terms" class="price-terms">View terms</VPLink>
         </div>
         <div class="service-features">
             <h3>What you will get</h3>
@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { VPButton } from 'vitepress/theme';
+import { VPButton, VPLink } from 'vitepress/theme';
 
 defineProps<{
     features: string[];
@@ -34,7 +34,7 @@ defineProps<{
     buttonText?: string;
     buttonLink?: string;
     offer?: string;
-    note?: string;
+    terms?: string;
 }>()
 </script>
 
@@ -58,7 +58,7 @@ defineProps<{
     justify-content: center;
     align-items: center;
     background: var(--vp-c-default-soft);
-    padding: 2rem;
+    padding: 2.5rem 2rem;
 }
 
 .price-tag {
@@ -91,9 +91,8 @@ defineProps<{
     margin-bottom: 0.5rem;
 }
 
-.price-note {
-    font-size: 0.875rem;
-    margin-top: 2rem;
+.price-terms {
+    margin-top: auto;
 }
 
 .service-features {

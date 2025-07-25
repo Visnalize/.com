@@ -19,7 +19,7 @@ Aside from retro apps, Visnalize also offers some additional services for a reas
 
 If you have a product or service that you would like to promote, you can sponsor a post on Visnalize to reach our audience. Sponsored posts are either written by you or by Visnalize, and will be published on the site. They will be marked with the `sponsor` tag to help readers distinguish them from regular content.
 
-<ServicePrice price="$20" originalPrice="$30" offer="Offer for the first 10 posts (6 remaining)" suffix="/post*" note="+$10 if post written by Visnalize" buttonLink="mailto:hey@visnalize.com?subject=Sponsored Posts" :features="[
+<ServicePrice price="$20" originalPrice="$30" offer="Offer for the first 10 posts (6 remaining)" suffix="/post" buttonLink="mailto:hey@visnalize.com?subject=Sponsored Posts" terms="/services/sponsored-posts" :features="[
     'A carefully reviewed/crafted post about your product or service',
     'Unlimited revisions until the post meets both parties\' standards',
     'Permanent do-follow links back to your site in the post',
@@ -28,7 +28,7 @@ If you have a product or service that you would like to promote, you can sponsor
 
 ## Advertising
 
-We offer advertising space on the site. With [an average](#analytics) of 65K visitors and 100K page views per month, we charge only $3 eCPM ($3 per 1000 ad impressions), an extremely competitive rate for all the benefits you get. Your ad will be carefully tailored to fit the site's design and replace all Adsense ads for the duration of your campaign.
+We offer advertising space on the site. With [an average](#analytics) of 65K visitors and 100K page views per month, we charge only $3 eCPM ($3 per 1000 ad impressions), an extremely competitive rate for all the benefits you get. Your ad will be carefully tailored to fit the site's design and placed in the most visible areas of the site, ensuring maximum exposure to our audience.
 
 <ServicePrice price="$300" suffix="/month" offer="Limited time offer" buttonLink="mailto:hey@visnalize.com?subject=Advertising Inquiry" :features="[
     'A diverse audience of retro enthusiasts, tech-savvy users, and content consumers',
