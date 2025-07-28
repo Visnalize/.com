@@ -39,4 +39,27 @@ Payment is required within 3 days after publishing, unless otherwise agreed upon
 - Content must be written in English and have a minimum of 800 words.
 - Content should offer useful information, not just promotional fluff.
 - Post must include at least one image as a cover. All images must be royalty-free, or you must have the rights to use them.
-- Links to your website, products, or services must be relevant to the content and not overly promotional.
+- Post must include no more than 5 links to external sites.
+- Links to external sites must not be spammy or low-quality, and should be relevant to the content of the post.
+
+## FAQs
+
+### How many posts can I publish?
+
+You can publish as many posts as you like, but we restrict the number of sponsored posts to __2 per week__ to maintain sufficient exposure for each post.
+
+### How long does it take to publish a post?
+
+Typically, it takes __1-3 days__ to review and publish a post. If you have a specific deadline, please let us know in advance, and we will do our best to accommodate it.
+
+### How long will my post stay published?
+
+Posts will stay __indefinitely__ on our blog, as long as they comply with our content guidelines above. If a post's links are found to be redirected to spammy sites, it will be removed.
+
+### Are links in the post do-follow?
+
+__Yes__, all links in the post are do-follow by default. If you notice any issues with links, please let us know, and we will fix them.
+
+### Do you offer link insertion services?
+
+__No__, we don't.
