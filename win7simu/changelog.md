@@ -12,6 +12,18 @@ pageClass: changelog
 
 ## 2025
 
+### `3.20.0` (July 30, 2025)
+
+- Added various enhancements and bug fixes for [Windows Media Center](./simulated/wmc.md)
+- Added Invert Selection for [Paint](./simulated/paint.md)
+- Added language support for: Italian and Hindi, corrected some translations
+  - Translations are now public and open for contribution: <https://github.com/Visnalize/win7-simu-locales>
+- Added sound system
+  - Added a taskbar tray icon for sound volume
+  - You can now modify sound for different schemes and Windows
+- Fixed issues with [gadgets](./simulated/gadgets.md) overflowing screen on resolution change, RTL mode
+- Several other bug fixes and improvements
+
 ### `3.19.2` (July 9, 2025)
 
 We have recently discovered a critical issue that caused some of the themes in Theme Studio to corrupt, making them unusable. We have fixed this issue, unfortunately, the corrupted themes can no longer be recovered. We sincerely apologize for the inconvenience this may have caused and we are committed to ensuring that this does not happen again in the future.
