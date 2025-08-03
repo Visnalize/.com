@@ -1,6 +1,7 @@
 import { DefaultTheme } from "vitepress";
 import { getBlogFiles } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
+import { themes } from "../../.content/themes.data";
 import { Brick1100, Resources, Win7Simu } from "./sitelinks";
 
 const sidebar: DefaultTheme.Config["sidebar"] = {
@@ -23,6 +24,14 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
           items: apps.map((app) => ({
             text: app.title,
             link: `/win7simu/simulated/${app.slug}`,
+          })),
+        },
+        {
+          ...Win7Simu.Themes,
+          collapsed: true,
+          items: themes.map((theme) => ({
+            text: theme.title,
+            link: `/win7simu/themes/${theme.slug}`,
           })),
         },
       ],

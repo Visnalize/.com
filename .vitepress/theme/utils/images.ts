@@ -40,3 +40,7 @@ export const transformImage = (imgpath: string, options: TransformOptions) => {
 export function getAppImage(slug: string) {
   return `/assets/features/${slug}.png`;
 }
+
+export function getThemeImage(id: string) {
+  return `/assets/themes/${id}.webp`;
+}

@@ -46,6 +46,10 @@ export const Win7Simu = {
     text: "Simulated apps",
     link: "/win7simu/simulated",
   },
+  Themes: {
+    text: "Themes",
+    link: "/win7simu/themes",
+  },
   ThemeStudio,
   ThemeStudioIntro: { ...ThemeStudio, text: "Introduction" },
 } satisfies Record<string, Link>;

@@ -7,8 +7,9 @@ import { PageData, UserConfig } from "vitepress";
 import decapitalize from "voca/decapitalize";
 import { getLatestVersion } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
+import { themes } from "../../.content/themes.data";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
-import { getAppImage } from "../theme/utils/images";
+import { getAppImage, getThemeImage } from "../theme/utils/images";
 import { isDevMode } from "../theme/utils/misc";
 
 // https://vitepress.dev/reference/site-config#transformpagedata
@@ -53,6 +54,20 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     } catch (e) {
       // file not available, ignore
     }
+  }
+
+  if (data.relativePath.match(/themes/) && data.params?.theme) {
+    const { theme: slug } = data.params;
+    const themeData = themes.find((t) => t.slug === slug);
+    if (!themeData) throw new Error(`Theme not found: ${slug}`);
+    const imageUrl = getThemeImage(themeData.id);
+    data.title = themeData.title + " theme in Win7 Simu";
+    data.description = `Explore the aesthetics and functionality exclusive to the ${themeData.title} theme in Win7 Simu.`;
+    data.frontmatter = { ...data.frontmatter, ...themeData };
+    data.frontmatter.image = isDevMode() ? imageUrl : ORIGIN + imageUrl;
+    data.frontmatter.imageData = await imageSizeFromFile(
+      join(cwd(), "public", imageUrl)
+    );
   }
 
   if (data.relativePath.startsWith("notes")) {
