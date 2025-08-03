@@ -18,6 +18,7 @@ import { getAppImage, transformImage } from '@utils/images';
 const transform = (image: string) => transformImage(getAppImage(image), { width: 500, quality: 100 });
 </script>
 
+<div> <!-- dummy wrapper div to avoid adsense messing up page layout -->
 <div :class="$style['app-list']">
     <div v-for="app in apps" :class="$style['app-item']">
         <div :class="$style['app-image']">
@@ -29,6 +30,7 @@ const transform = (image: string) => transformImage(getAppImage(image), { width:
         </div>
         <a :href="'/win7simu/simulated/' + app.slug" :aria-label="'View details: ' + app.title" />
     </div>
+</div>
 </div>
 
 <style module>

@@ -18,6 +18,7 @@ import { getThemeImage, transformImage } from '@utils/images';
 const transform = (image: string) => transformImage(getThemeImage(image), { width: 500, quality: 100 });
 </script>
 
+<div> <!-- dummy wrapper div to avoid adsense messing up page layout -->
 <div :class="$style['theme-list']">
     <div v-for="theme in themes" :class="$style['theme-item']">
         <div :class="$style['theme-image']">
@@ -28,6 +29,7 @@ const transform = (image: string) => transformImage(getThemeImage(image), { widt
         </div>
         <a :href="'/win7simu/themes/' + theme.slug" :aria-label="'View details: ' + theme.title" />
     </div>
+</div>
 </div>
 
 <style module>
