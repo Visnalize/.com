@@ -33,7 +33,7 @@ It is offered as a premium theme{{bundle ? ` as part of the "${bundle}" bundle` 
 It is generally available for free in the app. Users can use it at no cost and receive all future updates for it.
 </p>
 
-## Origin & how to unlock
+## Origin & how to use
 
 <p v-if="isOriginal">
 This theme is developed exclusively for Win7 Simu. It is not available in any other applications or platforms.
@@ -42,7 +42,7 @@ This theme is developed exclusively for Win7 Simu. It is not available in any ot
 This theme is developed based on "{{ title }}", aiming to replicate the aesthetics and functionality of the original version and provide a similar user experience.
 </p>
 
-To unlock this theme:
+To use this theme:
 
 - Right-click on the desktop and select "Personalize".
   - Alternatively, you can open the "Personalize" settings from the Control Panel.

@@ -6,12 +6,17 @@
                 <span>{{ createdDate }}</span>
             </div>
 
-            <div v-if="frontmatter.version" class="meta-version" v-tooltip="'Since Win7 Simu version'">
+            <div v-if="frontmatter.version" class="meta-note" v-tooltip="'Since Win7 Simu version'">
                 <iconify-icon icon="fluent:rocket-24-regular" />
                 <span>v{{ frontmatter.version }}</span>
             </div>
 
-            <div v-if="frontmatter.appVersion" class="meta-version" v-tooltip="'Latest version'">
+            <div v-if="frontmatter.premium" class="meta-note" v-tooltip="'Unlock with in-app purchase'">
+                <iconify-icon icon="fluent:premium-24-regular" />
+                <span>Premium</span>
+            </div>
+
+            <div v-if="frontmatter.appVersion" class="meta-note" v-tooltip="'Latest version'">
                 <iconify-icon icon="fluent:text-bullet-list-square-sparkle-24-regular" />
                 <span>v{{ frontmatter.appVersion }}</span>
             </div>
@@ -78,7 +83,7 @@ const isNote = computed(() => /notes\/.+/.test(route.path))
     color: var(--vp-c-text-2);
 }
 
-.meta-version {
+.meta-note {
     font-weight: 500;
 }
 
