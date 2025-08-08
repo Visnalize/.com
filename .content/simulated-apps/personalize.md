@@ -13,8 +13,8 @@ Personalize supports various themes, grouped into multiple categories:
 
   - [Windows 7 Basic](../themes/win7-basic)
   - [Windows Classic](../themes/win7-classic)
-  - [High Contrast Black](../themes/win7-high-contrast-black)
-  - [High Contrast White](../themes/win7-high-contrast-white)
+  - [High Contrast Black](../themes/win7-contrast-black)
+  - [High Contrast White](../themes/win7-contrast-white)
 
 - __Other Windows themes__: themes that mimic other versions of Windows. Available themes include:
 
