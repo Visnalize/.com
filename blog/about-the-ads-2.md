@@ -18,7 +18,7 @@ In this post, I want to share my experience with implementing ads in my projects
 
 ## Why ads?
 
-Ads are a viable monetization strategy for many apps and products, especially those that are free to use, targeting a broad audience. They can help developers generate revenue without charging users directly, making it easier to attract and retain a large user base.
+Ads are a viable monetization strategy for many apps and products, especially those that are [free to use](./free-vs-paid.md), targeting a broad audience. They can help developers generate revenue without charging users directly, making it easier to attract and retain a large user base.
 
 Although ads have been criticized for negatively impacting user experience, I believe there are still developers who can implement them thoughtfully and effectively. By prioritizing user experience and finding the right balance, it's possible to create a win-win situation for both users and developers.
 
@@ -54,7 +54,7 @@ Another common mistake I have seen is ignoring user feedback regarding ads. User
 
 I tend to leave reviews for apps I try out in hopes that my feedback will be taken into account and help the developers improve their products, especially for indie developers like myself. Some are receptive and make necessary changes, but this rarely happens. Most seem to prioritize ad revenue which ultimately harms their apps in the long run.
 
-For my apps, I also occasionally receive user complaints about ads. I always appreciate helpful and constructive feedback, and take them seriously to improve the user experience. However, there are also cases where users may not fully understand the need for ads in a [free app](./free-vs-paid.md). In such situations, I try to communicate the value of ads in supporting the app's development and maintenance.
+For my apps, I also occasionally receive user complaints about ads. I always appreciate helpful and constructive feedback, and take them seriously to improve the user experience. However, there are also cases where users may not fully understand the need for ads in a free app. In such situations, I try to communicate the value of ads in supporting the app's development and maintenance.
 
 ### Relying solely on ads
 
