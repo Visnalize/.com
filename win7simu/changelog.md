@@ -12,7 +12,16 @@ pageClass: changelog
 
 ## 2025
 
-### `3.20.0` (July 30, 2025)
+### `3.21.0` (Aug 18, 2025)
+
+- Added sounds for more themes
+- Added Text tool for [Paint](./simulated/paint.md), fixed file opening issue
+- Refined taskbar tray icons
+- Refined battery and volume taskbar popup
+- Fixed an issue with taskbar not showing up
+- Bug fixes and improvements for Recycle Bin
+
+### `3.20.0` (Jul 30, 2025)
 
 - Added various enhancements and bug fixes for [Windows Media Center](./simulated/wmc.md)
 - Added Invert Selection for [Paint](./simulated/paint.md)
@@ -24,19 +33,19 @@ pageClass: changelog
 - Fixed issues with [gadgets](./simulated/gadgets.md) overflowing screen on resolution change, RTL mode
 - Several other bug fixes and improvements
 
-### `3.19.2` (July 9, 2025)
+### `3.19.2` (Jul 9, 2025)
 
 We have recently discovered a critical issue that caused some of the themes in Theme Studio to corrupt, making them unusable. We have fixed this issue, unfortunately, the corrupted themes can no longer be recovered. We sincerely apologize for the inconvenience this may have caused and we are committed to ensuring that this does not happen again in the future.
 
 - Fixed Media Only mode in [Windows Media Center](./simulated/wmc.md)
 - Fixed some critical issues with [Theme Studio](./themestudio.md)
 
-### `3.19.1` (July 6, 2025)
+### `3.19.1` (Jul 6, 2025)
 
 - Fixed issues with Minesweeper and Tetris not opening
 - Fixed [Paint](./simulated/paint.md) cursor in Select mode
 
-### `3.19.0` (July 2, 2025)
+### `3.19.0` (Jul 2, 2025)
 
 - Added several new features for [Paint](./simulated/paint.md): Select, Crop, & Rotate
 - Added new theme: Windows 98
