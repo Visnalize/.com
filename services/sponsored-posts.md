@@ -6,6 +6,10 @@ social: false
 ads: false
 ---
 
+<script setup lang="ts">
+import SponsoredPostsClients from '@components/misc/services/SponsoredPostsClients.vue';
+</script>
+
 # Sponsored Posts
 
 You can publish posts on our [blog](../blog.md) and benefit from our traffic, domain authority, and audience. In exchange, we charge a small fee for the service, which is significantly more affordable than other platforms.
@@ -15,6 +19,8 @@ We offer several [pricing options](#pricing), you can choose the price based on 
 Posts should comply with our [content guidelines](#content-guidelines). We reserve the right to reject any post that does not meet our standards or is deemed inappropriate.
 
 For inquiries or to discuss custom requests, you can also contact us via [email](mailto:hey@visnalize.com).
+
+<SponsoredPostsClients />
 
 ## Pricing
 

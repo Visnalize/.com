@@ -10,7 +10,8 @@ pagefind-indexed: false
 
 <script setup lang="ts">
 import AnalyticsDashboard from '@components/misc/AnalyticsDashboard.vue';
-import ServicePrice from '@components/misc/ServicePrice.vue';
+import ServicePrice from '@components/misc/services/ServicePrice.vue';
+import SponsoredPostsClients from '@components/misc/services/SponsoredPostsClients.vue';
 </script>
 
 Aside from retro apps, Visnalize also offers some additional services for a reasonable price. Check out the list below to see what's available and how you can benefit from them.
@@ -25,6 +26,8 @@ If you have a product or service that you would like to promote, you can sponsor
     'Permanent do-follow links back to your site in the post',
     'The post will be featured on the homepage for at least 1 week',
 ]" />
+
+<SponsoredPostsClients />
 
 ## Advertising
 
