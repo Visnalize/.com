@@ -20,7 +20,7 @@ Aside from retro apps, Visnalize also offers some additional services for a reas
 
 If you have a product or service that you would like to promote, you can sponsor a post on Visnalize to reach our audience. Sponsored posts are either written by you or by Visnalize, and will be published on the site. They will be marked with the `sponsor` tag to help readers distinguish them from regular content.
 
-<ServicePrice price="$20" originalPrice="$30" offer="Offer for the first 10 posts (4 remaining)" suffix="/post" buttonLink="mailto:hey@visnalize.com?subject=Sponsored Posts" terms="/services/sponsored-posts" :features="[
+<ServicePrice price="$20" originalPrice="$30" offer="Offer for the first 10 posts (3 remaining)" suffix="/post" buttonLink="mailto:hey@visnalize.com?subject=Sponsored Posts" terms="/services/sponsored-posts" :features="[
     'A carefully reviewed/crafted post about your product or service',
     'Unlimited revisions until the post meets both parties\' standards',
     'Permanent do-follow links back to your site in the post',

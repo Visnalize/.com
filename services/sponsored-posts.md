@@ -24,7 +24,7 @@ For inquiries or to discuss custom requests, you can also contact us via [email]
 
 ## Pricing
 
-- Early offer for the first 10 posts: __$20/post__.
+- Early offer for the first 10 posts (3 remaining): __$20/post__.
 - Regular posts (you write, we review, we publish): __$30/post__.
 - Custom posts (we write, you review, we publish): __$40/post__.
 
@@ -35,7 +35,7 @@ With the `sponsor` tag removed:
 - Custom posts: __$80/post__.
 
 ::: warning Note on payment due
-Payment is required within 3 days after publishing, unless otherwise agreed upon. If payment is not received after the due date, the post will be removed from the site.
+Payment is required within 3 working days after publishing, unless otherwise agreed upon. If payment is not received after the due date, the post will be removed from the site.
 :::
 
 ## Content guidelines
@@ -47,6 +47,11 @@ Payment is required within 3 days after publishing, unless otherwise agreed upon
 - Post must include at least one image as a cover. All images must be royalty-free, or you must have the rights to use them.
 - Post must include no more than 5 links to external sites.
 - Links to external sites must not be spammy or low-quality, and should be relevant to the content of the post.
+
+Example published posts:
+
+- With the `sponsor` tag: [5 Essential Digital Tools for a Thriving Small Business in 2025](/blog/tools-for-a-thriving-small-business.md).
+- Without the `sponsor` tag: [How to Create a Successful Online Course: A Step-by-Step Guide](/blog/ai-in-homes-and-vehicles.md).
 
 ## FAQs
 

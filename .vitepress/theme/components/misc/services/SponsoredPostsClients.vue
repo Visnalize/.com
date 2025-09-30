@@ -3,7 +3,7 @@
     <div class="title">Our clients</div>
     <div class="list">
       <div v-for="client in clients" :key="client.name" class="client">
-        <img :src="client.logo" :alt="client.name" :width="client.width" />
+        <img :src="client.logo" :alt="client.name" :width="client.width" height="100" />
       </div>
     </div>
   </div>
@@ -26,6 +26,11 @@ const clients = [
     logo: "/assets/clients/jetbase.svg",
     width: 160,
   },
+  {
+    name: "Proton",
+    logo: "/assets/clients/proton.svg",
+    width: 160,
+  },
 ];
 </script>
 
@@ -35,6 +40,7 @@ const clients = [
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-top: 3rem;
 }
 
 .title {
@@ -45,6 +51,7 @@ const clients = [
 .list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
