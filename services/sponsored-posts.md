@@ -24,7 +24,7 @@ For inquiries or to discuss custom requests, you can also contact us via [email]
 
 ## Pricing
 
-- Early offer for the first 10 posts (3 remaining): __$20/post__.
+- Early offer for the first 10 posts (2 remaining): __$20/post__.
 - Regular posts (you write, we review, we publish): __$30/post__.
 - Custom posts (we write, you review, we publish): __$40/post__.
 

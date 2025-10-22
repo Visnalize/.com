@@ -31,6 +31,11 @@ const clients = [
     logo: "/assets/clients/proton.svg",
     width: 160,
   },
+  {
+    name: "HostZealot",
+    logo: "/assets/clients/hostzealot.svg",
+    width: 300,
+  },
 ];
 </script>
 
