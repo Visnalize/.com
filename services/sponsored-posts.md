@@ -24,13 +24,13 @@ For inquiries or to discuss custom requests, you can also contact us via [email]
 
 ## Pricing
 
-- Early offer for the first 10 posts (2 remaining): __$20/post__.
+- ~~Early offer for the first 10 posts: __$20/post__~~ (sold out).
 - Regular posts (you write, we review, we publish): __$30/post__.
 - Custom posts (we write, you review, we publish): __$40/post__.
 
 With the `sponsor` tag removed:
 
-- Early offer: __$40/post__.
+- ~~Early offer: __$40/post__~~ (sold out).
 - Regular posts: __$60/post__.
 - Custom posts: __$80/post__.
 
