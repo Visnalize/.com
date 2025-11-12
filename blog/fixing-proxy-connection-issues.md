@@ -1,10 +1,9 @@
 ---
-createdAt: 1762681536188
+createdAt: 1762958671846
 description: Struggling with proxy connection issues? Learn how to quickly diagnose and fix common problems with practical solutions that save you time and frustration.
 tags:
   - tips
   - technical
-  - sponsor
 ---
 
 # Fixing Common Proxy Connection Issues in Minutes
