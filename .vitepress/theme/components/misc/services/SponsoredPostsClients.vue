@@ -44,12 +44,6 @@ const clients = [
     isLight: true,
   },
   {
-    name: "Opsio",
-    logo: "/assets/clients/opsio.svg",
-    width: 160,
-    isLight: true,
-  },
-  {
     name: "SkyCoach",
     logo: "/assets/clients/skycoach.svg",
     width: 160,
