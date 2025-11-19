@@ -40,13 +40,19 @@ const clients = [
   {
     name: "HostZealot",
     logo: "/assets/clients/hostzealot.svg",
-    width: 300,
+    width: 280,
     isLight: true,
   },
   {
     name: "SkyCoach",
     logo: "/assets/clients/skycoach.svg",
     width: 160,
+    isLight: true,
+  },
+  {
+    name: "PROXYS.IO",
+    logo: "/assets/clients/proxys.io.png",
+    width: 200,
     isLight: true,
   },
 ];
