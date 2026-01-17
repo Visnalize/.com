@@ -55,6 +55,11 @@ const clients = [
     width: 200,
     isLight: true,
   },
+  {
+    name: "surfshark",
+    logo: "/assets/clients/surfshark.svg",
+    width: 200,
+  },
 ];
 </script>
 
