@@ -10,6 +10,23 @@ pageClass: changelog
 
 <SponsorAd />
 
+## 2026
+
+### `4.0.0` (Jan 23, 2026)
+
+Welcome to another major update of Win7 Simu! This version brings a refined nostalgic experience, stability improvements, and exciting new features to enhance your journey back to the classic Windows era. You can learn more about the new features in details from this [blog post](../blog/win7-simu-v4.md). Below is a list of notable changes in summary:
+
+- Major UI enhancements for all themes
+  - Added several visual effects for aero themes
+  - Added and refined some animations
+  - Refined theme visuals and added missing features across themes
+- Several enhancements for window interactions (stacking, dragging)
+- Several bug fixes for languages with RTL mode
+- Several UI and feature enhancements for Wordpad
+- Added visual effect control options (Control Panel > System > Performance)
+- Updated Theme Studio [v2.0.0](./themestudio/changelog.md#_2-0-0-jan-23-2026)
+- Several other bug fixes and improvements
+
 ## 2025
 
 ### `3.21.0` (Aug 18, 2025)
@@ -32,6 +49,8 @@ pageClass: changelog
   - You can now modify sound for different schemes and Windows
 - Fixed issues with [gadgets](./simulated/gadgets.md) overflowing screen on resolution change, RTL mode
 - Several other bug fixes and improvements
+
+<SponsorAd />
 
 ### `3.19.2` (Jul 9, 2025)
 
