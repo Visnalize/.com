@@ -11,7 +11,7 @@ comments: false
 
 ### `2.0.0` (Jan 23, 2026)
 
-💥 This major update includes a breaking change that requires some of the selectors to be refactored for consistency and ease of use. If you notice your themes are not working properly, please consult the documentation for the changes.
+💥 This major update includes a breaking change that requires some of the selectors to be standardized for consistency and ease of use. If you notice your themes are not working properly, please consult the documentation for the changes.
 
 - Your custom styles are now based on a "base" theme - a very simple and minimalistic theme that makes it easier to create themes from scratch.
 - Add more elements available for customization to the editor.

@@ -20,7 +20,7 @@ Welcome to another major update of Win7 Simu! This version brings a refined nost
   - Added several visual effects for aero themes
   - Added and refined some animations
   - Refined theme visuals and added missing features across themes
-- Several enhancements for window interactions (stacking, dragging)
+- Several enhancements for window manager (stacking, dragging, popup-blocking behavior)
 - Several bug fixes for languages with RTL mode
 - Several UI and feature enhancements for Wordpad
 - Added visual effect control options (Control Panel > System > Performance)
