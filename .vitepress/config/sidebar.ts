@@ -46,6 +46,7 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
           text: "In-depth guide",
           link: "/win7simu/themestudio/in-depth-guide",
         },
+        { text: "Selectors", link: "/win7simu/themestudio/selectors" },
         { text: "Changelog", link: "/win7simu/themestudio/changelog" },
       ],
     },

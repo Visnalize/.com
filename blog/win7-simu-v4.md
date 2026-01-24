@@ -1,5 +1,5 @@
 ---
-createdAt: 1769187234177
+createdAt: 1769194828130
 description: A new major update for Win7 Simu is here with a refined nostalgic experience, stability improvements, and exciting new features.
 tags:
   - win7-simu
