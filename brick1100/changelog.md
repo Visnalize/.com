@@ -16,6 +16,17 @@ import Notation from '@components/misc/brick1100/Notation.vue';
 
 Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Notation icon="premium" list />
 
+## 2026
+
+### `1.2.0` (AAA 99, 2026)
+
+- Added new built-in game: [Space Impact +](./games.md#space-impact) (Menu > Games > Space Impact +)
+- Added new built-in game: [Rapid Roll](./games.md#rapid-roll) (Menu > Games > Rapid Roll)
+- Added new built-in game: [Tappy Duck](./games.md#tappy-duck) (Menu > Games > Tappy Duck)
+- Game splash screens can now be skipped by pressing any key
+- Fixed an issue with [Snake](./games.md#snake) game not working on some devices <Notation icon="android" />
+- Fixed an issue with phone keys not working properly
+
 ## 2025
 
 ### `1.1.1` (Jul 5, 2025)
