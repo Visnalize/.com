@@ -18,7 +18,7 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2026
 
-### `1.2.0` (AAA 99, 2026)
+### `1.2.0` (Jan 31, 2026)
 
 - Added new built-in game: [Space Impact +](./games.md#space-impact) (Menu > Games > Space Impact +)
 - Added new built-in game: [Rapid Roll](./games.md#rapid-roll) (Menu > Games > Rapid Roll)
