@@ -35,7 +35,7 @@ With the `sponsor` tag removed:
 - Custom posts: __$80/post__.
 
 ::: warning Note on payment due
-Payment is required within 3 working days after publishing, unless otherwise agreed upon. If payment is not received after the due date, the post will be removed from the site.
+Payment is required within 5 working days after publishing, unless otherwise agreed upon. If payment is not received after the due date, the post will be removed from the site.
 :::
 
 ## Content guidelines
@@ -73,4 +73,4 @@ __Yes__, all links in the post are do-follow by default. If you notice any issue
 
 ### Do you offer link insertion services?
 
-__No__, we don't.
+__Yes__, however, the price for link insertion is subject to negotiation based on the post's relevance and quality. We also reserve the right to refuse requests that we deem inappropriate. Please [contact us](mailto:hey@visnalize.com) for more details.
