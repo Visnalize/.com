@@ -7,6 +7,7 @@ const INITIAL_ADS_TXT = `google.com, pub-5904323684803247, DIRECT, f08c47fec0942
 const INITIAL_APP_ADS_TXT = `${INITIAL_ADS_TXT}
 uis.mobfox.com, SM_744, DIRECT, 5529a3d1f59865be
 applovin.com, 5dafb2d1ede14462c9663ed8a9edeaa3, DIRECT
+vungle.com, 698ee70d814b9fb754035a83, DIRECT, c107d686becd2d77
 
 algorix.co, 60532, RESELLER, 5b394c12fea27a1d
 contextweb.com , 562615, RESELLER, 89ff185a4c4e857c
