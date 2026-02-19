@@ -3,7 +3,7 @@ import { defineLoader } from "vitepress";
 import cache from "./utils/cache";
 
 const cacheFile = cache.init("webtops");
-const client = new Octokit();
+const client = new Octokit({ auth: process.env.VITE_GITHUB_AUTH_KEY });
 
 interface Webtop {
   name: string;
