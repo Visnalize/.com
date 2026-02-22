@@ -60,6 +60,12 @@ const clients = [
     logo: "/assets/clients/surfshark.svg",
     width: 200,
   },
+  {
+    name: "murf.ai",
+    logo: "/assets/clients/murfai.svg",
+    width: 200,
+    isLight: true,
+  },
 ];
 </script>
 
