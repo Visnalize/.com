@@ -12,6 +12,13 @@ pageClass: changelog
 
 ## 2026
 
+### `4.0.1` (Feb 24, 2026)
+
+- Enhanced hardware detection logic for enabling visual effects
+- Fixed publishing/deleting themes not working in Theme Studio
+- Bug fixes and improvements for Magnifier and Snipping Tool
+- Several other minor visual tweaks and bug fixes
+
 ### `4.0.0` (Jan 24, 2026)
 
 Welcome to another major update of Win7 Simu! This version brings a refined nostalgic experience, stability improvements, and exciting new features to enhance your journey back to the classic Windows era. You can learn more about the new features in details from this [blog post](../blog/win7-simu-v4.md). Below is a list of notable changes in summary:
