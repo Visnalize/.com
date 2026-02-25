@@ -43,7 +43,7 @@ Yes. If the feature is not rejected above. You can comment your request below in
 
 ### Can I use this simulator as a launcher/home screen?
 
-No. Due to the its nature, this simulator is not designed to be used as a launcher/home screen.
+No. Due to its nature, this simulator is not designed to be used as a launcher/home screen. Please see [this article](../blog/win7-simu-as-launcher.md) for details.
 
 ### Does this simulator work offline?
 
@@ -79,10 +79,6 @@ There are currently 2 ways:
 ### Why are there ads in the simulator?
 
 Because a lot of time and effort have been spent to develop and maintain this simulator, and there are also costs to maintain the server and cloud services to retain your user accounts and settings within. However, there is a small monthly/yearly subscription plan to which you can subscribe, to enjoy the app ad-free and support the developer.
-
-### Why subscription and not one-time payment?
-
-Because the server costs are recurring, and the subscription model is more sustainable for me to dedicate my time to developing and maintaining the simulator in the long run. Though, you can cancel the subscription at any time.
 
 ### Can this simulator work on Android versions earlier than 6.0?
 
