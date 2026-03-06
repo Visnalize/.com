@@ -80,7 +80,7 @@ export const apps: App[] = [
       "Adjust game graphics and settings",
       "Customizable board and pieces",
     ],
-    videos: [],
+    videos: ["jTzBgkYh61I"],
   },
   {
     slug: "chrome",
@@ -123,7 +123,13 @@ export const apps: App[] = [
       "Manage user accounts",
       "Change system language",
     ],
-    videos: ["EZytvtBOwqY", "mmASPwCBHHU", "HQvhpQK8LM4", "bFVJqP7UtCE"],
+    videos: [
+      "EZytvtBOwqY",
+      "mmASPwCBHHU",
+      "HQvhpQK8LM4",
+      "bFVJqP7UtCE",
+      "WjHbxsPHPyI",
+    ],
   },
   {
     slug: "fileexplorer",
@@ -140,6 +146,7 @@ export const apps: App[] = [
       "Search for files and folders",
       "View file properties",
     ],
+    videos: ["AzXjUkhkYt0"],
   },
   {
     slug: "ie",
@@ -222,7 +229,7 @@ export const apps: App[] = [
       "Change screen saver",
       "Change theme",
     ],
-    videos: ["GcPdlyfiqbs", "mM1qkwYVVvY"],
+    videos: ["GcPdlyfiqbs", "mM1qkwYVVvY", "elmUdvnyFcY"],
   },
   {
     slug: "installer",
@@ -367,7 +374,7 @@ export const apps: App[] = [
       "Favorite media",
       "View media library and details",
     ],
-    videos: ["3pOc_3x4CQA"],
+    videos: ["3pOc_3x4CQA", "76iih_qmNwA"],
   },
   {
     slug: "media-player",
@@ -399,7 +406,7 @@ export default defineLoader({
       b.version.localeCompare(a.version, undefined, {
         numeric: true,
         sensitivity: "base",
-      })
+      }),
     );
   },
 });

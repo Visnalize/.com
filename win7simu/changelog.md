@@ -12,6 +12,11 @@ pageClass: changelog
 
 ## 2026
 
+### `4.0.2` (Mar 6, 2026)
+
+- Fixed Fire Explorer view mode not working
+- Fixed [Magnifier](./simulated/magnifier.md) for Android/touch devices
+
 ### `4.0.1` (Feb 24, 2026)
 
 - Enhanced hardware detection logic for enabling visual effects
@@ -29,7 +34,7 @@ Welcome to another major update of Win7 Simu! This version brings a refined nost
   - Refined theme visuals and added missing features across themes
 - Several enhancements for window manager (stacking, dragging, popup-blocking behavior)
 - Several bug fixes for languages with RTL mode
-- Several UI and feature enhancements for Wordpad
+- Several UI and feature enhancements for [Wordpad](./simulated/wordpad.md)
 - Added visual effect control options (Control Panel > System > Performance)
 - Updated Theme Studio [v2.0.0](./themestudio/changelog.md#_2-0-0-jan-23-2026)
 - Several other bug fixes and improvements
