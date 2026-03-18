@@ -213,6 +213,13 @@ export const themes: ThemeData[] = [
     slug: "winwhistler",
     title: "Windows Whistler",
   },
+  {
+    id: "onebit",
+    slug: "onebit",
+    title: "OneBit",
+    premium: "pay",
+    isOriginal: true,
+  },
 ];
 
 export default defineLoader({
