@@ -12,6 +12,20 @@ pageClass: changelog
 
 ## 2026
 
+### `4.1.0` (March 27, 2026)
+
+- Added new premium theme: [Onebit](./themes/onebit.md)
+- New features for Paint:
+  - Quick access toolbar with quick commands: Undo, Redo, Save, New, Open
+  - Several commands in the View ribbon are now functional: Zoom in/out/100%, Full screen
+  - Save changes confirmation dialog before certain actions
+- New features for Photo Viewer:
+  - Display all photos in the same folder as a slideshow
+  - Navigate between photos in the same folder
+  - View photos in their actual sizes or fit to the window
+  - View photos with different zoom levels
+  - Rotate photos 90-degree clockwise or counter-clockwise (and auto save)
+
 ### `4.0.2` (Mar 6, 2026)
 
 - Fixed Fire Explorer view mode not working
@@ -79,9 +93,9 @@ We have recently discovered a critical issue that caused some of the themes in T
 ### `3.19.0` (Jul 2, 2025)
 
 - Added several new features for [Paint](./simulated/paint.md): Select, Crop, & Rotate
-- Added new theme: Windows 98
-- Added new theme: Windows Whistler
-- Added new premium theme: Oxygen
+- Added new theme: [Windows 98](./themes/win98.md)
+- Added new theme: [Windows Whistler](./themes/winW.md)
+- Added new premium theme: [Oxygen](./themes/oxygen.md)
 - Fixed an issue with the taskbar not appearing occasionally
 - Several other performance improvements and bug fixes behind the scenes
 
@@ -190,8 +204,8 @@ __Android__
 ### `3.10.0` (June 7, 2024)
 
 - Fixed double tap issue with desktop icons
-- Added premium theme: Aero Noir
-- Added new themes: Windows Longhorn (Slate, Plex)
+- Added premium theme: [Aero Noir](./themes/aeronoir.md)
+- Added new themes: Windows Longhorn ([Slate](./themes/winLS.md), [Plex](./themes/winLP.md))
 - Complete [Windows Media Center](./simulated/wmc.md)'s Music Library features:
   - Song details now accessible from album details
   - Option to clear the Now Playing list
@@ -222,7 +236,7 @@ __Android__
 
 __Core__
 
-- Added new themes to Windows XP variants pack: Royale Noir, Embedded
+- Added new themes to Windows XP variants pack: [Royale Noir](./themes/winxpN.md), [Embedded](./themes/winxpE.md)
 - Added ZIP support. You can now view or extract .zip content
 - Fixed an issue with desktop icons not aligned correctly
 - Fixed an issue with Paint not opening file
@@ -237,7 +251,7 @@ __Core__
 
 - You can now access files from device via "Upload files here" in context menu
 - Added [File Explorer](./simulated/fileexplorer.md) view modes
-- Added premium themes: Ubuntu, Windows XP variants (Olive Green, Royale, Silver, Zune)
+- Added premium themes: Ubuntu, Windows XP variants ([Olive Green](./themes/winxpG.md), [Royale](./themes/winxpR.md), [Silver](./themes/winxpS.md), [Zune](./themes/winxpZ.md))
 - Major updates to Mouse settings and cursor
   - Added MacOS and Ubuntu cursor sets
   - Added pointer options tab
@@ -263,8 +277,8 @@ __Core__
 - Adjusted Calculator's visual across different themes
 - Added [Program Installer](./simulated/installer.md)
 - Added [BSOD Customizer](./simulated/bsod.md)
-- Added new theme: Windows 11 dark
-- Added new theme: Kubuntu (KDE Plasma)
+- Added new theme: [Windows 11 dark](./themes/win11dark.md)
+- Added new theme: [Kubuntu (KDE Plasma)](./themes/kubuntu.md)
 
 __Android__
 
@@ -291,7 +305,7 @@ __Android__
 
 __Core__
 
-- Added new theme: ChromeOS
+- Added new theme: [ChromeOS](./themes/chromeos.md)
 - Fixed win8/win10 start menu grid item alignment
 - Fixed battery gadget text alignment
 
@@ -526,7 +540,7 @@ __Android__
 
 ### `2.19.0` (Nov 7, 2021)
 
-- Added new theme: Windows 3.1
+- Added new theme: [Windows 3.1](./themes/win31.md)
 - Added language support for: French
 - BSOD is now theme-compliant
 
@@ -550,7 +564,7 @@ __Android__
 ### `2.15.0` (Sep 8, 2021)
 
 - Added [Sound Recorder](./simulated/recorder.md)
-- Added new theme: Windows 95
+- Added new theme: [Windows 95](./themes/win95.md)
 - Improved Windows 11 start menu
 
 ### `2.14.0` (Aug 28, 2021)
@@ -578,14 +592,14 @@ __Android__
 
 ### `2.11.0` (Jul 23, 2021)
 
-- Added new theme: Windows 11
+- Added new theme: [Windows 11](./themes/win11.md)
 - You can now zoom the display for a better experience
 - You can now switch the launcher directly from [Control Panel](./simulated/cpanel.md)
 
 ### `2.10.0` (Jul 4, 2021)
 
 - You can now use the simulator as a home/launcher app (beta)
-- Added new theme: Windows 2000
+- Added new theme: [Windows 2000](./themes/win2k.md)
 - Added right click menu for Start Menu programs
 - Added easter egg: Chrome dino game
 - Added easter egg: bring Control Panel to desktop
@@ -635,7 +649,7 @@ __Android__
 
 ### `2.3.2` (Aug 16, 2020)
 
-- Added new theme: Windows Vista
+- Added new theme: [Windows Vista](./themes/winvista.md)
 - Fixed display scaling issue on different screen sizes
 
 ### `2.3.1` (Jul 31, 2020)
@@ -659,7 +673,7 @@ __Android__
 - Screen orientation is locked to landscape to provide the best experience and reduce display issues on different screen sizes.
 - Text files, screen captures can now be saved
 - Notepad settings are sync with user account
-- Added new theme: Windows XP
+- Added new theme: [Windows XP](./themes/winxp.md)
 - Added Shutdown screen
 
 ### `2.0` (May 30, 2020)
