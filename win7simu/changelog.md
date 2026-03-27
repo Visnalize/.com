@@ -94,7 +94,7 @@ We have recently discovered a critical issue that caused some of the themes in T
 
 - Added several new features for [Paint](./simulated/paint.md): Select, Crop, & Rotate
 - Added new theme: [Windows 98](./themes/win98.md)
-- Added new theme: [Windows Whistler](./themes/winW.md)
+- Added new theme: [Windows Whistler](./themes/winwhistler.md)
 - Added new premium theme: [Oxygen](./themes/oxygen.md)
 - Fixed an issue with the taskbar not appearing occasionally
 - Several other performance improvements and bug fixes behind the scenes
@@ -205,7 +205,7 @@ __Android__
 
 - Fixed double tap issue with desktop icons
 - Added premium theme: [Aero Noir](./themes/aeronoir.md)
-- Added new themes: Windows Longhorn ([Slate](./themes/winLS.md), [Plex](./themes/winLP.md))
+- Added new themes: Windows Longhorn ([Slate](./themes/win-longhorn-slate.md), [Plex](./themes/win-longhorn-plex.md))
 - Complete [Windows Media Center](./simulated/wmc.md)'s Music Library features:
   - Song details now accessible from album details
   - Option to clear the Now Playing list
@@ -236,7 +236,7 @@ __Android__
 
 __Core__
 
-- Added new themes to Windows XP variants pack: [Royale Noir](./themes/winxpN.md), [Embedded](./themes/winxpE.md)
+- Added new themes to Windows XP variants pack: [Royale Noir](./themes/winxp-royale-noir.md), [Embedded](./themes/winxp-embedded.md)
 - Added ZIP support. You can now view or extract .zip content
 - Fixed an issue with desktop icons not aligned correctly
 - Fixed an issue with Paint not opening file
@@ -251,7 +251,7 @@ __Core__
 
 - You can now access files from device via "Upload files here" in context menu
 - Added [File Explorer](./simulated/fileexplorer.md) view modes
-- Added premium themes: Ubuntu, Windows XP variants ([Olive Green](./themes/winxpG.md), [Royale](./themes/winxpR.md), [Silver](./themes/winxpS.md), [Zune](./themes/winxpZ.md))
+- Added premium themes: Ubuntu, Windows XP variants ([Olive Green](./themes/winxp-olive-green.md), [Royale](./themes/winxp-royale.md), [Silver](./themes/winxp-silver.md), [Zune](./themes/winxp-zune.md))
 - Major updates to Mouse settings and cursor
   - Added MacOS and Ubuntu cursor sets
   - Added pointer options tab
@@ -277,7 +277,7 @@ __Core__
 - Adjusted Calculator's visual across different themes
 - Added [Program Installer](./simulated/installer.md)
 - Added [BSOD Customizer](./simulated/bsod.md)
-- Added new theme: [Windows 11 dark](./themes/win11dark.md)
+- Added new theme: [Windows 11 dark](./themes/win11-dark.md)
 - Added new theme: [Kubuntu (KDE Plasma)](./themes/kubuntu.md)
 
 __Android__
@@ -439,7 +439,7 @@ __Android__
 - Added macOS boot + login screen
 - Added shutdown button on Windows 7/Vista login screen
 - Improved translation accuracy
-- Fixed an issue with the Shutdown menu commands not working in Win2k and Win95 themes
+- Fixed an issue with the Shutdown menu commands not working in Windows 2000 and Windows 95 themes
 
 ### `2.24.0` (Nov 19, 2022)
 
@@ -540,7 +540,7 @@ __Android__
 
 ### `2.19.0` (Nov 7, 2021)
 
-- Added new theme: [Windows 3.1](./themes/win31.md)
+- Added new theme: [Windows 3.1](./themes/win3-1.md)
 - Added language support for: French
 - BSOD is now theme-compliant
 
@@ -599,7 +599,7 @@ __Android__
 ### `2.10.0` (Jul 4, 2021)
 
 - You can now use the simulator as a home/launcher app (beta)
-- Added new theme: [Windows 2000](./themes/win2k.md)
+- Added new theme: [Windows 2000](./themes/win2000.md)
 - Added right click menu for Start Menu programs
 - Added easter egg: Chrome dino game
 - Added easter egg: bring Control Panel to desktop
