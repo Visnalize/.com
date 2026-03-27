@@ -278,7 +278,7 @@ __Core__
 - Added [Program Installer](./simulated/installer.md)
 - Added [BSOD Customizer](./simulated/bsod.md)
 - Added new theme: [Windows 11 dark](./themes/win11-dark.md)
-- Added new theme: [Kubuntu (KDE Plasma)](./themes/kubuntu.md)
+- Added new theme: [Kubuntu (KDE Plasma)](./themes/kubuntu-breeze.md)
 
 __Android__
 
