@@ -15,11 +15,11 @@ pageClass: changelog
 ### `4.1.0` (March 27, 2026)
 
 - Added new premium theme: [Onebit](./themes/onebit.md)
-- New features for Paint:
+- New features for [Paint](./simulated/paint.md):
   - Quick access toolbar with quick commands: Undo, Redo, Save, New, Open
   - Several commands in the View ribbon are now functional: Zoom in/out/100%, Full screen
   - Save changes confirmation dialog before certain actions
-- New features for Photo Viewer:
+- New features for [Photo Viewer](./simulated/photo-viewer.md):
   - Display all photos in the same folder as a slideshow
   - Navigate between photos in the same folder
   - View photos in their actual sizes or fit to the window

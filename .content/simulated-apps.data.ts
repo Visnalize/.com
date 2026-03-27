@@ -211,10 +211,10 @@ export const apps: App[] = [
       "Allows you to create and edit images using various tools, such as brushes, shapes, text, colors, and more in Win7 Simu",
     version: "2.2.0",
     features: [
-      "Draw with various tools",
-      "Draw shapes",
-      "Fill shapes with color",
-      "Change line thickness and color",
+      "Draw with various tools (brushes, shapes, text, etc.)",
+      "Save images in different formats (jpg, png, bmp, etc.)",
+      "Open and edit existing images",
+      "Modify colors, sizes, and other settings of the images",
     ],
   },
   {
@@ -383,6 +383,20 @@ export const apps: App[] = [
       "Allows you to play music, videos, and photos in various formats supported by Win7 Simu, in a simple and efficient manner",
     version: "1.0.0",
     features: ["Play music", "Play videos", "View photos"],
+  },
+  {
+    slug: "photo-viewer",
+    title: "Windows Photo Viewer",
+    description:
+      "Allows you to view and manage your photos in a quick and simple way, with support for various image formats and basic editing features",
+    version: "2.7.0",
+    features: [
+      "Display all photos in the same folder as a slideshow",
+      "Navigate between photos in the same folder",
+      "View photos in their actual sizes or fit to the window",
+      "View photos with different zoom levels",
+      "Rotate photos 90-degree clockwise or counter-clockwise (and auto save)",
+    ],
   },
   {
     slug: "wordpad",
