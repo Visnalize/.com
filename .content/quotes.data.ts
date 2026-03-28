@@ -20,6 +20,64 @@ export interface Quote {
 
 const quotes: Quote[] = [
   {
+    author: "A YouTube user",
+    date: "Mar 28, 2026",
+    app: "brick1100",
+    url: "https://www.youtube.com/watch?v=8H7v1oze5Eg&lc=UgzTnu_5cCSQJtZGhRh4AaABAg",
+    content:
+      "It's truely great how you reconstructed the entire nostalgic visuals from that old phone. Loved to play the Space Impact II game again. Great work developer, although it would not reach to lots of people but it raises a tremendous amout of joy to certain small amount of peole who interacts with the app. Thanks a lot man.",
+  },
+  {
+    author: "Lautaro Zalazar",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVCMUQzfqscrabW9wLgRk85G4O0EkQzQ__N3FtSqxRNoFHF6WXA=s50",
+    date: "Mar 20, 2026",
+    app: "win7simu",
+    content:
+      "This simulator is getting better and better; WordPad already has almost all its functions implemented and the quality is improving. The browser also works well and already has several features.",
+  },
+  {
+    author: "Eni lozano",
+    date: "Feb 6, 2026",
+    app: "brick1100",
+    content:
+      "I loved it! Now I can make and receive calls so much easier, it's like dialing from a Nokia 1100, so much easier. I never liked my old digital phone, but with this app it's so easy.",
+  },
+  {
+    author: "Sandy Ziehm",
+    date: "Feb 1, 2026",
+    app: "win7simu",
+    content:
+      "I really love this simulator! It's really accurate. Even with the ChromeOS one, I use a Chromebook and can say that it's the best simulator that I ever saw! I love this simulator :) I have some questions too. Will there be more OS's someday? And will there be even one for Android/iOS OS's? Like in the Win7 Simu that has Windows OS themes, MacOS, ChromeOS, Linux like ones too, so I asked for curiosity if there will be phone simulator / simulators too. Have a great day / afternoon / night too :)",
+  },
+  {
+    author: "Jacqueline",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjW_8k8w_jyYiWQZl2DLT3eXxX5Mk0NCYewfVNivywfnlnl1O4uGxg=s50",
+    date: "Feb 1, 2026",
+    app: "win7simu",
+    content:
+      "Excellent initiative to have created the app! It brings back memories of when I used Windows 7...so good!! A classic! I don't know if it would be possible, but it would be cool if they could recreate XP someday, for example. But the app is great nonetheless. 5 stars.",
+  },
+  {
+    author: "Mirko Palma",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjW2zAFiQ2m7_Fe4b8Rwx0nXrllE4CG3Ab__ZOEOMnL9OwmlNCNE=s50",
+    date: "Aug 9, 2025",
+    app: "brick1100",
+    content:
+      "I like this app. It takes me back to the Nokia 2000s, everything works. It really makes me feel like I'm using a real Nokia, especially the apps (Messages, Contacts, Settings, etc.). It's a really nice app.",
+  },
+  {
+    author: "jenny alexandra rodriguez delgado",
+    image:
+      "https://lh3.googleusercontent.com/a-/ALV-UjUjAjt_G-VEu5if31IEBxxGHPpJ3er7jivb8UVJ1F5AWoNemskt7Q=s50",
+    date: "Jul 18, 2025",
+    app: "brick1100",
+    content:
+      "I'm delighted with it; it has almost all the features the phone had. So nostalgic! I hope you continue with the project. Congratulations!",
+  },
+  {
     author: "Кирилл Кирилловых",
     image:
       "https://lh3.googleusercontent.com/a-/ALV-UjXZrdxOv_w1J_DeFAEavP1pSbA_3_60Y6CdgSfHOchr5ZqTKrVx=s50",
