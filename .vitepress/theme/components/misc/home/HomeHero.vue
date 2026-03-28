@@ -3,7 +3,7 @@
         <Motion class="home-hero" :style="xl ? heroStyle : undefined">
             <HomeHeroIcon class="icon-absolute" @click="reveal" />
 
-            <div class="hero-section section-left">
+            <div class="section-left hero-section">
                 <HomeHeroIcon class="icon-relative" @click="reveal" />
                 <Motion as="h1" initial="initial" animate="visible" :transition="titleTransition">
                     <Motion as="span" :variants="titleAnimation">
@@ -19,7 +19,7 @@
                 </Motion>
             </div>
 
-            <Motion class="hero-section section-right" initial="initial" animate="visible"
+            <Motion class="section-right hero-section" initial="initial" animate="visible"
                 :transition="buttonTransition">
                 <Motion :variants="buttonAnimation">
                     <button @click="() => reveal('win7simu')">
@@ -214,7 +214,6 @@ defineExpose({ hero: container })
     .section-right button>img {
         width: 1.5em;
         filter: grayscale(1);
-        border-radius: 0.5rem;
     }
 
     .section-right button:focus,

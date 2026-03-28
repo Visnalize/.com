@@ -83,7 +83,6 @@ const apps = Object.keys(APP_NAMES) as App[];
 
 .filter img {
     width: var(--icon-size);
-    border-radius: 0.25rem;
 }
 
 .filter iconify-icon {

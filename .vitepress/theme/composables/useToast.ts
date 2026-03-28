@@ -1,6 +1,9 @@
 import { useStorage } from "@vueuse/core";
+import { h } from "vue";
 import { toast } from "vue-sonner";
+import AppIcon from "../components/misc/AppIcon.vue";
 import { isExternal } from "../utils/misc";
+import { App } from "../utils/types";
 
 export const toastBlogSponsor = () => {
   return toast("Enjoying the content?", {
@@ -34,10 +37,13 @@ export const toastSitenews = async () => {
     const data: Sitenews = await response.json();
     if (!data.date || data.date === cachedDate.value) return;
 
+    const [app] = /win7simu|brick1100/.exec(data.link) || [];
+
     return toast(data.title, {
       description: data.desc,
       duration: data.desc ? 8000 : 4000,
       position: "top-center",
+      icon: app ? h(AppIcon, { app: app as App }) : undefined,
       action: {
         label: data.cta || "View",
         onClick: () => {

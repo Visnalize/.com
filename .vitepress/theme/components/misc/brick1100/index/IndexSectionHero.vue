@@ -69,7 +69,6 @@ const animateImg = (position: 'left' | 'right' | 'front') => ({
 
 .index-hero .logo {
     margin: 0 auto 1rem;
-    border-radius: 0.5rem;
 }
 
 .index-hero h1 {

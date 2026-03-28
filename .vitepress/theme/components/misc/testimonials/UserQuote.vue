@@ -105,7 +105,6 @@ const handleShowMore = () => {
 
 .app {
     width: 2rem;
-    border-radius: 0.25rem;
 }
 
 .quote-footer {

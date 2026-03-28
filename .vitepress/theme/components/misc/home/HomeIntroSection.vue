@@ -78,6 +78,5 @@ const variants = (index: number): Variants => ({
     width: 4em;
     height: auto;
     margin: 0 auto 1rem;
-    border-radius: 0.5rem;
 }
 </style>

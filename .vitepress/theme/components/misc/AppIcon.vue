@@ -1,6 +1,5 @@
 <template>
-    <img v-if="app === 'win7simu'" src="/assets/logo-win7simu.png" alt="Win7 Simu logo" v-bind="size" />
-    <img v-else src="/assets/logo-brick1100.png" alt="Brick 1100 logo" v-bind="size" />
+    <img v-bind="imgProps" />
 </template>
 
 <script setup lang="ts">
@@ -12,10 +11,17 @@ const props = defineProps<{
     size?: string
 }>()
 
-const size = computed(() => ({
-    width: props.size || '64',
-    height: props.size || '64'
-}))
+const imgProps = computed(() => {
+    const width = props.size || '64'
+    const height = props.size || '64'
+    const src = `/assets/logo-${props.app}.png`
+    const alt = `${props.app === 'win7simu' ? 'Win7 Simu' : 'Brick 1100'} logo`
+    return { src, alt, width, height }
+})
 </script>
 
-<style scoped></style>
+<style scoped>
+img {
+    border-radius: 12.5%;
+}
+</style>
