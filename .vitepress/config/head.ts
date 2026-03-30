@@ -2,8 +2,48 @@ import { HeadConfig } from "vitepress";
 import { ADSENSE_ID } from "../theme/constants";
 
 const head: HeadConfig[] = [
-  ["link", { rel: "icon", href: "/favicon.png" }],
+  // Favicon ----------------------------------------------------------------
+  [
+    "link",
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon-96x96.png",
+      sizes: "96x96",
+    },
+  ],
+  [
+    "link",
+    {
+      rel: "icon",
+      type: "image/svg+xml",
+      href: "/favicon.svg",
+    },
+  ],
+  [
+    "link",
+    {
+      rel: "shortcut icon",
+      href: "/favicon.ico",
+    },
+  ],
+  [
+    "link",
+    {
+      rel: "apple-touch-icon",
+      href: "/apple-touch-icon.png",
+      sizes: "180x180",
+    },
+  ],
+  [
+    "link",
+    {
+      rel: "manifest",
+      href: "/site.webmanifest",
+    },
+  ],
 
+  // Font preloading --------------------------------------------------------
   [
     "link",
     {
