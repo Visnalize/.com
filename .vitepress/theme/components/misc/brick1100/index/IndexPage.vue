@@ -49,12 +49,12 @@ onMounted(() => {
 <style scoped>
 @font-face {
     font-family: "primary";
-    src: url("/assets/fonts/brick.ttf") format("truetype");
+    src: url("/assets/fonts/brick.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "condensed";
-    src: url("/assets/fonts/brick-condensed.ttf") format("truetype");
+    src: url("/assets/fonts/brick-condensed.woff2") format("woff2");
 }
 
 .index-page {

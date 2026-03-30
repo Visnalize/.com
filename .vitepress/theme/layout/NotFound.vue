@@ -43,7 +43,7 @@ const router = useRouter()
 <style scoped>
 @font-face {
     font-family: "lucidacons";
-    src: url('/assets/fonts/lucidacons.ttf') format('truetype');
+    src: url('/assets/fonts/lucidacons.woff2') format('woff2');
 }
 
 #bsod {

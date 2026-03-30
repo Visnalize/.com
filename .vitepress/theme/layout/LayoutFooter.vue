@@ -112,14 +112,15 @@ footer {
 }
 
 .brand-logo img {
-    width: 1.75rem;
-    height: 1.75rem;
+    height: var(--vp-nav-logo-height);
 }
 
 .brand-logo span {
-    font-family: "croogla4f";
-    font-size: 1.5rem;
+    font-family: "fsp-demo";
+    font-size: 1.25rem;
+    letter-spacing: 8%;
     margin-top: 0.25rem;
+    text-transform: uppercase;
 }
 
 .brand-social {

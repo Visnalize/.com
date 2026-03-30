@@ -61,14 +61,25 @@
  * -------------------------------------------------------------------------- */
 
 @font-face {
-  font-family: "croogla4f";
-  src: url("/assets/fonts/croogla4f.ttf") format("truetype");
+  src: url("/assets/fonts/fsp-demo-semi.woff2") format("woff2");
+  font-family: "fsp-demo";
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("/assets/fonts/fsp-demo-bold.woff2") format("woff2");
+  font-family: "fsp-demo";
+  font-weight: 700;
+  font-style: normal;
 }
 
 .VPNavBarTitle .title span {
-  font-family: "croogla4f";
-  font-size: 1.5rem;
+  font-family: "fsp-demo";
+  font-size: 1.25rem;
+  letter-spacing: 8%;
   margin-top: 0.25rem;
+  text-transform: uppercase;
 }
 
 #app .VPSidebar {

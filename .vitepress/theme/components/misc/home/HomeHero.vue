@@ -7,10 +7,10 @@
                 <HomeHeroIcon class="icon-relative" @click="reveal" />
                 <Motion as="h1" initial="initial" animate="visible" :transition="titleTransition">
                     <Motion as="span" :variants="titleAnimation">
-                        Recreating Nostalgia
+                        Modern apps for
                     </Motion>
                     <Motion as="span" :variants="titleAnimation">
-                        for Entertainment
+                        Vintage souls
                     </Motion>
                 </Motion>
                 <Motion as="p" :initial="{ opacity: 0 }" :animate="{ opacity: 1 }"
@@ -41,7 +41,7 @@
 <script setup lang="ts">
 import { useScrollProgress } from '@composables/useMotion';
 import { useBreakpoints } from '@composables/useVueUse';
-import { AnimateOptions, Motion, Options, transform } from 'motion-v';
+import { $Transition, Motion, Options, transform } from 'motion-v';
 import { inBrowser } from 'vitepress';
 import { computed, ref } from 'vue';
 import AppIcon from '../AppIcon.vue';
@@ -59,12 +59,12 @@ const heroStyle = computed(() => ({
 const sharedIntro = 'Miss the operating systems that you grew up with? Want to experience the old-school brickphone again?'
 const intro = computed(() => xl.value ? `Visnalize brings retro products back to life with creative ideas and modern technology. ${sharedIntro} They are at your fingertips, literally.` : `${sharedIntro} Visnalize got you covered.`)
 
-const titleTransition: AnimateOptions = {
+const titleTransition: $Transition = {
     staggerChildren: 0.2,
     delayChildren: 0.3,
 }
 
-const buttonTransition: AnimateOptions = {
+const buttonTransition: $Transition = {
     staggerChildren: 0.1,
     delayChildren: 1.2,
 }
@@ -113,7 +113,7 @@ defineExpose({ hero: container })
     color: var(--vp-c-text-1);
     display: flex;
     flex-direction: column;
-    font-family: "croogla4f";
+    font-family: "fsp-demo";
 }
 
 .section-left p {
@@ -166,7 +166,7 @@ defineExpose({ hero: container })
     }
 
     .section-left h1 {
-        font-size: 2.75rem;
+        font-size: 3rem;
     }
 }
 
@@ -201,6 +201,7 @@ defineExpose({ hero: container })
 
     .section-left p {
         text-align: right;
+        max-width: 480px;
     }
 
     .section-right {
@@ -241,7 +242,7 @@ defineExpose({ hero: container })
 @media (min-width: 1440px) {
 
     .section-left h1 {
-        font-size: 3.75rem;
+        font-size: 4rem;
     }
 
     .section-right button {
