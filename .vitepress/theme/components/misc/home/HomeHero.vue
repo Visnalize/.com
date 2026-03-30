@@ -201,6 +201,7 @@ defineExpose({ hero: container })
 
     .section-left p {
         text-align: right;
+        max-width: 480px;
     }
 
     .section-right {
