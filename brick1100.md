@@ -8,15 +8,15 @@ pageClass: brick1100
 head:
   - - link
     - rel: preload
-      href: /assets/fonts/brick.ttf
+      href: /assets/fonts/brick.woff2
       as: font
-      type: font/ttf
+      type: font/woff2
       crossorigin: anonymous
   - - link
     - rel: preload
-      href: /assets/fonts/brick-condensed.ttf
+      href: /assets/fonts/brick-condensed.woff2
       as: font
-      type: font/ttf
+      type: font/woff2
       crossorigin: anonymous
 ---
 

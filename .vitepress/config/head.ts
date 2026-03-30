@@ -8,9 +8,9 @@ const head: HeadConfig[] = [
     "link",
     {
       rel: "preload",
-      href: "/assets/fonts/croogla4f.ttf",
+      href: "/assets/fonts/fsp-demo-semi.woff2",
       as: "font",
-      type: "font/ttf",
+      type: "font/woff2",
       crossorigin: "anonymous",
     },
   ],
