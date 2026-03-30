@@ -6,7 +6,7 @@
         <div ref="container" class="channel">
             <div class="header">
                 <Motion as="img" :variants="headerVariants(0)" :animate="animate" class="header-logo" width="120"
-                    height="120" src="/favicon.png" alt="Channel logo" />
+                    height="120" :src="stats.thumbnails.medium.url" alt="Channel logo" />
                 <div class="header-content">
                     <Motion as="h3" :variants="headerVariants(1)" :animate="animate">
                         {{ stats.title || 'Visnalize' }}
@@ -122,6 +122,7 @@ const videoVariants = (index: number): Variants => ({
 .header-logo {
     width: 72px;
     height: 72px;
+    border-radius: 99px;
 }
 
 .subscribe-desktop {
