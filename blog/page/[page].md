@@ -1,7 +1,9 @@
 ---
 title: News and sharing - Page ???
+next: false
 aside: false
 comments: false
+lastUpdated: false
 pagefind-indexed: false
 pageClass: blog
 ---

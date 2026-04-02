@@ -1,7 +1,9 @@
 ---
 title: Posts with tag ??? - Page ???
+next: false
 aside: false
 comments: false
+lastUpdated: false
 pagefind-indexed: false
 pageClass: blog
 ---
