@@ -24,9 +24,13 @@ import { computed } from 'vue';
 const props = defineProps<{
     currentPage: number;
     totalPages: number;
+    tag?: string;
 }>();
 
 function pageHref(page: number) {
+    if (props.tag) {
+        return page === 1 ? `/blog/tag/${props.tag}` : `/blog/tag/${props.tag}/${page}`;
+    }
     return page === 1 ? '/blog' : `/blog/page/${page}`;
 }
 

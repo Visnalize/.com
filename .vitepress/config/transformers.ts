@@ -16,8 +16,8 @@ import { isDevMode } from "../theme/utils/misc";
 export const transformPageData: UserConfig["transformPageData"] = async (
   data: PageData & Record<string, any>
 ) => {
-  // blog listing paginated page
-  if (data.params?.page) {
+  // blog listing paginated page (non-tag)
+  if (data.params?.page && !data.params?.tag) {
     const page = data.params.page;
     data.title = `News and sharing - Page ${page}`;
     data.description = `Page ${page} of our blog. Helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
@@ -26,6 +26,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   // blog listing tag page
   if (data.params?.tag) {
     const { tag } = data.params;
+    const page = data.params.page;
     let title = `Posts with tag "${tag}"`;
     let description = `All posts with tag "${tag}". Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
     if (tag === "sponsor") {
@@ -37,6 +38,10 @@ export const transformPageData: UserConfig["transformPageData"] = async (
       title = "News and updates";
       description =
         "Catch up on the latest news, updates, and announcements, including important changes, major releases, and more.";
+    }
+    if (page) {
+      title += ` - Page ${page}`;
+      description = `Page ${page}. ${description}`;
     }
     data.title = title;
     data.description = description;

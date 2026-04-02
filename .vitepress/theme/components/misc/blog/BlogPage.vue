@@ -8,11 +8,11 @@
     <SponsorAd format="horizontal" />
 
     <BlogList>
-        <BlogPost v-for="(post, i) in displayedPosts"
-            :post="{ ...post, badge: isLatest(i) ? 'latest' : post.badge }" :class="{ latest: isLatest(i) }" />
+        <BlogPost v-for="(post, i) in displayedPosts" :post="{ ...post, badge: isLatest(i) ? 'latest' : post.badge }"
+            :class="{ latest: isLatest(i) }" />
     </BlogList>
 
-    <BlogPagination v-if="!currentTag" :currentPage="currentPage" :totalPages="totalPages" />
+    <BlogPagination :currentPage="currentPage" :totalPages="totalPages" :tag="currentTag" />
 </template>
 
 <script setup lang="ts">
@@ -31,17 +31,29 @@ const POSTS_PER_PAGE = 12;
 
 const { title, description, params } = useData()
 
-const currentTag = params.value?.tag as string;
-const tagPosts = posts.filter(post => post.tags.filter(tag => tag.name === currentTag).length > 0);
-
 const currentPage = Number(params.value?.page) || 1;
-const totalPages = 1 + Math.ceil((posts.length - FIRST_PAGE_SIZE) / POSTS_PER_PAGE);
-const startIndex = currentPage === 1 ? 0 : FIRST_PAGE_SIZE + (currentPage - 2) * POSTS_PER_PAGE;
-const endIndex = currentPage === 1 ? FIRST_PAGE_SIZE : startIndex + POSTS_PER_PAGE;
-const pagedPosts = posts.slice(startIndex, endIndex);
+const currentTag = params.value?.tag as string;
+const allPosts = currentTag
+    ? posts.filter(post => post.tags.some(tag => tag.name === currentTag))
+    : posts;
 
-const displayedPosts = currentTag ? tagPosts : pagedPosts;
-const isLatest = (index: number) => index === 0 && currentPage === 1 && !currentTag;
+const isFirstPage = currentPage === 1;
+let totalPages: number;
+let startIndex: number;
+let endIndex: number;
+
+if (currentTag) {
+    totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
+    startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+    endIndex = startIndex + POSTS_PER_PAGE;
+} else {
+    totalPages = 1 + Math.ceil((allPosts.length - FIRST_PAGE_SIZE) / POSTS_PER_PAGE);
+    startIndex = isFirstPage ? 0 : FIRST_PAGE_SIZE + (currentPage - 2) * POSTS_PER_PAGE;
+    endIndex = isFirstPage ? FIRST_PAGE_SIZE : startIndex + POSTS_PER_PAGE;
+}
+
+const displayedPosts = allPosts.slice(startIndex, endIndex);
+const isLatest = (index: number) => index === 0 && isFirstPage && !currentTag;
 </script>
 
 <style scoped>
