@@ -1,0 +1,71 @@
+[
+  {
+    "name": "callmechat",
+    "logo": "/assets/clients/callmechat.svg",
+    "width": 200,
+    "isDark": true
+  },
+  {
+    "name": "Overchat AI",
+    "logo": "/assets/clients/overchat.svg",
+    "width": 50,
+    "showName": true
+  },
+  {
+    "name": "Documents",
+    "logo": "/assets/clients/documentsio.svg",
+    "width": 200,
+    "isDark": true
+  },
+  {
+    "name": "murf.ai",
+    "logo": "/assets/clients/murfai.svg",
+    "width": 200,
+    "isLight": true
+  },
+  {
+    "name": "Surfshark",
+    "logo": "/assets/clients/surfshark.svg",
+    "width": 200,
+    "isDark": true
+  },
+  {
+    "name": "PROXYS.IO",
+    "logo": "/assets/clients/proxys.io.png",
+    "width": 200,
+    "isLight": true
+  },
+  {
+    "name": "SkyCoach",
+    "logo": "/assets/clients/skycoach.svg",
+    "width": 160,
+    "isLight": true
+  },
+  {
+    "name": "HostZealot",
+    "logo": "/assets/clients/hostzealot.svg",
+    "width": 280,
+    "isLight": true
+  },
+  {
+    "name": "Proton",
+    "logo": "/assets/clients/proton.svg",
+    "width": 160
+  },
+  {
+    "name": "JetBase",
+    "logo": "/assets/clients/jetbase.svg",
+    "width": 160,
+    "isDark": true
+  },
+  {
+    "name": "Mellow Promo",
+    "logo": "/assets/clients/mellowpromo.webp",
+    "width": 100
+  },
+  {
+    "name": "ROIHIGH",
+    "logo": "/assets/clients/roihigh.webp",
+    "width": 160
+  }
+]

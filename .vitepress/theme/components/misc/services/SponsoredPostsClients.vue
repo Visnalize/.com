@@ -1,25 +1,17 @@
 <template>
-  <div class="wrapper">
+  <div v-if="!fetchError" class="wrapper">
     <div class="title">Our clients</div>
     <div class="marquee">
       <div ref="trackRef" class="marquee-track">
         <div v-for="client in clients" :key="client.name" class="client">
-          <img
-            :src="client.logo"
-            :alt="client.name"
-            :width="client.width"
-            height="100"
-            :class="client.isLight ? 'is-light' : 'is-dark'"
-          />
+          <img :src="client.logo" :alt="client.name" :width="client.width" height="100"
+            :class="{ 'is-light': client.isLight, 'is-dark': client.isDark }" />
+          <span v-if="client.showName">{{ client.name }}</span>
         </div>
         <div v-for="client in clients" :key="client.name + '-dup'" class="client">
-          <img
-            :src="client.logo"
-            :alt="client.name"
-            :width="client.width"
-            height="100"
-            :class="client.isLight ? 'is-light' : 'is-dark'"
-          />
+          <img :src="client.logo" :alt="client.name" :width="client.width" height="100"
+            :class="{ 'is-light': client.isLight, 'is-dark': client.isDark }" />
+          <span v-if="client.showName">{{ client.name }}</span>
         </div>
       </div>
     </div>
@@ -27,9 +19,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, nextTick, onMounted, onUnmounted } from "vue";
+
+interface Client {
+  name: string;
+  logo: string;
+  width: number;
+  showName?: boolean;
+  isLight?: boolean;
+  isDark?: boolean;
+}
 
 const trackRef = ref<HTMLElement>();
+const clients = ref<Client[]>([]);
+const fetchError = ref(false);
+
+async function fetchList() {
+  try {
+    const res = await fetch("/assets/clients/list.json");
+    clients.value = await res.json();
+  } catch (e) {
+    fetchError.value = true;
+  }
+}
 
 function updateScrollDistance() {
   const track = trackRef.value;
@@ -47,7 +59,9 @@ function updateScrollDistance() {
 
 let resizeObserver: ResizeObserver | undefined;
 
-onMounted(() => {
+onMounted(async () => {
+  await fetchList();
+  await nextTick();
   updateScrollDistance();
   resizeObserver = new ResizeObserver(updateScrollDistance);
   if (trackRef.value) resizeObserver.observe(trackRef.value);
@@ -56,58 +70,6 @@ onMounted(() => {
 onUnmounted(() => {
   resizeObserver?.disconnect();
 });
-
-const clients = [
-  {
-    name: "ROIHIGH",
-    logo: "/assets/clients/roihigh.webp",
-    width: 160,
-  },
-  {
-    name: "Mellow Promo",
-    logo: "/assets/clients/mellowpromo.webp",
-    width: 100,
-  },
-  {
-    name: "JetBase",
-    logo: "/assets/clients/jetbase.svg",
-    width: 160,
-  },
-  {
-    name: "Proton",
-    logo: "/assets/clients/proton.svg",
-    width: 160,
-  },
-  {
-    name: "HostZealot",
-    logo: "/assets/clients/hostzealot.svg",
-    width: 280,
-    isLight: true,
-  },
-  {
-    name: "SkyCoach",
-    logo: "/assets/clients/skycoach.svg",
-    width: 160,
-    isLight: true,
-  },
-  {
-    name: "PROXYS.IO",
-    logo: "/assets/clients/proxys.io.png",
-    width: 200,
-    isLight: true,
-  },
-  {
-    name: "surfshark",
-    logo: "/assets/clients/surfshark.svg",
-    width: 200,
-  },
-  {
-    name: "murf.ai",
-    logo: "/assets/clients/murfai.svg",
-    width: 200,
-    isLight: true,
-  },
-];
 </script>
 
 <style scoped>
@@ -126,8 +88,13 @@ const clients = [
 
 .marquee {
   width: 100%;
+  height: 100px;
   overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
 }
 
 .marquee-track {
@@ -146,27 +113,33 @@ const clients = [
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  gap: 0.5rem;
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(var(--scroll-distance));
   }
 }
 
 .client img {
-  filter: drop-shadow(1px 0 var(--shadow)) drop-shadow(0 1px var(--shadow))
-    drop-shadow(0 -1px var(--shadow));
+  filter: drop-shadow(1px 0 var(--shadow)) drop-shadow(0 1px var(--shadow)) drop-shadow(0 -1px var(--shadow)) drop-shadow(-1px 0 var(--shadow));
+}
+
+.client span {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .client .is-light {
-  --shadow: #000;
+  --shadow: #0009;
 }
 
 .client .is-dark {
-  --shadow: #fff;
+  --shadow: #fff9;
 }
 </style>

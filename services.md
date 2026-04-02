@@ -22,9 +22,9 @@ If you have a product or service that you would like to promote, you can sponsor
 
 <ServicePrice price="$30" suffix="/post" buttonLink="mailto:hey@visnalize.com?subject=Sponsored Posts" terms="/services/sponsored-posts" :features="[
     'A carefully reviewed/crafted post about your product or service',
-    'Unlimited revisions until the post meets both parties\' standards',
     'Permanent do-follow links back to your site in the post',
     'The post will be featured on the homepage for at least 1 week',
+    'A smooth and hassle-free process, with a quick turnaround time',
 ]" />
 
 <SponsoredPostsClients />

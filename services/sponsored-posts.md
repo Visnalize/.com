@@ -12,7 +12,15 @@ import SponsoredPostsClients from '@components/misc/services/SponsoredPostsClien
 
 # Sponsored Posts
 
-You can publish posts on our [blog](../blog.md) and benefit from our traffic, domain authority, and audience. In exchange, we charge a small fee for the service, which is significantly more affordable than other platforms.
+:::tip TL;DR
+
+- Publish posts on our blog for do-follow backlinks, traffic, domain authority, and audience.
+- See [pricing options](#pricing) and [content guidelines](#content-guidelines) for critical details.
+- Inquiries or requests are communicated via [email](mailto:hey@visnalize.com).
+
+:::
+
+You can publish posts on our [blog](../blog.md) for do-follow backlinks and benefit from our traffic, domain authority, and audience. In exchange, we charge a small, one-time fee for each post, which is significantly more affordable than other platforms.
 
 We offer several [pricing options](#pricing), you can choose the price based on your needs and budget.
 
@@ -24,19 +32,38 @@ For inquiries or to discuss custom requests, you can also contact us via [email]
 
 ## Pricing
 
-- ~~Early offer for the first 10 posts: __$20/post__~~ (sold out).
+- ~~Early offer: __$20/post__~~ _(sold out)_.
 - Regular posts (you write, we review, we publish): __$30/post__.
 - Custom posts (we write, you review, we publish): __$40/post__.
 
 With the `sponsor` tag removed:
 
-- ~~Early offer: __$40/post__~~ (sold out).
+- ~~Early offer: __$40/post__~~ _(sold out)_.
 - Regular posts: __$60/post__.
 - Custom posts: __$80/post__.
 
 ::: warning Note on payment due
 Payment is required within 5 working days after publishing, unless otherwise agreed upon. If payment is not received after the due date, the post will be removed from the site.
 :::
+
+## Process
+
+For regular posts:
+
+1. __You__ write your post and send it to us via [email](mailto:hey@visnalize.com).
+2. __We__ review your post and provide feedback if necessary.
+3. __You__ make any necessary revisions based on our feedback.
+4. __We__ publish your post once it meets our [content guidelines](#content-guidelines).
+5. __You__ make the payment after the post is published.
+
+For custom posts:
+
+1. __You__ provide us with the topic and any specific requirements for the post via [email](mailto:hey@visnalize.com).
+2. __We__ write the post and send it to you.
+3. __You__ review the post and provide feedback if necessary.
+4. __We__ make any necessary revisions based on your feedback.
+5. __You__ make the payment.
+6. __We__ publish the post after payment is received.
 
 ## Content guidelines
 
