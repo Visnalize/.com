@@ -1,21 +1,62 @@
 <template>
   <div class="wrapper">
     <div class="title">Our clients</div>
-    <div class="list">
-      <div v-for="client in clients" :key="client.name" class="client">
-        <img
-          :src="client.logo"
-          :alt="client.name"
-          :width="client.width"
-          height="100"
-          :class="client.isLight ? 'is-light' : 'is-dark'"
-        />
+    <div class="marquee">
+      <div ref="trackRef" class="marquee-track">
+        <div v-for="client in clients" :key="client.name" class="client">
+          <img
+            :src="client.logo"
+            :alt="client.name"
+            :width="client.width"
+            height="100"
+            :class="client.isLight ? 'is-light' : 'is-dark'"
+          />
+        </div>
+        <div v-for="client in clients" :key="client.name + '-dup'" class="client">
+          <img
+            :src="client.logo"
+            :alt="client.name"
+            :width="client.width"
+            height="100"
+            :class="client.isLight ? 'is-light' : 'is-dark'"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
+
+const trackRef = ref<HTMLElement>();
+
+function updateScrollDistance() {
+  const track = trackRef.value;
+  if (!track) return;
+  const children = track.children;
+  const half = children.length / 2;
+  let width = 0;
+  for (let i = 0; i < half; i++) {
+    width += (children[i] as HTMLElement).offsetWidth;
+  }
+  const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+  width += gap * half; // half items + 1 gap to the duplicate
+  track.style.setProperty("--scroll-distance", `-${width}px`);
+}
+
+let resizeObserver: ResizeObserver | undefined;
+
+onMounted(() => {
+  updateScrollDistance();
+  resizeObserver = new ResizeObserver(updateScrollDistance);
+  if (trackRef.value) resizeObserver.observe(trackRef.value);
+});
+
+onUnmounted(() => {
+  resizeObserver?.disconnect();
+});
+
 const clients = [
   {
     name: "ROIHIGH",
@@ -83,17 +124,37 @@ const clients = [
   font-weight: bold;
 }
 
-.list {
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
 }
 
 .client {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--scroll-distance));
+  }
 }
 
 .client img {
