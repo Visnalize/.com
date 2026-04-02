@@ -8,9 +8,11 @@
     <SponsorAd format="horizontal" />
 
     <BlogList>
-        <BlogPost v-for="(post, i) in (currentTag ? tagPosts : posts)"
+        <BlogPost v-for="(post, i) in displayedPosts"
             :post="{ ...post, badge: isLatest(i) ? 'latest' : post.badge }" :class="{ latest: isLatest(i) }" />
     </BlogList>
+
+    <BlogPagination v-if="!currentTag" :currentPage="currentPage" :totalPages="totalPages" />
 </template>
 
 <script setup lang="ts">
@@ -20,14 +22,26 @@ import { useData } from 'vitepress';
 import SponsorAd from '../../global/SponsorAd.vue';
 import PageTitle from '../PageTitle.vue';
 import BlogList from './BlogList.vue';
+import BlogPagination from './BlogPagination.vue';
 import BlogPost from './BlogPost.vue';
 import BlogTags from './BlogTags.vue';
 
+const FIRST_PAGE_SIZE = 11;
+const POSTS_PER_PAGE = 12;
+
 const { title, description, params } = useData()
+
 const currentTag = params.value?.tag as string;
 const tagPosts = posts.filter(post => post.tags.filter(tag => tag.name === currentTag).length > 0);
 
-const isLatest = (index: number) => index === 0 && !currentTag;
+const currentPage = Number(params.value?.page) || 1;
+const totalPages = 1 + Math.ceil((posts.length - FIRST_PAGE_SIZE) / POSTS_PER_PAGE);
+const startIndex = currentPage === 1 ? 0 : FIRST_PAGE_SIZE + (currentPage - 2) * POSTS_PER_PAGE;
+const endIndex = currentPage === 1 ? FIRST_PAGE_SIZE : startIndex + POSTS_PER_PAGE;
+const pagedPosts = posts.slice(startIndex, endIndex);
+
+const displayedPosts = currentTag ? tagPosts : pagedPosts;
+const isLatest = (index: number) => index === 0 && currentPage === 1 && !currentTag;
 </script>
 
 <style scoped>

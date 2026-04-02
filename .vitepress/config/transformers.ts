@@ -16,6 +16,13 @@ import { isDevMode } from "../theme/utils/misc";
 export const transformPageData: UserConfig["transformPageData"] = async (
   data: PageData & Record<string, any>
 ) => {
+  // blog listing paginated page
+  if (data.params?.page) {
+    const page = data.params.page;
+    data.title = `News and sharing - Page ${page}`;
+    data.description = `Page ${page} of our blog. Helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
+  }
+
   // blog listing tag page
   if (data.params?.tag) {
     const { tag } = data.params;
