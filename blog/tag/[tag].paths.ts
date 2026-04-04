@@ -1,4 +1,4 @@
-import { getBlogFiles } from "../../../.content/misc.data";
+import { getBlogFiles } from "../../.content/misc.data";
 
 export default {
   paths() {
