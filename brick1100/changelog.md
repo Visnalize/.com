@@ -18,6 +18,14 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2026
 
+### `1.3.0` (Apr 13, 2026)
+
+- Added 5110 phone model (Menu > Settings > Phone settings > Model) <Notation icon="premium" />
+- Added new built-in game: [Wordee](./games.md#wordee) (Menu > Games > Wordee)
+- Added Screensavers (Menu > Extras > Screensavers)
+- Optimized popup ads for better experience
+- Trial can only be used once per day, but has duration extended to 30 mins
+
 ### `1.2.0` (Jan 31, 2026)
 
 - Added new built-in game: [Space Impact +](./games.md#space-impact) (Menu > Games > Space Impact +)

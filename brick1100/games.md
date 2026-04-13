@@ -155,3 +155,20 @@ Fly the duck through the gaps between pipes. The longer you survive, the higher 
 - <KeyIcon s="clear" /> - pause game
 - __Any key__ - flap wings / fly up
 :::
+
+## Wordee
+
+| Splash screen | Gameplay |
+| --- | --- |
+| ![Wordee intro](./games/wordee-intro.png) | ![Wordee gameplay](./games/wordee-gameplay.png) |
+
+:::tip Goal
+Guess a hidden 4-letter word within 5 tries. Filled letters are in the correct position, checkered letters are in the word but wrong position.
+:::
+
+:::warning Controls
+
+- <KeyIcon s="4" /> / <KeyIcon s="6" /> - change active slot
+- <KeyIcon s="2" /> / <KeyIcon s="8" /> - scroll through letters for the active slot
+- <KeyIcon s="navi" /> / <KeyIcon s="5" /> - submit guess
+:::
