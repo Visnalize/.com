@@ -18,6 +18,11 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2026
 
+### `1.3.1` (Apr 22, 2026)
+
+- Fixed audio issues
+- Fixed Chrome Dino not opening
+
 ### `1.3.0` (Apr 13, 2026)
 
 - Added 5110 phone model (Menu > Settings > Phone settings > Model) <Notation icon="premium" />
