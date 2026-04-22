@@ -12,6 +12,13 @@ pageClass: changelog
 
 ## 2026
 
+### `4.2.0` (April 22, 2026)
+
+- Optimized ads for better experience
+- Added custom scrollbar that matches with themes
+- Added EUR option in the Currency gadget
+- Fixed issue with Paint when saving image
+
 ### `4.1.0` (March 27, 2026)
 
 - Added new premium theme: [Onebit](./themes/onebit.md)
