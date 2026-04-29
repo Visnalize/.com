@@ -12,6 +12,23 @@ pageClass: changelog
 
 ## 2026
 
+### `4.3.0` (April 30, 2026)
+
+__Android__
+
+- Updated libraries and dependencies to the latest versions
+- Dropped support for Android 6 due to technical constraints
+- Improvements for web browsers
+  - Website title and favicon now display correctly in Chrome
+  - Fixed OutOfMemoryError issue on some devices
+- Slightly optimized app size
+- Fixed ads frequency cap not working
+
+__Web__
+
+- Fixed non-scrollable/broken layouts
+- Unsupported portrait error no longer displays a BSOD and forces restart
+
 ### `4.2.0` (April 22, 2026)
 
 - Optimized ads for better experience
