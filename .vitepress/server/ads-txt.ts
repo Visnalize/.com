@@ -400,17 +400,13 @@ const VITEPRESS_OUT_DIR = join(cwd(), ".vitepress", "dist");
 
 export const generateAdsTxt = async () => {
   console.log("Generating ads.txt");
-  let adsTxtValue = GOOGLE_ADS_TXT;
   try {
-    const data = await fetch(
-      "https://ads.themoneytizer.com/ads_txt.php?site_id=127550&id=117816",
-    );
-    const text = await data.text();
-    adsTxtValue += "\n" + text;
+    const data = await fetch("https://monetumo.com/ads-txt/visnalize-com");
+    const adsTxtValue = await data.text();
+    writeFileSync(join(VITEPRESS_OUT_DIR, "ads.txt"), adsTxtValue);
   } catch (error) {
-    console.error("Error fetching ads.txt from themoneytizer", error);
+    console.error("Error fetching ads.txt", error);
   }
-  writeFileSync(join(VITEPRESS_OUT_DIR, "ads.txt"), adsTxtValue);
 };
 
 export const generateAppAdsTxt = () => {
