@@ -78,6 +78,37 @@ const head: HeadConfig[] = [
       src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
     },
   ],
+
+  // Monetumo ----------------------------------------------------------------
+  [
+    "link",
+    {
+      rel: "stylesheet",
+      href: "https://b-cdn.monetumo.com/cls-css/visnalize-com.css",
+    },
+  ],
+  [
+    "script",
+    {
+      src: "https://b-cdn.monetumo.com/cmp/visnalize-com.js",
+      "data-cfasync": "false",
+    },
+  ],
+  [
+    "script",
+    {
+      async: "true",
+      src: "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+    },
+  ],
+  [
+    "script",
+    {
+      defer: "true",
+      src: "https://b-cdn.monetumo.com/bundles/visnalize-com.js",
+      "data-cfasync": "false",
+    },
+  ],
 ];
 
 export default head;
