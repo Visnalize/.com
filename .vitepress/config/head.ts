@@ -78,21 +78,6 @@ const head: HeadConfig[] = [
       src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
     },
   ],
-
-  // Adsense ad-blocking recovery -------------------------------------------
-  [
-    "script",
-    {
-      async: "true",
-      src: `https://fundingchoicesmessages.google.com/i/pub-${ADSENSE_ID}?ers=1`,
-      nonce: "3HRDcENAr3Egc7skT36mnQ",
-    },
-  ],
-  [
-    "script",
-    { nonce: "3HRDcENAr3Egc7skT36mnQ" },
-    "(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();",
-  ],
 ];
 
 export default head;
