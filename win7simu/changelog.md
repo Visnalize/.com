@@ -12,6 +12,19 @@ pageClass: changelog
 
 ## 2026
 
+### `4.3.2` (May 8, 2026)
+
+__Android__
+
+- Fixed Google Sign-in not working on some devices
+
+### `4.3.1` (May 7, 2026)
+
+__Android__
+
+- Fixed Chrome not loading sites from Google search
+- Other minor fixes
+
 ### `4.3.0` (April 30, 2026)
 
 __Android__
