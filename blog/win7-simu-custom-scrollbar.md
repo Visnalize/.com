@@ -23,11 +23,13 @@ Additionally, with the ability to switch between different OS themes provided by
 
 Just the above reasons are already enough for us to implement the custom scrollbar, but as we progressed with the implementation, we also found that it can help us circumvent some issues we have with the native scrollbar, and provide a better user experience for users using touch devices, which is a worthwhile bonus!
 
+<SponsorAd />
+
 ## The implementation
 
 ### The design
 
-The implementation goal for the custom scrollbar is based on an it-just-works principle. It can be integrated by wrapping it around the *scroll content* element and it will handle everything, no additional configuration needed.
+The implementation goal for the custom scrollbar is based on an it-just-works principle. It can be integrated by wrapping it around the _scroll content_ element and it will handle everything, no additional configuration needed.
 
 ```html
 <scrollbar-container>
@@ -35,7 +37,7 @@ The implementation goal for the custom scrollbar is based on an it-just-works pr
 </scrollbar-container>
 ```
 
-Inside the *scrollbar container* are a [slot](https://v2.vuejs.org/v2/guide/components-slots) for the *scroll content*, a vertical and a horizontal *scrollbar* component. The *scrollbar container* reads and listens for changes of the *scroll content* via the slot and automatically updates the other two *scrollbar* components accordingly. It also injects several custom classes to style the *scroll content* element correctly and to [hide the system scrollbar](https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp) from appearing alongside the custom scrollbars.
+Inside the _scrollbar container_ are a [slot](https://v2.vuejs.org/v2/guide/components-slots) for the _scroll content_, a vertical and a horizontal _scrollbar_ component. The _scrollbar container_ reads and listens for changes of the _scroll content_ via the slot and automatically updates the other two _scrollbar_ components accordingly. It also injects several custom classes to style the _scroll content_ element correctly and to [hide the system scrollbar](https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp) from appearing alongside the custom scrollbars.
 
 ```html
 <!-- ScrollbarContainer.vue -->
@@ -51,7 +53,7 @@ Inside the *scrollbar container* are a [slot](https://v2.vuejs.org/v2/guide/comp
 </div>
 ```
 
-The *scrollbar* component contains four main parts: a scroll up/left button, a scroll down/right button, a scroll thumb, and a scroll track. The entire component is constructed using only `<div>` and `<button>` elements, providing us great controls over styling, and better yet, animating it, which is not possible with [scrollbar pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::-webkit-scrollbar) at the time of this writing.
+The _scrollbar_ component contains four main parts: a scroll up/left button, a scroll down/right button, a scroll thumb, and a scroll track. The entire component is constructed using only `<div>` and `<button>` elements, providing us great controls over styling, and better yet, animating it, which is not possible with [scrollbar pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::-webkit-scrollbar) at the time of this writing.
 
 ```html
 <!-- Scrollbar.vue -->
@@ -69,12 +71,13 @@ The *scrollbar* component contains four main parts: a scroll up/left button, a s
 ### The functionalities
 
 The custom scrollbar does mainly two things:
+
 1. Sync the scroll progress. It includes updating the scroll thumb height to represent the amount of scrollable content and updating the position of the scroll thumb to represent the scrolling progress.
 2. Scroll the content when it is interacted.
 
 #### Syncing
 
-The *scrollbar container* reads the *scroll content* from the default slot and listens for scroll events, resize events via [`ResizeObserver`](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver), and changes inside the element via [`MutationObserver`](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) to update the scrollbars. The scroll thumb position and its height are calculated in percentage as it's more intuitive than seeing arbitrary, random pixel values. The scrollable content's scrolling states can be queried via [`scrollTop`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop)/[`scrollLeft`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft), [`scrollHeight`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight)/[`scrollWidth`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollWidth), and [`clientHeight`](https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight)/[`clientWidth`](https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth). These values are all in pixels so we had to convert them all to percentage to properly position the scroll thumb.
+The _scrollbar container_ reads the _scroll content_ from the default slot and listens for scroll events, resize events via [`ResizeObserver`](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver), and changes inside the element via [`MutationObserver`](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) to update the scrollbars. The scroll thumb position and its height are calculated in percentage as it's more intuitive than seeing arbitrary, random pixel values. The scrollable content's scrolling states can be queried via [`scrollTop`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop)/[`scrollLeft`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft), [`scrollHeight`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight)/[`scrollWidth`](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollWidth), and [`clientHeight`](https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight)/[`clientWidth`](https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth). These values are all in pixels so we had to convert them all to percentage to properly position the scroll thumb.
 
 The example code below shows how the scroll thumb height (`this.thumbHeight`) and its top position (`this.thumbTop`) are calculated for the vertical scrollbar. We're basically mapping one value range (pixels) to another one (percentage). The same thing applies to the horizontal scrollbar but `clientWidth`, `scrollWidth`, and `scrollLeft` are used instead. The scroll thumb height is capped at `MIN_THUMB_HEIGHT` (the acceptably smallest possible size the thumb can get), otherwise, it could get ridiculously small or even disappear entirely if the scroll content were large.
 
@@ -85,9 +88,11 @@ const maxScrollable = this.element.scrollTop / (this.element.scrollHeight - this
 this.thumbTop = maxScrollable * (100 - this.thumbHeight);
 ```
 
+<SponsorAd />
+
 #### Scrolling
 
-When the custom scrollbar is interacted with by the user, it now has to handle the scrolling. This can be effortlessly done by setting new values to the `scrollTop` or `scrollLeft` properties of the *scroll content*. When updating those properties, the browser will trigger a scroll event and because the scrollbar is already listening for the scroll event, it will update the scroll thumb automatically. The `scrollTop`, `scrollLeft`, [`MouseEvent`](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent), and [`PointerEvent`](https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent) accept/return values in pixels so we didn't have to convert anything to percentage here.
+When the custom scrollbar is interacted with by the user, it now has to handle the scrolling. This can be effortlessly done by setting new values to the `scrollTop` or `scrollLeft` properties of the _scroll content_. When updating those properties, the browser will trigger a scroll event and because the scrollbar is already listening for the scroll event, it will update the scroll thumb automatically. The `scrollTop`, `scrollLeft`, [`MouseEvent`](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent), and [`PointerEvent`](https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent) accept/return values in pixels so we didn't have to convert anything to percentage here.
 
 There are a handful of different interactions that the scrollbar must support, like dragging the scroll thumb, clicking on the scroll track, and clicking on the scroll buttons.
 
