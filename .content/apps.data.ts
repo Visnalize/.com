@@ -1,6 +1,6 @@
 import { App } from "@/.vitepress/theme/utils/types";
 import { readFileSync } from "fs";
-import gplay, { IAppItemFullDetail } from "google-play-scraper";
+import { app, IAppItemFullDetail } from "google-play-scraper";
 import { join } from "path";
 import { defineLoader } from "vitepress";
 import cache from "./utils/cache";
@@ -28,10 +28,10 @@ export default defineLoader({
     const appIds: App[] = ["win7simu", "brick1100"];
     const [win7simu, brick1100] = await Promise.all(
       appIds.map(async (appId) => {
-        const stats = await gplay.app({ appId: "com.visnalize." + appId });
+        const stats = await app({ appId: "com.visnalize." + appId });
         const releaseCount = getReleaseCount(appId);
         return { ...stats, releaseCount };
-      })
+      }),
     );
 
     const data: AppData = { win7simu, brick1100 };
