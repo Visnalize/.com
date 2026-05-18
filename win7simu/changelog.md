@@ -12,6 +12,25 @@ pageClass: changelog
 
 ## 2026
 
+### `4.4.0` (May 18, 2026)
+
+__Core__
+
+- Added advanced features for [Calculator](./simulated/calculator.md)
+  - New menu bar for more Calculator options
+  - New Scientific mode, Unit Conversion layout, memory functions
+  - Overall enhancements for calculations and cross-theme appearance
+- Added language support for: Traditional Chinese
+- Fixed desktop shortcut issues
+- Fixed an issue with the app icon showing up in some places
+- Several other bug fixes and improvements
+
+__Android__
+
+- Added touchpad control settings in [Mouse](./simulated/mouse.md)
+  - When enabled, you can control the pointer using the touchscreen, similar to how a touchpad works
+  - Optionally accompanied by the virtual buttons for left/right clicks
+
 ### `4.3.2` (May 8, 2026)
 
 __Android__

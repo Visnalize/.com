@@ -30,12 +30,14 @@ Feature | Android | Web
 <span :class="$style.tip" v-tooltip="{content: 'Web version works on either Android, iOS, Windows,<br/>or Mac, as you access it via the web browser.',html: true}">Cross-platform support<iconify-icon icon="fluent:question-circle-24-regular" /></span> | 🔴 | 🟢
 Work offline | 🟢 | 🟢
 <span :class="$style.tip" v-tooltip="{content: 'Early versions of Win7 Simu were able to access local files<br/>on Android version. However, due to Google Play\'s policy,<br/>this feature was removed from v3.6.0 onwards.',html: true}">Can access local files directly with File Explorer<iconify-icon icon="fluent:question-circle-24-regular" /></span> | 🔴 | 🔴
+<span :class="$style.tip" v-tooltip="{content: 'File download is currently not supported on Android version.',html: true}">File download and upload<iconify-icon icon="fluent:question-circle-24-regular" /></span> | 🟡 | 🟢
 <span :class="$style.tip" v-tooltip="{content: 'On Android 12 and newer, Google restricts access to user device,<br/>not all games/apps are visible and can be opened from Win7 Simu.',html:true}">Can access local/native apps<iconify-icon icon="fluent:question-circle-24-regular" /></span> | 🟡 | 🔴
 Sync settings with online accounts | 🟢 | 🟢
 Multi-theming support | 🟢 | 🟢
 Multi-language support | 🟢 | 🟢
 System notifications | 🟢 | 🔴
 Display control | 🟢 | 🔴
+<span :class="$style.tip" v-tooltip="{content: 'Control the pointer using the touchscreen, similar to how a touchpad works.',html:true}">Mouse touchpad control<iconify-icon icon="fluent:question-circle-24-regular" /></span> | 🟢 | 🔴
 
 ## Pricing
 
