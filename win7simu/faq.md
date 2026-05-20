@@ -17,10 +17,6 @@ This page is updated regularly in accordance with the user's queries from all so
 
 No. This is just a simulator. It does not have the necessary infrastructure to run those programs.
 
-### Can you implement the mouse control in the same way as the Win98 Simulator?
-
-No. This simulator uses a different technology approach from the Win98 Simulator, therefore it's not feasible to implement the same.
-
 ### IE and Chrome cannot connect to the internet. Can you fix them?
 
 Please keep in mind that this is just a simulator. Web browser functionalities are very limited and are unstable. I'm afraid this is as far I can get to implement them.
@@ -80,9 +76,9 @@ There are currently 2 ways:
 
 Because a lot of time and effort have been spent to develop and maintain this simulator, and there are also costs to maintain the server and cloud services to retain your user accounts and settings within. However, there is a small monthly/yearly subscription plan to which you can subscribe, to enjoy the app ad-free and support the developer.
 
-### Can this simulator work on Android versions earlier than 6.0?
+### Can this simulator work on Android versions earlier than 7.0?
 
-Unfortunately, no. And there is no way to support Android versions older than 6.0 due to certain technical limitations that cannot be resolved.
+Unfortunately, no. And there is no way to support Android versions older than 7.0 due to certain technical limitations that cannot be resolved.
 
 ### The simulator only shows a black screen on my device. What should I do?
 
