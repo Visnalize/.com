@@ -78,7 +78,7 @@ For custom posts:
 Example published posts:
 
 - With the `sponsor` tag: [5 Essential Digital Tools for a Thriving Small Business in 2025](/blog/tools-for-a-thriving-small-business.md).
-- Without the `sponsor` tag: [How to Create a Successful Online Course: A Step-by-Step Guide](/blog/ai-in-homes-and-vehicles.md).
+- Without the `sponsor` tag: [How AI-Driven Tech is Becoming the New Normal at Home and on the Road](/blog/ai-in-homes-and-vehicles.md).
 
 ## FAQs
 
