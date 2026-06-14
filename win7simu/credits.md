@@ -77,6 +77,10 @@ Below is a list of themes and their respective third-party assets used in Win7 S
 - The default wallpaper, icons, and sounds from macOS Big Sur - not openly licensed.
 - These assets are used only for visual simulation. We acknowledge that macOS and its assets are proprietary to Apple. Win7 Simu is not affiliated with or endorsed by Apple.
 
+### Onebit
+
+- The icons from [Streamline Pixel Icons](https://www.figma.com/community/file/1196864707579677521) - licensed under [Streamline free license](https://help.streamlinehq.com/en/articles/5354376-streamline-free-license).
+
 ## User-generated content
 
 Win7 Simu includes a feature called [Theme Studio](./themestudio.md), which allows users to create and publish their own themes. These themes may include custom icons, wallpapers, and other visual elements.
