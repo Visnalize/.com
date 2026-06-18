@@ -12,6 +12,29 @@ pageClass: changelog
 
 ## 2026
 
+### `4.5.0` (Jun 18, 2026)
+
+__Core__
+
+- Added more advanced features for Calculator
+  - Programmer and Statistics modes
+  - Date Calculation and Worksheets views
+  - History, Digit grouping and Edit menu functionalities
+- Added Backup & Restore in Control Panel
+  - Backup all your files from the app as an archive and save to your device
+  - Restore files from your backup archive to the app
+- Added Edit Colours for Paint
+- Fixed Kubuntu theme
+- Fixed an issue with Chinese (Traditional) not showing
+- Enhanced large files handling to avoid OutOfMemory issues on some devices
+- Some performance improvements and other bug fixes
+
+__Android__
+
+- Added back Android (A:) drive under Devices with Removable storage
+  - You can now associate the Android drive with a selected folder on your device and interact with the files and folders in this folder from within the app.
+  - Note: currently the Android drive only supports read mode, we will roll out more features eventually with future updates.
+
 ### `4.4.0` (May 18, 2026)
 
 __Core__
