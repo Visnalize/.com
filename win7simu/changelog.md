@@ -16,14 +16,14 @@ pageClass: changelog
 
 __Core__
 
-- Added more advanced features for Calculator
+- Added more advanced features for [Calculator](./simulated/calculator.md)
   - Programmer and Statistics modes
   - Date Calculation and Worksheets views
   - History, Digit grouping and Edit menu functionalities
-- Added Backup & Restore in Control Panel
+- Added Backup & Restore in [Control Panel](./simulated/cpanel.md)
   - Backup all your files from the app as an archive and save to your device
   - Restore files from your backup archive to the app
-- Added Edit Colours for Paint
+- Added Edit Colours for [Paint](./simulated/paint.md)
 - Fixed Kubuntu theme
 - Fixed an issue with Chinese (Traditional) not showing
 - Enhanced large files handling to avoid OutOfMemory issues on some devices
