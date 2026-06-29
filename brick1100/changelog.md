@@ -22,6 +22,7 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 - Added animated menu icons
 - Optimized [Space Impact +](./games.md#space-impact)
+- Added keyboard numpad keys support in the [web version](https://brick1100.visnalize.com)
 - Several bug fixes and improvements behind the scenes
 
 ### `1.3.1` (Apr 22, 2026)
