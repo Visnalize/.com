@@ -18,6 +18,12 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2026
 
+### `1.4.0` (Jun 29, 2026)
+
+- Added animated menu icons
+- Optimized [Space Impact +](./games.md#space-impact)
+- Several bug fixes and improvements behind the scenes
+
 ### `1.3.1` (Apr 22, 2026)
 
 - Fixed audio issues
