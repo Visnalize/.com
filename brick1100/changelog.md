@@ -18,6 +18,15 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2026
 
+### `1.5.0` (Jul 10, 2026)
+
+- Updated libraries and dependencies to the latest versions. Due to technical constraints, the following platforms are no longer supported:
+  - Android 6 <Notation icon="android" />
+  - iOS 13, 14 <Notation icon="ios" />
+- Added language settings (Menu > Settings > Phone settings > Language). Supported languages: German, Spanish, French, Indonesian, Italian, Portuguese and Filipino
+- Added phone scale settings - adjust phone shell to fit your device resolution (Menu > Settings > Phone settings > Scale)
+- Several other bug fixes and improvements
+
 ### `1.4.0` (Jun 29, 2026)
 
 - Added animated menu icons
