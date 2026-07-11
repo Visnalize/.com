@@ -1,7 +1,14 @@
 import { HeadConfig } from "vitepress";
 import { ADSENSE_ID } from "../theme/constants";
+import { organizationSchema } from "./schema";
 
 const head: HeadConfig[] = [
+  // Organization structured data (site-wide) --------------------------------
+  [
+    "script",
+    { type: "application/ld+json" },
+    JSON.stringify(organizationSchema),
+  ],
   // Favicon ----------------------------------------------------------------
   [
     "link",

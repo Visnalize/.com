@@ -11,6 +11,12 @@ import { themes } from "../../.content/themes.data";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
 import { getAppImage, getThemeImage } from "../theme/utils/images";
 import { isDevMode } from "../theme/utils/misc";
+import {
+  getBlogPostingSchema,
+  getBreadcrumbSchema,
+  getFaqSchema,
+  getSoftwareApplicationSchema,
+} from "./schema";
 
 // https://vitepress.dev/reference/site-config#transformpagedata
 export const transformPageData: UserConfig["transformPageData"] = async (
@@ -128,4 +134,51 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     ["meta", { property: "twitter:description", content: data.description }],
     ["meta", { property: "twitter:image", content: metaImage }]
   );
+
+  // Structured data (JSON-LD) ------------------------------------------------
+  const breadcrumbSchema = getBreadcrumbSchema(transformedPath, data.title);
+  if (breadcrumbSchema) {
+    data.frontmatter.head.push([
+      "script",
+      { type: "application/ld+json" },
+      JSON.stringify(breadcrumbSchema),
+    ]);
+  }
+
+  if (data.relativePath.startsWith("blog/") && data.frontmatter.createdAt) {
+    const blogSchema = getBlogPostingSchema({
+      title: data.title,
+      description: data.description,
+      canonicalUrl,
+      image: metaImage,
+      createdAt: data.frontmatter.createdAt,
+      lastUpdated: data.lastUpdated,
+    });
+    data.frontmatter.head.push([
+      "script",
+      { type: "application/ld+json" },
+      JSON.stringify(blogSchema),
+    ]);
+  }
+
+  if (data.relativePath.match(/^(win7simu|brick1100)\/about\.md$/)) {
+    const [app] = data.relativePath.split("/") as ["win7simu" | "brick1100"];
+    const appSchema = getSoftwareApplicationSchema(app, canonicalUrl, metaImage);
+    data.frontmatter.head.push([
+      "script",
+      { type: "application/ld+json" },
+      JSON.stringify(appSchema),
+    ]);
+  }
+
+  if (data.relativePath === "win7simu/faq.md") {
+    const faqSchema = getFaqSchema(content);
+    if (faqSchema) {
+      data.frontmatter.head.push([
+        "script",
+        { type: "application/ld+json" },
+        JSON.stringify(faqSchema),
+      ]);
+    }
+  }
 };
