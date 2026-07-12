@@ -45,38 +45,41 @@ export default defineLoader({
     const cachedContent = cache.read(cacheFile);
     if (cachedContent) return cachedContent;
 
-    const getAppId = (app: App) => "com.visnalize." + app;
-    const apps: App[] = ["win7simu", "brick1100"];
-    const [androidWin7simu, androidBrick1100] = await Promise.all(
-      apps.map(async (app) => {
-        const stats = await googleScraper.app({ appId: getAppId(app) });
-        const releaseCount = getReleaseCount(app);
-        return { ...stats, releaseCount };
-      }),
-    );
-    const iosBrick1100 = await appleScraper.app({
-      appId: getAppId("brick1100"),
-      ratings: true,
-    });
-
-    const data: AppData = {
-      win7simu: {
-        android: androidWin7simu,
-        universal: androidWin7simu,
-      },
-      brick1100: {
-        ios: iosBrick1100,
-        android: androidBrick1100,
-        universal: {
-          ...androidBrick1100,
-          score: (androidBrick1100.score + iosBrick1100.score) / 2,
-          ratings: androidBrick1100.ratings + iosBrick1100.ratings,
-        },
-      },
-    };
-
+    const data = await getAppData();
     cache.write(cacheFile, data);
-
     return data;
   },
 });
+
+export async function getAppData() {
+  const getAppId = (app: App) => "com.visnalize." + app;
+  const apps: App[] = ["win7simu", "brick1100"];
+  const [androidWin7simu, androidBrick1100] = await Promise.all(
+    apps.map(async (app) => {
+      const stats = await googleScraper.app({ appId: getAppId(app) });
+      const releaseCount = getReleaseCount(app);
+      return { ...stats, releaseCount };
+    }),
+  );
+  const iosBrick1100 = await appleScraper.app({
+    appId: getAppId("brick1100"),
+    ratings: true,
+  });
+
+  const data: AppData = {
+    win7simu: {
+      android: androidWin7simu,
+      universal: androidWin7simu,
+    },
+    brick1100: {
+      ios: iosBrick1100,
+      android: androidBrick1100,
+      universal: {
+        ...androidBrick1100,
+        score: (androidBrick1100.score + iosBrick1100.score) / 2,
+        ratings: androidBrick1100.ratings + iosBrick1100.ratings,
+      },
+    },
+  };
+  return data;
+}

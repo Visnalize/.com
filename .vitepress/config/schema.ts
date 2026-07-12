@@ -1,23 +1,9 @@
-import { AppStats } from "@/.content/apps.data";
-import { existsSync, readFileSync } from "fs";
+import { getAppData } from "../../.content/apps.data";
 import MarkdownIt from "markdown-it";
-import { join } from "path";
-import { cwd } from "process";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
 import { App } from "../theme/utils/types";
 
 const md = new MarkdownIt();
-
-function readAppStats(app: App): AppStats {
-  const cacheFile = join(cwd(), ".content", "apps.data.cache");
-  if (!existsSync(cacheFile)) return {};
-  try {
-    const cache = JSON.parse(readFileSync(cacheFile, "utf-8"));
-    return cache?.[app];
-  } catch {
-    return {};
-  }
-}
 
 export const organizationSchema = {
   "@context": "https://schema.org",
@@ -102,8 +88,13 @@ export function getBlogPostingSchema(options: {
   };
 }
 
-export function getAppSchema(app: App, canonicalUrl: string, image: string) {
-  const stats = readAppStats(app).universal;
+export async function getAppSchema(
+  app: App,
+  canonicalUrl: string,
+  image: string,
+) {
+  const appData = await getAppData();
+  const stats = appData[app]?.universal;
   const schema: Record<string, any> = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",

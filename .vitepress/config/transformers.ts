@@ -164,7 +164,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
 
   if (data.relativePath.match(/^(win7simu|brick1100)\/about\.md$/)) {
     const [app] = data.relativePath.split("/") as [App];
-    const appSchema = getAppSchema(app, canonicalUrl, metaImage);
+    const appSchema = await getAppSchema(app, canonicalUrl, metaImage);
     data.frontmatter.head.push([
       "script",
       { type: "application/ld+json" },
