@@ -3,5 +3,6 @@ cache
 dist
 .DS_Store
 .env
+.code
 *.cache*
 ogimage
