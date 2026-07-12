@@ -49,7 +49,7 @@ const { app, maxLinks } = defineProps<Props>();
 
 const links = LinkMap[app].slice(0, maxLinks ?? LinkMap[app].length);
 
-const getImageProps = (link) => {
+const getImageProps = (link: string) => {
     const props: ImageProps = {
         alt: "Web App",
         src: "/assets/access-web.svg",

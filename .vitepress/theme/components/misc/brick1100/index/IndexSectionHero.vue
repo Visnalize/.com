@@ -13,6 +13,9 @@
         <Motion v-bind="animateHeadline()">
             <AccessLinks app="brick1100" />
         </Motion>
+        <Motion v-bind="animateHeadline()">
+            <AppRating app="brick1100" />
+        </Motion>
     </div>
     <div class="index-showcase">
         <div class="showcase-wrapper">
@@ -30,10 +33,11 @@
 </template>
 
 <script setup lang="ts">
+import AccessLinks from '@components/global/AccessLinks.vue';
+import AppRating from '@components/global/AppRating.vue';
+import AppIcon from '@components/misc/AppIcon.vue';
 import { useHeadlineVariants } from '@composables/useMotion';
 import { Motion } from 'motion-v';
-import AccessLinks from '../../../global/AccessLinks.vue';
-import AppIcon from '../../AppIcon.vue';
 
 let index = 0;
 

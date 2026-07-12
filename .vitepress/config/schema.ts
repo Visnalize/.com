@@ -1,9 +1,23 @@
+import { AppStats } from "@/.content/apps.data";
+import { existsSync, readFileSync } from "fs";
 import MarkdownIt from "markdown-it";
-import { IAppItemFullDetail } from "google-play-scraper";
+import { join } from "path";
+import { cwd } from "process";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
 import { App } from "../theme/utils/types";
 
 const md = new MarkdownIt();
+
+function readAppStats(app: App): AppStats {
+  const cacheFile = join(cwd(), ".content", "apps.data.cache");
+  if (!existsSync(cacheFile)) return {};
+  try {
+    const cache = JSON.parse(readFileSync(cacheFile, "utf-8"));
+    return cache?.[app];
+  } catch {
+    return {};
+  }
+}
 
 export const organizationSchema = {
   "@context": "https://schema.org",
@@ -27,7 +41,10 @@ function toTitleCase(slug: string) {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
-export function getBreadcrumbSchema(transformedPath: string, pageTitle: string) {
+export function getBreadcrumbSchema(
+  transformedPath: string,
+  pageTitle: string,
+) {
   const segments = transformedPath.split("/").filter(Boolean);
   if (!segments.length) return undefined;
 
@@ -64,7 +81,8 @@ export function getBlogPostingSchema(options: {
   createdAt: number;
   lastUpdated?: number;
 }) {
-  const { title, description, canonicalUrl, image, createdAt, lastUpdated } = options;
+  const { title, description, canonicalUrl, image, createdAt, lastUpdated } =
+    options;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -84,12 +102,8 @@ export function getBlogPostingSchema(options: {
   };
 }
 
-export function getSoftwareApplicationSchema(
-  app: App,
-  canonicalUrl: string,
-  image: string,
-  stats?: IAppItemFullDetail
-) {
+export function getAppSchema(app: App, canonicalUrl: string, image: string) {
+  const stats = readAppStats(app).universal;
   const schema: Record<string, any> = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",

@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import { data as appData } from '@/.content/apps.data';
+import { data as appData, AppFields } from '@/.content/apps.data';
 import { data as blogData } from '@/.content/blog-posts.data';
 import { data as channelData } from '@/.content/channel.data';
 import { data as metricsData } from '@/.content/metrics.data';
@@ -68,7 +68,7 @@ const { isDark } = useData()
 const renderCount = ref(0) // dirty way to resolve hydration issue for initial dark mode
 
 const apps = Object.values(appData)
-const filterAppValues = (key: keyof typeof apps[0]) => apps.map(app => app[key]).filter(Boolean) as number[]
+const filterAppValues = (key: keyof AppFields) => apps.map(app => app.universal?.[key]).filter(Boolean) as number[]
 const totalDownloads = filterAppValues('maxInstalls').reduce((sum, count) => sum + count, 0)
 const totalReleases = filterAppValues('releaseCount').reduce((sum, count) => sum + count, 0)
 const totalRatings = filterAppValues('ratings').reduce((sum, count) => sum + count, 0)

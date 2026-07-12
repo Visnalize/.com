@@ -5,6 +5,7 @@ import "iconify-icon";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import AccessLinks from "./components/global/AccessLinks.vue";
+import AppRating from "./components/global/AppRating.vue";
 import SponsorAd from "./components/global/SponsorAd.vue";
 import { DISQUS } from "./constants";
 import Layout from "./layout/Layout.vue";
@@ -18,6 +19,7 @@ export default {
     app.use(FloatingVue);
     app.component("SponsorAd", SponsorAd);
     app.component("AccessLinks", AccessLinks);
+    app.component("AppRating", AppRating);
     app.provide(DISQUS, "visnalize");
   },
 } satisfies Theme;

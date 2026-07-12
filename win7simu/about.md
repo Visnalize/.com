@@ -11,6 +11,8 @@ outline: false
 
 <AccessLinks app="win7simu" />
 
+<AppRating app="win7simu" />
+
 ## Features
 
 As a simulator of Windows 7, it attempts to simulate every aspect of Windows 7, from the most familiar programs of Windows 7 such as Calculator, Command Prompt, the striking glass effect of the Aero themes, to the exclusive Desktop Gadgets only available in Windows Vista and 7. The simulator also comes with various cool and nostalgic themes designed on the core of Windows 7, such as Windows 3.1, Windows XP, Windows 10, MacOS, Ubuntu, [and more](./simulated/personalize.md).

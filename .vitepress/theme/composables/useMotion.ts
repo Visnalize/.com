@@ -11,7 +11,7 @@ import { computed, ref, Ref } from "vue";
 
 interface ScrollProgressOptions {
   /** Reference to the element that will be used to calculate the scroll progress. */
-  element: Ref<HTMLElement>;
+  element: Ref<HTMLElement | null>;
   /** Value between 0 and 1 that determines the start offset from the top. This is relative size of the viewport. Useful for triggering the end of the animation before the element leaves viewport. */
   startOffset?: number;
   /** Value between 0 and 1 that determines the ending offset from the bottom. This is relative size of the viewport. Useful for triggering the end of the animation before the element leaves viewport. */
@@ -28,8 +28,8 @@ export const useScrollProgress = ({
   const { scrollY } = useScroll();
 
   const computeBounds = () => {
-    const { height } = element.value.getBoundingClientRect();
-    const top = element.value.offsetTop;
+    const { height } = element.value?.getBoundingClientRect() ?? { height: 0 };
+    const top = element.value?.offsetTop ?? 0;
     const vh = window.innerHeight;
     const start = top - vh * startOffset;
     const end = top + height - vh * endOffset;

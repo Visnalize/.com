@@ -11,16 +11,17 @@ import { themes } from "../../.content/themes.data";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
 import { getAppImage, getThemeImage } from "../theme/utils/images";
 import { isDevMode } from "../theme/utils/misc";
+import { App } from "../theme/utils/types";
 import {
+  getAppSchema,
   getBlogPostingSchema,
   getBreadcrumbSchema,
   getFaqSchema,
-  getSoftwareApplicationSchema,
 } from "./schema";
 
 // https://vitepress.dev/reference/site-config#transformpagedata
 export const transformPageData: UserConfig["transformPageData"] = async (
-  data: PageData & Record<string, any>
+  data: PageData & Record<string, any>,
 ) => {
   // blog listing paginated page (non-tag)
   if (data.params?.page && !data.params?.tag) {
@@ -64,7 +65,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     data.frontmatter = { ...data.frontmatter, ...app };
     data.frontmatter.image = isDevMode() ? imageUrl : ORIGIN + imageUrl;
     data.frontmatter.imageData = await imageSizeFromFile(
-      join(cwd(), "public", imageUrl)
+      join(cwd(), "public", imageUrl),
     );
     try {
       const filePath = join(cwd(), ".content", "simulated-apps", slug + ".md");
@@ -84,7 +85,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     data.frontmatter = { ...data.frontmatter, ...themeData };
     data.frontmatter.image = isDevMode() ? imageUrl : ORIGIN + imageUrl;
     data.frontmatter.imageData = await imageSizeFromFile(
-      join(cwd(), "public", imageUrl)
+      join(cwd(), "public", imageUrl),
     );
   }
 
@@ -94,7 +95,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   }
 
   if (data.relativePath.match(/testimonials/) && data.params?.app) {
-    const app = APP_NAMES[data.params.app];
+    const app = APP_NAMES[data.params.app as App];
     data.title = "Wall of love - Testimonials for " + app;
     data.description = `See what users have to say about ${app}. Share your love for retro apps too!`;
   }
@@ -132,7 +133,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     ["meta", { property: "twitter:url", content: canonicalUrl }],
     ["meta", { property: "twitter:title", content: data.title }],
     ["meta", { property: "twitter:description", content: data.description }],
-    ["meta", { property: "twitter:image", content: metaImage }]
+    ["meta", { property: "twitter:image", content: metaImage }],
   );
 
   // Structured data (JSON-LD) ------------------------------------------------
@@ -162,8 +163,8 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   }
 
   if (data.relativePath.match(/^(win7simu|brick1100)\/about\.md$/)) {
-    const [app] = data.relativePath.split("/") as ["win7simu" | "brick1100"];
-    const appSchema = getSoftwareApplicationSchema(app, canonicalUrl, metaImage);
+    const [app] = data.relativePath.split("/") as [App];
+    const appSchema = getAppSchema(app, canonicalUrl, metaImage);
     data.frontmatter.head.push([
       "script",
       { type: "application/ld+json" },

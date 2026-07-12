@@ -11,6 +11,8 @@ outline: false
 
 <AccessLinks app="brick1100" />
 
+<AppRating app="brick1100" />
+
 ## Features
 
 Brick 1100 attempts to simulate every aspect of the classic Nokia 1100, from the monochrome visual graphics, the keypad control, the familiar ringtones to the iconic Snake game, flashlight, reminders, calculator, etc. Additionally, a few twists are added to make it more unique and fun to play with, such as some exclusive [games](./games.md) and [apps](./apps.md), or the ability to [build](./builders.md) your own games/apps and publish them to the community.
