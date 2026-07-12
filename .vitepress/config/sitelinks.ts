@@ -30,6 +30,10 @@ export const Win7Simu = {
     text: "FAQs",
     link: "/win7simu/faq",
   },
+  Alternatives: {
+    text: "Alternatives",
+    link: "/win7simu/alternatives",
+  },
   Credits: {
     text: "Credits",
     link: "/win7simu/credits",
@@ -76,6 +80,10 @@ export const Brick1100 = {
   FeatureRequests: {
     text: "Feature requests",
     link: "https://visnalize.com/brick1100/feedback",
+  },
+  Alternatives: {
+    text: "Alternatives",
+    link: "/brick1100/alternatives",
   },
   Apps: {
     text: "Apps",

@@ -23,6 +23,10 @@ The app aims to provide the most authentic experience of the Nokia 1100, most ap
 Refer to [Changelog](./changelog.md) for a complete list of features added through versions.
 :::
 
+## Personalization
+
+Brick 1100 isn't locked to one classic phone. Pick a phone model, Nokia 1100, 3310, 5110, or others, choose a color scheme for it, and set a custom carrier name to show on the standby screen. Sound profiles (General, Silent, Discreet, Loud, Night), ringtones, keypad tone levels, and the clock format can all be adjusted from Settings too.
+
 ## Pricing
 
 Brick 1100 is and will always remain **FREE** to use. However, to help cover the costs of development and maintenance, the free version is provided with ads. If you prefer an ad-free experience, and unlock all advanced features, you can subscribe or make a one-time purchase to upgrade to the premium version.

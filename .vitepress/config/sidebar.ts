@@ -13,6 +13,7 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
         Win7Simu.Faq,
         Win7Simu.Credits,
         Win7Simu.Privacy,
+        Win7Simu.Alternatives,
       ],
     },
     {
@@ -58,6 +59,7 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
         Brick1100.Changelog,
         Brick1100.Privacy,
         Brick1100.FeatureRequests,
+        Brick1100.Alternatives,
       ],
     },
     {

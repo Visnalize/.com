@@ -172,7 +172,12 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     ]);
   }
 
-  if (data.relativePath === "win7simu/faq.md") {
+  const faqPages = [
+    "win7simu/faq.md",
+    "win7simu/alternatives.md",
+    "brick1100/alternatives.md",
+  ];
+  if (faqPages.includes(data.relativePath)) {
     const faqSchema = getFaqSchema(content);
     if (faqSchema) {
       data.frontmatter.head.push([

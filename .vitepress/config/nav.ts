@@ -19,6 +19,7 @@ const navItems: DefaultTheme.Config["nav"] = [
       Win7Simu.Faq,
       Win7Simu.Credits,
       Win7Simu.Privacy,
+      Win7Simu.Alternatives,
       {
         text: "Guides",
         items: [
@@ -38,6 +39,7 @@ const navItems: DefaultTheme.Config["nav"] = [
       Brick1100.Changelog,
       Brick1100.Privacy,
       Brick1100.FeatureRequests,
+      Brick1100.Alternatives,
       {
         text: "Guides",
         items: [Brick1100.Games, Brick1100.Apps, Brick1100.Builders],
