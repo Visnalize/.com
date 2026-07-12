@@ -44,7 +44,7 @@ const { page, isDark } = useData()
 const toasted = ref(false)
 
 const attachZoom = () => {
-    let selector: ZoomSelector = null;
+    let selector: ZoomSelector;
     const isBlogPost = route.path.startsWith('/blog/') && !route.path.includes('/tag');
     const isNotePost = route.path.startsWith('/notes');
     const isResource = route.path.startsWith('/resources/');

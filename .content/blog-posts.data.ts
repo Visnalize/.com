@@ -21,8 +21,8 @@ export default createContentLoader("blog/*.md", {
     return rawData
       .sort((a, b) => b.frontmatter.createdAt - a.frontmatter.createdAt)
       .map((page) => {
-        const [, title] = page.src.match(/# (.*)/) || [];
-        const [, image] = page.src.match(/!\[.*\]\((.*)\)/) || [];
+        const [, title] = page.src?.match(/# (.*)/) || [];
+        const [, image] = page.src?.match(/!\[.*\]\((.*)\)/) || [];
         const { tags, ...otherData } = page.frontmatter as PostData;
 
         const postData: PostData = {

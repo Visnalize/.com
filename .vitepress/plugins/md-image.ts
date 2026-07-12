@@ -1,6 +1,7 @@
 import { readFileSync } from "fs";
 import { imageSize } from "image-size";
-import MarkdownIt, { Token } from "markdown-it";
+import MarkdownIt from "markdown-it";
+import Token from "markdown-it/lib/token.mjs";
 
 interface PluginOptions {
   /**
@@ -21,8 +22,8 @@ const setup = (options: PluginOptions) => (md: MarkdownIt) => {
     const isAbsoluteUrl = imageUrl.startsWith("/");
     const otherAttrs = generateAttributes(md, token);
 
-    let width: number;
-    let height: number;
+    let width: number | undefined;
+    let height: number | undefined;
 
     if (isExternalUrl) {
       return `<span class="external-image"><img src="${imageUrl}" alt="${caption}"${otherAttrs}></span>`;
@@ -30,8 +31,10 @@ const setup = (options: PluginOptions) => (md: MarkdownIt) => {
 
     if (cache.has(imageUrl)) {
       const cacheRecord = cache.get(imageUrl);
-      width = cacheRecord.width;
-      height = cacheRecord.height;
+      if (cacheRecord) {
+        width = cacheRecord.width;
+        height = cacheRecord.height;
+      }
     }
 
     if (width === undefined || height === undefined) {
@@ -58,6 +61,7 @@ const setup = (options: PluginOptions) => (md: MarkdownIt) => {
  * @returns An empty string if no `title` is available, or `title="..."` if available.
  */
 function generateAttributes(md: MarkdownIt, token: Token): string {
+  if (!token.attrs) return "";
   const attrString = token.attrs
     .filter(([key]) => !["src", "alt"].includes(key))
     .map(([key, value]) => {
@@ -93,7 +97,7 @@ function getImageDimensions(imageUrl: string, env: unknown) {
   } catch (error) {
     const msg = `md-image: Could not get dimensions of image with url ${imageUrl}.`;
     console.error(msg + "\n\n", error);
-    return { width: undefined, height: undefined };
+    return { width: 0, height: 0 };
   }
 }
 

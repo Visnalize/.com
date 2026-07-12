@@ -34,6 +34,8 @@ export const useNavbar = () => {
   if (!isNavbarAvailable()) return;
 
   const navbar = document.querySelector(SELECTOR_NAVBAR);
+  if (!navbar) return;
+
   const { height } = window.getComputedStyle(navbar);
   return { height: parseInt(height) };
 };

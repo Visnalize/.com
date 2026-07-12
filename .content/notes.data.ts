@@ -18,6 +18,7 @@ export default createContentLoader("notes/*.md", {
     return rawData
       .sort((a, b) => b.frontmatter.timestamp - a.frontmatter.timestamp)
       .map((page) => {
+        if (!page.src) return;
         const { content: parsedContent } = matter(page.src);
         const [, title] = parsedContent.match(/# (.*)/) || [];
         const content = parsedContent.replace(/# (.*)/, "").trim();
@@ -29,6 +30,6 @@ export default createContentLoader("notes/*.md", {
         };
 
         return noteData;
-      });
+      }).filter(Boolean);
   },
 });
