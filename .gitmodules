@@ -1,6 +1,0 @@
-[submodule "brick1100/.code"]
-	path = brick1100/.code
-	url = https://github.com/khang-nd/brick-1100
-[submodule "win7simu/.code"]
-	path = win7simu/.code
-	url = https://github.com/khang-nd/win7-simu
