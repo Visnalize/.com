@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "gen:deeplinks": "node scripts/deeplinks.js"
   },
   "devDependencies": {
     "@justinribeiro/lite-youtube": "^1.7.1",
