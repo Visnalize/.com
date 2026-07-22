@@ -15,7 +15,7 @@ import { data as themes } from '@/.content/themes.data';
 import PageTitle from '@components/misc/PageTitle.vue';
 import { getThemeImage, transformImage } from '@utils/images';
 
-const transform = (image: string) => transformImage(getThemeImage(image), { width: 500, quality: 100 });
+const transform = (image: string) => transformImage(getThemeImage(image), { width: 500, quality: 85, format: 'auto' });
 </script>
 
 <div> <!-- dummy wrapper div to avoid adsense messing up page layout -->

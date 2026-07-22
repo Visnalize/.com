@@ -12,7 +12,7 @@
                 </span>
             </button>
             <template #popper>
-                <img data-no-zoom :src="`/assets/${app}-qr.svg`" width="256" height="256" />
+                <img data-no-zoom :src="`/assets/${app}-qr.svg`" alt="QR code" width="256" height="256" />
             </template>
         </Dropdown>
     </div>

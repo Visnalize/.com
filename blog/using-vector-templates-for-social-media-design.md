@@ -1,6 +1,6 @@
 ---
 createdAt: 1772816644873
-description: Learn how to use vector templates for social media design to create consistent, scalable visuals across platforms, streamline workflows, and adapt layouts for stronger engagement and brand clarity.
+description: Learn how to use vector templates for social media design to create consistent, scalable visuals and streamline your design workflow.
 tags:
   - tips
 ---

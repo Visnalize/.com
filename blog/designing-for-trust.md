@@ -1,4 +1,5 @@
 ---
+title: Designing for Trust in MedTech UX
 createdAt: 1752540168257
 description: Designing for trust in medtech is crucial. Learn how UX can prevent costly mistakes and build patient confidence.
 tags:

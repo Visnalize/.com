@@ -1,6 +1,6 @@
 ---
 createdAt: 1775236370746
-description: With the right mouse, you can enhance your experience on Windows, whether gaming, working, or just browsing. Let's explore how to choose the best mouse for your needs.
+description: With the right mouse, you can enhance your Windows experience, whether gaming, working, or browsing. Here's how to choose the best one.
 tags:
   - tips
 ---

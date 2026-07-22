@@ -65,7 +65,7 @@ You can access this option from **_Menu > Subscription settings > Trial._**
 
 ## What's next?
 
-This release marks a significant milestone in the development of the app. While the app is now considered stable, there might be still minor issues that we will address in future updates. I'm also aware that there are features that are missing or need improvement, and I appreciate your patience and support as I work on them. And if you would like to participate in the development process, suggest new features, or report bugs, please feel free to join our [Discord server](http://visnalize.com/brick1100/chat) or leave a comment below.
+This release marks a significant milestone in the development of the app. While the app is now considered stable, there might be still minor issues that we will address in future updates. I'm also aware that there are features that are missing or need improvement, and I appreciate your patience and support as I work on them. And if you would like to participate in the development process, suggest new features, or report bugs, please feel free to join our [Discord server](https://visnalize.com/brick1100/chat) or leave a comment below.
 
 Last but not least, I want to take a moment to thank everyone who has been supporting me and the project, whether it's through financial support, feedback, bug reports, or simply using the app. Your support means a lot to me and motivates me to keep improving the app and bringing you the best experience possible. Thank you for being part of this journey, and I hope you enjoy using Brick 1100 as much as I enjoyed creating it. Stay tuned for more updates and features in the future!
 

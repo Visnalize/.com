@@ -4,7 +4,7 @@
         <div class="post-content">
             <img class="post-image" :src="post.image" :alt="post.title" />
             <div class="post-badge" v-if="post.badge || isSponsored(post)">
-                <img v-if="isSponsored(post)" src="/assets/sponsor-badge.png" width="150" height="114" />
+                <img v-if="isSponsored(post)" src="/assets/sponsor-badge.png" alt="Sponsored" width="150" height="114" />
                 <iconify-icon v-else :icon="badgeIcon[post.badge]" />
             </div>
             <div class="post-date">

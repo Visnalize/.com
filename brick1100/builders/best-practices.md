@@ -1,3 +1,7 @@
+---
+description: Best practices to follow when building games and apps for Brick 1100, covering security, design consistency, and compatibility.
+---
+
 # Best practices
 
 This is a list of best practices to follow when building games/apps for [Brick 1100](../about.md). They ensure your creation is secure, has a consistent design with Brick 1100, provides good compatibility, and most importantly, helps the maintainers review and approve your submission faster.

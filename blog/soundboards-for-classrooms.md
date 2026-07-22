@@ -1,6 +1,7 @@
 ---
+title: Soundboards and Sound Buttons for Classrooms
 createdAt: 1775115728157
-description: Powerful sound-based learning tools are essential for educators and trainers. Let's explore how to find high-quality sound buttons and soundboards for your classroom.
+description: Powerful sound-based learning tools are essential for educators. Here's how to find high-quality sound buttons and soundboards for your classroom.
 tags:
   - tips
 ---

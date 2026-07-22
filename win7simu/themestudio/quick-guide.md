@@ -1,5 +1,6 @@
 ---
 title: Getting started with Theme Studio
+description: A quick guide to getting started with Theme Studio's editor interface for crafting your own themes in Win7 Simu.
 sidebarDepth: 2
 ---
 

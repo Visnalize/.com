@@ -1,3 +1,7 @@
+---
+description: Learn how selectors work in Theme Studio to target specific UI elements and components when styling Win7 Simu themes.
+---
+
 # Selectors
 
 __Selectors__, in the context of Theme Studio, are special patterns used to target specific UI elements or components for styling purposes. They allow us to define how certain parts of the UI should look based on their attributes, states, or hierarchy within the application.

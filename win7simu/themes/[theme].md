@@ -10,7 +10,7 @@ const { slug, title, image, premium, bundle, isOriginal, features, imageData } =
 const transformWidth = 1200;
 const imageRatio = imageData?.width / imageData?.height;
 const imageProps = {
-    src: transformImage(image, { width: transformWidth, quality: 100 }),
+    src: transformImage(image, { width: transformWidth, quality: 85, format: 'auto' }),
     alt: title,
     width: transformWidth,
     height: Math.round(transformWidth / imageRatio),

@@ -112,7 +112,7 @@ The advantages of `requestAnimationFrame()` compared with using `setInterval` or
 
 With the orbit controls added, we can now rotate the camera around to inspect the chessboard.
 
-![](./img/win7-simu-chess-titans/chess-orbit-control.webp)
+![Rotating the camera around the chessboard using orbit controls](./img/win7-simu-chess-titans/chess-orbit-control.webp)
 
 ### Decals
 
@@ -122,7 +122,7 @@ There are some textures appearing on the chessboard when a piece is selected. Th
 > 
 > The `Z` refers to the up/down axis in the 3D space. However, in *three.js*, the up/down axis is the `Y` axis.
 
-![](./img/win7-simu-chess-titans/chess-decals.webp)
+![Decal textures appearing on the chessboard when a piece is selected](./img/win7-simu-chess-titans/chess-decals.webp)
 
 ### Chess piece animation
 
@@ -220,7 +220,7 @@ The chessboard coordinates are calculated by multiplying the U and V components 
 
 For example, the mouse is hovering at the UV coordinates `(0.55, 0.41)`. After multiplying by 8 we got `(0.55 * 8, 0.41 * 8) = (4.4, 3.28)`, and then applying the `Math.floor()` function, we got `(4, 3)`, which points to the square `e4` on the chessboard.
 
-![](./img/win7-simu-chess-titans/chess-uv.webp)
+![UV coordinates of the chessboard used to detect the hovered square](./img/win7-simu-chess-titans/chess-uv.webp)
 
 Below is the implementation of the function converting the UV coordinates to chessboard coordinates.
 
@@ -264,7 +264,7 @@ const pieceScore = {
 
 At any given time in the game, provided the game is not over, every possible move can be visualised in a tree data structure where each node represents a scenario when that move was made.
 
-![](./img/win7-simu-chess-titans/game-tree-visualisation.webp)
+![Tree diagram visualising every possible move scored by the chess AI](./img/win7-simu-chess-titans/game-tree-visualisation.webp)
 
 The algorithm searches and evaluates the score for each scenario and then returns the move that gives the highest score. [*Sebastian Lague*](https://www.youtube.com/@SebastianLague) has a really great [video](https://www.youtube.com/watch?v=l-hh51ncgDI) explaining in detail how the algorithm works, and pseudo-code examples are also provided. We highly recommend it if you want to learn more in-depth about how it works.
 

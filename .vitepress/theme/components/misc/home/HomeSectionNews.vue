@@ -24,7 +24,7 @@
                     </div>
                     <iconify-icon icon="fluent:arrow-up-right-24-regular" />
                     <img v-if="post.tags.find(tag => tag.name === 'sponsor')" class="badge"
-                        src="/assets/sponsor-badge.png" width="459" height="345" />
+                        src="/assets/sponsor-badge.png" alt="Sponsored" width="459" height="345" />
                 </a>
             </Motion>
         </div>

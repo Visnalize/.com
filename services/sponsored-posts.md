@@ -1,4 +1,5 @@
 ---
+description: Publish sponsored posts on the Visnalize blog for do-follow backlinks, traffic, and domain authority. See pricing options and content guidelines.
 aside: false
 comments: false
 pagefind-indexed: false

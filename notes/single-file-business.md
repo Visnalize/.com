@@ -4,7 +4,7 @@ timestamp: 1772779182605
 
 # A 6-figure business built on 1 PHP file
 
-![](https://pbs.twimg.com/media/HCr5juuXAAAwTjp?format=jpg&name=small)
+![Tweet about a website making $100k/month from a single 40k-line PHP file](https://pbs.twimg.com/media/HCr5juuXAAAwTjp?format=jpg&name=small)
 
 There's this website making around $100k/month while residing entirely in [1 single PHP](https://x.com/levelsio/status/2029708985008337342) file of 40k lines of code.
 

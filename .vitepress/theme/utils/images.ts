@@ -8,6 +8,7 @@ interface TransformOptions {
   brightness?: number;
   contrast?: number;
   fit?: "scale-down" | "contain" | "cover" | "crop" | "pad";
+  format?: "auto" | "avif" | "webp" | "json";
   gamma?: number;
   gravity?: "auto" | "left" | "right" | "top" | "bottom";
   height?: number;

@@ -1,4 +1,5 @@
 ---
+title: Mindless AI tagging on X
 timestamp: 1748484943049
 ---
 

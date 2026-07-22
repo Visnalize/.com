@@ -1,5 +1,6 @@
 ---
 title: Theme Studio in-depth guide
+description: An in-depth guide to Theme Studio covering everything needed to craft your own themes for Win7 Simu using HTML and CSS.
 sidebarDepth: 2
 ---
 

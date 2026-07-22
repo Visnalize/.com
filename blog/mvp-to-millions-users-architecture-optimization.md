@@ -1,4 +1,5 @@
 ---
+title: Scaling Architecture for High-Load Web Apps
 createdAt: 1777508744309
 description: When your app goes viral, the architecture you have in place can become a bottleneck. Here's how to audit your current setup and optimize for high-load traffic.
 tags:

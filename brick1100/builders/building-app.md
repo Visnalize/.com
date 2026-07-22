@@ -1,3 +1,7 @@
+---
+description: Step-by-step guide to building a simple Password Generator app and running it on Brick 1100.
+---
+
 # Building an app for Brick 1100
 
 :::tip Note

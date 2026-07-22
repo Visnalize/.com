@@ -1,4 +1,5 @@
 ---
+title: Feeling left behind on AI
 timestamp: 1746806000668
 ---
 

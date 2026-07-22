@@ -1,3 +1,7 @@
+---
+description: Step-by-step guide to building a simple Tic Tac Toe game and running it on Brick 1100.
+---
+
 # Building a game for Brick 1100
 
 :::tip Note

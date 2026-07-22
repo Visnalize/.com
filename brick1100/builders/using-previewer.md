@@ -1,3 +1,7 @@
+---
+description: Learn how to use the Brick 1100 Previewer to see how your app or game looks and works before submitting it.
+---
+
 # Using Brick 1100 Previewer
 
 After building your app/game, it's possible to see how it looks and works on [Brick 1100](../about.md). In this guide, let's see how we can achieve this.

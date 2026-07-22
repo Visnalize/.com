@@ -1,5 +1,6 @@
 ---
 title: Brick 1100 Privacy Policy
+description: Worry about your privacy while using the Brick 1100 app? This page eases your concern
 ads: false
 social: false
 ---

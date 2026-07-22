@@ -1,5 +1,6 @@
 ---
 title: Theme Studio Changelog
+description: Full changelog of all versions of Theme Studio, the theme editor for Win7 Simu, including new features and fixes.
 comments: false
 ---
 

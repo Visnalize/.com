@@ -1,5 +1,5 @@
 ---
-description: Discover 10 free online image tools for editing, resizing, converting, and creating unique visuals. Perfect for designers, bloggers, and anyone working with images.
+description: Discover 10 free online image tools for editing, resizing, converting, and creating unique visuals for any project.
 aside: right
 ---
 

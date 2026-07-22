@@ -11,6 +11,7 @@ import { themes } from "../../.content/themes.data";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
 import { getAppImage, getThemeImage } from "../theme/utils/images";
 import { isDevMode } from "../theme/utils/misc";
+import { markdownToPlainText, previewText } from "../theme/utils/strings";
 import { App } from "../theme/utils/types";
 import {
   getAppSchema,
@@ -23,6 +24,8 @@ import {
 export const transformPageData: UserConfig["transformPageData"] = async (
   data: PageData & Record<string, any>,
 ) => {
+  const { content } = matter.read(data.filePath);
+
   // blog listing paginated page (non-tag)
   if (data.params?.page && !data.params?.tag) {
     const page = data.params.page;
@@ -35,7 +38,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     const { tag } = data.params;
     const page = data.params.page;
     let title = `Posts with tag "${tag}"`;
-    let description = `All posts with tag "${tag}". Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
+    let description = `All posts with tag '${tag}'. Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
     if (tag === "sponsor") {
       title = "Sponsor posts";
       description =
@@ -60,8 +63,10 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     const imageUrl = getAppImage(slug);
     if (!app) throw new Error(`App not found: ${slug}`);
     data.title = app.title + " in Win7 Simu";
-    data.description =
-      data.title + " in Win7 Simu " + decapitalize(app.description);
+    data.description = previewText(
+      data.title + " " + decapitalize(app.description),
+      155,
+    );
     data.frontmatter = { ...data.frontmatter, ...app };
     data.frontmatter.image = isDevMode() ? imageUrl : ORIGIN + imageUrl;
     data.frontmatter.imageData = await imageSizeFromFile(
@@ -92,6 +97,9 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   if (data.relativePath.startsWith("notes")) {
     data.frontmatter.aside = false;
     data.frontmatter.social = false;
+    if (!data.frontmatter.description) {
+      data.description = previewText(markdownToPlainText(content), 155);
+    }
   }
 
   if (data.relativePath.match(/testimonials/) && data.params?.app) {
@@ -111,7 +119,6 @@ export const transformPageData: UserConfig["transformPageData"] = async (
 
   const transformedPath = data.relativePath.replace(/((index)?\.md)$/, "");
   const canonicalUrl = `${ORIGIN}/${transformedPath}`;
-  const { content } = matter.read(data.filePath);
 
   let ogImage =
     data.frontmatter.image || content.match(/!\[.*?\]\((.*?)\)/)?.[1];

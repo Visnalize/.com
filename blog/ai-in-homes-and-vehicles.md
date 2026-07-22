@@ -1,4 +1,5 @@
 ---
+title: AI-Driven Tech at Home and on the Road
 createdAt: 1753380108087
 description: Exploring the integration of AI in homes and vehicles, its benefits, and the ethical concerns it raises.
 tags:

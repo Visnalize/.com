@@ -1,5 +1,5 @@
 ---
-description: Discover 10 free screenshot and mockup tools for creating stunning visual presentations of websites, apps, and more. Perfect for designers, marketers, and creatives.
+description: Discover 10 free screenshot and mockup tools for creating stunning visual presentations of websites and apps.
 aside: right
 ---
 
