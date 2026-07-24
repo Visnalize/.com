@@ -20,12 +20,59 @@ export interface Quote {
 
 const quotes: Quote[] = [
   {
+    "author": "Manoj Hembrom",
+    "date": "Jul 22, 2026",
+    "app": "win7simu",
+    "content": "I've been using this Windows 7 Simulator for a while, and I'm genuinely impressed with how well it transforms my Android phone into a Windows 7-style desktop. The Start Menu, taskbar, desktop icons, and overall interface look very clean and nostalgic. The launcher is smooth, easy to navigate, and doesn't slow down my device. One of the things I like most is the attention to detail. It gives a classic Windows experience while still keeping all the useful Android features.",
+  },
+  {
+    "author": "Mobile Gamer",
+    "date": "Jul 16, 2026",
+    "app": "brick1100",
+    "content": "Absolutely incredible. pure nostalgia. And the Space impact , snake classic , Rapid Roll games are exactly the same. Loved it .",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjV-3MKfk0KpBg-tYkt--rApbmVYnOma4JLors0W9P4PPa-eHhLa=s50"
+  },
+  {
+    "author": "Jenn",
+    "date": "Jul 3, 2026",
+    "app": "win7simu",
+    "content": "Dude, you must be working on this game for like I think decades or years. I think this is absolutely amazing, feels like I'm actually using a real Windows 7. The startup screen is perfect, the calculator actually works and it has games, and it has the same default background as the real Windows 7. I love this game! You should make other Windows simulators like Windows XP simulator, that'll be great!",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjVCAEtPCDnLebFDfhvlH3BsQN_BC17A4oveRu7cDDSjfIFzu4uP0w=s50"
+  },
+  {
+    "author": "JAIME ALEXANDER SOLARTE SANCHEZ",
+    "date": "Jun 26, 2026",
+    "app": "brick1100",
+    "content": "What a genius! Whoever replicated this is a genius. Most of its functions are almost perfect compared to the 1100 version. The only thing missing is the phone call feature; otherwise, it's the same. I loved it; it reminded me of my childhood.",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjXBvGcBs1JspM4_Qq-BzXFzSrLzo-KkiDw7JunK0ZJ8CEKJW54=s50"
+  },
+  {
+    "author": "Матвей Сорокин",
+    "date": "Jun 3, 2026",
+    "app": "win7simu",
+    "content": "Wow. This game is so realistic, and it has wallpapers like other Windows versions, like London, and more! You can change the cursor. And you can add your own shortcuts and more! My rating: 11/10.",
+  },
+  {
+    "author": "Меир Тажибаев",
+    "date": "May 24, 2026",
+    "app": "win7simu",
+    "content": "Honestly, this is one of the best games I've ever seen. How can you transfer Windows 7 to a phone so well? I don't know how, even YouTube works here, it's really cool.",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJiBV2y62Yij9R_hwVTIBX9FtHM3NC4nbOabl4s5elsxc2t7A=mo=s50"
+  },
+  {
     author: "A YouTube user",
     date: "Mar 28, 2026",
     app: "brick1100",
     url: "https://www.youtube.com/watch?v=8H7v1oze5Eg&lc=UgzTnu_5cCSQJtZGhRh4AaABAg",
     content:
       "It's truely great how you reconstructed the entire nostalgic visuals from that old phone. Loved to play the Space Impact II game again. Great work developer, although it would not reach to lots of people but it raises a tremendous amout of joy to certain small amount of peole who interacts with the app. Thanks a lot man.",
+  },
+      {
+    "author": "Adier Cao",
+    "date": "Apr 23, 2026",
+    "app": "brick1100",
+    "content": "This is so interesting! I absolutely love it. It brings back memories of using Nokia phones in China when I was a kid. It's truly ingenious! I'm thinking, if someone could adapt those apps to fit this small screen, wouldn't that really allow us to experience the retro feel? The developers are geniuses, keep up the good work!",
+    "image": "https://lh3.googleusercontent.com/a-/ALV-UjVmxfmvRH0w957snM4DTCt8aQbwydEi37tinRWFQvWDSih1Anc=s50"
   },
   {
     author: "Lautaro Zalazar",
