@@ -18,4 +18,5 @@ Below is a list of free and open-source tools and utilities built by Visnalize. 
 | [Make Aero](https://makeaero.com/) | Frutiger Aero styles generator | [<iconify-icon icon="logos:github-icon" /> Github](https://github.com/visnalize/makeaero) |
 | __Bridge 1100__ | A small utility to bridge [Brick 1100](../brick1100/about.md) with external games and apps | [<iconify-icon icon="logos:github-icon" /> Github](https://github.com/Visnalize/bridge-1100) |
 | __Capacitor Call__ | A [Capacitor](https://capacitorjs.com/) plugin to make phone calls | [<iconify-icon icon="logos:github-icon" /> Github](https://github.com/Visnalize/capacitor-plugin-call) |
-| __Capacitor Xframe__ | A [Capacitor](https://capacitorjs.com/) plugin to bypass CORS and same origin policy for iframe | [<iconify-icon icon="logos:github-icon" /> Github](https://github.com/Visnalize/capacitor-plugin-call) |
+| __Capacitor Xframe__ | A [Capacitor](https://capacitorjs.com/) plugin to bypass CORS and same origin policy for iframe | [<iconify-icon icon="logos:github-icon" /> Github](https://github.com/Visnalize/capacitor-plugin-xframe) |
+| [Play Console Utils](https://pcu.visnalize.com) | A browser extension that add small productivity utilities and shortcuts for Google Play Console | [<iconify-icon icon="logos:github-icon" /> Github](https://github.com/Visnalize/play-console-utils) |
