@@ -43,7 +43,9 @@ Display control | 🟢 | 🔴
 
 ## Pricing
 
-Win7 Simu is and will always remain **FREE** to use. However, as it has been growing in popularity, the time and effort invested in the development and maintenance, as well as the server costs for the app, are also increasing. Therefore, a small subscription was introduced to help cover the costs and keep the service running. The subscription is completely optional and does not affect the core features of the app. It is available at **$1.99/month** or **$19.99/year**. Subscribers will be able to enjoy the app without any ads and may cancel their subscriptions at any time.
+Win7 Simu is and will always remain **FREE** to use. However, as it has been growing in popularity, the time and effort invested in the development and maintenance, as well as the server costs for the app, are also increasing. Therefore, a small subscription was introduced to help cover the costs and keep the service running.
+
+Ranging from as low as **$0.54/month** to **$2.99/month** (or **$4.33/year** to **$23.99/year**, depending on the region), the subscription is completely optional and does not affect the core features of the app. Subscribers will be able to enjoy the app without any ads and may cancel their subscriptions at any time.
 
 *We would like to express our sincere gratitude to all the subscribers who have been supporting us.*
 
