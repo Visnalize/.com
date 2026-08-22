@@ -23,7 +23,7 @@ The approach shared in this post appears to be only applicable to some versions 
 - A computer or laptop with internet connection
 - A MicroSD card reader (even your smartphone can be used as a card reader)
 
-<SponsorAd />
+<AmazonPick id="game-stick" />
 
 ## Step-by-step guide
 
@@ -54,6 +54,8 @@ Do not format the MicroSD card if you're prompted to do so as it will erase all 
 ![The game folder](./img/game-stick-lite-4k-adding-games/game-folder.png)
 
 _Example: The `game` folder's content as seen on my SD card, with the console folders and the `games.db` file._
+
+<SponsorAd />
 
 ### 3. Add your games
 
