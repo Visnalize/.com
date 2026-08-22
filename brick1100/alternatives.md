@@ -39,6 +39,11 @@ Where this category tends to fall short is breadth and depth. Most single-model 
 
 Over 250 million Nokia 1100 units were sold, so used ones are still floating around on secondhand marketplaces. This is the only option that provides the actual, physical device: real buttons, a real monochrome LCD, a battery that can last hundreds of hours on standby. The trade-offs are real too: no manufacturer support, no warranty, aging hardware and batteries, no modern connectivity (no data, often no modern SIM support), and a separate smartphone is still needed for everyday use.
 
+<AmazonPicks
+  title="Looking for the real hardware?"
+  note="If a physical keypad phone is the goal rather than a simulation, these are the closest things still sold today."
+  ids="nokia-keypad-phone,dumbphone" />
+
 <SponsorAd />
 
 ## Where Brick 1100 fits in

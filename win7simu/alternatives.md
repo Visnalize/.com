@@ -41,6 +41,11 @@ This is the category people are usually actually looking for when searching "run
 
 For those with the patience and technical background, this is the only category here that provides a literally real Windows installation. For everyone else, it's a lot of effort for a shaky result.
 
+<AmazonPicks
+  title="Making a phone feel more like a desktop"
+  note="A simulator handles the software side. These cover the parts a phone cannot simulate."
+  ids="phone-desktop-dock,retro-keyboard" />
+
 <SponsorAd />
 
 ## Where Win7 Simu fits in
