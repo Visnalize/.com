@@ -1,14 +1,16 @@
 <template>
     <component :is="'script'" async crossorigin="anonymous"
         :src="'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-' + ADSENSE_ID" />
-    <div class="ad-container" :class="[className, { 'is-empty': state === 'empty' }]">
-        <ins ref="insRef" class="adsbygoogle" style="display: block" data-ad-slot="3336580675"
-            :data-ad-client="'ca-pub-' + ADSENSE_ID" data-full-width-responsive="true"
-            :data-ad-format="normalizedFormat.join()" />
+    <div class="sponsor-slot" :class="slotClass">
+        <div class="ad-container" :class="{ 'is-empty': state === 'empty' }">
+            <ins ref="insRef" class="adsbygoogle" style="display: block" data-ad-slot="3336580675"
+                :data-ad-client="'ca-pub-' + ADSENSE_ID" data-full-width-responsive="true"
+                :data-ad-format="normalizedFormat.join()" />
+        </div>
         <template v-if="state === 'empty'">
-            <div v-if="fallbackPick" class="fallback">
+            <div v-if="fallbackPick" class="slot-filler">
                 <AmazonPick :pick="fallbackPick" :format="fallbackFormat" />
-                <a class="fallback-link" href="/services#advertising">Or place your ad here</a>
+                <a class="filler-link" href="/services#advertising">Or place your ad here</a>
             </div>
             <a v-else class="placeholder" href="/services#advertising">Place your ad</a>
         </template>
@@ -44,7 +46,9 @@ const props = withDefaults(defineProps<Props>(), { format: 'horizontal' })
 const emit = defineEmits<{ resolve: [state: AdState] }>()
 
 const normalizedFormat = Array.isArray(props.format) ? props.format : [props.format]
-const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
+// Deliberately not named "*-ad": adblock filter lists hide generic ad class
+// names outright (EasyList hides `.r-ad`), which would take the fallback too.
+const slotClass = 'slot-' + normalizedFormat.map((f) => first(f)).join('-')
 
 const insRef = ref<HTMLElement>()
 const state = ref<AdState>('pending')
@@ -130,7 +134,7 @@ onBeforeUnmount(() => {
     display: none !important;
 }
 
-.ad-container .placeholder {
+.sponsor-slot .placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,12 +146,12 @@ onBeforeUnmount(() => {
     transition: 0.2s;
 }
 
-.ad-container .placeholder:hover {
+.sponsor-slot .placeholder:hover {
     background-color: var(--vp-c-bg-soft);
     color: var(--vp-c-text-2);
 }
 
-.fallback-link {
+.filler-link {
     display: block;
     margin-top: 0.5rem;
     color: var(--vp-c-text-3);
@@ -157,16 +161,60 @@ onBeforeUnmount(() => {
     transition: 0.2s;
 }
 
-.fallback-link:hover {
+.filler-link:hover {
     color: var(--vp-c-text-2);
 }
 
-.h-ad {
+/*
+ * Reserve the height the filler will need, from the very first paint, so that
+ * swapping an empty ad slot for a pick does not push the page around. Measured
+ * against the real thing; a taller ad simply grows past the reservation.
+ */
+.sponsor-slot {
+    min-height: var(--slot-reserve, 0);
+}
+
+.slot-h,
+.slot-a {
+    --slot-reserve: 288px;
+}
+
+@media (min-width: 360px) {
+    .slot-h,
+    .slot-a {
+        --slot-reserve: 264px;
+    }
+}
+
+@media (min-width: 576px) {
+    .slot-h,
+    .slot-a {
+        --slot-reserve: 241px;
+    }
+}
+
+@media (min-width: 768px) {
+    .slot-h,
+    .slot-a {
+        --slot-reserve: 164px;
+    }
+}
+
+.slot-r {
+    --slot-reserve: 285px;
+}
+
+.slot-r-v {
+    --slot-reserve: 241px;
+}
+
+.slot-h {
     margin: 3rem auto;
     text-align: center;
 }
 
-.r-ad {
+.slot-r,
+.slot-r-v {
     margin-bottom: 1rem;
 }
 

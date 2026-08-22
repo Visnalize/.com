@@ -175,14 +175,22 @@ onMounted(() => {
     font-size: 1.25rem;
 }
 
+/*
+ * Keep the icon beside the text on narrow screens and drop only the button to
+ * its own line. Stacking all three made the card tall enough that swapping it in
+ * for an empty ad slot shifted the page noticeably.
+ */
 @media (max-width: 640px) {
     .horizontal {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .horizontal .pick-body {
+        flex: 1 1 8rem;
     }
 
     .horizontal .pick-cta {
-        align-self: stretch;
+        flex: 1 0 100%;
         justify-content: center;
     }
 }
