@@ -43,6 +43,10 @@ With the `sponsor` tag removed:
 - Regular posts: __$60/post__.
 - Custom posts: __$80/post__.
 
+Bundled with [advertising](./advertising.md):
+
+- Any post, bundled with a monthly ad placement: __half price__.
+
 ::: warning Note on payment due
 Payment is required within 5 working days after publishing, unless otherwise agreed upon. If payment is not received after the due date, the post will be removed from the site.
 :::
