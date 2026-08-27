@@ -38,9 +38,7 @@ Below is a list of specific assets we have used in Win7 Simu:
 - **Gadget-related assets**: images from Windows 7 Gadgets, including Battery, Clock, Weather, and others.
 - **Game-related assets**: images and sounds from Windows 7 games, including Minesweeper, Purble Place, Chess Titans, and others.
 
-We acknowledge that these assets are copyrighted by Microsoft and are not licensed for redistribution. They are used in this project solely to recreate the nostalgic experience of past Windows versions, in a transformative, educational, and simulation context. While we have some forms of monetization in place, we do not use any of these assets for direct profit, such as selling them or using them in a way that would infringe on Microsoft's copyrights, and cause confusion with the original Windows products.
-
-If you are a representative of Microsoft and believe that we have used these assets inappropriately, please contact us at [hey@visnalize.com](mailto:hey@visnalize.com) so we can address and correct the issue promptly.
+The assets listed above are the property of Microsoft Corporation. Win7 Simu is an independent project, not affiliated with, authorised by, or endorsed by Microsoft. If you represent Microsoft and want any asset removed, please contact us at [hey@visnalize.com](mailto:hey@visnalize.com) and we will act promptly.
 
 ## Theme assets
 
