@@ -86,7 +86,7 @@ Body, exactly this order. The blog index takes the card title from the first `# 
 ```
 # Title in Title Case
 
-![Cover image](<direct image url>)
+![Cover image](<remote image url, or /assets/covers/<slug>.<ext>, see step 4>)
 
 _Cover image by <Author> via [<Source>](<photo page url>)_
 
@@ -94,6 +94,8 @@ Opening paragraph.
 
 ## Section heading
 ```
+
+The index card uses that thumbnail src exactly as written, and the card renders on `/blog` and `/blog/page/<n>`, not on the post page. A relative `./img/...` path therefore resolves against the wrong URL and the card shows no image. The cover src must be a remote URL or an absolute `/assets/covers/...` path.
 
 Editing rules:
 
@@ -115,6 +117,12 @@ _Cover image by <Author> via [<Source>](<photo page url>)_
 ```
 
 Variants already used in the blog: `_Cover image designed on <Author>'s original photo from [Unsplash](...)_`, `_Cover image from [<Channel>'s video thumbnail](...)_`.
+
+Where the cover file goes:
+
+- A remote royalty-free URL, such as Unsplash, Pexels, or Pixabay, is referenced as it is. There is no file to copy.
+- An image you host yourself, such as one the client supplied, goes in `public/assets/covers/<slug>.<ext>` and is referenced as `/assets/covers/<slug>.<ext>`. Never put the cover in `blog/img/<slug>/`.
+- Convert a supplied PNG or JPEG cover over about 300 KB to WebP first: `cwebp -q 82 <source> -o public/assets/covers/<slug>.webp`.
 
 Case A, the article has a cover and a credit. Open the photo page to confirm the author name and that the link resolves, then rewrite the line into the format above.
 
@@ -138,7 +146,7 @@ Always verify the final URL returns 200:
 curl -sI -o /dev/null -w "%{http_code}\n" "<image url>"
 ```
 
-Extra images inside the article follow the same attribution rules. Local image files go in `blog/img/<slug>/`.
+Extra images inside the article follow the same attribution rules. Their local files go in `blog/img/<slug>/`, referenced as `./img/<slug>/<name>`. A relative path is correct for these, because they only ever render on the post page.
 
 ## Step 5 - Checkpoint, do not skip
 
@@ -147,7 +155,7 @@ Before touching git, show the user:
 - Verdict, word count, external link count.
 - File path, slug, and the URL the post will get.
 - H1, description, tags.
-- Cover image source and author, and whether you replaced the client's image.
+- Cover image source and author, whether you replaced the client's image, and the path the cover file was saved to.
 - Anything you changed beyond copy-editing.
 
 Wait for approval. If the user asks for changes, apply them and show the summary again.
@@ -158,7 +166,7 @@ Wait for approval. If the user asks for changes, apply them and show the summary
 git fetch origin
 N=$(( $( { git branch -a --list '*sponsor-*'; git log --oneline --all | grep -oiE 'sponsored post [0-9]+'; } | grep -oE '[0-9]+' | sort -n | tail -1 ) + 1 ))
 git checkout -b "sponsor-$N" origin/v2
-git add "blog/<slug>.md"
+git add "blog/<slug>.md" "public/assets/covers/<slug>.<ext>"   # plus blog/img/<slug>/ if the post has inline images
 git status --short          # nothing else may be staged
 git commit -m "Add sponsored post $N"
 git push -u origin "sponsor-$N"
@@ -167,7 +175,7 @@ gh pr merge --merge
 ```
 
 - Branch off `origin/v2`, not off whichever branch happens to be checked out.
-- Only the new post file, and its images if any, go into the commit.
+- Only the new post file, its cover in `public/assets/covers/`, and its inline images in `blog/img/<slug>/` go into the commit.
 - `--merge` keeps the merge-commit history the earlier sponsor PRs use. Do not squash. Do not delete the branch, the `sponsor-*` branches are kept.
 - These commit messages deliberately do not use conventional-commit prefixes. That is the convention for this series, keep it.
 

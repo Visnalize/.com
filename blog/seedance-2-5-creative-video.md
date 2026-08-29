@@ -8,7 +8,7 @@ tags:
 
 # Create Content With Full Creative Freedom Using Seedance 2.5
 
-![Prompt-driven product video created with Seedance 2.5](./img/seedance-2-5-creative-video/prompt-to-product-video.webp)
+![Prompt-driven product video created with Seedance 2.5](/assets/covers/seedance-2-5-creative-video.webp)
 
 _Cover image from [Pippit](https://www.pippit.ai/models/seedance/2-5)_
 
