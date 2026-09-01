@@ -11,7 +11,8 @@ While working on Visnalize and its projects, I frequently use various online ima
 
 ![Adobe Express](./assets/online-image-tools/adobe-express.jpeg)
 
-Adobe Express is a versatile tool for creating and editing images with ease. It offers templates and customization options for designing social media posts, banners, and more. Its user-friendly interface makes it suitable for both beginners and experienced designers. Adobe Express also includes features like image resizing, background removal, and access to a library of stock images and icons to enhance your projects.
+Adobe Express is a design platform with strong image editing capabilities, including templates for designing social media posts, banners, and more. Its user-friendly interface makes it suitable for both beginners and experienced designers. The [image editor](https://www.adobe.com/express/feature/image/editor)
+includes features like image resizing, background removal, and access to a library of stock images and icons to enhance your projects.
 
 __Website:__ [new.express.adobe.com](https://new.express.adobe.com/)
 
