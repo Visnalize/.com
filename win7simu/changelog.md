@@ -12,6 +12,44 @@ pageClass: changelog
 
 ## 2026
 
+### `4.6.0` (Sep 6, 2026)
+
+__Core__
+
+- Added several improvements for the [Purble Pairs](./simulated/purbleplace.md) game:
+  - Refined UI, animations, and visual effects to resemble the original game
+  - Improved game mechanics: game tips, special tiles and timers
+  - Games can be saved and resumed later
+- Added several improvements for the [Comfy Cakes](./simulated/purbleplace.md) game:
+  - Game is now offline and can be played without an internet connection
+  - Refined assets, animations, and visual effects
+- Added new game: [Spider Solitaire](./simulated/spidersolitaire.md)
+- Added several new features for the taskbar and start menu:
+  - Added Aero Peek
+  - You can now customize and manage notification area icons via Notification Area Icons in [Control Panel](./simulated/cpanel.md)
+  - Taskbar buttons can now show labels
+  - Start menu power button can now be customized
+  - Start menu recently opened programs can now be turned off
+- Added several new [Command Prompt](./simulated/cmd.md) commands for file and directory management, and other tasks
+- Added several improvements and bug fixes for [File Explorer](./simulated/fileexplorer.md):
+  - System (C:) drive now shows an accurate hierarchy of files and folders
+  - Program, system and user settings are now better organized
+  - Overall performance and stability of File Explorer have been improved
+- Added several improvements to the notification system:
+  - You can now access all notifications from the Action Center in Control Panel
+  - Notification balloons now automatically disappear after a few seconds instead of requiring manual dismissal
+  - Notifications are now localized based on your language settings
+- [Theme Studio](./themestudio.md) themes that are incompatible with the [v2 changes](./themestudio/selectors.md#changes-in-v2) are now automatically migrated and functional
+- Fixed the weather [gadget](./simulated/gadgets.md) not working
+
+__Android__
+
+- Several improvements and bug fixes for the Android (A:) drive:
+  - Android drive now works correctly with SD card, Google Drive, and other storage providers
+  - You can now open ZIP and PDF files on the Android drive
+  - You can now perform create, rename, copy, move and delete operations on the Android drive
+  - Folders on the Android drive now open much faster, improving the overall user experience
+
 ### `4.5.0` (Jun 18, 2026)
 
 __Core__
