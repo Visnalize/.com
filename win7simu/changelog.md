@@ -12,6 +12,12 @@ pageClass: changelog
 
 ## 2026
 
+### `9.9.0` (Sep 9, 2026)
+
+New and improved games, a customizable taskbar and start menu, a more accurate File Explorer, and create, rename and delete support on the Android drive.
+
+[Read the full release notes &rarr;](./changelog/9.9.0.md)
+
 ### `4.6.0` (Sep 6, 2026)
 
 A big update for the built-in games, the taskbar and start menu, File Explorer, and full read-write support on the Android drive.
