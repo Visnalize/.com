@@ -65,16 +65,8 @@ jobs:
           echo "published_at=$published_at" >> "$GITHUB_OUTPUT"
           echo "body_file=$body_file" >> "$GITHUB_OUTPUT"
 
-      # package.json has no packageManager field, so the version is pinned here.
-      # Lockfile is v9, which pnpm 10 reads.
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 10
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-
+      # Both scripts import only Node built-ins and Claude never builds the site,
+      # so there is nothing to install. The runner's own Node runs them.
       - name: Scaffold the release page
         id: scaffold
         env:
@@ -89,10 +81,6 @@ jobs:
       - name: Report a skipped release
         if: steps.scaffold.outputs.skipped == 'true'
         run: echo "::notice::${{ steps.scaffold.outputs.reason }}"
-
-      - name: Install dependencies
-        if: steps.scaffold.outputs.skipped == 'false'
-        run: pnpm install --frozen-lockfile
 
       - name: Write the summary and links
         if: steps.scaffold.outputs.skipped == 'false'
