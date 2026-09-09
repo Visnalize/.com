@@ -1,0 +1,165 @@
+name: Win7 Simu release page
+
+# Triggered by the Win7 Simu app repo when a release is published. See
+# .github/APP_REPO_SETUP.md for the workflow that sends the dispatch.
+on:
+  repository_dispatch:
+    types: [win7simu-release]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release tag in the app repo, for example 4.7.0
+        required: true
+      release_date:
+        description: Override the release date (YYYY-MM-DD). Leave empty to use the GitHub release date.
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: release-page-${{ github.event.client_payload.version || inputs.version }}
+  cancel-in-progress: false
+
+jobs:
+  release-page:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # A dispatch carries the release body with it. A manual run has to read it
+      # back from the app repo, which is private, hence the extra token. The repo
+      # path is a secret rather than a variable because this repo's Actions logs
+      # are public.
+      - name: Resolve the release
+        id: release
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_VERSION: ${{ github.event.client_payload.version }}
+          DISPATCH_PUBLISHED_AT: ${{ github.event.client_payload.published_at }}
+          DISPATCH_BODY: ${{ github.event.client_payload.body }}
+          INPUT_VERSION: ${{ inputs.version }}
+          GH_TOKEN: ${{ secrets.APP_REPO_TOKEN }}
+          APP_REPO: ${{ secrets.APP_REPO }}
+        run: |
+          set -euo pipefail
+          body_file="$RUNNER_TEMP/release-body.md"
+
+          if [ "$EVENT_NAME" = "repository_dispatch" ]; then
+            version="$DISPATCH_VERSION"
+            published_at="$DISPATCH_PUBLISHED_AT"
+            printf '%s' "$DISPATCH_BODY" > "$body_file"
+          else
+            if [ -z "${GH_TOKEN:-}" ] || [ -z "${APP_REPO:-}" ]; then
+              echo "::error::A manual run needs the APP_REPO and APP_REPO_TOKEN secrets to read the private app repo."
+              exit 1
+            fi
+            version="$INPUT_VERSION"
+            gh api "repos/$APP_REPO/releases/tags/$version" > "$RUNNER_TEMP/release.json"
+            published_at=$(jq -r .published_at "$RUNNER_TEMP/release.json")
+            jq -r .body "$RUNNER_TEMP/release.json" > "$body_file"
+          fi
+
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "published_at=$published_at" >> "$GITHUB_OUTPUT"
+          echo "body_file=$body_file" >> "$GITHUB_OUTPUT"
+
+      # package.json has no packageManager field, so the version is pinned here.
+      # Lockfile is v9, which pnpm 10 reads.
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Scaffold the release page
+        id: scaffold
+        env:
+          RELEASE_VERSION: ${{ steps.release.outputs.version }}
+          RELEASE_PUBLISHED_AT: ${{ steps.release.outputs.published_at }}
+          RELEASE_BODY_FILE: ${{ steps.release.outputs.body_file }}
+          RELEASE_DATE: ${{ inputs.release_date }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/release-page.js
+
+      # Patch releases stay inline in changelog.md, so there is nothing to do.
+      - name: Report a skipped release
+        if: steps.scaffold.outputs.skipped == 'true'
+        run: echo "::notice::${{ steps.scaffold.outputs.reason }}"
+
+      - name: Install dependencies
+        if: steps.scaffold.outputs.skipped == 'false'
+        run: pnpm install --frozen-lockfile
+
+      - name: Write the summary and links
+        if: steps.scaffold.outputs.skipped == 'false'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: '--allowedTools "Read,Edit,Grep,Glob,Bash(node scripts/check-release-page.js:*)" --max-turns 40'
+          prompt: |
+            Read .claude/skills/release-page/SKILL.md and follow it to finish the
+            release page for Win7 Simu ${{ steps.scaffold.outputs.version }}.
+
+            The files are already scaffolded:
+              - win7simu/changelog/${{ steps.scaffold.outputs.version }}.md
+              - the new entry at the top of win7simu/changelog.md
+
+            Fill the {{SUMMARY}} and {{DESCRIPTION}} placeholders, add the links,
+            then run: node scripts/check-release-page.js ${{ steps.scaffold.outputs.version }}
+
+            Edit only those two files.
+
+      - name: Check the result
+        if: steps.scaffold.outputs.skipped == 'false'
+        run: node scripts/check-release-page.js "${{ steps.scaffold.outputs.version }}"
+
+      - name: Open the pull request
+        if: steps.scaffold.outputs.skipped == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ steps.scaffold.outputs.version }}
+          VIDEO: ${{ steps.scaffold.outputs.video }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          branch="docs/release-$VERSION"
+
+          # Never overwrite an existing branch: it may already carry review edits.
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo "::error::Branch $branch already exists. Finish or delete that pull request, then re-run."
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add "win7simu/changelog/$VERSION.md" win7simu/changelog.md
+          git commit -m "docs: add $VERSION release page"
+          git push -u origin "$branch"
+
+          if [ -n "$VIDEO" ]; then
+            video_note="Video \`$VIDEO\` was found on the channel and filled in."
+          else
+            video_note="No matching video on the channel yet. Paste the ID into \`video:\`, or leave it empty and add it later."
+          fi
+
+          {
+            printf 'Generated from the `%s` release in the app repo.\n\n' "$VERSION"
+            printf '## Changelog notes\n\n'
+            printf -- '- Added a release notes page for Win7 Simu %s.\n' "$VERSION"
+            printf -- '- The changelog page now links to it from the %s entry.\n\n' "$VERSION"
+            printf '## Before merging\n\n'
+            printf -- '- [ ] %s\n' "$video_note"
+            printf -- '- [ ] Check the release date against the store rollout. It comes from the GitHub release, which is sometimes cut a day early.\n'
+            printf -- '- [ ] Read the summary and the links.\n'
+          } > "$RUNNER_TEMP/pr-body.md"
+
+          gh pr create \
+            --base "${BASE_BRANCH:-v2}" \
+            --head "$branch" \
+            --title "docs: add $VERSION release page" \
+            --body-file "$RUNNER_TEMP/pr-body.md"
