@@ -13,7 +13,7 @@
  *   node scripts/release-page.js
  */
 
-import { appendFileSync, readFileSync, writeFileSync } from "fs";
+import { appendFileSync, existsSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import { cwd, env, exit } from "process";
 
@@ -265,10 +265,6 @@ function insertChangelogEntry(dateLabel, year) {
   const path = join(cwd(), CHANGELOG);
   const text = readFileSync(path, "utf-8");
 
-  if (text.includes(`### \`${version}\``)) {
-    skip(`${CHANGELOG} already has an entry for ${version}`);
-  }
-
   const entry = [
     `### \`${version}\` (${dateLabel})`,
     "",
@@ -309,6 +305,16 @@ if (!sections.length) {
 }
 
 const pagePath = `${PAGE_DIR}/${version}.md`;
+
+// Guard before any write, so a re-run cannot clobber a page that is already
+// finished, reviewed, or merged.
+if (existsSync(join(cwd(), pagePath))) {
+  skip(`${pagePath} already exists`);
+}
+if (readFileSync(join(cwd(), CHANGELOG), "utf-8").includes(`### \`${version}\``)) {
+  skip(`${CHANGELOG} already has an entry for ${version}`);
+}
+
 const video = await findVideo(version);
 const { year } = localParts(publishedAt);
 
