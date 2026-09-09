@@ -87,6 +87,10 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Without this the action mints a Claude GitHub App token over OIDC,
+          # which needs `id-token: write` and the app installed. This job only
+          # edits files, so the workflow's own token is enough.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           claude_args: '--allowedTools "Read,Edit,Grep,Glob,Bash(node scripts/check-release-page.js:*)" --max-turns 40'
           prompt: |
             Read .claude/skills/release-page/SKILL.md and follow it to finish the
