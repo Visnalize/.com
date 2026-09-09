@@ -8,6 +8,8 @@ import AccessLinks from "./components/global/AccessLinks.vue";
 import AmazonPick from "./components/global/AmazonPick.vue";
 import AmazonPicks from "./components/global/AmazonPicks.vue";
 import AppRating from "./components/global/AppRating.vue";
+import ReleaseNotes from "./components/global/ReleaseNotes.vue";
+import ReleaseSection from "./components/global/ReleaseSection.vue";
 import SponsorAd from "./components/global/SponsorAd.vue";
 import { DISQUS } from "./constants";
 import Layout from "./layout/Layout.vue";
@@ -24,6 +26,8 @@ export default {
     app.component("AppRating", AppRating);
     app.component("AmazonPick", AmazonPick);
     app.component("AmazonPicks", AmazonPicks);
+    app.component("ReleaseNotes", ReleaseNotes);
+    app.component("ReleaseSection", ReleaseSection);
     app.provide(DISQUS, "visnalize");
   },
 } satisfies Theme;

@@ -21,3 +21,15 @@ export const APP_NAMES: Record<App, string> = {
   win7simu: "Win7 Simu",
   brick1100: "Brick 1100",
 };
+
+/**
+ * Platforms a release can ship to, matching the groups used in the changelog.
+ * The key is what a release page passes to `<ReleaseSection platform="..." />`.
+ */
+export const RELEASE_PLATFORMS = {
+  core: { label: "Core", icon: "fluent:desktop-24-filled" },
+  android: { label: "Android", icon: "fluent:phone-24-filled" },
+  web: { label: "Web", icon: "fluent:globe-24-filled" },
+} satisfies Record<string, { label: string; icon: string }>;
+
+export type ReleasePlatform = keyof typeof RELEASE_PLATFORMS;
