@@ -25,18 +25,21 @@ Every number on this page comes from the [live analytics dashboard](#analytics) 
 | __Best for__ | SEO, backlinks, lasting reach | Clicks, sign-ups, launches |
 | __You get__ | One permanent article | A placement across the site |
 | __Runs for__ | Indefinitely | Weekly or monthly |
-| __Starts at__ | $30 one-time | $200/week |
+| __Starts at__ | $40 one-time | $200/week |
 
 Not sure which one? [Email us](mailto:hey@visnalize.com) and we will tell you honestly which fits your goal better, even if it is the cheaper one.
 
 ## Sponsored Posts
 
-If you have a product or service that you would like to promote, you can sponsor a post on Visnalize to reach our audience. Sponsored posts are either written by you or by Visnalize, and will be published on the site. They will be marked with the `sponsor` tag to help readers distinguish them from regular content.
+If you have a product or service that you would like to promote, you can sponsor a post on Visnalize to reach our audience. Sponsored posts are either written by you or by Visnalize, and will be published on the site. They are marked with the `sponsor` tag to help readers distinguish them from regular content, and the tag can be removed for a higher price.
 
-<ServicePrice price="$30" suffix="/post" buttonLink="mailto:hey@visnalize.com?subject=Sponsored Posts" terms="/services/sponsored-posts" :features="[
+A post spends its first week on the homepage, in front of the full 170,000 monthly page views. After that it keeps a permanent home on the blog, which draws around 9,000 page views a month of its own. We quote both numbers because they measure different things, and the second one is what your article collects over the long run.
+
+<ServicePrice price="$40" suffix="/post" buttonLink="mailto:hey@visnalize.com?subject=Sponsored Posts" terms="/services/sponsored-posts" :features="[
     'A carefully reviewed/crafted post about your product or service',
-    'Permanent do-follow links back to your site in the post',
-    'The post will be featured on the homepage for at least 1 week',
+    'Permanent do-follow links from a DR 30+ domain with 900+ referring domains',
+    'A week on the homepage, in front of all 170K monthly page views',
+    'Regular posts: you pay only after the post is live, never before',
     'A smooth and hassle-free process, with a quick turnaround time',
 ]" />
 

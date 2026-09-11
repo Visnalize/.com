@@ -9,6 +9,7 @@ ads: false
 
 <script setup lang="ts">
 import SponsoredPostsClients from '@components/misc/services/SponsoredPostsClients.vue';
+import SponsoredPostPricing from '@components/misc/services/SponsoredPostPricing.vue';
 </script>
 
 # Sponsored Posts
@@ -16,6 +17,7 @@ import SponsoredPostsClients from '@components/misc/services/SponsoredPostsClien
 :::tip TL;DR
 
 - Publish posts on our blog for do-follow backlinks, traffic, domain authority, and audience.
+- For regular posts, __you pay only after your post is live__, so you can see exactly what you bought before spending anything.
 - See [pricing options](#pricing) and [content guidelines](#content-guidelines) for critical details.
 - Inquiries or requests are communicated via [email](mailto:hey@visnalize.com).
 
@@ -33,19 +35,42 @@ For inquiries or to discuss custom requests, you can also contact us via [email]
 
 ## Pricing
 
-- ~~Early offer: __$20/post__~~ _(sold out)_.
-- Regular posts (you write, we review, we publish): __$30/post__.
-- Custom posts (we write, you review, we publish): __$40/post__.
+<SponsoredPostPricing :tiers="[
+  {
+    name: 'Regular',
+    note: 'You write, we review, we publish',
+    rows: [
+      { label: 'With the sponsor tag', single: 40, pack: 100 },
+      { label: 'Without the sponsor tag', single: 80, pack: 200 },
+    ],
+  },
+  {
+    name: 'Custom',
+    note: 'We write, you review, we publish',
+    rows: [
+      { label: 'With the sponsor tag', single: 60, pack: 150 },
+      { label: 'Without the sponsor tag', single: 120, pack: 300 },
+    ],
+  },
+]" />
 
-With the `sponsor` tag removed:
+Other options:
 
-- ~~Early offer: __$40/post__~~ _(sold out)_.
-- Regular posts: __$60/post__.
-- Custom posts: __$80/post__.
+- __Link insertion__ into an existing post: __$50__ per link. Unusual requests, such as a link
+  in a post that needs rewriting around it, are quoted separately.
+- __Bundled with [advertising](./advertising.md)__: any post bought alongside a monthly ad
+  placement is __half price__.
 
-Bundled with [advertising](./advertising.md):
+### How a pack works
 
-- Any post, bundled with a monthly ad placement: __half price__.
+- We publish __one post per month over three months__. Spacing the posts out keeps your link
+  profile looking natural, which a burst of three posts in one week does not.
+- You get __one invoice instead of three__. A regular pack is invoiced once the first post is
+  live, so you still see a published post before you pay anything. A custom pack is invoiced
+  before we start writing, the same as a single custom post.
+- A pack expires __12 months__ after the first post.
+
+See the [FAQs](#faqs) for what a pack allows.
 
 ::: warning Note on payment due
 Payment is required within 5 working days after publishing, unless otherwise agreed upon. If payment is not received after the due date, the post will be removed from the site.
@@ -91,6 +116,16 @@ Example published posts:
 
 You can publish as many posts as you like, but we restrict the number of sponsored posts to __2 per week__ to maintain sufficient exposure for each post.
 
+### Can each post in a pack point to a different site?
+
+__Yes__. The three posts in a pack are independent, so agencies placing for several clients can
+use one pack across all of them.
+
+### Can I mix tiers within a pack?
+
+__Yes__. If one post in a regular pack needs the `sponsor` tag removed, or needs to be written
+by us, you pay the difference for that post only.
+
 ### How long does it take to publish a post?
 
 Typically, it takes __1-3 days__ to review and publish a post. If you have a specific deadline, please let us know in advance, and we will do our best to accommodate it.
@@ -105,4 +140,4 @@ __Yes__, all links in the post are do-follow by default. If you notice any issue
 
 ### Do you offer link insertion services?
 
-__Yes__, however, the price for link insertion is subject to negotiation based on the post's relevance and quality. We also reserve the right to refuse requests that we deem inappropriate. Please [contact us](mailto:hey@visnalize.com) for more details.
+__Yes__, at __$50 per link__. The link must be relevant to the post it goes into, and we reserve the right to refuse requests that we deem inappropriate. Requests that need the post rewritten around the link are quoted separately. Please [contact us](mailto:hey@visnalize.com) with the post and the link you have in mind.
