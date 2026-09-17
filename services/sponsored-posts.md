@@ -5,6 +5,7 @@ comments: false
 pagefind-indexed: false
 social: false
 ads: false
+noindex: true
 ---
 
 <script setup lang="ts">

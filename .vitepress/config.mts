@@ -10,7 +10,7 @@ import head from "./config/head";
 import navItems from "./config/nav";
 import sidebar from "./config/sidebar";
 import socialLinks from "./config/social";
-import { transformPageData } from "./config/transformers";
+import { noindexPaths, transformPageData } from "./config/transformers";
 import markdownItImage from "./plugins/md-image";
 
 // https://vitepress.dev/reference/site-config
@@ -38,11 +38,14 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
         xhtml: true,
       },
       transformItems: (items) => {
-        items.forEach((item) => {
+        const indexable = items.filter(
+          (item) => !noindexPaths.has(item.url.replace(/^\//, "")),
+        );
+        indexable.forEach((item) => {
           item.lastmod = item.lastmod || new Date().toISOString();
           item.changefreq = "weekly";
         });
-        return items;
+        return indexable;
       },
     },
 

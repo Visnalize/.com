@@ -20,6 +20,13 @@ import {
   getFaqSchema,
 } from "./schema";
 
+/**
+ * Paths of pages carrying `noindex: true`, collected while pages are
+ * transformed so the sitemap can leave them out. A page we ask Google not to
+ * index should not be advertised in the sitemap either.
+ */
+export const noindexPaths = new Set<string>();
+
 // https://vitepress.dev/reference/site-config#transformpagedata
 export const transformPageData: UserConfig["transformPageData"] = async (
   data: PageData & Record<string, any>,
@@ -142,6 +149,16 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     ["meta", { property: "twitter:description", content: data.description }],
     ["meta", { property: "twitter:image", content: metaImage }],
   );
+
+  // `follow` keeps the outgoing links on the page working for the sites we
+  // link to, while the page itself stays out of the index.
+  if (data.frontmatter.noindex) {
+    noindexPaths.add(transformedPath);
+    data.frontmatter.head.push([
+      "meta",
+      { name: "robots", content: "noindex, follow" },
+    ]);
+  }
 
   // Structured data (JSON-LD) ------------------------------------------------
   const breadcrumbSchema = getBreadcrumbSchema(transformedPath, data.title);
