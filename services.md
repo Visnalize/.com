@@ -12,9 +12,14 @@ pagefind-indexed: false
 import AnalyticsDashboard from '@components/misc/AnalyticsDashboard.vue';
 import ServicePrice from '@components/misc/services/ServicePrice.vue';
 import SponsoredPostsClients from '@components/misc/services/SponsoredPostsClients.vue';
+import { AUDIENCE_TEXT as audience, adCostPerMille } from '@/.vitepress/theme/constants';
+
+// The list price the founding rate is discounted from. It also sets the cost
+// per 1000 page views quoted below, so the two can never drift apart.
+const adPrice = 700;
 </script>
 
-Visnalize reaches __over 100,000 visitors and 170,000 page views every month__, mostly people who came for our retro apps and stayed to read. Two ways to put your product in front of them: a sponsored post on our blog, or an ad placement on the site.
+Visnalize reaches __over {{ audience.visitors }} visitors and {{ audience.pageViews }} page views every month__, mostly people who came for our retro apps and stayed to read. Two ways to put your product in front of them: a sponsored post on our blog, or an ad placement on the site.
 
 Every number on this page comes from the [live analytics dashboard](#analytics) at the bottom. Nothing is estimated, and nothing is hidden.
 
@@ -33,12 +38,12 @@ Not sure which one? [Email us](mailto:hey@visnalize.com) and we will tell you ho
 
 If you have a product or service that you would like to promote, you can sponsor a post on Visnalize to reach our audience. Sponsored posts are either written by you or by Visnalize, and will be published on the site. They are marked with the `sponsor` tag to help readers distinguish them from regular content, and the tag can be removed for a higher price.
 
-A post spends its first week on the homepage, in front of the full 170,000 monthly page views. After that it keeps a permanent home on the blog, which draws around 9,000 page views a month of its own. We quote both numbers because they measure different things, and the second one is what your article collects over the long run.
+A post spends its first week on the homepage, in front of the full {{ audience.pageViews }} monthly page views. After that it keeps a permanent home on the blog, which draws around {{ audience.blogPageViews }} page views a month of its own. We quote both numbers because they measure different things, and the second one is what your article collects over the long run.
 
 <ServicePrice price="$40" suffix="/post" buttonLink="mailto:hey@visnalize.com?subject=Sponsored Posts" terms="/services/sponsored-posts" :features="[
     'A carefully reviewed/crafted post about your product or service',
-    'Permanent do-follow links from a DR 30+ domain with 900+ referring domains',
-    'A week on the homepage, in front of all 170K monthly page views',
+    'Permanent do-follow links on a site with a real audience, not a link farm',
+    `A week on the homepage, in front of all ${audience.pageViewsShort} monthly page views`,
     'Regular posts: you pay only after the post is live, never before',
     'A smooth and hassle-free process, with a quick turnaround time',
 ]" />
@@ -47,12 +52,12 @@ A post spends its first week on the homepage, in front of the full 170,000 month
 
 ## Advertising
 
-Your ad is built into the page itself, not loaded from an ad network. That means __ad blockers do not remove it__, so it reaches every one of our 170,000+ monthly page views, not just the share that lets third-party ads through. We design it to match the site, and place it where readers actually look.
+Your ad is built into the page itself, not loaded from an ad network. That means __ad blockers do not remove it__, so it reaches every one of our {{ audience.pageViews }}+ monthly page views, not just the share that lets third-party ads through. We design it to match the site, and place it where readers actually look.
 
-At $700/month that works out to about __$4 per 1000 page views__ with no middleman taking a cut. Right now the first placement is open at a founding rate, and we will hold that price for as long as you keep the slot.
+At ${{ adPrice }}/month that works out to about __${{ adCostPerMille(adPrice) }} per 1000 page views__ with no middleman taking a cut. Right now the first placement is open at a founding rate, and we will hold that price for as long as you keep the slot.
 
-<ServicePrice originalPrice="$700" price="$550" suffix="/month" offer="Founding advertiser rate" buttonLink="mailto:hey@visnalize.com?subject=Advertising Inquiry" terms="/services/advertising" :features="[
-    '170K+ monthly page views, reached in full because ad blockers cannot strip a native placement',
+<ServicePrice :originalPrice="`$${adPrice}`" price="$550" suffix="/month" offer="Founding advertiser rate" buttonLink="mailto:hey@visnalize.com?subject=Advertising Inquiry" terms="/services/advertising" :features="[
+    `${audience.pageViewsShort}+ monthly page views, reached in full because ad blockers cannot strip a native placement`,
     'An audience of retro enthusiasts, tech-savvy users, and long-form readers',
     'A placement designed by us to match the site, in the spots readers actually look at',
     'Your founding rate locked in for as long as you keep the slot',

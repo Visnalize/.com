@@ -17,6 +17,36 @@ export const AMAZON_HOST = "https://www.amazon.com";
  */
 export const AD_FILL_TIMEOUT = 2500;
 
+/**
+ * Audience figures quoted across the services pages. Every one is readable off
+ * the live analytics dashboard, so the pages stay checkable against it. Update
+ * this block when the dashboard moves and every page follows.
+ */
+export const AUDIENCE = {
+  /** Unique visitors per month, across the whole site. */
+  visitors: 100_000,
+  /** Page views per month, across the whole site. */
+  pageViews: 170_000,
+  /** Page views per month the blog draws on its own, once a post is no longer
+   * on the homepage. */
+  blogPageViews: 9_000,
+} as const;
+
+const en = (value: number, notation: Intl.NumberFormatOptions["notation"]) =>
+  new Intl.NumberFormat("en-US", { notation }).format(value);
+
+/** The same figures as text, so pages quote them without restating the number. */
+export const AUDIENCE_TEXT = {
+  visitors: en(AUDIENCE.visitors, "standard"),
+  pageViews: en(AUDIENCE.pageViews, "standard"),
+  pageViewsShort: en(AUDIENCE.pageViews, "compact"),
+  blogPageViews: en(AUDIENCE.blogPageViews, "standard"),
+} as const;
+
+/** Cost per 1000 page views at a given monthly ad price, rounded to a dollar. */
+export const adCostPerMille = (monthlyPrice: number) =>
+  Math.round(monthlyPrice / (AUDIENCE.pageViews / 1000));
+
 export const APP_NAMES: Record<App, string> = {
   win7simu: "Win7 Simu",
   brick1100: "Brick 1100",
