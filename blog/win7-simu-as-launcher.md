@@ -4,7 +4,6 @@ description: Exploring the idea of making Win7 Simu a launcher app, and why it's
 tags:
   - win7-simu
   - technical
-  - sharing
 ---
 
 # Can you make Win7 Simu a launcher app?

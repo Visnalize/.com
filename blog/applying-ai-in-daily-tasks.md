@@ -2,8 +2,8 @@
 createdAt: 1749747934259
 description: Not using AI in 2025? You might be missing out on a lot. Here's how I use it in my daily tasks.
 tags:
-  - tips
   - ai
+  - productivity
 ---
 
 # How I apply AI in my day-to-day tasks

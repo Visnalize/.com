@@ -3,8 +3,7 @@ title: WoW Patch 12.1.5, everything in The Promise of Tomorrow
 createdAt: 1789897081058
 description: A full overview of World of Warcraft Patch 12.1.5, The Promise of Tomorrow, covering the Kith'ix raid, Labyrinths, Aqir Invasions, and Venomstones.
 tags:
-  - sharing
-  - tips
+  - gaming
 ---
 
 # World of Warcraft Patch 12.1.5 Overview: Everything Coming in The Promise of Tomorrow

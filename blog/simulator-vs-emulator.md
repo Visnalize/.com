@@ -2,9 +2,8 @@
 createdAt: 1708488145000
 description: Understand the differences between simulators and emulators, what they mean for Win7 Simu.
 tags:
-  - tips
-  - sharing
   - win7-simu
+  - technical
 ---
 
 # Simulators and Emulators: What's the difference?

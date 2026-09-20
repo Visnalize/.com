@@ -2,8 +2,8 @@
 createdAt: 1783703137112
 description: Learn how retro app design teaches modern builders about clarity, predictability, and context in user experience.
 tags:
-  - tips
-  - sharing
+  - design
+  - retro
 ---
 
 # The Hidden UX Lessons Behind Retro App Design

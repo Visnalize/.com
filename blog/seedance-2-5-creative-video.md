@@ -2,8 +2,9 @@
 createdAt: 1788011068488
 description: Plan concepts, write sharper prompts, and combine references to generate controlled AI videos with Seedance 2.5, then refine and publish them in Pippit.
 tags:
-  - tips
   - ai
+  - design
+  - tips
 ---
 
 # Create Content With Full Creative Freedom Using Seedance 2.5

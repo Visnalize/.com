@@ -2,7 +2,6 @@
 createdAt: 1685077898000
 description: Some key points to share about how Win7 Simu's File Explorer is implemented.
 tags:
-  - sharing
   - win7-simu
   - technical
 ---

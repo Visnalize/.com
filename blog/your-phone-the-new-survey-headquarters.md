@@ -2,7 +2,8 @@
 createdAt: 1766041672157
 description: Discover why mobile phones have become the new hub for surveys, transforming data collection with convenience, speed, and global reach.
 tags:
-    - sharing
+  - business
+  - privacy
 ---
 
 # Why Your Phone Became the New Survey Headquarters

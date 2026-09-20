@@ -3,8 +3,9 @@ createdAt: 1710034125000
 description: How to add games to Game Stick Lite 4K and enjoy more of your childhood games
 badge: popular
 tags:
+  - gaming
+  - retro
   - tips
-  - random
 ---
 
 # How to add more games to Game Stick Lite 4K

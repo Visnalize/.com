@@ -2,7 +2,8 @@
 createdAt: 1768189225765
 description: An exploration of how video game ownership has changed over the years, from physical copies to digital downloads, subscriptions, and DRM.
 tags:
-  - sharing
+  - gaming
+  - retro
 ---
 
 # The Evolution of Video Game Ownership

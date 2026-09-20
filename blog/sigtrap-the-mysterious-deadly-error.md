@@ -4,7 +4,6 @@ description: Celebrating Win7 Simu's error resolved, how I managed to fix this m
 tags:
   - win7-simu
   - technical
-  - ai
 ---
 
 # SIGTRAP, the mysterious yet deadly error

@@ -2,7 +2,6 @@
 createdAt: 1747156980860
 description: One of the most sophisticated games in Windows 7 now recreated in Win7 Simu, sharing how we did it.
 tags:
-  - sharing
   - win7-simu
   - technical
   - guest-post

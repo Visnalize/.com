@@ -2,7 +2,9 @@
 createdAt: 1763598569587
 description: Learn what Problem Management is, how it works, and why it's essential for preventing recurring IT issues through proactive processes.
 tags:
-    - tips
+  - technical
+  - business
+  - tips
 ---
 
 # Understanding Problem Management: Your Complete Guide

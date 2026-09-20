@@ -2,8 +2,8 @@
 createdAt: 1755108724821
 description: Are ads really bad for businesses? Should you consider them? What to keep in mind? Here are my thoughts.
 tags:
-    - tips
-    - sharing
+  - business
+  - tips
 ---
 
 # My takes on ads

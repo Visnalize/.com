@@ -3,7 +3,8 @@ createdAt: 1782482077307
 description: Want to experience any Windows versions without installing anything? Here is how you can simulate them right in your browser.
 tags:
   - win7-simu
-  - tips
+  - windows
+  - retro
 ---
 
 # Simulate any Windows version online: 3.1, 95, XP, Vista, 10 and more

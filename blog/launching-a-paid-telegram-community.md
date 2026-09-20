@@ -2,7 +2,8 @@
 createdAt: 1770913604593
 description: A step-by-step guide to launching a paid Telegram community in just 14 days, including planning, technical setup, and monetization strategies.
 tags:
-    - tips
+  - business
+  - tips
 ---
 
 # How to Launch a Paid Telegram Community in 14 Days

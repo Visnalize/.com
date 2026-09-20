@@ -2,8 +2,9 @@
 createdAt: 1786719077999
 description: Explore how AI-driven interactive fiction apps are reviving the choose-your-own-adventure format, offering dynamic storytelling experiences.
 tags:
-    - ai
-    - sharing
+  - ai
+  - gaming
+  - retro
 ---
 
 # Nostalgia Meets AI: Why Interactive Fiction Apps Are Having a Moment

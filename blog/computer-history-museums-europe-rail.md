@@ -3,6 +3,8 @@ title: Five Computer History Museums in Europe on One Rail Route
 createdAt: 1787649652775
 description: Computer history museums in Europe connect by rail from Bletchley Park to Helmond, Paderborn and Lausanne, nine days of trains and $22.20 of travel data.
 tags:
+  - retro
+  - life
   - sponsor
 ---
 

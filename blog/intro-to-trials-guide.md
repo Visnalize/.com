@@ -2,7 +2,8 @@
 createdAt: 1761844336450
 description: A practical guide to surviving Destiny 2’s Trials of Osiris - mindset, loadouts, and lessons from an average Guardian.
 tags:
-    - tips
+  - gaming
+  - tips
 ---
 
 # An Intro to Trials Guide from an Average Player

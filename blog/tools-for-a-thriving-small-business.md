@@ -3,8 +3,8 @@ title: 5 Digital Tools for a Thriving Small Business
 createdAt: 1744270307867
 description: Discover the top 5 digital tools that can help your small business thrive in 2025.
 tags:
-  - tips
-  - sharing
+  - business
+  - tools
   - sponsor
 ---
 

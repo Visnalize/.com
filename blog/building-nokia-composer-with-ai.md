@@ -1,7 +1,7 @@
 ---
 createdAt: 1741455609724
 description: How I built a Nokia Composer without any knowledge of music theory, and how AI made it possible.
-tags: 
+tags:
   - brick-1100
   - technical
   - ai

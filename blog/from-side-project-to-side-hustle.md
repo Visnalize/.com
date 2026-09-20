@@ -2,9 +2,8 @@
 createdAt: 1699696707000
 description: From a side project for learning to a side hustle with recurring revenue, read about how I did it, the process, the tools, the tips and tricks.
 tags:
-    - sharing
-    - tips
-    - win7-simu
+  - business
+  - win7-simu
 ---
 
 # Turning my side project into a side hustle

@@ -2,7 +2,7 @@
 createdAt: 1628020105000
 description: Ways that you can retrieve Windows resources such as wallpapers, icons, audio files etc.
 tags:
-  - win7-simu
+  - windows
   - tips
 ---
 

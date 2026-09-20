@@ -2,7 +2,7 @@
 createdAt: 1772186074423
 description: With Microsoft Gaming CEO Phil Spencer now retiring, 2026 looks set to be another rough year for Xbox.
 tags:
-    - sharing
+  - gaming
 ---
 
 # The Xbox Situation Keeps Getting Worse

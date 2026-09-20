@@ -2,10 +2,9 @@
 createdAt: 1704050292000
 description: Look back at some amazing achievements from Visnalize in 2023.
 tags:
+  - review
   - win7-simu
   - brick-1100
-  - review
-  - life
 ---
 
 # Visnalize year in review - 2023

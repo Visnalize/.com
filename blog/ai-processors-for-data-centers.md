@@ -2,8 +2,8 @@
 createdAt: 1768931428047
 description: Challenges and innovations in AI processors for data centers. Explore how AI is transforming data center operations and efficiency.
 tags:
-    - ai
-    - sharing
+  - ai
+  - technical
 ---
 
 # The Next Major Challenge: AI Processors for Data Centers

@@ -3,7 +3,8 @@ title: Instagram Reels Specs and Compression Guide
 createdAt: 1772646202205
 description: Learn how to convert your videos to Instagram Reels specs and compress files effectively for faster uploads without sacrificing quality.
 tags:
-    - tips
+  - design
+  - tips
 ---
 
 # Instagram-Ready Media: Reels Video Specs and Compression Guide

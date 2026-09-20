@@ -3,7 +3,7 @@ createdAt: 1740366981090
 description: Second part of my journey with Win7 Simu, venting out my feelings and thoughts on the project.
 tags:
   - win7-simu
-  - sharing
+  - life
 series:
   id: building-win7-simu
   part: 2

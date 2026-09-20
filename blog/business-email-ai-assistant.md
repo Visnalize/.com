@@ -2,9 +2,9 @@
 createdAt: 1758785832224
 description: Learn how to set up a free business email and enhance it with AI tools to automate tasks, boost productivity, and simplify communication.
 tags:
-  - tips
-  - sharing
   - ai
+  - productivity
+  - tips
 ---
 
 # Turn your business email into an AI-powered assistant

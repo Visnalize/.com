@@ -2,6 +2,8 @@
 createdAt: 1785210433087
 description: Make your data more engaging, memorable, and actionable by using a video editor to present the information in a clear and compelling way.
 tags:
+  - design
+  - productivity
   - tips
 ---
 

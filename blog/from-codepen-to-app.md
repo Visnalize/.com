@@ -3,7 +3,6 @@ createdAt: 1697189033000
 description: From a simple idea, what merely looked like a playful demo on CodePen, but turned into a full-fledged app
 tags:
   - brick-1100
-  - sharing
   - technical
 ---
 

@@ -2,8 +2,9 @@
 createdAt: 1760034753794
 description: A comprehensive guide on Windows VPS hosting, highlighting its benefits, use cases, and setup process.
 tags:
+  - windows
+  - business
   - tips
-  - sharing
 ---
 
 # Windows VPS Hosting: Guide for Creative Agencies

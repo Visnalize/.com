@@ -2,8 +2,8 @@
 createdAt: 1753797722204
 description: Explore the steps in embedded system optimization from emulation to real-world deployment.
 tags:
-    - tips
-    - sharing
+  - technical
+  - tips
 ---
 
 # Application of Embedded Systems: Emulator to Reality

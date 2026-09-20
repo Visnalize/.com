@@ -2,8 +2,8 @@
 createdAt: 1745730326435
 description: I don't know if this is useful to anyone, but I started taking notes, and sharing them here.
 tags:
-  - random
-  - sharing
+  - productivity
+  - life
 ---
 
 # I started taking notes... on this website

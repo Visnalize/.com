@@ -2,8 +2,8 @@
 createdAt: 1734413541323
 description: Life events, reasons for my inactivity, updates on projects and some random sharing.
 tags:
-  - sharing
   - life
+  - news
 ---
 
 # Quick updates before the year ends

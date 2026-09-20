@@ -2,8 +2,9 @@
 createdAt: 1780046771873
 description: Discover the top automation tools that every marketer should use in 2026 to save time, improve efficiency, and boost results across various marketing channels.
 tags:
-  - tips
-  - sharing
+  - business
+  - productivity
+  - tools
 ---
 
 # Automation Tools Every Marketer Should Use

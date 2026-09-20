@@ -3,7 +3,8 @@ createdAt: 1786468317019
 description: Solitaire, Minesweeper, Chess Titans and Purble Place, playable free in your browser with no download, no install, and no product key.
 tags:
   - win7-simu
-  - tips
+  - gaming
+  - windows
 ---
 
 # Play Windows 7 games online free: Solitaire, Minesweeper, Chess Titans and more

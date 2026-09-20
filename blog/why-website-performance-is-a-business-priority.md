@@ -2,8 +2,8 @@
 createdAt: 1785294971125
 description: Discover why website performance is crucial for business success, impacting revenue, search rankings, and user experience.
 tags:
-  - tips
-  - sharing
+  - business
+  - technical
 ---
 
 # Why Website Performance is a Business Priority

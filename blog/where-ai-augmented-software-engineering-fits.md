@@ -2,8 +2,8 @@
 createdAt: 1785725933038
 description: Most visual software is easy to demo but hard to release. AI-augmented software engineering can help teams check the small details that make a product feel polished and reliable.
 tags:
-    - ai
-    - sharing
+  - ai
+  - technical
 ---
 
 # From Interface Ideas to Stable Releases: Where AI-Augmented Software Engineering Fits

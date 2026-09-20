@@ -2,8 +2,7 @@
 createdAt: 1739510092577
 description: It's a decision we have to make all the time in life, but what should we consider before deciding?
 tags:
-  - random
-  - sharing
+  - business
   - life
 ---
 

@@ -2,7 +2,6 @@
 createdAt: 1727903182000
 description: Deep dive into how custom cursors are implemented in Win7 Simu.
 tags:
-  - sharing
   - win7-simu
   - technical
 ---

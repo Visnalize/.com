@@ -2,8 +2,9 @@
 createdAt: 1762279022334
 description: Learn how to delete or disable a proxy server on Windows, macOS, iPhone, Android, and browsers - fix slow or broken internet connections fast.
 tags:
+  - privacy
+  - windows
   - tips
-  - technical
 ---
 
 # How to Delete a Proxy Server

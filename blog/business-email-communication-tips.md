@@ -2,8 +2,8 @@
 createdAt: 1789483242972
 description: Practical habits for clearer business emails - better subject lines, the right tone, consistent signatures, and checks that stop small mistakes.
 tags:
-  - tips
-  - sharing
+  - productivity
+  - business
   - sponsor
 ---
 

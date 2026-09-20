@@ -2,7 +2,8 @@
 createdAt: 1787897483447
 description: Icon design has traveled a surprisingly long road. Yet many of the symbols themselves have survived almost untouched. Let's learn how app icons have changed.
 tags:
-    - sharing
+  - design
+  - retro
 ---
 
 # How App Icons Have Changed From Windows 95 to Modern Smartphones

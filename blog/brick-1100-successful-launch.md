@@ -3,8 +3,7 @@ createdAt: 1745088047990
 description: I did it! Brick 1100 went viral on Product Hunt and some other platforms, sharing the results and insights.
 tags:
   - brick-1100
-  - sharing
-  - tips
+  - business
 ---
 
 <script setup lang="ts">

@@ -2,8 +2,8 @@
 createdAt: 1720912004000
 description: Some personal sharing about reasons and benefits of having a side hustle.
 tags:
-  - sharing
-  - tips
+  - business
+  - life
 ---
 
 # Why you should have a side hustle

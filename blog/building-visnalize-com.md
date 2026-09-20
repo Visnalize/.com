@@ -1,8 +1,9 @@
 ---
 createdAt: 1653085267000
 description: Read about the progress and how I built the visnalize.com website for my own brand
-tags: 
+tags:
   - technical
+  - business
 ---
 
 # How I built visnalize.com

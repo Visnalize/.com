@@ -2,8 +2,7 @@
 createdAt: 1753288463209
 description: How we create and deliver value to our users while generating revenue from our activities.
 tags:
-  - tips
-  - sharing
+  - business
 ---
 
 # Our business model with Visnalize

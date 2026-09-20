@@ -3,6 +3,7 @@ createdAt: 1789560148141
 description: How indie developers can use a free AI video generator to turn real screen recordings into App Store demo videos that pass review, without a production budget.
 tags:
   - ai
+  - business
   - tips
 ---
 

@@ -3,7 +3,6 @@ createdAt: 1751448411948
 description: Sharing how I optimized this Webpack project, reducing the app size and boosting its initial load.
 tags:
   - win7-simu
-  - tips
   - technical
 ---
 

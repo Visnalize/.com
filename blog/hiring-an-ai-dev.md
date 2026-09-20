@@ -2,8 +2,8 @@
 createdAt: 1779205243992
 description: Are you looking to hire an AI developer? This guide covers essential questions to help you decide on the right candidate foro your app.
 tags:
-    - ai
-    - tips
+  - ai
+  - business
 ---
 
 # Five Questions To Ask Before Hiring An AI Dev For Your App

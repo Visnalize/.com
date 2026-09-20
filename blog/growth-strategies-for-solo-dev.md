@@ -3,8 +3,8 @@ title: Growth Strategies for Solo Developers
 createdAt: 1776140022404
 description: What does it take for a solo developer to grow an app from zero to millions of users? Let's explore proven growth strategies.
 tags:
-    - tips
-    - sharing
+  - business
+  - tips
 ---
 
 # From Solo Developer to Millions of Users: Growth Strategies That Actually Work

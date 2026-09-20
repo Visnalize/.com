@@ -13,3 +13,6 @@
 /brick1100/ios https://apps.apple.com/us/app/brick-1100/id6554000754
 /contact /about#contact 301
 /news /blog/tag/news 301
+/blog/tag/sharing /blog 301
+/blog/tag/sharing/* /blog 301
+/blog/tag/random /blog 301

@@ -2,8 +2,7 @@
 createdAt: 1741973427936
 description: I was targeted by a scammer. Here's my experience and how I managed to avoid it.
 tags:
-  - sharing
-  - tips
+  - privacy
   - life
 ---
 

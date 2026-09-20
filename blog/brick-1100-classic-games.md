@@ -4,8 +4,8 @@ createdAt: 1784703091171
 description: Miss Snake, Space Impact, Rapid Roll, or the Chrome Dino game? All of them, and a few more, are playable again for free, no install required.
 tags:
   - brick-1100
-  - tips
-  - sharing
+  - gaming
+  - retro
 ---
 
 <script setup lang="ts">

@@ -2,8 +2,8 @@
 createdAt: 1632296264000
 description: A couple of things about ads and how I implement them within my websites and apps
 tags:
-    - tips
-    - sharing
+  - business
+  - win7-simu
 ---
 
 # About the ads and how I implement them

@@ -2,8 +2,9 @@
 createdAt: 1667682276000
 description: A simple tool to view and download Windows 7 icon collection.
 tags:
-  - technical
   - tools
+  - windows
+  - retro
 ---
 
 # Windows 7 icon Viewer/Downloader

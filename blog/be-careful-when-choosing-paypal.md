@@ -2,8 +2,8 @@
 createdAt: 1753074441038
 description: PayPal has permanently limited my account for unknown reasons. Sharing my experience in hopes it helps others.
 tags:
-    - random
-    - sharing
+  - business
+  - life
 ---
 
 # Be careful when choosing PayPal

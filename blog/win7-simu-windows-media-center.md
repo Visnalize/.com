@@ -2,10 +2,9 @@
 createdAt: 1713158207000
 description: Sharing on how Windows Media Center was implemented in Win7 Simu.
 tags:
-    - sharing
-    - win7-simu
-    - technical
-    - guest-post
+  - win7-simu
+  - technical
+  - guest-post
 ---
 
 # Implementing Windows Media Center in Win7 Simu

@@ -3,8 +3,8 @@ title: Why WoW Raid Groups Fail and How to Fix It
 createdAt: 1789057834715
 description: Learn why WoW raid groups fail and how to improve preparation, communication, mechanics, positioning, and progression.
 tags:
+  - gaming
   - tips
-  - sharing
 ---
 
 # Why WoW Raid Groups Make Common Progression Mistakes and How to Fix Them

@@ -3,7 +3,6 @@ createdAt: 1665345445000
 description: Read about my journey with Win7 Simu, how it all started and unveiling some boring technical stuff behind the scene
 tags:
   - win7-simu
-  - sharing
   - technical
 series:
   id: building-win7-simu

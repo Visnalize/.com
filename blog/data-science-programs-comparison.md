@@ -2,8 +2,8 @@
 createdAt: 1785402334524
 description: Looking to expand your skills in data science? This article reviews five programs that cover data cleaning, machine learning, and model deployment.
 tags:
-    - tips
-    - sharing
+  - ai
+  - tips
 ---
 
 # 5 Data Science Programs Covering Data Cleaning, Machine Learning, and Model Deployment

@@ -2,8 +2,7 @@
 createdAt: 1724394761000
 description: My takes on internet privacy and why I choose to conceal mine.
 tags:
-  - sharing
-  - random
+  - privacy
   - life
 ---
 

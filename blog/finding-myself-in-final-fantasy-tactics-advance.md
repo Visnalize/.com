@@ -2,7 +2,7 @@
 createdAt: 1737954748543
 description: How Final Fantasy Tactics Advance, an old JRPG, resonated with my life and influenced my way of thinking.
 tags:
-  - random
+  - gaming
   - life
 ---
 
