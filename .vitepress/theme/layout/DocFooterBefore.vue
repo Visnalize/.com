@@ -7,10 +7,12 @@
                 <BlogTag v-for="tag in tags" :tag="{ name: tag }" />
             </div>
         </div>
+        <BlogRelated />
     </div>
 </template>
 
 <script setup lang="ts">
+import BlogRelated from '../components/misc/blog/BlogRelated.vue';
 import BlogSeries from '../components/misc/blog/BlogSeries.vue';
 import BlogTag from '../components/misc/blog/BlogTag.vue';
 import useCustomData from '../composables/useCustomData';

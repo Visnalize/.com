@@ -47,6 +47,13 @@ export const AUDIENCE_TEXT = {
 export const adCostPerMille = (monthlyPrice: number) =>
   Math.round(monthlyPrice / (AUDIENCE.pageViews / 1000));
 
+/**
+ * Blog tags that describe the shape of a post or the deal behind it rather than
+ * its subject. Two posts sharing only one of these have nothing in common that
+ * a reader would follow, so anything ranking posts by tag weighs them lower.
+ */
+export const FORMAT_TAGS = ["tips", "news", "review", "sponsor", "guest-post"];
+
 export const APP_NAMES: Record<App, string> = {
   win7simu: "Win7 Simu",
   brick1100: "Brick 1100",
