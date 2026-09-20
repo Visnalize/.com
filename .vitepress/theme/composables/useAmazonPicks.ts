@@ -54,14 +54,24 @@ const APP_PATHS: [RegExp, App][] = [
   [/^\/win7simu/, "win7simu"],
 ];
 
-/** Blog frontmatter tags are broad, so they only ever add to the path topics. */
+/**
+ * Blog posts match no path prefix, so their tags are the only topic signal they
+ * have. Tags that describe the format (`tips`, `news`, `review`) or the deal
+ * behind a post (`sponsor`, `guest-post`) say nothing about its subject, so they
+ * map to nothing and a post left without a topic falls back to featured picks.
+ * `privacy` is deliberately absent too, as no pick fits those posts yet.
+ */
 const TAG_TOPICS: Record<string, PickTopic[]> = {
   ai: ["ai", "dev-gear"],
+  business: ["indie-business"],
+  design: ["dev-gear"],
+  gaming: ["retro-gaming"],
+  life: ["digital-detox"],
+  productivity: ["dev-gear", "indie-business"],
+  retro: ["retro-gaming", "retro-pc"],
   technical: ["dev-gear"],
-  tips: ["indie-business", "dev-gear"],
-  sharing: ["indie-business"],
-  random: ["retro-gaming"],
-  "guest-post": ["indie-business"],
+  tools: ["dev-gear"],
+  windows: ["retro-pc"],
   "win7-simu": ["retro-pc"],
   "brick-1100": ["retro-phone", "digital-detox"],
 };
