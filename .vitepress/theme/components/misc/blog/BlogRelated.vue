@@ -66,7 +66,7 @@ const related = computed(() => {
     font-size: 1.125rem;
     font-weight: 600;
     letter-spacing: -0.01em;
-    margin: 0;
+    margin-bottom: 1rem;
     padding-top: 1.5rem;
 }
 
