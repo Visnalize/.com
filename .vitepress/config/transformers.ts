@@ -5,7 +5,7 @@ import { join } from "path";
 import { cwd } from "process";
 import { PageData, UserConfig } from "vitepress";
 import decapitalize from "voca/decapitalize";
-import { getLatestVersion } from "../../.content/misc.data";
+import { getBlogFiles, getLatestVersion } from "../../.content/misc.data";
 import { apps } from "../../.content/simulated-apps.data";
 import { themes } from "../../.content/themes.data";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
@@ -26,6 +26,33 @@ import {
  * index should not be advertised in the sitemap either.
  */
 export const noindexPaths = new Set<string>();
+
+/**
+ * A tag page below this many posts lists too little to stand on its own and
+ * reads as a near-duplicate of the blog index. Keeping it out of the index
+ * costs nothing: `noindex, follow` still passes the crawler on to the posts,
+ * which are reachable from the index and the sitemap anyway.
+ */
+const MIN_INDEXABLE_TAG_POSTS = 5;
+
+/**
+ * Posts per tag, read from disk once and reused for the rest of the build.
+ * `getBlogFiles` types `tags` after the loaded post data, where they are
+ * objects, but the raw frontmatter it reads holds plain strings.
+ */
+let postsPerTag: Map<string, number> | undefined;
+
+const countPostsWithTag = (tag: string) => {
+  postsPerTag ??= (getBlogFiles() as unknown as { tags?: string[] }[]).reduce(
+    (counts, file) =>
+      (file.tags ?? []).reduce(
+        (acc, name) => acc.set(name, (acc.get(name) ?? 0) + 1),
+        counts,
+      ),
+    new Map<string, number>(),
+  );
+  return postsPerTag.get(tag) ?? 0;
+};
 
 // https://vitepress.dev/reference/site-config#transformpagedata
 export const transformPageData: UserConfig["transformPageData"] = async (
@@ -62,6 +89,9 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     }
     data.title = title;
     data.description = description;
+    if (countPostsWithTag(tag) < MIN_INDEXABLE_TAG_POSTS) {
+      data.frontmatter.noindex = true;
+    }
   }
 
   if (data.relativePath.match(/simulated/) && data.params?.app) {
