@@ -7,9 +7,6 @@
         <template #doc-after>
             <DocAfter />
         </template>
-        <template #doc-footer-before>
-            <DocFooterBefore />
-        </template>
         <template #doc-before>
             <DocBefore />
         </template>
@@ -35,7 +32,6 @@ import 'vue-sonner/style.css';
 import AsideTop from './AsideTop.vue';
 import DocAfter from './DocAfter.vue';
 import DocBefore from './DocBefore.vue';
-import DocFooterBefore from './DocFooterBefore.vue';
 import LayoutFooter from './LayoutFooter.vue';
 import NotFound from './NotFound.vue';
 

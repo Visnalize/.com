@@ -1,5 +1,13 @@
 <template>
     <div class="after-doc">
+        <BlogSeries />
+        <div v-if="tags.length > 0" class="blog-tags">
+            <div class="tags-title">Tags:</div>
+            <div>
+                <BlogTag v-for="tag in tags" :tag="{ name: tag }" />
+            </div>
+        </div>
+        <BlogRelated />
         <!-- <IndieProducts v-if="enableSocial" :key="route.path" widget /> -->
         <SponsorAd v-if="enableAds" :format="hasAside ? undefined : 'auto'" :key="route.path"
             @resolve="adState = $event" />
@@ -15,10 +23,13 @@ import { useSidebar } from 'vitepress/theme';
 import { computed, ref, watch } from 'vue';
 import AmazonPicks from '../components/global/AmazonPicks.vue';
 import SponsorAd from '../components/global/SponsorAd.vue';
+import BlogRelated from '../components/misc/blog/BlogRelated.vue';
+import BlogSeries from '../components/misc/blog/BlogSeries.vue';
+import BlogTag from '../components/misc/blog/BlogTag.vue';
 import SocialCommentSection from '../components/misc/SocialCommentSection.vue';
 import useCustomData from '../composables/useCustomData';
 
-const { enableAds, enableComments, enableSocial } = useCustomData()
+const { enableAds, enableComments, enableSocial, tags } = useCustomData()
 const { hasAside } = useSidebar()
 const route = useRoute()
 
@@ -41,5 +52,18 @@ watch(() => route.path, () => (adState.value = 'pending'))
 <style scoped>
 .after-doc {
     margin-top: 4rem;
+}
+
+.blog-tags {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tags-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 </style>

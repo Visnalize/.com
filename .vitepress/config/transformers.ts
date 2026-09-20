@@ -35,17 +35,13 @@ export const noindexPaths = new Set<string>();
  */
 const MIN_INDEXABLE_TAG_POSTS = 5;
 
-/**
- * Posts per tag, read from disk once and reused for the rest of the build.
- * `getBlogFiles` types `tags` after the loaded post data, where they are
- * objects, but the raw frontmatter it reads holds plain strings.
- */
+/** Posts per tag, read from disk once and reused for the rest of the build. */
 let postsPerTag: Map<string, number> | undefined;
 
 const countPostsWithTag = (tag: string) => {
-  postsPerTag ??= (getBlogFiles() as unknown as { tags?: string[] }[]).reduce(
+  postsPerTag ??= getBlogFiles().reduce(
     (counts, file) =>
-      (file.tags ?? []).reduce(
+      file.tags.reduce(
         (acc, name) => acc.set(name, (acc.get(name) ?? 0) + 1),
         counts,
       ),
@@ -59,6 +55,10 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   data: PageData & Record<string, any>,
 ) => {
   const { content } = matter.read(data.filePath);
+
+  // Held before the blog branch below drops it from the page, so the structured
+  // data can still report when a post was last touched.
+  const modified = data.lastUpdated;
 
   // blog listing paginated page (non-tag)
   if (data.params?.page && !data.params?.tag) {
@@ -152,6 +152,13 @@ export const transformPageData: UserConfig["transformPageData"] = async (
 
   if (data.relativePath.startsWith("blog")) {
     data.frontmatter.sidebar = false;
+    // The related posts at the end of a post are a better way on than whichever
+    // posts happen to sit either side of it in publishing order, and an edit
+    // date tells a reader nothing. Both leave the page, not the structured
+    // data: `modified` above still reports the date to search engines.
+    data.frontmatter.prev = false;
+    data.frontmatter.next = false;
+    data.lastUpdated = undefined;
   }
 
   const transformedPath = data.relativePath.replace(/((index)?\.md)$/, "");
@@ -207,7 +214,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
       canonicalUrl,
       image: metaImage,
       createdAt: data.frontmatter.createdAt,
-      lastUpdated: data.lastUpdated,
+      lastUpdated: modified,
     });
     data.frontmatter.head.push([
       "script",
