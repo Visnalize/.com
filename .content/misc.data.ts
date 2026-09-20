@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 import { cwd } from "process";
-import { PostData } from "./blog-posts.data";
+import { PostFrontmatter } from "./blog-posts.data";
 import { RELEASE_VERSION } from "./utils/regex";
 
 export function getLatestVersion(app: string) {
@@ -11,7 +11,16 @@ export function getLatestVersion(app: string) {
   return version;
 }
 
-export function getBlogFiles(): PostData[] {
+/**
+ * A post read straight off disk. Its tags are still plain names, unlike the
+ * loaded `PostData` the blog components use.
+ */
+export interface PostFile extends PostFrontmatter {
+  url: string;
+  title: string;
+}
+
+export function getBlogFiles(): PostFile[] {
   return readdirSync("blog")
     .filter((file) => file.endsWith(".md"))
     .map((filePath) => {
@@ -20,7 +29,7 @@ export function getBlogFiles(): PostData[] {
       const [, title] = content.match(/# (.*)/) || [];
 
       return {
-        ...(data as PostData),
+        ...(data as PostFrontmatter),
         url: "/" + path,
         title,
       };
