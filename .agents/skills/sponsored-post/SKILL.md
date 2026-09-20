@@ -79,6 +79,16 @@ tags:
 - Pick 2 or 3 tags that already exist. List them with:
   `for f in blog/*.md; do awk 'NR==1&&/^---/{f=1;next} f&&/^---/{exit} f' "$f"; done | awk '/^ *- /{print $2}' | sort -u`
   Do not invent a tag.
+- At least one of them must be a topic tag, not a format tag. Topic tags are
+  `ai`, `business`, `design`, `gaming`, `life`, `privacy`, `productivity`,
+  `retro`, `technical`, `tools`, `windows`, and the two product tags
+  `win7-simu` and `brick-1100`. `tips`, `news` and `review` describe the shape
+  of a post rather than its subject, so none of them can stand alone.
+- `tips` is for posts that walk the reader through doing something. A post that
+  argues a point or surveys a field is not a `tips` post.
+- Tags decide which affiliate picks the post shows, see `TAG_TOPICS` in
+  `.vitepress/theme/composables/useAmazonPicks.ts`. A post tagged only by format
+  falls back to generic picks, which is what the topic rule above prevents.
 - Do not add the `sponsor` tag by default. Add it only when the user says the client paid the tier that keeps it, see Pricing in `services/sponsored-posts.md`.
 
 Body, exactly this order. The blog index takes the card title from the first `# ` line and the card thumbnail from the first `![...](...)`, so nothing may come before them:
