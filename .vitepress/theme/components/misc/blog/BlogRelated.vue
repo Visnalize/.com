@@ -1,15 +1,16 @@
 <template>
-    <div v-if="related.length > 0" class="blog-related">
-        <div class="related-title">Related posts</div>
-        <ul>
-            <li v-for="post in related">
-                <a :href="post.url">
-                    <span class="related-name">{{ post.title }}</span>
-                    <span class="related-tags">{{ sharedTags(post).join(', ') }}</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <section v-if="related.length > 0" class="blog-related">
+        <h2 class="related-title">Keep reading</h2>
+        <a v-for="post in related" :key="post.url" class="related-post" :href="post.url">
+            <img v-if="post.image" class="related-image" :src="post.image" alt="" width="120" height="90"
+                loading="lazy" decoding="async" />
+            <span class="related-text">
+                <span class="related-name">{{ post.title }}</span>
+                <span class="related-description">{{ post.description }}</span>
+                <span class="related-tags">{{ sharedTags(post).join(' · ') }}</span>
+            </span>
+        </a>
+    </section>
 </template>
 
 <script setup lang="ts">
@@ -57,50 +58,87 @@ const related = computed(() => {
 
 <style scoped>
 .blog-related {
-    background: var(--vp-c-bg-alt);
-    border: 1px solid var(--vp-c-default-2);
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    margin: 0 0 4rem;
-    padding: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 .related-title {
-    font-size: 1rem;
+    border-top: 1px solid var(--vp-c-divider);
+    font-size: 1.125rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
-}
-
-.blog-related ul {
-    list-style: none;
+    letter-spacing: -0.01em;
     margin: 0;
-    padding: 0;
+    padding-top: 1.5rem;
 }
 
-.blog-related li:not(:last-child) {
-    margin-bottom: 0.5rem;
-}
-
-.blog-related a {
+.related-post {
     display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    color: var(--vp-c-text-1);
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem 0.75rem;
+    margin: 0 -0.75rem;
+    border-radius: 0.5rem;
+    color: inherit;
     text-decoration: none;
-    transition: 0.2s;
+    transition: background-color 0.2s;
 }
 
-.blog-related a:hover {
-    color: var(--vp-c-brand-1);
+.related-post:hover {
+    background: var(--vp-c-default-soft);
+}
+
+.related-image {
+    width: 120px;
+    height: 90px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 0.375rem;
+    background: var(--vp-c-bg-alt);
+}
+
+.related-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
 }
 
 .related-name {
-    flex: 1;
+    color: var(--vp-c-text-1);
+    font-weight: 600;
+    line-height: 1.4;
+    transition: color 0.2s;
+}
+
+.related-post:hover .related-name {
+    color: var(--vp-c-brand-1);
+}
+
+.related-description {
+    color: var(--vp-c-text-2);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    /* Two lines is enough to sell the post without unbalancing the rows. */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
 }
 
 .related-tags {
     color: var(--vp-c-text-3);
     font-size: 0.75rem;
-    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .related-image {
+        width: 80px;
+        height: 60px;
+    }
+
+    .related-description {
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
 }
 </style>
