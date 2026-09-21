@@ -2,7 +2,7 @@
     <section v-if="related.length > 0" class="blog-related">
         <h2 class="related-title">Keep reading</h2>
         <a v-for="post in related" :key="post.url" class="related-post" :href="post.url">
-            <img v-if="post.image" class="related-image" :src="getThumbnail(post.image)" alt="" width="120"
+            <img v-if="post.image" class="related-image" :src="resizeCover(post.image, THUMBNAIL_WIDTH)" alt="" width="120"
                 height="90" loading="lazy" decoding="async" />
             <span class="related-text">
                 <span class="related-name">{{ post.title }}</span>
@@ -18,9 +18,12 @@ import { data as posts, PostData } from '@/.content/blog-posts.data';
 import { useRoute } from 'vitepress';
 import { computed } from 'vue';
 import { FORMAT_TAGS } from '../../../constants';
-import { getThumbnail } from '../../../utils/images';
+import { resizeCover } from '../../../utils/images';
 
 const MAX_RELATED = 3;
+
+/** Twice the 120px the thumbnail renders at, for denser screens. */
+const THUMBNAIL_WIDTH = 240;
 
 /** A shared subject counts for more than a shared format. */
 const TOPIC_WEIGHT = 2;
@@ -118,7 +121,6 @@ const related = computed(() => {
     color: var(--vp-c-text-2);
     font-size: 0.875rem;
     line-height: 1.5;
-    /* Two lines is enough to sell the post without unbalancing the rows. */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;

@@ -1,10 +1,7 @@
 import { createContentLoader } from "vitepress";
 import { TagData } from "./blog-tags.data";
 
-/**
- * A post's frontmatter, exactly as it is written in the file, where a tag is
- * still the plain name the author typed.
- */
+/** A post's frontmatter as written in the file, where tags are plain names. */
 export interface PostFrontmatter {
   title?: string;
   createdAt: number;

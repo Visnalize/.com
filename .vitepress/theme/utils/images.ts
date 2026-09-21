@@ -38,35 +38,24 @@ export const transformImage = (imgpath: string, options: TransformOptions) => {
   return `${ORIGIN}/cdn-cgi/image/${optionsString}/${imageUrl}`;
 };
 
-/** Width a cover is served at where it only ever renders as a thumbnail. */
-const THUMBNAIL_WIDTH = 240;
-
 /**
- * A post cover shrunk to thumbnail size.
- *
- * Same-origin covers go through the image CDN, which is the only source it
- * accepts: asking it for a remote one answers 403. A remote cover instead has
- * its own width parameter lowered, and only when that parameter already holds
- * a number, since a host that reads `w` as something else, such as iStock's
- * `w=is`, would be handed nonsense. Any height goes with it so the image keeps
- * its proportions, and the thumbnail is cropped in CSS.
+ * A cover served at the width it is shown at. The image CDN takes same-origin
+ * sources only, so a remote cover has its own width parameter lowered instead,
+ * and only when that parameter already holds a number: iStock spends `w` on a
+ * signature. Any height goes with it, so the image keeps its proportions.
  */
-export const getThumbnail = (src: string) => {
+export const resizeCover = (src: string, width: number) => {
   if (!isExternal(src)) {
-    return transformImage(src, {
-      width: THUMBNAIL_WIDTH,
-      quality: 85,
-      format: "auto",
-    });
+    return transformImage(src, { width, quality: 85, format: "auto" });
   }
 
   const url = new URL(src);
-  const width = Number(url.searchParams.get("w"));
-  if (!Number.isInteger(width) || width <= THUMBNAIL_WIDTH) {
+  const current = Number(url.searchParams.get("w"));
+  if (!Number.isInteger(current) || current <= width) {
     return src;
   }
 
-  url.searchParams.set("w", String(THUMBNAIL_WIDTH));
+  url.searchParams.set("w", String(width));
   url.searchParams.delete("h");
   return url.toString();
 };

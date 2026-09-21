@@ -48,9 +48,8 @@ export const adCostPerMille = (monthlyPrice: number) =>
   Math.round(monthlyPrice / (AUDIENCE.pageViews / 1000));
 
 /**
- * Blog tags that describe the shape of a post or the deal behind it rather than
- * its subject. Two posts sharing only one of these have nothing in common that
- * a reader would follow, so anything ranking posts by tag weighs them lower.
+ * Tags that describe a post's shape or its deal rather than its subject, so
+ * ranking posts by tag weighs them lower than a shared topic.
  */
 export const FORMAT_TAGS = ["tips", "news", "review", "sponsor", "guest-post"];
 

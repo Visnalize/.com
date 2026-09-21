@@ -2,7 +2,7 @@
     <div class="blog-post" :style="{ '--blog-bg': bgColor }">
         <div class="post-control"></div>
         <div class="post-content">
-            <img class="post-image" :src="post.image" :alt="post.title" />
+            <img class="post-image" :src="resizeCover(post.image, CARD_WIDTH)" :alt="post.title" loading="lazy" />
             <div class="post-badge" v-if="post.badge || isSponsored(post)">
                 <img v-if="isSponsored(post)" src="/assets/sponsor-badge.png" alt="Sponsored" width="150" height="114" />
                 <iconify-icon v-else :icon="badgeIcon[post.badge]" />
@@ -23,9 +23,13 @@
 
 <script setup lang="ts">
 import { PostData } from '@/.content/blog-posts.data';
+import { resizeCover } from '../../../utils/images';
 import BlogTag from './BlogTag.vue';
 
 defineProps<{ post: PostData }>()
+
+/** Widest a card gets is the latest post, which spans two of the three columns. */
+const CARD_WIDTH = 600;
 
 const color = {
     blue: "#c3f3fa",

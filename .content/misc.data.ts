@@ -11,10 +11,7 @@ export function getLatestVersion(app: string) {
   return version;
 }
 
-/**
- * A post read straight off disk. Its tags are still plain names, unlike the
- * loaded `PostData` the blog components use.
- */
+/** A post read off disk: its frontmatter, plus the url and title derived. */
 export interface PostFile extends PostFrontmatter {
   url: string;
   title: string;

@@ -55,11 +55,9 @@ const APP_PATHS: [RegExp, App][] = [
 ];
 
 /**
- * Blog posts match no path prefix, so their tags are the only topic signal they
- * have. Tags that describe the format (`tips`, `news`, `review`) or the deal
- * behind a post (`sponsor`, `guest-post`) say nothing about its subject, so they
- * map to nothing and a post left without a topic falls back to featured picks.
- * `privacy` is deliberately absent too, as no pick fits those posts yet.
+ * Blog posts match no path prefix, so tags are their only topic signal. Format
+ * and policy tags describe no subject, and no pick fits `privacy` yet, so those
+ * are left out and a post without a topic falls back to the featured picks.
  */
 const TAG_TOPICS: Record<string, PickTopic[]> = {
   ai: ["ai", "dev-gear"],

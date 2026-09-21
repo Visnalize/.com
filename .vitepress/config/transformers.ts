@@ -28,10 +28,8 @@ import {
 export const noindexPaths = new Set<string>();
 
 /**
- * A tag page below this many posts lists too little to stand on its own and
- * reads as a near-duplicate of the blog index. Keeping it out of the index
- * costs nothing: `noindex, follow` still passes the crawler on to the posts,
- * which are reachable from the index and the sitemap anyway.
+ * A tag page below this many posts is too thin to index and too close to a
+ * copy of the blog index. `noindex, follow` still leads the crawler to them.
  */
 const MIN_INDEXABLE_TAG_POSTS = 5;
 
@@ -56,8 +54,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
 ) => {
   const { content } = matter.read(data.filePath);
 
-  // Held before the blog branch below drops it from the page, so the structured
-  // data can still report when a post was last touched.
+  // Held before the blog branch drops it, so the JSON-LD can still report it.
   const modified = data.lastUpdated;
 
   // blog listing paginated page (non-tag)
@@ -152,10 +149,8 @@ export const transformPageData: UserConfig["transformPageData"] = async (
 
   if (data.relativePath.startsWith("blog")) {
     data.frontmatter.sidebar = false;
-    // The related posts at the end of a post are a better way on than whichever
-    // posts happen to sit either side of it in publishing order, and an edit
-    // date tells a reader nothing. Both leave the page, not the structured
-    // data: `modified` above still reports the date to search engines.
+    // Related posts replace the pager. The edit date has to go from the page
+    // data, not the frontmatter, which VitePress has already read by now.
     data.frontmatter.prev = false;
     data.frontmatter.next = false;
     data.lastUpdated = undefined;
