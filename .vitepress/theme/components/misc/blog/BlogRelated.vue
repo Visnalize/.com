@@ -2,8 +2,8 @@
     <section v-if="related.length > 0" class="blog-related">
         <h2 class="related-title">Keep reading</h2>
         <a v-for="post in related" :key="post.url" class="related-post" :href="post.url">
-            <img v-if="post.image" class="related-image" :src="post.image" alt="" width="120" height="90"
-                loading="lazy" decoding="async" />
+            <img v-if="post.image" class="related-image" :src="getThumbnail(post.image)" alt="" width="120"
+                height="90" loading="lazy" decoding="async" />
             <span class="related-text">
                 <span class="related-name">{{ post.title }}</span>
                 <span class="related-description">{{ post.description }}</span>
@@ -18,6 +18,7 @@ import { data as posts, PostData } from '@/.content/blog-posts.data';
 import { useRoute } from 'vitepress';
 import { computed } from 'vue';
 import { FORMAT_TAGS } from '../../../constants';
+import { getThumbnail } from '../../../utils/images';
 
 const MAX_RELATED = 3;
 
