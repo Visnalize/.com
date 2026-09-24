@@ -3,8 +3,8 @@ title: Open Source EDR vs. Commercial EDR
 createdAt: 1789121589799
 description: Compare open source and commercial EDR on total cost, threat profile, team skills, and integration to decide which model fits your organization.
 tags:
-  - tips
-  - sharing
+  - business
+  - privacy
   - sponsor
 ---
 
