@@ -1,68 +1,53 @@
 <template>
-    <div class="social-sharing">
-        <SocialShareButtons :data="shareData" />
-    </div>
-
-    <div class="social-sharing-mobile">
-        <VDropdown>
-            <button class="social-share-button">
-                <iconify-icon icon="fluent:share-android-24-filled" />
-                <span>Share</span>
-            </button>
-            <template #popper>
-                <SocialShareButtons :data="shareData" />
-            </template>
-        </VDropdown>
-    </div>
+    <VDropdown v-model:shown="menuShown" :disabled="nativeShare" placement="bottom-end" :distance="8">
+        <button class="share-trigger" :aria-expanded="menuShown" @click="shareNatively">
+            <iconify-icon icon="fluent:share-24-regular" />
+            <span>Share</span>
+        </button>
+        <template #popper="{ hide }">
+            <SocialShareButtons :data="shareData" @shared="hide" />
+        </template>
+    </VDropdown>
 </template>
 
 <script setup lang="ts">
-import { inBrowser, useData } from 'vitepress';
-import { ref, watchEffect } from 'vue';
+import { onMounted, ref } from 'vue';
+import useShareData from '../../composables/useShareData';
 import SocialShareButtons from './SocialShareButtons.vue';
 
-export interface ShareData {
-    url: string;
-    title?: string;
-    description?: string;
-}
+const shareData = useShareData()
+const menuShown = ref(false)
+const nativeShare = ref(false)
 
-const data = useData()
-const shareData = ref<ShareData>()
-
-watchEffect(() => {
-    if (!inBrowser) return;
-
-    const { title, description } = data.page.value;
-    shareData.value = { url: window.location.href, title, description }
+/**
+ * Touch devices get the system share sheet, which lists every app the reader
+ * has. On desktop that sheet offers little, so the menu of networks is used.
+ */
+onMounted(() => {
+    nativeShare.value = !!navigator.share && matchMedia('(pointer: coarse)').matches
 })
+
+const shareNatively = async () => {
+    if (!nativeShare.value) return;
+    try {
+        await navigator.share(shareData.value)
+    } catch {
+        // The reader closed the sheet, which is not an error worth reporting.
+    }
+}
 </script>
 
 <style scoped>
-.social-sharing {
-    display: none;
-    align-items: center;
-}
-
-.social-sharing-mobile button {
+.share-trigger {
     display: flex;
     align-items: center;
-    font-size: 0.875rem;
     gap: 0.25rem;
-}
-
-.social-sharing-mobile button:hover {
-    color: var(--vp-c-brand-2);
+    font-size: 0.875rem;
     transition: color 0.2s;
 }
 
-@media (min-width: 640px) {
-    .social-sharing {
-        display: flex;
-    }
-
-    .social-sharing-mobile {
-        display: none;
-    }
+.share-trigger:hover,
+.share-trigger[aria-expanded="true"] {
+    color: var(--vp-c-brand-2);
 }
 </style>

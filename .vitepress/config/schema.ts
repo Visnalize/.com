@@ -1,6 +1,7 @@
 import { getAppData } from "../../.content/apps.data";
 import MarkdownIt from "markdown-it";
 import { APP_NAMES, ORIGIN } from "../theme/constants";
+import { getTrail } from "../theme/utils/breadcrumbs";
 import { App } from "../theme/utils/types";
 
 const md = new MarkdownIt();
@@ -22,39 +23,21 @@ export const organizationSchema = {
   ],
 };
 
-function toTitleCase(slug: string) {
-  if (slug in APP_NAMES) return APP_NAMES[slug as App];
-  return slug.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
-}
-
 export function getBreadcrumbSchema(
   transformedPath: string,
   pageTitle: string,
 ) {
-  const segments = transformedPath.split("/").filter(Boolean);
-  if (!segments.length) return undefined;
-
-  let path = "";
-  const items = [
-    { name: "Home", item: `${ORIGIN}/` },
-    ...segments.map((segment, index) => {
-      path += `/${segment}`;
-      const isLast = index === segments.length - 1;
-      return {
-        name: isLast ? pageTitle : toTitleCase(segment),
-        item: `${ORIGIN}${path}/`,
-      };
-    }),
-  ];
+  const trail = getTrail(transformedPath, pageTitle);
+  if (!trail.length) return undefined;
 
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
+    itemListElement: trail.map((crumb, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: item.name,
-      item: item.item,
+      name: crumb.text,
+      item: crumb.link === "/" ? `${ORIGIN}/` : ORIGIN + crumb.link,
     })),
   };
 }

@@ -62,6 +62,8 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     const page = data.params.page;
     data.title = `News and sharing - Page ${page}`;
     data.description = `Page ${page} of our blog. Helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
+    // Replaces the placeholder title in the page file, which the breadcrumbs read.
+    data.frontmatter.title = data.title;
   }
 
   // blog listing tag page
@@ -85,6 +87,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
       description = `Page ${page}. ${description}`;
     }
     data.title = title;
+    data.frontmatter.title = title;
     data.description = description;
     if (countPostsWithTag(tag) < MIN_INDEXABLE_TAG_POSTS) {
       data.frontmatter.noindex = true;
@@ -193,7 +196,10 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   }
 
   // Structured data (JSON-LD) ------------------------------------------------
-  const breadcrumbSchema = getBreadcrumbSchema(transformedPath, data.title);
+  const breadcrumbSchema = getBreadcrumbSchema(
+    transformedPath,
+    data.frontmatter.title || data.title,
+  );
   if (breadcrumbSchema) {
     data.frontmatter.head.push([
       "script",

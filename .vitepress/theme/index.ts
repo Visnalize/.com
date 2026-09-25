@@ -8,6 +8,7 @@ import AccessLinks from "./components/global/AccessLinks.vue";
 import AmazonPick from "./components/global/AmazonPick.vue";
 import AmazonPicks from "./components/global/AmazonPicks.vue";
 import AppRating from "./components/global/AppRating.vue";
+import DocMeta from "./components/global/DocMeta.vue";
 import ReleaseNotes from "./components/global/ReleaseNotes.vue";
 import ReleaseSection from "./components/global/ReleaseSection.vue";
 import SponsorAd from "./components/global/SponsorAd.vue";
@@ -24,6 +25,7 @@ export default {
     app.component("SponsorAd", SponsorAd);
     app.component("AccessLinks", AccessLinks);
     app.component("AppRating", AppRating);
+    app.component("DocMeta", DocMeta);
     app.component("AmazonPick", AmazonPick);
     app.component("AmazonPicks", AmazonPicks);
     app.component("ReleaseNotes", ReleaseNotes);

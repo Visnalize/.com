@@ -1,28 +1,8 @@
 <template>
-    <div v-if="enableSocial" class="before-doc">
-        <div class="doc-meta">
-            <div v-if="createdDate" class="meta-date" v-tooltip="'Created date'">
-                <iconify-icon icon="fluent:calendar-clock-24-regular" />
-                <span>{{ createdDate }}</span>
-            </div>
+    <div v-if="crumbs.length || enableSocial" class="before-doc">
+        <Breadcrumbs :crumbs="crumbs" />
 
-            <div v-if="frontmatter.version" class="meta-note" v-tooltip="'Since Win7 Simu version'">
-                <iconify-icon icon="fluent:rocket-24-regular" />
-                <span>v{{ frontmatter.version }}</span>
-            </div>
-
-            <div v-if="frontmatter.premium" class="meta-note" v-tooltip="'Unlock with in-app purchase'">
-                <iconify-icon icon="fluent:premium-24-regular" />
-                <span>Premium</span>
-            </div>
-
-            <div v-if="frontmatter.appVersion" class="meta-note" v-tooltip="'Latest version'">
-                <iconify-icon icon="fluent:text-bullet-list-square-sparkle-24-regular" />
-                <span>v{{ frontmatter.appVersion }}</span>
-            </div>
-        </div>
-
-        <div class="doc-social">
+        <div v-if="enableSocial" class="doc-social">
             <SocialSharing />
             <SocialCommentCount v-if="enableComments" />
         </div>
@@ -35,7 +15,7 @@
         </div>
     </div>
 
-    <div v-if="tags.includes('sponsor')" class="doc-sponsor warning custom-block">
+    <div v-if="tags.includes('sponsor')" class="custom-block doc-sponsor warning">
         This is a <a href="/services#sponsored-posts" target="_blank">sponsored post</a>.
         The content has been reviewed and the links in this post are safe to access.
         If you notice an issue, please leave a comment below or <a href="/contact" target="_blank">contact us</a>.
@@ -45,46 +25,37 @@
 <script setup lang="ts">
 import { useData, useRoute } from 'vitepress';
 import { computed } from 'vue';
+import Breadcrumbs from '../components/misc/Breadcrumbs.vue';
 import SocialCommentCount from '../components/misc/SocialCommentCount.vue';
 import SocialSharing from '../components/misc/SocialSharing.vue';
 import useCustomData from '../composables/useCustomData';
+import { getBreadcrumbs } from '../utils/breadcrumbs';
 
-const { frontmatter } = useData()
-const { createdDate, enableSocial, enableComments, tags } = useCustomData()
+const { frontmatter, page } = useData()
+const { enableSocial, enableComments, tags } = useCustomData()
 const route = useRoute()
 const isNote = computed(() => /notes\/.+/.test(route.path))
+const crumbs = computed(() =>
+    getBreadcrumbs(route.path, frontmatter.value.title || page.value.title)
+)
 </script>
 
 <style scoped>
 .before-doc {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
     position: relative;
     z-index: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.doc-meta iconify-icon {
-    font-size: 1.25rem;
-}
-
-.doc-meta,
 .doc-social {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-}
-
-.doc-meta>div {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    color: var(--vp-c-text-2);
-}
-
-.meta-note {
-    font-weight: 500;
+    flex-shrink: 0;
+    gap: 1rem;
+    margin-left: auto;
 }
 
 .doc-note {

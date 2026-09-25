@@ -1,10 +1,5 @@
 <template>
     <div class="release-notes">
-        <a class="back-link" :href="changelogLink">
-            <iconify-icon icon="fluent:arrow-left-24-regular" />
-            <span>All releases</span>
-        </a>
-
         <div class="hero">
             <h1 class="title">
                 {{ appName }}
@@ -74,26 +69,6 @@ onMounted(() => import('@justinribeiro/lite-youtube'))
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 2rem;
-}
-
-.back-link {
-    align-self: flex-start;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--vp-c-brand-1);
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.back-link:hover {
-    color: var(--vp-c-brand-2);
-}
-
-.back-link iconify-icon {
-    font-size: 1.125rem;
 }
 
 .hero {

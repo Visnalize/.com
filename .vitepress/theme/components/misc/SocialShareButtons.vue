@@ -1,74 +1,104 @@
 <template>
-    <button @click="copyUrl" :style="{ '--index': networks.length + 1 }" v-tooltip="'Copy URL'" aria-label="Copy URL">
-        <iconify-icon :icon="copied ? 'fluent:checkmark-24-filled' : 'uil:link-alt'" />
-    </button>
-    <ShareNetwork v-for="(network, i) in networks" :network="network.name" :url="data?.url" :title="data?.title"
-        :description="data?.description" v-slot="{ share }">
-        <button @click="share" :style="{ '--index': networks.length - i }" v-tooltip="getShareLabel(network.name)"
-            :aria-label="getShareLabel(network.name)">
-            <iconify-icon :icon="network.icon" />
+    <div :class="['share-buttons', variant]">
+        <button class="share-item" @click="copyUrl">
+            <iconify-icon :icon="copied ? 'fluent:checkmark-24-regular' : 'fluent:link-24-regular'" />
+            <span>{{ copied ? 'Copied' : 'Copy link' }}</span>
         </button>
-    </ShareNetwork>
+        <div v-if="variant === 'menu'" class="divider" />
+        <ShareNetwork v-for="network in networks" :key="network.name" :network="network.name" :url="data.url"
+            :title="data.title" :description="data.description" v-slot="{ share }">
+            <button class="share-item" @click="share(); emit('shared')">
+                <iconify-icon :icon="network.icon" />
+                <span>{{ network.label }}</span>
+            </button>
+        </ShareNetwork>
+    </div>
 </template>
 
 <script setup lang="ts">
-import capitalize from 'voca/capitalize';
 import { ref } from 'vue';
 import { ShareNetwork } from 'vue3-social-sharing';
-import { ShareData } from './SocialSharing.vue';
+import { ShareData } from '../../composables/useShareData';
 
-const props = defineProps<{ data: ShareData }>();
+const props = withDefaults(defineProps<{
+    data: ShareData;
+    /** `menu` lists the options in the Share dropdown, `inline` shows them as buttons. */
+    variant?: 'menu' | 'inline';
+}>(), { variant: 'menu' })
+
+const emit = defineEmits<{ shared: [] }>()
 
 const networks = [
-    { name: "facebook", icon: 'simple-icons:facebook' },
-    { name: "telegram", icon: 'simple-icons:telegram' },
-    { name: 'whatsapp', icon: 'simple-icons:whatsapp' },
-    { name: "x", icon: 'simple-icons:x' },
+    { name: 'x', label: 'X', icon: 'simple-icons:x' },
+    { name: 'facebook', label: 'Facebook', icon: 'simple-icons:facebook' },
+    { name: 'linkedin', label: 'LinkedIn', icon: 'simple-icons:linkedin' },
+    { name: 'bluesky', label: 'Bluesky', icon: 'simple-icons:bluesky' },
+    { name: 'telegram', label: 'Telegram', icon: 'simple-icons:telegram' },
+    { name: 'whatsapp', label: 'WhatsApp', icon: 'simple-icons:whatsapp' },
 ];
 
 const copied = ref(false)
 
 const copyUrl = () => {
-    navigator.clipboard.writeText(props.data.url || '');
+    navigator.clipboard.writeText(props.data.url);
     copied.value = true;
     setTimeout(() => copied.value = false, 2000);
 };
-
-const getShareLabel = (network: string) => {
-    return `Share on ${capitalize(network)}`;
-}
-
 </script>
 
 <style scoped>
-button {
+.share-item {
     display: flex;
-    padding: 0.5rem;
-    margin: 0 0.25rem;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
     color: var(--vp-c-text-1);
-    background: var(--vp-c-default-3);
-    border-radius: 100%;
-    position: relative;
-    z-index: var(--index);
-    transition: 0.2s;
+    white-space: nowrap;
+    transition: color 0.25s, background-color 0.25s, border-color 0.25s;
 }
 
-button:hover {
-    color: var(--vp-c-white);
-    background: var(--vp-c-brand-2);
-}
-
-button iconify-icon {
+.share-item iconify-icon {
     font-size: 1rem;
 }
 
-@media (min-width: 640px) and (pointer: fine) {
-    button {
-        margin-left: -1rem;
-    }
+/* Matches the nav menus of the default theme. */
+.menu {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
 
-    .social-sharing:hover>button {
-        margin-left: 0.25rem;
-    }
+.menu .share-item {
+    padding: 0 0.75rem;
+    line-height: 2rem;
+    border-radius: 6px;
+}
+
+.menu .share-item:hover {
+    color: var(--vp-c-brand-1);
+    background: var(--vp-c-default-soft);
+}
+
+.menu .divider {
+    margin: 0.5rem 0.75rem;
+    border-top: 1px solid var(--vp-c-divider);
+}
+
+.inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.inline .share-item {
+    padding: 0.375rem 0.875rem;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 2rem;
+}
+
+.inline .share-item:hover {
+    color: var(--vp-c-brand-1);
+    border-color: var(--vp-c-brand-1);
 }
 </style>

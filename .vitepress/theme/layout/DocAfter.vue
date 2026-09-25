@@ -1,6 +1,7 @@
 <template>
     <div class="after-doc">
         <BlogSeries />
+        <BlogShare v-if="isPost && enableSocial" />
         <div v-if="tags.length > 0" class="blog-tags">
             <div class="tags-title">Tags:</div>
             <div>
@@ -18,13 +19,14 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vitepress';
+import { useData, useRoute } from 'vitepress';
 import { useSidebar } from 'vitepress/theme';
 import { computed, ref, watch } from 'vue';
 import AmazonPicks from '../components/global/AmazonPicks.vue';
 import SponsorAd from '../components/global/SponsorAd.vue';
 import BlogRelated from '../components/misc/blog/BlogRelated.vue';
 import BlogSeries from '../components/misc/blog/BlogSeries.vue';
+import BlogShare from '../components/misc/blog/BlogShare.vue';
 import BlogTag from '../components/misc/blog/BlogTag.vue';
 import SocialCommentSection from '../components/misc/SocialCommentSection.vue';
 import useCustomData from '../composables/useCustomData';
@@ -32,11 +34,14 @@ import useCustomData from '../composables/useCustomData';
 const { enableAds, enableComments, enableSocial, tags } = useCustomData()
 const { hasAside } = useSidebar()
 const route = useRoute()
+const { frontmatter } = useData()
 
 const adState = ref<'pending' | 'filled' | 'empty'>('pending')
 const isBlogPost = computed(
     () => route.path.startsWith('/blog/') && !route.path.includes('/tag')
 )
+/** Unlike the listing pages under `/blog/page`, every post has a created date. */
+const isPost = computed(() => isBlogPost.value && !!frontmatter.value.createdAt)
 
 /**
  * The ad slot above already falls back to a pick when it is empty, so the strip

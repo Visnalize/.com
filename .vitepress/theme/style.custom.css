@@ -16,22 +16,18 @@
  * https://floating-vue.starpad.dev/guide/css
  * -------------------------------------------------------------------------- */
 
+/* Dropdowns look like the nav menus of the default theme, which have no arrow. */
 .v-popper--theme-dropdown .v-popper__inner {
-  border-color: var(--vp-c-divider);
+  padding: 0.75rem;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  box-shadow: var(--vp-shadow-3);
 }
 
-.v-popper--theme-dropdown .v-popper__arrow-outer {
-  border-color: var(--vp-c-divider);
-}
-
-.v-popper--theme-dropdown .v-popper__arrow-inner {
-  border-color: var(--vp-c-bg-soft);
-}
-
-.v-popper--theme-dropdown .v-popper__inner > div {
-  display: flex;
-  padding: 0.5rem;
-  background: var(--vp-c-bg-soft);
+.v-popper--theme-dropdown .v-popper__arrow-container {
+  display: none;
 }
 
 .v-popper--theme-dropdown [data-popper-shown] {
@@ -109,6 +105,11 @@
 .vp-doc h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+/* The byline takes over the space below the title. */
+.vp-doc h1:has(+ .doc-meta) {
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) {

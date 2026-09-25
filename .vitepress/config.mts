@@ -11,6 +11,7 @@ import navItems from "./config/nav";
 import sidebar from "./config/sidebar";
 import socialLinks from "./config/social";
 import { noindexPaths, transformPageData } from "./config/transformers";
+import markdownItDocMeta from "./plugins/md-doc-meta";
 import markdownItImage from "./plugins/md-image";
 
 // https://vitepress.dev/reference/site-config
@@ -104,6 +105,7 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
         md.use(markdownItBlockEmbed);
         md.use(markdownItTasklists);
         md.use(markdownItImage({ publicDir: join(process.cwd(), "public") }));
+        md.use(markdownItDocMeta);
       },
     },
 
