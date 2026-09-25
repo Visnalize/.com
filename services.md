@@ -11,6 +11,7 @@ pagefind-indexed: false
 <script setup lang="ts">
 import AnalyticsDashboard from '@components/misc/AnalyticsDashboard.vue';
 import ServicePrice from '@components/misc/services/ServicePrice.vue';
+import PaymentMethods from '@components/misc/services/PaymentMethods.vue';
 import SponsoredPostsClients from '@components/misc/services/SponsoredPostsClients.vue';
 import { AUDIENCE_TEXT as audience, adCostPerMille } from '@/.vitepress/theme/constants';
 
@@ -63,6 +64,10 @@ At ${{ adPrice }}/month that works out to about __${{ adCostPerMille(adPrice) }}
     'Your founding rate locked in for as long as you keep the slot',
     'Weekly, quarterly, annual, and site-exclusive options available',
 ]" />
+
+## Payment methods
+
+<PaymentMethods />
 
 ## Why you should choose Visnalize
 

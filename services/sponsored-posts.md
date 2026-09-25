@@ -9,6 +9,7 @@ noindex: true
 ---
 
 <script setup lang="ts">
+import PaymentMethods from '@components/misc/services/PaymentMethods.vue';
 import SponsoredPostsClients from '@components/misc/services/SponsoredPostsClients.vue';
 import SponsoredPostPricing from '@components/misc/services/SponsoredPostPricing.vue';
 </script>
@@ -76,6 +77,10 @@ See the [FAQs](#faqs) for what a pack allows.
 ::: warning Note on payment due
 Payment is required within 5 working days after publishing, unless otherwise agreed upon. If payment is not received after the due date, the post will be removed from the site.
 :::
+
+### Payment methods
+
+<PaymentMethods />
 
 ## Process
 

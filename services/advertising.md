@@ -7,6 +7,10 @@ social: false
 ads: false
 ---
 
+<script setup lang="ts">
+import PaymentMethods from '@components/misc/services/PaymentMethods.vue';
+</script>
+
 # Advertising
 
 :::tip TL;DR
@@ -66,6 +70,10 @@ Other options:
 ::: warning Note on payment due
 Payment is required in advance for the first period. For ongoing monthly placements, payment is due within 5 working days of each renewal date. If payment is not received after the due date, the placement is removed.
 :::
+
+### Payment methods
+
+<PaymentMethods />
 
 ## Ad specs
 
