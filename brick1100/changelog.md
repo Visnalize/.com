@@ -18,6 +18,50 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2026
 
+### `1.6.0` (Sep 30, 2026)
+
+- Fixed Android shortcuts not working after changing phone model <Notation icon="android" />
+- Updated app fonts for better accuracy and multi-language support
+- Added support for 12 languages: Russian, Turkish, Vietnamese, Polish, Ukrainian, Romanian, Hungarian, Malay, Czech, Bulgarian, Arabic and Persian
+- Added predictive input support for the message editor. Supported languages: English, Spanish, Portuguese, French, Turkish, Indonesian and Vietnamese
+- Added several new features, improvements and bug fixes across the [games](./games.md)
+  - [Snake II](./games/snake.md):
+    - Added [Daily maze](./games/snake.md#daily-maze) mode
+    - Added [Maze](./games/snake.md#classic) for Classic mode <Notation icon="premium" />
+  - [Space Impact +](./games/space-impact.md):
+    - Added [Boss rush](./games/space-impact.md#boss-rush) mode <Notation icon="premium" />
+    - Fixed various bugs during gameplay
+  - [Brick Breaker](./games/brick-breaker.md):
+    - Added new gameplay mechanics: [lives](./games/brick-breaker.md#lives), [power-ups](./games/brick-breaker.md#power-ups), [score](./games/brick-breaker.md#scoring) and [different brick types](./games/brick-breaker.md#brick-types)
+    - Added new levels
+    - Added [Daily challenge](./games/brick-breaker.md#daily-challenge) mode
+    - Added [Endless](./games/brick-breaker.md#endless) mode <Notation icon="premium" />
+    - Fixed various bugs and optimized performance
+  - [Chrome Dino](./games/chrome-dino.md):
+    - Added [Skins](./games/chrome-dino.md#skins) - 2 unlockable and 2 premium
+    - Fixed various bugs and optimized performance
+  - [Monogram](./games/monogram.md):
+    - Hints now stay visible beside the puzzle
+    - Pressing # [marks a cell as empty](./games/monogram.md#marking-empty-cells) - a marked cell cannot be filled by mistake, and a finished row/column marks empty cells automatically
+    - Added [beginner tips](./games/monogram.md#first-picture-tips) on the first puzzle
+    - Added new levels, reordered existing levels by difficulty
+    - Added [Daily puzzle](./games/monogram.md#daily-puzzle) mode
+    - Added [Levels](./games/monogram.md#levels) to replay any completed level <Notation icon="premium" />
+  - [Rapid Roll](./games/rapid-roll.md):
+    - Added new gameplay mechanics: [items](./games/rapid-roll.md#items) with special effects, [different platform types](./games/rapid-roll.md#stages-and-platforms)
+    - Fixed various bugs during gameplay
+  - [Tappy Duck](./games/tappy-duck.md):
+    - Added [Medals](./games/tappy-duck.md#medals) - awarded for achieving specific score milestones
+    - Fixed various bugs during gameplay
+  - [Wordee](./games/wordee.md):
+    - Improved input control - you can now [type words](./games/wordee.md#typing-a-word) the same way you compose them in the message editor
+    - Improved gameplay - a guess is now [checked](./games/wordee.md#word-check) if it is a real English word, and does not consume a try if it is not
+    - Added [Daily word](./games/wordee.md#daily-word) mode
+- Other noteworthy changes and improvements to games
+  - The first slot in the games menu is featured as the [game of the day](./games.md#game-of-the-day) and rotates daily
+  - Games with [daily modes](./games.md#daily-challenges) track [streaks](./games.md#streaks), statistics and reward [achievements](./games.md#streak-achievements) for consistent play
+  - Added [Daily reminder](./games.md#daily-reminder) settings so you will not miss daily challenges (Menu > Games > Settings > Daily reminder)
+
 ### `1.5.0` (Jul 10, 2026)
 
 - Updated libraries and dependencies to the latest versions. Due to technical constraints, the following platforms are no longer supported:
@@ -30,7 +74,7 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 ### `1.4.0` (Jun 29, 2026)
 
 - Added animated menu icons
-- Optimized [Space Impact +](./games.md#space-impact)
+- Optimized [Space Impact +](./games/space-impact.md)
 - Added keyboard numpad keys support in the [web version](https://brick1100.visnalize.com)
 - Several bug fixes and improvements behind the scenes
 
@@ -42,18 +86,18 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 ### `1.3.0` (Apr 13, 2026)
 
 - Added 5110 phone model (Menu > Settings > Phone settings > Model) <Notation icon="premium" />
-- Added new built-in game: [Wordee](./games.md#wordee) (Menu > Games > Wordee)
+- Added new built-in game: [Wordee](./games/wordee.md) (Menu > Games > Wordee)
 - Added Screensavers (Menu > Extras > Screensavers)
 - Optimized popup ads for better experience
 - Trial can only be used once per day, but has duration extended to 30 mins
 
 ### `1.2.0` (Jan 31, 2026)
 
-- Added new built-in game: [Space Impact +](./games.md#space-impact) (Menu > Games > Space Impact +)
-- Added new built-in game: [Rapid Roll](./games.md#rapid-roll) (Menu > Games > Rapid Roll)
-- Added new built-in game: [Tappy Duck](./games.md#tappy-duck) (Menu > Games > Tappy Duck)
+- Added new built-in game: [Space Impact +](./games/space-impact.md) (Menu > Games > Space Impact +)
+- Added new built-in game: [Rapid Roll](./games/rapid-roll.md) (Menu > Games > Rapid Roll)
+- Added new built-in game: [Tappy Duck](./games/tappy-duck.md) (Menu > Games > Tappy Duck)
 - Game splash screens can now be skipped by pressing any key
-- Fixed an issue with [Snake](./games.md#snake) game not working on some devices <Notation icon="android" />
+- Fixed an issue with [Snake](./games/snake.md) game not working on some devices <Notation icon="android" />
 - Fixed an issue with phone keys not working properly
 
 ## 2025
@@ -74,7 +118,7 @@ Starting with this version, Brick 1100 is now available on web! You can access i
   - Default security code: 12345
 - Added some secret codes
 - Added [Minicloud](./apps#minicloud) (Menu > Extras > Minicloud): minimal file storage and transfer solution
-- Added [Snake](./games.md#snake) Campaign Mode
+- Added [Snake](./games/snake.md) [Campaign Mode](./games/snake.md#campaign)
 
 ### `1.0.0` (Apr 11, 2025)
 
@@ -120,7 +164,7 @@ _Minor bug fixes._
 
 ### `0.0.11` (Aug 17, 2024)
 
-- Fixed [Monogram](./games.md#monogram) game showing up blank
+- Fixed [Monogram](./games/monogram.md) game showing up blank
 
 ### `0.0.10` (Aug 10, 2024)
 
@@ -143,7 +187,7 @@ _Minor bug fixes._
 
 ### `0.0.7` (Nov 4, 2023)
 
-- Added new built-in game: [Monogram](./games.md#monogram) (Menu > Games > Monogram)
+- Added new built-in game: [Monogram](./games/monogram.md) (Menu > Games > Monogram)
 - Added user account (pretty much useless for now)
 - Added ability to access the app using [deep links](./deep-links.md)
 - You can now suggest, vote for feature ideas or report bugs via the [feedback forum](https://discord.gg/gQ5kBZu68b)
@@ -154,7 +198,7 @@ _Minor bug fixes._
 
 ### `0.0.5` (Sep 30, 2023)
 
-- Added new built-in game: [Chrome Dino](./games.md#chrome-dino) (Menu > Games > Chrome Dino)
+- Added new built-in game: [Chrome Dino](./games/chrome-dino.md) (Menu > Games > Chrome Dino)
 - Fixed game audio issues
 
 ### `0.0.4` (Sep 27, 2023)
@@ -178,6 +222,6 @@ The first beta release of the app with the core interface and functionalities im
 - Tones management (play and save tones, adjust keypad volume)
 - Settings (change phone color)
 - Reminders (add, delete, edit reminders)
-- Built-in Games ([Snake](./games.md#snake), [Brick Breaker](./games.md#brick-breaker))
+- Built-in Games ([Snake](./games/snake.md), [Brick Breaker](./games/brick-breaker.md))
 - Built-in Extras/Apps (Calculator, Stopwatch, Countdown Timer, Flashlight)
 - An Online Apps section with curated apps for the Brick 1100

@@ -29,6 +29,7 @@ const PARENTS: Record<string, Crumb> = {
       Win7Simu.ThemeStudio,
       Brick1100.Changelog,
       Brick1100.Builders,
+      Brick1100.Games,
       Resources.Index,
       Blog,
       Services,

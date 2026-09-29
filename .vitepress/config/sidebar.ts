@@ -64,7 +64,20 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
     },
     {
       items: [
-        Brick1100.Games,
+        {
+          ...Brick1100.Games,
+          collapsed: true,
+          items: [
+            { text: "Snake II", link: "/brick1100/games/snake" },
+            { text: "Space Impact +", link: "/brick1100/games/space-impact" },
+            { text: "Brick Breaker", link: "/brick1100/games/brick-breaker" },
+            { text: "Chrome Dino", link: "/brick1100/games/chrome-dino" },
+            { text: "Monogram", link: "/brick1100/games/monogram" },
+            { text: "Rapid Roll", link: "/brick1100/games/rapid-roll" },
+            { text: "Tappy Duck", link: "/brick1100/games/tappy-duck" },
+            { text: "Wordee", link: "/brick1100/games/wordee" },
+          ],
+        },
         Brick1100.Apps,
         Brick1100.DeepLinks,
         {
