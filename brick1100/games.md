@@ -1,174 +1,116 @@
 ---
-description: Play the classic games on Brick 1100. Snake, Brick Breaker, Chrome Dino, Monogram and more
+description: Play the classic games on Brick 1100. Snake II, Space Impact +, Brick Breaker, Chrome Dino, Monogram and more, with daily challenges, streaks and leaderboards
 ---
 
 # Brick 1100 Games
 
-Below is a list of classic games you can play on Brick 1100, with each game having its own gameplay and controls using the T9 keypad.
+Below is a list of classic games you can play on Brick 1100, with each game having its own gameplay and controls using the T9 keypad. You can find them in _Menu > Games_. Select a game to see all of its features, controls and tips.
 
 <script setup lang="ts">
-import KeyIcon from '@components/misc/brick1100/KeyIcon.vue';
+import Notation from '@components/misc/brick1100/Notation.vue';
 </script>
 
-## Snake
+## Snake II {#snake}
 
-| Splash screen | Gameplay |
-| --- | --- |
-| ![Snake intro](./games/snake-intro.png) | ![Snake gameplay](./games/snake-gameplay.png) |
+The classic Nokia snake game. Play the endless Classic mode, travel through the mazes of the Campaign, or clear the Daily maze.
 
-:::tip Goal
-Make the snake grow longer by directing it to the food. The longer the snake gets, the more points you score.
-:::
+[How to play Snake II →](./games/snake.md)
 
-:::warning Controls
+## Space Impact + {#space-impact}
 
-- <KeyIcon s="navi" /> / <KeyIcon s="clear" /> - pause game
-- <KeyIcon s="down" /> - move clockwise
-- <KeyIcon s="up" /> - move counter-clockwise
-- <KeyIcon s="2" /> - move up
-- <KeyIcon s="8" /> - move down
-- <KeyIcon s="4" /> - move left
-- <KeyIcon s="6" /> - move right
-:::
+A side-scrolling space shooter with 10 levels, boss fights, bonus weapons and a Boss rush mode <Notation icon="premium" />.
 
-## Space Impact +
+[How to play Space Impact + →](./games/space-impact.md)
 
-| Splash screen | Gameplay |
-| --- | --- |
-| ![Space Impact intro](./games/spaceimpact-intro.png) | ![Space Impact gameplay](./games/spaceimpact-gameplay.png) |
+## Brick Breaker {#brick-breaker}
 
-:::tip Goal
-Destroy enemy ships and avoid their attacks to progress through levels, achieve a high score and unlock achievements.
-:::
+Break all the bricks with a bouncing ball. 50 levels with power-ups and different brick types, a Daily challenge and an Endless mode <Notation icon="premium" />.
 
-:::warning Controls (Default)
+[How to play Brick Breaker →](./games/brick-breaker.md)
 
-- <KeyIcon s="navi" /> / <KeyIcon s="clear" /> - pause game
-- <KeyIcon s="8" /> - move up / jump
-- <KeyIcon s="0" /> - move down
-- <KeyIcon s="aste" /> - move left
-- <KeyIcon s="hash" /> - move right
-- <KeyIcon s="3" /> - fire main weapon
-- <KeyIcon s="6" /> - fire bonus weapon
-:::
+## Chrome Dino {#chrome-dino}
 
-:::warning Controls (Alternate)
+The endless runner from the Chrome browser. Jump over cacti, duck under pterodactyls and unlock new skins.
 
-- <KeyIcon s="navi" /> / <KeyIcon s="clear" /> - pause game
-- <KeyIcon s="2" /> - move up / jump
-- <KeyIcon s="8" /> - move down
-- <KeyIcon s="4" /> - move left
-- <KeyIcon s="6" /> - move right
-- <KeyIcon s="5" /> - fire main weapon
-- <KeyIcon s="3" /> - fire bonus weapon
-:::
+[How to play Chrome Dino →](./games/chrome-dino.md)
 
 <SponsorAd />
 
-## Brick Breaker
+## Monogram {#monogram}
 
-| Splash screen | Gameplay |
+A picture logic puzzle with 100 pictures from 5 x 5 to 12 x 12, and a new Daily puzzle every day.
+
+[How to play Monogram →](./games/monogram.md)
+
+## Rapid Roll {#rapid-roll}
+
+Roll the ball down from platform to platform and avoid the spikes. Collect items and survive new platform types at every stage.
+
+[How to play Rapid Roll →](./games/rapid-roll.md)
+
+## Tappy Duck {#tappy-duck}
+
+Flap the duck's wings to fly it through the gaps between the pipes, and win bronze, silver, gold and platinum medals.
+
+[How to play Tappy Duck →](./games/tappy-duck.md)
+
+## Wordee {#wordee}
+
+Guess the hidden 4-letter word in 5 tries. Type letters as in a text message, and play a new Daily word every day.
+
+[How to play Wordee →](./games/wordee.md)
+
+## Game of the day
+
+The first game in the _Games_ menu is the game of the day. It changes every day, and it is the same for every player. The menu title shows _Game of the day_ when this game is selected.
+
+## Daily challenges
+
+Four games have a daily challenge: a new puzzle each day, the same for every player.
+
+| Game | Daily challenge |
 | --- | --- |
-| ![Brick breaker intro](./games/brick-intro.png) | ![Brick breaker gameplay](./games/brick-gameplay.png) |
+| [Snake II](./games/snake.md#daily-maze) | Daily maze |
+| [Brick Breaker](./games/brick-breaker.md#daily-challenge) | Daily challenge |
+| [Monogram](./games/monogram.md#daily-puzzle) | Daily puzzle |
+| [Wordee](./games/wordee.md#daily-word) | Daily word |
 
-:::tip Goal
-Clear the screen by breaking all the bricks with the ball to advance to the next level.
-:::
+All daily challenges work the same way:
 
-:::warning Controls
+- You have **one try each day**, won or lost. A new daily challenge is ready at midnight, in your local time.
+- In the _Games_ menu, the title shows _Daily ready_ on a game whose daily challenge you have not played yet today.
+- If you pause a daily challenge, select it again in the game menu to go on playing the same day.
+- When you finish a daily challenge, select it again to see your statistics: current streak, days played, percentage won, best streak and streak freezes.
 
-- <KeyIcon s="navi" /> / <KeyIcon s="clear" /> - pause game
-- <KeyIcon s="up" /> / <KeyIcon s="1" /> / <KeyIcon s="4" /> / <KeyIcon s="7" /> - move paddle left
-- <KeyIcon s="down" /> / <KeyIcon s="3" /> / <KeyIcon s="6" /> / <KeyIcon s="9" /> - move paddle right
-:::
+### Streaks
 
-## Chrome Dino
+Your streak counts the days in a row you played a daily challenge, won or lost. Each game keeps its own streak. The game menu shows your streak when the daily challenge is selected.
 
-| Splash screen | Gameplay |
-| --- | --- |
-| ![Chrome Dino intro](./games/dino-intro.png) | ![Chrome Dino gameplay](./games/dino-gameplay.png) |
+Every 7 days in a row, you earn a **streak freeze**, up to 2 at a time. A streak freeze is used on its own to keep your streak when you miss a day.
 
-:::tip Goal
-Control the T-Rex to overcome obstacles. The longer you survive, the higher your score.
-:::
+### Streak achievements
 
-:::warning Controls
+Keep a streak for 3, 7, 30 and 100 days to unlock the streak achievements. They are shared by all daily games, so your longest streak in any game counts (Android and iOS only).
 
-- <KeyIcon s="clear" /> - pause game
-- <KeyIcon s="up" /> / <KeyIcon s="2" /> - jump
-- <KeyIcon s="down" /> / <KeyIcon s="8" /> - duck
-:::
+### Daily reminder
 
-## Monogram
+The daily reminder sends you a notification at 19:00 on days when you have not played a daily challenge yet. It is on by default. The app asks you to allow notifications after your first daily challenge. On the web version, a reminder only arrives while the page is open.
 
-| Splash screen | Gameplay |
-| --- | --- |
-| ![Monogram intro](./games/monogram-intro.png) | ![Monogram gameplay](./games/monogram-gameplay.png) |
+To turn it on or off, go to _Menu > Games > Settings > Daily reminder_.
 
-:::tip Goal
-Leave blank or fill the grid cells until a pixel image appears to advance to the next level.
-:::
+## Continue after game over
 
-:::warning Controls
+In every game except Wordee's daily word, you can continue once per game after a game over. It is free for subscribers, other players watch a video ad. Each game page explains what the continue gives you. Continue is only available on Android and iOS.
 
-- <KeyIcon s="clear" /> - pause game
-- <KeyIcon s="2" /> - move the cursor up
-- <KeyIcon s="8" /> - move the cursor down
-- <KeyIcon s="4" /> - move the cursor left
-- <KeyIcon s="6" /> - move the cursor right
-- <KeyIcon s="up" /> - move the cursor to the previous cell
-- <KeyIcon s="down" /> - move the cursor to the next cell
-- <KeyIcon s="navi" /> / <KeyIcon s="5" /> - toggle cell fill
-- <KeyIcon s="aste" /> - toggle cell hints (shows the number of filled cells in the row/column)
-- <KeyIcon s="0" /> - reset the grid
-:::
+## High scores
 
-## Rapid Roll
+Each game sends your best score to its leaderboard on Google Play Games (Android) or Game Center (iOS). Select _High scores_ in a game's menu to see the ranking. You do not need a Brick 1100 account for this. Leaderboards are not available on the web version.
 
-| Splash screen | Gameplay |
-| --- | --- |
-| ![Rapid Roll intro](./games/rapidroll-intro.png) | ![Rapid Roll gameplay](./games/rapidroll-gameplay.png) |
+## Game settings
 
-:::tip Goal
-Move the ball to avoid spikes and land safely on platforms. The longer you survive, the higher your score.
-:::
+Go to _Menu > Games > Settings_ to change these options for all games:
 
-:::warning Controls
-
-- <KeyIcon s="navi" /> / <KeyIcon s="clear" /> - pause game
-- <KeyIcon s="4" /> - move left
-- <KeyIcon s="6" /> - move right
-:::
-
-## Tappy Duck
-
-| Splash screen | Gameplay |
-| --- | --- |
-| ![Tappy Duck intro](./games/tappyduck-intro.png) | ![Tappy Duck gameplay](./games/tappyduck-gameplay.png) |
-
-:::tip Goal
-Fly the duck through the gaps between pipes. The longer you survive, the higher your score.
-:::
-
-:::warning Controls
-
-- <KeyIcon s="clear" /> - pause game
-- __Any key__ - flap wings / fly up
-:::
-
-## Wordee
-
-| Splash screen | Gameplay |
-| --- | --- |
-| ![Wordee intro](./games/wordee-intro.png) | ![Wordee gameplay](./games/wordee-gameplay.png) |
-
-:::tip Goal
-Guess a hidden 4-letter word within 5 tries. Filled letters are in the correct position, checkered letters are in the word but wrong position.
-:::
-
-:::warning Controls
-
-- <KeyIcon s="4" /> / <KeyIcon s="6" /> - change active slot
-- <KeyIcon s="2" /> / <KeyIcon s="8" /> - scroll through letters for the active slot
-- <KeyIcon s="navi" /> / <KeyIcon s="5" /> - submit guess
-:::
+- **Game sounds** - turn the game sound effects on or off.
+- **Game lights** - turn the screen light on or off while you play.
+- **Shakes** - turn the phone vibration on or off, for example when you crash.
+- **Daily reminder** - see [Daily reminder](#daily-reminder).
