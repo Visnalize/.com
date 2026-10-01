@@ -37,10 +37,10 @@ Now, let's dive into tools/software that are helping my business thrive:
 
 **_Pros and Cons_:**
 
-| **Pros**|**Cons**|
-| --- | --- |
+| **Pros**                                                                                            | **Cons**                                 |
+| --------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | Asana offers hundreds of integration options with famous tools/software like Salesforce, Zoom, etc. | Asana may be expensive for larger teams. |
-|  You can easily monitor your team's progress on different tasks.  |        |
+| You can easily monitor your team's progress on different tasks.                                     |                                          |
 
 **_Best Thing About Asana?_**
 
@@ -54,7 +54,7 @@ The following plans are offered by Asana:
 - Starter Plan costs $10.99 per user per month
 - Advanced Plan costs $24.99 per user per month
 
-### 2. ProofHub - Best for Project Management and Team Collaboration
+### 2. [ProofHub](https://www.proofhub.com/) - Best for Project Management and Team Collaboration
 
 **_Platforms Available On_:** Web browser, iOS, and Android.
 
@@ -68,10 +68,10 @@ The following plans are offered by Asana:
 
 **_Pros and Cons_:**
 
-| **Pros** | **Cons** |
-| --- | --- |
+| **Pros**                                                                                                    | **Cons**                                           |
+| ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
 | One flat price covers unlimited users, so adding teammates, freelancers, or clients doesn't raise the bill. | There's no permanent free plan, only a free trial. |
-| Built-in proofing suits agencies that send work for client approval. | It offers fewer third-party integrations. |
+| Built-in proofing suits agencies that send work for client approval.                                        | It offers fewer third-party integrations.          |
 
 **_Best Thing About ProofHub?_**
 
@@ -97,10 +97,10 @@ ProofHub offers a free trial, then two flat-rate plans with unlimited users:
 
 **_Pros and Cons_:**
 
-|       **Pros**       |        **Cons**        |
-| --- | --- |
-|               HubSpot can be integrated with over 100+ tools and software.               | HubSpot's basic version may offer limited functionality. |
-| Besides marketing, you may also get help from HubSpot to generate leads and close sales. |            |
+| **Pros**                                                                                 | **Cons**                                                 |
+| ---------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| HubSpot can be integrated with over 100+ tools and software.                             | HubSpot's basic version may offer limited functionality. |
+| Besides marketing, you may also get help from HubSpot to generate leads and close sales. |                                                          |
 
 **_The Best Thing About HubSpot?_**
 
@@ -128,10 +128,10 @@ Besides the free version (up to 2 users) with limited features, HubSpot offers t
 
 **_Pros and Cons_:**
 
-|              **Pros**              |     **Cons**     |
-| --- | --- |
+| **Pros**                                                             | **Cons**                                           |
+| -------------------------------------------------------------------- | -------------------------------------------------- |
 | FreshBooks takes extensive security measures to protect users' data. | FreshBooks' cheapest plan offers limited features. |
-|             You can integrate your payroll on FreshBooks.            |      |
+| You can integrate your payroll on FreshBooks.                        |                                                    |
 
 **_The Best Thing About FreshBooks?_**
 
@@ -160,10 +160,10 @@ FreshBooks offers a 30-day trial period. Besides that, the following plans are o
 
 **_Pros and Cons_:**
 
-|      **Pros**     |         **Cons**         |
-| --- | --- |
+| **Pros**                                                                                                      | **Cons**                                                   |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | Salesforce offers a lot of customizability and you may personalize this software to your team's requirements. | Using advanced CRM features may be complex for some users. |
-|         You create omnichannel customer support for your customers.         |              |
+| You create omnichannel customer support for your customers.                                                   |                                                            |
 
 **_The Best Thing About Salesforce?_**
 
@@ -190,10 +190,10 @@ Besides a 30-day trial period, Salesforce offers the following plans:
 
  **_Pros and Cons_:**
 
-|        **Pros**        |       **Cons**       |
-| --- | --- |
-| NordVPN offers more than 7,000 servers in 118 countries. | Price fluctuations may be frustrating for most users.  |
-|      NordVPN uses strong encryptions like AES-256.       |          |
+| **Pros**                                                 | **Cons**                                              |
+| -------------------------------------------------------- | ----------------------------------------------------- |
+| NordVPN offers more than 7,000 servers in 118 countries. | Price fluctuations may be frustrating for most users. |
+| NordVPN uses strong encryptions like AES-256.            |                                                       |
 
 **_The Best Thing About NordVPN?_**
 
