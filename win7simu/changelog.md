@@ -12,6 +12,12 @@ pageClass: changelog
 
 ## 2026
 
+### `4.7.0` (Oct 4, 2026)
+
+A fix for uploaded backgrounds turning black after logging out, offline play and refined visuals for Purble Shop, and improvements for Tetris.
+
+[Read the full release notes &rarr;](./changelog/4.7.0.md)
+
 ### `4.6.0` (Sep 6, 2026)
 
 A big update for the built-in games, the taskbar and start menu, File Explorer, and full read-write support on the Android drive.
