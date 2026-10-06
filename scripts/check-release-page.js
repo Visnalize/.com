@@ -6,6 +6,9 @@
  * caches are gitignored. These are the failures that actually matter for a
  * generated page, so they are checked directly.
  *
+ * A patch release such as 4.7.1 has no page, only an inline changelog entry,
+ * so only the entry is checked.
+ *
  * Usage: node scripts/check-release-page.js 4.7.0
  */
 
@@ -22,6 +25,25 @@ if (!version) {
 const pagePath = `win7simu/changelog/${version}.md`;
 const changelogPath = "win7simu/changelog.md";
 const problems = [];
+
+if (!version.endsWith(".0")) {
+  checkPatchEntry();
+}
+
+function checkPatchEntry() {
+  const changelog = readFileSync(join(cwd(), changelogPath), "utf-8");
+  if (!changelog.includes(`### \`${version}\``)) {
+    problems.push(`${changelogPath}: no heading for ${version}`);
+  }
+  const left = changelog.match(/\{\{[A-Z_]+\}\}/g);
+  if (left) {
+    problems.push(`${changelogPath}: unfilled placeholder ${[...new Set(left)].join(", ")}`);
+  }
+  if (existsSync(join(cwd(), pagePath))) {
+    problems.push(`${pagePath}: a patch release should not have its own page`);
+  }
+  report(`the ${changelogPath} entry for ${version} looks good`);
+}
 
 if (!existsSync(join(cwd(), pagePath))) {
   console.error(`error: ${pagePath} does not exist`);
@@ -111,10 +133,14 @@ if (!changelog.includes(`](./changelog/${version}.md)`)) {
 
 // --- report -----------------------------------------------------------------
 
-if (problems.length) {
-  console.error(`${problems.length} problem(s) with the ${version} release page:`);
-  for (const problem of problems) console.error(`  - ${problem}`);
-  exit(1);
-}
+report(`${pagePath} and the ${changelogPath} entry look good`);
 
-console.log(`${pagePath} and the ${changelogPath} entry look good`);
+function report(success) {
+  if (problems.length) {
+    console.error(`${problems.length} problem(s) with the ${version} release:`);
+    for (const problem of problems) console.error(`  - ${problem}`);
+    exit(1);
+  }
+  console.log(success);
+  exit(0);
+}

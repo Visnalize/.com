@@ -6,6 +6,9 @@
  * that need judgement, the summary and the in-text links, are left as
  * placeholders for the Claude step in .github/workflows/release-page.yml.
  *
+ * A patch release such as 4.7.1 gets no page. Its notes go inline into the
+ * changelog entry instead, and there is nothing left for Claude to fill.
+ *
  * Usage:
  *   RELEASE_VERSION=4.7.0 \
  *   RELEASE_PUBLISHED_AT=2026-11-02T16:31:22Z \
@@ -57,7 +60,7 @@ function fail(message) {
   exit(1);
 }
 
-/** Skip without failing, so a patch release does not turn the run red. */
+/** Skip without failing, so a re-run for a known release does not turn the run red. */
 function skip(message) {
   console.log(`skipped: ${message}`);
   setOutput("skipped", "true");
@@ -258,20 +261,40 @@ function buildPage(sections, video) {
   ) + "\n";
 }
 
+/** A minor release links out to its page and only shows the summary inline. */
+function minorEntryBody() {
+  return [
+    "{{SUMMARY}}",
+    "",
+    `[Read the full release notes &rarr;](./changelog/${version}.md)`,
+  ].join("\n");
+}
+
+/**
+ * A patch release has no page, so its notes go inline, under the same
+ * `__Core__` style headings the older entries use.
+ */
+function patchEntryBody(sections) {
+  return sections
+    .map(({ platform, content }) => {
+      const label = platform[0].toUpperCase() + platform.slice(1);
+      return `__${label}__\n\n${content}`;
+    })
+    .join("\n\n");
+}
+
 /**
  * Adds the entry at the top of this year's group, creating the group when the
  * release is the first one of a new year.
  */
-function insertChangelogEntry(dateLabel, year) {
+function insertChangelogEntry(dateLabel, year, entryBody) {
   const path = join(cwd(), CHANGELOG);
   const text = readFileSync(path, "utf-8");
 
   const entry = [
     `### \`${version}\` (${dateLabel})`,
     "",
-    "{{SUMMARY}}",
-    "",
-    `[Read the full release notes &rarr;](./changelog/${version}.md)`,
+    entryBody,
     "",
   ].join("\n");
 
@@ -294,9 +317,10 @@ function insertChangelogEntry(dateLabel, year) {
 
 // --- main -------------------------------------------------------------------
 
-if (!/^\d+\.\d+\.0$/.test(version)) {
-  skip(`${version} is a patch release, it belongs inline in ${CHANGELOG}`);
+if (!/^\d+\.\d+\.\d+$/.test(version)) {
+  fail(`${version} is not a x.y.z version`);
 }
+const isPatch = !version.endsWith(".0");
 
 const sections = parseSections(body);
 if (!sections.length) {
@@ -309,22 +333,29 @@ const pagePath = `${PAGE_DIR}/${version}.md`;
 
 // Guard before any write, so a re-run cannot clobber a page that is already
 // finished, reviewed, or merged.
-if (existsSync(join(cwd(), pagePath))) {
+if (!isPatch && existsSync(join(cwd(), pagePath))) {
   skip(`${pagePath} already exists`);
 }
 if (readFileSync(join(cwd(), CHANGELOG), "utf-8").includes(`### \`${version}\``)) {
   skip(`${CHANGELOG} already has an entry for ${version}`);
 }
 
-const video = await findVideo(version);
 const { year } = localParts(publishedAt);
+const dateLabel = changelogDate(publishedAt);
 
-writeFileSync(join(cwd(), pagePath), buildPage(sections, video));
-insertChangelogEntry(changelogDate(publishedAt), year);
-writeLinkTargets();
+if (isPatch) {
+  insertChangelogEntry(dateLabel, year, patchEntryBody(sections));
+  setOutput("video", "");
+} else {
+  const video = await findVideo(version);
+  writeFileSync(join(cwd(), pagePath), buildPage(sections, video));
+  insertChangelogEntry(dateLabel, year, minorEntryBody());
+  writeLinkTargets();
+  setOutput("page", pagePath);
+  setOutput("video", video);
+}
 
 setOutput("skipped", "false");
+setOutput("kind", isPatch ? "patch" : "minor");
 setOutput("version", version);
-setOutput("page", pagePath);
-setOutput("video", video);
 setOutput("platforms", sections.map((s) => s.platform).join(","));

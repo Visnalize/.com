@@ -110,8 +110,8 @@ In `Visnalize/.com`:
 
 1. A release is published in the app repo.
 2. The dispatch lands here and `scripts/release-page.js` runs.
-   - A patch release such as `4.6.1` is skipped: it belongs inline in
-     `win7simu/changelog.md`, and the run ends green with a notice.
+   - A patch release such as `4.6.1` gets no page. Its notes go inline into a
+     new entry in `win7simu/changelog.md`, and the run skips step 3.
    - A `x.y.0` release gets a page and a changelog entry, both with `{{SUMMARY}}`
      placeholders.
 3. Claude fills the placeholders and adds the links, following

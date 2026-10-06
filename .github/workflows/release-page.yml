@@ -77,13 +77,14 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: node scripts/release-page.js
 
-      # Patch releases stay inline in changelog.md, so there is nothing to do.
+      # A re-run for a release that already has an entry has nothing to do.
       - name: Report a skipped release
         if: steps.scaffold.outputs.skipped == 'true'
         run: echo "::notice::${{ steps.scaffold.outputs.reason }}"
 
+      # A patch release has no page and no placeholders, only an inline entry.
       - name: Write the summary and links
-        if: steps.scaffold.outputs.skipped == 'false'
+        if: steps.scaffold.outputs.skipped == 'false' && steps.scaffold.outputs.kind == 'minor'
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -114,6 +115,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ steps.scaffold.outputs.version }}
+          KIND: ${{ steps.scaffold.outputs.kind }}
           VIDEO: ${{ steps.scaffold.outputs.video }}
           BASE_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
@@ -126,32 +128,49 @@ jobs:
             exit 1
           fi
 
+          if [ "$KIND" = "patch" ]; then
+            title="docs: add $VERSION changelog entry"
+          else
+            title="docs: add $VERSION release page"
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add "win7simu/changelog/$VERSION.md" win7simu/changelog.md
-          git commit -m "docs: add $VERSION release page"
-          git push -u origin "$branch"
-
-          if [ -n "$VIDEO" ]; then
-            video_note="Video \`$VIDEO\` was found on the channel and filled in."
-          else
-            video_note="No matching video on the channel yet. Paste the ID into \`video:\`, or leave it empty and add it later."
+          git add win7simu/changelog.md
+          if [ "$KIND" = "minor" ]; then
+            git add "win7simu/changelog/$VERSION.md"
           fi
+          git commit -m "$title"
+          git push -u origin "$branch"
 
           {
             printf 'Generated from the `%s` release in the app repo.\n\n' "$VERSION"
             printf '## Changelog notes\n\n'
-            printf -- '- Added a release notes page for Win7 Simu %s.\n' "$VERSION"
-            printf -- '- The changelog page now links to it from the %s entry.\n\n' "$VERSION"
+            if [ "$KIND" = "patch" ]; then
+              printf -- '- Added the Win7 Simu %s release notes to the changelog page.\n\n' "$VERSION"
+            else
+              printf -- '- Added a release notes page for Win7 Simu %s.\n' "$VERSION"
+              printf -- '- The changelog page now links to it from the %s entry.\n\n' "$VERSION"
+            fi
             printf '## Before merging\n\n'
-            printf -- '- [ ] %s\n' "$video_note"
+            if [ "$KIND" = "minor" ]; then
+              if [ -n "$VIDEO" ]; then
+                printf -- '- [ ] Video `%s` was found on the channel and filled in.\n' "$VIDEO"
+              else
+                printf -- '- [ ] No matching video on the channel yet. Paste the ID into `video:`, or leave it empty and add it later.\n'
+              fi
+            fi
             printf -- '- [ ] Check the release date against the store rollout. It comes from the GitHub release, which is sometimes cut a day early.\n'
-            printf -- '- [ ] Read the summary and the links.\n'
+            if [ "$KIND" = "patch" ]; then
+              printf -- '- [ ] Read the entry, and add links to app pages where they help.\n'
+            else
+              printf -- '- [ ] Read the summary and the links.\n'
+            fi
           } > "$RUNNER_TEMP/pr-body.md"
 
           gh pr create \
             --base "${BASE_BRANCH:-v2}" \
             --head "$branch" \
-            --title "docs: add $VERSION release page" \
+            --title "$title" \
             --body-file "$RUNNER_TEMP/pr-body.md"
