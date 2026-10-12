@@ -26,13 +26,41 @@ The diagram above illustrates how your apps and games are integrated with Brick 
 
 > _Learn more: [Bridge 1100 GitHub repository](https://github.com/Visnalize/bridge-1100)_
 
-Bridge 1100 is a small JavaScript utility that acts as a bridge between your apps/games and Brick 1100. It provides an API that allows your creation to exchange events and data from and to Brick 1100 such as `start`, `stop`, `keypress`, `numpress` etc. In addition, it comes with a set of predefined styles to make your creation fit seamlessly with Brick 1100's interface effortlessly.
+Bridge 1100 is a small JavaScript utility that acts as a bridge between your apps/games and Brick 1100. It provides an API that allows your creation to exchange events and data from and to Brick 1100 such as `keypress`, `numpress`, `stop`, `shake` etc. In addition, it comes with a set of predefined styles and fonts to make your creation fit seamlessly with Brick 1100's interface effortlessly.
+
+It also comes with two helpers:
+
+- `bridge.ui`: ready-made screens that look and work like the phone's own, such as a list, a scrolling text, a confirmation, a result message, a number input, and a loading bar. They handle the keys for you.
+- `bridge.lcd`: the phone's 96 x 65 pixel grid, for games that draw on a canvas.
+
+Your creation loads Bridge 1100 from `https://unpkg.com/bridge-1100/dist/...` without a version number, so it always uses the latest version.
 
 ### Previewer
 
 > _Learn more: [Using Brick 1100 Previewer](./builders/using-previewer.md)_
 
 Previewer is a tool that allows you to test your apps and games on Brick 1100 prior to publishing. It leverages Bridge 1100 under the hood to provide a realistic preview of how your creation will look and behave on Brick 1100. This is useful for debugging and ensuring your creation works as expected once published.
+
+### Where your creation runs
+
+Once published, apps show up in __Menu > Online > Online apps__, and games in __Menu > Online > Online games__. Each folder in the repository is one item. The name in the menu comes from the folder name, e.g. the folder `tic-tac-toe` shows as "Tic Tac Toe".
+
+| Repository | Served at |
+| --- | --- |
+| [Brick 1100 Apps](https://github.com/Visnalize/brick-1100-apps) | `https://brick1100-apps.visnalize.com/<folder>` |
+| [Brick 1100 Games](https://github.com/Visnalize/brick-1100-games) | `https://brick1100-games.visnalize.com/<folder>` |
+
+Online apps, Online games, and the Previewer do not support the same events. Check this table before you choose where to publish:
+
+| Event | Online apps | Online games | Previewer |
+| --- | --- | --- | --- |
+| `keypress`, `numpress`, `keyrelease`, `numrelease`, `keyhold`, `numhold` (from Brick 1100) | Yes | Yes | Yes |
+| `stop` (to Brick 1100) | Yes | Yes | Yes |
+| `shake` (to Brick 1100) | Yes | Yes | Yes |
+| `loadAudio`, `playAudio` (to Brick 1100) | __No__ | Yes | Yes |
+| `progress` with `{ type: "over" }` (to Brick 1100) | No | Yes | No |
+
+- `stop` with no data closes your creation. `stop` with `{ error: "Some message" }` shows that message as an error on the phone. Other data in `stop`, such as a score, is not used.
 
 <SponsorAd />
 
@@ -53,8 +81,10 @@ Below are the general steps to start building your own apps and games and publis
 
 ### 2. Build
 
-- In your Visual Studio Code, create a new folder and name it as your app's name.
+- In your Visual Studio Code, create a new folder and name it as your app's name, in lowercase with dashes, e.g. `my-app`.
 - Write your app's code in the folder (you can refer to the existing apps for examples).
+  - Apps: `bmi-calculator`, `pwd-generator`, `randomizer`, and `example.html` (raw key events and vibration).
+  - Games: `tic-tac-toe`, `sudoku`.
 - Once done, commit and push your code to your forked repository.
 
 ### 3. Publish
@@ -62,7 +92,7 @@ Below are the general steps to start building your own apps and games and publis
 - Create a pull request to original directory repository.
 - Your pull request will be reviewed by the maintainers
   - This step is mandatory to ensure the quality and security of the apps/games before getting published to Brick 1100 users.
-- Once approved, your pull request will be merged and your app will be available in Brick 1100 immediately.
+- Once approved, your pull request will be merged and your app will be available in Brick 1100. Brick 1100 keeps the list for up to one hour, so it can take up to one hour to show up on a phone that opened the list recently.
 
 ## In-depth guides
 

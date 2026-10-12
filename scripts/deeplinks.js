@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 
 // Resolve paths relative to this file (not process.cwd()) so the script can
 // be run directly, e.g. `node .vitepress/server/deeplinks.js` from anywhere.
-const ROUTER_DIR = join(".code", "brick-1100", "src", "router");
+const ROUTER_DIR = join(".code", "brick-1100", "apps", "phone", "src", "router");
 const DEEP_LINKS_MD = join("brick1100", "deep-links.md");
 
 /**
@@ -31,7 +31,7 @@ const INCLUDED_ROOT_PATHS = new Set(["/main", "/menu"]);
  * `menu.js` and `index.js` are plain Vue Router config files (not JSON), so
  * the route array is extracted from the source text by matching balanced
  * brackets and evaluated as JS. Properties that reference imported bindings
- * we don't care about (`image`, `component: Boot`, the `...menu` spread)
+ * we don't care about (`image`, `component: Boot` / `MenuIndex`, the `...menu` spread)
  * are stripped first since they aren't needed to build the deep links table
  * and would otherwise throw (missing imports) when evaluated in isolation.
  */
@@ -58,7 +58,7 @@ function extractRoutesArray(source, varName) {
   const literal = source
     .slice(arrayStart, end + 1)
     .replace(/^\s*image:.*,\s*$/gm, "")
-    .replace(/\bcomponent:\s*Boot\b/g, "component: null")
+    .replace(/\bcomponent:\s*(Boot|MenuIndex)\b/g, "component: null")
     .replace(/^\s*\.\.\.menu,\s*$/gm, "");
 
   // eslint-disable-next-line no-new-func

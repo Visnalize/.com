@@ -22,7 +22,7 @@ Fly the duck through the gaps between the pipes. Each pipe you pass is a point.
 
 :::warning Controls
 
-- __Any key__ - flap wings / fly up (the first key starts the game)
+- __Any key__ except <KeyIcon s="clear" /> - flap wings / fly up (the first key starts the game)
 - <KeyIcon s="clear" /> - pause game
 :::
 

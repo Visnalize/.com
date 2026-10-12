@@ -37,7 +37,7 @@ The table below lists the deep links that are available in the app and the secti
 | <DeepLink path="/settings/time" /> | Time settings |
 | <DeepLink path="/settings/phone" /> | Phone settings |
 | <DeepLink path="/settings/account" /> | Account settings |
-| <DeepLink path="/settings/subscription" /> | Subscription settings |
+| <DeepLink path="/settings/subscription" /> | Subscription |
 | <DeepLink path="/settings/security" /> | Security settings |
 | <DeepLink path="/settings/reset" /> | Restore factory settings |
 | <DeepLink path="/settings/about" /> | About |
@@ -58,6 +58,7 @@ The table below lists the deep links that are available in the app and the secti
 | <DeepLink path="/games/settings/sounds" /> | Game sounds |
 | <DeepLink path="/games/settings/lights" /> | Game lights |
 | <DeepLink path="/games/settings/shakes" /> | Shakes |
+| <DeepLink path="/games/settings/reminder" /> | Daily reminder |
 | <DeepLink path="/extras" /> | Extras |
 | <DeepLink path="/extras/calculator" /> | Calculator |
 | <DeepLink path="/extras/stopwatch" /> | Stopwatch |

@@ -47,7 +47,7 @@ You score points while the ball is falling. The game gets faster as your score g
 
 ### Items
 
-Items appear on some platforms. Roll over an item to collect it. The icon of an active item blinks when it is about to end.
+Items appear on some platforms. Roll over an item to collect it. The hourglass and star icons blink when their effect is about to end.
 
 | Item | Effect |
 | --- | --- |

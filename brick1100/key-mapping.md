@@ -34,5 +34,6 @@ Brick 1100 is fully functional [on the web](https://brick1100.visnalize.com/). T
 
 ## Notes
 
+- The numpad on your keyboard also works: <kbd>0</kbd> - <kbd>9</kbd> for the number keys and <kbd>Enter</kbd> for the Navi key.
 - The press/hold behavior of the keypad keys is also supported on the keyboard. For example, pressing <kbd>Backspace</kbd> will clear a character, while holding it will clear the entire input.
 - In an editing context, e.g. when entering text for a reminder or note, you can type freely with the text keys (`A-Z`) on the keyboard, hold the Shift key for uppercase letters, or use the Caps Lock key to toggle uppercase mode.

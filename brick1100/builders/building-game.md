@@ -58,6 +58,11 @@ In this Tic Tac Toe game, 2 players can play against each other on a 3x3 grid. O
 ## 2. Build
 
 - In your Visual Studio Code, create a new folder named `tic-tac-toe` inside the `brick-1100-games` folder. This folder will contain the source code of the Tic Tac Toe game.
+
+:::tip Note
+The repository already has a `tic-tac-toe` example, a more advanced version of this guide's game. To follow along, you can delete it first, or give your folder another name, e.g. `my-tic-tac-toe`.
+:::
+
 - Start the Live Server by selecting the `tic-tac-toe` folder, right-clicking, and selecting `Open with Five Server (root)`.
 
 ![Open with Five Server](./img/run-server-games.png)
@@ -68,7 +73,7 @@ In this Tic Tac Toe game, 2 players can play against each other on a 3x3 grid. O
 
 - Create an `index.html` file inside the `tic-tac-toe` folder with the below content:
 
-```html:line-numbers {8,9,19}
+```html:line-numbers {8,9,10,19}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,13 +83,13 @@ In this Tic Tac Toe game, 2 players can play against each other on a 3x3 grid. O
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="https://unpkg.com/bridge-1100/dist/index.css">
     <link rel="stylesheet" href="https://unpkg.com/bridge-1100/dist/font.css">
+    <link rel="stylesheet" href="https://unpkg.com/bridge-1100/dist/ui.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="container">
         <div id="board"></div>
-        <div id="result" hidden></div>
     </div>
 
     <script src="https://unpkg.com/bridge-1100/dist/index.umd.js"></script>
@@ -96,10 +101,11 @@ In this Tic Tac Toe game, 2 players can play against each other on a 3x3 grid. O
 
 - The game consists of two screens:
   1. The first screen displays the Tic Tac Toe board.
-  2. The second screen displays the result of the game.
+  2. The second screen displays the result of the game. This is a ready-made `ui.confirm` screen from Bridge 1100, which we open from the JS file.
 - Note the highlighted lines:
-  - Line 8 and 9: these are links to the [Bridge 1100](../builders.md#bridge-1100) CSS and fonts files, they help enforce your app's interface to fit seamlessly with Brick 1100's monochrome visual.
-  - Line 19: this is a link to the Bridge 1100 JavaScript file, it helps bridge the communication between your app and Brick 1100.
+  - Line 8 and 9: these are links to the [Bridge 1100](../builders.md#bridge-1100) CSS and fonts files, they help enforce your game's interface to fit seamlessly with Brick 1100's monochrome visual.
+  - Line 10: this is a link to the CSS file of the ready-made screens.
+  - Line 19: this is a link to the Bridge 1100 JavaScript file, it helps bridge the communication between your game and Brick 1100.
 
 :::danger [Best practice](./best-practices.md)
 __Bridge 1100__ should be used in your game to maintain the visual consistency of your game with Brick 1100 and to ensure the game works correctly without having to invent the communication logic between your game and Brick 1100.
@@ -108,11 +114,11 @@ __Bridge 1100__ should be used in your game to maintain the visual consistency o
 ### 2.2. Game logic (JS file)
 
 - Create a `script.js` file inside the `tic-tac-toe` folder. In this file, we will write the logic for the Tic Tac Toe game.
-- From the HTML structure above, we retrieve the input and output elements:
+- From the HTML structure above, we retrieve the board element, and get the ready-made screens from Bridge 1100:
 
 ```js
-var board = document.getElementById('board');
-var result = document.getElementById('result');
+var board = document.getElementById("board");
+var ui = window.bridge.ui;
 ```
 
 - Then, we define the game-related variables:
@@ -120,7 +126,7 @@ var result = document.getElementById('result');
 ```js
 var currentPlayer = "X"; // X starts first
 var gridSize = 3; // the grid size of 3x3
-var gameState = Array(gridSize * 3).fill(null); // the game state to keep track of the moves
+var gameState = []; // the game state to keep track of the moves
 var cursor = [0, 0]; // the cursor position
 ```
 
@@ -138,20 +144,20 @@ var winningConditions = [
   - `init`: initializes/resets the game board and state.
   - `markCell`: marks the cell with the current player's symbol, and checks for game results.
   - `hasWinner`: checks if the current player has won the game.
-  - `showResult`: displays the game result screen.
+  - `showResult`: tells Brick 1100 that the round is over, and opens the result screen.
+  - `stop`: sends a message to Brick 1100 to close the game.
 - The implementation of these functions is as follows:
 
 ```js
 function init() {
   board.innerHTML = "";
-  board.hidden = false;
-  result.hidden = true;
   currentPlayer = "X";
-  gameState.fill(null);
+  gameState = [];
   cursor = [0, 0];
 
   // populate board
-  for (var i = 0; i < gameState.length; i++) {
+  for (var i = 0; i < gridSize * gridSize; i++) {
+    gameState.push(null);
     var cell = document.createElement("div");
     if (i === 0) cell.classList.add("active");
     cell.classList.add("cell");
@@ -191,11 +197,26 @@ function hasWinner() {
 }
 
 function showResult(message) {
-  result.textContent = message + " Press 0 to restart.";
-  result.hidden = false;
-  board.hidden = true;
+  window.bridge.send(window.parent, { event: "progress", data: { type: "over" } });
+  ui.confirm({
+    text: message,
+    action: "Again",
+    onDone: function (screen) {
+      screen.close();
+      init();
+    },
+    onBack: stop,
+  });
+}
+
+function stop() {
+  window.bridge.send(window.parent, { event: "stop" });
 }
 ```
+
+- Let's break down the `showResult` implementation:
+  - It sends `progress` with `{ type: "over" }` to tell Brick 1100 that the round has ended. Brick 1100 may show an ad at this moment, the same way as in its built-in games.
+  - `ui.confirm` opens the result screen on top of the board. When the user presses _OK_ ("Again"), the screen closes and a new round starts. When the user presses _Clear_, the game closes.
 
 - The last piece to chain everything together is to handle the user input. We listen for the `keypress` and `numpress` events using [Bridge 1100](../builders.md#bridge-1100) to move the cursor and mark the cell:
 
@@ -212,10 +233,11 @@ function handleKeyPress(key) {
   if (key === 8) moveCursor("down");
   if (key === "up") moveCursor("prev");
   if (key === "down") moveCursor("next");
-  if (key === "clear") window.bridge.send(window.parent, { event: "stop" });
+  if (key === "clear") stop();
 }
 ```
 
+- While the result screen is open, it takes every key, so `handleKeyPress` is not called until it closes.
 - The `moveCursor` function is implemented as follows:
 
 ```js
@@ -259,11 +281,11 @@ function moveCursor(direction) {
 
 ```js
 var board = document.getElementById("board");
-var result = document.getElementById("result");
+var ui = window.bridge.ui;
 
 var currentPlayer = "X";
 var gridSize = 3;
-var gameState = Array(gridSize * 3).fill(null);
+var gameState = [];
 var cursor = [0, 0];
 
 var winningConditions = [
@@ -279,14 +301,13 @@ var winningConditions = [
 
 function init() {
   board.innerHTML = "";
-  board.hidden = false;
-  result.hidden = true;
   currentPlayer = "X";
-  gameState.fill(null);
+  gameState = [];
   cursor = [0, 0];
 
   // populate board
-  for (var i = 0; i < gameState.length; i++) {
+  for (var i = 0; i < gridSize * gridSize; i++) {
+    gameState.push(null);
     var cell = document.createElement("div");
     if (i === 0) cell.classList.add("active");
     cell.classList.add("cell");
@@ -328,10 +349,21 @@ function hasWinner() {
   });
 }
 
+function stop() {
+  window.bridge.send(window.parent, { event: "stop" });
+}
+
 function showResult(message) {
-  result.textContent = message + " Press 0 to restart.";
-  result.hidden = false;
-  board.hidden = true;
+  window.bridge.send(window.parent, { event: "progress", data: { type: "over" } });
+  ui.confirm({
+    text: message,
+    action: "Again",
+    onDone: function (screen) {
+      screen.close();
+      init();
+    },
+    onBack: stop,
+  });
 }
 
 function markCell() {
@@ -365,7 +397,7 @@ function handleKeyPress(key) {
   if (key === 8) moveCursor("down");
   if (key === "up") moveCursor("prev");
   if (key === "down") moveCursor("next");
-  if (key === "clear") window.bridge.send(window.parent, { event: "stop" });
+  if (key === "clear") stop();
 }
 
 init();
@@ -425,10 +457,15 @@ window.bridge.send(window.parent, { // [!code ++]
 
 - The above code does the following:
   - The `loadAudio` event is sent to Brick 1100 to load the audio files before playing them.
-  - The `playAudio` function plays the audio from the provided audio ID, either when a cell is marked or when the game has a winner.
+  - The `playAudio` function plays the audio from the provided audio ID, either when a cell is marked or when the game has a winner. The audio ID is the file name without the extension, e.g. `pop` for `pop.mp3`.
+  - If your folder has another name, replace `/tic-tac-toe/` with it.
 
 :::danger [Best practice](./best-practices.md)
 The audio URLs must be __absolute__ URLs, meaning they must start with `https://` and include the full path to the audio files. This is to ensure the audio files are loaded correctly on Brick 1100.
+:::
+
+:::warning Note
+Sound works in Online games and in the Previewer, but not in Online apps.
 :::
 
 ### 2.4. Game styling (CSS file)
@@ -443,18 +480,18 @@ The audio URLs must be __absolute__ URLs, meaning they must start with `https://
   height: 100%;
 }
 
-#board:not([hidden]) {
+#board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 94vh;
   margin: auto;
-  border: 1vh solid var(--c-black);
+  border: 1vh solid var(--background);
 }
 
 .cell {
   width: 100%;
   height: 30vh;
-  border: 1vh solid var(--c-black);
+  border: 1vh solid var(--background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -462,18 +499,33 @@ The audio URLs must be __absolute__ URLs, meaning they must start with `https://
 }
 
 .cell.active {
-  background: var(--c-black);
-  color: var(--c-trans);
-}
-
-#result {
-  text-align: center;
-  font-size: 20vh;
+  background: var(--background);
+  color: var(--foreground);
 }
 ```
 
+- `var(--background)` is the dark pixel color and `var(--foreground)` is the light screen color. Brick 1100 sets them when your game loads, so your game follows the phone's color and night mode.
+
 :::danger [Best practice](./best-practices.md)
 Ensure your game's styling is __consistent__ with Brick 1100's visual as much as possible. This decides whether your game will be accepted or rejected during the review process.
+:::
+
+:::tip Going further: draw on the LCD pixels
+The Nokia 1100 screen is 96 x 65 pixels. `bridge.lcd` lets your game draw on a canvas of exactly that size, so it looks like a real phone game on every device. The `tic-tac-toe` and `sudoku` examples in the repository are made this way.
+
+```js
+var lcd = window.bridge.lcd;
+var canvas = document.querySelector("canvas");
+var ctx = canvas.getContext("2d");
+canvas.width = 96;
+canvas.height = 65;
+lcd.fit(canvas, 96, 65); // scale the canvas to fit the screen
+
+// in each frame, after drawing:
+lcd.inkCanvas(ctx); // paint the drawing in the screen's dark color
+```
+
+Give the canvas `image-rendering: pixelated;` in CSS. `lcd.drawText(ctx, "120", x, y)` draws digits in a small pixel font, and `lcd.drawPixels(ctx, rows, x, y)` draws a picture from strings, where `#` is a dark pixel. For details, refer to the [Bridge 1100 documentation](https://github.com/Visnalize/bridge-1100#-lcd-grid).
 :::
 
 ### 2.5. Preview your game <Badge text="optional" type="info" />

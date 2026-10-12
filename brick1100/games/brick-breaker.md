@@ -25,7 +25,7 @@ Break all the bricks on the screen with the ball as it bounces off the paddle to
 
 - <KeyIcon s="up" /> / <KeyIcon s="1" /> / <KeyIcon s="4" /> / <KeyIcon s="7" /> - move paddle left
 - <KeyIcon s="down" /> / <KeyIcon s="3" /> / <KeyIcon s="6" /> / <KeyIcon s="9" /> - move paddle right
-- __Any other key__ - launch the ball at the start of a level, or after you lose a life
+- __Any key__ except <KeyIcon s="navi" /> / <KeyIcon s="clear" /> - launch the ball at the start of a level, or after you lose a life
 - <KeyIcon s="navi" /> / <KeyIcon s="clear" /> - pause game
 :::
 
@@ -33,26 +33,28 @@ Break all the bricks on the screen with the ball as it bounces off the paddle to
 
 ### Lives
 
-You have 3 lives, shown as dots at the top right of the screen. You lose a life when the ball falls off the bottom of the screen. The ball then goes back onto the paddle and waits for you to launch it again. When you lose all your lives, the game is over.
+You have 3 lives, shown as small crosses at the top right of the screen. You lose a life when the ball falls off the bottom of the screen. The ball then goes back onto the paddle and waits for you to launch it again. When you lose all your lives, the game is over.
+
+Each level you clear gives you 1 life back, up to 3.
 
 ### Scoring
 
-- Each brick scores 10 points, multiplied by a combo. The combo counts the bricks you break before the ball returns to the paddle: the first brick scores 10, the second 20, the third 30, and so on.
+- Each brick hit scores 10 points, multiplied by a combo. The combo counts the bricks you hit before the ball returns to the paddle: the first hit scores 10, the second 20, the third 30, and so on. A two-hit brick scores on both hits. The combo also resets when you lose a life.
 - Clearing a level gives a bonus of 50 points times the level number.
 
 :::tip Tip
 Break several bricks before the ball returns to the paddle for more points.
 :::
 
-The ball gets a little faster every few paddle hits. Hit the ball with the edge of the paddle to send it out at a sharper angle.
+From level 6, the ball gets a little faster every few paddle hits, up to a top speed for the level. The top speed grows with each level until level 30. On levels 1 to 5, the ball keeps the same speed. Hit the ball with the edge of the paddle to send it out at a sharper angle.
 
 ### Brick types
 
 | Brick | Looks like | Behaviour |
 | --- | --- | --- |
 | Normal | Solid | Breaks in 1 hit. |
-| Two-hit | Hollow outline | The first hit turns it into a normal brick. |
-| Power-up | Solid, with a hole in the middle | Breaks in 1 hit and drops a power-up. |
+| Two-hit | Open underneath, with only its top and ends | The first hit turns it into a normal brick. |
+| Power-up | Solid, with a gap through the middle | Breaks in 1 hit and drops a power-up. |
 | Unbreakable | Checker pattern | Never breaks. You do not need to break it to clear the level. |
 
 ### Power-ups
@@ -73,13 +75,17 @@ The game menu has these entries: _Continue_, _Daily challenge_, _New game_, _End
 
 Play the campaign of **50 levels**, in order. Levels get harder as you go: the ball gets faster, the bricks get smaller, and new brick types appear (power-up bricks from level 2, two-hit bricks from level 5 and unbreakable bricks from level 11). Your score and lives carry over from one level to the next.
 
+#### Booster
+
+When you select _New game_ after you reached level 2 or later, you can choose where to start: _Level 1_, or the highest level you reached. Starting at your highest level is free for subscribers. Other players watch a video ad, once a day; this option shows as _Level ... (ad)_. A boosted game starts with a score of 0 and 3 lives. The booster is only available on Android and iOS.
+
 ### Daily challenge
 
-One new level each day, the same for every player. You have one try each day: clear the level to win. See [Daily challenges](../games.md#daily-challenges) for streaks and statistics.
+One new level each day, the same for every player. You have one try each day: clear the level to win. You can also continue once after a game over, as in a normal game. See [Daily challenges](../games.md#daily-challenges) for streaks and statistics.
 
 ### Endless <Notation icon="premium" /> {#endless}
 
-Play new levels without end. Each level is made for your game, and each one is faster than the one before.
+Play new levels without end. Each level is made for your game, and each one is faster than the one before, up to a top speed.
 
 ## Continue after game over
 

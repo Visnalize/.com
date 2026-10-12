@@ -45,7 +45,7 @@ A picture is solved by its clues, so any board that fits every clue counts as so
 
 ### Marking empty cells
 
-Press <KeyIcon s="hash" /> on a cell that you know is empty to mark it with a small dash. A marked cell cannot be filled by mistake. When you finish a row or a column, its remaining blank cells are marked for you.
+Press <KeyIcon s="hash" /> on a cell that you know is empty to mark it with a small dot. A marked cell cannot be filled by mistake. When you finish a row or a column, its remaining blank cells are marked for you.
 
 ### Starting over
 
@@ -57,7 +57,7 @@ On your very first picture, short tips explain the clues, the controls, the auto
 
 ## Game modes
 
-The game menu has these entries: _Continue_, _Daily puzzle_, _New game_, _Levels_, _Booster (ad)_, _High scores_ and _Instructions_. _Continue_ only shows when you have a paused game.
+The game menu has these entries: _Continue_, _Daily puzzle_, _New game_, _Levels_, _High scores_ and _Instructions_. _Continue_ only shows when you have a paused game.
 
 ### New game
 
@@ -80,9 +80,9 @@ One picture each day, the same for every player. It is taken from the 8 x 8 to 1
 
 Replay any level you already reached. Select _Levels_, then choose a level from the list.
 
-### Booster (ad)
+### Booster
 
-Watch a video ad to start a new game from the highest level you reached, instead of level 1. You can use the booster once a day.
+When you select _New game_ after you reached level 2 or later, you can choose where to start: _Level 1_, or the highest level you reached. Starting at your highest level is free for subscribers. Other players watch a video ad, once a day; this option shows as _Level ... (ad)_. The booster is only available on Android and iOS.
 
 ## Continue after game over
 

@@ -19,7 +19,7 @@ For the actual Nokia 1100 interface, keypad sounds, Snake, and games, working in
 | **Dumbphone/minimalist apps** | Strips the phone down to basic functions to curb usage | No | Yes, that's the point | Free to paid |
 | **Single-model retro simulators** | Simulates one specific classic phone's interface and games | No, it's a simulation | No | Free to paid |
 | **A real used Nokia 1100** | An actual, physical Nokia 1100 phone | Yes | Yes, no smartphone features at all | $10-40+ used, no support |
-| **Brick 1100** | A self-contained simulation of the Nokia 1100, 3310, 5110, and other classic phone interfaces, games, and apps | No, it's a simulation | No, it runs inside a smartphone | Free (ads), optional premium |
+| **Brick 1100** | A self-contained simulation of the Nokia 1100, 1600, 3310 and 5110 phone interfaces, games, and apps | No, it's a simulation | No, it runs inside a smartphone | Free (ads), optional premium |
 
 ## Nokia-style launchers
 
@@ -33,7 +33,7 @@ A different crowd looks for the Nokia 1100 out of a desire to actually use a pho
 
 A handful of other apps take the same simulator approach: recreate one specific classic phone's interface, keypad sounds, and a game or two, running inside its own self-contained screen. If the goal is strictly one specific model and nothing else, they can get the job done.
 
-Where this category tends to fall short is breadth and depth. Most single-model simulators stop at the standby screen, keypad, and Snake, without much beyond that. [Brick 1100](./about.md) covers several classic phones ([Nokia 1100, 3310, 5110 etc.](./about.md#personalization)) in one app, adds features the original phones never had (a full [games](./games.md) and [apps](./apps.md) catalog, reminders, a ringtone [Composer](./apps.md), Minicloud storage), and layers on things no single-phone simulator typically offers, like real SMS and calling on mobile, cloud backup, and the [Builders](./builders.md) community for user-made content.
+Where this category tends to fall short is breadth and depth. Most single-model simulators stop at the standby screen, keypad, and Snake, without much beyond that. [Brick 1100](./about.md) covers several classic phones ([Nokia 1100, 1600, 3310 and 5110](./about.md#personalization)) in one app, adds features the original phones never had (a full [games](./games.md) and [apps](./apps.md) catalog, reminders, a ringtone [Composer](./apps.md), Minicloud storage), and layers on things no single-phone simulator typically offers, like real SMS and calling on mobile, cloud backup, and the [Builders](./builders.md) community for user-made content.
 
 ## Buying a real, used Nokia 1100
 
@@ -50,14 +50,14 @@ Over 250 million Nokia 1100 units were sold, so used ones are still floating aro
 
 [Brick 1100](./about.md) simulates the Nokia 1100 experience, monochrome visuals, keypad controls, ringtones, Snake, flashlight, calculator, reminders, and more, running as an app on an existing Android or iOS device, or [in a browser](https://brick1100.visnalize.com). It's not trying to replace a smartphone or limit its usage; it's built for revisiting or experiencing that era without hunting down aging secondhand hardware.
 
-It also goes beyond a straight recreation with a few original touches: [several phone models to switch between](./about.md#personalization) (Nokia 1100, 3310, 5110 etc.), exclusive [games and apps](./apps.md) not found on the real device, [Builders](./builders.md), a tool that lets the community create and publish their own mini apps and games inside Brick 1100, and, on mobile, real SMS messaging and calling through a saved contact list, going further than most simulators that only mimic the screens.
+It also goes beyond a straight recreation with a few original touches: [several phone models to switch between](./about.md#personalization) (Nokia 1100, 1600, 3310 and 5110), exclusive [games and apps](./apps.md) not found on the real device, [Builders](./builders.md), a tool that lets the community create and publish their own mini apps and games inside Brick 1100, and, on mobile, real SMS messaging and calling through a saved contact list, going further than most simulators that only mimic the screens.
 
 | | Brick 1100 |
 | --- | --- |
 | Setup | None, install and open |
 | Cost | Free, with an optional ad-free/premium upgrade |
 | Hardware needed | None, just an existing Android, iOS, or desktop/web browser |
-| Phone models | [Nokia 1100, 3310, 5110, and others](./about.md#personalization) in one app |
+| Phone models | [Nokia 1100, 1600, 3310 and 5110](./about.md#personalization) in one app |
 | Extras | Exclusive [games and apps](./apps.md) the real device never had |
 | Messaging & calls | Real SMS and calling via a saved contact list, on mobile |
 | Community content | User-made apps and games through [Builders](./builders.md) |
@@ -94,7 +94,7 @@ Yes, Brick 1100 is free to use and supported by ads. An optional subscription or
 
 ### Does Brick 1100 also simulate other Nokia models?
 
-Yes. Unlike most single-model retro simulators, Brick 1100 lets you switch between the Nokia 1100, 3310, 5110, and other classic models, each with its own color schemes, from within the same app. See [Personalization](./about.md#personalization) for details.
+Yes. Unlike most single-model retro simulators, Brick 1100 lets you switch between the Nokia 1100, 1600, 3310 and 5110, each with its own color schemes, from within the same app. See [Personalization](./about.md#personalization) for details.
 
 ### Can Brick 1100 send real text messages or make real calls?
 

@@ -8,6 +8,7 @@ Below is a list of classic games you can play on Brick 1100, with each game havi
 
 <script setup lang="ts">
 import Notation from '@components/misc/brick1100/Notation.vue';
+import KeyIcon from '@components/misc/brick1100/KeyIcon.vue';
 </script>
 
 ## Snake II {#snake}
@@ -18,7 +19,7 @@ The classic Nokia snake game. Play the endless Classic mode, travel through the 
 
 ## Space Impact + {#space-impact}
 
-A side-scrolling space shooter with 10 levels, boss fights, bonus weapons and a Boss rush mode <Notation icon="premium" />.
+A side-scrolling space shooter with 10 levels, boss fights, bonus weapons, a Daily mission and a Boss rush mode <Notation icon="premium" />.
 
 [How to play Space Impact + →](./games/space-impact.md)
 
@@ -62,15 +63,16 @@ Guess the hidden 4-letter word in 5 tries. Type letters as in a text message, an
 
 ## Game of the day
 
-The first game in the _Games_ menu is the game of the day. It changes every day, and it is the same for every player. The menu title shows _Game of the day_ when this game is selected.
+The first game in the _Games_ menu is the game of the day. It changes every day, and it is the same for every player. It is one of the games lower in the list, and it moves to the top for the day, so it does not show twice. The menu title shows _Game of the day_ when this game is selected.
 
 ## Daily challenges
 
-Four games have a daily challenge: a new puzzle each day, the same for every player.
+Five games have a daily challenge: a new puzzle each day, the same for every player.
 
 | Game | Daily challenge |
 | --- | --- |
 | [Snake II](./games/snake.md#daily-maze) | Daily maze |
+| [Space Impact +](./games/space-impact.md#daily-mission) | Daily mission |
 | [Brick Breaker](./games/brick-breaker.md#daily-challenge) | Daily challenge |
 | [Monogram](./games/monogram.md#daily-puzzle) | Daily puzzle |
 | [Wordee](./games/wordee.md#daily-word) | Daily word |
@@ -80,13 +82,17 @@ All daily challenges work the same way:
 - You have **one try each day**, won or lost. A new daily challenge is ready at midnight, in your local time.
 - In the _Games_ menu, the title shows _Daily ready_ on a game whose daily challenge you have not played yet today.
 - If you pause a daily challenge, select it again in the game menu to go on playing the same day.
-- When you finish a daily challenge, select it again to see your statistics: current streak, days played, percentage won, best streak and streak freezes.
+- When you finish a daily challenge, select it again to see your statistics: current streak, days played, percentage won, best streak and, if you have any, streak freezes.
 
 ### Streaks
 
 Your streak counts the days in a row you played a daily challenge, won or lost. Each game keeps its own streak. The game menu shows your streak when the daily challenge is selected.
 
 Every 7 days in a row, you earn a **streak freeze**, up to 2 at a time. A streak freeze is used on its own to keep your streak when you miss a day.
+
+### Streak repair
+
+If your streak of 3 days or more ended because you missed 1 to 3 days, and no streak freeze covered them, you can get it back. When you start the next daily challenge, the app offers to keep your streak if you watch a video ad. Subscribers also watch the ad. Repairing a streak uses up any streak freezes you have. Press <KeyIcon s="clear" /> to say no, and the daily challenge starts as usual. Streak repair is only available on Android and iOS.
 
 ### Streak achievements
 
@@ -97,6 +103,10 @@ Keep a streak for 3, 7, 30 and 100 days to unlock the streak achievements. They 
 The daily reminder sends you a notification at 19:00 on days when you have not played a daily challenge yet. It is on by default. The app asks you to allow notifications after your first daily challenge. On the web version, a reminder only arrives while the page is open.
 
 To turn it on or off, go to _Menu > Games > Settings > Daily reminder_.
+
+## Boosters
+
+In [Brick Breaker](./games/brick-breaker.md#booster) and [Monogram](./games/monogram.md#booster), when you select _New game_, you can start at the highest level you reached instead of level 1. It is free for subscribers, other players watch a video ad, once a day. Boosters are only available on Android and iOS.
 
 ## Continue after game over
 

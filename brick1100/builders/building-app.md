@@ -56,6 +56,11 @@ This Password Generator app will generate a random password based on the user's 
 ## 2. Build
 
 - In your Visual Studio Code, create a new folder named `pwd-generator` inside the `brick-1100-apps` folder. This folder will contain the source code of the Password Generator app.
+
+:::tip Note
+The repository already has a `pwd-generator` example, made with the same code as this guide. To follow along, you can delete it first, or give your folder another name, e.g. `my-pwd-generator`.
+:::
+
 - Start the Live Server by selecting the `pwd-generator` folder, right-clicking, and selecting `Open with Five Server (root)`.
 
 ![Open with Five Server](./img/run-server.png)
@@ -66,7 +71,7 @@ This Password Generator app will generate a random password based on the user's 
 
 - Create an `index.html` file inside the `pwd-generator` folder with the below content:
 
-```html:line-numbers {6,7,24}
+```html:line-numbers {6,7,8,12}
 <!DOCTYPE html>
 <html>
 
@@ -74,22 +79,10 @@ This Password Generator app will generate a random password based on the user's 
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://unpkg.com/bridge-1100/dist/index.css">
     <link rel="stylesheet" href="https://unpkg.com/bridge-1100/dist/font.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/bridge-1100/dist/ui.css">
 </head>
 
 <body>
-    <div class="screen">
-        <label>Password length</label>
-        <div id="input"></div>
-        <footer>Generate</footer>
-    </div>
-
-    <div class="screen" hidden>
-        <span>Your password:</span>
-        <div id="output"></div>
-        <footer>OK</footer>
-    </div>
-
     <script src="https://unpkg.com/bridge-1100/dist/index.umd.js"></script>
     <script src="script.js"></script>
 </body>
@@ -97,12 +90,13 @@ This Password Generator app will generate a random password based on the user's 
 </html>
 ```
 
-- The app consists of two screens:
+- The `<body>` has no screens in it. The app uses the ready-made screens of `bridge.ui`, which we open from the JS file. The app consists of two screens:
   1. The first screen is for the user to input the length of the password.
   2. The second screen displays the generated password.
 - Note the highlighted lines:
   - Line 6 and 7: these are links to the [Bridge 1100](../builders.md#bridge-1100) CSS and fonts files, they help enforce your app's interface to fit seamlessly with Brick 1100's monochrome visual.
-  - Line 24: this is a link to the Bridge 1100 JavaScript file, it helps bridge the communication between your app and Brick 1100.
+  - Line 8: this is a link to the CSS file of the ready-made screens.
+  - Line 12: this is a link to the Bridge 1100 JavaScript file, it helps bridge the communication between your app and Brick 1100.
 
 :::danger [Best practice](./best-practices.md)
 __Bridge 1100__ should be used in your app to maintain the visual consistency of your app with Brick 1100 and to ensure the app works correctly without having to invent the communication logic between your app and Brick 1100.
@@ -111,146 +105,130 @@ __Bridge 1100__ should be used in your app to maintain the visual consistency of
 ### 2.2. App logic (JS file)
 
 - Create a `script.js` file inside the `pwd-generator` folder. In this file, we will write the logic for the Password Generator app.
-- From the HTML structure above, we retrieve the input and output elements:
+- First, we get the ready-made screens from [Bridge 1100](../builders.md#bridge-1100), and define the character set and the maximum password length:
 
 ```js
-var input = document.getElementById("input");
-var output = document.getElementById("output");
+var ui = window.bridge.ui;
+
+var charset =
+  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+";
+var MAX_LENGTH = 30;
 ```
 
-- Then define the character set for the password generation and a variable for storing the generated password:
+- The `stop` function sends a message to Brick 1100 to close the app:
 
 ```js
-var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+";
-var password = "";
-```
-
-- Next, we will leverage [Bridge 1100](../builders.md#bridge-1100) to listen for `keypress` and `numpress` events to handle the user's input:
-
-```js
-window.bridge.on("keypress", handleKeypress);
-window.bridge.on("numpress", handleKeypress);
-```
-
-- We implement the `handleKeypress` handler function as below:
-
-```js
-function handleKeypress(key) {
-  if (typeof key === "number" && input.textContent.length < 2) {
-    input.textContent += key;
-  }
-
-  if (key === "clear") {
-    if (input.textContent.length > 0) {
-      input.textContent = input.textContent.slice(0, -1);
-    } else {
-      stop();
-    }
-  }
-
-  if (key === "ok") {
-    if (input.textContent.length > 0 && !password) {
-      generatePassword();
-    } else {
-      stop();
-    }
-  }
+function stop() {
+  window.bridge.send(window.parent, { event: "stop" });
 }
+```
+
+- The `generatePassword` function builds a random password of the given length. It uses the browser's secure random numbers (`window.crypto`), because `Math.random` is not made for passwords:
+
+```js
+function randomIndex(max) {
+  var limit = 256 - (256 % max);
+  var byte = new Uint8Array(1);
+  do {
+    window.crypto.getRandomValues(byte);
+  } while (byte[0] >= limit);
+  return byte[0] % max;
+}
+
+function generatePassword(length) {
+  var password = "";
+  for (var i = 0; i < length; i++) {
+    password += charset.charAt(randomIndex(charset.length));
+  }
+  return password;
+}
+```
+
+- Finally, we open the first screen with `ui.number`, and show the password with `ui.text`:
+
+```js
+ui.number({
+  title: "Password length",
+  maxLength: 2,
+  action: "Generate",
+  onDone: function (value) {
+    var length = parseInt(value, 10);
+    if (!length || length > MAX_LENGTH) {
+      return ui.result({ type: "fail", message: "Out of range" });
+    }
+    ui.text({ title: "Your password", text: generatePassword(length), onDone: stop });
+  },
+  onBack: stop,
+});
 ```
 
 - Let's break down the above implementation:
-  - The `handleKeypress` function accepts a `key` argument, this is provided by Bridge 1100 when a key is pressed on Brick 1100. For more information, refer to [Bridge 1100 documentation](https://github.com/Visnalize/bridge-1100#keycallback).
-  - When the user presses a _number_ key, the password length is updated in the input field. The input length is limited to 2 characters.
-  - When the user presses the _Clear_ key, the password length input is reduced by 1 character. If the input is empty, the app calls the `stop` function.
-  - When the user presses the _OK_ key, if the password length input is available and the password is not yet generated, the app calls the `generatePassword` function, otherwise, the `stop` function is called.
-
-- The `generatePassword` function generates a random password based on the user's input for the length of the password. If the password length exceeds 30 characters, the app calls the `stop` function. We implement it as below:
-
-```js
-function generatePassword() {
-  var length = parseInt(input.textContent);
-
-  for (var i = 0; i < length; i++) {
-    var randomIndex = Math.floor(Math.random() * charset.length);
-    password += charset.charAt(randomIndex);
-  }
-
-  if (password.length > 30) {
-    return stop({ error: "Out of range" });
-  }
-
-  input.parentElement.hidden = true;
-  output.parentElement.hidden = false;
-  output.textContent = password;
-}
-```
-
-- The `stop` function resets the password and sends a message to Brick 1100 to close the app. We implement it as below:
-
-```js
-function stop(data) {
-  password = "";
-  window.bridge.send(window.parent, { event: "stop", data: data });
-}
-```
+  - `ui.number` opens a number input screen. The user types the length with the number keys. `maxLength: 2` limits the input to 2 digits, and `action` sets the label at the bottom of the screen.
+  - When the user presses the _OK_ key, `onDone` is called with the input as a string.
+  - If the length is empty or more than 30, `ui.result` shows a "fail" message. It closes by itself after a moment, and the user is back on the input screen.
+  - Otherwise, `ui.text` opens on top with the password. When the user presses _OK_ on it, the app calls the `stop` function.
+  - When the user presses the _Clear_ key, the input is reduced by 1 digit. If the input is empty, `onBack` is called and the app calls the `stop` function.
+  - The ready-made screens handle the keys for you. For all options, refer to the [Bridge 1100 documentation](https://github.com/Visnalize/bridge-1100#-screens).
 
 - Putting it all together, the `script.js` file should look like this:
 
 :::details Click to open
 
 ```js
-var input = document.getElementById("input");
-var output = document.getElementById("output");
-var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+";
-var password = "";
+var ui = window.bridge.ui;
 
-window.bridge.on("keypress", handleKeypress);
-window.bridge.on("numpress", handleKeypress);
+var charset =
+  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+";
+var MAX_LENGTH = 30;
 
-function handleKeypress(key) {
-  if (typeof key === "number" && input.textContent.length < 2) {
-    input.textContent += key;
-  }
-
-  if (key === "clear") {
-    if (input.textContent.length > 0) {
-      input.textContent = input.textContent.slice(0, -1);
-    } else {
-      stop();
-    }
-  }
-
-  if (key === "ok") {
-    if (input.textContent.length > 0 && !password) {
-      generatePassword();
-    } else {
-      stop();
-    }
-  }
+function stop() {
+  window.bridge.send(window.parent, { event: "stop" });
 }
 
-function generatePassword() {
-  var length = parseInt(input.textContent);
+function randomIndex(max) {
+  var limit = 256 - (256 % max);
+  var byte = new Uint8Array(1);
+  do {
+    window.crypto.getRandomValues(byte);
+  } while (byte[0] >= limit);
+  return byte[0] % max;
+}
 
+function generatePassword(length) {
+  var password = "";
   for (var i = 0; i < length; i++) {
-    var randomIndex = Math.floor(Math.random() * charset.length);
-    password += charset.charAt(randomIndex);
+    password += charset.charAt(randomIndex(charset.length));
   }
-
-  if (password.length > 30) {
-    return stop({ error: "Out of range" });
-  }
-
-  input.parentElement.hidden = true;
-  output.parentElement.hidden = false;
-  output.textContent = password;
+  return password;
 }
 
-function stop(data) {
-  password = "";
-  window.bridge.send(window.parent, { event: "stop", data: data });
-}
+ui.number({
+  title: "Password length",
+  maxLength: 2,
+  action: "Generate",
+  onDone: function (value) {
+    var length = parseInt(value, 10);
+    if (!length || length > MAX_LENGTH) {
+      return ui.result({ type: "fail", message: "Out of range" });
+    }
+    ui.text({ title: "Your password", text: generatePassword(length), onDone: stop });
+  },
+  onBack: stop,
+});
 ```
+
+:::
+
+:::tip Good to know
+
+- To close the app with an error, send `stop` with an `error` message. Brick 1100 then shows the message as an error:
+
+  ```js
+  window.bridge.send(window.parent, { event: "stop", data: { error: "Out of range" } });
+  ```
+
+- To draw your own screens, listen to the keys with `window.bridge.on("keypress", ...)` and `window.bridge.on("numpress", ...)`. See the [Building a game](./building-game.md) guide and the `example.html` file in the repository. While a `bridge.ui` screen is open, it takes every key, and your own key callbacks are not called.
+- Online apps cannot play sound. See [where your creation runs](../builders.md#where-your-creation-runs).
 
 :::
 
@@ -260,38 +238,12 @@ When writing app logic with JS, it is recommended to use the __ES5 syntax__ to e
 
 <SponsorAd />
 
-### 2.3. App styling (CSS file)
+### 2.3. App styling
 
-- Create a `style.css` file inside the `pwd-generator` folder with the below content:
-
-```css
-.screen:not([hidden]) {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-#input {
-  border: 2vh solid #000;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  font-size: 20vh;
-  height: 100%;
-}
-
-#output {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  word-break: break-all;
-}
-
-footer {
-  font-size: 12vh;
-}
-```
+- This app does not need a CSS file. `ui.css` already styles every ready-made screen.
+- If you draw your own screens, create a `style.css` file and link it in `index.html`. Keep these in mind:
+  - The screen is `100vh` tall, so size everything in `vh`.
+  - For colors, use `var(--foreground)` (the light screen color) and `var(--background)` (the dark pixel color) instead of fixed colors. They follow the phone's color and night mode.
 
 :::danger [Best practice](./best-practices.md)
 Ensure your app's styling is __consistent__ with Brick 1100's visual as much as possible. This decides whether your app will be accepted or rejected during the review process.

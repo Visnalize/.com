@@ -69,3 +69,11 @@ create an account and add your key for a longer lasting domain name. see https:/
 - Append the public URL from the above step at the end of the Previewer's URL.
   For example: `https://brick1100.visnalize.com/#/online/previewer?url=https://***.lhr.life`.
 - And that's it! Your app/game should then be loaded into Brick 1100. You can now interact with it and test its functionality.
+
+:::warning Note
+The Previewer supports a bit more than Online apps. For example, it plays sound, but Online apps do not. It also does not use the game over event (`progress` with `{ type: "over" }`) like Online games do. Check [where your creation runs](../builders.md#where-your-creation-runs) to see what works where.
+:::
+
+:::tip Tip
+Your app/game only accepts messages from Brick 1100. If you open it directly in a browser, e.g. at `http://127.0.0.1:5500`, it does not get any keys, and the browser console may show an `Unauthorized origin` error. This is expected. Use the Previewer to test the keys.
+:::

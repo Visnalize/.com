@@ -36,7 +36,7 @@ On the [web version](https://brick1100.visnalize.com), you can also type letters
 
 Letters are typed as in the message editor. Each key has its letters: <KeyIcon s="2" /> ABC, <KeyIcon s="3" /> DEF, <KeyIcon s="4" /> GHI, <KeyIcon s="5" /> JKL, <KeyIcon s="6" /> MNO, <KeyIcon s="7" /> PQRS, <KeyIcon s="8" /> TUV and <KeyIcon s="9" /> WXYZ.
 
-Press a key again within 1 second to get its next letter. After 1 second, or when you press another key, the cursor moves to the next slot. For example, to type **C**, press <KeyIcon s="2" /> three times.
+Press a key again within 1 second to get its next letter. After 1 second, or when you press another key, the cursor moves to the next slot (on the last slot, it stays). For example, to type **C**, press <KeyIcon s="2" /> three times.
 
 ### Reading the clues
 
@@ -58,7 +58,7 @@ The game menu has these entries: _Continue_, _Daily word_, _New game_, _High sco
 
 ### Daily word
 
-One word each day, the same for every player. You have one try each day, and the result shows how many tries you used. See [Daily challenges](../games.md#daily-challenges) for streaks and statistics.
+One word each day, the same for every player. You have one try each day. If you find the word, the result shows how many tries you used. If you miss it, the result shows the word. See [Daily challenges](../games.md#daily-challenges) for streaks and statistics.
 
 ### New game
 

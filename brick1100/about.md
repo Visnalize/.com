@@ -25,7 +25,7 @@ Refer to [Changelog](./changelog.md) for a complete list of features added throu
 
 ## Personalization
 
-Brick 1100 isn't locked to one classic phone. Pick a phone model, Nokia 1100, 3310, 5110, or others, choose a color scheme for it, and set a custom carrier name to show on the standby screen. Sound profiles (General, Silent, Discreet, Loud, Night), ringtones, keypad tone levels, and the clock format can all be adjusted from Settings too.
+Brick 1100 isn't locked to one classic phone. Pick a phone model, Nokia 1100, 1600, 3310 or 5110 (all but the 1100 are premium), choose a color scheme for it, and set a custom carrier name to show on the standby screen. On the Nokia 1600, the left soft key and the call key work as OK, and the right soft key works as Clear, as on the real phone. Sound profiles (General, Silent, Discreet, Loud, Night), ringtones, keypad tone levels, and the clock format can all be adjusted from Settings too.
 
 ## Pricing
 

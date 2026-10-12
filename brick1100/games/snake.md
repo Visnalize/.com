@@ -37,7 +37,7 @@ Make the snake grow longer by directing it to the food, without hitting its tail
 - The snake moves on its own. You cannot stop it or make it go backwards.
 - The board has no edges: the snake leaves one side and comes back on the other. Mazes add walls that you must avoid.
 - The game is over when the snake hits its own tail or a wall.
-- After you continue or resume a game, the snake waits until you press a direction key.
+- After you continue or resume a game, the snake waits until you press a number key, <KeyIcon s="up" /> or <KeyIcon s="down" />.
 
 ### Scoring
 
@@ -62,7 +62,7 @@ Travel through 8 mazes, starting with an empty board. Eat the number of food sho
 
 ### Daily maze
 
-One maze each day, the same for every player. It is played at a fixed speed, and the food appears in the same places for every player. Eat 20 food to clear the maze. You have one try each day. See [Daily challenges](../games.md#daily-challenges) for streaks and statistics.
+One maze each day, the same for every player. It is played at a fixed speed, and the food appears in the same places for every player, unless your snake or a wall is in the way. Eat 20 food to clear the maze. You have one try each day. See [Daily challenges](../games.md#daily-challenges) for streaks and statistics.
 
 ## Continue after game over
 

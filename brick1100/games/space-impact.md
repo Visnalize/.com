@@ -1,5 +1,5 @@
 ---
-description: How to play Space Impact + on Brick 1100, the side-scrolling space shooter, with 10 levels, Boss rush, control schemes, weapons and achievements.
+description: How to play Space Impact + on Brick 1100, the side-scrolling space shooter, with 10 levels, a daily mission, Boss rush, control schemes, weapons and achievements.
 ---
 
 # Space Impact +
@@ -54,7 +54,7 @@ The mission has 10 levels. In space levels, you fly a spaceship that moves freel
 ### Lives and retries
 
 - You start with 3 hearts, up to a maximum of 5. Each hit from an enemy shot or a crash costs a heart. After a hit, your ship is safe from damage for 3 seconds.
-- When you lose all your hearts, a countdown shows your remaining tries. Press any key before it ends to replay the level from the start, with your score kept. You have 3 tries.
+- When you lose all your hearts, a 5-second countdown shows your remaining tries. Press a number key, <KeyIcon s="up" /> or <KeyIcon s="down" /> before it ends to replay the level from the start, with your score kept. You have 3 tries after the first loss.
 
 ### Weapons and pickups
 
@@ -74,11 +74,24 @@ The mission has 10 levels. In space levels, you fly a spaceship that moves freel
 
 ## Game modes
 
-The game menu has these entries: _Continue_, _New game_, _Boss rush_, _Controls_, _High scores_ and _Instructions_. _Continue_ only shows when you have a paused game.
+The game menu has these entries: _Continue_, _Daily mission_, _New game_, _Boss rush_, _Controls_, _High scores_ and _Instructions_. _Continue_ only shows when you have a paused game.
 
 ### New game
 
 Play the full mission, from level 1 to level 10.
+
+### Daily mission
+
+One mission each day, the same for every player. Before you start, a screen shows the mission. It is one of these:
+
+- Clear a level.
+- Survive for a number of seconds in a level.
+- Destroy a number of enemies in a level.
+- Reach a number of points in a level.
+
+In a _Clear_ mission, you play the level to its end, boss included. In the other missions, the level's waves repeat without the bosses until you reach the target. The status bar shows the seconds or enemies left, or your score.
+
+You have one ship: when you lose all your hearts, there are no retries. You have one try each day. If you pause the mission, select _Daily mission_ again to go on playing. See [Daily challenges](../games.md#daily-challenges) for streaks and statistics.
 
 ### Boss rush <Notation icon="premium" /> {#boss-rush}
 
@@ -86,11 +99,11 @@ Go straight to the boss fight of each of the 10 levels. Boss rush keeps its own 
 
 ## Continue after game over
 
-When the game is over, you can replay the current level from the start with your score kept, once per game. It is free for subscribers, other players watch a video ad. Continue is only available on Android and iOS.
+When the game is over, you can replay the current level from the start with your score kept, once per game. After a continue you have no tries left, so the next time you lose all your hearts, the game is over. It is free for subscribers, other players watch a video ad. Continue is only available on Android and iOS. This also works in the daily mission: the level starts again with your score and progress kept.
 
 ## High scores and achievements
 
-The Space Impact + leaderboard ranks players by their best mission score. Select _High scores_ in the game menu to open it (Android and iOS only).
+The Space Impact + leaderboard ranks players by their best mission score. Select _High scores_ in the game menu to open it (Android and iOS only). The daily mission has no leaderboard, but it counts towards the shared [streak achievements](../games.md#streak-achievements).
 
 You can also unlock achievements in the mission (not in Boss rush):
 
