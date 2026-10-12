@@ -18,6 +18,20 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2026
 
+### `1.7.0` (Oct 12, 2026)
+
+- Enhanced visuals and graphics for a more realistic experience
+  - Every screen now has improved pixel rendering like the original LCD displays
+  - Icons, menus, game graphics, and other visual elements are now rendered with enhanced pixel accuracy
+- Added [1600 phone model](./about.md#personalization) (Menu > Settings > Phone settings > Model) <Notation icon="premium" />
+- Added [Daily mission](./games/space-impact.md#daily-mission) mode for [Space Impact +](./games/space-impact.md)
+- Improved gameplay balance for [Brick Breaker](./games/brick-breaker.md)
+- Improved [3310 model](./about.md#personalization) asset
+- Several improvements for data backup and restore
+  - Backup and restore now includes game progress
+  - A damaged or partly missing backup is now detected and handled gracefully
+- Optimized popup ads for better experience
+
 ### `1.6.0` (Sep 30, 2026)
 
 - Fixed Android shortcuts not working after changing phone model <Notation icon="android" />
