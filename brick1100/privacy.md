@@ -7,8 +7,6 @@ social: false
 
 # Privacy Policy
 
-_Last updated: October 12, 2026_
-
 :::tip TL;DR
 You can use Brick 1100 without an account. If you sign in, we store your email, name and the data you choose to back up or upload. The Android and iOS apps show ads, and our ad partners collect your device's advertising ID and usage data, which can be used for personalized ads if you allow it. We use Firebase Analytics to understand how the app is used. Your contacts and messages stay on your device. You can delete your account in the app. Contact us at [hey@visnalize.com](mailto:hey@visnalize.com) with any question.
 :::
