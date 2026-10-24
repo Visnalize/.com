@@ -1,9 +1,16 @@
 <template>
-    <div class="coming-soon">
+    <div :class="['coming-soon', { compact }]">
         <iconify-icon icon="pixelarticons:clock" />
-        <span>Coming soon to iPhone and Android</span>
+        <span>Coming soon<span class="platforms"> to iPhone and Android</span></span>
     </div>
 </template>
+
+<script setup lang="ts">
+defineProps<{
+    /** Leaves out the platforms on narrow screens, so the badge stays on one line in tight spots. */
+    compact?: boolean
+}>()
+</script>
 
 <style scoped>
 .coming-soon {
@@ -20,5 +27,11 @@
 
 .coming-soon iconify-icon {
     font-size: 1.5em;
+}
+
+@media (max-width: 639px) {
+    .compact .platforms {
+        display: none;
+    }
 }
 </style>

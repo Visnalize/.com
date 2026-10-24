@@ -11,7 +11,7 @@
             Feed it, play with it, and watch it grow.
         </Motion>
         <Motion v-bind="animateHeadline()">
-            <IndexComingSoon />
+            <ComingSoon />
         </Motion>
     </div>
     <Motion class="index-showcase" v-bind="animateShell">
@@ -24,8 +24,8 @@
 import AppIcon from '@components/misc/AppIcon.vue';
 import { useHeadlineVariants } from '@composables/useMotion';
 import { Motion } from 'motion-v';
+import ComingSoon from '../ComingSoon.vue';
 import PalShell from '../PalShell.vue';
-import IndexComingSoon from './IndexComingSoon.vue';
 
 let index = 0;
 

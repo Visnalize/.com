@@ -4,7 +4,7 @@
         <template #caption>No ads, no account, and it works offline. Everything stays on your phone.</template>
 
         <div class="cta" ref="trigger">
-            <IndexComingSoon />
+            <ComingSoon />
             <p class="links">
                 <a href="/brickpals/terms">Terms of Use</a>
                 <span>·</span>
@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import { useInView } from 'motion-v';
 import { computed, ref } from 'vue';
-import IndexComingSoon from './IndexComingSoon.vue';
+import ComingSoon from '../ComingSoon.vue';
 import IndexSection from './IndexSection.vue';
 
 const trigger = ref<HTMLElement | null>(null)

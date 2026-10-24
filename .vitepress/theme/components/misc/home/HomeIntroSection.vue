@@ -9,7 +9,9 @@
             <HomeLink :href="`/${app}${app === 'win7simu' ? '/about' : ''}`">More about {{ title }}</HomeLink>
         </Motion>
         <Motion :variants="variants(3)" :animate="animate">
-            <AccessLinks :app="app" :max-links="2" />
+            <!-- Brick Pals has no store links until it launches. -->
+            <ComingSoon v-if="app === 'brickpals'" compact />
+            <AccessLinks v-else :app="app" :max-links="2" />
         </Motion>
     </div>
 </template>
@@ -22,6 +24,7 @@ import { Motion } from 'motion-v';
 import { computed, ref } from 'vue';
 import AccessLinks from '../../global/AccessLinks.vue';
 import AppIcon from '../AppIcon.vue';
+import ComingSoon from '../brickpals/ComingSoon.vue';
 import HomeLink from './HomeLink.vue';
 
 interface Props {
@@ -68,6 +71,10 @@ const variants = (index: number): Variants => ({
 
 .intro-section .access {
     margin: 0;
+}
+
+.intro-section .coming-soon {
+    margin: 0 auto;
 }
 
 .intro-section .access {

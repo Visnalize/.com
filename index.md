@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Visnalize - creator of Win7 Simu, Brick 1100, and more
+title: Visnalize - creator of Win7 Simu, Brick 1100, Brick Pals, and more
 pagefind-indexed: false
 pageClass: home
 ---

@@ -33,6 +33,12 @@
                         <span>Brick 1100</span>
                     </button>
                 </Motion>
+                <Motion :variants="buttonAnimation">
+                    <button @click="() => reveal('brickpals')">
+                        <AppIcon app="brickpals" />
+                        <span>Brick Pals</span>
+                    </button>
+                </Motion>
             </Motion>
         </Motion>
     </section>
@@ -56,7 +62,7 @@ const heroStyle = computed(() => ({
     display: transform(scrollProgressRef.value, [0.9, 1], ['', 'none'])
 }))
 
-const sharedIntro = 'Miss the operating systems that you grew up with? Want to experience the old-school brickphone again?'
+const sharedIntro = 'Miss the operating systems that you grew up with? Want to experience the old-school brickphone again? Or a tiny pixel pal of your own?'
 const intro = computed(() => xl.value ? `Visnalize brings retro products back to life with creative ideas and modern technology. ${sharedIntro} They are at your fingertips, literally.` : `${sharedIntro} Visnalize got you covered.`)
 
 const titleTransition: $Transition = {
@@ -79,7 +85,7 @@ const buttonAnimation: Options['variants'] = {
     visible: { opacity: 1, scale: 1 }
 }
 
-const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
+const reveal = (sectionId: 'win7simu' | 'brick1100' | 'brickpals' = 'win7simu') => {
     inBrowser && document.querySelector(`#${sectionId}`).scrollIntoView({ behavior: 'smooth' })
 }
 
@@ -204,12 +210,19 @@ defineExpose({ hero: container })
         max-width: 480px;
     }
 
+    /* The buttons share the screen height, so all three fit on shorter screens too. */
     .section-right {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 4rem;
+        gap: min(4rem, 5vh);
+        padding-top: min(6rem, 8vh);
+        padding-bottom: min(6rem, 8vh);
         background: var(--vp-c-text-1);
+    }
+
+    .section-right>div {
+        height: min(15rem, 22vh);
     }
 
     .section-right button>img {

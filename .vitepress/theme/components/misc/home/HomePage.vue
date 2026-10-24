@@ -4,6 +4,7 @@
         <HomeHero ref="hero" />
         <HomeSectionWin7Simu />
         <HomeSectionBrick1100 />
+        <HomeSectionBrickPals />
         <HomeSectionTestimonials />
         <HomeSectionNews />
         <HomeSectionChannel />
@@ -19,6 +20,7 @@ import { onMounted, onUnmounted, ref, toRef, useTemplateRef } from 'vue';
 import HomeCursor from './HomeCursor.vue';
 import HomeHero from './HomeHero.vue';
 import HomeSectionBrick1100 from './HomeSectionBrick1100.vue';
+import HomeSectionBrickPals from './HomeSectionBrickPals.vue';
 import HomeSectionChannel from './HomeSectionChannel.vue';
 import HomeSectionContact from './HomeSectionContact.vue';
 import HomeSectionNews from './HomeSectionNews.vue';
