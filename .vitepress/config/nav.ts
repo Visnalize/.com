@@ -2,6 +2,7 @@ import { DefaultTheme } from "vitepress";
 import {
   AboutVisnalize,
   Brick1100,
+  BrickPals,
   Metrics,
   Resources,
   Services,
@@ -35,6 +36,7 @@ const navItems: DefaultTheme.Config["nav"] = [
     text: "Brick 1100",
     activeMatch: "^/brick1100/",
     items: [
+      Brick1100.Overview,
       Brick1100.About,
       Brick1100.Changelog,
       Brick1100.Privacy,
@@ -45,6 +47,12 @@ const navItems: DefaultTheme.Config["nav"] = [
         items: [Brick1100.Games, Brick1100.Apps, Brick1100.Builders],
       },
     ],
+  },
+  {
+    // VitePress renders nav text as HTML, which allows the badge.
+    text: 'Brick Pals <span class="nav-badge">New</span>',
+    link: BrickPals.Overview.link,
+    activeMatch: "^/brickpals",
   },
   {
     text: "Blog",

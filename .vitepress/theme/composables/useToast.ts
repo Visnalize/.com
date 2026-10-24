@@ -37,7 +37,7 @@ export const toastSitenews = async () => {
     const data: Sitenews = await response.json();
     if (!data.date || data.date === cachedDate.value) return;
 
-    const [app] = /win7simu|brick1100/.exec(data.link) || [];
+    const [app] = /win7simu|brick1100|brickpals/.exec(data.link) || [];
 
     return toast(data.title, {
       description: data.desc,

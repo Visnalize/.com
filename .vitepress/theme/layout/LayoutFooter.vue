@@ -43,6 +43,15 @@
                     </div>
 
                     <div class="nav-group">
+                        <div class="group-title">Brick Pals</div>
+                        <ul class="group-list">
+                            <li v-for="{ link, text } in brickPalsLinks" :key="text">
+                                <a :href="link">{{ text }}</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-group">
                         <div class="group-title">Visnalize</div>
                         <ul class="group-list">
                             <li v-for="{ link, text } in visnalizeLinks" :key="text">
@@ -63,7 +72,7 @@
 </template>
 
 <script setup lang="ts">
-import { About, Blog, Brick1100, Metrics, Services, Testimonials, Win7Simu } from '@/.vitepress/config/sitelinks';
+import { About, Blog, Brick1100, BrickPals, Metrics, Services, Testimonials, Win7Simu } from '@/.vitepress/config/sitelinks';
 import socialLinks from '@/.vitepress/config/social';
 import { useData } from 'vitepress';
 import { useSidebar } from 'vitepress/theme';
@@ -74,6 +83,7 @@ const { hasSidebar } = useSidebar()
 
 const win7Links = [Win7Simu.About, Win7Simu.Changelog, Win7Simu.Simulated, Win7Simu.ThemeStudio]
 const brickLinks = [Brick1100.About, Brick1100.Changelog, Brick1100.FeatureRequests, Brick1100.Builders]
+const brickPalsLinks = [BrickPals.Overview, BrickPals.Terms, BrickPals.Privacy]
 const visnalizeLinks = [Blog, About, Services, Metrics, Testimonials]
 </script>
 
@@ -184,7 +194,7 @@ footer {
 
 @media (min-width: 640px) {
     .nav {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 

@@ -65,6 +65,10 @@ const Builders: Link = {
 
 export const Brick1100 = {
   Index: Brick1100About,
+  Overview: {
+    text: "Overview",
+    link: "/brick1100",
+  },
   About: {
     ...Brick1100About,
     text: "About",
@@ -99,6 +103,21 @@ export const Brick1100 = {
   },
   Builders,
   BuildersIntro: { ...Builders, text: "Introduction" },
+} satisfies Record<string, Link>;
+
+export const BrickPals = {
+  Overview: {
+    text: "Overview",
+    link: "/brickpals",
+  },
+  Terms: {
+    text: "Terms of Use",
+    link: "/brickpals/terms",
+  },
+  Privacy: {
+    text: "Privacy Policy",
+    link: "/brickpals/privacy",
+  },
 } satisfies Record<string, Link>;
 
 export const Resources = {

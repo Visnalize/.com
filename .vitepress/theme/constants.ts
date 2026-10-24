@@ -56,6 +56,7 @@ export const FORMAT_TAGS = ["tips", "news", "review", "sponsor", "guest-post"];
 export const APP_NAMES: Record<App, string> = {
   win7simu: "Win7 Simu",
   brick1100: "Brick 1100",
+  brickpals: "Brick Pals",
 };
 
 /**
