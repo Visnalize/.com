@@ -1,1 +1,1 @@
-export type App = "win7simu" | "brick1100";
+export type App = "win7simu" | "brick1100" | "brickpals";

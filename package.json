@@ -5,7 +5,8 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "gen:deeplinks": "node scripts/deeplinks.js"
+    "gen:deeplinks": "node scripts/deeplinks.js",
+    "gen:brickpals-sprites": "node scripts/brickpals-sprites.js"
   },
   "devDependencies": {
     "@justinribeiro/lite-youtube": "^1.7.1",
