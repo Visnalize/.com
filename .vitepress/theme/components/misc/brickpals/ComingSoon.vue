@@ -1,13 +1,13 @@
 <template>
-    <div :class="['coming-soon', { compact }]">
+    <div class="coming-soon">
         <iconify-icon icon="pixelarticons:clock" />
-        <span>Coming soon<span class="platforms"> to iPhone and Android</span></span>
+        <span>Coming soon<template v-if="!compact"> to iPhone and Android</template></span>
     </div>
 </template>
 
 <script setup lang="ts">
 defineProps<{
-    /** Leaves out the platforms on narrow screens, so the badge stays on one line in tight spots. */
+    /** Leaves out the platforms, for tight spots such as the home page. */
     compact?: boolean
 }>()
 </script>
@@ -27,11 +27,5 @@ defineProps<{
 
 .coming-soon iconify-icon {
     font-size: 1.5em;
-}
-
-@media (max-width: 639px) {
-    .compact .platforms {
-        display: none;
-    }
 }
 </style>
