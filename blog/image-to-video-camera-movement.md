@@ -15,8 +15,6 @@ _Cover image by Voyage Pro via [Unsplash](https://unsplash.com/photos/a-white-te
 
 Image-to-video camera movement works best when the planned motion respects the source image's composition, depth, and visible subject detail. Choose a move that serves the message, describe it separately from the subject's action, and review the result in its intended crop.
 
-_Sponsored content from Virse. Prepared with AI assistance and editorial review._
-
 If your campaign stills and motion references live in different places, it is easy to lose the approved visual direction. [Seedance 2.5](https://www.virse.ai/models/seedance-2-5) on Virse can be used within a visual workspace that brings image concepts and video references into the same creative process.
 
 ![Virse's public Seedance 2.5 page](./img/image-to-video-camera-movement/virse-seedance-page.webp)
