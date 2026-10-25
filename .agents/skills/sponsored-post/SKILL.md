@@ -148,7 +148,8 @@ Case C, no cover, or a replacement is needed.
 1. Fetch `https://unsplash.com/s/photos/<topic>` and pick a candidate that matches the article, not just the keyword.
 2. Open its photo page for the author name and the page URL.
 3. Build the direct URL in house format: `https://images.unsplash.com/photo-<id>?auto=format&fit=crop&w=1280&q=80`. Pexels house format is `?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`.
-4. Prefer a real photo over an illustration. Avoid legible brand logos, an identifiable person as the subject, and images that look AI generated.
+4. The cover must be landscape, like every other blog cover. The `fit=crop` URL keeps the source's aspect ratio, so a portrait photo stays portrait. Check before you pick: `curl -s "<image url>&w=400" -o c.jpg && sips -g pixelWidth -g pixelHeight c.jpg`. Adding `orientation=landscape` to the search URL filters out most portrait photos. This also applies to a client-supplied cover; ask for a landscape one or replace it.
+5. Prefer a real photo over an illustration. Avoid legible brand logos, an identifiable person as the subject, and images that look AI generated.
 
 Always verify the final URL returns 200:
 
