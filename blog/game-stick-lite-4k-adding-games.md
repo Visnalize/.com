@@ -24,8 +24,6 @@ The approach shared in this post appears to be only applicable to some versions 
 - A computer or laptop with internet connection
 - A MicroSD card reader (even your smartphone can be used as a card reader)
 
-<AmazonPick id="game-stick" />
-
 ## Step-by-step guide
 
 ### 1. Prepare the game ROMs

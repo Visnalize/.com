@@ -64,8 +64,6 @@
             </div>
             <div class="copyright">
                 <div>Copyright © 2021 - {{ new Date().getFullYear() }} Visnalize</div>
-                <!-- Wording required by the Amazon Associates Operating Agreement. -->
-                <div class="disclosure">As an Amazon Associate, Visnalize earns from qualifying purchases.</div>
             </div>
         </div>
     </footer>
@@ -184,12 +182,6 @@ footer {
 
 .copyright {
     text-align: center;
-}
-
-.copyright .disclosure {
-    margin-top: 0.5rem;
-    color: var(--vp-c-text-3);
-    font-size: 0.75rem;
 }
 
 @media (min-width: 640px) {

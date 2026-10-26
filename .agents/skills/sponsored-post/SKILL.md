@@ -86,9 +86,6 @@ tags:
   of a post rather than its subject, so none of them can stand alone.
 - `tips` is for posts that walk the reader through doing something. A post that
   argues a point or surveys a field is not a `tips` post.
-- Tags decide which affiliate picks the post shows, see `TAG_TOPICS` in
-  `.vitepress/theme/composables/useAmazonPicks.ts`. A post tagged only by format
-  falls back to generic picks, which is what the topic rule above prevents.
 - Do not add the `sponsor` tag by default. Add it only when the user says the client paid the tier that keeps it, see Pricing in `services/sponsored-posts.md`.
 
 Body, exactly this order. The blog index takes the card title from the first `# ` line and the card thumbnail from the first `![...](...)`, so nothing may come before them:

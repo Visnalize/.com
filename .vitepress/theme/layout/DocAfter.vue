@@ -12,8 +12,7 @@
         <!-- <IndieProducts v-if="enableSocial" :key="route.path" widget /> -->
         <SponsorAd v-if="enableAds" :format="hasAside ? undefined : 'auto'" :key="route.path"
             @resolve="adState = $event" />
-        <AmazonPicks v-if="showPicks" :key="route.path + '-picks'" title="Related picks"
-            note="Gear that fits what this post is about. Affiliate links, at no extra cost to you." :count="2" />
+        <AppPicks v-if="showPicks" :key="route.path + '-picks'" title="More from Visnalize" :count="2" />
         <SocialCommentSection v-if="enableComments" />
     </div>
 </template>
@@ -22,7 +21,7 @@
 import { useData, useRoute } from 'vitepress';
 import { useSidebar } from 'vitepress/theme';
 import { computed, ref, watch } from 'vue';
-import AmazonPicks from '../components/global/AmazonPicks.vue';
+import AppPicks from '../components/misc/AppPicks.vue';
 import SponsorAd from '../components/global/SponsorAd.vue';
 import BlogRelated from '../components/misc/blog/BlogRelated.vue';
 import BlogSeries from '../components/misc/blog/BlogSeries.vue';

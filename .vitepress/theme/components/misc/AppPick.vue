@@ -1,63 +1,32 @@
 <template>
-    <a v-if="pick" class="amazon-pick" :class="format" :href="pick.link" target="_blank"
-        rel="sponsored nofollow noopener" :aria-label="`${pick.title} on Amazon`">
+    <a class="app-pick" :class="format" :href="pick.link">
         <div class="pick-icon">
-            <iconify-icon :icon="pick.icon" />
+            <AppIcon :app="pick.app" :size="format === 'inline' ? '40' : '56'" />
         </div>
         <div class="pick-body">
-            <div class="pick-meta">
-                <iconify-icon icon="simple-icons:amazon" />
-                <span>Our pick</span>
-                <span class="pick-disclosure" v-tooltip="DISCLOSURE">Affiliate link</span>
-            </div>
+            <div class="pick-meta">From Visnalize</div>
             <div class="pick-title">{{ pick.title }}</div>
             <p v-if="format !== 'inline'" class="pick-hook">{{ pick.hook }}</p>
         </div>
         <span class="pick-cta">
-            <span>{{ pick.cta ?? 'View on Amazon' }}</span>
+            <span>{{ pick.cta }}</span>
             <iconify-icon icon="fluent:arrow-right-24-regular" />
         </span>
     </a>
 </template>
 
 <script setup lang="ts">
-import type { AmazonPick as PickData } from '@/.content/amazon-picks.data';
-import { useRoute } from 'vitepress';
-import { computed, onMounted, useId } from 'vue';
-import useAmazonPicks, { claimPicks } from '../../composables/useAmazonPicks';
+import type { AppPick as PickData } from '../../composables/useAppPicks';
+import AppIcon from './AppIcon.vue';
 
-interface Props {
-    /** Show a specific pick by id, instead of one matched to the page. */
-    id?: string;
-    /** An already resolved pick, when the parent does the matching. */
-    pick?: PickData;
+withDefaults(defineProps<{
+    pick: PickData;
     format?: 'horizontal' | 'rectangle' | 'vertical' | 'inline';
-    /** Shifts the rotation, so two slots on one page differ. */
-    offset?: number | string;
-}
-
-const DISCLOSURE = 'We may earn a commission on qualifying purchases, at no extra cost to you.'
-
-const props = withDefaults(defineProps<Props>(), { format: 'horizontal' })
-
-// Only resolve from the page when the parent has not handed us a pick already.
-const instanceId = useId()
-const matched = useAmazonPicks({
-    ids: props.id ? [props.id] : undefined,
-    offset: props.offset ?? instanceId,
-})
-
-const pick = computed(() => props.pick ?? matched.value[0])
-
-const route = useRoute()
-// A pick handed in by a parent is that parent's to claim, not ours.
-onMounted(() => {
-    if (!props.pick && pick.value) claimPicks(route.path, [pick.value.id])
-})
+}>(), { format: 'horizontal' })
 </script>
 
 <style scoped>
-.amazon-pick {
+.app-pick {
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -69,9 +38,11 @@ onMounted(() => {
     color: inherit;
     transition: 0.2s;
     text-align: left;
+    max-width: 48rem;
+    margin-inline: auto;
 }
 
-.amazon-pick:hover {
+.app-pick:hover {
     border-color: var(--vp-c-brand-1);
     background: var(--vp-c-bg-elv);
 }
@@ -83,10 +54,6 @@ onMounted(() => {
     flex-shrink: 0;
     width: 3.5rem;
     height: 3.5rem;
-    border-radius: 0.5rem;
-    background: var(--vp-c-default-soft);
-    color: var(--vp-c-brand-1);
-    font-size: 1.75rem;
 }
 
 .rectangle .pick-icon {
@@ -105,17 +72,7 @@ onMounted(() => {
     margin-bottom: 0.25rem;
     color: var(--vp-c-text-3);
     font-size: 0.75rem;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
-}
-
-.pick-disclosure {
-    padding: 0 0.375rem;
-    border: 1px solid var(--vp-c-divider);
-    border-radius: 1rem;
-    cursor: help;
-    text-transform: none;
-    letter-spacing: normal;
 }
 
 .pick-title {
@@ -128,6 +85,42 @@ onMounted(() => {
     color: var(--vp-c-text-2);
     font-size: 0.875rem;
     line-height: 1.5;
+}
+
+/*
+ * Ad slots reserve their height before the fallback is chosen, so every app has
+ * to render at the same height or the page shifts. A fixed number of hook lines
+ * makes the card height independent of how long each app's hook is.
+ */
+.horizontal,
+.rectangle {
+    --hook-lines: 2;
+}
+
+.rectangle {
+    --hook-lines: 4;
+}
+
+@media (max-width: 575px) {
+    .horizontal {
+        --hook-lines: 4;
+    }
+}
+
+@media (max-width: 359px) {
+    .horizontal {
+        --hook-lines: 5;
+    }
+}
+
+.horizontal .pick-hook,
+.rectangle .pick-hook {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--hook-lines);
+    line-clamp: var(--hook-lines);
+    overflow: hidden;
+    min-height: calc(var(--hook-lines) * 1.5em);
 }
 
 .pick-cta {
@@ -145,7 +138,7 @@ onMounted(() => {
     transition: 0.2s;
 }
 
-.amazon-pick:hover .pick-cta {
+.app-pick:hover .pick-cta {
     background: var(--vp-c-brand-3);
     color: var(--vp-c-white);
 }
@@ -172,7 +165,6 @@ onMounted(() => {
 .inline .pick-icon {
     width: 2.5rem;
     height: 2.5rem;
-    font-size: 1.25rem;
 }
 
 /*

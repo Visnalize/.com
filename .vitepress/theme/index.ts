@@ -5,8 +5,6 @@ import "iconify-icon";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import AccessLinks from "./components/global/AccessLinks.vue";
-import AmazonPick from "./components/global/AmazonPick.vue";
-import AmazonPicks from "./components/global/AmazonPicks.vue";
 import AppRating from "./components/global/AppRating.vue";
 import DocMeta from "./components/global/DocMeta.vue";
 import ReleaseNotes from "./components/global/ReleaseNotes.vue";
@@ -26,8 +24,6 @@ export default {
     app.component("AccessLinks", AccessLinks);
     app.component("AppRating", AppRating);
     app.component("DocMeta", DocMeta);
-    app.component("AmazonPick", AmazonPick);
-    app.component("AmazonPicks", AmazonPicks);
     app.component("ReleaseNotes", ReleaseNotes);
     app.component("ReleaseSection", ReleaseSection);
     app.provide(DISQUS, "visnalize");

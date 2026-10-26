@@ -9,7 +9,7 @@
         </div>
         <template v-if="state === 'empty'">
             <div v-if="fallbackPick" class="slot-filler">
-                <AmazonPick :pick="fallbackPick" :format="fallbackFormat" />
+                <AppPick :pick="fallbackPick" :format="fallbackFormat" />
                 <a class="filler-link" href="/services#advertising">Or place your ad here</a>
             </div>
             <a v-else class="placeholder" href="/services#advertising">Place your ad</a>
@@ -21,13 +21,12 @@
 </template>
 
 <script setup lang="ts">
-import type { AmazonPick as PickData } from '@/.content/amazon-picks.data';
 import { useRoute } from 'vitepress';
 import first from 'voca/first';
 import { computed, onBeforeUnmount, onMounted, ref, useId } from 'vue';
 import { AD_FILL_TIMEOUT, ADSENSE_ID } from '../../constants';
-import useAmazonPicks, { claimPicks } from '../../composables/useAmazonPicks';
-import AmazonPick from './AmazonPick.vue';
+import useAppPicks, { claimPicks, type AppPick as PickData } from '../../composables/useAppPicks';
+import AppPick from '../misc/AppPick.vue';
 
 declare global {
     interface Window {
@@ -54,9 +53,9 @@ const insRef = ref<HTMLElement>()
 const state = ref<AdState>('pending')
 
 const route = useRoute()
-// The instance id spreads slots across the pool; claiming then guarantees that
-// no two slots on a page end up on the same pick.
-const amazonPicks = useAmazonPicks({ offset: useId(), avoidClaimed: true })
+// The instance id spreads slots across the pool; claiming then keeps two slots
+// on a page from repeating an app until every other app is already shown.
+const appPicks = useAppPicks({ offset: useId(), avoidClaimed: true })
 const fallbackPick = ref<PickData>()
 const fallbackFormat = computed(() => {
     const [primary] = normalizedFormat;
@@ -86,10 +85,10 @@ const apply = (next: AdState, final: boolean) => {
     if (next === 'empty') {
         // Resolve the pick here rather than in a live computed, so it cannot
         // change again while the reader is looking at it.
-        const pick = amazonPicks.value[0];
+        const pick = appPicks.value[0];
         if (pick) {
             fallbackPick.value = pick;
-            claimPicks(route.path, [pick.id]);
+            claimPicks(route.path, [pick.app]);
         }
     } else {
         fallbackPick.value = undefined;
@@ -176,36 +175,34 @@ onBeforeUnmount(() => {
 
 .slot-h,
 .slot-a {
-    --slot-reserve: 288px;
+    --slot-reserve: 281px;
 }
 
 @media (min-width: 360px) {
     .slot-h,
     .slot-a {
-        --slot-reserve: 264px;
+        --slot-reserve: 260px;
     }
 }
 
 @media (min-width: 576px) {
     .slot-h,
     .slot-a {
-        --slot-reserve: 241px;
+        --slot-reserve: 218px;
     }
 }
 
-@media (min-width: 768px) {
+/* The filler's button sits beside the text from here on, see AppPick. */
+@media (min-width: 641px) {
     .slot-h,
     .slot-a {
-        --slot-reserve: 164px;
+        --slot-reserve: 162px;
     }
 }
 
-.slot-r {
-    --slot-reserve: 285px;
-}
-
+.slot-r,
 .slot-r-v {
-    --slot-reserve: 241px;
+    --slot-reserve: 260px;
 }
 
 .slot-h {

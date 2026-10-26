@@ -1,57 +1,38 @@
 <template>
-    <section v-if="picks.length > 0" class="amazon-picks">
+    <section v-if="picks.length > 0" class="app-picks">
         <h3 v-if="title" class="picks-title">{{ title }}</h3>
         <p v-if="note" class="picks-note">{{ note }}</p>
         <div class="picks-list" :class="{ stacked: picks.length === 1 }">
-            <AmazonPick v-for="pick in picks" :key="pick.id" :pick="pick"
+            <AppPick v-for="pick in picks" :key="pick.app" :pick="pick"
                 :format="picks.length === 1 ? 'horizontal' : 'vertical'" />
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
-import type { PickTopic } from '@/.content/amazon-picks.data';
 import { useRoute } from 'vitepress';
 import { onMounted, useId } from 'vue';
-import useAmazonPicks, { claimPicks } from '../../composables/useAmazonPicks';
-import AmazonPick from './AmazonPick.vue';
+import useAppPicks, { claimPicks } from '../../composables/useAppPicks';
+import AppPick from './AppPick.vue';
 
 interface Props {
     /** Heading above the list. Omit for a bare list. */
     title?: string;
     /** A line of context under the heading. */
     note?: string;
-    /** Show these picks by id, in this order. */
-    ids?: string[] | string;
-    /** Match these topics instead of the ones inferred from the page. */
-    topics?: PickTopic[] | PickTopic;
     count?: number;
-    offset?: number;
 }
 
 const props = withDefaults(defineProps<Props>(), { count: 2 })
 
-// Markdown usage passes a single value or a comma-separated list as a string.
-const toArray = <T,>(value?: T[] | T) => {
-    if (!value) return undefined;
-    if (Array.isArray(value)) return value;
-    return String(value).split(',').map((item) => item.trim()) as T[];
-}
-
 const route = useRoute()
-const instanceId = useId()
-const picks = useAmazonPicks({
-    ids: toArray(props.ids),
-    topics: toArray(props.topics),
-    count: props.count,
-    offset: props.offset ?? instanceId,
-})
+const picks = useAppPicks({ count: props.count, offset: useId() })
 
-onMounted(() => claimPicks(route.path, picks.value.map((pick) => pick.id)))
+onMounted(() => claimPicks(route.path, picks.value.map((pick) => pick.app)))
 </script>
 
 <style scoped>
-.amazon-picks {
+.app-picks {
     margin: 2rem 0;
 }
 
