@@ -37,7 +37,7 @@ const { scrollProgress } = useScrollProgress({ element: container, endOffset: 1 
 
 const visible = { scale: 0.79, borderRadius: '0rem' }
 const borderRadius = useTransform(useSpring(scrollProgress), [0, 1], ['1.5rem', visible.borderRadius])
-const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 1], [1, visible.scale])
+const scale = useTransform(useSpring(scrollProgress, { bounce: 0 }), [0, 1], [1.3, visible.scale])
 const offsetTop = computed(() => (width.value * 9 / 16) / 2)
 </script>
 
@@ -77,6 +77,11 @@ const offsetTop = computed(() => (width.value * 9 / 16) / 2)
     .demo-wrapper {
         height: 140vh;
         margin-top: -50vh;
+    }
+
+    /* The video starts larger than this box, so it must not be clipped to it. */
+    .demo-content {
+        overflow: visible;
     }
 
     .win7-demo .video {
