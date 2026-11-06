@@ -12,6 +12,12 @@ pageClass: changelog
 
 ## 2026
 
+### `4.8.0` (Nov 7, 2026)
+
+Window manager improvements, multi-select with bulk actions, working Windows Search, a new Mahjong Titans game, and better touch and touchpad support on Android.
+
+[Read the full release notes &rarr;](./changelog/4.8.0.md)
+
 ### `4.7.0` (Oct 4, 2026)
 
 A fix for uploaded backgrounds turning black after logging out, offline play and refined visuals for Purble Shop, and improvements for Tetris.
