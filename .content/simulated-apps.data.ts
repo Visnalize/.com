@@ -198,6 +198,23 @@ export const apps: App[] = [
     ],
   },
   {
+    slug: "mahjong",
+    title: "Mahjong Titans",
+    description:
+      "Brings back the classic Mahjong Titans tile-matching game, where you clear the board by matching pairs of free tiles. Can you find every pair before you run out of moves?",
+    version: "4.8.0",
+    features: [
+      "Six layouts: Turtle, Dragon, Cat, Fortress, Crab, and Spider",
+      "Every new deal has at least one solution",
+      "Bonus points for matching the same or related tiles in a row",
+      "Hints, undo, and tips that explain why a tile is blocked",
+      "Four tile sets and five backgrounds to choose from",
+      "Finish the game automatically once every tile is free",
+      "Save a game and continue it later",
+      "Track games played, win percentage, and high scores for each layout",
+    ],
+  },
+  {
     slug: "mouse",
     title: "Mouse",
     description:
