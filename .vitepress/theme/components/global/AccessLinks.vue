@@ -3,7 +3,7 @@
         <a v-for="link in links" :key="link" :href="link" target="_blank">
             <img data-no-zoom v-bind="getImageProps(link)" />
         </a>
-        <Dropdown>
+        <Dropdown v-if="QrApps.includes(app)">
             <button class="qr" aria-label="Scan QR code">
                 <iconify-icon icon="mdi:qrcode-scan" />
                 <span>
@@ -31,7 +31,14 @@ const LinkMap = {
         "https://apps.apple.com/us/app/brick-1100/id6554000754",
         "https://brick1100.visnalize.com",
     ],
+    brickpals: [
+        "https://play.google.com/store/apps/details?id=com.visnalize.brickpals",
+        "https://apps.apple.com/us/app/id6824972835",
+    ],
 };
+
+/** Apps with a QR code image at /assets/<app>-qr.svg. */
+const QrApps: (keyof typeof LinkMap)[] = ["win7simu", "brick1100"];
 
 interface Props {
     app: keyof typeof LinkMap;

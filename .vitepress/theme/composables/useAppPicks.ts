@@ -33,7 +33,7 @@ const picks: AppPick[] = [
     title: APP_NAMES.brickpals,
     hook: "A tiny 1-bit pal for your home screen. Feed it, play with it, and watch it grow.",
     link: BrickPals.Overview.link,
-    cta: "See what's coming",
+    cta: "Try it free",
   },
 ];
 

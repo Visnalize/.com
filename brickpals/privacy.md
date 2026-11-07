@@ -13,7 +13,7 @@ Brick Pals has no accounts and no ads. Your pal, its name and your settings stay
 
 ----
 
-Visnalize ("we", "us", "our") makes the Brick Pals app for iPhone and Android (the "Service"). This page explains what information the Service collects, how we use it, who we share it with, and the choices you have. By using the Service, you agree to this policy.
+Visnalize ("we", "us", "our") makes the Brick Pals app for iOS and Android (the "Service"). This page explains what information the Service collects, how we use it, who we share it with, and the choices you have. By using the Service, you agree to this policy.
 
 ## Information we collect
 
@@ -27,11 +27,11 @@ The app uses **Firebase Analytics** to understand how the app is used. It record
 - finishing or skipping the intro screens,
 - opening the Pro screen, starting and finishing a purchase (which plan), and restoring purchases.
 
-Firebase also collects device information (such as device model, operating system and app version), an app instance ID, and your approximate location based on your IP address. The app does **not** collect your device's advertising ID (IDFA on iPhone, advertising ID on Android), does not ask to track you, and does not share this information with ad networks.
+Firebase also collects device information (such as device model, operating system and app version), an app instance ID, and your approximate location based on your IP address. The app does **not** collect your device's advertising ID (IDFA on iOS, advertising ID on Android), does not ask to track you, and does not share this information with ad networks.
 
 **You can turn this off.** Switch off _Share usage data_ on the Pro screen or in _Settings_. The app then stops sending usage information.
 
-On iPhone, the app also uses **Firebase Remote Config** to receive a few settings from our server, such as whether the pal animates in widgets.
+On iOS, the app also uses **Firebase Remote Config** to receive a few settings from our server, such as whether the pal animates in widgets.
 
 ### Purchases
 
@@ -40,8 +40,8 @@ Brick Pals Pro is sold as a subscription or a one-time purchase, processed by th
 ## Information that stays on your device
 
 - **Your pal,** its name, its care history, and your settings are stored only on your device. They are not sent to us. Deleting the app deletes them.
-- **Widgets, the outing (iPhone) and the live wallpaper (Android)** read your pal from the app's storage on your device. The battery widget reads your battery level on your device.
-- **Share cards and wallpapers.** On iPhone, the app saves them to your photos only when you ask, and needs permission to add photos for that. It cannot read your photos. Sharing a card opens your phone's share sheet; you choose where it goes.
+- **Widgets, the outing (iOS) and the live wallpaper (Android)** read your pal from the app's storage on your device. The battery widget reads your battery level on your device.
+- **Share cards and wallpapers.** On iOS, the app saves them to your photos only when you ask, and needs permission to add photos for that. It cannot read your photos. Sharing a card opens your phone's share sheet; you choose where it goes.
 - **Icon pack (Android).** To let you pick which app an icon opens, the app reads the list of apps on your home screen. This list is never sent to us.
 
 ## How we use information
@@ -58,7 +58,7 @@ We do not sell your personal information, and we do not show ads.
 
 We use these third-party services. Each has its own privacy policy:
 
-- [Google Firebase](https://firebase.google.com/support/privacy) (Analytics, and Remote Config on iPhone)
+- [Google Firebase](https://firebase.google.com/support/privacy) (Analytics, and Remote Config on iOS)
 - [RevenueCat](https://www.revenuecat.com/privacy)
 - [Google Play](https://policies.google.com/privacy) and the [App Store](https://www.apple.com/legal/privacy/), which process your purchases
 

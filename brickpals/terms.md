@@ -13,7 +13,7 @@ Brick Pals is free to use. Brick Pals Pro is a monthly or yearly subscription th
 
 ----
 
-These terms are an agreement between you and Visnalize ("we", "us", "our") about the Brick Pals app for iPhone and Android (the "Service"). By downloading or using the Service, you agree to these terms and to our [Privacy Policy](./privacy). If you do not agree, do not use the Service.
+These terms are an agreement between you and Visnalize ("we", "us", "our") about the Brick Pals app for iOS and Android (the "Service"). By downloading or using the Service, you agree to these terms and to our [Privacy Policy](./privacy). If you do not agree, do not use the Service.
 
 ## Using the Service
 
@@ -34,7 +34,7 @@ Prices are shown in the app before you buy, in your local currency.
 
 - Payment is charged to your Apple ID or Google account when you confirm the purchase, or when a free trial ends.
 - A subscription renews automatically at the same price for the same period, unless you cancel it at least 24 hours before the end of the current period.
-- You can manage or cancel your subscription in your account settings: on iPhone in _Settings > your name > Subscriptions_, on Android in _Google Play > Payments & subscriptions > Subscriptions_. Deleting the app does not cancel a subscription.
+- You can manage or cancel your subscription in your account settings: on iOS in _Settings > your name > Subscriptions_, on Android in _Google Play > Payments & subscriptions > Subscriptions_. Deleting the app does not cancel a subscription.
 - If you cancel during a free trial, you are not charged. If you buy a subscription during a free trial, the rest of the trial ends.
 
 ### Refunds
@@ -43,7 +43,7 @@ Purchases are processed by Apple or Google, and their refund rules apply. To ask
 
 ### Restoring purchases
 
-To get Pro on a new device, tap _Restore Purchases_ on the Pro screen, signed in with the same Apple ID or Google account. Purchases on the App Store and on Google Play are separate: Pro bought on iPhone does not unlock Pro on Android, and the other way around.
+To get Pro on a new device, tap _Restore Purchases_ on the Pro screen, signed in with the same Apple ID or Google account. Purchases on the App Store and on Google Play are separate: Pro bought on iOS does not unlock Pro on Android, and the other way around.
 
 ## Your pal and your data
 

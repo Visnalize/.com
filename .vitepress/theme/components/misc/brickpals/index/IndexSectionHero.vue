@@ -11,7 +11,7 @@
             Feed it, play with it, and watch it grow.
         </Motion>
         <Motion v-bind="animateHeadline()">
-            <ComingSoon />
+            <AccessLinks app="brickpals" />
         </Motion>
     </div>
     <Motion class="index-showcase" v-bind="animateShell">
@@ -21,10 +21,10 @@
 </template>
 
 <script setup lang="ts">
+import AccessLinks from '@components/global/AccessLinks.vue';
 import AppIcon from '@components/misc/AppIcon.vue';
 import { useHeadlineVariants } from '@composables/useMotion';
 import { Motion } from 'motion-v';
-import ComingSoon from '../ComingSoon.vue';
 import PalShell from '../PalShell.vue';
 
 let index = 0;

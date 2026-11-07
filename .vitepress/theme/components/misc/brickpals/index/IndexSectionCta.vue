@@ -1,10 +1,10 @@
 <template>
     <IndexSection :animate-header="shouldAnimate">
-        <template #title>Your pal is almost here</template>
-        <template #caption>No ads, no account, and it works offline. Everything stays on your phone.</template>
+        <template #title>Your pal is waiting</template>
+        <template #caption>Free on iOS and Android, with Pro for extra perks. No ads, no account, and it works offline.</template>
 
         <div class="cta" ref="trigger">
-            <ComingSoon />
+            <AccessLinks app="brickpals" />
             <p class="links">
                 <a href="/brickpals/terms">Terms of Use</a>
                 <span>·</span>
@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import { useInView } from 'motion-v';
 import { computed, ref } from 'vue';
-import ComingSoon from '../ComingSoon.vue';
+import AccessLinks from '@components/global/AccessLinks.vue';
 import IndexSection from './IndexSection.vue';
 
 const trigger = ref<HTMLElement | null>(null)
@@ -30,7 +30,7 @@ const shouldAnimate = computed(() => inView.value ? 'animate' : 'initial')
     padding: 0 1.5rem 4rem;
 }
 
-.cta :deep(.coming-soon) {
+.cta :deep(.access) {
     margin-top: 0;
 }
 
