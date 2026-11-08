@@ -1,0 +1,112 @@
+name: Brick Pals changelog
+
+# Triggered by .github/workflows/notify-site.yml in the Brick Pals app repo when
+# a release is published. The script adds the entry; no AI step is needed.
+on:
+  repository_dispatch:
+    types: [brickpals-release]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release tag in the app repo, for example v1.1.0
+        required: true
+      release_date:
+        description: Override the release date (YYYY-MM-DD). Leave empty to use the GitHub release date.
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: brickpals-release-${{ github.event.client_payload.version || inputs.version }}
+  cancel-in-progress: false
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # A manual run reads the release back from the private app repo. The repo
+      # path is a secret because this repo's Actions logs are public.
+      - name: Resolve the release
+        id: release
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_VERSION: ${{ github.event.client_payload.version }}
+          DISPATCH_PUBLISHED_AT: ${{ github.event.client_payload.published_at }}
+          DISPATCH_BODY: ${{ github.event.client_payload.body }}
+          INPUT_VERSION: ${{ inputs.version }}
+          GH_TOKEN: ${{ secrets.BRICKPALS_REPO_TOKEN }}
+          APP_REPO: ${{ secrets.BRICKPALS_REPO }}
+        run: |
+          set -euo pipefail
+          body_file="$RUNNER_TEMP/release-body.md"
+
+          if [ "$EVENT_NAME" = "repository_dispatch" ]; then
+            version="$DISPATCH_VERSION"
+            published_at="$DISPATCH_PUBLISHED_AT"
+            printf '%s' "$DISPATCH_BODY" > "$body_file"
+          else
+            if [ -z "${GH_TOKEN:-}" ] || [ -z "${APP_REPO:-}" ]; then
+              echo "::error::A manual run needs the BRICKPALS_REPO and BRICKPALS_REPO_TOKEN secrets to read the private app repo."
+              exit 1
+            fi
+            version="$INPUT_VERSION"
+            gh api "repos/$APP_REPO/releases/tags/$version" > "$RUNNER_TEMP/release.json"
+            published_at=$(jq -r .published_at "$RUNNER_TEMP/release.json")
+            jq -r .body "$RUNNER_TEMP/release.json" > "$body_file"
+          fi
+
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "published_at=$published_at" >> "$GITHUB_OUTPUT"
+          echo "body_file=$body_file" >> "$GITHUB_OUTPUT"
+
+      - name: Add the changelog entry
+        id: entry
+        env:
+          RELEASE_VERSION: ${{ steps.release.outputs.version }}
+          RELEASE_PUBLISHED_AT: ${{ steps.release.outputs.published_at }}
+          RELEASE_BODY_FILE: ${{ steps.release.outputs.body_file }}
+          RELEASE_DATE: ${{ inputs.release_date }}
+        run: node scripts/brickpals-release.js
+
+      - name: Open the pull request
+        if: steps.entry.outputs.skipped == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ steps.entry.outputs.version }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          branch="docs/brickpals-$VERSION"
+          title="docs: add Brick Pals $VERSION changelog entry"
+
+          # Never overwrite an existing branch: it may already carry review edits.
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo "::error::Branch $branch already exists. Finish or delete that pull request, then re-run."
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add brickpals/changelog.md
+          git commit -m "$title"
+          git push -u origin "$branch"
+
+          {
+            printf 'Generated from the `v%s` release in the Brick Pals app repo.\n\n' "$VERSION"
+            printf '## Changelog notes\n\n'
+            printf -- '- Added the Brick Pals %s release notes to the changelog page.\n\n' "$VERSION"
+            printf '## Before merging\n\n'
+            printf -- '- [ ] Check the date against the store release. It comes from the GitHub release.\n'
+            printf -- '- [ ] Read the entry, and add links to pages where they help.\n'
+          } > "$RUNNER_TEMP/pr-body.md"
+
+          gh pr create \
+            --base "${BASE_BRANCH:-v2}" \
+            --head "$branch" \
+            --title "$title" \
+            --body-file "$RUNNER_TEMP/pr-body.md"

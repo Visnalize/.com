@@ -22,6 +22,8 @@ const data = computed(() => {
         return { name: "iOS", icon: "logos:apple-app-store" };
     if (props.icon === "premium")
         return { name: "Premium feature", icon: "noto:gem-stone" };
+    if (props.icon === "pro")
+        return { name: "Pro feature", icon: "noto:gem-stone" };
     return { name: "Unknown", icon: "noto:red-question-mark" };
 })
 </script>

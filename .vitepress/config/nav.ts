@@ -51,8 +51,8 @@ const navItems: DefaultTheme.Config["nav"] = [
   {
     // VitePress renders nav text as HTML, which allows the badge.
     text: 'Brick Pals <span class="nav-badge">New</span>',
-    link: BrickPals.Overview.link,
     activeMatch: "^/brickpals",
+    items: [BrickPals.Overview, BrickPals.Changelog, BrickPals.Terms, BrickPals.Privacy],
   },
   {
     text: "Blog",

@@ -110,6 +110,10 @@ export const BrickPals = {
     text: "Overview",
     link: "/brickpals",
   },
+  Changelog: {
+    text: "Changelog",
+    link: "/brickpals/changelog",
+  },
   Terms: {
     text: "Terms of Use",
     link: "/brickpals/terms",

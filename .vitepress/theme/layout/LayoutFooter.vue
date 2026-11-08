@@ -81,7 +81,7 @@ const { hasSidebar } = useSidebar()
 
 const win7Links = [Win7Simu.About, Win7Simu.Changelog, Win7Simu.Simulated, Win7Simu.ThemeStudio]
 const brickLinks = [Brick1100.About, Brick1100.Changelog, Brick1100.FeatureRequests, Brick1100.Builders]
-const brickPalsLinks = [BrickPals.Overview, BrickPals.Terms, BrickPals.Privacy]
+const brickPalsLinks = [BrickPals.Overview, BrickPals.Changelog, BrickPals.Terms, BrickPals.Privacy]
 const visnalizeLinks = [Blog, About, Services, Metrics, Testimonials]
 </script>
 
