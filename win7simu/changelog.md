@@ -12,6 +12,15 @@ pageClass: changelog
 
 ## 2026
 
+### `4.8.1` (Nov 15, 2026)
+
+__Core__
+
+* fix: UI issues for RTL language mode
+* feat: add a Supporter tier with access to a private Discord by @khang-nd in https://github.com/khang-nd/win7-simu/pull/438
+* feat: search the Theme Studio gallery on the device instead of Algolia by @khang-nd in https://github.com/khang-nd/win7-simu/pull/439
+* fix: check the internet against a reliable endpoint instead of picsum.photos
+
 ### `4.8.0` (Nov 7, 2026)
 
 Window manager improvements, multi-select with bulk actions, working Windows Search, a new Mahjong Titans game, and better touch and touchpad support on Android.
