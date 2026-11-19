@@ -16,6 +16,10 @@ Annotation: <Notation icon="android" list />, <Notation icon="ios" list />, <Not
 
 ## 2026
 
+### `1.2.0` (Nov 19, 2026)
+
+- Brick Pals now speaks 10 more languages: German, Spanish, French, Indonesian, Italian, Japanese, Korean, Portuguese, Turkish and Vietnamese. It follows your phone's language, and you can pick another one for Brick Pals in your phone's settings.
+
 ### `1.1.0` (Nov 9, 2026)
 
 - Play now opens a game picker on the pal's screen. Press Next to see the next game and Select to start it. The Back card returns to the pal.
