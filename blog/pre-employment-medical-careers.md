@@ -4,6 +4,7 @@ description: Mining, rail, aviation and construction pay well and keep growing. 
 tags:
   - business
   - life
+  - sponsor
 ---
 
 # Four Rewarding Careers That Start With a Pre-Employment Medical
