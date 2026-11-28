@@ -29,7 +29,7 @@ And the guideline doesn't stop applying after launch. The same section asks you 
 
 Use it to make real footage look better. Better pacing, cleaner cuts, narration that doesn't sound like you're reading off a script for the first time. What you shouldn't do is have it show a screen, a feature, or an interaction that isn't in the app someone downloads. Reviewers look for this gap between what's promised and what ships, and a rejection here costs real days you'll want back.
 
-The safest workflow is boring and effective: record real screen footage from the actual build first, then let the tool polish footage that was already true. A developer tempted to have the tool invent a smoother version of a feature that isn't finished yet is building the exact mismatch Apple's rule exists to catch.
+The safest way to [generate videos with AI](https://magichour.ai/products/ai-video-generator) is boring and effective: record real screen footage from the actual build first, then let the tool polish footage that was already true. A developer tempted to have the tool invent a smoother version of a feature that isn't finished yet is building the exact mismatch Apple's rule exists to catch.
 
 ## What Happens When You Want a Polished Demo but Have No Production Budget?
 

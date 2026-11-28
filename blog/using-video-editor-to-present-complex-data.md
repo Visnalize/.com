@@ -50,7 +50,7 @@ For example:
 * Healthcare procedures  
 * Research methodologies
 
-Animation helps visualize these sequences more effectively than static diagrams. Moving arrows, icons, timelines, and illustrated workflows allow audiences to follow each step naturally.
+Animation helps visualize these sequences more effectively than static diagrams, and [text-to-video AI](https://magichour.ai/products/text-to-video) can now draft them from a written description of each step. Moving arrows, icons, timelines, and illustrated workflows allow audiences to follow each step naturally.
 
 Traditional presentations often rely on static charts that remain on screen while someone explains the information. Adding movement can dramatically improve comprehension.
 
